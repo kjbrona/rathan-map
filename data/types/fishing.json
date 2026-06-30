@@ -1,0 +1,6 @@
+[
+  { "id": "general-fishing", "name": "General Fishing Spot", "icon": "🐟", "enabled": true },
+  { "id": "bass", "name": "Bass", "icon": "🐟", "enabled": true },
+  { "id": "trout", "name": "Trout", "icon": "🐟", "enabled": true },
+  { "id": "salmon", "name": "Salmon", "icon": "🐟", "enabled": true }
+]

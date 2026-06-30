@@ -1,0 +1,6 @@
+[
+  { "id": "general-bench", "name": "General Bench", "icon": "🪚", "enabled": true },
+  { "id": "blacksmith", "name": "Blacksmith", "icon": "⚒", "enabled": true },
+  { "id": "carpenter", "name": "Carpenter", "icon": "🪚", "enabled": true },
+  { "id": "cooking", "name": "Cooking", "icon": "🍳", "enabled": true }
+]

@@ -1,0 +1,6 @@
+[
+  { "id": "iron", "name": "Iron", "icon": "⛏", "enabled": true },
+  { "id": "coal", "name": "Coal", "icon": "⚫", "enabled": true },
+  { "id": "clay", "name": "Clay", "icon": "🧱", "enabled": true },
+  { "id": "sulfur", "name": "Sulfur", "icon": "🟡", "enabled": true }
+]

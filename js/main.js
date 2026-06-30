@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 0.3.0
+Version : 0.4.0
 Creator : Rathan
 ==================================================
 */
@@ -12,14 +12,14 @@ async function initializeApp() {
 
   await loadCategoryData();
   initializeSidebar();
+  initializeDialogs();
 
   map.on("click", function (event) {
     if (currentMode !== MODES.ADD_MARKER) {
       return;
     }
 
-    addTemporaryMarker(event.latlng);
-    clearAddMarkerMode();
+    openMarkerDialog(event.latlng);
   });
 }
 

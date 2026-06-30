@@ -1,0 +1,10 @@
+[
+  { "id": "wild-mint", "name": "Wild Mint", "icon": "🌿", "enabled": true },
+  { "id": "oregano", "name": "Oregano", "icon": "🌿", "enabled": true },
+  { "id": "thyme", "name": "Thyme", "icon": "🌿", "enabled": true },
+  { "id": "sage", "name": "Sage", "icon": "🌿", "enabled": true },
+  { "id": "yarrow", "name": "Yarrow", "icon": "🌼", "enabled": true },
+  { "id": "burdock-root", "name": "Burdock Root", "icon": "🌱", "enabled": true },
+  { "id": "ginseng", "name": "Ginseng", "icon": "🌱", "enabled": true },
+  { "id": "milkweed", "name": "Milkweed", "icon": "🌿", "enabled": true }
+]
