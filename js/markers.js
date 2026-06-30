@@ -13,6 +13,7 @@ function addMarker(markerData) {
   markerData.leafletMarker = createLeafletMarker(markerData);
   markers.push(markerData);
   selectMarker(markerData.id);
+  updateMarkerStats();
 }
 
 function createLeafletMarker(markerData) {
@@ -22,12 +23,11 @@ function createLeafletMarker(markerData) {
   const iconText = type ? type.icon : category ? category.icon : "📍";
 
   const leafletMarker = L.marker([markerData.y, markerData.x], {
-    icon: createCategoryIcon(iconText, false),
+    icon: createCategoryIcon(iconText, false, markerData.status),
   }).addTo(map);
 
   leafletMarker.bindPopup(`
-    <strong>${escapeHtml(markerData.name)}</strong><br>
-    <em>Click marker to edit</em>
+    <strong>${iconText} ${escapeHtml(markerData.name)}</strong>
   `);
 
   leafletMarker.on("click", function (event) {
@@ -50,7 +50,9 @@ function selectMarker(markerId) {
     const type = getTypeById(marker.category, marker.type);
     const iconText = type ? type.icon : category ? category.icon : "📍";
 
-    marker.leafletMarker.setIcon(createCategoryIcon(iconText, isSelected));
+    marker.leafletMarker.setIcon(
+      createCategoryIcon(iconText, isSelected, marker.status)
+    );
   });
 
   const markerData = getMarkerById(markerId);
@@ -71,7 +73,9 @@ function clearSelectedMarker() {
     const type = getTypeById(marker.category, marker.type);
     const iconText = type ? type.icon : category ? category.icon : "📍";
 
-    marker.leafletMarker.setIcon(createCategoryIcon(iconText, false));
+    marker.leafletMarker.setIcon(
+      createCategoryIcon(iconText, false, marker.status)
+    );
   });
 
   renderMarkerDetails(null);
@@ -112,16 +116,33 @@ function deleteMarker(markerId) {
 
   markers = markers.filter((marker) => marker.id !== markerId);
   clearSelectedMarker();
+  updateMarkerStats();
 }
 
-function createCategoryIcon(iconText, selected) {
+function createCategoryIcon(iconText, selected, status = "unverified") {
+  const statusClass = getStatusClass(status);
+
   return L.divIcon({
-    className: selected ? "category-marker selected" : "category-marker",
+    className: selected
+      ? `category-marker selected ${statusClass}`
+      : `category-marker ${statusClass}`,
     html: `<div class="category-marker-icon">${escapeHtml(iconText)}</div>`,
     iconSize: selected ? [36, 36] : [28, 28],
     iconAnchor: selected ? [18, 18] : [14, 14],
     popupAnchor: [0, -14],
   });
+}
+
+function getStatusClass(status) {
+  if (status === "verified") {
+    return "status-verified";
+  }
+
+  if (status === "invalid") {
+    return "status-invalid";
+  }
+
+  return "status-unverified";
 }
 
 function escapeHtml(value) {

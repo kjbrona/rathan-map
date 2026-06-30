@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 0.2.0
+Version : 0.6.0
 Creator : Rathan
 ==================================================
 */
@@ -61,7 +61,7 @@ Creator : Rathan
 }
 
 .sidebar-footer {
-  margin-top: auto;
+  margin-top: 12px;
   font-size: 12px;
   color: #a88b5f;
 }
@@ -125,4 +125,27 @@ Creator : Rathan
   background: #8f2f2f;
   color: white;
   border: 1px solid #d97f7f;
+}
+
+#marker-stats-section {
+  border-top: 1px solid #5a3a1e;
+  padding-top: 14px;
+}
+
+.marker-stat-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #c8aa72;
+}
+
+#sidebar-scroll {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 18px;
+  padding-right: 4px;
+}
+
+#sidebar-scroll .sidebar-section:first-child {
+  margin-top: 0;
 }

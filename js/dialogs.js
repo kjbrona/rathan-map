@@ -1,21 +1,16 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 0.5.0
+Version : 0.6.0
 Creator : Rathan
 ==================================================
 */
 
 let pendingMarkerLatLng = null;
+let markerNameManuallyEdited = false;
 
 function initializeDialogs() {
-  populateMarkerCategoryDropdown();
-
-  document
-    .getElementById("marker-category")
-    .addEventListener("change", async function () {
-      await populateMarkerTypeDropdown(this.value);
-    });
+  initializeMarkerDialogControls();
 
   document
     .getElementById("marker-dialog-close")
@@ -30,48 +25,48 @@ function initializeDialogs() {
     .addEventListener("submit", saveMarkerFromDialog);
 }
 
-async function populateMarkerCategoryDropdown() {
-  const select = document.getElementById("marker-category");
-  select.innerHTML = "";
+async function initializeMarkerDialogControls() {
+  const categorySelect = document.getElementById("marker-category");
+  const typeSelect = document.getElementById("marker-type");
+  const nameInput = document.getElementById("marker-name");
 
-  CATEGORIES.forEach((category) => {
-    const option = document.createElement("option");
-    option.value = category.id;
-    option.textContent = `${category.icon} ${category.name}`;
-    select.appendChild(option);
-  });
+  await buildCategoryDropdown("marker-category");
 
   if (CATEGORIES.length > 0) {
-    await populateMarkerTypeDropdown(CATEGORIES[0].id);
+    await buildTypeDropdown("marker-type", categorySelect.value);
   }
-}
 
-async function populateMarkerTypeDropdown(categoryId) {
-  const select = document.getElementById("marker-type");
-  select.innerHTML = "";
+  categorySelect.addEventListener("change", async function () {
+    await buildTypeDropdown("marker-type", this.value);
+    autoFillMarkerName();
+  });
 
-  const types = await loadTypesForCategory(categoryId);
+  typeSelect.addEventListener("change", function () {
+    autoFillMarkerName();
+  });
 
-  types.forEach((type) => {
-    const option = document.createElement("option");
-    option.value = type.id;
-    option.textContent = `${type.icon} ${type.name}`;
-    select.appendChild(option);
+  nameInput.addEventListener("input", function () {
+    markerNameManuallyEdited = this.value.trim().length > 0;
   });
 }
 
 async function openMarkerDialog(latlng) {
   pendingMarkerLatLng = latlng;
+  markerNameManuallyEdited = false;
 
   const x = Math.round(latlng.lng);
   const y = Math.round(latlng.lat);
 
   document.getElementById("marker-form").reset();
 
+  await buildCategoryDropdown("marker-category");
+
   if (CATEGORIES.length > 0) {
-    document.getElementById("marker-category").value = CATEGORIES[0].id;
-    await populateMarkerTypeDropdown(CATEGORIES[0].id);
+    const categoryId = document.getElementById("marker-category").value;
+    await buildTypeDropdown("marker-type", categoryId);
   }
+
+  autoFillMarkerName();
 
   document.getElementById("marker-x").value = x;
   document.getElementById("marker-y").value = y;
@@ -79,11 +74,24 @@ async function openMarkerDialog(latlng) {
   document.getElementById("marker-y-display").textContent = y;
 
   document.getElementById("marker-dialog").classList.remove("hidden");
-  document.getElementById("marker-name").focus();
+  document.getElementById("marker-notes").focus();
+}
+
+function autoFillMarkerName() {
+  if (markerNameManuallyEdited) {
+    return;
+  }
+
+  const categoryId = document.getElementById("marker-category").value;
+  const typeId = document.getElementById("marker-type").value;
+  const typeName = getSelectedTypeName(categoryId, typeId);
+
+  document.getElementById("marker-name").value = typeName;
 }
 
 function closeMarkerDialog() {
   pendingMarkerLatLng = null;
+  markerNameManuallyEdited = false;
   document.getElementById("marker-dialog").classList.add("hidden");
   clearAddMarkerMode();
 }
@@ -96,10 +104,13 @@ function saveMarkerFromDialog(event) {
     name: document.getElementById("marker-name").value.trim(),
     category: document.getElementById("marker-category").value,
     type: document.getElementById("marker-type").value,
+    status: "unverified",
+    confidence: "guess",
     notes: document.getElementById("marker-notes").value.trim(),
     x: Number(document.getElementById("marker-x").value),
     y: Number(document.getElementById("marker-y").value),
     createdAt: new Date().toISOString(),
+    modifiedAt: new Date().toISOString(),
   };
 
   addMarker(markerData);

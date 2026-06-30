@@ -1,3 +1,13 @@
 [
-  { "id": "npc", "name": "NPC", "icon": "👤", "enabled": true }
+  { "id": "npc", "name": "General NPC", "icon": "👤", "enabled": true },
+  { "id": "general-store", "name": "General Store", "icon": "🛒", "enabled": true },
+  { "id": "doctor", "name": "Doctor", "icon": "⚕", "enabled": true },
+  { "id": "blacksmith", "name": "Blacksmith", "icon": "⚒", "enabled": true },
+  { "id": "gunsmith", "name": "Gunsmith", "icon": "🔫", "enabled": true },
+  { "id": "stable-master", "name": "Stable Master", "icon": "🐎", "enabled": true },
+  { "id": "banker", "name": "Banker", "icon": "💰", "enabled": true },
+  { "id": "butcher", "name": "Butcher", "icon": "🥩", "enabled": true },
+  { "id": "fence", "name": "Fence", "icon": "💎", "enabled": true },
+  { "id": "post-office", "name": "Post Office", "icon": "✉", "enabled": true },
+  { "id": "train-clerk", "name": "Train Clerk", "icon": "🚂", "enabled": true }
 ]

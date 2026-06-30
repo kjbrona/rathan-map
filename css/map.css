@@ -44,3 +44,27 @@ Creator : Rathan
     box-shadow: 0 0 12px rgba(255, 211, 106, 0.9);
     font-size: 19px;
 }
+
+.category-marker.status-unverified .category-marker-icon {
+  border-color: #ffd36a;
+}
+
+.category-marker.status-verified .category-marker-icon {
+  border-color: #55d66b;
+}
+
+.category-marker.status-invalid .category-marker-icon {
+  border-color: #d65555;
+}
+
+.category-marker.selected.status-unverified .category-marker-icon {
+  box-shadow: 0 0 12px rgba(255, 211, 106, 0.9);
+}
+
+.category-marker.selected.status-verified .category-marker-icon {
+  box-shadow: 0 0 12px rgba(85, 214, 107, 0.9);
+}
+
+.category-marker.selected.status-invalid .category-marker-icon {
+  box-shadow: 0 0 12px rgba(214, 85, 85, 0.9);
+}

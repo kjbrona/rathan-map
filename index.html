@@ -49,6 +49,23 @@
             Type
             <select id="edit-marker-type" required></select>
           </label>
+          <label>
+            Status
+            <select id="edit-marker-status" required>
+              <option value="unverified">🟡 Unverified</option>
+              <option value="verified">🟢 Verified</option>
+              <option value="invalid">🔴 Invalid</option>
+            </select>
+          </label>
+
+          <label>
+            Confidence
+            <select id="edit-marker-confidence" required>
+              <option value="exact">Exact</option>
+              <option value="approximate">Approximate</option>
+              <option value="guess">Guess</option>
+            </select>
+          </label>
 
           <label>
             Notes
@@ -66,7 +83,14 @@
           </div>
         </form>
       </div>
+      <div class="sidebar-section" id="marker-stats-section">
+        <h2>Statistics</h2>
 
+        <div class="marker-stat-row">
+          <span>Total Markers</span>
+          <strong id="marker-count-total">0</strong>
+        </div>
+      </div>
       <div class="sidebar-footer">
         Version 0.6.0
       </div>
@@ -125,6 +149,7 @@
   <script src="js/map.js"></script>
   <script src="js/categories.js"></script>
   <script src="js/types.js"></script>
+  <script src="js/ui.js"></script>
   <script src="js/markers.js"></script>
   <script src="js/sidebar.js"></script>
   <script src="js/dialogs.js"></script>

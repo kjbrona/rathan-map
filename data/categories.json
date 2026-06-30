@@ -5,6 +5,5 @@
   { "id": "mining", "name": "Mining", "icon": "⛏", "enabled": true },
   { "id": "camps", "name": "Camps", "icon": "🏕", "enabled": true },
   { "id": "npcs", "name": "NPCs", "icon": "👤", "enabled": true },
-  { "id": "crafting-benches", "name": "Crafting Benches", "icon": "🪚", "enabled": true },
-  { "id": "vendors", "name": "Vendors", "icon": "🏪", "enabled": true }
+  { "id": "crafting-benches", "name": "Crafting Benches", "icon": "🪚", "enabled": true }
 ]

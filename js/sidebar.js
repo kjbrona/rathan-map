@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 0.3.0
+Version : 0.6.0
 Creator : Rathan
 ==================================================
 */
@@ -49,12 +49,15 @@ function clearAddMarkerMode() {
 }
 
 async function initializeMarkerDetailsPanel() {
-  populateEditCategoryDropdown();
+  await buildCategoryDropdown("edit-marker-category");
+
+  const initialCategory = document.getElementById("edit-marker-category").value;
+  await buildTypeDropdown("edit-marker-type", initialCategory);
 
   document
     .getElementById("edit-marker-category")
     .addEventListener("change", async function () {
-      await populateEditTypeDropdown(this.value);
+      await buildTypeDropdown("edit-marker-type", this.value);
     });
 
   document
@@ -70,6 +73,8 @@ async function initializeMarkerDetailsPanel() {
         name: document.getElementById("edit-marker-name").value.trim(),
         category: document.getElementById("edit-marker-category").value,
         type: document.getElementById("edit-marker-type").value,
+        status: document.getElementById("edit-marker-status").value,
+        confidence: document.getElementById("edit-marker-confidence").value,
         notes: document.getElementById("edit-marker-notes").value.trim(),
       });
     });
@@ -87,51 +92,6 @@ async function initializeMarkerDetailsPanel() {
     });
 }
 
-async function populateEditCategoryDropdown(selectedCategory = null) {
-
-    const select = document.getElementById("edit-marker-category");
-
-    select.innerHTML = "";
-
-    CATEGORIES.forEach((category) => {
-
-        const option = document.createElement("option");
-
-        option.value = category.id;
-        option.textContent = `${category.icon} ${category.name}`;
-
-        if (selectedCategory && category.id === selectedCategory) {
-            option.selected = true;
-        }
-
-        select.appendChild(option);
-
-    });
-
-    // Populate the types for the selected category
-    const categoryId = selectedCategory || CATEGORIES[0].id;
-    await populateEditTypeDropdown(categoryId);
-}
-
-async function populateEditTypeDropdown(categoryId, selectedTypeId = null) {
-  const select = document.getElementById("edit-marker-type");
-  select.innerHTML = "";
-
-  const types = await loadTypesForCategory(categoryId);
-
-  types.forEach((type) => {
-    const option = document.createElement("option");
-    option.value = type.id;
-    option.textContent = `${type.icon} ${type.name}`;
-
-    if (selectedTypeId && type.id === selectedTypeId) {
-      option.selected = true;
-    }
-
-    select.appendChild(option);
-  });
-}
-
 async function renderMarkerDetails(markerData) {
   const empty = document.getElementById("marker-details-empty");
   const form = document.getElementById("marker-details-form");
@@ -146,9 +106,27 @@ async function renderMarkerDetails(markerData) {
   form.classList.remove("hidden");
 
   document.getElementById("edit-marker-name").value = markerData.name;
-  await populateEditCategoryDropdown(markerData.category);
-  document.getElementById("edit-marker-type").value = markerData.type;
+
+  await buildCategoryDropdown("edit-marker-category", markerData.category);
+  await buildTypeDropdown("edit-marker-type", markerData.category, markerData.type);
+
+  document.getElementById("edit-marker-status").value =
+    markerData.status || "unverified";
+
+  document.getElementById("edit-marker-confidence").value =
+    markerData.confidence || "guess";
+
   document.getElementById("edit-marker-notes").value = markerData.notes || "";
   document.getElementById("edit-marker-x-display").textContent = markerData.x;
   document.getElementById("edit-marker-y-display").textContent = markerData.y;
+}
+
+function updateMarkerStats() {
+  const total = document.getElementById("marker-count-total");
+
+  if (!total) {
+    return;
+  }
+
+  total.textContent = markers.length;
 }
