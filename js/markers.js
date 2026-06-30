@@ -1,3 +1,11 @@
+/*
+==================================================
+RosalitaRP Explorer
+Version : 0.2.0
+Creator : Rathan
+==================================================
+*/
+
 let tempMarker = null;
 
 function addTemporaryMarker(latlng) {

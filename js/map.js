@@ -1,3 +1,11 @@
+/*
+==================================================
+RosalitaRP Explorer
+Version : 0.2.0
+Creator : Rathan
+==================================================
+*/
+
 const map = L.map("map", {
   crs: L.CRS.Simple,
   minZoom: MIN_ZOOM,

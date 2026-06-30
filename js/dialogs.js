@@ -1,17 +1,11 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 0.2.0
+Version : 0.3.0
 Creator : Rathan
 ==================================================
 */
 
-#map {
-  flex: 1;
-  height: 100vh;
-  background: #111;
-}
-
-.leaflet-container {
-  background: #111;
+function showMessage(title, message) {
+  alert(`${title}\n\n${message}`);
 }

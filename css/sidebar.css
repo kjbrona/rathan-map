@@ -1,8 +1,9 @@
 /*
-====================================
-Rathan Explorer Sidebar Styles
-Version 0.1.0
-====================================
+==================================================
+RosalitaRP Explorer
+Version : 0.2.0
+Creator : Rathan
+==================================================
 */
 
 #sidebar {
@@ -63,4 +64,10 @@ Version 0.1.0
   margin-top: auto;
   font-size: 12px;
   color: #a88b5f;
+}
+
+#add-marker-btn.active {
+  background: #2f8f2f;
+  border-color: #7fd97f;
+  color: white;
 }
