@@ -19,6 +19,8 @@ function initializeSidebar() {
     currentMode = MODES.ADD_MARKER;
     addMarkerButton.classList.add("active");
   });
+
+  updateMarkerStats();
 }
 
 function renderCategoryList() {
@@ -36,6 +38,12 @@ function renderCategoryList() {
       />
       ${category.icon} ${category.name}
     `;
+
+    const checkbox = label.querySelector("input");
+
+    checkbox.addEventListener("change", function () {
+      setCategoryFilter(category.id, this.checked);
+    });
 
     list.appendChild(label);
   });
@@ -108,7 +116,11 @@ async function renderMarkerDetails(markerData) {
   document.getElementById("edit-marker-name").value = markerData.name;
 
   await buildCategoryDropdown("edit-marker-category", markerData.category);
-  await buildTypeDropdown("edit-marker-type", markerData.category, markerData.type);
+  await buildTypeDropdown(
+    "edit-marker-type",
+    markerData.category,
+    markerData.type
+  );
 
   document.getElementById("edit-marker-status").value =
     markerData.status || "unverified";

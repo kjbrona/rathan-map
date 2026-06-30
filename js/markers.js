@@ -6,25 +6,21 @@ Creator : Rathan
 ==================================================
 */
 
-let markers = [];
-let selectedMarkerId = null;
+let renderedMarkerLayer = L.layerGroup().addTo(map);
 
-function addMarker(markerData) {
-  markerData.leafletMarker = createLeafletMarker(markerData);
-  markers.push(markerData);
-  selectMarker(markerData.id);
-  updateMarkerStats();
+function clearRenderedMarkers() {
+  renderedMarkerLayer.clearLayers();
 }
 
-function createLeafletMarker(markerData) {
+function renderMarker(markerData, selected = false) {
   const category = getCategoryById(markerData.category);
   const type = getTypeById(markerData.category, markerData.type);
 
   const iconText = type ? type.icon : category ? category.icon : "📍";
 
   const leafletMarker = L.marker([markerData.y, markerData.x], {
-    icon: createCategoryIcon(iconText, false, markerData.status),
-  }).addTo(map);
+    icon: createCategoryIcon(iconText, selected, markerData.status),
+  }).addTo(renderedMarkerLayer);
 
   leafletMarker.bindPopup(`
     <strong>${iconText} ${escapeHtml(markerData.name)}</strong>
@@ -37,86 +33,6 @@ function createLeafletMarker(markerData) {
 
     selectMarker(markerData.id);
   });
-
-  return leafletMarker;
-}
-
-function selectMarker(markerId) {
-  selectedMarkerId = markerId;
-
-  markers.forEach((marker) => {
-    const isSelected = marker.id === markerId;
-    const category = getCategoryById(marker.category);
-    const type = getTypeById(marker.category, marker.type);
-    const iconText = type ? type.icon : category ? category.icon : "📍";
-
-    marker.leafletMarker.setIcon(
-      createCategoryIcon(iconText, isSelected, marker.status)
-    );
-  });
-
-  const markerData = getMarkerById(markerId);
-
-  if (!markerData) {
-    clearSelectedMarker();
-    return;
-  }
-
-  renderMarkerDetails(markerData);
-}
-
-function clearSelectedMarker() {
-  selectedMarkerId = null;
-
-  markers.forEach((marker) => {
-    const category = getCategoryById(marker.category);
-    const type = getTypeById(marker.category, marker.type);
-    const iconText = type ? type.icon : category ? category.icon : "📍";
-
-    marker.leafletMarker.setIcon(
-      createCategoryIcon(iconText, false, marker.status)
-    );
-  });
-
-  renderMarkerDetails(null);
-}
-
-function getMarkerById(markerId) {
-  return markers.find((marker) => marker.id === markerId);
-}
-
-async function updateMarker(markerId, updates) {
-  const markerData = getMarkerById(markerId);
-
-  if (!markerData) {
-    return;
-  }
-
-  Object.assign(markerData, updates);
-  markerData.modifiedAt = new Date().toISOString();
-
-  if (markerData.leafletMarker) {
-    map.removeLayer(markerData.leafletMarker);
-  }
-
-  markerData.leafletMarker = createLeafletMarker(markerData);
-  selectMarker(markerId);
-}
-
-function deleteMarker(markerId) {
-  const markerData = getMarkerById(markerId);
-
-  if (!markerData) {
-    return;
-  }
-
-  if (markerData.leafletMarker) {
-    map.removeLayer(markerData.leafletMarker);
-  }
-
-  markers = markers.filter((marker) => marker.id !== markerId);
-  clearSelectedMarker();
-  updateMarkerStats();
 }
 
 function createCategoryIcon(iconText, selected, status = "unverified") {

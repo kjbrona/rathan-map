@@ -12,6 +12,7 @@ async function initializeApp() {
 
   await loadCategoryData();
 
+  initializeMarkerManager();
   initializeSidebar();
   initializeDialogs();
 
