@@ -1,0 +1,9 @@
+#map {
+  flex: 1;
+  height: 100vh;
+  background: #111;
+}
+
+.leaflet-container {
+  background: #111;
+}

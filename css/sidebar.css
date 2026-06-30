@@ -1,0 +1,66 @@
+/*
+====================================
+Rathan Explorer Sidebar Styles
+Version 0.1.0
+====================================
+*/
+
+#sidebar {
+  width: 300px;
+  min-width: 300px;
+  height: 100vh;
+  background: #1b140e;
+  color: #f2e2bd;
+  border-right: 2px solid #5a3a1e;
+  box-sizing: border-box;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.subtitle {
+  margin-top: 4px;
+  color: #c8aa72;
+  font-size: 13px;
+}
+
+#add-marker-btn {
+  margin-top: 18px;
+  padding: 10px;
+  background: #8b5a2b;
+  color: #fff2d0;
+  border: 1px solid #c49a5a;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#add-marker-btn:hover {
+  background: #a66a32;
+}
+
+.sidebar-section {
+  margin-top: 22px;
+}
+
+.sidebar-section h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #e4c27a;
+}
+
+.sidebar-section label {
+  display: block;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  font-size: 12px;
+  color: #a88b5f;
+}

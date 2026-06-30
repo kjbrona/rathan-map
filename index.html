@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RosalitaRP Explorer</title>
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/map.css" />
+  <link rel="stylesheet" href="css/sidebar.css" />
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <div class="sidebar-header">
+        <h1 id="app-title"></h1>
+        <div class="subtitle" id="app-subtitle"></div>
+      </div>
+
+      <button id="add-marker-btn">+ Add Marker</button>
+
+      <div class="sidebar-section">
+
+        <h2>Categories</h2>
+
+        <div id="category-list">
+            Loading...
+        </div>
+
+      </div>
+
+      <div class="sidebar-footer">
+        <p>Version 0.1.0</p>
+      </div>
+    </aside>
+
+    <main id="map"></main>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/markers.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
