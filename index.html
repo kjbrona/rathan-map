@@ -15,19 +15,44 @@
 <body>
   <div id="app">
     <aside id="sidebar">
-      <div class="sidebar-header">
-        <h1 id="app-title"></h1>
-        <div class="subtitle" id="app-subtitle"></div>
-      </div>
+      <section class="sidebar-panel sidebar-header">
+        <img
+          class="app-logo"
+          src="images/RosalitaExplorer_icon.png"
+          alt="RosalitaRP Explorer logo"
+        />
+        <div>
+          <h1 id="app-title"></h1>
+          <div class="subtitle" id="app-subtitle"></div>
+        </div>
+      </section>
 
-      <button id="add-marker-btn">+ Add Marker</button>
+      <section class="sidebar-panel sidebar-tools">
+        <label class="search-control">
+          <span>Search</span>
+          <input type="search" id="marker-search" placeholder="Search markers..." />
+        </label>
+        <div id="search-results" class="search-results hidden">
+          <div class="search-results-summary" id="search-results-summary">
+            0 matching markers
+          </div>
+          <div id="search-results-list"></div>
+        </div>
 
-      <div class="sidebar-section">
-        <h2>Categories</h2>
-        <div id="category-list">Loading...</div>
-      </div>
+        <button id="add-marker-btn" type="button">+ Add Marker</button>
+        <div class="marker-backup-actions">
+          <button id="export-markers-btn" type="button">Export Markers</button>
+          <button id="import-markers-btn" type="button">Import Markers</button>
+          <input
+            type="file"
+            id="import-markers-file"
+            accept="application/json,.json"
+            class="hidden-file-input"
+          />
+        </div>
+      </section>
 
-      <div class="sidebar-section" id="marker-details-section">
+      <section class="sidebar-panel" id="marker-details-section">
         <h2>Selected Marker</h2>
 
         <div id="marker-details-empty">
@@ -78,21 +103,42 @@
           </div>
 
           <div class="marker-detail-actions">
+            <button type="button" id="edit-marker-move">Move Marker</button>
+            <button type="button" id="edit-marker-cancel-move" class="hidden">
+              Cancel Move
+            </button>
             <button type="submit" id="edit-marker-save">Save</button>
             <button type="button" id="edit-marker-delete">Delete</button>
           </div>
         </form>
-      </div>
-      <div class="sidebar-section" id="marker-stats-section">
+      </section>
+
+      <section class="sidebar-panel sidebar-filter-panel">
+        <h2>Filters</h2>
+        <div id="category-list">Loading...</div>
+      </section>
+
+      <section class="sidebar-panel" id="marker-stats-section">
         <h2>Statistics</h2>
 
         <div class="marker-stat-row">
           <span>Total Markers</span>
           <strong id="marker-count-total">0</strong>
         </div>
-      </div>
-      <div class="sidebar-footer">
-        Version 0.6.0
+        <div class="marker-stat-row">
+          <span>Currently Visible</span>
+          <strong id="marker-count-visible">0</strong>
+        </div>
+      </section>
+
+      <div class="sidebar-panel sidebar-footer">
+        <div>Version <span id="app-version"></span></div>
+        <div>Creator: <span id="app-creator"></span></div>
+        <div>
+          Data Source:
+          <strong>Local Browser Storage</strong>
+        </div>
+        <div>Autosave: <span id="autosave-status" data-status="saved">Saved</span></div>
       </div>
     </aside>
 
@@ -143,15 +189,54 @@
     </div>
   </div>
 
+  <div id="import-mode-dialog" class="modal hidden">
+    <div class="modal-content import-mode-content">
+      <div class="modal-header">
+        <h2>Import Mode</h2>
+        <button id="import-mode-close">×</button>
+      </div>
+
+      <form id="import-mode-form">
+        <label class="import-mode-option">
+          <input
+            type="radio"
+            name="import-mode"
+            value="replace"
+            checked
+          />
+          <span>
+            <strong>Replace Existing Markers</strong>
+            <small>Deletes current markers before importing.</small>
+          </span>
+        </label>
+
+        <label class="import-mode-option">
+          <input type="radio" name="import-mode" value="merge" />
+          <span>
+            <strong>Merge With Existing Markers</strong>
+            <small>Imports only markers whose UUID is not already present.</small>
+          </span>
+        </label>
+
+        <div class="modal-actions">
+          <button type="button" id="import-mode-cancel">Cancel</button>
+          <button type="submit" id="import-mode-continue">Import</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <script src="vendor/leaflet/leaflet.js"></script>
 
   <script src="js/config.js"></script>
   <script src="js/map.js"></script>
   <script src="js/categories.js"></script>
   <script src="js/types.js"></script>
+  <script src="js/storage.js"></script>
   <script src="js/ui.js"></script>
   <script src="js/markers.js"></script>
   <script src="js/markerManager.js"></script>
+  <script src="js/search.js"></script>
   <script src="js/sidebar.js"></script>
   <script src="js/dialogs.js"></script>
   <script src="js/main.js"></script>

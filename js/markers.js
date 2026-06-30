@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 0.6.0
+Version : 0.8.1
 Creator : Rathan
 ==================================================
 */
@@ -68,4 +68,19 @@ function escapeHtml(value) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
+}
+
+function centerOnMarker(markerId) {
+  const markerData = getMarkerById(markerId);
+
+  if (!markerData || !isMarkerVisible(markerData)) {
+    return false;
+  }
+
+  map.flyTo([markerData.y, markerData.x], Math.max(map.getZoom(), 0), {
+    animate: true,
+    duration: 0.65,
+  });
+
+  return true;
 }

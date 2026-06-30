@@ -1,6 +1,16 @@
 [
-  { "id": "general-fishing", "name": "General Fishing Spot", "icon": "🐟", "enabled": true },
-  { "id": "bass", "name": "Bass", "icon": "🐟", "enabled": true },
-  { "id": "trout", "name": "Trout", "icon": "🐟", "enabled": true },
-  { "id": "salmon", "name": "Salmon", "icon": "🐟", "enabled": true }
+  { "id": "bluegill", "name": "Bluegill", "icon": "\ud83d\udc1f", "enabled": true },
+  { "id": "bullhead-catfish", "name": "Bullhead Catfish", "icon": "\ud83d\udc1f", "enabled": true },
+  { "id": "chain-pickerel", "name": "Chain Pickerel", "icon": "\ud83d\udc1f", "enabled": true },
+  { "id": "channel-catfish", "name": "Channel Catfish", "icon": "\ud83d\udc1f", "enabled": true },
+  { "id": "largemouth", "name": "Largemouth", "icon": "\ud83d\udc1f", "enabled": true },
+  { "id": "longnose-gar", "name": "Longnose Gar", "icon": "\ud83d\udc1f", "enabled": true },
+  { "id": "muskie", "name": "Muskie", "icon": "\ud83d\udc1f", "enabled": true },
+  { "id": "northern-pike", "name": "Northern Pike", "icon": "\ud83d\udc1f", "enabled": true },
+  { "id": "perch", "name": "Perch", "icon": "\ud83d\udc1f", "enabled": true },
+  { "id": "redfin-pickerel", "name": "Redfin Pickerel", "icon": "\ud83d\udc1f", "enabled": true },
+  { "id": "rock-bass", "name": "Rock Bass", "icon": "\ud83d\udc1f", "enabled": true },
+  { "id": "smallmouth-bass", "name": "Smallmouth Bass", "icon": "\ud83d\udc1f", "enabled": true },
+  { "id": "steelhead-trout", "name": "Steelhead Trout", "icon": "\ud83d\udc1f", "enabled": true },
+  { "id": "sturgeon", "name": "Sturgeon", "icon": "\ud83d\udc1f", "enabled": true }
 ]

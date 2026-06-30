@@ -1,6 +1,8 @@
 [
-  { "id": "general-bench", "name": "General Bench", "icon": "🪚", "enabled": true },
-  { "id": "blacksmith", "name": "Blacksmith", "icon": "⚒", "enabled": true },
-  { "id": "carpenter", "name": "Carpenter", "icon": "🪚", "enabled": true },
-  { "id": "cooking", "name": "Cooking", "icon": "🍳", "enabled": true }
+  { "id": "blacksmith", "name": "Blacksmith", "icon": "\u2692", "enabled": true },
+  { "id": "carpenter", "name": "Carpenter", "icon": "\ud83e\ude9a", "enabled": true },
+  { "id": "cooking", "name": "Cooking", "icon": "\ud83c\udf73", "enabled": true },
+  { "id": "doctor", "name": "Doctor", "icon": "\u2695", "enabled": true },
+  { "id": "general-bench", "name": "General Bench", "icon": "\ud83e\ude9a", "enabled": true },
+  { "id": "tailor", "name": "Tailor", "icon": "\ud83e\uddf5", "enabled": true }
 ]

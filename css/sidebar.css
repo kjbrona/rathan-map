@@ -1,69 +1,182 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 0.6.0
+Version : 0.8.1
 Creator : Rathan
 ==================================================
 */
 
 #sidebar {
-  width: 300px;
-  min-width: 300px;
+  width: 320px;
+  min-width: 320px;
   height: 100vh;
   background: #1b140e;
   color: #f2e2bd;
   border-right: 2px solid #5a3a1e;
   box-sizing: border-box;
-  padding: 16px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+}
+
+.sidebar-panel {
+  flex: 0 0 auto;
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(196, 154, 90, 0.28);
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 14px;
+}
+
+.app-logo {
+  width: 44px;
+  height: 44px;
+  display: block;
+  object-fit: cover;
 }
 
 .sidebar-header h1 {
   margin: 0;
-  font-size: 24px;
+  color: #fff2d0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  line-height: 1.05;
 }
 
 .subtitle {
   margin-top: 4px;
   color: #c8aa72;
-  font-size: 13px;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+
+.sidebar-tools {
+  display: grid;
+  gap: 10px;
+}
+
+.search-control {
+  display: grid;
+  gap: 5px;
+  color: #c8aa72;
+  font-size: 12px;
+}
+
+.search-control input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 9px;
+  background: #241b13;
+  color: #a88b5f;
+  border: 1px solid #5a3a1e;
+}
+
+.search-control input:focus {
+  outline: 1px solid #c49a5a;
+}
+
+.search-results {
+  display: grid;
+  gap: 6px;
+}
+
+.search-results.hidden {
+  display: none;
+}
+
+.search-results-summary {
+  color: #a88b5f;
+  font-size: 12px;
+}
+
+#search-results-list {
+  display: grid;
+  gap: 5px;
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 3px;
+}
+
+.search-result-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 7px;
+  padding: 7px;
+  background: #241b13;
+  color: #f2e2bd;
+  border: 1px solid #5a3a1e;
+  cursor: pointer;
+  text-align: left;
+  transition: background 160ms ease, border-color 160ms ease;
+}
+
+.search-result-row:hover,
+.search-result-row:focus {
+  background: #332518;
+  border-color: #c49a5a;
+}
+
+.search-result-icon {
+  font-size: 16px;
+  text-align: center;
+}
+
+.search-result-main {
+  min-width: 0;
+}
+
+.search-result-main strong,
+.search-result-main small {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.search-result-main strong {
+  color: #fff2d0;
+  font-size: 12px;
+}
+
+.search-result-main small,
+.search-result-status,
+.search-empty {
+  color: #c8aa72;
+  font-size: 11px;
+}
+
+.search-result-status {
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.search-empty {
+  padding: 8px;
+  background: #241b13;
+  border: 1px solid #5a3a1e;
 }
 
 #add-marker-btn {
-  margin-top: 18px;
-  padding: 10px;
+  width: 100%;
+  padding: 9px 10px;
   background: #8b5a2b;
   color: #fff2d0;
   border: 1px solid #c49a5a;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 160ms ease, border-color 160ms ease;
 }
 
 #add-marker-btn:hover {
   background: #a66a32;
-}
-
-.sidebar-section {
-  margin-top: 22px;
-}
-
-.sidebar-section h2 {
-  font-size: 16px;
-  margin-bottom: 10px;
-  color: #e4c27a;
-}
-
-.sidebar-section label {
-  display: block;
-  margin: 8px 0;
-  cursor: pointer;
-}
-
-.sidebar-footer {
-  margin-top: 12px;
-  font-size: 12px;
-  color: #a88b5f;
+  border-color: #e4c27a;
 }
 
 #add-marker-btn.active {
@@ -72,9 +185,38 @@ Creator : Rathan
   color: white;
 }
 
-#marker-details-section {
-  border-top: 1px solid #5a3a1e;
-  padding-top: 14px;
+.marker-backup-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.marker-backup-actions button {
+  padding: 8px 6px;
+  background: #2a2118;
+  color: #f2e2bd;
+  border: 1px solid #8b5a2b;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 160ms ease, border-color 160ms ease;
+}
+
+.marker-backup-actions button:hover {
+  background: #3a2a1d;
+  border-color: #c49a5a;
+}
+
+.hidden-file-input {
+  display: none;
+}
+
+.sidebar-panel h2 {
+  margin: 0 0 8px;
+  color: #e4c27a;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 #marker-details-empty {
@@ -82,14 +224,24 @@ Creator : Rathan
   font-size: 13px;
 }
 
+#marker-details-form {
+  max-height: 640px;
+  overflow: hidden;
+  opacity: 1;
+  transition: max-height 220ms ease, opacity 180ms ease;
+}
+
 #marker-details-form.hidden {
-  display: none;
+  display: block;
+  max-height: 0;
+  opacity: 0;
 }
 
 #marker-details-form label {
   display: block;
-  margin-bottom: 10px;
-  font-size: 13px;
+  margin-bottom: 8px;
+  color: #c8aa72;
+  font-size: 12px;
 }
 
 #marker-details-form input,
@@ -104,15 +256,51 @@ Creator : Rathan
   border: 1px solid #8b5a2b;
 }
 
+#marker-details-form textarea {
+  resize: vertical;
+}
+
+.dialog-coordinates {
+  margin: 8px 0;
+  color: #c8aa72;
+  font-size: 12px;
+}
+
 .marker-detail-actions {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 8px;
 }
 
 .marker-detail-actions button {
-  flex: 1;
   padding: 8px;
   cursor: pointer;
+  font-weight: bold;
+}
+
+.marker-detail-actions .hidden {
+  display: none;
+}
+
+#edit-marker-move {
+  background: #2a2118;
+  color: #f2e2bd;
+  border: 1px solid #c49a5a;
+}
+
+#edit-marker-move.active {
+  background: #8b5a2b;
+  color: #fff2d0;
+}
+
+#edit-marker-cancel-move {
+  background: #3a2a1d;
+  color: #fff2d0;
+  border: 1px solid #c49a5a;
+}
+
+#marker-details-section.move-marker-active {
+  box-shadow: inset 3px 0 0 #ffd36a;
 }
 
 #edit-marker-save {
@@ -127,25 +315,161 @@ Creator : Rathan
   border: 1px solid #d97f7f;
 }
 
-#marker-stats-section {
-  border-top: 1px solid #5a3a1e;
-  padding-top: 14px;
+.sidebar-filter-panel {
+  flex: 1 1 auto;
+  min-height: 64px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+#category-list {
+  display: grid;
+  gap: 4px;
+}
+
+.category-filter {
+  border: 1px solid transparent;
+  transition: background 160ms ease, border-color 160ms ease;
+}
+
+.category-filter:hover {
+  background: rgba(196, 154, 90, 0.08);
+  border-color: rgba(196, 154, 90, 0.18);
+}
+
+.category-filter-row,
+.type-filter-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.category-filter-row {
+  min-height: 30px;
+  padding: 3px 5px;
+}
+
+.category-filter-toggle {
+  flex: 1;
+  min-width: 0;
+  padding: 4px 0;
+  background: transparent;
+  border: 0;
+  color: #f2e2bd;
+  cursor: pointer;
+  font: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  transition: color 160ms ease;
+}
+
+.category-filter-toggle:hover,
+.category-filter-toggle:focus {
+  color: #e4c27a;
+}
+
+.type-filter-list {
+  max-height: 1600px;
+  margin: 0 0 4px 28px;
+  padding-left: 10px;
+  border-left: 1px solid #5a3a1e;
+  overflow: hidden;
+  opacity: 1;
+  transition: max-height 220ms ease, opacity 180ms ease, margin 220ms ease;
+}
+
+.type-filter-list.hidden {
+  max-height: 0;
+  margin-bottom: 0;
+  opacity: 0;
+}
+
+.type-filter-label {
+  margin: 0;
+  padding: 4px 5px;
+  color: #c8aa72;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.type-filter-label:hover {
+  background: rgba(196, 154, 90, 0.1);
+  color: #f2e2bd;
+}
+
+.category-filter input,
+.type-filter-label input {
+  accent-color: #c49a5a;
 }
 
 .marker-stat-row {
   display: flex;
   justify-content: space-between;
-  font-size: 13px;
+  gap: 10px;
+  padding: 3px 0;
   color: #c8aa72;
+  font-size: 13px;
 }
 
-#sidebar-scroll {
-  flex: 1;
-  overflow-y: auto;
-  margin-top: 18px;
-  padding-right: 4px;
+.marker-stat-row strong {
+  color: #fff2d0;
 }
 
-#sidebar-scroll .sidebar-section:first-child {
-  margin-top: 0;
+.sidebar-footer {
+  display: grid;
+  gap: 4px;
+  border-bottom: 0;
+  color: #a88b5f;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.sidebar-footer strong {
+  display: block;
+  margin-top: 2px;
+  color: #c8aa72;
+  font-weight: normal;
+}
+
+#autosave-status[data-status="saved"] {
+  color: #7fd97f;
+}
+
+#autosave-status[data-status="saving"] {
+  color: #e4c27a;
+}
+
+#autosave-status[data-status="unsaved"] {
+  color: #d97f7f;
+}
+
+.import-mode-content {
+  max-width: 420px;
+}
+
+.import-mode-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 10px 0;
+  padding: 10px;
+  background: #2a2118;
+  border: 1px solid #5a3a1e;
+  cursor: pointer;
+}
+
+.import-mode-option strong,
+.import-mode-option small {
+  display: block;
+}
+
+.import-mode-option strong {
+  color: #fff2d0;
+}
+
+.import-mode-option small {
+  margin-top: 3px;
+  color: #c8aa72;
 }

@@ -1,14 +1,14 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 0.6.0
+Version : 0.8.1
 Creator : Rathan
 ==================================================
 */
 
 const APP_NAME = "RosalitaRP Explorer";
 const APP_SUBTITLE = "Community Resource Map";
-const APP_VERSION = "0.6.0";
+const APP_VERSION = "0.8.1";
 const APP_CREATOR = "Rathan";
 
 const MAP_WIDTH = 9216;
@@ -21,6 +21,7 @@ const MAX_ZOOM = 4;
 const MODES = {
   BROWSE: "browse",
   ADD_MARKER: "add-marker",
+  MOVE_MARKER: "move-marker",
   EDIT_MARKER: "edit-marker",
   DELETE_MARKER: "delete-marker",
 };

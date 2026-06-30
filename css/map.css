@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 0.6.0
+Version : 0.8.1
 Creator : Rathan
 ==================================================
 */
@@ -67,4 +67,8 @@ Creator : Rathan
 
 .category-marker.selected.status-invalid .category-marker-icon {
   box-shadow: 0 0 12px rgba(214, 85, 85, 0.9);
+}
+
+body.move-marker-mode .leaflet-container {
+    cursor: crosshair;
 }
