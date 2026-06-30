@@ -92,7 +92,7 @@ function saveMarkerFromDialog(event) {
   event.preventDefault();
 
   const markerData = {
-    id: Date.now(),
+    id: crypto.randomUUID(),
     name: document.getElementById("marker-name").value.trim(),
     category: document.getElementById("marker-category").value,
     type: document.getElementById("marker-type").value,

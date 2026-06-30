@@ -71,3 +71,58 @@ Creator : Rathan
   border-color: #7fd97f;
   color: white;
 }
+
+#marker-details-section {
+  border-top: 1px solid #5a3a1e;
+  padding-top: 14px;
+}
+
+#marker-details-empty {
+  color: #a88b5f;
+  font-size: 13px;
+}
+
+#marker-details-form.hidden {
+  display: none;
+}
+
+#marker-details-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+#marker-details-form input,
+#marker-details-form select,
+#marker-details-form textarea {
+  width: 100%;
+  margin-top: 4px;
+  padding: 7px;
+  box-sizing: border-box;
+  background: #2a2118;
+  color: #f2e2bd;
+  border: 1px solid #8b5a2b;
+}
+
+.marker-detail-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.marker-detail-actions button {
+  flex: 1;
+  padding: 8px;
+  cursor: pointer;
+}
+
+#edit-marker-save {
+  background: #2f8f2f;
+  color: white;
+  border: 1px solid #7fd97f;
+}
+
+#edit-marker-delete {
+  background: #8f2f2f;
+  color: white;
+  border: 1px solid #d97f7f;
+}

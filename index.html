@@ -1,164 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>RosalitaRP Explorer</title>
+  <meta charset="UTF-8" />
+  <title>RosalitaRP Explorer</title>
 
-    <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/map.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/dialogs.css">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/map.css" />
+  <link rel="stylesheet" href="css/sidebar.css" />
+  <link rel="stylesheet" href="css/dialogs.css" />
 </head>
 
 <body>
+  <div id="app">
+    <aside id="sidebar">
+      <div class="sidebar-header">
+        <h1 id="app-title"></h1>
+        <div class="subtitle" id="app-subtitle"></div>
+      </div>
 
-    <div id="app">
+      <button id="add-marker-btn">+ Add Marker</button>
 
-        <aside id="sidebar">
+      <div class="sidebar-section">
+        <h2>Categories</h2>
+        <div id="category-list">Loading...</div>
+      </div>
 
-            <div class="sidebar-header">
-                <h1 id="app-title"></h1>
-                <div class="subtitle" id="app-subtitle"></div>
-            </div>
+      <div class="sidebar-section" id="marker-details-section">
+        <h2>Selected Marker</h2>
 
-            <button id="add-marker-btn">
-                + Add Marker
-            </button>
-
-            <div class="sidebar-section">
-
-                <h2>Categories</h2>
-
-                <div id="category-list">
-                    Loading...
-                </div>
-
-            </div>
-
-            <div class="sidebar-footer">
-                Version 0.4.0
-            </div>
-
-        </aside>
-
-        <main id="map"></main>
-
-    </div>
-
-    <!-- =======================================================
-         Add Marker Dialog
-    ======================================================== -->
-
-    <div id="marker-dialog" class="modal hidden">
-
-        <div class="modal-content">
-
-            <div class="modal-header">
-
-                <h2>Add Marker</h2>
-
-                <button id="marker-dialog-close">
-                    ×
-                </button>
-
-            </div>
-
-            <form id="marker-form">
-
-                <input type="hidden" id="marker-x">
-                <input type="hidden" id="marker-y">
-
-                <label>
-
-                    Name
-
-                    <input
-                        type="text"
-                        id="marker-name"
-                        required>
-
-                </label>
-
-                <label>
-
-                    Category
-
-                    <select
-                        id="marker-category"
-                        required>
-                    </select>
-
-                </label>
-                
-                <label>
-                  Type
-
-                  <select
-                    id="marker-type"
-                    required>
-                  </select>
-                </label>
-
-                <label>
-
-                    Notes
-
-                    <textarea
-                        id="marker-notes"
-                        rows="4"></textarea>
-
-                </label>
-
-                <div class="dialog-coordinates">
-
-                    X:
-                    <span id="marker-x-display">0</span>
-
-                    |
-
-                    Y:
-                    <span id="marker-y-display">0</span>
-
-                </div>
-
-                <div class="modal-actions">
-
-                    <button
-                        type="button"
-                        id="marker-cancel">
-
-                        Cancel
-
-                    </button>
-
-                    <button
-                        type="submit"
-                        id="marker-save">
-
-                        Save
-
-                    </button>
-
-                </div>
-
-            </form>
-
+        <div id="marker-details-empty">
+          No marker selected.
         </div>
 
+        <form id="marker-details-form" class="hidden">
+          <label>
+            Name
+            <input type="text" id="edit-marker-name" required />
+          </label>
+
+          <label>
+            Category
+            <select id="edit-marker-category" required></select>
+          </label>
+
+          <label>
+            Type
+            <select id="edit-marker-type" required></select>
+          </label>
+
+          <label>
+            Notes
+            <textarea id="edit-marker-notes" rows="4"></textarea>
+          </label>
+
+          <div class="dialog-coordinates">
+            X: <span id="edit-marker-x-display">0</span> |
+            Y: <span id="edit-marker-y-display">0</span>
+          </div>
+
+          <div class="marker-detail-actions">
+            <button type="submit" id="edit-marker-save">Save</button>
+            <button type="button" id="edit-marker-delete">Delete</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="sidebar-footer">
+        Version 0.6.0
+      </div>
+    </aside>
+
+    <main id="map"></main>
+  </div>
+
+  <div id="marker-dialog" class="modal hidden">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Add Marker</h2>
+        <button id="marker-dialog-close">×</button>
+      </div>
+
+      <form id="marker-form">
+        <input type="hidden" id="marker-x" />
+        <input type="hidden" id="marker-y" />
+
+        <label>
+          Name
+          <input type="text" id="marker-name" required />
+        </label>
+
+        <label>
+          Category
+          <select id="marker-category" required></select>
+        </label>
+
+        <label>
+          Type
+          <select id="marker-type" required></select>
+        </label>
+
+        <label>
+          Notes
+          <textarea id="marker-notes" rows="4"></textarea>
+        </label>
+
+        <div class="dialog-coordinates">
+          X: <span id="marker-x-display">0</span> |
+          Y: <span id="marker-y-display">0</span>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" id="marker-cancel">Cancel</button>
+          <button type="submit" id="marker-save">Save</button>
+        </div>
+      </form>
     </div>
+  </div>
 
-    <script src="vendor/leaflet/leaflet.js"></script>
-    <script src="js/config.js"></script>
-    <script src="js/map.js"></script>
-    <script src="js/categories.js"></script>
-    <script src="js/types.js"></script>
-    <script src="js/markers.js"></script>
-    <script src="js/sidebar.js"></script>
-    <script src="js/dialogs.js"></script>
-    <script src="js/main.js"></script>
+  <script src="vendor/leaflet/leaflet.js"></script>
 
+  <script src="js/config.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/categories.js"></script>
+  <script src="js/types.js"></script>
+  <script src="js/markers.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/dialogs.js"></script>
+  <script src="js/main.js"></script>
 </body>
-
 </html>
