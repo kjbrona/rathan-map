@@ -273,6 +273,7 @@ async function initializeMarkerDetailsPanel() {
         status: "unverified",
         confidence: "guess",
         notes: "",
+        dangerRadius: DEFAULT_DANGER_RADIUS,
         fields: {},
         templateData: {},
       });
@@ -321,6 +322,11 @@ async function initializeMarkerDetailsPanel() {
           : (existingMarker && existingMarker.notes) || "",
         fields: templateValues.templateData,
         templateData: templateValues.templateData,
+        dangerRadius: getDangerRadiusValue(
+          categoryId,
+          templateValues.shared.dangerRadius,
+          existingMarker
+        ),
       });
     });
 

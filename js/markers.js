@@ -18,7 +18,13 @@ function renderMarker(markerData, selected = false) {
 
   const iconText = type ? type.icon : category ? category.icon : "📍";
 
-  const leafletMarker = L.marker([markerData.y, markerData.x], {
+  const markerLatLng = [markerData.y, markerData.x];
+
+  if (markerData.category === "dangerous-animals") {
+    renderDangerZone(markerData, markerLatLng);
+  }
+
+  const leafletMarker = L.marker(markerLatLng, {
     icon: createCategoryIcon(iconText, selected, markerData.status),
   }).addTo(renderedMarkerLayer);
 
@@ -41,6 +47,21 @@ function renderMarker(markerData, selected = false) {
 
     openMarkerContextMenu(markerData.id, event.originalEvent);
   });
+}
+
+function renderDangerZone(markerData, markerLatLng) {
+  L.circle(markerLatLng, {
+    radius: getDangerRadiusValue(
+      markerData.category,
+      markerData.dangerRadius
+    ),
+    color: "#c4511f",
+    weight: 2,
+    opacity: 0.55,
+    fillColor: "#f97316",
+    fillOpacity: 0.16,
+    interactive: false,
+  }).addTo(renderedMarkerLayer);
 }
 
 function createCategoryIcon(iconText, selected, status = "unverified") {

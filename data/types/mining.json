@@ -1,6 +1,30 @@
 [
-  { "id": "coal", "name": "Coal", "icon": "\u26cf", "enabled": true },
-  { "id": "gold", "name": "Gold", "icon": "\u26cf", "enabled": true },
-  { "id": "iron", "name": "Iron", "icon": "\u26cf", "enabled": true },
-  { "id": "sulfur", "name": "Sulfur", "icon": "\u26cf", "enabled": true }
+  {
+    "id": "coal",
+    "name": "Coal",
+    "icon": "\u26cf",
+    "enabled": true,
+    "description": "Mine whose primary output is coal."
+  },
+  {
+    "id": "gold",
+    "name": "Gold",
+    "icon": "\u26cf",
+    "enabled": true,
+    "description": "Mine whose primary output is gold."
+  },
+  {
+    "id": "iron",
+    "name": "Iron",
+    "icon": "\u26cf",
+    "enabled": true,
+    "description": "Mine whose primary output is iron."
+  },
+  {
+    "id": "sulfur",
+    "name": "Sulfur",
+    "icon": "\u26cf",
+    "enabled": true,
+    "description": "Mine whose primary output is sulfur."
+  }
 ]

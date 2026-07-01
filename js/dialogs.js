@@ -127,6 +127,10 @@ function saveMarkerFromDialog(event) {
     notes: templateValues.shared.notes || "",
     fields: templateValues.templateData,
     templateData: templateValues.templateData,
+    dangerRadius: getDangerRadiusValue(
+      categoryId,
+      templateValues.shared.dangerRadius
+    ),
     x: Number(document.getElementById("marker-x").value),
     y: Number(document.getElementById("marker-y").value),
     createdAt: new Date().toISOString(),

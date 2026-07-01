@@ -1,0 +1,44 @@
+[
+  {
+    "id": "bear",
+    "name": "Bear",
+    "icon": "\ud83d\udc3b",
+    "enabled": true,
+    "description": "Dangerous bear territory or spawn location."
+  },
+  {
+    "id": "wolf",
+    "name": "Wolf",
+    "icon": "\ud83d\udc3a",
+    "enabled": true,
+    "description": "Dangerous wolf territory or spawn location."
+  },
+  {
+    "id": "cougar",
+    "name": "Cougar",
+    "icon": "\ud83d\udc06",
+    "enabled": true,
+    "description": "Dangerous cougar territory or spawn location."
+  },
+  {
+    "id": "panther",
+    "name": "Panther",
+    "icon": "\ud83d\udc08\u200d\u2b1b",
+    "enabled": true,
+    "description": "Dangerous panther territory or spawn location."
+  },
+  {
+    "id": "alligator",
+    "name": "Alligator",
+    "icon": "\ud83d\udc0a",
+    "enabled": true,
+    "description": "Dangerous alligator territory or spawn location."
+  },
+  {
+    "id": "snake",
+    "name": "Snake",
+    "icon": "\ud83d\udc0d",
+    "enabled": true,
+    "description": "Dangerous snake territory or spawn location."
+  }
+]

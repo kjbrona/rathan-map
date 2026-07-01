@@ -10,6 +10,7 @@ const APP_NAME = "RosalitaRP Explorer";
 const APP_SUBTITLE = "Community Resource Map";
 const APP_VERSION = "1.1.0";
 const APP_CREATOR = "Rathan";
+const DEFAULT_DANGER_RADIUS = 50;
 
 const MAP_WIDTH = 9216;
 const MAP_HEIGHT = 7168;

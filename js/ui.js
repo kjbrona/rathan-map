@@ -94,6 +94,16 @@ function createTemplateFieldControl(field, markerData) {
       option.textContent = optionData.label;
       control.appendChild(option);
     });
+  } else if (field.type === "number") {
+    control.type = "number";
+
+    if (field.min !== undefined) {
+      control.min = field.min;
+    }
+
+    if (field.step !== undefined) {
+      control.step = field.step;
+    }
   } else {
     control.type = "text";
   }

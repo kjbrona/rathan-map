@@ -1,95 +1,403 @@
 {
   "default": [
-    { "id": "status", "label": "Status", "type": "select", "shared": true, "default": "unverified", "options": [
-      { "value": "unverified", "label": "Unverified" },
-      { "value": "verified", "label": "Verified" },
-      { "value": "invalid", "label": "Invalid" }
-    ] },
-    { "id": "confidence", "label": "Confidence", "type": "select", "shared": true, "default": "guess", "options": [
-      { "value": "exact", "label": "Exact" },
-      { "value": "approximate", "label": "Approximate" },
-      { "value": "guess", "label": "Guess" }
-    ] },
-    { "id": "notes", "label": "Notes", "type": "textarea", "shared": true, "default": "" }
+    {
+      "id": "status",
+      "label": "Status",
+      "type": "select",
+      "shared": true,
+      "default": "unverified",
+      "options": [
+        {
+          "value": "unverified",
+          "label": "Unverified"
+        },
+        {
+          "value": "verified",
+          "label": "Verified"
+        },
+        {
+          "value": "invalid",
+          "label": "Invalid"
+        }
+      ]
+    },
+    {
+      "id": "confidence",
+      "label": "Confidence",
+      "type": "select",
+      "shared": true,
+      "default": "guess",
+      "options": [
+        {
+          "value": "exact",
+          "label": "Exact"
+        },
+        {
+          "value": "approximate",
+          "label": "Approximate"
+        },
+        {
+          "value": "guess",
+          "label": "Guess"
+        }
+      ]
+    },
+    {
+      "id": "notes",
+      "label": "Notes",
+      "type": "textarea",
+      "shared": true,
+      "default": ""
+    }
   ],
   "categories": {
     "herbs": [
-      { "id": "status", "label": "Status", "type": "select", "shared": true, "default": "unverified", "options": [
-        { "value": "unverified", "label": "Unverified" },
-        { "value": "verified", "label": "Verified" },
-        { "value": "invalid", "label": "Invalid" }
-      ] },
-      { "id": "confidence", "label": "Confidence", "type": "select", "shared": true, "default": "guess", "options": [
-        { "value": "exact", "label": "Exact" },
-        { "value": "approximate", "label": "Approximate" },
-        { "value": "guess", "label": "Guess" }
-      ] },
-      { "id": "herbSubcategory", "label": "Herb Subcategory", "type": "select", "default": "unknown", "options": [
-        { "value": "food-seasoning", "label": "Food/Seasoning" },
-        { "value": "medicinal", "label": "Medicinal" },
-        { "value": "unknown", "label": "Unknown" }
-      ] },
-      { "id": "plantsAtLocation", "label": "Plants at Location", "type": "text", "default": "", "placeholder": "1-6" },
-      { "id": "yieldPerPlant", "label": "Yield Per Plant", "type": "text", "default": "", "placeholder": "Random per plant" },
-      { "id": "notes", "label": "Notes", "type": "textarea", "shared": true, "default": "" }
+      {
+        "id": "status",
+        "label": "Status",
+        "type": "select",
+        "shared": true,
+        "default": "unverified",
+        "options": [
+          {
+            "value": "unverified",
+            "label": "Unverified"
+          },
+          {
+            "value": "verified",
+            "label": "Verified"
+          },
+          {
+            "value": "invalid",
+            "label": "Invalid"
+          }
+        ]
+      },
+      {
+        "id": "confidence",
+        "label": "Confidence",
+        "type": "select",
+        "shared": true,
+        "default": "guess",
+        "options": [
+          {
+            "value": "exact",
+            "label": "Exact"
+          },
+          {
+            "value": "approximate",
+            "label": "Approximate"
+          },
+          {
+            "value": "guess",
+            "label": "Guess"
+          }
+        ]
+      },
+      {
+        "id": "herbSubcategory",
+        "label": "Herb Subcategory",
+        "type": "select",
+        "default": "unknown",
+        "options": [
+          {
+            "value": "food-seasoning",
+            "label": "Food/Seasoning"
+          },
+          {
+            "value": "medicinal",
+            "label": "Medicinal"
+          },
+          {
+            "value": "unknown",
+            "label": "Unknown"
+          }
+        ]
+      },
+      {
+        "id": "plantsAtLocation",
+        "label": "Plants at Location",
+        "type": "text",
+        "default": "",
+        "placeholder": "1-6"
+      },
+      {
+        "id": "yieldPerPlant",
+        "label": "Yield Per Plant",
+        "type": "text",
+        "default": "",
+        "placeholder": "Random per plant"
+      },
+      {
+        "id": "notes",
+        "label": "Notes",
+        "type": "textarea",
+        "shared": true,
+        "default": ""
+      }
     ],
     "trees": [
-      { "id": "status", "label": "Status", "type": "select", "shared": true, "default": "unverified", "options": [
-        { "value": "unverified", "label": "Unverified" },
-        { "value": "verified", "label": "Verified" },
-        { "value": "invalid", "label": "Invalid" }
-      ] },
-      { "id": "confidence", "label": "Confidence", "type": "select", "shared": true, "default": "guess", "options": [
-        { "value": "exact", "label": "Exact" },
-        { "value": "approximate", "label": "Approximate" },
-        { "value": "guess", "label": "Guess" }
-      ] },
-      { "id": "estimatedTreeCount", "label": "Estimated Tree Count", "type": "text", "default": "", "placeholder": "Cluster count" },
-      { "id": "toolRequired", "label": "Tool Required", "type": "select", "default": "axe", "options": [
-        { "value": "axe", "label": "Axe" }
-      ] },
-      { "id": "notes", "label": "Notes", "type": "textarea", "shared": true, "default": "" }
+      {
+        "id": "status",
+        "label": "Status",
+        "type": "select",
+        "shared": true,
+        "default": "unverified",
+        "options": [
+          {
+            "value": "unverified",
+            "label": "Unverified"
+          },
+          {
+            "value": "verified",
+            "label": "Verified"
+          },
+          {
+            "value": "invalid",
+            "label": "Invalid"
+          }
+        ]
+      },
+      {
+        "id": "confidence",
+        "label": "Confidence",
+        "type": "select",
+        "shared": true,
+        "default": "guess",
+        "options": [
+          {
+            "value": "exact",
+            "label": "Exact"
+          },
+          {
+            "value": "approximate",
+            "label": "Approximate"
+          },
+          {
+            "value": "guess",
+            "label": "Guess"
+          }
+        ]
+      },
+      {
+        "id": "estimatedTreeCount",
+        "label": "Estimated Tree Count",
+        "type": "text",
+        "default": "",
+        "placeholder": "Cluster count"
+      },
+      {
+        "id": "toolRequired",
+        "label": "Tool Required",
+        "type": "select",
+        "default": "axe",
+        "options": [
+          {
+            "value": "axe",
+            "label": "Axe"
+          }
+        ]
+      },
+      {
+        "id": "notes",
+        "label": "Notes",
+        "type": "textarea",
+        "shared": true,
+        "default": ""
+      }
     ],
     "fishing": [
-      { "id": "status", "label": "Status", "type": "select", "shared": true, "default": "unverified", "options": [
-        { "value": "unverified", "label": "Unverified" },
-        { "value": "verified", "label": "Verified" },
-        { "value": "invalid", "label": "Invalid" }
-      ] },
-      { "id": "confidence", "label": "Confidence", "type": "select", "shared": true, "default": "guess", "options": [
-        { "value": "exact", "label": "Exact" },
-        { "value": "approximate", "label": "Approximate" },
-        { "value": "guess", "label": "Guess" }
-      ] },
-      { "id": "preferredBait", "label": "Preferred Bait", "type": "text", "default": "" },
-      { "id": "bestTime", "label": "Best Time", "type": "text", "default": "" },
-      { "id": "weather", "label": "Weather", "type": "text", "default": "" },
-      { "id": "notes", "label": "Notes", "type": "textarea", "shared": true, "default": "" }
+      {
+        "id": "status",
+        "label": "Status",
+        "type": "select",
+        "shared": true,
+        "default": "unverified",
+        "options": [
+          {
+            "value": "unverified",
+            "label": "Unverified"
+          },
+          {
+            "value": "verified",
+            "label": "Verified"
+          },
+          {
+            "value": "invalid",
+            "label": "Invalid"
+          }
+        ]
+      },
+      {
+        "id": "confidence",
+        "label": "Confidence",
+        "type": "select",
+        "shared": true,
+        "default": "guess",
+        "options": [
+          {
+            "value": "exact",
+            "label": "Exact"
+          },
+          {
+            "value": "approximate",
+            "label": "Approximate"
+          },
+          {
+            "value": "guess",
+            "label": "Guess"
+          }
+        ]
+      },
+      {
+        "id": "preferredBait",
+        "label": "Preferred Bait",
+        "type": "text",
+        "default": ""
+      },
+      {
+        "id": "bestTime",
+        "label": "Best Time",
+        "type": "text",
+        "default": ""
+      },
+      {
+        "id": "weather",
+        "label": "Weather",
+        "type": "text",
+        "default": ""
+      },
+      {
+        "id": "notes",
+        "label": "Notes",
+        "type": "textarea",
+        "shared": true,
+        "default": ""
+      }
     ],
     "mining": [
-      { "id": "status", "label": "Status", "type": "select", "shared": true, "default": "unverified", "options": [
-        { "value": "unverified", "label": "Unverified" },
-        { "value": "verified", "label": "Verified" },
-        { "value": "invalid", "label": "Invalid" }
-      ] },
-      { "id": "confidence", "label": "Confidence", "type": "select", "shared": true, "default": "guess", "options": [
-        { "value": "exact", "label": "Exact" },
-        { "value": "approximate", "label": "Approximate" },
-        { "value": "guess", "label": "Guess" }
-      ] },
-      { "id": "mineName", "label": "Mine Name", "type": "text", "default": "" },
-      { "id": "possibleDrops", "label": "Possible Drops", "type": "textarea", "default": "", "placeholder": "Gold Flakes\nGold Nuggets\nNitrite\nSulfur\nRock Salt\nRock\nLimestone\nUncut Sapphire\nUncut Diamond\nUncut Emerald\nUncut Opal\nUncut Ruby" },
-      { "id": "notes", "label": "Notes", "type": "textarea", "shared": true, "default": "" }
+      {
+        "id": "status",
+        "label": "Status",
+        "type": "select",
+        "shared": true,
+        "default": "unverified",
+        "options": [
+          {
+            "value": "unverified",
+            "label": "Unverified"
+          },
+          {
+            "value": "verified",
+            "label": "Verified"
+          },
+          {
+            "value": "invalid",
+            "label": "Invalid"
+          }
+        ]
+      },
+      {
+        "id": "confidence",
+        "label": "Confidence",
+        "type": "select",
+        "shared": true,
+        "default": "guess",
+        "options": [
+          {
+            "value": "exact",
+            "label": "Exact"
+          },
+          {
+            "value": "approximate",
+            "label": "Approximate"
+          },
+          {
+            "value": "guess",
+            "label": "Guess"
+          }
+        ]
+      },
+      {
+        "id": "mineName",
+        "label": "Mine Name",
+        "type": "text",
+        "default": ""
+      },
+      {
+        "id": "possibleDrops",
+        "label": "Possible Drops",
+        "type": "textarea",
+        "default": "",
+        "placeholder": "Gold Flakes\nGold Nuggets\nNitrite\nSulfur\nRock Salt\nRock\nLimestone\nUncut Sapphire\nUncut Diamond\nUncut Emerald\nUncut Opal\nUncut Ruby"
+      },
+      {
+        "id": "notes",
+        "label": "Notes",
+        "type": "textarea",
+        "shared": true,
+        "default": ""
+      }
     ],
     "npcs": [
-      { "id": "npcName", "label": "NPC Name", "type": "text", "default": "" },
-      { "id": "town", "label": "Town", "type": "text", "default": "" },
-      { "id": "openingHours", "label": "Opening Hours", "type": "text", "default": "" },
-      { "id": "notes", "label": "Notes", "type": "textarea", "shared": true, "default": "" }
+      {
+        "id": "npcName",
+        "label": "NPC Name",
+        "type": "text",
+        "default": ""
+      },
+      {
+        "id": "town",
+        "label": "Town",
+        "type": "text",
+        "default": ""
+      },
+      {
+        "id": "openingHours",
+        "label": "Opening Hours",
+        "type": "text",
+        "default": ""
+      },
+      {
+        "id": "notes",
+        "label": "Notes",
+        "type": "textarea",
+        "shared": true,
+        "default": ""
+      }
     ],
     "crafting-benches": [
-      { "id": "requirements", "label": "Requirements", "type": "textarea", "default": "" },
-      { "id": "notes", "label": "Notes", "type": "textarea", "shared": true, "default": "" }
+      {
+        "id": "requirements",
+        "label": "Requirements",
+        "type": "textarea",
+        "default": ""
+      },
+      {
+        "id": "notes",
+        "label": "Notes",
+        "type": "textarea",
+        "shared": true,
+        "default": ""
+      }
+    ],
+    "dangerous-animals": [
+      {
+        "id": "dangerRadius",
+        "label": "Danger Radius",
+        "type": "number",
+        "shared": true,
+        "default": "50",
+        "min": 0,
+        "step": 25
+      },
+      {
+        "id": "notes",
+        "label": "Notes",
+        "type": "textarea",
+        "shared": true,
+        "default": ""
+      }
     ]
   }
 }

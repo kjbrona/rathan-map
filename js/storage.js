@@ -28,6 +28,7 @@ const MARKER_STORAGE_FIELDS = [
   "status",
   "confidence",
   "notes",
+  "dangerRadius",
   "fields",
   "templateData",
   "x",
@@ -388,6 +389,10 @@ function normalizeStoredMarker(markerData) {
   storedMarker.status = markerData.status || "unverified";
   storedMarker.confidence = markerData.confidence || "guess";
   storedMarker.notes = markerData.notes || "";
+  storedMarker.dangerRadius = getDangerRadiusValue(
+    storedMarker.category,
+    markerData.dangerRadius
+  );
   storedMarker.fields =
     markerData.fields && typeof markerData.fields === "object"
       ? { ...markerData.fields }
@@ -468,4 +473,18 @@ function removeDuplicatedTemplateFields(categoryId, templateValues) {
       delete templateValues[fieldId];
     }
   );
+}
+
+function getDangerRadiusValue(categoryId, value) {
+  if (categoryId !== "dangerous-animals") {
+    return "";
+  }
+
+  const radius = Number(value);
+
+  if (!Number.isFinite(radius) || radius <= 0) {
+    return DEFAULT_DANGER_RADIUS;
+  }
+
+  return radius;
 }

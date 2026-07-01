@@ -1,6 +1,10 @@
 # RosalitaRP Explorer
 
 ## v1.1.0
+- Added Dangerous Animals marker category with Bear, Wolf, Cougar, Panther, Alligator, and Snake types.
+- Added subtle danger zone circles for Dangerous Animal markers with editable `dangerRadius`.
+- Added default 50 map-unit danger radius for new and older Dangerous Animal markers.
+- Added description metadata to Mining type data.
 - Added resource-specific templates for Mining, Herbs, and Trees.
 - Added nested `templateData` marker storage while preserving existing marker fields.
 - Updated Mining markers with mine name, possible drops, and notes.
