@@ -115,7 +115,7 @@
         <div>Creator: <span id="app-creator"></span></div>
         <div>
           Data Source:
-          <strong>Local Browser Storage</strong>
+          <strong id="data-source-status">Local Browser Storage</strong>
         </div>
         <div>Autosave: <span id="autosave-status" data-status="saved">Saved</span></div>
       </div>
@@ -204,7 +204,12 @@
 
   <script src="vendor/leaflet/leaflet.js"></script>
 
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
+
   <script src="js/config.js"></script>
+  <script src="js/firebaseConfig.js"></script>
+  <script src="js/firebaseStorage.js"></script>
   <script src="js/map.js"></script>
   <script src="js/categories.js"></script>
   <script src="js/types.js"></script>

@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 0.9.0
+Version : 1.0.0
 Creator : Rathan
 ==================================================
 */
@@ -131,7 +131,7 @@ function startMoveMarkerFromContext(markerId) {
   enterMoveMarkerMode();
 }
 
-function deleteMarkerFromContext(markerId) {
+async function deleteMarkerFromContext(markerId) {
   const markerData = getMarkerById(markerId);
 
   if (!markerData) {
@@ -139,7 +139,7 @@ function deleteMarkerFromContext(markerId) {
   }
 
   if (confirm(`Delete marker "${markerData.name}"?`)) {
-    deleteMarker(markerId);
+    await deleteMarker(markerId);
   }
 }
 

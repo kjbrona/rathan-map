@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 0.9.0
+Version : 1.0.0
 Creator : Rathan
 ==================================================
 */
@@ -10,7 +10,14 @@ const MARKER_STORAGE_KEY = "rosalitarp-explorer-markers";
 const FILTER_STORAGE_KEY = "rosalitarp-explorer-filters";
 const STORAGE_APPLICATION = "RosalitaRP Explorer";
 const STORAGE_VERSION = APP_VERSION;
-const SUPPORTED_IMPORT_VERSIONS = ["0.7.0", "0.8.0", "0.8.1", "0.8.2", "0.9.0"];
+const SUPPORTED_IMPORT_VERSIONS = [
+  "0.7.0",
+  "0.8.0",
+  "0.8.1",
+  "0.8.2",
+  "0.9.0",
+  "1.0.0",
+];
 
 const MARKER_STORAGE_FIELDS = [
   "id",
@@ -27,7 +34,75 @@ const MARKER_STORAGE_FIELDS = [
   "modifiedAt",
 ];
 
-function saveMarkers(markerData) {
+async function saveMarkers(markerData) {
+  if (isFirebaseStorageAvailable()) {
+    const firebaseSaved = await saveMarkersToFirebase(markerData);
+
+    if (firebaseSaved) {
+      saveMarkersToLocalStorage(markerData);
+      return {
+        ok: true,
+        markerCount: sanitizeMarkers(markerData).length,
+      };
+    }
+  }
+
+  return saveMarkersToLocalStorage(markerData);
+}
+
+async function saveMarker(markerData, markerCollectionData) {
+  if (isFirebaseStorageAvailable()) {
+    const firebaseSaved = await saveMarkerToFirebase(markerData);
+
+    if (firebaseSaved) {
+      saveMarkersToLocalStorage(markerCollectionData);
+      return {
+        ok: true,
+        markerCount: sanitizeMarkers(markerCollectionData).length,
+      };
+    }
+  }
+
+  return saveMarkersToLocalStorage(markerCollectionData);
+}
+
+async function deleteStoredMarker(markerId, markerCollectionData) {
+  if (isFirebaseStorageAvailable()) {
+    const firebaseDeleted = await deleteMarkerFromFirebase(markerId);
+
+    if (firebaseDeleted) {
+      saveMarkersToLocalStorage(markerCollectionData);
+      return {
+        ok: true,
+        markerCount: sanitizeMarkers(markerCollectionData).length,
+      };
+    }
+  }
+
+  return saveMarkersToLocalStorage(markerCollectionData);
+}
+
+async function loadMarkers() {
+  const firebaseReady = await initializeFirebaseStorage();
+
+  if (firebaseReady) {
+    const firebaseMarkers = await loadMarkersFromFirebase();
+
+    if (firebaseMarkers) {
+      saveMarkersToLocalStorage(firebaseMarkers);
+      subscribeToFirebaseMarkers(applyRemoteMarkers);
+      updateDataSourceStatus("Firebase Connected");
+      return sanitizeMarkers(firebaseMarkers);
+    }
+  }
+
+  updateDataSourceStatus(
+    firebaseReady ? "Firebase Offline" : "Local Browser Storage"
+  );
+  return loadMarkersFromLocalStorage();
+}
+
+function saveMarkersToLocalStorage(markerData) {
   if (!canUseLocalStorage()) {
     return {
       ok: false,
@@ -53,7 +128,7 @@ function saveMarkers(markerData) {
   }
 }
 
-function loadMarkers() {
+function loadMarkersFromLocalStorage() {
   if (!canUseLocalStorage()) {
     return [];
   }
@@ -79,6 +154,14 @@ function loadMarkers() {
   } catch (error) {
     console.warn("Saved marker data contains invalid JSON.", error);
     return [];
+  }
+}
+
+function updateDataSourceStatus(statusText) {
+  const dataSourceStatus = document.getElementById("data-source-status");
+
+  if (dataSourceStatus) {
+    dataSourceStatus.textContent = statusText;
   }
 }
 

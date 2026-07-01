@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 0.9.0
+Version : 1.0.0
 Creator : Rathan
 ==================================================
 */
@@ -36,13 +36,13 @@ async function initializeMarkerManager() {
   );
 
   applySavedFilterState();
-  markers = loadMarkers();
+  markers = await loadMarkers();
   setAutosaveStatus("saved");
 }
 
 function addMarker(markerData) {
   markers.push(markerData);
-  persistMarkers();
+  persistMarker(markerData);
   selectMarker(markerData.id);
   updateMarkerStats();
 }
@@ -61,7 +61,7 @@ async function updateMarker(markerId, updates) {
   Object.assign(markerData, updates);
   markerData.modifiedAt = new Date().toISOString();
 
-  persistMarkers();
+  await persistMarker(markerData);
   selectMarker(markerId);
   updateMarkerStats();
 }
@@ -87,11 +87,11 @@ async function moveSelectedMarkerTo(latlng) {
   cancelMoveMarkerMode();
 }
 
-function deleteMarker(markerId) {
+async function deleteMarker(markerId) {
   markers = markers.filter((marker) => marker.id !== markerId);
 
   selectedMarkerId = null;
-  persistMarkers();
+  await removeStoredMarker(markerId);
   refreshMarkers();
   renderMarkerDetails(null);
   updateMarkerStats();
@@ -134,6 +134,25 @@ function refreshMarkers() {
 
   updateMarkerStats();
   refreshSearchResults();
+}
+
+function applyRemoteMarkers(remoteMarkers) {
+  const previousSelectedMarkerId = selectedMarkerId;
+  markers = sanitizeMarkers(remoteMarkers);
+
+  if (
+    previousSelectedMarkerId &&
+    !markers.some((marker) => marker.id === previousSelectedMarkerId)
+  ) {
+    selectedMarkerId = null;
+    renderMarkerDetails(null);
+  }
+
+  refreshMarkers();
+
+  if (selectedMarkerId) {
+    renderMarkerDetails(getMarkerById(selectedMarkerId));
+  }
 }
 
 function isMarkerVisible(markerData) {
@@ -264,11 +283,11 @@ function refreshSearchResults() {
   }
 }
 
-function replaceMarkers(importedMarkers) {
+async function replaceMarkers(importedMarkers) {
   const replacementMarkers = sanitizeMarkers(importedMarkers);
   markers = replacementMarkers;
   selectedMarkerId = null;
-  persistMarkers();
+  await persistMarkers();
   refreshMarkers();
   renderMarkerDetails(null);
   updateMarkerStats();
@@ -279,11 +298,11 @@ function replaceMarkers(importedMarkers) {
   };
 }
 
-function mergeMarkers(importedMarkers) {
+async function mergeMarkers(importedMarkers) {
   const originalMarkerCount = markers.length;
   markers = mergeMarkerCollections(markers, importedMarkers);
   selectedMarkerId = null;
-  persistMarkers();
+  await persistMarkers();
   refreshMarkers();
   renderMarkerDetails(null);
   updateMarkerStats();
@@ -294,10 +313,42 @@ function mergeMarkers(importedMarkers) {
   };
 }
 
-function persistMarkers() {
+async function persistMarkers() {
   setAutosaveStatus("saving");
 
-  const saveResult = saveMarkers(markers);
+  const saveResult = await saveMarkers(markers);
+
+  if (saveResult.ok) {
+    autosaveStatusTimer = setTimeout(() => {
+      setAutosaveStatus("saved");
+    }, 250);
+  } else {
+    setAutosaveStatus("unsaved");
+  }
+
+  return saveResult;
+}
+
+async function persistMarker(markerData) {
+  setAutosaveStatus("saving");
+
+  const saveResult = await saveMarker(markerData, markers);
+
+  if (saveResult.ok) {
+    autosaveStatusTimer = setTimeout(() => {
+      setAutosaveStatus("saved");
+    }, 250);
+  } else {
+    setAutosaveStatus("unsaved");
+  }
+
+  return saveResult;
+}
+
+async function removeStoredMarker(markerId) {
+  setAutosaveStatus("saving");
+
+  const saveResult = await deleteStoredMarker(markerId, markers);
 
   if (saveResult.ok) {
     autosaveStatusTimer = setTimeout(() => {

@@ -1,5 +1,13 @@
 # RosalitaRP Explorer
 
+## v1.0.0
+- Added optional Firebase Web SDK and Firestore shared marker sync.
+- Added shared Firestore collection `markers` with marker UUIDs as document IDs.
+- Added document-level Firebase saves for marker add, edit, move, and delete workflows.
+- Added realtime marker updates from Firestore while keeping filters, search, and sidebar state local.
+- Preserved localStorage fallback when Firebase is unavailable or not configured.
+- Added footer data source status for Firebase Connected, Firebase Offline, and Local Browser Storage.
+
 ## v0.9.0
 - Added JSON-driven marker templates for herbs, trees, fishing, mining, NPCs, and crafting benches.
 - Added dynamic Add Marker and Selected Marker fields based on marker category.

@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 0.9.0
+Version : 1.0.0
 Creator : Rathan
 ==================================================
 */
@@ -85,8 +85,8 @@ async function importMarkersFromFile(event) {
 
     const importSummary =
       importMode === "replace"
-        ? replaceMarkers(importResult.markers)
-        : mergeMarkers(importResult.markers);
+        ? await replaceMarkers(importResult.markers)
+        : await mergeMarkers(importResult.markers);
 
     alert(
       `Imported ${importSummary.imported} marker(s).` +
@@ -324,13 +324,13 @@ async function initializeMarkerDetailsPanel() {
 
   document
     .getElementById("edit-marker-delete")
-    .addEventListener("click", function () {
+    .addEventListener("click", async function () {
       if (!selectedMarkerId) {
         return;
       }
 
       if (confirm("Delete this marker?")) {
-        deleteMarker(selectedMarkerId);
+        await deleteMarker(selectedMarkerId);
       }
     });
 
