@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 1.0.0
+Version : 1.1.0
 Creator : Rathan
 ==================================================
 */
@@ -125,7 +125,8 @@ function saveMarkerFromDialog(event) {
     status: templateValues.shared.status || "unverified",
     confidence: templateValues.shared.confidence || "guess",
     notes: templateValues.shared.notes || "",
-    fields: templateValues.fields,
+    fields: templateValues.templateData,
+    templateData: templateValues.templateData,
     x: Number(document.getElementById("marker-x").value),
     y: Number(document.getElementById("marker-y").value),
     createdAt: new Date().toISOString(),

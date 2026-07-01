@@ -1,5 +1,19 @@
 # RosalitaRP Explorer
 
+## v1.1.0
+- Added resource-specific templates for Mining, Herbs, and Trees.
+- Added nested `templateData` marker storage while preserving existing marker fields.
+- Updated Mining markers with mine name, possible drops, and notes.
+- Updated Mining template so marker Type defines the primary output.
+- Renamed Mining type Gold Flakes to Gold and added Sulfur.
+- Removed Mining excluded drops from the active template and migration output.
+- Removed duplicated Type information from Fishing, Trees, NPCs, Crafting Bench, and defensive legacy template fields.
+- Added safe Type migrations from old duplicated template fields where possible.
+- Added Farming Supplies and Seed Seller NPC types.
+- Updated Herb markers with subcategory, plant count, yield, and notes.
+- Updated Tree markers with estimated count, required tool, and notes.
+- Expanded search support to include `templateData` values.
+
 ## v1.0.0
 - Added optional Firebase Web SDK and Firestore shared marker sync.
 - Added shared Firestore collection `markers` with marker UUIDs as document IDs.

@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 1.0.0
+Version : 1.1.0
 Creator : Rathan
 ==================================================
 */
@@ -81,6 +81,10 @@ function createTemplateFieldControl(field, markerData) {
   control.dataset.templateFieldId = field.id;
   control.dataset.sharedField = field.shared ? "true" : "false";
 
+  if (field.placeholder) {
+    control.placeholder = field.placeholder;
+  }
+
   if (field.type === "textarea") {
     control.rows = 3;
   } else if (field.type === "select") {
@@ -105,6 +109,13 @@ function getMarkerTemplateFieldValue(markerData, field) {
     return markerData[field.id];
   }
 
+  if (
+    markerData.templateData &&
+    markerData.templateData[field.id] !== undefined
+  ) {
+    return markerData.templateData[field.id];
+  }
+
   if (markerData.fields && markerData.fields[field.id] !== undefined) {
     return markerData.fields[field.id];
   }
@@ -116,7 +127,7 @@ function collectTemplateFieldValues(containerId, categoryId) {
   const container = document.getElementById(containerId);
   const values = {
     shared: {},
-    fields: {},
+    templateData: {},
   };
 
   if (!container) {
@@ -132,7 +143,7 @@ function collectTemplateFieldValues(containerId, categoryId) {
     if (field.shared) {
       values.shared[field.id] = value;
     } else {
-      values.fields[field.id] = value;
+      values.templateData[field.id] = value;
     }
   });
 

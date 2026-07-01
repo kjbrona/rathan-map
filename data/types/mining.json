@@ -1,5 +1,6 @@
 [
   { "id": "coal", "name": "Coal", "icon": "\u26cf", "enabled": true },
-  { "id": "gold-flakes", "name": "Gold Flakes", "icon": "\u26cf", "enabled": true },
-  { "id": "iron", "name": "Iron", "icon": "\u26cf", "enabled": true }
+  { "id": "gold", "name": "Gold", "icon": "\u26cf", "enabled": true },
+  { "id": "iron", "name": "Iron", "icon": "\u26cf", "enabled": true },
+  { "id": "sulfur", "name": "Sulfur", "icon": "\u26cf", "enabled": true }
 ]

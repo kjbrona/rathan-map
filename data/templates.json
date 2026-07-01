@@ -24,9 +24,13 @@
         { "value": "approximate", "label": "Approximate" },
         { "value": "guess", "label": "Guess" }
       ] },
-      { "id": "respawnTime", "label": "Respawn Time", "type": "text", "default": "" },
-      { "id": "harvestYield", "label": "Harvest Yield", "type": "text", "default": "" },
-      { "id": "uses", "label": "Uses", "type": "textarea", "default": "" },
+      { "id": "herbSubcategory", "label": "Herb Subcategory", "type": "select", "default": "unknown", "options": [
+        { "value": "food-seasoning", "label": "Food/Seasoning" },
+        { "value": "medicinal", "label": "Medicinal" },
+        { "value": "unknown", "label": "Unknown" }
+      ] },
+      { "id": "plantsAtLocation", "label": "Plants at Location", "type": "text", "default": "", "placeholder": "1-6" },
+      { "id": "yieldPerPlant", "label": "Yield Per Plant", "type": "text", "default": "", "placeholder": "Random per plant" },
       { "id": "notes", "label": "Notes", "type": "textarea", "shared": true, "default": "" }
     ],
     "trees": [
@@ -40,8 +44,10 @@
         { "value": "approximate", "label": "Approximate" },
         { "value": "guess", "label": "Guess" }
       ] },
-      { "id": "woodType", "label": "Wood Type", "type": "text", "default": "" },
-      { "id": "respawnTime", "label": "Respawn Time", "type": "text", "default": "" },
+      { "id": "estimatedTreeCount", "label": "Estimated Tree Count", "type": "text", "default": "", "placeholder": "Cluster count" },
+      { "id": "toolRequired", "label": "Tool Required", "type": "select", "default": "axe", "options": [
+        { "value": "axe", "label": "Axe" }
+      ] },
       { "id": "notes", "label": "Notes", "type": "textarea", "shared": true, "default": "" }
     ],
     "fishing": [
@@ -55,7 +61,6 @@
         { "value": "approximate", "label": "Approximate" },
         { "value": "guess", "label": "Guess" }
       ] },
-      { "id": "fishSpecies", "label": "Fish Species", "type": "text", "default": "" },
       { "id": "preferredBait", "label": "Preferred Bait", "type": "text", "default": "" },
       { "id": "bestTime", "label": "Best Time", "type": "text", "default": "" },
       { "id": "weather", "label": "Weather", "type": "text", "default": "" },
@@ -72,20 +77,17 @@
         { "value": "approximate", "label": "Approximate" },
         { "value": "guess", "label": "Guess" }
       ] },
-      { "id": "oreType", "label": "Ore Type", "type": "text", "default": "" },
-      { "id": "respawnTime", "label": "Respawn Time", "type": "text", "default": "" },
-      { "id": "requiredTool", "label": "Required Tool", "type": "text", "default": "" },
+      { "id": "mineName", "label": "Mine Name", "type": "text", "default": "" },
+      { "id": "possibleDrops", "label": "Possible Drops", "type": "textarea", "default": "", "placeholder": "Gold Flakes\nGold Nuggets\nNitrite\nSulfur\nRock Salt\nRock\nLimestone\nUncut Sapphire\nUncut Diamond\nUncut Emerald\nUncut Opal\nUncut Ruby" },
       { "id": "notes", "label": "Notes", "type": "textarea", "shared": true, "default": "" }
     ],
     "npcs": [
       { "id": "npcName", "label": "NPC Name", "type": "text", "default": "" },
-      { "id": "profession", "label": "Profession", "type": "text", "default": "" },
       { "id": "town", "label": "Town", "type": "text", "default": "" },
       { "id": "openingHours", "label": "Opening Hours", "type": "text", "default": "" },
       { "id": "notes", "label": "Notes", "type": "textarea", "shared": true, "default": "" }
     ],
     "crafting-benches": [
-      { "id": "benchType", "label": "Bench Type", "type": "text", "default": "" },
       { "id": "requirements", "label": "Requirements", "type": "textarea", "default": "" },
       { "id": "notes", "label": "Notes", "type": "textarea", "shared": true, "default": "" }
     ]

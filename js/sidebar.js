@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 1.0.0
+Version : 1.1.0
 Creator : Rathan
 ==================================================
 */
@@ -274,6 +274,7 @@ async function initializeMarkerDetailsPanel() {
         confidence: "guess",
         notes: "",
         fields: {},
+        templateData: {},
       });
     });
 
@@ -318,7 +319,8 @@ async function initializeMarkerDetailsPanel() {
         notes: hasTemplateNotes
           ? templateValues.shared.notes
           : (existingMarker && existingMarker.notes) || "",
-        fields: templateValues.fields,
+        fields: templateValues.templateData,
+        templateData: templateValues.templateData,
       });
     });
 

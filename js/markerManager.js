@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 1.0.0
+Version : 1.1.0
 Creator : Rathan
 ==================================================
 */
@@ -444,8 +444,20 @@ function applySavedFilterState() {
       const validTypeIds = new Set(typeIds);
       activeTypeFilters.set(
         categoryId,
-        new Set(savedTypeIds.filter((typeId) => validTypeIds.has(typeId)))
+        new Set(
+          savedTypeIds
+            .map((typeId) => migrateSavedTypeFilter(categoryId, typeId))
+            .filter((typeId) => validTypeIds.has(typeId))
+        )
       );
     });
   }
+}
+
+function migrateSavedTypeFilter(categoryId, typeId) {
+  if (categoryId === "mining" && typeId === "gold-flakes") {
+    return "gold";
+  }
+
+  return typeId;
 }

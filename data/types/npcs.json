@@ -3,12 +3,14 @@
   { "id": "blacksmith", "name": "Blacksmith", "icon": "\u2692", "enabled": true },
   { "id": "butcher", "name": "Butcher", "icon": "\ud83e\udd69", "enabled": true },
   { "id": "doctor", "name": "Doctor", "icon": "\u2695", "enabled": true },
+  { "id": "farming-supplies", "name": "Farming Supplies", "icon": "\ud83c\udf3e", "enabled": true },
   { "id": "general-store", "name": "General Store", "icon": "\ud83d\uded2", "enabled": true },
   { "id": "gunsmith", "name": "Gunsmith", "icon": "\ud83d\udd2b", "enabled": true },
   { "id": "importer", "name": "Importer", "icon": "\ud83d\udce6", "enabled": true },
   { "id": "npc", "name": "General NPC", "icon": "\ud83d\udc64", "enabled": true },
   { "id": "ore-buyer", "name": "Ore Buyer", "icon": "\ud83d\udc8e", "enabled": true },
   { "id": "post-office", "name": "Post Office", "icon": "\u2709", "enabled": true },
+  { "id": "seed-seller", "name": "Seed Seller", "icon": "\ud83c\udf31", "enabled": true },
   { "id": "stable-master", "name": "Stable Master", "icon": "\ud83d\udc0e", "enabled": true },
   { "id": "train-clerk", "name": "Train Clerk", "icon": "\ud83d\ude82", "enabled": true }
 ]

@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 1.0.0
+Version : 1.1.0
 Creator : Rathan
 ==================================================
 */
@@ -17,6 +17,7 @@ const SUPPORTED_IMPORT_VERSIONS = [
   "0.8.2",
   "0.9.0",
   "1.0.0",
+  "1.1.0",
 ];
 
 const MARKER_STORAGE_FIELDS = [
@@ -28,11 +29,43 @@ const MARKER_STORAGE_FIELDS = [
   "confidence",
   "notes",
   "fields",
+  "templateData",
   "x",
   "y",
   "createdAt",
   "modifiedAt",
 ];
+
+const DUPLICATED_TEMPLATE_FIELDS_BY_CATEGORY = {
+  mining: ["primaryOutput", "excludedDrops"],
+  herbs: ["herbName", "herbSpecies"],
+  fishing: ["fishSpecies"],
+  trees: ["treeType"],
+  npcs: ["profession"],
+  "crafting-benches": ["benchType"],
+  camps: ["campType"],
+};
+
+const TYPE_MIGRATION_FIELDS_BY_CATEGORY = {
+  mining: ["primaryOutput"],
+  fishing: ["fishSpecies"],
+  trees: ["treeType"],
+  npcs: ["profession"],
+  "crafting-benches": ["benchType"],
+  camps: ["campType"],
+};
+
+const GENERIC_TYPE_IDS_BY_CATEGORY = {
+  npcs: ["npc"],
+  "crafting-benches": ["general-bench"],
+  camps: ["camp"],
+};
+
+const TYPE_ID_ALIASES = {
+  "gold-flakes": "gold",
+  "gatherable-saplings": "tree",
+};
+
 
 async function saveMarkers(markerData) {
   if (isFirebaseStorageAvailable()) {
@@ -359,8 +392,80 @@ function normalizeStoredMarker(markerData) {
     markerData.fields && typeof markerData.fields === "object"
       ? { ...markerData.fields }
       : {};
+  storedMarker.templateData =
+    markerData.templateData && typeof markerData.templateData === "object"
+      ? { ...markerData.templateData }
+      : { ...storedMarker.fields };
   storedMarker.x = x;
   storedMarker.y = y;
 
+  migrateMarkerTemplateData(storedMarker);
+
   return storedMarker;
+}
+
+function migrateMarkerTemplateData(markerData) {
+  markerData.type = getMigratedTypeId(markerData.type);
+  migrateTypeFromTemplateData(markerData);
+
+  removeDuplicatedTemplateFields(markerData.category, markerData.fields);
+  removeDuplicatedTemplateFields(markerData.category, markerData.templateData);
+}
+
+function migrateTypeFromTemplateData(markerData) {
+  const genericTypeIds = GENERIC_TYPE_IDS_BY_CATEGORY[markerData.category] || [];
+
+  if (genericTypeIds.length > 0 && !genericTypeIds.includes(markerData.type)) {
+    return;
+  }
+
+  const migrationFields =
+    TYPE_MIGRATION_FIELDS_BY_CATEGORY[markerData.category] || [];
+  const templateSources = [markerData.templateData, markerData.fields];
+
+  for (const source of templateSources) {
+    if (!source || typeof source !== "object") {
+      continue;
+    }
+
+    for (const fieldId of migrationFields) {
+      const migratedTypeId = getMigratedTypeId(source[fieldId]);
+
+      if (migratedTypeId) {
+        markerData.type = migratedTypeId;
+        return;
+      }
+    }
+  }
+}
+
+function getMigratedTypeId(value) {
+  const typeId = slugifyTypeValue(value);
+
+  if (!typeId) {
+    return "";
+  }
+
+  return TYPE_ID_ALIASES[typeId] || typeId;
+}
+
+function slugifyTypeValue(value) {
+  return String(value || "")
+    .trim()
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function removeDuplicatedTemplateFields(categoryId, templateValues) {
+  if (!templateValues || typeof templateValues !== "object") {
+    return;
+  }
+
+  (DUPLICATED_TEMPLATE_FIELDS_BY_CATEGORY[categoryId] || []).forEach(
+    (fieldId) => {
+      delete templateValues[fieldId];
+    }
+  );
 }
