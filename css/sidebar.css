@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 0.8.1
+Version : 0.9.0
 Creator : Rathan
 ==================================================
 */
@@ -472,4 +472,36 @@ Creator : Rathan
 .import-mode-option small {
   margin-top: 3px;
   color: #c8aa72;
+}
+
+.context-menu {
+  position: fixed;
+  z-index: 3000;
+  min-width: 170px;
+  padding: 6px;
+  background: #1b140e;
+  border: 1px solid #c49a5a;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.55);
+}
+
+.context-menu button {
+  width: 100%;
+  display: block;
+  padding: 8px 10px;
+  background: transparent;
+  color: #f2e2bd;
+  border: 0;
+  cursor: pointer;
+  font-size: 13px;
+  text-align: left;
+}
+
+.context-menu button:hover,
+.context-menu button:focus {
+  background: #3a2a1d;
+  color: #fff2d0;
+}
+
+.context-menu button.danger {
+  color: #f0a0a0;
 }

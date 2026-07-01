@@ -1,14 +1,14 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 0.8.1
+Version : 0.9.0
 Creator : Rathan
 ==================================================
 */
 
 const APP_NAME = "RosalitaRP Explorer";
 const APP_SUBTITLE = "Community Resource Map";
-const APP_VERSION = "0.8.1";
+const APP_VERSION = "0.9.0";
 const APP_CREATOR = "Rathan";
 
 const MAP_WIDTH = 9216;

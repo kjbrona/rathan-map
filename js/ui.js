@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 0.8.1
+Version : 0.9.0
 Creator : Rathan
 ==================================================
 */
@@ -49,4 +49,92 @@ async function buildTypeDropdown(selectId, categoryId, selectedTypeId = null) {
 function getSelectedTypeName(categoryId, typeId) {
   const type = getTypeById(categoryId, typeId);
   return type ? type.name : "";
+}
+
+function renderTemplateFields(containerId, categoryId, markerData = {}) {
+  const container = document.getElementById(containerId);
+
+  if (!container) {
+    return;
+  }
+
+  container.innerHTML = "";
+
+  getTemplateFields(categoryId).forEach((field) => {
+    container.appendChild(createTemplateFieldControl(field, markerData));
+  });
+}
+
+function createTemplateFieldControl(field, markerData) {
+  const label = document.createElement("label");
+  const inputId = `template-field-${field.id}-${crypto.randomUUID()}`;
+  const value = getMarkerTemplateFieldValue(markerData, field);
+  const control =
+    field.type === "textarea"
+      ? document.createElement("textarea")
+      : field.type === "select"
+      ? document.createElement("select")
+      : document.createElement("input");
+
+  label.textContent = field.label;
+  control.id = inputId;
+  control.dataset.templateFieldId = field.id;
+  control.dataset.sharedField = field.shared ? "true" : "false";
+
+  if (field.type === "textarea") {
+    control.rows = 3;
+  } else if (field.type === "select") {
+    (field.options || []).forEach((optionData) => {
+      const option = document.createElement("option");
+      option.value = optionData.value;
+      option.textContent = optionData.label;
+      control.appendChild(option);
+    });
+  } else {
+    control.type = "text";
+  }
+
+  control.value = value;
+  label.appendChild(control);
+
+  return label;
+}
+
+function getMarkerTemplateFieldValue(markerData, field) {
+  if (field.shared && markerData[field.id] !== undefined) {
+    return markerData[field.id];
+  }
+
+  if (markerData.fields && markerData.fields[field.id] !== undefined) {
+    return markerData.fields[field.id];
+  }
+
+  return field.default || "";
+}
+
+function collectTemplateFieldValues(containerId, categoryId) {
+  const container = document.getElementById(containerId);
+  const values = {
+    shared: {},
+    fields: {},
+  };
+
+  if (!container) {
+    return values;
+  }
+
+  getTemplateFields(categoryId).forEach((field) => {
+    const control = container.querySelector(
+      `[data-template-field-id="${field.id}"]`
+    );
+    const value = control ? control.value.trim() : field.default || "";
+
+    if (field.shared) {
+      values.shared[field.id] = value;
+    } else {
+      values.fields[field.id] = value;
+    }
+  });
+
+  return values;
 }

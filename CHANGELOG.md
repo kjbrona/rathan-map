@@ -1,5 +1,16 @@
 # RosalitaRP Explorer
 
+## v0.9.0
+- Added JSON-driven marker templates for herbs, trees, fishing, mining, NPCs, and crafting benches.
+- Added dynamic Add Marker and Selected Marker fields based on marker category.
+- Added template-specific marker field persistence while keeping older marker saves and exports compatible.
+- Expanded search indexing to include every template field.
+
+## v0.8.2
+- Added marker right-click context menu for centering, moving, editing, deleting, and copying coordinates.
+- Added map right-click context menu for adding markers and copying coordinates.
+- Added context menu close behavior for outside clicks, Escape, and selected actions.
+
 ## v0.8.1
 - Added Move Marker workflow for correcting selected marker locations.
 - Added Move Marker and Cancel Move controls in the Selected Marker panel.

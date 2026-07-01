@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 0.8.1
+Version : 0.9.0
 Creator : Rathan
 ==================================================
 */
@@ -32,6 +32,14 @@ function renderMarker(markerData, selected = false) {
     }
 
     selectMarker(markerData.id);
+  });
+
+  leafletMarker.on("contextmenu", function (event) {
+    if (event.originalEvent) {
+      L.DomEvent.stopPropagation(event.originalEvent);
+    }
+
+    openMarkerContextMenu(markerData.id, event.originalEvent);
   });
 }
 

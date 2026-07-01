@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 0.8.1
+Version : 0.9.0
 Creator : Rathan
 ==================================================
 */
@@ -34,10 +34,12 @@ async function initializeMarkerDialogControls() {
 
   if (CATEGORIES.length > 0) {
     await buildTypeDropdown("marker-type", categorySelect.value);
+    renderTemplateFields("marker-template-fields", categorySelect.value);
   }
 
   categorySelect.addEventListener("change", async function () {
     await buildTypeDropdown("marker-type", this.value);
+    renderTemplateFields("marker-template-fields", this.value);
     autoFillMarkerName();
   });
 
@@ -64,6 +66,7 @@ async function openMarkerDialog(latlng) {
   if (CATEGORIES.length > 0) {
     const categoryId = document.getElementById("marker-category").value;
     await buildTypeDropdown("marker-type", categoryId);
+    renderTemplateFields("marker-template-fields", categoryId);
   }
 
   autoFillMarkerName();
@@ -74,7 +77,17 @@ async function openMarkerDialog(latlng) {
   document.getElementById("marker-y-display").textContent = y;
 
   document.getElementById("marker-dialog").classList.remove("hidden");
-  document.getElementById("marker-notes").focus();
+  focusFirstTemplateField("marker-template-fields");
+}
+
+function focusFirstTemplateField(containerId) {
+  const firstField = document.querySelector(
+    `#${containerId} input, #${containerId} select, #${containerId} textarea`
+  );
+
+  if (firstField) {
+    firstField.focus();
+  }
 }
 
 function autoFillMarkerName() {
@@ -98,15 +111,21 @@ function closeMarkerDialog() {
 
 function saveMarkerFromDialog(event) {
   event.preventDefault();
+  const categoryId = document.getElementById("marker-category").value;
+  const templateValues = collectTemplateFieldValues(
+    "marker-template-fields",
+    categoryId
+  );
 
   const markerData = {
     id: crypto.randomUUID(),
     name: document.getElementById("marker-name").value.trim(),
-    category: document.getElementById("marker-category").value,
+    category: categoryId,
     type: document.getElementById("marker-type").value,
-    status: "unverified",
-    confidence: "guess",
-    notes: document.getElementById("marker-notes").value.trim(),
+    status: templateValues.shared.status || "unverified",
+    confidence: templateValues.shared.confidence || "guess",
+    notes: templateValues.shared.notes || "",
+    fields: templateValues.fields,
     x: Number(document.getElementById("marker-x").value),
     y: Number(document.getElementById("marker-y").value),
     createdAt: new Date().toISOString(),

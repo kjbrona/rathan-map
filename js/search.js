@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 0.8.1
+Version : 0.9.0
 Creator : Rathan
 ==================================================
 */
@@ -115,6 +115,7 @@ function getSearchHaystack(markerData) {
     markerData.status,
     markerData.confidence,
     markerData.notes,
+    ...Object.values(markerData.fields || {}),
   ];
 
   return normalizeSearchText(values.join(" "));

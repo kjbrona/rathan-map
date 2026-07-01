@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 0.8.1
+Version : 0.9.0
 Creator : Rathan
 ==================================================
 */
@@ -10,7 +10,7 @@ const MARKER_STORAGE_KEY = "rosalitarp-explorer-markers";
 const FILTER_STORAGE_KEY = "rosalitarp-explorer-filters";
 const STORAGE_APPLICATION = "RosalitaRP Explorer";
 const STORAGE_VERSION = APP_VERSION;
-const SUPPORTED_IMPORT_VERSIONS = ["0.7.0", "0.8.0", "0.8.1"];
+const SUPPORTED_IMPORT_VERSIONS = ["0.7.0", "0.8.0", "0.8.1", "0.8.2", "0.9.0"];
 
 const MARKER_STORAGE_FIELDS = [
   "id",
@@ -20,6 +20,7 @@ const MARKER_STORAGE_FIELDS = [
   "status",
   "confidence",
   "notes",
+  "fields",
   "x",
   "y",
   "createdAt",
@@ -271,6 +272,10 @@ function normalizeStoredMarker(markerData) {
   storedMarker.status = markerData.status || "unverified";
   storedMarker.confidence = markerData.confidence || "guess";
   storedMarker.notes = markerData.notes || "";
+  storedMarker.fields =
+    markerData.fields && typeof markerData.fields === "object"
+      ? { ...markerData.fields }
+      : {};
   storedMarker.x = x;
   storedMarker.y = y;
 

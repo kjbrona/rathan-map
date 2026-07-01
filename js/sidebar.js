@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 0.8.1
+Version : 0.9.0
 Creator : Rathan
 ==================================================
 */
@@ -269,6 +269,12 @@ async function initializeMarkerDetailsPanel() {
     .getElementById("edit-marker-category")
     .addEventListener("change", async function () {
       await buildTypeDropdown("edit-marker-type", this.value);
+      renderTemplateFields("edit-marker-template-fields", this.value, {
+        status: "unverified",
+        confidence: "guess",
+        notes: "",
+        fields: {},
+      });
     });
 
   document
@@ -280,13 +286,39 @@ async function initializeMarkerDetailsPanel() {
         return;
       }
 
+      const categoryId = document.getElementById("edit-marker-category").value;
+      const existingMarker = getMarkerById(selectedMarkerId);
+      const templateValues = collectTemplateFieldValues(
+        "edit-marker-template-fields",
+        categoryId
+      );
+      const hasTemplateStatus = Object.prototype.hasOwnProperty.call(
+        templateValues.shared,
+        "status"
+      );
+      const hasTemplateConfidence = Object.prototype.hasOwnProperty.call(
+        templateValues.shared,
+        "confidence"
+      );
+      const hasTemplateNotes = Object.prototype.hasOwnProperty.call(
+        templateValues.shared,
+        "notes"
+      );
+
       await updateMarker(selectedMarkerId, {
         name: document.getElementById("edit-marker-name").value.trim(),
-        category: document.getElementById("edit-marker-category").value,
+        category: categoryId,
         type: document.getElementById("edit-marker-type").value,
-        status: document.getElementById("edit-marker-status").value,
-        confidence: document.getElementById("edit-marker-confidence").value,
-        notes: document.getElementById("edit-marker-notes").value.trim(),
+        status: hasTemplateStatus
+          ? templateValues.shared.status
+          : (existingMarker && existingMarker.status) || "unverified",
+        confidence: hasTemplateConfidence
+          ? templateValues.shared.confidence
+          : (existingMarker && existingMarker.confidence) || "guess",
+        notes: hasTemplateNotes
+          ? templateValues.shared.notes
+          : (existingMarker && existingMarker.notes) || "",
+        fields: templateValues.fields,
       });
     });
 
@@ -334,13 +366,11 @@ async function renderMarkerDetails(markerData) {
     markerData.type
   );
 
-  document.getElementById("edit-marker-status").value =
-    markerData.status || "unverified";
-
-  document.getElementById("edit-marker-confidence").value =
-    markerData.confidence || "guess";
-
-  document.getElementById("edit-marker-notes").value = markerData.notes || "";
+  renderTemplateFields(
+    "edit-marker-template-fields",
+    markerData.category,
+    markerData
+  );
   document.getElementById("edit-marker-x-display").textContent = markerData.x;
   document.getElementById("edit-marker-y-display").textContent = markerData.y;
 }

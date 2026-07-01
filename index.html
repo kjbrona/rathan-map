@@ -74,28 +74,7 @@
             Type
             <select id="edit-marker-type" required></select>
           </label>
-          <label>
-            Status
-            <select id="edit-marker-status" required>
-              <option value="unverified">🟡 Unverified</option>
-              <option value="verified">🟢 Verified</option>
-              <option value="invalid">🔴 Invalid</option>
-            </select>
-          </label>
-
-          <label>
-            Confidence
-            <select id="edit-marker-confidence" required>
-              <option value="exact">Exact</option>
-              <option value="approximate">Approximate</option>
-              <option value="guess">Guess</option>
-            </select>
-          </label>
-
-          <label>
-            Notes
-            <textarea id="edit-marker-notes" rows="4"></textarea>
-          </label>
+          <div id="edit-marker-template-fields" class="template-fields"></div>
 
           <div class="dialog-coordinates">
             X: <span id="edit-marker-x-display">0</span> |
@@ -171,10 +150,7 @@
           <select id="marker-type" required></select>
         </label>
 
-        <label>
-          Notes
-          <textarea id="marker-notes" rows="4"></textarea>
-        </label>
+        <div id="marker-template-fields" class="template-fields"></div>
 
         <div class="dialog-coordinates">
           X: <span id="marker-x-display">0</span> |
@@ -232,11 +208,13 @@
   <script src="js/map.js"></script>
   <script src="js/categories.js"></script>
   <script src="js/types.js"></script>
+  <script src="js/templates.js"></script>
   <script src="js/storage.js"></script>
   <script src="js/ui.js"></script>
   <script src="js/markers.js"></script>
   <script src="js/markerManager.js"></script>
   <script src="js/search.js"></script>
+  <script src="js/contextMenu.js"></script>
   <script src="js/sidebar.js"></script>
   <script src="js/dialogs.js"></script>
   <script src="js/main.js"></script>

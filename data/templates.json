@@ -1,0 +1,93 @@
+{
+  "default": [
+    { "id": "status", "label": "Status", "type": "select", "shared": true, "default": "unverified", "options": [
+      { "value": "unverified", "label": "Unverified" },
+      { "value": "verified", "label": "Verified" },
+      { "value": "invalid", "label": "Invalid" }
+    ] },
+    { "id": "confidence", "label": "Confidence", "type": "select", "shared": true, "default": "guess", "options": [
+      { "value": "exact", "label": "Exact" },
+      { "value": "approximate", "label": "Approximate" },
+      { "value": "guess", "label": "Guess" }
+    ] },
+    { "id": "notes", "label": "Notes", "type": "textarea", "shared": true, "default": "" }
+  ],
+  "categories": {
+    "herbs": [
+      { "id": "status", "label": "Status", "type": "select", "shared": true, "default": "unverified", "options": [
+        { "value": "unverified", "label": "Unverified" },
+        { "value": "verified", "label": "Verified" },
+        { "value": "invalid", "label": "Invalid" }
+      ] },
+      { "id": "confidence", "label": "Confidence", "type": "select", "shared": true, "default": "guess", "options": [
+        { "value": "exact", "label": "Exact" },
+        { "value": "approximate", "label": "Approximate" },
+        { "value": "guess", "label": "Guess" }
+      ] },
+      { "id": "respawnTime", "label": "Respawn Time", "type": "text", "default": "" },
+      { "id": "harvestYield", "label": "Harvest Yield", "type": "text", "default": "" },
+      { "id": "uses", "label": "Uses", "type": "textarea", "default": "" },
+      { "id": "notes", "label": "Notes", "type": "textarea", "shared": true, "default": "" }
+    ],
+    "trees": [
+      { "id": "status", "label": "Status", "type": "select", "shared": true, "default": "unverified", "options": [
+        { "value": "unverified", "label": "Unverified" },
+        { "value": "verified", "label": "Verified" },
+        { "value": "invalid", "label": "Invalid" }
+      ] },
+      { "id": "confidence", "label": "Confidence", "type": "select", "shared": true, "default": "guess", "options": [
+        { "value": "exact", "label": "Exact" },
+        { "value": "approximate", "label": "Approximate" },
+        { "value": "guess", "label": "Guess" }
+      ] },
+      { "id": "woodType", "label": "Wood Type", "type": "text", "default": "" },
+      { "id": "respawnTime", "label": "Respawn Time", "type": "text", "default": "" },
+      { "id": "notes", "label": "Notes", "type": "textarea", "shared": true, "default": "" }
+    ],
+    "fishing": [
+      { "id": "status", "label": "Status", "type": "select", "shared": true, "default": "unverified", "options": [
+        { "value": "unverified", "label": "Unverified" },
+        { "value": "verified", "label": "Verified" },
+        { "value": "invalid", "label": "Invalid" }
+      ] },
+      { "id": "confidence", "label": "Confidence", "type": "select", "shared": true, "default": "guess", "options": [
+        { "value": "exact", "label": "Exact" },
+        { "value": "approximate", "label": "Approximate" },
+        { "value": "guess", "label": "Guess" }
+      ] },
+      { "id": "fishSpecies", "label": "Fish Species", "type": "text", "default": "" },
+      { "id": "preferredBait", "label": "Preferred Bait", "type": "text", "default": "" },
+      { "id": "bestTime", "label": "Best Time", "type": "text", "default": "" },
+      { "id": "weather", "label": "Weather", "type": "text", "default": "" },
+      { "id": "notes", "label": "Notes", "type": "textarea", "shared": true, "default": "" }
+    ],
+    "mining": [
+      { "id": "status", "label": "Status", "type": "select", "shared": true, "default": "unverified", "options": [
+        { "value": "unverified", "label": "Unverified" },
+        { "value": "verified", "label": "Verified" },
+        { "value": "invalid", "label": "Invalid" }
+      ] },
+      { "id": "confidence", "label": "Confidence", "type": "select", "shared": true, "default": "guess", "options": [
+        { "value": "exact", "label": "Exact" },
+        { "value": "approximate", "label": "Approximate" },
+        { "value": "guess", "label": "Guess" }
+      ] },
+      { "id": "oreType", "label": "Ore Type", "type": "text", "default": "" },
+      { "id": "respawnTime", "label": "Respawn Time", "type": "text", "default": "" },
+      { "id": "requiredTool", "label": "Required Tool", "type": "text", "default": "" },
+      { "id": "notes", "label": "Notes", "type": "textarea", "shared": true, "default": "" }
+    ],
+    "npcs": [
+      { "id": "npcName", "label": "NPC Name", "type": "text", "default": "" },
+      { "id": "profession", "label": "Profession", "type": "text", "default": "" },
+      { "id": "town", "label": "Town", "type": "text", "default": "" },
+      { "id": "openingHours", "label": "Opening Hours", "type": "text", "default": "" },
+      { "id": "notes", "label": "Notes", "type": "textarea", "shared": true, "default": "" }
+    ],
+    "crafting-benches": [
+      { "id": "benchType", "label": "Bench Type", "type": "text", "default": "" },
+      { "id": "requirements", "label": "Requirements", "type": "textarea", "default": "" },
+      { "id": "notes", "label": "Notes", "type": "textarea", "shared": true, "default": "" }
+    ]
+  }
+}
