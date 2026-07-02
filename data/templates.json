@@ -1,48 +1,6 @@
 {
   "default": [
     {
-      "id": "status",
-      "label": "Status",
-      "type": "select",
-      "shared": true,
-      "default": "unverified",
-      "options": [
-        {
-          "value": "unverified",
-          "label": "Unverified"
-        },
-        {
-          "value": "verified",
-          "label": "Verified"
-        },
-        {
-          "value": "invalid",
-          "label": "Invalid"
-        }
-      ]
-    },
-    {
-      "id": "confidence",
-      "label": "Confidence",
-      "type": "select",
-      "shared": true,
-      "default": "guess",
-      "options": [
-        {
-          "value": "exact",
-          "label": "Exact"
-        },
-        {
-          "value": "approximate",
-          "label": "Approximate"
-        },
-        {
-          "value": "guess",
-          "label": "Guess"
-        }
-      ]
-    },
-    {
       "id": "notes",
       "label": "Notes",
       "type": "textarea",
@@ -52,48 +10,6 @@
   ],
   "categories": {
     "herbs": [
-      {
-        "id": "status",
-        "label": "Status",
-        "type": "select",
-        "shared": true,
-        "default": "unverified",
-        "options": [
-          {
-            "value": "unverified",
-            "label": "Unverified"
-          },
-          {
-            "value": "verified",
-            "label": "Verified"
-          },
-          {
-            "value": "invalid",
-            "label": "Invalid"
-          }
-        ]
-      },
-      {
-        "id": "confidence",
-        "label": "Confidence",
-        "type": "select",
-        "shared": true,
-        "default": "guess",
-        "options": [
-          {
-            "value": "exact",
-            "label": "Exact"
-          },
-          {
-            "value": "approximate",
-            "label": "Approximate"
-          },
-          {
-            "value": "guess",
-            "label": "Guess"
-          }
-        ]
-      },
       {
         "id": "herbSubcategory",
         "label": "Herb Subcategory",
@@ -138,48 +54,6 @@
     ],
     "trees": [
       {
-        "id": "status",
-        "label": "Status",
-        "type": "select",
-        "shared": true,
-        "default": "unverified",
-        "options": [
-          {
-            "value": "unverified",
-            "label": "Unverified"
-          },
-          {
-            "value": "verified",
-            "label": "Verified"
-          },
-          {
-            "value": "invalid",
-            "label": "Invalid"
-          }
-        ]
-      },
-      {
-        "id": "confidence",
-        "label": "Confidence",
-        "type": "select",
-        "shared": true,
-        "default": "guess",
-        "options": [
-          {
-            "value": "exact",
-            "label": "Exact"
-          },
-          {
-            "value": "approximate",
-            "label": "Approximate"
-          },
-          {
-            "value": "guess",
-            "label": "Guess"
-          }
-        ]
-      },
-      {
         "id": "estimatedTreeCount",
         "label": "Estimated Tree Count",
         "type": "text",
@@ -208,48 +82,6 @@
     ],
     "fishing": [
       {
-        "id": "status",
-        "label": "Status",
-        "type": "select",
-        "shared": true,
-        "default": "unverified",
-        "options": [
-          {
-            "value": "unverified",
-            "label": "Unverified"
-          },
-          {
-            "value": "verified",
-            "label": "Verified"
-          },
-          {
-            "value": "invalid",
-            "label": "Invalid"
-          }
-        ]
-      },
-      {
-        "id": "confidence",
-        "label": "Confidence",
-        "type": "select",
-        "shared": true,
-        "default": "guess",
-        "options": [
-          {
-            "value": "exact",
-            "label": "Exact"
-          },
-          {
-            "value": "approximate",
-            "label": "Approximate"
-          },
-          {
-            "value": "guess",
-            "label": "Guess"
-          }
-        ]
-      },
-      {
         "id": "preferredBait",
         "label": "Preferred Bait",
         "type": "text",
@@ -276,48 +108,6 @@
       }
     ],
     "mining": [
-      {
-        "id": "status",
-        "label": "Status",
-        "type": "select",
-        "shared": true,
-        "default": "unverified",
-        "options": [
-          {
-            "value": "unverified",
-            "label": "Unverified"
-          },
-          {
-            "value": "verified",
-            "label": "Verified"
-          },
-          {
-            "value": "invalid",
-            "label": "Invalid"
-          }
-        ]
-      },
-      {
-        "id": "confidence",
-        "label": "Confidence",
-        "type": "select",
-        "shared": true,
-        "default": "guess",
-        "options": [
-          {
-            "value": "exact",
-            "label": "Exact"
-          },
-          {
-            "value": "approximate",
-            "label": "Approximate"
-          },
-          {
-            "value": "guess",
-            "label": "Guess"
-          }
-        ]
-      },
       {
         "id": "mineName",
         "label": "Mine Name",

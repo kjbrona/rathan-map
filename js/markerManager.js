@@ -256,6 +256,36 @@ function setTypeFilter(categoryId, typeId, enabled) {
   refreshMarkers();
 }
 
+function setAllFilters(enabled) {
+  activeCategoryFilters = new Set();
+  activeTypeFilters = new Map();
+
+  CATEGORIES.forEach((category) => {
+    const categoryTypes = TYPE_DATA[category.id] || [];
+
+    activeTypeFilters.set(
+      category.id,
+      enabled ? new Set(categoryTypes.map((type) => type.id)) : new Set()
+    );
+
+    if (enabled) {
+      activeCategoryFilters.add(category.id);
+    }
+  });
+
+  if (selectedMarkerId) {
+    const selectedMarker = getMarkerById(selectedMarkerId);
+
+    if (selectedMarker && !isMarkerVisible(selectedMarker)) {
+      selectedMarkerId = null;
+      renderMarkerDetails(null);
+    }
+  }
+
+  saveFilterStateToStorage(getFilterStateForStorage());
+  refreshMarkers();
+}
+
 function isCategoryFilterActive(categoryId) {
   return activeCategoryFilters.has(categoryId);
 }

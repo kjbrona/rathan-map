@@ -15,6 +15,7 @@ function initializeSidebar() {
   document.getElementById("app-creator").textContent = APP_CREATOR;
 
   renderCategoryList();
+  initializeFilterControls();
   initializeMarkerDetailsPanel();
   initializeSearch();
 
@@ -27,6 +28,22 @@ function initializeSidebar() {
 
   initializeMarkerBackupControls();
   updateMarkerStats();
+}
+
+function initializeFilterControls() {
+  document
+    .getElementById("filters-all-on")
+    .addEventListener("click", function () {
+      setAllFilters(true);
+      renderCategoryList();
+    });
+
+  document
+    .getElementById("filters-all-off")
+    .addEventListener("click", function () {
+      setAllFilters(false);
+      renderCategoryList();
+    });
 }
 
 function initializeMarkerBackupControls() {
@@ -270,8 +287,6 @@ async function initializeMarkerDetailsPanel() {
     .addEventListener("change", async function () {
       await buildTypeDropdown("edit-marker-type", this.value);
       renderTemplateFields("edit-marker-template-fields", this.value, {
-        status: "unverified",
-        confidence: "guess",
         notes: "",
         dangerRadius: DEFAULT_DANGER_RADIUS,
         fields: {},
@@ -294,14 +309,6 @@ async function initializeMarkerDetailsPanel() {
         "edit-marker-template-fields",
         categoryId
       );
-      const hasTemplateStatus = Object.prototype.hasOwnProperty.call(
-        templateValues.shared,
-        "status"
-      );
-      const hasTemplateConfidence = Object.prototype.hasOwnProperty.call(
-        templateValues.shared,
-        "confidence"
-      );
       const hasTemplateNotes = Object.prototype.hasOwnProperty.call(
         templateValues.shared,
         "notes"
@@ -311,12 +318,8 @@ async function initializeMarkerDetailsPanel() {
         name: document.getElementById("edit-marker-name").value.trim(),
         category: categoryId,
         type: document.getElementById("edit-marker-type").value,
-        status: hasTemplateStatus
-          ? templateValues.shared.status
-          : (existingMarker && existingMarker.status) || "unverified",
-        confidence: hasTemplateConfidence
-          ? templateValues.shared.confidence
-          : (existingMarker && existingMarker.confidence) || "guess",
+        status: document.getElementById("edit-marker-status").value,
+        confidence: document.getElementById("edit-marker-confidence").value,
         notes: hasTemplateNotes
           ? templateValues.shared.notes
           : (existingMarker && existingMarker.notes) || "",
@@ -366,6 +369,10 @@ async function renderMarkerDetails(markerData) {
   form.classList.remove("hidden");
 
   document.getElementById("edit-marker-name").value = markerData.name;
+  document.getElementById("edit-marker-status").value =
+    markerData.status || "unverified";
+  document.getElementById("edit-marker-confidence").value =
+    markerData.confidence || "guess";
 
   await buildCategoryDropdown("edit-marker-category", markerData.category);
   await buildTypeDropdown(

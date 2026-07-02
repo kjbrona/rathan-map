@@ -60,6 +60,8 @@ async function openMarkerDialog(latlng) {
   const y = Math.round(latlng.lat);
 
   document.getElementById("marker-form").reset();
+  document.getElementById("marker-status").value = "unverified";
+  document.getElementById("marker-confidence").value = "guess";
 
   await buildCategoryDropdown("marker-category");
 
@@ -122,8 +124,8 @@ function saveMarkerFromDialog(event) {
     name: document.getElementById("marker-name").value.trim(),
     category: categoryId,
     type: document.getElementById("marker-type").value,
-    status: templateValues.shared.status || "unverified",
-    confidence: templateValues.shared.confidence || "guess",
+    status: document.getElementById("marker-status").value,
+    confidence: document.getElementById("marker-confidence").value,
     notes: templateValues.shared.notes || "",
     fields: templateValues.templateData,
     templateData: templateValues.templateData,

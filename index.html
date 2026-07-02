@@ -60,25 +60,54 @@
         </div>
 
         <form id="marker-details-form" class="hidden">
-          <label>
-            Name
-            <input type="text" id="edit-marker-name" required />
-          </label>
+          <div class="form-section">
+            <h3>Basic Information</h3>
+            <label>
+              Name
+              <input type="text" id="edit-marker-name" required />
+            </label>
 
-          <label>
-            Category
-            <select id="edit-marker-category" required></select>
-          </label>
+            <div class="form-grid two-column">
+              <label>
+                Status
+                <select id="edit-marker-status" required>
+                  <option value="unverified">Unverified</option>
+                  <option value="verified">Verified</option>
+                  <option value="invalid">Invalid</option>
+                </select>
+              </label>
 
-          <label>
-            Type
-            <select id="edit-marker-type" required></select>
-          </label>
-          <div id="edit-marker-template-fields" class="template-fields"></div>
+              <label>
+                Confidence
+                <select id="edit-marker-confidence" required>
+                  <option value="guess">Guess</option>
+                  <option value="approximate">Approximate</option>
+                  <option value="exact">Exact</option>
+                </select>
+              </label>
+            </div>
+          </div>
 
-          <div class="dialog-coordinates">
-            X: <span id="edit-marker-x-display">0</span> |
-            Y: <span id="edit-marker-y-display">0</span>
+          <div class="form-section">
+            <h3>Category Details</h3>
+            <label>
+              Category
+              <select id="edit-marker-category" required></select>
+            </label>
+
+            <label>
+              Type
+              <select id="edit-marker-type" required></select>
+            </label>
+            <div id="edit-marker-template-fields" class="template-fields"></div>
+          </div>
+
+          <div class="form-section">
+            <h3>Location</h3>
+            <div class="dialog-coordinates">
+              X: <span id="edit-marker-x-display">0</span> |
+              Y: <span id="edit-marker-y-display">0</span>
+            </div>
           </div>
 
           <div class="marker-detail-actions">
@@ -93,7 +122,13 @@
       </section>
 
       <section class="sidebar-panel sidebar-filter-panel">
-        <h2>Filters</h2>
+        <div class="filter-panel-header">
+          <h2>Filters</h2>
+          <div class="filter-actions">
+            <button id="filters-all-on" type="button">All On</button>
+            <button id="filters-all-off" type="button">All Off</button>
+          </div>
+        </div>
         <div id="category-list">Loading...</div>
       </section>
 
@@ -135,26 +170,55 @@
         <input type="hidden" id="marker-x" />
         <input type="hidden" id="marker-y" />
 
-        <label>
-          Name
-          <input type="text" id="marker-name" required />
-        </label>
+        <div class="form-section">
+          <h3>Basic Information</h3>
+          <label>
+            Name
+            <input type="text" id="marker-name" required />
+          </label>
 
-        <label>
-          Category
-          <select id="marker-category" required></select>
-        </label>
+          <div class="form-grid two-column">
+            <label>
+              Status
+              <select id="marker-status" required>
+                <option value="unverified">Unverified</option>
+                <option value="verified">Verified</option>
+                <option value="invalid">Invalid</option>
+              </select>
+            </label>
 
-        <label>
-          Type
-          <select id="marker-type" required></select>
-        </label>
+            <label>
+              Confidence
+              <select id="marker-confidence" required>
+                <option value="guess">Guess</option>
+                <option value="approximate">Approximate</option>
+                <option value="exact">Exact</option>
+              </select>
+            </label>
+          </div>
+        </div>
 
-        <div id="marker-template-fields" class="template-fields"></div>
+        <div class="form-section">
+          <h3>Category Details</h3>
+          <label>
+            Category
+            <select id="marker-category" required></select>
+          </label>
 
-        <div class="dialog-coordinates">
-          X: <span id="marker-x-display">0</span> |
-          Y: <span id="marker-y-display">0</span>
+          <label>
+            Type
+            <select id="marker-type" required></select>
+          </label>
+
+          <div id="marker-template-fields" class="template-fields"></div>
+        </div>
+
+        <div class="form-section">
+          <h3>Location</h3>
+          <div class="dialog-coordinates">
+            X: <span id="marker-x-display">0</span> |
+            Y: <span id="marker-y-display">0</span>
+          </div>
         </div>
 
         <div class="modal-actions">

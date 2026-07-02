@@ -1,34 +1,200 @@
 [
-  { "id": "alaskan-ginseng", "name": "Alaskan Ginseng", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "american-ginseng", "name": "American Ginseng", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "bay-bolete", "name": "Bay Bolete", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "black-currant", "name": "Black Currant", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "blackberry", "name": "Blackberry", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "bulrush", "name": "Bulrush", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "burdock-root", "name": "Burdock Root", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "chanterelles", "name": "Chanterelles", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "chocolate-daisy", "name": "Chocolate Daisy", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "creeping-thyme", "name": "Creeping Thyme", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "desert-sage", "name": "Desert Sage", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "english-mace", "name": "English Mace", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "evergreen-huckleberry", "name": "Evergreen Huckleberry", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "garlic", "name": "Garlic", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "golden-currant", "name": "Golden Currant", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "hummingbird-sage", "name": "Hummingbird Sage", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "indian-tobacco", "name": "Indian Tobacco", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "oregano", "name": "Oregano", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "parasol-mushroom", "name": "Parasol Mushroom", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "poppy", "name": "Poppy", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "prairie-poppy", "name": "Prairie Poppy", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "rams-head", "name": "Rams Head", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "raspberry", "name": "Raspberry", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "red-sage", "name": "Red Sage", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "texas-bluebonnet", "name": "Texas Bluebonnet", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "violet-snowdrops", "name": "Violet Snowdrops", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "wild-carrot", "name": "Wild Carrot", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "wild-feverfew", "name": "Wild Feverfew", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "wild-mint", "name": "Wild Mint", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "wild-rhubarb", "name": "Wild Rhubarb", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "wisteria", "name": "Wisteria", "icon": "\ud83c\udf3f", "enabled": true },
-  { "id": "yarrow", "name": "Yarrow", "icon": "\ud83c\udf3f", "enabled": true }
+  {
+    "id": "alaskan-ginseng",
+    "name": "Alaskan Ginseng",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "american-ginseng",
+    "name": "American Ginseng",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "bay-bolete",
+    "name": "Bay Bolete",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "black-currant",
+    "name": "Black Currant",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "blackberry",
+    "name": "Blackberry",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "bulrush",
+    "name": "Bulrush",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "burdock-root",
+    "name": "Burdock Root",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "chanterelles",
+    "name": "Chanterelles",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "chocolate-daisy",
+    "name": "Chocolate Daisy",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "creeping-thyme",
+    "name": "Creeping Thyme",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "desert-sage",
+    "name": "Desert Sage",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "english-mace",
+    "name": "English Mace",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "evergreen-huckleberry",
+    "name": "Evergreen Huckleberry",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "garlic",
+    "name": "Garlic",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "golden-currant",
+    "name": "Golden Currant",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "hummingbird-sage",
+    "name": "Hummingbird Sage",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "indian-tobacco",
+    "name": "Indian Tobacco",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "oleander",
+    "name": "Oleander",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "oregano",
+    "name": "Oregano",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "parasol-mushroom",
+    "name": "Parasol Mushroom",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "poppy",
+    "name": "Poppy",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "prairie-poppy",
+    "name": "Prairie Poppy",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "rams-head",
+    "name": "Rams Head",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "raspberry",
+    "name": "Raspberry",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "red-sage",
+    "name": "Red Sage",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "texas-bluebonnet",
+    "name": "Texas Bluebonnet",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "violet-snowdrops",
+    "name": "Violet Snowdrops",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "wild-carrot",
+    "name": "Wild Carrot",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "wild-feverfew",
+    "name": "Wild Feverfew",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "wild-mint",
+    "name": "Wild Mint",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "wild-rhubarb",
+    "name": "Wild Rhubarb",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "wisteria",
+    "name": "Wisteria",
+    "icon": "🌿",
+    "enabled": true
+  },
+  {
+    "id": "yarrow",
+    "name": "Yarrow",
+    "icon": "🌿",
+    "enabled": true
+  }
 ]

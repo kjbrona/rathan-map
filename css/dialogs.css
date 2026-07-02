@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 1.0.0
+Version : 1.1.0
 Creator : Rathan
 ==================================================
 */
@@ -24,7 +24,9 @@ Creator : Rathan
 }
 
 .modal-content {
-  width: 420px;
+  width: 460px;
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
   background: #1b140e;
   color: #f2e2bd;
   border: 2px solid #8b5a2b;
@@ -37,7 +39,7 @@ Creator : Rathan
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .modal-header h2 {
@@ -55,7 +57,7 @@ Creator : Rathan
 
 #marker-form label {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   font-size: 14px;
 }
 
@@ -74,13 +76,15 @@ Creator : Rathan
 .dialog-coordinates {
   font-size: 13px;
   color: #c8aa72;
-  margin: 10px 0;
+  margin: 4px 0;
 }
 
 .modal-actions {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(196, 154, 90, 0.24);
 }
 
 .modal-actions button {
@@ -98,4 +102,25 @@ Creator : Rathan
   background: #5a3a1e;
   color: #f2e2bd;
   border: 1px solid #8b5a2b;
+}
+
+#marker-form .form-section {
+  margin-bottom: 10px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid rgba(196, 154, 90, 0.2);
+}
+
+#marker-form .form-section h3 {
+  margin: 0 0 8px;
+  color: #e4c27a;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+#marker-form .form-grid.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }

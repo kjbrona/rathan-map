@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 1.0.0
+Version : 1.1.0
 Creator : Rathan
 ==================================================
 */
@@ -239,7 +239,7 @@ Creator : Rathan
 
 #marker-details-form label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
   color: #c8aa72;
   font-size: 12px;
 }
@@ -261,7 +261,7 @@ Creator : Rathan
 }
 
 .dialog-coordinates {
-  margin: 8px 0;
+  margin: 4px 0;
   color: #c8aa72;
   font-size: 12px;
 }
@@ -270,6 +270,9 @@ Creator : Rathan
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(196, 154, 90, 0.24);
 }
 
 .marker-detail-actions button {
@@ -318,13 +321,55 @@ Creator : Rathan
 .sidebar-filter-panel {
   flex: 1 1 auto;
   min-height: 64px;
+  background-color: #1b140e;
+  overflow-x: hidden;
   overflow-y: auto;
-  padding-right: 10px;
+  padding: 0;
+  isolation: isolate;
+  position: relative;
+  contain: paint;
+}
+
+.filter-panel-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding: 12px 14px 8px;
+  background: #1b140e;
+  background-color: #1b140e;
+  border-bottom: 1px solid rgba(196, 154, 90, 0.18);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.22);
+}
+
+.filter-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+}
+
+.filter-actions button {
+  padding: 6px 8px;
+  background: #2a2118;
+  color: #f2e2bd;
+  border: 1px solid #8b5a2b;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 160ms ease, border-color 160ms ease;
+}
+
+.filter-actions button:hover,
+.filter-actions button:focus {
+  background: #3a2a1d;
+  border-color: #c49a5a;
 }
 
 #category-list {
   display: grid;
-  gap: 4px;
+  gap: 2px;
+  padding: 6px 10px 12px 14px;
 }
 
 .category-filter {
@@ -345,14 +390,18 @@ Creator : Rathan
 }
 
 .category-filter-row {
-  min-height: 30px;
-  padding: 3px 5px;
+  position: sticky;
+  top: 78px;
+  z-index: 90;
+  min-height: 24px;
+  padding: 1px 5px;
+  background-color: #1b140e;
 }
 
 .category-filter-toggle {
   flex: 1;
   min-width: 0;
-  padding: 4px 0;
+  padding: 2px 0;
   background: transparent;
   border: 0;
   color: #f2e2bd;
@@ -371,7 +420,7 @@ Creator : Rathan
 
 .type-filter-list {
   max-height: 1600px;
-  margin: 0 0 4px 28px;
+  margin: 0 0 2px 28px;
   padding-left: 10px;
   border-left: 1px solid #5a3a1e;
   overflow: hidden;
@@ -387,11 +436,17 @@ Creator : Rathan
 
 .type-filter-label {
   margin: 0;
-  padding: 4px 5px;
+  padding: 3px 5px;
   color: #c8aa72;
   cursor: pointer;
   font-size: 12px;
   transition: background 160ms ease, color 160ms ease;
+}
+
+.type-filter-list,
+.type-filter-label {
+  position: relative;
+  z-index: auto;
 }
 
 .type-filter-label:hover {
@@ -504,4 +559,29 @@ Creator : Rathan
 
 .context-menu button.danger {
   color: #f0a0a0;
+}
+
+.form-section {
+  margin-bottom: 10px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid rgba(196, 154, 90, 0.2);
+}
+
+.form-section:last-of-type {
+  border-bottom: 0;
+}
+
+.form-section h3 {
+  margin: 0 0 7px;
+  color: #e4c27a;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.form-grid.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
 }

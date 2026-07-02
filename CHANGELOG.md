@@ -1,6 +1,11 @@
 # RosalitaRP Explorer
 
 ## v1.1.0
+- Refined Add Marker and Selected Marker layouts with Basic Information, Category Details, and Location sections.
+- Moved Status and Confidence into shared Basic Information controls.
+- Added All On and All Off filter controls with preserved category/type filter behavior.
+- Tightened sidebar filter spacing and added sticky filter/category headers.
+- Added Oleander to Herb types.
 - Added Dangerous Animals marker category with Bear, Wolf, Cougar, Panther, Alligator, and Snake types.
 - Added subtle danger zone circles for Dangerous Animal markers with editable `dangerRadius`.
 - Added default 50 map-unit danger radius for new and older Dangerous Animal markers.
