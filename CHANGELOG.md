@@ -1,5 +1,10 @@
 # RosalitaRP Explorer
 
+## v1.3.4 Sidebar Polish
+- Increased the Add Marker sidebar button height slightly so it stays compact without feeling cramped.
+- Matched Selected Marker action buttons to the sidebar button typography with 15px text and 600 weight.
+- Updated stylesheet and script cache-busting references to v1.3.4.
+
 ## v1.2.4 Item Discovery Tracking
 - Added optional item-discovery fields to marker add/edit forms.
 - Included discovery details in search, imports, exports, Firebase sync, and local browser storage.

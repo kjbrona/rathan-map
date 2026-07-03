@@ -191,13 +191,13 @@ Creator : Rathan
 
 #add-marker-btn {
   width: 100%;
-  padding: 8px 10px;
+  padding: 4px 8px;
   background: #8b5a2b;
   color: #fff2d0;
   border: 1px solid #c49a5a;
   cursor: pointer;
   font-size: 15px;
-  line-height: 1.4;
+  line-height: 1.15;
   font-weight: 600;
   transition: background 160ms ease, border-color 160ms ease;
 }
@@ -220,13 +220,13 @@ Creator : Rathan
 }
 
 .marker-backup-actions button {
-  padding: 7px 8px;
+  padding: 3px 7px;
   background: #2a2118;
   color: #f2e2bd;
   border: 1px solid #8b5a2b;
   cursor: pointer;
   font-size: 15px;
-  line-height: 1.4;
+  line-height: 1.15;
   transition: background 160ms ease, border-color 160ms ease;
 }
 
@@ -335,9 +335,11 @@ Creator : Rathan
 }
 
 .marker-detail-actions button {
-  padding: 7px 8px;
+  padding: 3px 7px;
   cursor: pointer;
+  font-size: 15px;
   font-weight: 600;
+  line-height: 1.15;
 }
 
 .marker-detail-actions .hidden {
@@ -410,13 +412,13 @@ Creator : Rathan
 }
 
 .filter-actions button {
-  padding: 5px 8px;
+  padding: 3px 7px;
   background: #2a2118;
   color: #f2e2bd;
   border: 1px solid #8b5a2b;
   cursor: pointer;
   font-size: 15px;
-  line-height: 1.4;
+  line-height: 1.15;
   transition: background 160ms ease, border-color 160ms ease;
 }
 
