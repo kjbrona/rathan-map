@@ -18,6 +18,12 @@ const SUPPORTED_IMPORT_VERSIONS = [
   "0.9.0",
   "1.0.0",
   "1.1.0",
+  "1.1.1",
+  "1.2.0",
+  "1.2.1",
+  "1.2.2",
+  "1.2.3",
+  "1.2.4",
 ];
 
 const MARKER_STORAGE_FIELDS = [
@@ -28,6 +34,7 @@ const MARKER_STORAGE_FIELDS = [
   "status",
   "confidence",
   "notes",
+  ...ITEM_DISCOVERY_FIELDS.map((field) => field.id),
   "dangerRadius",
   "fields",
   "templateData",
@@ -389,6 +396,9 @@ function normalizeStoredMarker(markerData) {
   storedMarker.status = markerData.status || "unverified";
   storedMarker.confidence = markerData.confidence || "guess";
   storedMarker.notes = markerData.notes || "";
+  ITEM_DISCOVERY_FIELDS.forEach((field) => {
+    storedMarker[field.id] = markerData[field.id] || "";
+  });
   storedMarker.dangerRadius = getDangerRadiusValue(
     storedMarker.category,
     markerData.dangerRadius

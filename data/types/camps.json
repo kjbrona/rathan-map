@@ -1,3 +1,8 @@
 [
-  { "id": "camp", "name": "Camp", "icon": "🏕", "enabled": true }
+  {
+    "id": "camp",
+    "name": "Camp",
+    "enabled": true,
+    "group": "camp"
+  }
 ]

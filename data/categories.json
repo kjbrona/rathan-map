@@ -2,49 +2,41 @@
   {
     "id": "herbs",
     "name": "Herbs",
-    "icon": "🌿",
     "enabled": true
   },
   {
     "id": "trees",
     "name": "Trees",
-    "icon": "🌲",
     "enabled": true
   },
   {
     "id": "fishing",
     "name": "Fishing Spots",
-    "icon": "🐟",
     "enabled": true
   },
   {
     "id": "mining",
     "name": "Mining",
-    "icon": "⛏",
     "enabled": true
   },
   {
     "id": "camps",
     "name": "Camps",
-    "icon": "🏕",
     "enabled": true
   },
   {
     "id": "npcs",
     "name": "NPCs",
-    "icon": "👤",
     "enabled": true
   },
   {
     "id": "crafting-benches",
     "name": "Crafting Benches",
-    "icon": "🪚",
     "enabled": true
   },
   {
     "id": "dangerous-animals",
     "name": "Dangerous Animals",
-    "icon": "\u26a0\ufe0f",
     "enabled": true
   }
 ]

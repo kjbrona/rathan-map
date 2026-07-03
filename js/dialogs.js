@@ -34,16 +34,31 @@ async function initializeMarkerDialogControls() {
 
   if (CATEGORIES.length > 0) {
     await buildTypeDropdown("marker-type", categorySelect.value);
+    updateTypeIconPreview(
+      "marker-type-icon",
+      categorySelect.value,
+      typeSelect.value
+    );
     renderTemplateFields("marker-template-fields", categorySelect.value);
   }
 
   categorySelect.addEventListener("change", async function () {
     await buildTypeDropdown("marker-type", this.value);
+    updateTypeIconPreview(
+      "marker-type-icon",
+      this.value,
+      document.getElementById("marker-type").value
+    );
     renderTemplateFields("marker-template-fields", this.value);
     autoFillMarkerName();
   });
 
   typeSelect.addEventListener("change", function () {
+    updateTypeIconPreview(
+      "marker-type-icon",
+      document.getElementById("marker-category").value,
+      this.value
+    );
     autoFillMarkerName();
   });
 
@@ -62,12 +77,18 @@ async function openMarkerDialog(latlng) {
   document.getElementById("marker-form").reset();
   document.getElementById("marker-status").value = "unverified";
   document.getElementById("marker-confidence").value = "guess";
+  populateItemDiscoveryFields("marker");
 
   await buildCategoryDropdown("marker-category");
 
   if (CATEGORIES.length > 0) {
     const categoryId = document.getElementById("marker-category").value;
     await buildTypeDropdown("marker-type", categoryId);
+    updateTypeIconPreview(
+      "marker-type-icon",
+      categoryId,
+      document.getElementById("marker-type").value
+    );
     renderTemplateFields("marker-template-fields", categoryId);
   }
 
@@ -127,6 +148,7 @@ function saveMarkerFromDialog(event) {
     status: document.getElementById("marker-status").value,
     confidence: document.getElementById("marker-confidence").value,
     notes: templateValues.shared.notes || "",
+    ...collectItemDiscoveryValues("marker"),
     fields: templateValues.templateData,
     templateData: templateValues.templateData,
     dangerRadius: getDangerRadiusValue(

@@ -1,5 +1,38 @@
 # RosalitaRP Explorer
 
+## v1.2.4 Item Discovery Tracking
+- Added optional item-discovery fields to marker add/edit forms.
+- Included discovery details in search, imports, exports, Firebase sync, and local browser storage.
+- Kept older marker data compatible and kept empty discovery fields tucked away in the selected marker panel.
+
+## v1.2.3 Marker Icon Rendering Fix
+- Added SVG URL cache-busting so markers load the current icon artwork.
+- Removed marker icon CSS filtering that could muddy icon colors.
+- Resized marker SVG images for clearer 70-75% marker-circle coverage with proportional selected marker scaling.
+- Preserved marker circle size, border colors, Firebase sync, JSON data, filters, search, and import/export behavior.
+
+## v1.2.2 SVG Icon Contrast Fix
+- Increased SVG icon contrast with bright parchment gold and dark brown explicit shape colors.
+- Removed inherited SVG paint dependencies so icons stay readable inside circular map markers.
+- Preserved SVG filenames, dimensions, transparent backgrounds, icon shapes, marker styling, data, and app behavior.
+
+## v1.2.1 SVG Icon Visual Polish
+- Polished all custom SVG icons with a consistent engraved brass/parchment palette.
+- Normalized icon fill, stroke, and visual weight for better readability on parchment terrain, roads, rivers, and dark map regions.
+- Preserved SVG filenames, dimensions, transparent backgrounds, marker sizes, marker borders, JSON data, and rendering behavior.
+
+## v1.2.0
+- Added Type Group icon metadata with SVG-based group icons.
+- Updated type data to reference icon groups instead of storing icons per type.
+- Replaced marker, sidebar, dialog, and search-result icons with shared Type Group SVGs.
+- Preserved marker storage compatibility, imports, exports, filters, search, danger circles, context menus, and marker movement.
+
+## v1.1.1
+- Added Google Fonts import for Rye and Inter.
+- Updated decorative headings, dialog titles, and the application title to use Rye.
+- Updated normal interface text, controls, marker details, statistics, and footer text to use Inter.
+- Preserved existing colors, spacing, layout, and sidebar behavior.
+
 ## v1.1.0
 - Refined Add Marker and Selected Marker layouts with Basic Information, Category Details, and Location sections.
 - Moved Status and Confidence into shared Basic Information controls.

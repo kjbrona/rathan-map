@@ -13,7 +13,7 @@ async function buildCategoryDropdown(selectId, selectedCategoryId = null) {
   CATEGORIES.forEach((category) => {
     const option = document.createElement("option");
     option.value = category.id;
-    option.textContent = `${category.icon} ${category.name}`;
+    option.textContent = category.name;
 
     if (selectedCategoryId && category.id === selectedCategoryId) {
       option.selected = true;
@@ -34,7 +34,7 @@ async function buildTypeDropdown(selectId, categoryId, selectedTypeId = null) {
   types.forEach((type) => {
     const option = document.createElement("option");
     option.value = type.id;
-    option.textContent = `${type.icon} ${type.name}`;
+    option.textContent = type.name;
 
     if (selectedTypeId && type.id === selectedTypeId) {
       option.selected = true;
@@ -44,6 +44,29 @@ async function buildTypeDropdown(selectId, categoryId, selectedTypeId = null) {
   });
 
   return select.value;
+}
+
+function updateTypeIconPreview(previewId, categoryId, typeId) {
+  const preview = document.getElementById(previewId);
+
+  if (!preview) {
+    return;
+  }
+
+  const group = getTypeGroupForType(categoryId, typeId);
+
+  if (!group) {
+    preview.innerHTML = "";
+    preview.title = "";
+    return;
+  }
+
+  preview.innerHTML = createTypeGroupIconHtml(
+    categoryId,
+    typeId,
+    "type-icon-preview-image"
+  );
+  preview.title = group.name;
 }
 
 function getSelectedTypeName(categoryId, typeId) {
@@ -158,4 +181,41 @@ function collectTemplateFieldValues(containerId, categoryId) {
   });
 
   return values;
+}
+
+function getItemDiscoveryInputId(formPrefix, fieldId) {
+  const field = ITEM_DISCOVERY_FIELDS.find((fieldData) => {
+    return fieldData.id === fieldId;
+  });
+
+  return field ? `${formPrefix}-${field.inputId}` : "";
+}
+
+function collectItemDiscoveryValues(formPrefix) {
+  return ITEM_DISCOVERY_FIELDS.reduce((values, field) => {
+    const control = document.getElementById(
+      getItemDiscoveryInputId(formPrefix, field.id)
+    );
+
+    values[field.id] = control ? control.value.trim() : "";
+    return values;
+  }, {});
+}
+
+function populateItemDiscoveryFields(formPrefix, markerData = {}) {
+  ITEM_DISCOVERY_FIELDS.forEach((field) => {
+    const control = document.getElementById(
+      getItemDiscoveryInputId(formPrefix, field.id)
+    );
+
+    if (control) {
+      control.value = markerData[field.id] || "";
+    }
+  });
+}
+
+function markerHasItemDiscoveryData(markerData = {}) {
+  return ITEM_DISCOVERY_FIELDS.some((field) => {
+    return String(markerData[field.id] || "").trim().length > 0;
+  });
 }

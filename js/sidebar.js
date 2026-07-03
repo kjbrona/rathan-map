@@ -192,7 +192,7 @@ function createCategoryFilter(category, types, isExpanded) {
   categoryToggle.type = "button";
   categoryToggle.className = "category-filter-toggle";
   categoryToggle.setAttribute("aria-expanded", String(isExpanded));
-  categoryToggle.textContent = `${isExpanded ? "v" : ">"} ${category.icon} ${category.name}`;
+  categoryToggle.textContent = `${isExpanded ? "v" : ">"} ${category.name}`;
 
   categoryRow.appendChild(categoryCheckbox);
   categoryRow.appendChild(categoryToggle);
@@ -229,9 +229,13 @@ function createTypeFilter(categoryId, type) {
   });
 
   const typeName = document.createElement("span");
-  typeName.textContent = `${type.icon} ${type.name}`;
+  typeName.textContent = type.name;
 
   typeLabel.appendChild(typeCheckbox);
+  typeLabel.insertAdjacentHTML(
+    "beforeend",
+    createTypeGroupIconHtml(categoryId, type.id, "type-filter-icon")
+  );
   typeLabel.appendChild(typeName);
 
   return typeLabel;
@@ -264,9 +268,7 @@ function toggleCategoryExpansion(categoryId, toggle, typeList, category) {
 
   const nextExpanded = !isExpanded;
   toggle.setAttribute("aria-expanded", String(nextExpanded));
-  toggle.textContent = `${nextExpanded ? "v" : ">"} ${category.icon} ${
-    category.name
-  }`;
+  toggle.textContent = `${nextExpanded ? "v" : ">"} ${category.name}`;
 }
 
 function clearAddMarkerMode() {
@@ -281,17 +283,37 @@ async function initializeMarkerDetailsPanel() {
 
   const initialCategory = document.getElementById("edit-marker-category").value;
   await buildTypeDropdown("edit-marker-type", initialCategory);
+  updateTypeIconPreview(
+    "edit-marker-type-icon",
+    initialCategory,
+    document.getElementById("edit-marker-type").value
+  );
 
   document
     .getElementById("edit-marker-category")
     .addEventListener("change", async function () {
       await buildTypeDropdown("edit-marker-type", this.value);
+      updateTypeIconPreview(
+        "edit-marker-type-icon",
+        this.value,
+        document.getElementById("edit-marker-type").value
+      );
       renderTemplateFields("edit-marker-template-fields", this.value, {
         notes: "",
         dangerRadius: DEFAULT_DANGER_RADIUS,
         fields: {},
         templateData: {},
       });
+    });
+
+  document
+    .getElementById("edit-marker-type")
+    .addEventListener("change", function () {
+      updateTypeIconPreview(
+        "edit-marker-type-icon",
+        document.getElementById("edit-marker-category").value,
+        this.value
+      );
     });
 
   document
@@ -323,6 +345,7 @@ async function initializeMarkerDetailsPanel() {
         notes: hasTemplateNotes
           ? templateValues.shared.notes
           : (existingMarker && existingMarker.notes) || "",
+        ...collectItemDiscoveryValues("edit-marker"),
         fields: templateValues.templateData,
         templateData: templateValues.templateData,
         dangerRadius: getDangerRadiusValue(
@@ -373,12 +396,26 @@ async function renderMarkerDetails(markerData) {
     markerData.status || "unverified";
   document.getElementById("edit-marker-confidence").value =
     markerData.confidence || "guess";
+  populateItemDiscoveryFields("edit-marker", markerData);
+
+  const itemDiscoverySection = document.getElementById(
+    "edit-item-discovery-section"
+  );
+
+  if (itemDiscoverySection) {
+    itemDiscoverySection.open = markerHasItemDiscoveryData(markerData);
+  }
 
   await buildCategoryDropdown("edit-marker-category", markerData.category);
   await buildTypeDropdown(
     "edit-marker-type",
     markerData.category,
     markerData.type
+  );
+  updateTypeIconPreview(
+    "edit-marker-type-icon",
+    markerData.category,
+    document.getElementById("edit-marker-type").value
   );
 
   renderTemplateFields(

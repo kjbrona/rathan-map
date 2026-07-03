@@ -4,12 +4,18 @@
   <meta charset="UTF-8" />
   <title>RosalitaRP Explorer</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rye&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
 
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/map.css" />
-  <link rel="stylesheet" href="css/sidebar.css" />
-  <link rel="stylesheet" href="css/dialogs.css" />
+  <link rel="stylesheet" href="css/main.css?v=1.3.3" />
+  <link rel="stylesheet" href="css/map.css?v=1.3.3" />
+  <link rel="stylesheet" href="css/sidebar.css?v=1.3.3" />
+  <link rel="stylesheet" href="css/dialogs.css?v=1.3.3" />
 </head>
 
 <body>
@@ -97,10 +103,75 @@
 
             <label>
               Type
-              <select id="edit-marker-type" required></select>
+              <span class="type-select-row">
+                <span id="edit-marker-type-icon" class="type-icon-preview"></span>
+                <select id="edit-marker-type" required></select>
+              </span>
             </label>
             <div id="edit-marker-template-fields" class="template-fields"></div>
           </div>
+
+          <details class="form-section item-discovery-section" id="edit-item-discovery-section">
+            <summary>
+              <h3>Item Discovery</h3>
+            </summary>
+
+            <label>
+              Item Name
+              <input type="text" id="edit-marker-item-name" />
+            </label>
+
+            <div class="form-grid two-column">
+              <label>
+                Item Category
+                <input type="text" id="edit-marker-item-category" />
+              </label>
+
+              <label>
+                Rarity
+                <select id="edit-marker-rarity">
+                  <option value="">Not Set</option>
+                  <option value="common">Common</option>
+                  <option value="uncommon">Uncommon</option>
+                  <option value="rare">Rare</option>
+                  <option value="unique">Unique</option>
+                  <option value="legendary">Legendary</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              Item Use
+              <input type="text" id="edit-marker-item-use" />
+            </label>
+
+            <div class="form-grid two-column">
+              <label>
+                Found By
+                <input type="text" id="edit-marker-found-by" />
+              </label>
+
+              <label>
+                Found Date
+                <input type="date" id="edit-marker-found-date" />
+              </label>
+            </div>
+
+            <label>
+              Vendor Value
+              <input type="number" id="edit-marker-vendor-value" min="0" step="0.01" />
+            </label>
+
+            <label>
+              Crafting Uses
+              <textarea id="edit-marker-crafting-uses" rows="2"></textarea>
+            </label>
+
+            <label>
+              Item Notes
+              <textarea id="edit-marker-item-notes" rows="2"></textarea>
+            </label>
+          </details>
 
           <div class="form-section">
             <h3>Location</h3>
@@ -207,11 +278,76 @@
 
           <label>
             Type
-            <select id="marker-type" required></select>
+            <span class="type-select-row">
+              <span id="marker-type-icon" class="type-icon-preview"></span>
+              <select id="marker-type" required></select>
+            </span>
           </label>
 
           <div id="marker-template-fields" class="template-fields"></div>
         </div>
+
+        <details class="form-section item-discovery-section" open>
+          <summary>
+            <h3>Item Discovery</h3>
+          </summary>
+
+          <label>
+            Item Name
+            <input type="text" id="marker-item-name" />
+          </label>
+
+          <div class="form-grid two-column">
+            <label>
+              Item Category
+              <input type="text" id="marker-item-category" />
+            </label>
+
+            <label>
+              Rarity
+              <select id="marker-rarity">
+                <option value="">Not Set</option>
+                <option value="common">Common</option>
+                <option value="uncommon">Uncommon</option>
+                <option value="rare">Rare</option>
+                <option value="unique">Unique</option>
+                <option value="legendary">Legendary</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Item Use
+            <input type="text" id="marker-item-use" />
+          </label>
+
+          <div class="form-grid two-column">
+            <label>
+              Found By
+              <input type="text" id="marker-found-by" />
+            </label>
+
+            <label>
+              Found Date
+              <input type="date" id="marker-found-date" />
+            </label>
+          </div>
+
+          <label>
+            Vendor Value
+            <input type="number" id="marker-vendor-value" min="0" step="0.01" />
+          </label>
+
+          <label>
+            Crafting Uses
+            <textarea id="marker-crafting-uses" rows="2"></textarea>
+          </label>
+
+          <label>
+            Item Notes
+            <textarea id="marker-item-notes" rows="2"></textarea>
+          </label>
+        </details>
 
         <div class="form-section">
           <h3>Location</h3>
@@ -271,21 +407,21 @@
   <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
 
-  <script src="js/config.js"></script>
-  <script src="js/firebaseConfig.js"></script>
-  <script src="js/firebaseStorage.js"></script>
-  <script src="js/map.js"></script>
-  <script src="js/categories.js"></script>
-  <script src="js/types.js"></script>
-  <script src="js/templates.js"></script>
-  <script src="js/storage.js"></script>
-  <script src="js/ui.js"></script>
-  <script src="js/markers.js"></script>
-  <script src="js/markerManager.js"></script>
-  <script src="js/search.js"></script>
-  <script src="js/contextMenu.js"></script>
-  <script src="js/sidebar.js"></script>
-  <script src="js/dialogs.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/config.js?v=1.3.3"></script>
+  <script src="js/firebaseConfig.js?v=1.3.3"></script>
+  <script src="js/firebaseStorage.js?v=1.3.3"></script>
+  <script src="js/map.js?v=1.3.3"></script>
+  <script src="js/categories.js?v=1.3.3"></script>
+  <script src="js/types.js?v=1.3.3"></script>
+  <script src="js/templates.js?v=1.3.3"></script>
+  <script src="js/storage.js?v=1.3.3"></script>
+  <script src="js/ui.js?v=1.3.3"></script>
+  <script src="js/markers.js?v=1.3.3"></script>
+  <script src="js/markerManager.js?v=1.3.3"></script>
+  <script src="js/search.js?v=1.3.3"></script>
+  <script src="js/contextMenu.js?v=1.3.3"></script>
+  <script src="js/sidebar.js?v=1.3.3"></script>
+  <script src="js/dialogs.js?v=1.3.3"></script>
+  <script src="js/main.js?v=1.3.3"></script>
 </body>
 </html>

@@ -1,0 +1,218 @@
+[
+  {
+    "id": "berries",
+    "name": "Berries",
+    "icon": "images/icons/berries.svg",
+    "description": "Sweet and harvestable berry plants."
+  },
+  {
+    "id": "mushrooms",
+    "name": "Mushrooms",
+    "icon": "images/icons/mushrooms.svg",
+    "description": "Forageable mushrooms and fungi."
+  },
+  {
+    "id": "flowers",
+    "name": "Flowers",
+    "icon": "images/icons/flowers.svg",
+    "description": "Flowering herbs and medicinal blooms."
+  },
+  {
+    "id": "roots",
+    "name": "Roots",
+    "icon": "images/icons/roots.svg",
+    "description": "Root plants, bulbs, and sturdy ground herbs."
+  },
+  {
+    "id": "leaves",
+    "name": "Leaves",
+    "icon": "images/icons/leaves.svg",
+    "description": "Leafy herbs, sages, mints, and tobacco plants."
+  },
+  {
+    "id": "reeds",
+    "name": "Reeds",
+    "icon": "images/icons/reeds.svg",
+    "description": "Wetland reeds and tall water plants."
+  },
+  {
+    "id": "coal",
+    "name": "Coal",
+    "icon": "images/icons/coal.svg",
+    "description": "Coal mining output locations."
+  },
+  {
+    "id": "iron",
+    "name": "Iron",
+    "icon": "images/icons/iron.svg",
+    "description": "Iron mining output locations."
+  },
+  {
+    "id": "gold",
+    "name": "Gold",
+    "icon": "images/icons/gold.svg",
+    "description": "Gold mining output locations."
+  },
+  {
+    "id": "sulfur",
+    "name": "Sulfur",
+    "icon": "images/icons/sulfur.svg",
+    "description": "Sulfur mining output locations."
+  },
+  {
+    "id": "gems",
+    "name": "Gems",
+    "icon": "images/icons/gems.svg",
+    "description": "Gem and precious stone mining locations."
+  },
+  {
+    "id": "bear",
+    "name": "Bear",
+    "icon": "images/icons/bear.svg",
+    "description": "Bear territory or spawn locations."
+  },
+  {
+    "id": "wolf",
+    "name": "Wolf",
+    "icon": "images/icons/wolf.svg",
+    "description": "Wolf territory or spawn locations."
+  },
+  {
+    "id": "cougar",
+    "name": "Cougar",
+    "icon": "images/icons/cougar.svg",
+    "description": "Cougar territory or spawn locations."
+  },
+  {
+    "id": "panther",
+    "name": "Panther",
+    "icon": "images/icons/panther.svg",
+    "description": "Panther territory or spawn locations."
+  },
+  {
+    "id": "alligator",
+    "name": "Alligator",
+    "icon": "images/icons/alligator.svg",
+    "description": "Alligator territory or spawn locations."
+  },
+  {
+    "id": "snake",
+    "name": "Snake",
+    "icon": "images/icons/snake.svg",
+    "description": "Snake territory or spawn locations."
+  },
+  {
+    "id": "fish",
+    "name": "Fish",
+    "icon": "images/icons/fish.svg",
+    "description": "Fishing spot locations."
+  },
+  {
+    "id": "tree",
+    "name": "Tree",
+    "icon": "images/icons/tree.svg",
+    "description": "Gatherable sapling and tree locations."
+  },
+  {
+    "id": "crafting",
+    "name": "Crafting",
+    "icon": "images/icons/crafting.svg",
+    "description": "Crafting bench and workstation locations."
+  },
+  {
+    "id": "camp",
+    "name": "Camp",
+    "icon": "images/icons/camp.svg",
+    "description": "Camp and campsite locations."
+  },
+  {
+    "id": "general-store",
+    "name": "General Store",
+    "icon": "images/icons/general-store.svg",
+    "description": "General store and merchant NPCs."
+  },
+  {
+    "id": "blacksmith",
+    "name": "Blacksmith",
+    "icon": "images/icons/blacksmith.svg",
+    "description": "Blacksmith and metalwork NPCs."
+  },
+  {
+    "id": "gunsmith",
+    "name": "Gunsmith",
+    "icon": "images/icons/gunsmith.svg",
+    "description": "Gunsmith NPCs."
+  },
+  {
+    "id": "doctor",
+    "name": "Doctor",
+    "icon": "images/icons/doctor.svg",
+    "description": "Doctor and medical NPCs."
+  },
+  {
+    "id": "saloon",
+    "name": "Saloon",
+    "icon": "images/icons/saloon.svg",
+    "description": "Saloon NPCs."
+  },
+  {
+    "id": "hotel",
+    "name": "Hotel",
+    "icon": "images/icons/hotel.svg",
+    "description": "Hotel NPCs."
+  },
+  {
+    "id": "stable",
+    "name": "Stable",
+    "icon": "images/icons/stable.svg",
+    "description": "Stable NPCs."
+  },
+  {
+    "id": "butcher",
+    "name": "Butcher",
+    "icon": "images/icons/butcher.svg",
+    "description": "Butcher NPCs."
+  },
+  {
+    "id": "barber",
+    "name": "Barber",
+    "icon": "images/icons/barber.svg",
+    "description": "Barber NPCs."
+  },
+  {
+    "id": "tailor",
+    "name": "Tailor",
+    "icon": "images/icons/tailor.svg",
+    "description": "Tailor NPCs."
+  },
+  {
+    "id": "bank",
+    "name": "Bank",
+    "icon": "images/icons/bank.svg",
+    "description": "Banking NPCs."
+  },
+  {
+    "id": "post-office",
+    "name": "Post Office",
+    "icon": "images/icons/post-office.svg",
+    "description": "Post office NPCs."
+  },
+  {
+    "id": "sheriff",
+    "name": "Sheriff",
+    "icon": "images/icons/sheriff.svg",
+    "description": "Sheriff and law NPCs."
+  },
+  {
+    "id": "farming",
+    "name": "Farming",
+    "icon": "images/icons/farming.svg",
+    "description": "Farming supply NPCs."
+  },
+  {
+    "id": "seed-seller",
+    "name": "Seed Seller",
+    "icon": "images/icons/seed-seller.svg",
+    "description": "Seed seller NPCs."
+  }
+]

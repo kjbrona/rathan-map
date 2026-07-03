@@ -1,8 +1,38 @@
 [
-  { "id": "blacksmith", "name": "Blacksmith", "icon": "\u2692", "enabled": true },
-  { "id": "carpenter", "name": "Carpenter", "icon": "\ud83e\ude9a", "enabled": true },
-  { "id": "cooking", "name": "Cooking", "icon": "\ud83c\udf73", "enabled": true },
-  { "id": "doctor", "name": "Doctor", "icon": "\u2695", "enabled": true },
-  { "id": "general-bench", "name": "General Bench", "icon": "\ud83e\ude9a", "enabled": true },
-  { "id": "tailor", "name": "Tailor", "icon": "\ud83e\uddf5", "enabled": true }
+  {
+    "id": "blacksmith",
+    "name": "Blacksmith",
+    "enabled": true,
+    "group": "crafting"
+  },
+  {
+    "id": "carpenter",
+    "name": "Carpenter",
+    "enabled": true,
+    "group": "crafting"
+  },
+  {
+    "id": "cooking",
+    "name": "Cooking",
+    "enabled": true,
+    "group": "crafting"
+  },
+  {
+    "id": "doctor",
+    "name": "Doctor",
+    "enabled": true,
+    "group": "crafting"
+  },
+  {
+    "id": "general-bench",
+    "name": "General Bench",
+    "enabled": true,
+    "group": "crafting"
+  },
+  {
+    "id": "tailor",
+    "name": "Tailor",
+    "enabled": true,
+    "group": "crafting"
+  }
 ]

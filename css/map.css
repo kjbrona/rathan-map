@@ -24,25 +24,40 @@ Creator : Rathan
 }
 
 .category-marker-icon {
-    width: 28px;
-    height: 28px;
-    background: #1b140e;
-    border: 2px solid #e4c27a;
+    width: 24px;
+    height: 24px;
+    background: #d8c3a3;
+    border: 2px solid #c49a5a;
     border-radius: 50%;
     color: #f2e2bd;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 16px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.45);
+}
+
+.category-marker-icon-image {
+    width: 17px;
+    height: 17px;
+    display: block;
+    object-fit: contain;
 }
 
 .category-marker.selected .category-marker-icon {
-    width: 36px;
-    height: 36px;
-    border: 3px solid #ffd36a;
-    box-shadow: 0 0 12px rgba(255, 211, 106, 0.9);
+    width: 30px;
+    height: 30px;
+    background: #e4d0ad;
+    border: 2px solid #ffd36a;
+    box-shadow: 0 0 0 3px rgba(255, 211, 106, 0.32),
+        0 3px 10px rgba(0, 0, 0, 0.55);
     font-size: 19px;
+}
+
+.category-marker.selected .category-marker-icon-image {
+    width: 21px;
+    height: 21px;
 }
 
 .category-marker.status-unverified .category-marker-icon {
@@ -58,15 +73,18 @@ Creator : Rathan
 }
 
 .category-marker.selected.status-unverified .category-marker-icon {
-  box-shadow: 0 0 12px rgba(255, 211, 106, 0.9);
+  box-shadow: 0 0 0 3px rgba(255, 211, 106, 0.32),
+    0 3px 10px rgba(0, 0, 0, 0.55);
 }
 
 .category-marker.selected.status-verified .category-marker-icon {
-  box-shadow: 0 0 12px rgba(85, 214, 107, 0.9);
+  box-shadow: 0 0 0 3px rgba(85, 214, 107, 0.32),
+    0 3px 10px rgba(0, 0, 0, 0.55);
 }
 
 .category-marker.selected.status-invalid .category-marker-icon {
-  box-shadow: 0 0 12px rgba(214, 85, 85, 0.9);
+  box-shadow: 0 0 0 3px rgba(214, 85, 85, 0.32),
+    0 3px 10px rgba(0, 0, 0, 0.55);
 }
 
 body.move-marker-mode .leaflet-container {

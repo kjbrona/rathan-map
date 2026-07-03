@@ -2,199 +2,199 @@
   {
     "id": "alaskan-ginseng",
     "name": "Alaskan Ginseng",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "roots"
   },
   {
     "id": "american-ginseng",
     "name": "American Ginseng",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "roots"
   },
   {
     "id": "bay-bolete",
     "name": "Bay Bolete",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "mushrooms"
   },
   {
     "id": "black-currant",
     "name": "Black Currant",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "berries"
   },
   {
     "id": "blackberry",
     "name": "Blackberry",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "berries"
   },
   {
     "id": "bulrush",
     "name": "Bulrush",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "reeds"
   },
   {
     "id": "burdock-root",
     "name": "Burdock Root",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "roots"
   },
   {
     "id": "chanterelles",
     "name": "Chanterelles",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "mushrooms"
   },
   {
     "id": "chocolate-daisy",
     "name": "Chocolate Daisy",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "flowers"
   },
   {
     "id": "creeping-thyme",
     "name": "Creeping Thyme",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "leaves"
   },
   {
     "id": "desert-sage",
     "name": "Desert Sage",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "leaves"
   },
   {
     "id": "english-mace",
     "name": "English Mace",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "leaves"
   },
   {
     "id": "evergreen-huckleberry",
     "name": "Evergreen Huckleberry",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "berries"
   },
   {
     "id": "garlic",
     "name": "Garlic",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "roots"
   },
   {
     "id": "golden-currant",
     "name": "Golden Currant",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "berries"
   },
   {
     "id": "hummingbird-sage",
     "name": "Hummingbird Sage",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "leaves"
   },
   {
     "id": "indian-tobacco",
     "name": "Indian Tobacco",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "leaves"
   },
   {
     "id": "oleander",
     "name": "Oleander",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "flowers"
   },
   {
     "id": "oregano",
     "name": "Oregano",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "leaves"
   },
   {
     "id": "parasol-mushroom",
     "name": "Parasol Mushroom",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "mushrooms"
   },
   {
     "id": "poppy",
     "name": "Poppy",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "flowers"
   },
   {
     "id": "prairie-poppy",
     "name": "Prairie Poppy",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "flowers"
   },
   {
     "id": "rams-head",
     "name": "Rams Head",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "mushrooms"
   },
   {
     "id": "raspberry",
     "name": "Raspberry",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "berries"
   },
   {
     "id": "red-sage",
     "name": "Red Sage",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "leaves"
   },
   {
     "id": "texas-bluebonnet",
     "name": "Texas Bluebonnet",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "flowers"
   },
   {
     "id": "violet-snowdrops",
     "name": "Violet Snowdrops",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "flowers"
   },
   {
     "id": "wild-carrot",
     "name": "Wild Carrot",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "roots"
   },
   {
     "id": "wild-feverfew",
     "name": "Wild Feverfew",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "flowers"
   },
   {
     "id": "wild-mint",
     "name": "Wild Mint",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "leaves"
   },
   {
     "id": "wild-rhubarb",
     "name": "Wild Rhubarb",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "roots"
   },
   {
     "id": "wisteria",
     "name": "Wisteria",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "flowers"
   },
   {
     "id": "yarrow",
     "name": "Yarrow",
-    "icon": "🌿",
-    "enabled": true
+    "enabled": true,
+    "group": "flowers"
   }
 ]

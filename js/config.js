@@ -1,16 +1,28 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 1.1.0
+Version : 1.3.3
 Creator : Rathan
 ==================================================
 */
 
 const APP_NAME = "RosalitaRP Explorer";
 const APP_SUBTITLE = "Community Resource Map";
-const APP_VERSION = "1.1.0";
+const APP_VERSION = "1.3.3";
 const APP_CREATOR = "Rathan";
 const DEFAULT_DANGER_RADIUS = 50;
+
+const ITEM_DISCOVERY_FIELDS = [
+  { id: "itemName", inputId: "item-name" },
+  { id: "itemCategory", inputId: "item-category" },
+  { id: "itemUse", inputId: "item-use" },
+  { id: "rarity", inputId: "rarity" },
+  { id: "foundBy", inputId: "found-by" },
+  { id: "foundDate", inputId: "found-date" },
+  { id: "vendorValue", inputId: "vendor-value" },
+  { id: "craftingUses", inputId: "crafting-uses" },
+  { id: "itemNotes", inputId: "item-notes" },
+];
 
 const MAP_WIDTH = 9216;
 const MAP_HEIGHT = 7168;

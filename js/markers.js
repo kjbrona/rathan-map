@@ -13,10 +13,10 @@ function clearRenderedMarkers() {
 }
 
 function renderMarker(markerData, selected = false) {
-  const category = getCategoryById(markerData.category);
   const type = getTypeById(markerData.category, markerData.type);
-
-  const iconText = type ? type.icon : category ? category.icon : "📍";
+  const group = getTypeGroupForType(markerData.category, markerData.type);
+  const iconPath = getTypeGroupIconUrl(group);
+  const iconLabel = group ? group.name : type ? type.name : "Marker";
 
   const markerLatLng = [markerData.y, markerData.x];
 
@@ -25,11 +25,20 @@ function renderMarker(markerData, selected = false) {
   }
 
   const leafletMarker = L.marker(markerLatLng, {
-    icon: createCategoryIcon(iconText, selected, markerData.status),
+    icon: createTypeGroupMarkerIcon(
+      iconPath,
+      iconLabel,
+      selected,
+      markerData.status
+    ),
   }).addTo(renderedMarkerLayer);
 
   leafletMarker.bindPopup(`
-    <strong>${iconText} ${escapeHtml(markerData.name)}</strong>
+    <strong>${createTypeGroupIconHtml(
+      markerData.category,
+      markerData.type,
+      "popup-type-icon"
+    )} ${escapeHtml(markerData.name)}</strong>
   `);
 
   leafletMarker.on("click", function (event) {
@@ -64,17 +73,28 @@ function renderDangerZone(markerData, markerLatLng) {
   }).addTo(renderedMarkerLayer);
 }
 
-function createCategoryIcon(iconText, selected, status = "unverified") {
+function createTypeGroupMarkerIcon(
+  iconPath,
+  iconLabel,
+  selected,
+  status = "unverified"
+) {
   const statusClass = getStatusClass(status);
+  const iconSize = selected ? 30 : 24;
+  const iconHtml = iconPath
+    ? `<img class="category-marker-icon-image" src="${escapeHtml(
+        iconPath
+      )}" alt="${escapeHtml(iconLabel)}" />`
+    : "";
 
   return L.divIcon({
     className: selected
       ? `category-marker selected ${statusClass}`
       : `category-marker ${statusClass}`,
-    html: `<div class="category-marker-icon">${escapeHtml(iconText)}</div>`,
-    iconSize: selected ? [36, 36] : [28, 28],
-    iconAnchor: selected ? [18, 18] : [14, 14],
-    popupAnchor: [0, -14],
+    html: `<div class="category-marker-icon">${iconHtml}</div>`,
+    iconSize: [iconSize, iconSize],
+    iconAnchor: [iconSize / 2, iconSize / 2],
+    popupAnchor: [0, -(iconSize / 2)],
   });
 }
 

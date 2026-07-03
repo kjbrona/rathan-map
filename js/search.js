@@ -68,13 +68,16 @@ function renderSearchResults(matchingMarkers) {
 function createSearchResultRow(markerData) {
   const category = getCategoryById(markerData.category);
   const type = getTypeById(markerData.category, markerData.type);
-  const iconText = type ? type.icon : category ? category.icon : "*";
   const resultButton = document.createElement("button");
 
   resultButton.type = "button";
   resultButton.className = "search-result-row";
   resultButton.innerHTML = `
-    <span class="search-result-icon">${escapeHtml(iconText)}</span>
+    <span class="search-result-icon">${createTypeGroupIconHtml(
+      markerData.category,
+      markerData.type,
+      "search-result-icon-image"
+    )}</span>
     <span class="search-result-main">
       <strong>${escapeHtml(markerData.name)}</strong>
       <small>${escapeHtml(getSearchCategoryTypeLabel(category, type))}</small>
@@ -108,13 +111,21 @@ function updateSearchSummary(resultCount) {
 function getSearchHaystack(markerData) {
   const category = getCategoryById(markerData.category);
   const type = getTypeById(markerData.category, markerData.type);
+  const group = getTypeGroupForType(markerData.category, markerData.type);
   const values = [
     markerData.name,
     category ? category.name : markerData.category,
     type ? type.name : markerData.type,
+    group ? group.name : "",
     markerData.status,
     markerData.confidence,
     markerData.notes,
+    markerData.itemName,
+    markerData.rarity,
+    markerData.foundBy,
+    markerData.itemUse,
+    markerData.craftingUses,
+    markerData.itemNotes,
     ...Object.values(markerData.fields || {}),
     ...Object.values(markerData.templateData || {}),
   ];

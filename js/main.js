@@ -11,6 +11,7 @@ async function initializeApp() {
   console.log(`Created by ${APP_CREATOR}`);
 
   await loadCategoryData();
+  await loadTypeGroupData();
   await loadTemplateData();
 
   await initializeMarkerManager();

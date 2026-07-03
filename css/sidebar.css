@@ -16,6 +16,8 @@ Creator : Rathan
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  font-size: 15px;
+  line-height: 1.4;
   overflow: hidden;
 }
 
@@ -42,8 +44,9 @@ Creator : Rathan
 .sidebar-header h1 {
   margin: 0;
   color: #fff2d0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Rye", Georgia, "Times New Roman", serif;
   font-size: 22px;
+  font-weight: 400;
   line-height: 1.05;
 }
 
@@ -63,7 +66,8 @@ Creator : Rathan
   display: grid;
   gap: 5px;
   color: #c8aa72;
-  font-size: 12px;
+  font-size: 15px;
+  line-height: 1.4;
 }
 
 .search-control input {
@@ -73,6 +77,8 @@ Creator : Rathan
   background: #241b13;
   color: #a88b5f;
   border: 1px solid #5a3a1e;
+  font-size: 15px;
+  line-height: 1.4;
 }
 
 .search-control input:focus {
@@ -90,7 +96,8 @@ Creator : Rathan
 
 .search-results-summary {
   color: #a88b5f;
-  font-size: 12px;
+  font-size: 15px;
+  line-height: 1.4;
 }
 
 #search-results-list {
@@ -104,7 +111,7 @@ Creator : Rathan
 .search-result-row {
   width: 100%;
   display: grid;
-  grid-template-columns: 24px minmax(0, 1fr) auto;
+  grid-template-columns: 26px minmax(0, 1fr) auto;
   align-items: center;
   gap: 7px;
   padding: 7px;
@@ -123,8 +130,25 @@ Creator : Rathan
 }
 
 .search-result-icon {
-  font-size: 16px;
-  text-align: center;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-result-icon-image,
+.type-filter-icon,
+.type-icon-preview-image,
+.popup-type-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  box-sizing: border-box;
+  padding: 2px;
+  background: #d8c3a3;
+  border-radius: 50%;
+  object-fit: contain;
 }
 
 .search-result-main {
@@ -141,14 +165,17 @@ Creator : Rathan
 
 .search-result-main strong {
   color: #fff2d0;
-  font-size: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
 .search-result-main small,
 .search-result-status,
 .search-empty {
   color: #c8aa72;
-  font-size: 11px;
+  font-size: 15px;
+  line-height: 1.4;
 }
 
 .search-result-status {
@@ -164,13 +191,14 @@ Creator : Rathan
 
 #add-marker-btn {
   width: 100%;
-  padding: 9px 10px;
+  padding: 8px 10px;
   background: #8b5a2b;
   color: #fff2d0;
   border: 1px solid #c49a5a;
   cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 600;
   transition: background 160ms ease, border-color 160ms ease;
 }
 
@@ -192,12 +220,13 @@ Creator : Rathan
 }
 
 .marker-backup-actions button {
-  padding: 8px 6px;
+  padding: 7px 8px;
   background: #2a2118;
   color: #f2e2bd;
   border: 1px solid #8b5a2b;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 15px;
+  line-height: 1.4;
   transition: background 160ms ease, border-color 160ms ease;
 }
 
@@ -213,20 +242,22 @@ Creator : Rathan
 .sidebar-panel h2 {
   margin: 0 0 8px;
   color: #e4c27a;
+  font-family: "Rye", Georgia, "Times New Roman", serif;
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 400;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 #marker-details-empty {
   color: #a88b5f;
-  font-size: 13px;
+  font-size: 15px;
+  line-height: 1.4;
 }
 
 #marker-details-form {
   max-height: 640px;
-  overflow: hidden;
+  overflow-y: auto;
   opacity: 1;
   transition: max-height 220ms ease, opacity 180ms ease;
 }
@@ -234,6 +265,7 @@ Creator : Rathan
 #marker-details-form.hidden {
   display: block;
   max-height: 0;
+  overflow: hidden;
   opacity: 0;
 }
 
@@ -241,7 +273,8 @@ Creator : Rathan
   display: block;
   margin-bottom: 7px;
   color: #c8aa72;
-  font-size: 12px;
+  font-size: 15px;
+  line-height: 1.4;
 }
 
 #marker-details-form input,
@@ -254,6 +287,31 @@ Creator : Rathan
   background: #2a2118;
   color: #f2e2bd;
   border: 1px solid #8b5a2b;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.type-select-row {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  align-items: center;
+  gap: 7px;
+  margin-top: 4px;
+}
+
+.type-select-row select {
+  margin-top: 0;
+}
+
+.type-icon-preview {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid #8b5a2b;
+  box-sizing: border-box;
 }
 
 #marker-details-form textarea {
@@ -263,7 +321,8 @@ Creator : Rathan
 .dialog-coordinates {
   margin: 4px 0;
   color: #c8aa72;
-  font-size: 12px;
+  font-size: 15px;
+  line-height: 1.4;
 }
 
 .marker-detail-actions {
@@ -276,9 +335,9 @@ Creator : Rathan
 }
 
 .marker-detail-actions button {
-  padding: 8px;
+  padding: 7px 8px;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .marker-detail-actions .hidden {
@@ -351,12 +410,13 @@ Creator : Rathan
 }
 
 .filter-actions button {
-  padding: 6px 8px;
+  padding: 5px 8px;
   background: #2a2118;
   color: #f2e2bd;
   border: 1px solid #8b5a2b;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 15px;
+  line-height: 1.4;
   transition: background 160ms ease, border-color 160ms ease;
 }
 
@@ -407,8 +467,11 @@ Creator : Rathan
   color: #f2e2bd;
   cursor: pointer;
   font: inherit;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-shadow: none;
   text-align: left;
   transition: color 160ms ease;
 }
@@ -439,8 +502,16 @@ Creator : Rathan
   padding: 3px 5px;
   color: #c8aa72;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-shadow: none;
   transition: background 160ms ease, color 160ms ease;
+}
+
+.type-filter-icon {
+  flex: 0 0 auto;
 }
 
 .type-filter-list,
@@ -463,27 +534,43 @@ Creator : Rathan
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  padding: 3px 0;
+  padding: 1px 0;
   color: #c8aa72;
-  font-size: 13px;
+  font-size: 15px;
+  line-height: 1.25;
+}
+
+#marker-stats-section {
+  padding: 10px 12px;
+}
+
+#marker-stats-section h2 {
+  margin-bottom: 5px;
 }
 
 .marker-stat-row strong {
   color: #fff2d0;
+  font-weight: 600;
 }
 
 .sidebar-footer {
   display: grid;
-  gap: 4px;
+  gap: 3px;
+  padding: 10px 12px;
   border-bottom: 0;
   color: #a88b5f;
-  font-size: 12px;
-  line-height: 1.35;
+  font-size: 15px;
+  line-height: 1.25;
+}
+
+.sidebar-footer > div {
+  margin: 0;
+  line-height: 1.25;
 }
 
 .sidebar-footer strong {
-  display: block;
-  margin-top: 2px;
+  display: inline;
+  margin-top: 0;
   color: #c8aa72;
   font-weight: normal;
 }
@@ -522,6 +609,7 @@ Creator : Rathan
 
 .import-mode-option strong {
   color: #fff2d0;
+  font-weight: 600;
 }
 
 .import-mode-option small {
@@ -547,7 +635,8 @@ Creator : Rathan
   color: #f2e2bd;
   border: 0;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 15px;
+  line-height: 1.4;
   text-align: left;
 }
 
@@ -574,8 +663,37 @@ Creator : Rathan
 .form-section h3 {
   margin: 0 0 7px;
   color: #e4c27a;
+  font-family: "Rye", Georgia, "Times New Roman", serif;
   font-size: 11px;
-  font-weight: bold;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.item-discovery-section summary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 7px;
+  color: #e4c27a;
+  cursor: pointer;
+}
+
+.item-discovery-section summary h3 {
+  margin: 0;
+}
+
+.item-discovery-section summary::marker {
+  color: #c49a5a;
+}
+
+.context-menu-title {
+  margin: 0 0 5px;
+  padding: 4px 4px 6px;
+  color: #e4c27a;
+  font-family: "Rye", Georgia, "Times New Roman", serif;
+  font-size: 12px;
+  font-weight: 400;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }

@@ -2,29 +2,29 @@
   {
     "id": "coal",
     "name": "Coal",
-    "icon": "\u26cf",
     "enabled": true,
-    "description": "Mine whose primary output is coal."
+    "description": "Mine whose primary output is coal.",
+    "group": "coal"
   },
   {
     "id": "gold",
     "name": "Gold",
-    "icon": "\u26cf",
     "enabled": true,
-    "description": "Mine whose primary output is gold."
+    "description": "Mine whose primary output is gold.",
+    "group": "gold"
   },
   {
     "id": "iron",
     "name": "Iron",
-    "icon": "\u26cf",
     "enabled": true,
-    "description": "Mine whose primary output is iron."
+    "description": "Mine whose primary output is iron.",
+    "group": "iron"
   },
   {
     "id": "sulfur",
     "name": "Sulfur",
-    "icon": "\u26cf",
     "enabled": true,
-    "description": "Mine whose primary output is sulfur."
+    "description": "Mine whose primary output is sulfur.",
+    "group": "sulfur"
   }
 ]
