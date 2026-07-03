@@ -30,24 +30,30 @@ Creator : Rathan
 .sidebar-header {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 3px;
   padding-top: 14px;
 }
 
+.sidebar-header > div {
+  flex: 1;
+  min-width: 0;
+}
+
 .app-logo {
-  width: 44px;
-  height: 44px;
+  width: 56px;
+  height: 56px;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .sidebar-header h1 {
   margin: 0;
   color: #fff2d0;
   font-family: "Rye", Georgia, "Times New Roman", serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.05;
+  white-space: nowrap;
 }
 
 .subtitle {
@@ -60,6 +66,7 @@ Creator : Rathan
 .sidebar-tools {
   display: grid;
   gap: 10px;
+  padding-top: 5px;
 }
 
 .search-control {
@@ -255,6 +262,26 @@ Creator : Rathan
   line-height: 1.4;
 }
 
+#marker-details-section.no-marker-selected {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: baseline;
+  gap: 10px;
+  padding: 5px 14px;
+}
+
+#marker-details-section.no-marker-selected h2 {
+  margin: 0;
+}
+
+#marker-details-section.no-marker-selected #marker-details-empty {
+  overflow: hidden;
+  color: #a88b5f;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 #marker-details-form {
   max-height: 640px;
   overflow-y: auto;
@@ -396,13 +423,17 @@ Creator : Rathan
   top: 0;
   z-index: 100;
   display: grid;
-  gap: 7px;
+  gap: 4px;
   margin: 0;
-  padding: 12px 14px 8px;
+  padding: 8px 14px 2px;
   background: #1b140e;
   background-color: #1b140e;
   border-bottom: 1px solid rgba(196, 154, 90, 0.18);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.22);
+}
+
+.filter-panel-header h2 {
+  margin-bottom: 0;
 }
 
 .filter-actions {
@@ -431,7 +462,7 @@ Creator : Rathan
 #category-list {
   display: grid;
   gap: 2px;
-  padding: 6px 10px 12px 14px;
+  padding: 2px 10px 12px 14px;
 }
 
 .category-filter {
@@ -453,7 +484,7 @@ Creator : Rathan
 
 .category-filter-row {
   position: sticky;
-  top: 78px;
+  top: 56px;
   z-index: 90;
   min-height: 24px;
   padding: 1px 5px;
@@ -533,41 +564,43 @@ Creator : Rathan
 }
 
 .marker-stat-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 1px 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 12px;
+  padding: 0;
   color: #c8aa72;
   font-size: 15px;
-  line-height: 1.25;
+  line-height: 1;
 }
 
 #marker-stats-section {
-  padding: 10px 12px;
+  padding: 3px 12px;
 }
 
 #marker-stats-section h2 {
-  margin-bottom: 5px;
+  margin-bottom: 0;
 }
 
 .marker-stat-row strong {
   color: #fff2d0;
   font-weight: 600;
+  text-align: right;
 }
 
 .sidebar-footer {
   display: grid;
-  gap: 3px;
-  padding: 10px 12px;
+  gap: 0;
+  padding: 2px 12px;
   border-bottom: 0;
   color: #a88b5f;
-  font-size: 15px;
-  line-height: 1.25;
+  font-size: 13px;
+  line-height: 1;
 }
 
 .sidebar-footer > div {
   margin: 0;
-  line-height: 1.25;
+  line-height: 1;
 }
 
 .sidebar-footer strong {

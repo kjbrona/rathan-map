@@ -378,16 +378,19 @@ async function initializeMarkerDetailsPanel() {
 }
 
 async function renderMarkerDetails(markerData) {
+  const detailsSection = document.getElementById("marker-details-section");
   const empty = document.getElementById("marker-details-empty");
   const form = document.getElementById("marker-details-form");
 
   if (!markerData) {
     cancelMoveMarkerMode();
+    detailsSection.classList.add("no-marker-selected");
     empty.style.display = "block";
     form.classList.add("hidden");
     return;
   }
 
+  detailsSection.classList.remove("no-marker-selected");
   empty.style.display = "none";
   form.classList.remove("hidden");
 

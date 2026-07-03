@@ -1,5 +1,20 @@
 # RosalitaRP Explorer
 
+## v1.3.7 Compact Selected Marker Placeholder
+- Collapsed the empty Selected Marker panel into a compact one-row placeholder when no marker is selected.
+- Preserved the full selected-marker edit form and actions when a marker is selected.
+- Updated cache-busting references to v1.3.7.
+
+## v1.3.6 Sidebar Workspace Optimization
+- Kept the favicon-based header logo while tightening header spacing and forcing the application title onto one line.
+- Compacted Statistics and footer/status sections to reclaim sidebar space for marker details and filters.
+- Tightened the Filters toolbar spacing and updated cache-busting references to v1.3.6.
+
+## v1.3.5 Header and Sidebar Spacing Polish
+- Swapped the visible application header logo to the 96px favicon artwork and displayed it larger with contained scaling.
+- Tightened header, search, and Filters section spacing while preserving the sidebar layout and western styling.
+- Updated cache-busting references to v1.3.5.
+
 ## v1.3.4 Sidebar Polish
 - Increased the Add Marker sidebar button height slightly so it stays compact without feeling cramped.
 - Matched Selected Marker action buttons to the sidebar button typography with 15px text and 600 weight.
