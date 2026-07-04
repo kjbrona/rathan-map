@@ -1,5 +1,10 @@
 # RosalitaRP Explorer
 
+## v1.3.17 Permanent State Zone Data
+- Merged the adjusted browser-saved State Zone polygons into `data/state-zones.json`.
+- Removed the temporary zone export helper and stopped relying on browser-local State Zone overrides.
+- Made the committed zone data the single source of truth for local and deployed versions.
+
 ## v1.3.16 Saved State Zone Restore
 - Restored loading of previously saved State Zone polygon adjustments from browser storage after finalizing the editor.
 - Kept the State Zone Editor removed while preserving saved zone alignment changes at runtime.

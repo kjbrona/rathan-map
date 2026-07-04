@@ -1,12 +1,10 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 1.3.16
+Version : 1.3.17
 Creator : Rathan
 ==================================================
 */
-
-const STATE_ZONE_STORAGE_KEY = "rosalitarp-explorer-state-zones-v2";
 
 let STATE_ZONES = [];
 let stateZoneLayer = null;
@@ -18,7 +16,6 @@ async function loadStateZoneData() {
   );
   const stateZoneData = await response.json();
   STATE_ZONES = Array.isArray(stateZoneData.states) ? stateZoneData.states : [];
-  applySavedStateZonePolygons();
   return STATE_ZONES;
 }
 
@@ -205,59 +202,4 @@ function updateFilterHeaderHeight() {
     "--filter-header-height",
     `${Math.ceil(filterHeader.getBoundingClientRect().height)}px`
   );
-}
-
-function applySavedStateZonePolygons() {
-  const savedPolygons = loadSavedStateZonePolygons();
-
-  if (!savedPolygons) {
-    return;
-  }
-
-  STATE_ZONES.forEach((state) => {
-    const savedPolygon = savedPolygons[state.id];
-
-    if (isValidStateZonePolygon(savedPolygon)) {
-      state.polygon = savedPolygon.map(([x, y]) => [Number(x), Number(y)]);
-    }
-  });
-}
-
-function loadSavedStateZonePolygons() {
-  if (!canUseStateZoneStorage()) {
-    return null;
-  }
-
-  try {
-    const savedValue = localStorage.getItem(STATE_ZONE_STORAGE_KEY);
-    const savedPolygons = savedValue ? JSON.parse(savedValue) : null;
-    return savedPolygons && typeof savedPolygons === "object"
-      ? savedPolygons
-      : null;
-  } catch (error) {
-    console.warn("Saved state zone polygons could not be loaded.", error);
-    return null;
-  }
-}
-
-function isValidStateZonePolygon(polygon) {
-  return (
-    Array.isArray(polygon) &&
-    polygon.length >= 3 &&
-    polygon.every(
-      (point) =>
-        Array.isArray(point) &&
-        point.length >= 2 &&
-        Number.isFinite(Number(point[0])) &&
-        Number.isFinite(Number(point[1]))
-    )
-  );
-}
-
-function canUseStateZoneStorage() {
-  try {
-    return typeof localStorage !== "undefined";
-  } catch (error) {
-    return false;
-  }
 }
