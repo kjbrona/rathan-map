@@ -12,6 +12,7 @@ async function initializeApp() {
 
   await loadCategoryData();
   await loadTypeGroupData();
+  await loadUseData();
   await loadTemplateData();
   await loadStateZoneData();
 

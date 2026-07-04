@@ -1,0 +1,26 @@
+[
+  {
+    "id": "Cooking",
+    "label": "Cooking"
+  },
+  {
+    "id": "Drink",
+    "label": "Drink"
+  },
+  {
+    "id": "Medicine",
+    "label": "Medicine"
+  },
+  {
+    "id": "Crafting",
+    "label": "Crafting"
+  },
+  {
+    "id": "Poison",
+    "label": "Poison"
+  },
+  {
+    "id": "Research Needed",
+    "label": "Research Needed"
+  }
+]

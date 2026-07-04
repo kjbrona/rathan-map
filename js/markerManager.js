@@ -12,6 +12,14 @@ let activeCategoryFilters = new Set();
 let activeTypeFilters = new Map();
 let activeStateFilter = "";
 let autosaveStatusTimer = null;
+const HERB_SHARED_MARKER_FIELDS = [
+  "uses",
+  "itemCategory",
+  "itemUse",
+  "vendorValue",
+  "craftingUses",
+  "itemNotes",
+];
 
 async function initializeMarkerManager() {
   activeCategoryFilters = new Set(
@@ -42,9 +50,14 @@ async function initializeMarkerManager() {
 }
 
 function addMarker(markerData) {
+  applyExistingHerbSharedFields(markerData);
   updateMarkerStateFromCoordinates(markerData);
   markers.push(markerData);
-  persistMarker(markerData);
+  syncHerbSharedFields(markerData, markerData, {
+    includeSource: false,
+    preserveEmptySource: true,
+  });
+  persistMarkers();
   selectMarker(markerData.id);
   updateMarkerStats();
 }
@@ -63,8 +76,9 @@ async function updateMarker(markerId, updates) {
   Object.assign(markerData, updates);
   updateMarkerStateFromCoordinates(markerData);
   markerData.modifiedAt = new Date().toISOString();
+  syncHerbSharedFields(markerData, updates);
 
-  await persistMarker(markerData);
+  await persistMarkers();
   selectMarker(markerId);
   updateMarkerStats();
 }
@@ -91,6 +105,97 @@ function updateMarkerStateFromCoordinates(markerData) {
 
   markerData.state = stateAuto;
   markerData.stateOverride = false;
+}
+
+function applyExistingHerbSharedFields(markerData) {
+  if (!isHerbMarker(markerData)) {
+    return;
+  }
+
+  const matchingMarker = markers.find((candidate) => {
+    return (
+      candidate.id !== markerData.id &&
+      candidate.category === markerData.category &&
+      candidate.type === markerData.type &&
+      hasAnyHerbSharedFieldValue(candidate)
+    );
+  });
+
+  if (!matchingMarker) {
+    return;
+  }
+
+  HERB_SHARED_MARKER_FIELDS.forEach((fieldName) => {
+    if (!hasHerbSharedFieldValue(markerData, fieldName)) {
+      markerData[fieldName] = cloneHerbSharedFieldValue(
+        matchingMarker[fieldName]
+      );
+    }
+  });
+}
+
+function syncHerbSharedFields(
+  sourceMarker,
+  sourceValues,
+  { includeSource = false, preserveEmptySource = false } = {}
+) {
+  if (!isHerbMarker(sourceMarker) || !hasAnyHerbSharedFieldKey(sourceValues)) {
+    return;
+  }
+
+  markers.forEach((targetMarker) => {
+    if (
+      (!includeSource && targetMarker.id === sourceMarker.id) ||
+      targetMarker.category !== sourceMarker.category ||
+      targetMarker.type !== sourceMarker.type
+    ) {
+      return;
+    }
+
+    HERB_SHARED_MARKER_FIELDS.forEach((fieldName) => {
+      if (!Object.prototype.hasOwnProperty.call(sourceValues, fieldName)) {
+        return;
+      }
+
+      if (
+        preserveEmptySource &&
+        !hasHerbSharedFieldValue(sourceValues, fieldName)
+      ) {
+        return;
+      }
+
+      targetMarker[fieldName] = cloneHerbSharedFieldValue(sourceMarker[fieldName]);
+    });
+
+    targetMarker.modifiedAt = new Date().toISOString();
+  });
+}
+
+function isHerbMarker(markerData) {
+  return markerData && markerData.category === "herbs" && markerData.type;
+}
+
+function hasAnyHerbSharedFieldKey(values = {}) {
+  return HERB_SHARED_MARKER_FIELDS.some((fieldName) => {
+    return Object.prototype.hasOwnProperty.call(values, fieldName);
+  });
+}
+
+function hasAnyHerbSharedFieldValue(markerData = {}) {
+  return HERB_SHARED_MARKER_FIELDS.some((fieldName) => {
+    return hasHerbSharedFieldValue(markerData, fieldName);
+  });
+}
+
+function hasHerbSharedFieldValue(markerData = {}, fieldName) {
+  const value = markerData[fieldName];
+  return Array.isArray(value)
+    ? value.length > 0
+    : String(value || "").trim().length > 0;
+}
+
+function cloneHerbSharedFieldValue(value) {
+  return Array.isArray(value) ? value.slice() : value || "";
 }
 
 async function moveSelectedMarkerTo(latlng) {

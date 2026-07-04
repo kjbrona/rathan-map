@@ -12,7 +12,9 @@ let TEMPLATE_DATA = {
 };
 
 async function loadTemplateData() {
-  const response = await fetch("data/templates.json");
+  const response = await fetch(
+    `data/templates.json?v=${encodeURIComponent(APP_VERSION)}`
+  );
   TEMPLATE_DATA = await response.json();
   return TEMPLATE_DATA;
 }

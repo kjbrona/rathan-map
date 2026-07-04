@@ -8,6 +8,7 @@ Creator : Rathan
 
 let pendingMarkerLatLng = null;
 let markerNameManuallyEdited = false;
+const ADD_MARKER_PREFS_STORAGE_KEY = "rosalitarp-explorer-add-marker-prefs";
 
 function initializeDialogs() {
   initializeMarkerDialogControls();
@@ -79,9 +80,9 @@ async function openMarkerDialog(latlng) {
   const y = Math.round(latlng.lat);
 
   document.getElementById("marker-form").reset();
-  document.getElementById("marker-status").value = "unverified";
-  document.getElementById("marker-confidence").value = "guess";
+  applyLastUsedMarkerDefaults();
   populateItemDiscoveryFields("marker");
+  document.getElementById("marker-found-date").value = getLocalDateInputValue();
 
   await buildCategoryDropdown("marker-category");
 
@@ -138,6 +139,61 @@ function closeMarkerDialog() {
   clearAddMarkerMode();
 }
 
+function applyLastUsedMarkerDefaults() {
+  const prefs = loadAddMarkerPreferences();
+  document.getElementById("marker-status").value =
+    prefs.status || "unverified";
+  document.getElementById("marker-confidence").value =
+    prefs.confidence || "guess";
+}
+
+function saveLastUsedMarkerDefaults(status, confidence) {
+  try {
+    localStorage.setItem(
+      ADD_MARKER_PREFS_STORAGE_KEY,
+      JSON.stringify({ status, confidence })
+    );
+  } catch (error) {
+    console.warn("Add Marker preferences could not be saved.", error);
+  }
+}
+
+function loadAddMarkerPreferences() {
+  try {
+    const storedValue = localStorage.getItem(ADD_MARKER_PREFS_STORAGE_KEY);
+    const prefs = storedValue ? JSON.parse(storedValue) : {};
+
+    if (!prefs || typeof prefs !== "object") {
+      return {};
+    }
+
+    return {
+      status: isValidMarkerStatus(prefs.status) ? prefs.status : "",
+      confidence: isValidMarkerConfidence(prefs.confidence)
+        ? prefs.confidence
+        : "",
+    };
+  } catch (error) {
+    console.warn("Add Marker preferences could not be loaded.", error);
+    return {};
+  }
+}
+
+function isValidMarkerStatus(value) {
+  return ["unverified", "verified", "invalid"].includes(value);
+}
+
+function isValidMarkerConfidence(value) {
+  return ["guess", "approximate", "exact"].includes(value);
+}
+
+function getLocalDateInputValue(date = new Date()) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
 function updateMarkerDialogStateHelper() {
   const stateSelect = document.getElementById("marker-state");
   const stateHelper = document.getElementById("marker-state-helper");
@@ -175,6 +231,7 @@ function saveMarkerFromDialog(event) {
     type: document.getElementById("marker-type").value,
     status: document.getElementById("marker-status").value,
     confidence: document.getElementById("marker-confidence").value,
+    uses: normalizeUses(templateValues.shared.uses),
     notes: templateValues.shared.notes || "",
     ...collectItemDiscoveryValues("marker"),
     fields: templateValues.templateData,
@@ -194,6 +251,7 @@ function saveMarkerFromDialog(event) {
   markerData.stateOverride =
     markerData.state !== "" && markerData.state !== markerData.stateAuto;
 
+  saveLastUsedMarkerDefaults(markerData.status, markerData.confidence);
   addMarker(markerData);
   closeMarkerDialog();
 }

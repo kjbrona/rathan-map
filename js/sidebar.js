@@ -374,10 +374,11 @@ async function initializeMarkerDetailsPanel() {
         state: selectedState,
         stateAuto,
         stateOverride: selectedState !== "" && selectedState !== stateAuto,
+        uses: normalizeUses(templateValues.shared.uses),
         notes: hasTemplateNotes
           ? templateValues.shared.notes
           : (existingMarker && existingMarker.notes) || "",
-        ...collectItemDiscoveryValues("edit-marker"),
+        ...collectItemDiscoveryValues("edit-marker", existingMarker),
         fields: templateValues.templateData,
         templateData: templateValues.templateData,
         dangerRadius: getDangerRadiusValue(

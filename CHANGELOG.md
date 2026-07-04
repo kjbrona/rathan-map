@@ -1,5 +1,24 @@
 # RosalitaRP Explorer
 
+## v1.3.21 Herb Shared Knowledge Sync
+- Added automatic syncing of shared Herb knowledge across markers with the same Herb type.
+- Shared Herb fields include Uses, Item Category, Item Use, Vendor Value, Crafting Uses, and Item Notes.
+- Kept location-specific marker fields such as coordinates, state, status, confidence, found-by/date, yield, and notes per marker.
+
+## v1.3.20 Remove Rarity
+- Removed the Rarity field from Item Discovery because it does not exist in-game.
+- Removed Rarity from active item-discovery storage fields and search indexing.
+
+## v1.3.19 Flexible Uses System
+- Replaced the Herb Sub-category template field with a reusable multi-select Uses checkbox list.
+- Added data-driven Uses options and top-level marker `uses` array persistence for future categories.
+- Added migration from legacy Herb Sub-category values into Uses and included Uses in search/import/export.
+
+## v1.3.18 Add Marker Workflow Polish
+- Remembered the last Add Marker Status and Confidence in browser-local preferences only.
+- Moved Add Marker Save/Cancel controls above Item Discovery for faster marker entry.
+- Removed the duplicate Item Discovery Item Name controls and defaulted Date Found to the current local date for new markers.
+
 ## v1.3.17 Permanent State Zone Data
 - Merged the adjusted browser-saved State Zone polygons into `data/state-zones.json`.
 - Removed the temporary zone export helper and stopped relying on browser-local State Zone overrides.

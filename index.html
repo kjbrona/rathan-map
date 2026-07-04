@@ -12,10 +12,10 @@
   />
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
 
-  <link rel="stylesheet" href="css/main.css?v=1.3.17" />
-  <link rel="stylesheet" href="css/map.css?v=1.3.17" />
-  <link rel="stylesheet" href="css/sidebar.css?v=1.3.17" />
-  <link rel="stylesheet" href="css/dialogs.css?v=1.3.17" />
+  <link rel="stylesheet" href="css/main.css?v=1.3.21" />
+  <link rel="stylesheet" href="css/map.css?v=1.3.21" />
+  <link rel="stylesheet" href="css/sidebar.css?v=1.3.21" />
+  <link rel="stylesheet" href="css/dialogs.css?v=1.3.21" />
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
   <link rel="shortcut icon" href="images/favicons/favicon.ico">
@@ -122,28 +122,9 @@
             </summary>
 
             <label>
-              Item Name
-              <input type="text" id="edit-marker-item-name" />
+              Item Category
+              <input type="text" id="edit-marker-item-category" />
             </label>
-
-            <div class="form-grid two-column">
-              <label>
-                Item Category
-                <input type="text" id="edit-marker-item-category" />
-              </label>
-
-              <label>
-                Rarity
-                <select id="edit-marker-rarity">
-                  <option value="">Not Set</option>
-                  <option value="common">Common</option>
-                  <option value="uncommon">Uncommon</option>
-                  <option value="rare">Rare</option>
-                  <option value="unique">Unique</option>
-                  <option value="legendary">Legendary</option>
-                </select>
-              </label>
-            </div>
 
             <label>
               Item Use
@@ -157,7 +138,7 @@
               </label>
 
               <label>
-                Found Date
+                Date Found
                 <input type="date" id="edit-marker-found-date" />
               </label>
             </div>
@@ -305,34 +286,20 @@
           <div id="marker-template-fields" class="template-fields"></div>
         </div>
 
+        <div class="modal-actions">
+          <button type="button" id="marker-cancel">Cancel</button>
+          <button type="submit" id="marker-save">Save</button>
+        </div>
+
         <details class="form-section item-discovery-section" open>
           <summary>
             <h3>Item Discovery</h3>
           </summary>
 
           <label>
-            Item Name
-            <input type="text" id="marker-item-name" />
+            Item Category
+            <input type="text" id="marker-item-category" />
           </label>
-
-          <div class="form-grid two-column">
-            <label>
-              Item Category
-              <input type="text" id="marker-item-category" />
-            </label>
-
-            <label>
-              Rarity
-              <select id="marker-rarity">
-                <option value="">Not Set</option>
-                <option value="common">Common</option>
-                <option value="uncommon">Uncommon</option>
-                <option value="rare">Rare</option>
-                <option value="unique">Unique</option>
-                <option value="legendary">Legendary</option>
-              </select>
-            </label>
-          </div>
 
           <label>
             Item Use
@@ -346,7 +313,7 @@
             </label>
 
             <label>
-              Found Date
+              Date Found
               <input type="date" id="marker-found-date" />
             </label>
           </div>
@@ -378,11 +345,6 @@
             <select id="marker-state"></select>
             <small id="marker-state-helper" class="state-helper hidden"></small>
           </label>
-        </div>
-
-        <div class="modal-actions">
-          <button type="button" id="marker-cancel">Cancel</button>
-          <button type="submit" id="marker-save">Save</button>
         </div>
       </form>
     </div>
@@ -430,22 +392,23 @@
   <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
 
-  <script src="js/config.js?v=1.3.17"></script>
-  <script src="js/firebaseConfig.js?v=1.3.17"></script>
-  <script src="js/firebaseStorage.js?v=1.3.17"></script>
-  <script src="js/map.js?v=1.3.17"></script>
-  <script src="js/stateZones.js?v=1.3.17"></script>
-  <script src="js/categories.js?v=1.3.17"></script>
-  <script src="js/types.js?v=1.3.17"></script>
-  <script src="js/templates.js?v=1.3.17"></script>
-  <script src="js/storage.js?v=1.3.17"></script>
-  <script src="js/ui.js?v=1.3.17"></script>
-  <script src="js/markers.js?v=1.3.17"></script>
-  <script src="js/markerManager.js?v=1.3.17"></script>
-  <script src="js/search.js?v=1.3.17"></script>
-  <script src="js/contextMenu.js?v=1.3.17"></script>
-  <script src="js/sidebar.js?v=1.3.17"></script>
-  <script src="js/dialogs.js?v=1.3.17"></script>
-  <script src="js/main.js?v=1.3.17"></script>
+  <script src="js/config.js?v=1.3.21"></script>
+  <script src="js/firebaseConfig.js?v=1.3.21"></script>
+  <script src="js/firebaseStorage.js?v=1.3.21"></script>
+  <script src="js/map.js?v=1.3.21"></script>
+  <script src="js/stateZones.js?v=1.3.21"></script>
+  <script src="js/categories.js?v=1.3.21"></script>
+  <script src="js/types.js?v=1.3.21"></script>
+  <script src="js/uses.js?v=1.3.21"></script>
+  <script src="js/templates.js?v=1.3.21"></script>
+  <script src="js/storage.js?v=1.3.21"></script>
+  <script src="js/ui.js?v=1.3.21"></script>
+  <script src="js/markers.js?v=1.3.21"></script>
+  <script src="js/markerManager.js?v=1.3.21"></script>
+  <script src="js/search.js?v=1.3.21"></script>
+  <script src="js/contextMenu.js?v=1.3.21"></script>
+  <script src="js/sidebar.js?v=1.3.21"></script>
+  <script src="js/dialogs.js?v=1.3.21"></script>
+  <script src="js/main.js?v=1.3.21"></script>
 </body>
 </html>

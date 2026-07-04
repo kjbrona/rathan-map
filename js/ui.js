@@ -92,8 +92,11 @@ function createTemplateFieldControl(field, markerData) {
   const label = document.createElement("label");
   const inputId = `template-field-${field.id}-${crypto.randomUUID()}`;
   const value = getMarkerTemplateFieldValue(markerData, field);
+  const isCheckboxList = field.type === "checkbox-list";
   const control =
-    field.type === "textarea"
+    isCheckboxList
+      ? document.createElement("div")
+      : field.type === "textarea"
       ? document.createElement("textarea")
       : field.type === "select"
       ? document.createElement("select")
@@ -104,7 +107,21 @@ function createTemplateFieldControl(field, markerData) {
   control.dataset.templateFieldId = field.id;
   control.dataset.sharedField = field.shared ? "true" : "false";
 
-  if (field.placeholder) {
+  if (isCheckboxList) {
+    control.className = "checkbox-list-field";
+    getTemplateFieldOptions(field).forEach((optionData) => {
+      const optionLabel = document.createElement("label");
+      const checkbox = document.createElement("input");
+
+      checkbox.type = "checkbox";
+      checkbox.value = optionData.value;
+      checkbox.checked = Array.isArray(value) && value.includes(optionData.value);
+
+      optionLabel.appendChild(checkbox);
+      optionLabel.appendChild(document.createTextNode(optionData.label));
+      control.appendChild(optionLabel);
+    });
+  } else if (field.placeholder) {
     control.placeholder = field.placeholder;
   }
 
@@ -138,6 +155,18 @@ function createTemplateFieldControl(field, markerData) {
 }
 
 function getMarkerTemplateFieldValue(markerData, field) {
+  if (field.type === "checkbox-list") {
+    return normalizeTemplateArrayValue(
+      markerData[field.id] !== undefined
+        ? markerData[field.id]
+        : markerData.templateData && markerData.templateData[field.id] !== undefined
+        ? markerData.templateData[field.id]
+        : markerData.fields && markerData.fields[field.id] !== undefined
+        ? markerData.fields[field.id]
+        : field.default
+    );
+  }
+
   if (field.shared && markerData[field.id] !== undefined) {
     return markerData[field.id];
   }
@@ -156,6 +185,29 @@ function getMarkerTemplateFieldValue(markerData, field) {
   return field.default || "";
 }
 
+function getTemplateFieldOptions(field) {
+  if (field.optionsSource === "uses") {
+    return getUseOptions().map((use) => ({
+      value: use.id,
+      label: use.label,
+    }));
+  }
+
+  return field.options || [];
+}
+
+function normalizeTemplateArrayValue(value) {
+  if (Array.isArray(value)) {
+    return value;
+  }
+
+  if (typeof value === "string" && value.trim()) {
+    return [value.trim()];
+  }
+
+  return [];
+}
+
 function collectTemplateFieldValues(containerId, categoryId) {
   const container = document.getElementById(containerId);
   const values = {
@@ -171,7 +223,14 @@ function collectTemplateFieldValues(containerId, categoryId) {
     const control = container.querySelector(
       `[data-template-field-id="${field.id}"]`
     );
-    const value = control ? control.value.trim() : field.default || "";
+    const value =
+      control && field.type === "checkbox-list"
+        ? Array.from(control.querySelectorAll("input[type='checkbox']:checked"))
+            .map((checkbox) => checkbox.value)
+            .filter(Boolean)
+        : control
+        ? control.value.trim()
+        : field.default || "";
 
     if (field.shared) {
       values.shared[field.id] = value;
@@ -191,13 +250,15 @@ function getItemDiscoveryInputId(formPrefix, fieldId) {
   return field ? `${formPrefix}-${field.inputId}` : "";
 }
 
-function collectItemDiscoveryValues(formPrefix) {
+function collectItemDiscoveryValues(formPrefix, existingData = {}) {
   return ITEM_DISCOVERY_FIELDS.reduce((values, field) => {
     const control = document.getElementById(
       getItemDiscoveryInputId(formPrefix, field.id)
     );
 
-    values[field.id] = control ? control.value.trim() : "";
+    values[field.id] = control
+      ? control.value.trim()
+      : existingData[field.id] || "";
     return values;
   }, {});
 }
@@ -216,6 +277,10 @@ function populateItemDiscoveryFields(formPrefix, markerData = {}) {
 
 function markerHasItemDiscoveryData(markerData = {}) {
   return ITEM_DISCOVERY_FIELDS.some((field) => {
+    if (field.id === "itemName") {
+      return false;
+    }
+
     return String(markerData[field.id] || "").trim().length > 0;
   });
 }

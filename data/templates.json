@@ -11,24 +11,12 @@
   "categories": {
     "herbs": [
       {
-        "id": "herbSubcategory",
-        "label": "Herb Subcategory",
-        "type": "select",
-        "default": "unknown",
-        "options": [
-          {
-            "value": "food-seasoning",
-            "label": "Food/Seasoning"
-          },
-          {
-            "value": "medicinal",
-            "label": "Medicinal"
-          },
-          {
-            "value": "unknown",
-            "label": "Unknown"
-          }
-        ]
+        "id": "uses",
+        "label": "Uses",
+        "type": "checkbox-list",
+        "shared": true,
+        "default": [],
+        "optionsSource": "uses"
       },
       {
         "id": "plantsAtLocation",

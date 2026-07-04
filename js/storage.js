@@ -46,6 +46,10 @@ const SUPPORTED_IMPORT_VERSIONS = [
   "1.3.15",
   "1.3.16",
   "1.3.17",
+  "1.3.18",
+  "1.3.19",
+  "1.3.20",
+  "1.3.21",
 ];
 
 const MARKER_STORAGE_FIELDS = [
@@ -58,6 +62,7 @@ const MARKER_STORAGE_FIELDS = [
   "state",
   "stateAuto",
   "stateOverride",
+  "uses",
   "notes",
   ...ITEM_DISCOVERY_FIELDS.map((field) => field.id),
   "dangerRadius",
@@ -71,7 +76,7 @@ const MARKER_STORAGE_FIELDS = [
 
 const DUPLICATED_TEMPLATE_FIELDS_BY_CATEGORY = {
   mining: ["primaryOutput", "excludedDrops"],
-  herbs: ["herbName", "herbSpecies"],
+  herbs: ["herbName", "herbSpecies", "herbSubcategory"],
   fishing: ["fishSpecies"],
   trees: ["treeType"],
   npcs: ["profession"],
@@ -435,6 +440,11 @@ function normalizeStoredMarker(markerData) {
   storedMarker.state = storedMarker.stateOverride
     ? savedState || savedStateAuto
     : savedStateAuto;
+  storedMarker.uses = normalizeUses(
+    markerData.uses ||
+      (markerData.templateData && markerData.templateData.uses) ||
+      (markerData.fields && markerData.fields.uses)
+  );
   storedMarker.notes = markerData.notes || "";
   ITEM_DISCOVERY_FIELDS.forEach((field) => {
     storedMarker[field.id] = markerData[field.id] || "";
@@ -455,8 +465,42 @@ function normalizeStoredMarker(markerData) {
   storedMarker.y = y;
 
   migrateMarkerTemplateData(storedMarker);
+  migrateMarkerUses(storedMarker, markerData);
 
   return storedMarker;
+}
+
+function migrateMarkerUses(storedMarker, sourceMarker) {
+  if (storedMarker.uses.length > 0) {
+    return;
+  }
+
+  const legacySubcategory =
+    sourceMarker.herbSubcategory ||
+    (sourceMarker.templateData && sourceMarker.templateData.herbSubcategory) ||
+    (sourceMarker.fields && sourceMarker.fields.herbSubcategory) ||
+    "";
+  const migratedUse = getUseFromLegacyHerbSubcategory(legacySubcategory);
+
+  storedMarker.uses = migratedUse ? [migratedUse] : [];
+}
+
+function getUseFromLegacyHerbSubcategory(value) {
+  const normalizedValue = String(value || "")
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+  const legacyUseMap = {
+    "food-seasoning": "Cooking",
+    food: "Cooking",
+    seasoning: "Cooking",
+    medicinal: "Medicine",
+    medicine: "Medicine",
+    unknown: "Research Needed",
+  };
+
+  return legacyUseMap[normalizedValue] || "";
 }
 
 function migrateMarkerTemplateData(markerData) {
