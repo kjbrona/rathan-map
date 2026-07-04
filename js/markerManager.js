@@ -8,9 +8,7 @@ Creator : Rathan
 
 let markers = [];
 let selectedMarkerId = null;
-let activeCategoryFilters = new Set();
-let activeTypeFilters = new Map();
-let activeStateFilter = "";
+let activeFilters = createEmptyFilterState();
 let autosaveStatusTimer = null;
 const HERB_SHARED_MARKER_FIELDS = [
   "uses",
@@ -22,18 +20,12 @@ const HERB_SHARED_MARKER_FIELDS = [
 ];
 
 async function initializeMarkerManager() {
-  activeCategoryFilters = new Set(
-    CATEGORIES.filter((category) => category.enabled !== false).map(
-      (category) => category.id
-    )
-  );
-
-  activeTypeFilters = new Map();
+  activeFilters = createDefaultFilterState();
 
   await Promise.all(
     CATEGORIES.map(async (category) => {
       const types = await loadTypesForCategory(category.id);
-      activeTypeFilters.set(
+      activeFilters.types.set(
         category.id,
         new Set(
           types
@@ -47,6 +39,32 @@ async function initializeMarkerManager() {
   applySavedFilterState();
   markers = await loadMarkers();
   setAutosaveStatus("saved");
+}
+
+function createEmptyFilterState() {
+  return {
+    state: "",
+    statuses: [],
+    confidences: [],
+    uses: [],
+    categories: new Set(),
+    types: new Map(),
+  };
+}
+
+function createDefaultFilterState() {
+  return {
+    state: "",
+    statuses: [],
+    confidences: [],
+    uses: [],
+    categories: new Set(
+      CATEGORIES.filter((category) => category.enabled !== false).map(
+        (category) => category.id
+      )
+    ),
+    types: new Map(),
+  };
 }
 
 function addMarker(markerData) {
@@ -281,15 +299,37 @@ function applyRemoteMarkers(remoteMarkers) {
 }
 
 function isMarkerVisible(markerData) {
-  if (activeStateFilter && markerData.state !== activeStateFilter) {
+  if (activeFilters.state && markerData.state !== activeFilters.state) {
     return false;
   }
 
-  if (!activeCategoryFilters.has(markerData.category)) {
+  if (
+    activeFilters.statuses.length > 0 &&
+    !activeFilters.statuses.includes(markerData.status || "unverified")
+  ) {
     return false;
   }
 
-  const activeTypes = activeTypeFilters.get(markerData.category);
+  if (
+    activeFilters.confidences.length > 0 &&
+    !activeFilters.confidences.includes(markerData.confidence || "guess")
+  ) {
+    return false;
+  }
+
+  if (activeFilters.uses.length > 0) {
+    const markerUses = Array.isArray(markerData.uses) ? markerData.uses : [];
+
+    if (!activeFilters.uses.some((useId) => markerUses.includes(useId))) {
+      return false;
+    }
+  }
+
+  if (!activeFilters.categories.has(markerData.category)) {
+    return false;
+  }
+
+  const activeTypes = activeFilters.types.get(markerData.category);
 
   if (!activeTypes || !markerData.type) {
     return true;
@@ -300,34 +340,24 @@ function isMarkerVisible(markerData) {
 
 function setCategoryFilter(categoryId, enabled) {
   if (enabled) {
-    activeCategoryFilters.add(categoryId);
-    activeTypeFilters.set(
+    activeFilters.categories.add(categoryId);
+    activeFilters.types.set(
       categoryId,
       new Set((TYPE_DATA[categoryId] || []).map((type) => type.id))
     );
   } else {
-    activeCategoryFilters.delete(categoryId);
-    activeTypeFilters.set(categoryId, new Set());
+    activeFilters.categories.delete(categoryId);
+    activeFilters.types.set(categoryId, new Set());
   }
 
-  if (selectedMarkerId) {
-    const selectedMarker = getMarkerById(selectedMarkerId);
-
-    if (selectedMarker && !isMarkerVisible(selectedMarker)) {
-      selectedMarkerId = null;
-      renderMarkerDetails(null);
-    }
-  }
-
-  saveFilterStateToStorage(getFilterStateForStorage());
-  refreshMarkers();
+  applyFilterChange();
 }
 
 function setCategoryAndTypeFilters(categoryId, enabled) {
   if (enabled) {
-    activeCategoryFilters.add(categoryId);
+    activeFilters.categories.add(categoryId);
   } else {
-    activeCategoryFilters.delete(categoryId);
+    activeFilters.categories.delete(categoryId);
   }
 
   const categoryTypes = TYPE_DATA[categoryId] || [];
@@ -339,88 +369,58 @@ function setCategoryAndTypeFilters(categoryId, enabled) {
     });
   }
 
-  activeTypeFilters.set(categoryId, activeTypes);
+  activeFilters.types.set(categoryId, activeTypes);
 
-  if (selectedMarkerId) {
-    const selectedMarker = getMarkerById(selectedMarkerId);
-
-    if (selectedMarker && !isMarkerVisible(selectedMarker)) {
-      selectedMarkerId = null;
-      renderMarkerDetails(null);
-    }
-  }
-
-  saveFilterStateToStorage(getFilterStateForStorage());
-  refreshMarkers();
+  applyFilterChange();
 }
 
 function setTypeFilter(categoryId, typeId, enabled) {
-  if (!activeTypeFilters.has(categoryId)) {
-    activeTypeFilters.set(categoryId, new Set());
+  if (!activeFilters.types.has(categoryId)) {
+    activeFilters.types.set(categoryId, new Set());
   }
 
-  const activeTypes = activeTypeFilters.get(categoryId);
+  const activeTypes = activeFilters.types.get(categoryId);
 
   if (enabled) {
     activeTypes.add(typeId);
-    activeCategoryFilters.add(categoryId);
+    activeFilters.categories.add(categoryId);
   } else {
     activeTypes.delete(typeId);
 
     if (activeTypes.size === 0) {
-      activeCategoryFilters.delete(categoryId);
+      activeFilters.categories.delete(categoryId);
     }
   }
 
-  if (selectedMarkerId) {
-    const selectedMarker = getMarkerById(selectedMarkerId);
-
-    if (selectedMarker && !isMarkerVisible(selectedMarker)) {
-      selectedMarkerId = null;
-      renderMarkerDetails(null);
-    }
-  }
-
-  saveFilterStateToStorage(getFilterStateForStorage());
-  refreshMarkers();
+  applyFilterChange();
 }
 
 function setAllFilters(enabled) {
-  activeCategoryFilters = new Set();
-  activeTypeFilters = new Map();
+  activeFilters.categories = new Set();
+  activeFilters.types = new Map();
 
   CATEGORIES.forEach((category) => {
     const categoryTypes = TYPE_DATA[category.id] || [];
 
-    activeTypeFilters.set(
+    activeFilters.types.set(
       category.id,
       enabled ? new Set(categoryTypes.map((type) => type.id)) : new Set()
     );
 
     if (enabled) {
-      activeCategoryFilters.add(category.id);
+      activeFilters.categories.add(category.id);
     }
   });
 
-  if (selectedMarkerId) {
-    const selectedMarker = getMarkerById(selectedMarkerId);
-
-    if (selectedMarker && !isMarkerVisible(selectedMarker)) {
-      selectedMarkerId = null;
-      renderMarkerDetails(null);
-    }
-  }
-
-  saveFilterStateToStorage(getFilterStateForStorage());
-  refreshMarkers();
+  applyFilterChange();
 }
 
 function isCategoryFilterActive(categoryId) {
-  return activeCategoryFilters.has(categoryId);
+  return activeFilters.categories.has(categoryId);
 }
 
 function isTypeFilterActive(categoryId, typeId) {
-  const activeTypes = activeTypeFilters.get(categoryId);
+  const activeTypes = activeFilters.types.get(categoryId);
   return activeTypes ? activeTypes.has(typeId) : true;
 }
 
@@ -433,8 +433,60 @@ function getVisibleMarkers() {
 }
 
 function setStateFilter(stateId) {
-  activeStateFilter = stateId || "";
+  activeFilters.state = stateId || "";
+  applyFilterChange();
+}
 
+function getStateFilter() {
+  return activeFilters.state;
+}
+
+function getActiveFilterState() {
+  return getFilterStateForStorage();
+}
+
+function setStatusFilter(statuses) {
+  activeFilters.statuses = normalizeFilterArray(statuses);
+  applyFilterChange();
+}
+
+function setConfidenceFilter(confidences) {
+  activeFilters.confidences = normalizeFilterArray(confidences);
+  applyFilterChange();
+}
+
+function setUsesFilter(uses) {
+  activeFilters.uses = normalizeFilterArray(uses);
+  applyFilterChange();
+}
+
+function resetAllFilters() {
+  const resetState = createDefaultFilterState();
+  resetState.types = activeFilters.types;
+
+  CATEGORIES.forEach((category) => {
+    const categoryTypes = TYPE_DATA[category.id] || [];
+    resetState.types.set(
+      category.id,
+      new Set(categoryTypes.map((type) => type.id))
+    );
+  });
+
+  activeFilters = resetState;
+  applyFilterChange();
+}
+
+function normalizeFilterArray(value) {
+  if (!Array.isArray(value)) {
+    return [];
+  }
+
+  return value
+    .map((item) => String(item || "").trim())
+    .filter((item, index, items) => item && items.indexOf(item) === index);
+}
+
+function applyFilterChange() {
   if (selectedMarkerId) {
     const selectedMarker = getMarkerById(selectedMarkerId);
 
@@ -444,11 +496,8 @@ function setStateFilter(stateId) {
     }
   }
 
+  saveFilterStateToStorage(getFilterStateForStorage());
   refreshMarkers();
-}
-
-function getStateFilter() {
-  return activeStateFilter;
 }
 
 function getMarkersForExport() {
@@ -571,7 +620,7 @@ function getCategoryFilterState(categoryId) {
     };
   }
 
-  const activeTypes = activeTypeFilters.get(categoryId) || new Set();
+  const activeTypes = activeFilters.types.get(categoryId) || new Set();
   const activeTypeCount = types.filter((type) => activeTypes.has(type.id))
     .length;
 
@@ -585,12 +634,16 @@ function getCategoryFilterState(categoryId) {
 function getFilterStateForStorage() {
   const activeTypes = {};
 
-  activeTypeFilters.forEach((typeIds, categoryId) => {
+  activeFilters.types.forEach((typeIds, categoryId) => {
     activeTypes[categoryId] = Array.from(typeIds);
   });
 
   return {
-    categories: Array.from(activeCategoryFilters),
+    state: activeFilters.state,
+    statuses: activeFilters.statuses,
+    confidences: activeFilters.confidences,
+    uses: activeFilters.uses,
+    categories: Array.from(activeFilters.categories),
     types: activeTypes,
   };
 }
@@ -602,25 +655,34 @@ function applySavedFilterState() {
     return;
   }
 
-  if (Array.isArray(savedFilterState.categories)) {
+  const migratedFilterState = migrateSavedFilterState(savedFilterState);
+
+  if (Array.isArray(migratedFilterState.categories)) {
     const validCategoryIds = new Set(CATEGORIES.map((category) => category.id));
-    activeCategoryFilters = new Set(
-      savedFilterState.categories.filter((categoryId) =>
+    activeFilters.categories = new Set(
+      migratedFilterState.categories.filter((categoryId) =>
         validCategoryIds.has(categoryId)
       )
     );
   }
 
-  if (savedFilterState.types && typeof savedFilterState.types === "object") {
-    activeTypeFilters.forEach((typeIds, categoryId) => {
-      const savedTypeIds = savedFilterState.types[categoryId];
+  activeFilters.state = migratedFilterState.state || "";
+  activeFilters.statuses = normalizeFilterArray(migratedFilterState.statuses);
+  activeFilters.confidences = normalizeFilterArray(
+    migratedFilterState.confidences
+  );
+  activeFilters.uses = normalizeFilterArray(migratedFilterState.uses);
+
+  if (migratedFilterState.types && typeof migratedFilterState.types === "object") {
+    activeFilters.types.forEach((typeIds, categoryId) => {
+      const savedTypeIds = migratedFilterState.types[categoryId];
 
       if (!Array.isArray(savedTypeIds)) {
         return;
       }
 
       const validTypeIds = new Set(typeIds);
-      activeTypeFilters.set(
+      activeFilters.types.set(
         categoryId,
         new Set(
           savedTypeIds
@@ -630,6 +692,26 @@ function applySavedFilterState() {
       );
     });
   }
+}
+
+function migrateSavedFilterState(savedFilterState) {
+  return {
+    state: savedFilterState.state || "",
+    statuses: Array.isArray(savedFilterState.statuses)
+      ? savedFilterState.statuses
+      : [],
+    confidences: Array.isArray(savedFilterState.confidences)
+      ? savedFilterState.confidences
+      : [],
+    uses: Array.isArray(savedFilterState.uses) ? savedFilterState.uses : [],
+    categories: Array.isArray(savedFilterState.categories)
+      ? savedFilterState.categories
+      : [],
+    types:
+      savedFilterState.types && typeof savedFilterState.types === "object"
+        ? savedFilterState.types
+        : {},
+  };
 }
 
 function migrateSavedTypeFilter(categoryId, typeId) {

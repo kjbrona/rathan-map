@@ -12,10 +12,10 @@
   />
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
 
-  <link rel="stylesheet" href="css/main.css?v=1.3.21" />
-  <link rel="stylesheet" href="css/map.css?v=1.3.21" />
-  <link rel="stylesheet" href="css/sidebar.css?v=1.3.21" />
-  <link rel="stylesheet" href="css/dialogs.css?v=1.3.21" />
+  <link rel="stylesheet" href="css/main.css?v=1.3.24" />
+  <link rel="stylesheet" href="css/map.css?v=1.3.24" />
+  <link rel="stylesheet" href="css/sidebar.css?v=1.3.24" />
+  <link rel="stylesheet" href="css/dialogs.css?v=1.3.24" />
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
   <link rel="shortcut icon" href="images/favicons/favicon.ico">
@@ -61,6 +61,72 @@
             class="hidden-file-input"
           />
         </div>
+      </section>
+
+      <section class="sidebar-panel sidebar-filter-panel">
+        <div class="filter-panel-header">
+          <details class="filter-header-section filter-disclosure quick-filters-section" id="quick-filters-disclosure">
+            <summary class="filter-disclosure-summary">
+              <h2>Quick Filters</h2>
+              <span id="quick-filter-summary" class="filter-summary-pill">None</span>
+            </summary>
+            <div class="quick-filter-grid">
+              <label class="filter-control">
+                <span>State</span>
+                <select id="state-filter"></select>
+              </label>
+              <label class="filter-control">
+                <span>Status</span>
+                <select id="status-filter">
+                  <option value="">All</option>
+                  <option value="unverified">Unverified</option>
+                  <option value="verified">Verified</option>
+                  <option value="invalid">Invalid</option>
+                </select>
+              </label>
+              <label class="filter-control">
+                <span>Confidence</span>
+                <select id="confidence-filter">
+                  <option value="">All</option>
+                  <option value="guess">Guess</option>
+                  <option value="approximate">Approximate</option>
+                  <option value="exact">Exact</option>
+                </select>
+              </label>
+              <div class="filter-control uses-filter-control">
+                <span>Uses</span>
+                <details id="uses-filter-menu" class="uses-filter-menu">
+                  <summary id="uses-filter-summary">Any Uses</summary>
+                  <div id="uses-filter-options" class="uses-filter-options"></div>
+                </details>
+              </div>
+            </div>
+          </details>
+
+          <details class="filter-header-section filter-disclosure map-layers-section" id="map-layers-disclosure">
+            <summary class="filter-disclosure-summary">
+              <h2>Map Layers</h2>
+              <span id="map-layer-summary" class="filter-summary-pill">Zones Off</span>
+            </summary>
+            <label class="state-zone-toggle">
+              <input type="checkbox" id="show-state-zones" />
+              <span>Show State Zones</span>
+            </label>
+          </details>
+
+          <div class="filter-header-section category-filter-section">
+            <h2>Categories</h2>
+            <div class="filter-actions">
+              <button id="clear-all-filters" class="filter-clear-button" type="button">
+                Clear All Filters
+              </button>
+              <button id="clear-category-filters" type="button">
+                Clear Category Filters
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="category-list">Loading...</div>
       </section>
 
       <section class="sidebar-panel no-marker-selected" id="marker-details-section">
@@ -181,25 +247,6 @@
             <button type="button" id="edit-marker-delete">Delete</button>
           </div>
         </form>
-      </section>
-
-      <section class="sidebar-panel sidebar-filter-panel">
-        <div class="filter-panel-header">
-          <h2>Filters</h2>
-          <div class="filter-actions">
-            <button id="filters-all-on" type="button">All On</button>
-            <button id="filters-all-off" type="button">All Off</button>
-          </div>
-          <label class="state-filter-control">
-            <span>State</span>
-            <select id="state-filter"></select>
-          </label>
-          <label class="state-zone-toggle">
-            <input type="checkbox" id="show-state-zones" />
-            <span>Show State Zones</span>
-          </label>
-        </div>
-        <div id="category-list">Loading...</div>
       </section>
 
       <section class="sidebar-panel" id="marker-stats-section">
@@ -392,23 +439,23 @@
   <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
 
-  <script src="js/config.js?v=1.3.21"></script>
-  <script src="js/firebaseConfig.js?v=1.3.21"></script>
-  <script src="js/firebaseStorage.js?v=1.3.21"></script>
-  <script src="js/map.js?v=1.3.21"></script>
-  <script src="js/stateZones.js?v=1.3.21"></script>
-  <script src="js/categories.js?v=1.3.21"></script>
-  <script src="js/types.js?v=1.3.21"></script>
-  <script src="js/uses.js?v=1.3.21"></script>
-  <script src="js/templates.js?v=1.3.21"></script>
-  <script src="js/storage.js?v=1.3.21"></script>
-  <script src="js/ui.js?v=1.3.21"></script>
-  <script src="js/markers.js?v=1.3.21"></script>
-  <script src="js/markerManager.js?v=1.3.21"></script>
-  <script src="js/search.js?v=1.3.21"></script>
-  <script src="js/contextMenu.js?v=1.3.21"></script>
-  <script src="js/sidebar.js?v=1.3.21"></script>
-  <script src="js/dialogs.js?v=1.3.21"></script>
-  <script src="js/main.js?v=1.3.21"></script>
+  <script src="js/config.js?v=1.3.24"></script>
+  <script src="js/firebaseConfig.js?v=1.3.24"></script>
+  <script src="js/firebaseStorage.js?v=1.3.24"></script>
+  <script src="js/map.js?v=1.3.24"></script>
+  <script src="js/stateZones.js?v=1.3.24"></script>
+  <script src="js/categories.js?v=1.3.24"></script>
+  <script src="js/types.js?v=1.3.24"></script>
+  <script src="js/uses.js?v=1.3.24"></script>
+  <script src="js/templates.js?v=1.3.24"></script>
+  <script src="js/storage.js?v=1.3.24"></script>
+  <script src="js/ui.js?v=1.3.24"></script>
+  <script src="js/markers.js?v=1.3.24"></script>
+  <script src="js/markerManager.js?v=1.3.24"></script>
+  <script src="js/search.js?v=1.3.24"></script>
+  <script src="js/contextMenu.js?v=1.3.24"></script>
+  <script src="js/sidebar.js?v=1.3.24"></script>
+  <script src="js/dialogs.js?v=1.3.24"></script>
+  <script src="js/main.js?v=1.3.24"></script>
 </body>
 </html>

@@ -7,6 +7,17 @@ Creator : Rathan
 */
 
 const expandedCategoryFilters = new Set();
+const FILTER_STATUS_LABELS = {
+  unverified: "Unverified",
+  verified: "Verified",
+  invalid: "Invalid",
+};
+const FILTER_CONFIDENCE_LABELS = {
+  guess: "Guess",
+  approximate: "Approximate",
+  exact: "Exact",
+};
+const FILTER_DISCLOSURE_STORAGE_KEY = "rosalitarp-filter-disclosure-state";
 
 function initializeSidebar() {
   document.getElementById("app-title").textContent = APP_NAME;
@@ -32,19 +43,149 @@ function initializeSidebar() {
 }
 
 function initializeFilterControls() {
-  document
-    .getElementById("filters-all-on")
-    .addEventListener("click", function () {
-      setAllFilters(true);
-      renderCategoryList();
+  const filterPanel = document.querySelector(".sidebar-filter-panel");
+  const statusFilter = document.getElementById("status-filter");
+  const confidenceFilter = document.getElementById("confidence-filter");
+  const usesFilterMenu = document.getElementById("uses-filter-menu");
+  const stateZoneToggle = document.getElementById("show-state-zones");
+
+  if (filterPanel) {
+    filterPanel.addEventListener("click", handleFilterResetAction);
+    filterPanel.addEventListener("pointerdown", handleFilterResetAction);
+  }
+
+  initializeFilterDisclosures();
+
+  if (statusFilter) {
+    statusFilter.addEventListener("change", function () {
+      setStatusFilter(this.value ? [this.value] : []);
+      updateFilterControls();
+    });
+  }
+
+  if (confidenceFilter) {
+    confidenceFilter.addEventListener("change", function () {
+      setConfidenceFilter(this.value ? [this.value] : []);
+      updateFilterControls();
+    });
+  }
+
+  buildUsesFilterOptions();
+
+  if (usesFilterMenu) {
+    usesFilterMenu.addEventListener("toggle", updateFilterHeaderHeight);
+  }
+
+  if (stateZoneToggle) {
+    stateZoneToggle.addEventListener("change", function () {
+      updateMapLayerSummary();
+      updateFilterHeaderHeight();
+    });
+  }
+
+  updateFilterControls();
+  updateMapLayerSummary();
+}
+
+function handleFilterResetAction(event) {
+  const clickedElement =
+    event.target instanceof Element ? event.target : event.target.parentElement;
+
+  if (!clickedElement) {
+    return;
+  }
+
+  if (clickedElement.closest("#clear-category-filters")) {
+    setAllFilters(true);
+    renderCategoryList();
+    updateFilterControls();
+    return;
+  }
+
+  if (clickedElement.closest("#clear-all-filters")) {
+    resetAllFilters();
+    renderCategoryList();
+    updateFilterControls();
+  }
+}
+
+function buildUsesFilterOptions() {
+  const usesOptionsContainer = document.getElementById("uses-filter-options");
+
+  if (!usesOptionsContainer) {
+    return;
+  }
+
+  usesOptionsContainer.innerHTML = "";
+
+  getUseOptions().forEach((use) => {
+    const label = document.createElement("label");
+    label.className = "uses-filter-option";
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.value = use.id;
+    checkbox.addEventListener("change", function () {
+      const selectedUses = Array.from(
+        usesOptionsContainer.querySelectorAll("input:checked")
+      ).map((input) => input.value);
+
+      setUsesFilter(selectedUses);
+      updateFilterControls();
     });
 
-  document
-    .getElementById("filters-all-off")
-    .addEventListener("click", function () {
-      setAllFilters(false);
-      renderCategoryList();
+    const text = document.createElement("span");
+    text.textContent = use.label;
+
+    label.appendChild(checkbox);
+    label.appendChild(text);
+    usesOptionsContainer.appendChild(label);
+  });
+}
+
+function initializeFilterDisclosures() {
+  const disclosureState = loadFilterDisclosureState();
+
+  [
+    ["quickFilters", "quick-filters-disclosure"],
+    ["mapLayers", "map-layers-disclosure"],
+  ].forEach(([key, elementId]) => {
+    const disclosure = document.getElementById(elementId);
+
+    if (!disclosure) {
+      return;
+    }
+
+    disclosure.open = Boolean(disclosureState[key]);
+    disclosure.addEventListener("toggle", function () {
+      saveFilterDisclosureState({
+        ...loadFilterDisclosureState(),
+        [key]: disclosure.open,
+      });
+      updateFilterHeaderHeight();
     });
+  });
+}
+
+function loadFilterDisclosureState() {
+  try {
+    return JSON.parse(
+      localStorage.getItem(FILTER_DISCLOSURE_STORAGE_KEY) || "{}"
+    );
+  } catch (error) {
+    return {};
+  }
+}
+
+function saveFilterDisclosureState(disclosureState) {
+  try {
+    localStorage.setItem(
+      FILTER_DISCLOSURE_STORAGE_KEY,
+      JSON.stringify(disclosureState)
+    );
+  } catch (error) {
+    console.warn("Filter disclosure state could not be saved.", error);
+  }
 }
 
 function initializeStateFilterControl() {
@@ -58,6 +199,128 @@ function initializeStateFilterControl() {
 
   stateFilter.addEventListener("change", function () {
     setStateFilter(this.value);
+    updateFilterControls();
+  });
+}
+
+function updateFilterControls() {
+  const filterState = getActiveFilterState();
+  const stateFilter = document.getElementById("state-filter");
+  const statusFilter = document.getElementById("status-filter");
+  const confidenceFilter = document.getElementById("confidence-filter");
+
+  if (stateFilter) {
+    stateFilter.value = filterState.state || "";
+  }
+
+  if (statusFilter) {
+    statusFilter.value = filterState.statuses[0] || "";
+  }
+
+  if (confidenceFilter) {
+    confidenceFilter.value = filterState.confidences[0] || "";
+  }
+
+  updateUsesFilterControl(filterState.uses);
+  updateActiveFiltersSummary(filterState);
+  updateFilterHeaderHeight();
+}
+
+function updateUsesFilterControl(activeUses) {
+  const usesOptionsContainer = document.getElementById("uses-filter-options");
+  const usesSummary = document.getElementById("uses-filter-summary");
+  const activeUseSet = new Set(activeUses || []);
+
+  if (usesOptionsContainer) {
+    usesOptionsContainer
+      .querySelectorAll("input[type='checkbox']")
+      .forEach((checkbox) => {
+        checkbox.checked = activeUseSet.has(checkbox.value);
+      });
+  }
+
+  if (!usesSummary) {
+    return;
+  }
+
+  const labels = getUseLabels(activeUses);
+  usesSummary.textContent =
+    labels.length > 0 ? labels.join(", ") : "Any Uses";
+}
+
+function updateActiveFiltersSummary(filterState = getActiveFilterState()) {
+  const quickFilterSummary = document.getElementById("quick-filter-summary");
+
+  if (!quickFilterSummary) {
+    return;
+  }
+
+  const activeItems = [];
+
+  if (filterState.state) {
+    activeItems.push(["State", getStateName(filterState.state) || "Unknown"]);
+  }
+
+  if (filterState.statuses.length > 0) {
+    activeItems.push([
+      "Status",
+      filterState.statuses
+        .map((status) => FILTER_STATUS_LABELS[status] || status)
+        .join(", "),
+    ]);
+  }
+
+  if (filterState.confidences.length > 0) {
+    activeItems.push([
+      "Confidence",
+      filterState.confidences
+        .map((confidence) => FILTER_CONFIDENCE_LABELS[confidence] || confidence)
+        .join(", "),
+    ]);
+  }
+
+  if (filterState.uses.length > 0) {
+    activeItems.push(["Uses", getUseLabels(filterState.uses).join(", ")]);
+  }
+
+  if (hasCategoryTypeFilterRestrictions(filterState)) {
+    activeItems.push(["Categories", "Custom"]);
+  }
+
+  if (activeItems.length === 0) {
+    quickFilterSummary.textContent = "None";
+    quickFilterSummary.classList.add("empty");
+    return;
+  }
+
+  quickFilterSummary.classList.remove("empty");
+  quickFilterSummary.textContent = activeItems
+    .map(([label, value]) => `${label}: ${value}`)
+    .join(" · ");
+}
+
+function updateMapLayerSummary() {
+  const mapLayerSummary = document.getElementById("map-layer-summary");
+  const stateZoneToggle = document.getElementById("show-state-zones");
+
+  if (!mapLayerSummary || !stateZoneToggle) {
+    return;
+  }
+
+  mapLayerSummary.textContent = stateZoneToggle.checked ? "Zones On" : "Zones Off";
+  mapLayerSummary.classList.toggle("empty", !stateZoneToggle.checked);
+}
+
+function hasCategoryTypeFilterRestrictions(filterState = getActiveFilterState()) {
+  return CATEGORIES.some((category) => {
+    const types = TYPE_DATA[category.id] || [];
+    const activeTypes = filterState.types[category.id] || [];
+
+    if (!filterState.categories.includes(category.id)) {
+      return true;
+    }
+
+    return activeTypes.length !== types.length;
   });
 }
 
@@ -183,6 +446,9 @@ function renderCategoryList() {
 
     list.appendChild(createCategoryFilter(category, types, isExpanded));
   });
+
+  updateActiveFiltersSummary();
+  updateFilterHeaderHeight();
 }
 
 function createCategoryFilter(category, types, isExpanded) {
@@ -200,6 +466,7 @@ function createCategoryFilter(category, types, isExpanded) {
     onChange: (checked) => {
       setCategoryAndTypeFilters(category.id, checked);
       renderCategoryList();
+      updateFilterControls();
     },
   });
 
@@ -240,6 +507,7 @@ function createTypeFilter(categoryId, type) {
     onChange: (checked) => {
       setTypeFilter(categoryId, type.id, checked);
       renderCategoryList();
+      updateFilterControls();
     },
   });
 

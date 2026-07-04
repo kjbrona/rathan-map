@@ -1,5 +1,20 @@
 # RosalitaRP Explorer
 
+## v1.3.24 Collapsible Filter Header
+- Made Quick Filters and Map Layers collapsed by default with compact status summaries.
+- Removed the separate Active Filters block and kept Clear All Filters with the category controls.
+- Reclaimed vertical space for the Categories and Types list without changing filter logic.
+
+## v1.3.23 Filter UI Phase 2
+- Added compact Quick Filters for State, Status, Confidence, and Uses using the unified filter state model.
+- Moved the State Zones toggle into a Map Layers section and added an Active Filters summary with Clear All Filters.
+- Replaced All On / All Off with Clear Category Filters while preserving category/type checkbox behavior and saved filter persistence.
+
+## v1.3.22 Unified Filter State
+- Added an internal unified filter state model for State, Status, Confidence, Uses, Category, and Type filters.
+- Refactored existing category/type visibility checks to use the unified filter object while preserving the current UI.
+- Added future filter helper functions and migrated saved filter state without wiping existing category/type settings.
+
 ## v1.3.21 Herb Shared Knowledge Sync
 - Added automatic syncing of shared Herb knowledge across markers with the same Herb type.
 - Shared Herb fields include Uses, Item Category, Item Use, Vendor Value, Crafting Uses, and Item Notes.

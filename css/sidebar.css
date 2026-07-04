@@ -461,24 +461,95 @@ Creator : Rathan
   display: grid;
   gap: 4px;
   margin: 0;
-  padding: 8px 14px 2px;
+  padding: 6px 14px 5px;
   background: #1b140e;
   background-color: #1b140e;
   border-bottom: 1px solid rgba(196, 154, 90, 0.18);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.22);
 }
 
-.filter-panel-header h2 {
+.filter-panel-header h2,
+.filter-header-section h2 {
   margin-bottom: 0;
+}
+
+.filter-header-section {
+  display: grid;
+  gap: 4px;
+}
+
+.filter-header-section + .filter-header-section {
+  padding-top: 4px;
+  border-top: 1px solid rgba(196, 154, 90, 0.14);
+}
+
+.filter-disclosure {
+  margin: 0;
+}
+
+.filter-disclosure-summary {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  min-height: 22px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.filter-disclosure-summary::-webkit-details-marker {
+  display: none;
+}
+
+.filter-disclosure-summary h2::before {
+  content: ">";
+  display: inline-block;
+  width: 12px;
+  color: #c49a5a;
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.filter-disclosure[open] .filter-disclosure-summary h2::before {
+  content: "v";
+}
+
+.filter-summary-pill {
+  min-width: 0;
+  color: #f2e2bd;
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.2;
+  overflow: hidden;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.filter-summary-pill.empty {
+  color: #8e7858;
+}
+
+.filter-disclosure[open] .quick-filter-grid,
+.filter-disclosure[open] .state-zone-toggle {
+  margin-top: 4px;
+}
+
+.quick-filter-grid {
+  display: grid;
+  gap: 4px;
 }
 
 .filter-actions {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 7px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px;
 }
 
-.filter-actions button {
+.filter-actions button,
+.filter-clear-button {
   padding: 3px 7px;
   background: #2a2118;
   color: #f2e2bd;
@@ -490,7 +561,9 @@ Creator : Rathan
 }
 
 .filter-actions button:hover,
-.filter-actions button:focus {
+.filter-actions button:focus,
+.filter-clear-button:hover,
+.filter-clear-button:focus {
   background: #3a2a1d;
   border-color: #c49a5a;
 }
@@ -510,7 +583,7 @@ Creator : Rathan
   accent-color: #c49a5a;
 }
 
-.state-filter-control {
+.filter-control {
   display: grid;
   gap: 3px;
   margin: 0;
@@ -520,7 +593,8 @@ Creator : Rathan
   line-height: 1.2;
 }
 
-.state-filter-control select {
+.filter-control select,
+.uses-filter-menu {
   width: 100%;
   box-sizing: border-box;
   padding: 4px 6px;
@@ -529,6 +603,55 @@ Creator : Rathan
   border: 1px solid #5a3a1e;
   font-size: 15px;
   line-height: 1.25;
+}
+
+.uses-filter-menu {
+  position: relative;
+  padding: 0;
+}
+
+.uses-filter-menu summary {
+  display: block;
+  padding: 4px 6px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.uses-filter-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.uses-filter-menu summary::after {
+  content: "v";
+  float: right;
+  color: #c49a5a;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.uses-filter-menu[open] summary::after {
+  content: "^";
+}
+
+.uses-filter-options {
+  display: grid;
+  gap: 2px;
+  padding: 3px 6px 6px;
+  border-top: 1px solid rgba(196, 154, 90, 0.18);
+}
+
+.uses-filter-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  color: #c8aa72;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.uses-filter-option input {
+  accent-color: #c49a5a;
 }
 
 #category-list {
