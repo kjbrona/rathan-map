@@ -112,6 +112,8 @@ function getSearchHaystack(markerData) {
   const category = getCategoryById(markerData.category);
   const type = getTypeById(markerData.category, markerData.type);
   const group = getTypeGroupForType(markerData.category, markerData.type);
+  const stateName = getMarkerStateName(markerData);
+  const stateAutoName = getMarkerAutoStateName(markerData);
   const values = [
     markerData.name,
     category ? category.name : markerData.category,
@@ -119,6 +121,10 @@ function getSearchHaystack(markerData) {
     group ? group.name : "",
     markerData.status,
     markerData.confidence,
+    markerData.state,
+    stateName,
+    markerData.stateAuto !== markerData.state ? markerData.stateAuto : "",
+    stateAutoName !== stateName ? stateAutoName : "",
     markerData.notes,
     markerData.itemName,
     markerData.rarity,

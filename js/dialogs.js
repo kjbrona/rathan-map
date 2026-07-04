@@ -65,6 +65,10 @@ async function initializeMarkerDialogControls() {
   nameInput.addEventListener("input", function () {
     markerNameManuallyEdited = this.value.trim().length > 0;
   });
+
+  document
+    .getElementById("marker-state")
+    .addEventListener("change", updateMarkerDialogStateHelper);
 }
 
 async function openMarkerDialog(latlng) {
@@ -98,6 +102,8 @@ async function openMarkerDialog(latlng) {
   document.getElementById("marker-y").value = y;
   document.getElementById("marker-x-display").textContent = x;
   document.getElementById("marker-y-display").textContent = y;
+  buildStateDropdown("marker-state", getStateIdForCoordinates(x, y));
+  updateMarkerDialogStateHelper();
 
   document.getElementById("marker-dialog").classList.remove("hidden");
   focusFirstTemplateField("marker-template-fields");
@@ -132,6 +138,28 @@ function closeMarkerDialog() {
   clearAddMarkerMode();
 }
 
+function updateMarkerDialogStateHelper() {
+  const stateSelect = document.getElementById("marker-state");
+  const stateHelper = document.getElementById("marker-state-helper");
+
+  if (!stateSelect || !stateHelper) {
+    return;
+  }
+
+  const x = Number(document.getElementById("marker-x").value);
+  const y = Number(document.getElementById("marker-y").value);
+  const stateAuto = getStateIdForCoordinates(x, y);
+  const selectedState = stateSelect.value;
+
+  if (selectedState && selectedState !== stateAuto) {
+    stateHelper.textContent = `Auto-detected: ${getStateName(stateAuto) || "Unknown"}`;
+    stateHelper.classList.remove("hidden");
+  } else {
+    stateHelper.textContent = "";
+    stateHelper.classList.add("hidden");
+  }
+}
+
 function saveMarkerFromDialog(event) {
   event.preventDefault();
   const categoryId = document.getElementById("marker-category").value;
@@ -160,6 +188,11 @@ function saveMarkerFromDialog(event) {
     createdAt: new Date().toISOString(),
     modifiedAt: new Date().toISOString(),
   };
+
+  markerData.stateAuto = getStateIdForCoordinates(markerData.x, markerData.y);
+  markerData.state = document.getElementById("marker-state").value;
+  markerData.stateOverride =
+    markerData.state !== "" && markerData.state !== markerData.stateAuto;
 
   addMarker(markerData);
   closeMarkerDialog();

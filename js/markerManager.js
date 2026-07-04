@@ -10,6 +10,7 @@ let markers = [];
 let selectedMarkerId = null;
 let activeCategoryFilters = new Set();
 let activeTypeFilters = new Map();
+let activeStateFilter = "";
 let autosaveStatusTimer = null;
 
 async function initializeMarkerManager() {
@@ -41,6 +42,7 @@ async function initializeMarkerManager() {
 }
 
 function addMarker(markerData) {
+  updateMarkerStateFromCoordinates(markerData);
   markers.push(markerData);
   persistMarker(markerData);
   selectMarker(markerData.id);
@@ -59,6 +61,7 @@ async function updateMarker(markerId, updates) {
   }
 
   Object.assign(markerData, updates);
+  updateMarkerStateFromCoordinates(markerData);
   markerData.modifiedAt = new Date().toISOString();
 
   await persistMarker(markerData);
@@ -71,6 +74,23 @@ async function moveMarker(markerId, x, y) {
     x: Number(x),
     y: Number(y),
   });
+}
+
+function updateMarkerStateFromCoordinates(markerData) {
+  if (!markerData) {
+    return;
+  }
+
+  const stateAuto = getStateIdForCoordinates(markerData.x, markerData.y);
+  markerData.stateAuto = stateAuto;
+
+  if (markerData.stateOverride) {
+    markerData.state = markerData.state || stateAuto;
+    return;
+  }
+
+  markerData.state = stateAuto;
+  markerData.stateOverride = false;
 }
 
 async function moveSelectedMarkerTo(latlng) {
@@ -156,6 +176,10 @@ function applyRemoteMarkers(remoteMarkers) {
 }
 
 function isMarkerVisible(markerData) {
+  if (activeStateFilter && markerData.state !== activeStateFilter) {
+    return false;
+  }
+
   if (!activeCategoryFilters.has(markerData.category)) {
     return false;
   }
@@ -301,6 +325,25 @@ function getVisibleMarkerCount() {
 
 function getVisibleMarkers() {
   return markers.filter(isMarkerVisible);
+}
+
+function setStateFilter(stateId) {
+  activeStateFilter = stateId || "";
+
+  if (selectedMarkerId) {
+    const selectedMarker = getMarkerById(selectedMarkerId);
+
+    if (selectedMarker && !isMarkerVisible(selectedMarker)) {
+      selectedMarkerId = null;
+      renderMarkerDetails(null);
+    }
+  }
+
+  refreshMarkers();
+}
+
+function getStateFilter() {
+  return activeStateFilter;
 }
 
 function getMarkersForExport() {

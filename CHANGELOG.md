@@ -1,5 +1,48 @@
 # RosalitaRP Explorer
 
+## v1.3.16 Saved State Zone Restore
+- Restored loading of previously saved State Zone polygon adjustments from browser storage after finalizing the editor.
+- Kept the State Zone Editor removed while preserving saved zone alignment changes at runtime.
+
+## v1.3.15 Finalized State Zones
+- Removed the temporary State Zone Editor UI, editing controls, save/copy tools, and editor-only map handlers.
+- Kept the Show State Zones overlay toggle and finalized polygon-based State lookup.
+- Added a compact State filter dropdown that combines with category/type filters and search using `marker.state`.
+
+## v1.3.14 State Override Support
+- Added `stateAuto` and `stateOverride` marker fields so auto-detected State can be manually corrected.
+- Added State dropdowns to marker add/edit flows with an Auto-detected helper for overridden markers.
+- Updated marker movement and import backfill so manual State choices are preserved while coordinate-based State stays current.
+
+## v1.3.13 State Zone Editor Alignment Tools
+- Added Zone Editor modes for adding points, removing points, and moving an entire state zone.
+- Add mode inserts points on the nearest polygon edge once a polygon exists.
+- Move mode lets the selected zone polygon be dragged around the map for alignment.
+
+## v1.3.12 State Zone Y-Axis Correction
+- Flipped generated state-zone Y coordinates to match the app map coordinate system.
+- Updated cache-busting references to v1.3.12 so corrected state zones load immediately.
+
+## v1.3.11 Generated State Zone Polygons
+- Replaced placeholder state zones with generated polygons traced from the supplied color-coded state map.
+- Mapped red, purple, green, yellow, and blue regions to New Austin, West Elizabeth, Ambarino, New Hanover, and Lemoyne.
+- Added cache-busting for `data/state-zones.json` and isolated old editor-saved placeholder overrides.
+
+## v1.3.10 State Zone Editor Save
+- Added a Save action to the temporary Zone Editor.
+- Saved zone polygons persist in browser local storage and apply immediately to state lookup and overlays.
+- Kept Copy available for moving finalized polygons into `data/state-zones.json`.
+
+## v1.3.9 Temporary State Zone Editor
+- Added a temporary Zone Editor panel for drawing state polygon points directly on the map.
+- Added controls to load an existing state polygon, undo points, clear points, and copy generated polygon JSON.
+- Kept marker, Firebase, storage, map rendering, and filter behavior separate from the editor workflow.
+
+## v1.3.8 State Zone Support
+- Added state-zone data support with placeholder polygons for New Austin, West Elizabeth, Ambarino, New Hanover, and Lemoyne.
+- Added marker `state` persistence, coordinate-based state calculation, selected-marker state display, and state search support.
+- Added a default-off Show State Zones overlay toggle and updated cache-busting references to v1.3.8.
+
 ## v1.3.7 Compact Selected Marker Placeholder
 - Collapsed the empty Selected Marker panel into a compact one-row placeholder when no marker is selected.
 - Preserved the full selected-marker edit form and actions when a marker is selected.

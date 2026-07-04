@@ -16,6 +16,7 @@ function initializeSidebar() {
 
   renderCategoryList();
   initializeFilterControls();
+  initializeStateFilterControl();
   initializeMarkerDetailsPanel();
   initializeSearch();
 
@@ -44,6 +45,20 @@ function initializeFilterControls() {
       setAllFilters(false);
       renderCategoryList();
     });
+}
+
+function initializeStateFilterControl() {
+  buildStateFilterDropdown("state-filter", getStateFilter());
+
+  const stateFilter = document.getElementById("state-filter");
+
+  if (!stateFilter) {
+    return;
+  }
+
+  stateFilter.addEventListener("change", function () {
+    setStateFilter(this.value);
+  });
 }
 
 function initializeMarkerBackupControls() {
@@ -317,6 +332,10 @@ async function initializeMarkerDetailsPanel() {
     });
 
   document
+    .getElementById("edit-marker-state")
+    .addEventListener("change", updateEditMarkerStateHelper);
+
+  document
     .getElementById("marker-details-form")
     .addEventListener("submit", async function (event) {
       event.preventDefault();
@@ -327,6 +346,11 @@ async function initializeMarkerDetailsPanel() {
 
       const categoryId = document.getElementById("edit-marker-category").value;
       const existingMarker = getMarkerById(selectedMarkerId);
+
+      if (!existingMarker) {
+        return;
+      }
+
       const templateValues = collectTemplateFieldValues(
         "edit-marker-template-fields",
         categoryId
@@ -335,6 +359,11 @@ async function initializeMarkerDetailsPanel() {
         templateValues.shared,
         "notes"
       );
+      const stateAuto = getStateIdForCoordinates(
+        existingMarker.x,
+        existingMarker.y
+      );
+      const selectedState = document.getElementById("edit-marker-state").value;
 
       await updateMarker(selectedMarkerId, {
         name: document.getElementById("edit-marker-name").value.trim(),
@@ -342,6 +371,9 @@ async function initializeMarkerDetailsPanel() {
         type: document.getElementById("edit-marker-type").value,
         status: document.getElementById("edit-marker-status").value,
         confidence: document.getElementById("edit-marker-confidence").value,
+        state: selectedState,
+        stateAuto,
+        stateOverride: selectedState !== "" && selectedState !== stateAuto,
         notes: hasTemplateNotes
           ? templateValues.shared.notes
           : (existingMarker && existingMarker.notes) || "",
@@ -428,6 +460,36 @@ async function renderMarkerDetails(markerData) {
   );
   document.getElementById("edit-marker-x-display").textContent = markerData.x;
   document.getElementById("edit-marker-y-display").textContent = markerData.y;
+  buildStateDropdown("edit-marker-state", markerData.state);
+  updateEditMarkerStateHelper();
+}
+
+function updateEditMarkerStateHelper() {
+  const stateSelect = document.getElementById("edit-marker-state");
+  const stateHelper = document.getElementById("edit-marker-state-helper");
+
+  if (!stateSelect || !stateHelper || !selectedMarkerId) {
+    return;
+  }
+
+  const markerData = getMarkerById(selectedMarkerId);
+
+  if (!markerData) {
+    stateHelper.textContent = "";
+    stateHelper.classList.add("hidden");
+    return;
+  }
+
+  const stateAuto = getStateIdForCoordinates(markerData.x, markerData.y);
+  const selectedState = stateSelect.value;
+
+  if (selectedState && selectedState !== stateAuto) {
+    stateHelper.textContent = `Auto-detected: ${getStateName(stateAuto) || "Unknown"}`;
+    stateHelper.classList.remove("hidden");
+  } else {
+    stateHelper.textContent = "";
+    stateHelper.classList.add("hidden");
+  }
 }
 
 function enterMoveMarkerMode() {

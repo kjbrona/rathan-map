@@ -13,9 +13,11 @@ async function initializeApp() {
   await loadCategoryData();
   await loadTypeGroupData();
   await loadTemplateData();
+  await loadStateZoneData();
 
   await initializeMarkerManager();
   initializeSidebar();
+  initializeStateZoneOverlay();
   initializeDialogs();
   initializeContextMenus();
   refreshMarkers();

@@ -18,6 +18,12 @@
     "group": "mushrooms"
   },
   {
+    "id": "bitterweed",
+    "name": "Bitterweed",
+    "enabled": true,
+    "group": "flowers"
+  },
+  {
     "id": "black-currant",
     "name": "Black Currant",
     "enabled": true,

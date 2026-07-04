@@ -24,6 +24,27 @@ const SUPPORTED_IMPORT_VERSIONS = [
   "1.2.2",
   "1.2.3",
   "1.2.4",
+  "1.2.5",
+  "1.2.6",
+  "1.2.7",
+  "1.2.8",
+  "1.3.0",
+  "1.3.1",
+  "1.3.2",
+  "1.3.3",
+  "1.3.4",
+  "1.3.5",
+  "1.3.6",
+  "1.3.7",
+  "1.3.8",
+  "1.3.9",
+  "1.3.10",
+  "1.3.11",
+  "1.3.12",
+  "1.3.13",
+  "1.3.14",
+  "1.3.15",
+  "1.3.16",
 ];
 
 const MARKER_STORAGE_FIELDS = [
@@ -33,6 +54,9 @@ const MARKER_STORAGE_FIELDS = [
   "type",
   "status",
   "confidence",
+  "state",
+  "stateAuto",
+  "stateOverride",
   "notes",
   ...ITEM_DISCOVERY_FIELDS.map((field) => field.id),
   "dangerRadius",
@@ -395,6 +419,21 @@ function normalizeStoredMarker(markerData) {
 
   storedMarker.status = markerData.status || "unverified";
   storedMarker.confidence = markerData.confidence || "guess";
+  const calculatedState = getStateIdForCoordinates(x, y);
+  const savedState = markerData.state || "";
+  const savedStateAuto = markerData.stateAuto || calculatedState;
+  const hasStateOverride = Object.prototype.hasOwnProperty.call(
+    markerData,
+    "stateOverride"
+  );
+
+  storedMarker.stateAuto = savedStateAuto;
+  storedMarker.stateOverride = hasStateOverride
+    ? Boolean(markerData.stateOverride)
+    : Boolean(savedState && savedState !== savedStateAuto);
+  storedMarker.state = storedMarker.stateOverride
+    ? savedState || savedStateAuto
+    : savedStateAuto;
   storedMarker.notes = markerData.notes || "";
   ITEM_DISCOVERY_FIELDS.forEach((field) => {
     storedMarker[field.id] = markerData[field.id] || "";
