@@ -36,6 +36,12 @@
     "group": "berries"
   },
   {
+    "id": "blood-flower",
+    "name": "Blood Flower",
+    "enabled": true,
+    "group": "flowers"
+  },
+  {
     "id": "bulrush",
     "name": "Bulrush",
     "enabled": true,
@@ -108,6 +114,12 @@
     "group": "leaves"
   },
   {
+    "id": "milkweed",
+    "name": "Milkweed",
+    "enabled": true,
+    "group": "flowers"
+  },
+  {
     "id": "oleander",
     "name": "Oleander",
     "enabled": true,
@@ -158,6 +170,12 @@
   {
     "id": "texas-bluebonnet",
     "name": "Texas Bluebonnet",
+    "enabled": true,
+    "group": "flowers"
+  },
+  {
+    "id": "vanilla-flower",
+    "name": "Vanilla Flower",
     "enabled": true,
     "group": "flowers"
   },
