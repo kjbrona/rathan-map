@@ -12,10 +12,10 @@
   />
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
 
-  <link rel="stylesheet" href="css/main.css?v=1.3.24" />
-  <link rel="stylesheet" href="css/map.css?v=1.3.24" />
-  <link rel="stylesheet" href="css/sidebar.css?v=1.3.24" />
-  <link rel="stylesheet" href="css/dialogs.css?v=1.3.24" />
+  <link rel="stylesheet" href="css/main.css?v=1.3.28" />
+  <link rel="stylesheet" href="css/map.css?v=1.3.28" />
+  <link rel="stylesheet" href="css/sidebar.css?v=1.3.28" />
+  <link rel="stylesheet" href="css/dialogs.css?v=1.3.28" />
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
   <link rel="shortcut icon" href="images/favicons/favicon.ico">
@@ -234,9 +234,20 @@
             <label class="state-select-label">
               State
               <select id="edit-marker-state"></select>
-              <small id="edit-marker-state-helper" class="state-helper hidden"></small>
-            </label>
-          </div>
+            <small id="edit-marker-state-helper" class="state-helper hidden"></small>
+          </label>
+          <label class="game-vector-label">
+            Game Vector
+            <input
+              type="text"
+              id="edit-marker-game-vector"
+              placeholder="-819.42, -1365.10, 48.31"
+            />
+            <small id="edit-marker-game-vector-error" class="field-error hidden">
+              Enter three numbers, such as -819.42, -1365.10, 48.31.
+            </small>
+          </label>
+        </div>
 
           <div class="marker-detail-actions">
             <button type="button" id="edit-marker-move">Move Marker</button>
@@ -331,11 +342,38 @@
           </label>
 
           <div id="marker-template-fields" class="template-fields"></div>
-        </div>
+          <div class="game-vector-block">
+            <label class="game-vector-label">
+            Game Vector
+              <input
+                type="text"
+                id="marker-game-vector"
+                placeholder="-819.42, -1365.10, 48.31"
+              />
+              <small id="marker-game-vector-error" class="field-error hidden">
+                Enter three numbers, such as -819.42, -1365.10, 48.31.
+              </small>
+            </label>
+            <div class="game-vector-actions">
+              <button type="button" id="marker-paste-calculate">
+                Paste & Calculate
+              </button>
+              <button type="button" id="marker-use-current-position">
+                Use Current Map Position
+              </button>
+            </div>
+            <div id="marker-calculated-position" class="calculated-position hidden">
+              Calculated Position<br />
+              X <span id="marker-calculated-x">0</span> |
+              Y <span id="marker-calculated-y">0</span>
+            </div>
+            <small id="marker-game-vector-message" class="field-message hidden"></small>
+          </div>
 
-        <div class="modal-actions">
-          <button type="button" id="marker-cancel">Cancel</button>
-          <button type="submit" id="marker-save">Save</button>
+          <div class="modal-actions">
+            <button type="submit" id="marker-save">Save</button>
+            <button type="button" id="marker-cancel">Cancel</button>
+          </div>
         </div>
 
         <details class="form-section item-discovery-section" open>
@@ -439,23 +477,24 @@
   <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
 
-  <script src="js/config.js?v=1.3.24"></script>
-  <script src="js/firebaseConfig.js?v=1.3.24"></script>
-  <script src="js/firebaseStorage.js?v=1.3.24"></script>
-  <script src="js/map.js?v=1.3.24"></script>
-  <script src="js/stateZones.js?v=1.3.24"></script>
-  <script src="js/categories.js?v=1.3.24"></script>
-  <script src="js/types.js?v=1.3.24"></script>
-  <script src="js/uses.js?v=1.3.24"></script>
-  <script src="js/templates.js?v=1.3.24"></script>
-  <script src="js/storage.js?v=1.3.24"></script>
-  <script src="js/ui.js?v=1.3.24"></script>
-  <script src="js/markers.js?v=1.3.24"></script>
-  <script src="js/markerManager.js?v=1.3.24"></script>
-  <script src="js/search.js?v=1.3.24"></script>
-  <script src="js/contextMenu.js?v=1.3.24"></script>
-  <script src="js/sidebar.js?v=1.3.24"></script>
-  <script src="js/dialogs.js?v=1.3.24"></script>
-  <script src="js/main.js?v=1.3.24"></script>
+  <script src="js/config.js?v=1.3.28"></script>
+  <script src="js/firebaseConfig.js?v=1.3.28"></script>
+  <script src="js/firebaseStorage.js?v=1.3.28"></script>
+  <script src="js/map.js?v=1.3.28"></script>
+  <script src="js/stateZones.js?v=1.3.28"></script>
+  <script src="js/categories.js?v=1.3.28"></script>
+  <script src="js/types.js?v=1.3.28"></script>
+  <script src="js/uses.js?v=1.3.28"></script>
+  <script src="js/templates.js?v=1.3.28"></script>
+  <script src="js/worldPosition.js?v=1.3.28"></script>
+  <script src="js/storage.js?v=1.3.28"></script>
+  <script src="js/ui.js?v=1.3.28"></script>
+  <script src="js/markers.js?v=1.3.28"></script>
+  <script src="js/markerManager.js?v=1.3.28"></script>
+  <script src="js/search.js?v=1.3.28"></script>
+  <script src="js/contextMenu.js?v=1.3.28"></script>
+  <script src="js/sidebar.js?v=1.3.28"></script>
+  <script src="js/dialogs.js?v=1.3.28"></script>
+  <script src="js/main.js?v=1.3.28"></script>
 </body>
 </html>

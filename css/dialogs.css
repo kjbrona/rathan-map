@@ -123,6 +123,74 @@ Creator : Rathan
   display: none;
 }
 
+.field-error {
+  display: block;
+  margin-top: 3px;
+  color: #d97f7f;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.field-error.hidden {
+  display: none;
+}
+
+#marker-form input.input-error {
+  border-color: #d97f7f;
+}
+
+.field-message {
+  display: block;
+  margin-top: 4px;
+  color: #b99762;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.field-message.warning {
+  color: #e2b45d;
+}
+
+.field-message.hidden {
+  display: none;
+}
+
+.game-vector-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+  margin: 4px 0 6px;
+}
+
+.game-vector-actions button {
+  padding: 6px 8px;
+  background: #2a2118;
+  color: #f2e2bd;
+  border: 1px solid #8b5a2b;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.game-vector-actions button:hover,
+.game-vector-actions button:focus {
+  background: #3a2a1d;
+  border-color: #c49a5a;
+}
+
+.calculated-position {
+  padding: 6px 8px;
+  background: rgba(196, 154, 90, 0.08);
+  color: #f2e2bd;
+  border: 1px solid rgba(196, 154, 90, 0.24);
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.calculated-position.hidden {
+  display: none;
+}
+
 .modal-actions {
   display: flex;
   justify-content: flex-end;
@@ -169,6 +237,10 @@ Creator : Rathan
   margin-bottom: 10px;
   padding-bottom: 9px;
   border-bottom: 1px solid rgba(196, 154, 90, 0.2);
+}
+
+.game-vector-block {
+  margin-top: 8px;
 }
 
 #marker-form .form-section h3 {

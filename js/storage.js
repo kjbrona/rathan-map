@@ -53,6 +53,10 @@ const SUPPORTED_IMPORT_VERSIONS = [
   "1.3.22",
   "1.3.23",
   "1.3.24",
+  "1.3.25",
+  "1.3.26",
+  "1.3.27",
+  "1.3.28",
 ];
 
 const MARKER_STORAGE_FIELDS = [
@@ -65,6 +69,7 @@ const MARKER_STORAGE_FIELDS = [
   "state",
   "stateAuto",
   "stateOverride",
+  "worldPosition",
   "uses",
   "notes",
   ...ITEM_DISCOVERY_FIELDS.map((field) => field.id),
@@ -443,6 +448,25 @@ function normalizeStoredMarker(markerData) {
   storedMarker.state = storedMarker.stateOverride
     ? savedState || savedStateAuto
     : savedStateAuto;
+  const hasWorldPosition = Object.prototype.hasOwnProperty.call(
+    markerData,
+    "worldPosition"
+  );
+
+  if (hasWorldPosition && markerData.worldPosition !== "") {
+    const normalizedWorldPosition = normalizeWorldPosition(
+      markerData.worldPosition
+    );
+
+    if (!normalizedWorldPosition) {
+      return null;
+    }
+
+    storedMarker.worldPosition = normalizedWorldPosition;
+  } else {
+    delete storedMarker.worldPosition;
+  }
+
   storedMarker.uses = normalizeUses(
     markerData.uses ||
       (markerData.templateData && markerData.templateData.uses) ||

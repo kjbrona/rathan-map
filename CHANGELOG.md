@@ -1,5 +1,26 @@
 # RosalitaRP Explorer
 
+## v1.3.28 Add Marker Layout Correction
+- Restored the main marker Notes field to its normal template location and height.
+- Moved the full Game Vector workflow into the Add Marker Category Details section.
+- Kept Add Marker Save/Cancel directly below the Game Vector controls without duplicating action buttons.
+- Kept Item Discovery and Location below Category Details so in-game vector entry can be completed before scrolling further.
+
+## v1.3.27 Add Marker Quick Entry Layout
+- Moved Add Marker Save/Cancel below the Game Vector controls for faster in-game entry.
+- Relocated the generated Notes field above Game Vector and reduced Notes height.
+- Kept marker data, storage, coordinate conversion, and validation behavior unchanged.
+
+## v1.3.26 World Vector Conversion
+- Added initial world-vector-to-map coordinate conversion from four verified calibration points.
+- Added Paste & Calculate and Use Current Map Position controls to the Add Marker Game Vector section.
+- Added a draggable pending marker preview so calculated positions can be fine-adjusted before saving.
+
+## v1.3.25 Game Vector Field
+- Added a pasteable Game Vector field to Add Marker and Selected Marker edit flows.
+- Added reusable parsing for comma-separated, parenthesized, bracketed, `vector3(...)`, and `vec3(...)` world coordinates.
+- Preserved valid `worldPosition` data through storage, Firebase sync, import, and export while leaving map coordinates unchanged.
+
 ## v1.3.24 Collapsible Filter Header
 - Made Quick Filters and Map Layers collapsed by default with compact status summaries.
 - Removed the separate Active Filters block and kept Clear All Filters with the category controls.

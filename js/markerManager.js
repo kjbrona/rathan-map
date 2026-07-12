@@ -92,6 +92,11 @@ async function updateMarker(markerId, updates) {
   }
 
   Object.assign(markerData, updates);
+
+  if (updates && updates.worldPosition === null) {
+    delete markerData.worldPosition;
+  }
+
   updateMarkerStateFromCoordinates(markerData);
   markerData.modifiedAt = new Date().toISOString();
   syncHerbSharedFields(markerData, updates);

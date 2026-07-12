@@ -604,6 +604,15 @@ async function initializeMarkerDetailsPanel() {
     .addEventListener("change", updateEditMarkerStateHelper);
 
   document
+    .getElementById("edit-marker-game-vector")
+    .addEventListener("input", function () {
+      validateGameVectorField(
+        "edit-marker-game-vector",
+        "edit-marker-game-vector-error"
+      );
+    });
+
+  document
     .getElementById("marker-details-form")
     .addEventListener("submit", async function (event) {
       event.preventDefault();
@@ -632,8 +641,16 @@ async function initializeMarkerDetailsPanel() {
         existingMarker.y
       );
       const selectedState = document.getElementById("edit-marker-state").value;
+      const worldPositionResult = getWorldPositionFromField(
+        "edit-marker-game-vector",
+        "edit-marker-game-vector-error"
+      );
 
-      await updateMarker(selectedMarkerId, {
+      if (!worldPositionResult.ok) {
+        return;
+      }
+
+      const markerUpdates = {
         name: document.getElementById("edit-marker-name").value.trim(),
         category: categoryId,
         type: document.getElementById("edit-marker-type").value,
@@ -654,7 +671,15 @@ async function initializeMarkerDetailsPanel() {
           templateValues.shared.dangerRadius,
           existingMarker
         ),
-      });
+      };
+
+      if (worldPositionResult.worldPosition) {
+        markerUpdates.worldPosition = worldPositionResult.worldPosition;
+      } else {
+        markerUpdates.worldPosition = null;
+      }
+
+      await updateMarker(selectedMarkerId, markerUpdates);
     });
 
   document
@@ -729,6 +754,13 @@ async function renderMarkerDetails(markerData) {
   );
   document.getElementById("edit-marker-x-display").textContent = markerData.x;
   document.getElementById("edit-marker-y-display").textContent = markerData.y;
+  document.getElementById("edit-marker-game-vector").value = formatGameVector(
+    markerData.worldPosition
+  );
+  validateGameVectorField(
+    "edit-marker-game-vector",
+    "edit-marker-game-vector-error"
+  );
   buildStateDropdown("edit-marker-state", markerData.state);
   updateEditMarkerStateHelper();
 }

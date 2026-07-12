@@ -7,6 +7,8 @@ Creator : Rathan
 */
 
 let pendingMarkerLatLng = null;
+let pendingMarkerOriginalLatLng = null;
+let pendingMarkerPreview = null;
 let markerNameManuallyEdited = false;
 const ADD_MARKER_PREFS_STORAGE_KEY = "rosalitarp-explorer-add-marker-prefs";
 
@@ -52,6 +54,7 @@ async function initializeMarkerDialogControls() {
     );
     renderTemplateFields("marker-template-fields", this.value);
     autoFillMarkerName();
+    renderPendingMarkerPreview();
   });
 
   typeSelect.addEventListener("change", function () {
@@ -61,6 +64,7 @@ async function initializeMarkerDialogControls() {
       this.value
     );
     autoFillMarkerName();
+    renderPendingMarkerPreview();
   });
 
   nameInput.addEventListener("input", function () {
@@ -70,14 +74,42 @@ async function initializeMarkerDialogControls() {
   document
     .getElementById("marker-state")
     .addEventListener("change", updateMarkerDialogStateHelper);
+
+  document
+    .getElementById("marker-game-vector")
+    .addEventListener("input", function () {
+      validateGameVectorField("marker-game-vector", "marker-game-vector-error");
+    });
+
+  document
+    .getElementById("marker-game-vector")
+    .addEventListener("blur", calculatePendingMarkerFromGameVector);
+
+  document
+    .getElementById("marker-game-vector")
+    .addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        calculatePendingMarkerFromGameVector();
+      }
+    });
+
+  document
+    .getElementById("marker-paste-calculate")
+    .addEventListener("click", pasteAndCalculatePendingMarker);
+
+  document
+    .getElementById("marker-use-current-position")
+    .addEventListener("click", useCurrentPendingMapPosition);
 }
 
 async function openMarkerDialog(latlng) {
   pendingMarkerLatLng = latlng;
+  pendingMarkerOriginalLatLng = latlng;
   markerNameManuallyEdited = false;
 
-  const x = Math.round(latlng.lng);
-  const y = Math.round(latlng.lat);
+  const x = latlng.lng;
+  const y = latlng.lat;
 
   document.getElementById("marker-form").reset();
   applyLastUsedMarkerDefaults();
@@ -99,12 +131,17 @@ async function openMarkerDialog(latlng) {
 
   autoFillMarkerName();
 
-  document.getElementById("marker-x").value = x;
-  document.getElementById("marker-y").value = y;
-  document.getElementById("marker-x-display").textContent = x;
-  document.getElementById("marker-y-display").textContent = y;
+  setPendingMarkerMapCoordinates(x, y, {
+    updatePreview: false,
+    updateCalculatedPosition: false,
+  });
+  document.getElementById("marker-game-vector").value = "";
+  validateGameVectorField("marker-game-vector", "marker-game-vector-error");
+  clearGameVectorMessage();
+  hideCalculatedPosition();
   buildStateDropdown("marker-state", getStateIdForCoordinates(x, y));
   updateMarkerDialogStateHelper();
+  renderPendingMarkerPreview();
 
   document.getElementById("marker-dialog").classList.remove("hidden");
   focusFirstTemplateField("marker-template-fields");
@@ -134,8 +171,10 @@ function autoFillMarkerName() {
 
 function closeMarkerDialog() {
   pendingMarkerLatLng = null;
+  pendingMarkerOriginalLatLng = null;
   markerNameManuallyEdited = false;
   document.getElementById("marker-dialog").classList.add("hidden");
+  removePendingMarkerPreview();
   clearAddMarkerMode();
 }
 
@@ -216,6 +255,231 @@ function updateMarkerDialogStateHelper() {
   }
 }
 
+function validateGameVectorField(inputId, errorId) {
+  const input = document.getElementById(inputId);
+  const error = document.getElementById(errorId);
+
+  if (!input || !error) {
+    return true;
+  }
+
+  const hasValue = input.value.trim().length > 0;
+  const isValid = !hasValue || Boolean(parseGameVector(input.value));
+
+  input.classList.toggle("input-error", !isValid);
+  error.classList.toggle("hidden", isValid);
+
+  return isValid;
+}
+
+function setPendingMarkerMapCoordinates(
+  x,
+  y,
+  { updatePreview = true, updateCalculatedPosition = true } = {}
+) {
+  const mapX = Number(x);
+  const mapY = Number(y);
+
+  if (!Number.isFinite(mapX) || !Number.isFinite(mapY)) {
+    return;
+  }
+
+  pendingMarkerLatLng = L.latLng(mapY, mapX);
+  document.getElementById("marker-x").value = mapX;
+  document.getElementById("marker-y").value = mapY;
+  document.getElementById("marker-x-display").textContent =
+    formatMapCoordinate(mapX);
+  document.getElementById("marker-y-display").textContent =
+    formatMapCoordinate(mapY);
+  buildStateDropdown("marker-state", getStateIdForCoordinates(mapX, mapY));
+  updateMarkerDialogStateHelper();
+
+  if (updateCalculatedPosition) {
+    showCalculatedPosition(mapX, mapY);
+  }
+
+  if (updatePreview) {
+    renderPendingMarkerPreview();
+  }
+}
+
+function formatMapCoordinate(coordinate) {
+  return Number.isInteger(coordinate)
+    ? String(coordinate)
+    : coordinate.toFixed(2);
+}
+
+function renderPendingMarkerPreview() {
+  if (!pendingMarkerLatLng) {
+    return;
+  }
+
+  const markerLatLng = [pendingMarkerLatLng.lat, pendingMarkerLatLng.lng];
+  const categoryId = document.getElementById("marker-category").value;
+  const typeId = document.getElementById("marker-type").value;
+  const group = getTypeGroupForType(categoryId, typeId);
+  const iconPath = getTypeGroupIconUrl(group);
+  const iconLabel = group ? group.name : "Marker";
+
+  if (!pendingMarkerPreview) {
+    pendingMarkerPreview = L.marker(markerLatLng, {
+      draggable: true,
+      icon: createTypeGroupMarkerIcon(iconPath, iconLabel, true, "unverified"),
+    }).addTo(map);
+
+    pendingMarkerPreview.on("dragend", function () {
+      const latLng = pendingMarkerPreview.getLatLng();
+      setPendingMarkerMapCoordinates(latLng.lng, latLng.lat, {
+        updatePreview: false,
+        updateCalculatedPosition: false,
+      });
+      showGameVectorMessage("Using adjusted map position.");
+    });
+    return;
+  }
+
+  pendingMarkerPreview.setLatLng(markerLatLng);
+  pendingMarkerPreview.setIcon(
+    createTypeGroupMarkerIcon(iconPath, iconLabel, true, "unverified")
+  );
+}
+
+function removePendingMarkerPreview() {
+  if (!pendingMarkerPreview) {
+    return;
+  }
+
+  pendingMarkerPreview.remove();
+  pendingMarkerPreview = null;
+}
+
+async function pasteAndCalculatePendingMarker() {
+  const input = document.getElementById("marker-game-vector");
+
+  try {
+    const clipboardText = await navigator.clipboard.readText();
+    input.value = clipboardText;
+  } catch (error) {
+    showGameVectorMessage(
+      "Clipboard access was denied. Paste the vector manually, then press Enter or leave the field.",
+      "warning"
+    );
+    input.focus();
+    return;
+  }
+
+  calculatePendingMarkerFromGameVector();
+}
+
+function calculatePendingMarkerFromGameVector() {
+  const worldPositionResult = getWorldPositionFromField(
+    "marker-game-vector",
+    "marker-game-vector-error"
+  );
+
+  if (!worldPositionResult.ok) {
+    return;
+  }
+
+  if (!worldPositionResult.worldPosition) {
+    hideCalculatedPosition();
+    clearGameVectorMessage();
+    return;
+  }
+
+  const mapCoordinates = worldToMapCoordinates(
+    worldPositionResult.worldPosition.x,
+    worldPositionResult.worldPosition.y
+  );
+
+  if (!mapCoordinates) {
+    showGameVectorMessage("The vector could not be converted.", "warning");
+    return;
+  }
+
+  if (!isMapCoordinateInBounds(mapCoordinates.x, mapCoordinates.y)) {
+    showCalculatedPosition(mapCoordinates.x, mapCoordinates.y);
+    showGameVectorMessage(
+      "Calculated position is outside the map bounds; marker was not moved.",
+      "warning"
+    );
+    return;
+  }
+
+  setPendingMarkerMapCoordinates(mapCoordinates.x, mapCoordinates.y);
+  showGameVectorMessage("Marker moved to calculated position.");
+}
+
+function useCurrentPendingMapPosition() {
+  const mapX = Number(document.getElementById("marker-x").value);
+  const mapY = Number(document.getElementById("marker-y").value);
+
+  if (Number.isFinite(mapX) && Number.isFinite(mapY)) {
+    setPendingMarkerMapCoordinates(mapX, mapY, {
+      updateCalculatedPosition: false,
+    });
+  } else if (pendingMarkerOriginalLatLng) {
+    setPendingMarkerMapCoordinates(
+      pendingMarkerOriginalLatLng.lng,
+      pendingMarkerOriginalLatLng.lat,
+      { updateCalculatedPosition: false }
+    );
+  }
+
+  hideCalculatedPosition();
+  showGameVectorMessage("Using current map position.");
+}
+
+function showCalculatedPosition(x, y) {
+  document.getElementById("marker-calculated-x").textContent =
+    formatMapCoordinate(x);
+  document.getElementById("marker-calculated-y").textContent =
+    formatMapCoordinate(y);
+  document
+    .getElementById("marker-calculated-position")
+    .classList.remove("hidden");
+}
+
+function hideCalculatedPosition() {
+  document.getElementById("marker-calculated-position").classList.add("hidden");
+}
+
+function showGameVectorMessage(message, type = "") {
+  const messageElement = document.getElementById("marker-game-vector-message");
+
+  messageElement.textContent = message;
+  messageElement.classList.toggle("warning", type === "warning");
+  messageElement.classList.remove("hidden");
+}
+
+function clearGameVectorMessage() {
+  const messageElement = document.getElementById("marker-game-vector-message");
+
+  messageElement.textContent = "";
+  messageElement.classList.remove("warning");
+  messageElement.classList.add("hidden");
+}
+
+function getWorldPositionFromField(inputId, errorId) {
+  if (!validateGameVectorField(inputId, errorId)) {
+    const input = document.getElementById(inputId);
+
+    if (input) {
+      input.focus();
+    }
+
+    return { ok: false, worldPosition: null };
+  }
+
+  const input = document.getElementById(inputId);
+  const value = input ? input.value.trim() : "";
+
+  return {
+    ok: true,
+    worldPosition: value ? parseGameVector(value) : null,
+  };
+}
+
 function saveMarkerFromDialog(event) {
   event.preventDefault();
   const categoryId = document.getElementById("marker-category").value;
@@ -223,6 +487,14 @@ function saveMarkerFromDialog(event) {
     "marker-template-fields",
     categoryId
   );
+  const worldPositionResult = getWorldPositionFromField(
+    "marker-game-vector",
+    "marker-game-vector-error"
+  );
+
+  if (!worldPositionResult.ok) {
+    return;
+  }
 
   const markerData = {
     id: crypto.randomUUID(),
@@ -245,6 +517,10 @@ function saveMarkerFromDialog(event) {
     createdAt: new Date().toISOString(),
     modifiedAt: new Date().toISOString(),
   };
+
+  if (worldPositionResult.worldPosition) {
+    markerData.worldPosition = worldPositionResult.worldPosition;
+  }
 
   markerData.stateAuto = getStateIdForCoordinates(markerData.x, markerData.y);
   markerData.state = document.getElementById("marker-state").value;
