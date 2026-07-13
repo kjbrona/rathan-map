@@ -1,5 +1,10 @@
 # RosalitaRP Explorer
 
+## v1.3.29 Seven-Point World Calibration
+- Replaced the initial four-point world-to-map affine calibration with a seven-point transform.
+- Added a read-only calibration report helper for expected coordinates, calculated coordinates, and error distances.
+- Kept vector parsing, clipboard workflow, marker storage, and manual adjustment behavior unchanged.
+
 ## v1.3.28 Add Marker Layout Correction
 - Restored the main marker Notes field to its normal template location and height.
 - Moved the full Game Vector workflow into the Add Marker Category Details section.
