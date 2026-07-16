@@ -210,6 +210,12 @@
     "group": "roots"
   },
   {
+    "id": "wintergreen-berry",
+    "name": "Wintergreen Berry",
+    "enabled": true,
+    "group": "berries"
+  },
+  {
     "id": "wisteria",
     "name": "Wisteria",
     "enabled": true,
