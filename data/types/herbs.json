@@ -114,6 +114,12 @@
     "group": "leaves"
   },
   {
+    "id": "ladys-slipper-orchid",
+    "name": "Lady's Slipper Orchid",
+    "enabled": true,
+    "group": "flowers"
+  },
+  {
     "id": "milkweed",
     "name": "Milkweed",
     "enabled": true,
