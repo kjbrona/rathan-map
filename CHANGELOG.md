@@ -1,5 +1,10 @@
 # RosalitaRP Explorer
 
+## v1.3.30 Quadratic World Calibration
+- Replaced the seven-point affine world-to-map transform with a fourteen-point second-order polynomial calibration.
+- Added development helpers to regenerate quadratic coefficients, report residuals, and warn on out-of-range calibration errors.
+- Kept vector parsing, clipboard workflow, marker storage, existing markers, and manual adjustment behavior unchanged.
+
 ## v1.3.29 Seven-Point World Calibration
 - Replaced the initial four-point world-to-map affine calibration with a seven-point transform.
 - Added a read-only calibration report helper for expected coordinates, calculated coordinates, and error distances.
