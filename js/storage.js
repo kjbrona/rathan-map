@@ -59,6 +59,7 @@ const SUPPORTED_IMPORT_VERSIONS = [
   "1.3.28",
   "1.3.29",
   "1.3.30",
+  "1.3.31",
 ];
 
 const MARKER_STORAGE_FIELDS = [

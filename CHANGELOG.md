@@ -1,5 +1,10 @@
 # RosalitaRP Explorer
 
+## v1.3.31 Seventeen-Point Quadratic Calibration
+- Updated world-vector placement to use the seventeen-point quadratic calibration constants.
+- Expanded calibration regeneration and verification helpers with residual summaries, coefficient tolerance checks, and copy/paste-ready constants.
+- Kept vector parsing, marker storage, existing markers, Firebase sync, and manual marker adjustment behavior unchanged.
+
 ## v1.3.30 Quadratic World Calibration
 - Replaced the seven-point affine world-to-map transform with a fourteen-point second-order polynomial calibration.
 - Added development helpers to regenerate quadratic coefficients, report residuals, and warn on out-of-range calibration errors.
