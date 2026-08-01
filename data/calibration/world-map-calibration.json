@@ -253,5 +253,50 @@
     },
     "verified": true,
     "notes": ""
+  },
+  {
+    "id": 18,
+    "name": "Sea of Coronado Shore 1",
+    "world": {
+      "x": -5233.97,
+      "y": -3150.33,
+      "z": -18.47
+    },
+    "map": {
+      "x": 1567.7302341230193,
+      "y": 1751.317087795003
+    },
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": 19,
+    "name": "Sea of Coronado Shore 2",
+    "world": {
+      "x": -5311.12,
+      "y": -3122.88,
+      "z": -15.9
+    },
+    "map": {
+      "x": 1509.7343247847657,
+      "y": 1769.6537577560287
+    },
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": 20,
+    "name": "Sea of Coronado Shore 3",
+    "world": {
+      "x": -5317.95,
+      "y": -3126.7,
+      "z": -15.65
+    },
+    "map": {
+      "x": 1499.861839014781,
+      "y": 1766.1549031574068
+    },
+    "verified": true,
+    "notes": ""
   }
 ]

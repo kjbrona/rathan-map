@@ -1,5 +1,10 @@
 # RosalitaRP Explorer
 
+## v1.3.33 Sea of Coronado Calibration Points
+- Added three verified Sea of Coronado shore calibration points to the world-map calibration dataset.
+- Regenerated and stored the quadratic production coefficients from the expanded 20-point dataset.
+- Kept existing markers, marker placement workflow, storage, Firebase sync, and import/export behavior unchanged.
+
 ## v1.3.32 Calibration Dataset Refactor
 - Moved world-map calibration points into `data/calibration/world-map-calibration.json`.
 - Updated calibration regeneration and verification helpers to load the JSON dataset while keeping runtime placement on stored coefficients.
