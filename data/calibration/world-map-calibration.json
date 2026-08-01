@@ -1,0 +1,257 @@
+[
+  {
+    "id": 1,
+    "name": "Calibration Point 1",
+    "world": {
+      "x": -1862.42,
+      "y": -500.22,
+      "z": 176.92
+    },
+    "map": {
+      "x": 4310,
+      "y": 3895
+    },
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": 2,
+    "name": "Calibration Point 2",
+    "world": {
+      "x": -1877.1,
+      "y": -518.15,
+      "z": 175.78
+    },
+    "map": {
+      "x": 4299,
+      "y": 3881
+    },
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": 3,
+    "name": "Calibration Point 3",
+    "world": {
+      "x": -1016.71,
+      "y": -1338.37,
+      "z": 58.76
+    },
+    "map": {
+      "x": 5000,
+      "y": 3222
+    },
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": 4,
+    "name": "Calibration Point 4",
+    "world": {
+      "x": -1011.55,
+      "y": -1325.47,
+      "z": 57.76
+    },
+    "map": {
+      "x": 5002,
+      "y": 3230
+    },
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": 5,
+    "name": "Calibration Point 5",
+    "world": {
+      "x": -1082.25,
+      "y": -929.28,
+      "z": 63.54
+    },
+    "map": {
+      "x": 4942.81887702802,
+      "y": 3547.700482639516
+    },
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": 6,
+    "name": "Calibration Point 6",
+    "world": {
+      "x": -494.02,
+      "y": -98.48,
+      "z": 43.21
+    },
+    "map": {
+      "x": 5421.773813243136,
+      "y": 4220.776377286456
+    },
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": 7,
+    "name": "Calibration Point 7",
+    "world": {
+      "x": -169.9,
+      "y": 299.52,
+      "z": 98.24
+    },
+    "map": {
+      "x": 5686.060052949933,
+      "y": 4544.478178790296
+    },
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": 8,
+    "name": "Calibration Point 8",
+    "world": {
+      "x": -956.4,
+      "y": -985.31,
+      "z": null
+    },
+    "map": {
+      "x": 5044.88947761405,
+      "y": 3502.999580361352
+    },
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": 9,
+    "name": "Calibration Point 9",
+    "world": {
+      "x": -814.88,
+      "y": -1072.94,
+      "z": null
+    },
+    "map": {
+      "x": 5161.547793391623,
+      "y": 3434.2330945573167
+    },
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": 10,
+    "name": "Calibration Point 10",
+    "world": {
+      "x": -2642.8,
+      "y": -69.55,
+      "z": null
+    },
+    "map": {
+      "x": 3673.248355806245,
+      "y": 4248.204319335728
+    },
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": 11,
+    "name": "Calibration Point 11",
+    "world": {
+      "x": -1878.04,
+      "y": -504.6,
+      "z": null
+    },
+    "map": {
+      "x": 4297.12359071275,
+      "y": 3894.808573381221
+    },
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": 12,
+    "name": "Calibration Point 12",
+    "world": {
+      "x": 601.42,
+      "y": 951.61,
+      "z": null
+    },
+    "map": {
+      "x": 6310.490586462819,
+      "y": 5076.20282062627
+    },
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": 13,
+    "name": "Calibration Point 13",
+    "world": {
+      "x": 160.96,
+      "y": 1313.75,
+      "z": null
+    },
+    "map": {
+      "x": 5954.478465837336,
+      "y": 5370.426503288192
+    },
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": 14,
+    "name": "Calibration Point 14",
+    "world": {
+      "x": 9.98,
+      "y": 1346.7,
+      "z": null
+    },
+    "map": {
+      "x": 5831.997431831168,
+      "y": 5394.979857344888
+    },
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": 15,
+    "name": "Calibration Point 15",
+    "world": {
+      "x": 1732.24,
+      "y": -1068.42,
+      "z": null
+    },
+    "map": {
+      "x": 7229.988130142574,
+      "y": 3432.0726296750454
+    },
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": 16,
+    "name": "Calibration Point 16",
+    "world": {
+      "x": 1742.88,
+      "y": -1075.31,
+      "z": null
+    },
+    "map": {
+      "x": 7242.987426299615,
+      "y": 3429.0733021720366
+    },
+    "verified": true,
+    "notes": ""
+  },
+  {
+    "id": 17,
+    "name": "Calibration Point 17",
+    "world": {
+      "x": 2000.41,
+      "y": -1002.11,
+      "z": null
+    },
+    "map": {
+      "x": 7444.979765239721,
+      "y": 3491.06265430301
+    },
+    "verified": true,
+    "notes": ""
+  }
+]

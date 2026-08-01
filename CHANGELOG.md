@@ -1,5 +1,10 @@
 # RosalitaRP Explorer
 
+## v1.3.32 Calibration Dataset Refactor
+- Moved world-map calibration points into `data/calibration/world-map-calibration.json`.
+- Updated calibration regeneration and verification helpers to load the JSON dataset while keeping runtime placement on stored coefficients.
+- Added dataset warnings for duplicate IDs, duplicate coordinates, unverified points, high residuals, and invalid coefficients.
+
 ## v1.3.31 Seventeen-Point Quadratic Calibration
 - Updated world-vector placement to use the seventeen-point quadratic calibration constants.
 - Expanded calibration regeneration and verification helpers with residual summaries, coefficient tolerance checks, and copy/paste-ready constants.

@@ -1,7 +1,7 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 1.3.31
+Version : 1.3.32
 Creator : Rathan
 ==================================================
 */
@@ -31,128 +31,26 @@ function parseGameVector(input) {
   return { x, y, z };
 }
 
-const WORLD_MAP_CALIBRATION_POINTS = [
-  {
-    worldX: -1862.42,
-    worldY: -500.22,
-    mapX: 4310,
-    mapY: 3895,
-  },
-  {
-    worldX: -1877.1,
-    worldY: -518.15,
-    mapX: 4299,
-    mapY: 3881,
-  },
-  {
-    worldX: -1016.71,
-    worldY: -1338.37,
-    mapX: 5000,
-    mapY: 3222,
-  },
-  {
-    worldX: -1011.55,
-    worldY: -1325.47,
-    mapX: 5002,
-    mapY: 3230,
-  },
-  {
-    worldX: -1082.25,
-    worldY: -929.28,
-    mapX: 4942.81887702802,
-    mapY: 3547.700482639516,
-  },
-  {
-    worldX: -494.02,
-    worldY: -98.48,
-    mapX: 5421.773813243136,
-    mapY: 4220.776377286456,
-  },
-  {
-    worldX: -169.9,
-    worldY: 299.52,
-    mapX: 5686.060052949933,
-    mapY: 4544.478178790296,
-  },
-  {
-    worldX: -956.4,
-    worldY: -985.31,
-    mapX: 5044.88947761405,
-    mapY: 3502.999580361352,
-  },
-  {
-    worldX: -814.88,
-    worldY: -1072.94,
-    mapX: 5161.547793391623,
-    mapY: 3434.2330945573167,
-  },
-  {
-    worldX: -2642.8,
-    worldY: -69.55,
-    mapX: 3673.248355806245,
-    mapY: 4248.204319335728,
-  },
-  {
-    worldX: -1878.04,
-    worldY: -504.6,
-    mapX: 4297.12359071275,
-    mapY: 3894.808573381221,
-  },
-  {
-    worldX: 601.42,
-    worldY: 951.61,
-    mapX: 6310.490586462819,
-    mapY: 5076.20282062627,
-  },
-  {
-    worldX: 160.96,
-    worldY: 1313.75,
-    mapX: 5954.478465837336,
-    mapY: 5370.426503288192,
-  },
-  {
-    worldX: 9.98,
-    worldY: 1346.7,
-    mapX: 5831.997431831168,
-    mapY: 5394.979857344888,
-  },
-  {
-    worldX: 1732.24,
-    worldY: -1068.42,
-    mapX: 7229.988130142574,
-    mapY: 3432.0726296750454,
-  },
-  {
-    worldX: 1742.88,
-    worldY: -1075.31,
-    mapX: 7242.987426299615,
-    mapY: 3429.0733021720366,
-  },
-  {
-    worldX: 2000.41,
-    worldY: -1002.11,
-    mapX: 7444.979765239721,
-    mapY: 3491.06265430301,
-  },
-];
-
-// Quadratic calibration based on seventeen verified reference points.
-// Update workflow:
-// 1. Add verified entries to WORLD_MAP_CALIBRATION_POINTS using precise world
-//    X/Y values and manually corrected Explorer map X/Y positions.
-// 2. Distribute points broadly across the map; avoid clusters unless they are
-//    needed to confirm local accuracy.
-// 3. Run regenerateQuadraticCalibration(), review residuals for bad points,
-//    and copy the generated coefficients into the constants below.
-// 4. Run verifyStoredCalibrationConstants() before deployment.
-// Adding points without regenerating these constants does not affect runtime
-// placement, and one incorrect point can degrade placement across the map.
-// Current fit: mean error ~1.852 map units, RMS error ~2.113 map units,
-// maximum observed error ~3.724 map units.
-const WORLD_TO_MAP_POLYNOMIAL_TERMS = ["1", "x", "y", "x*x", "x*y", "y*y"];
-const CALIBRATION_RESIDUAL_THRESHOLD = 4;
+const WORLD_MAP_CALIBRATION_URL = `data/calibration/world-map-calibration.json?v=${encodeURIComponent(
+  APP_VERSION
+)}`;
+const ACTIVE_WORLD_TO_MAP_MODEL = "quadratic";
+const CALIBRATION_RESIDUAL_THRESHOLD = 5;
 const COEFFICIENT_ABSOLUTE_TOLERANCE = 1e-7;
 const COEFFICIENT_RELATIVE_TOLERANCE = 1e-9;
+
+// Calibration workflow:
+// 1. Add a verified point to data/calibration/world-map-calibration.json.
+// 2. Keep points distributed across the map; clustered points can overweight
+//    one region, and one incorrect point can degrade placement everywhere.
+// 3. Run regenerateQuadraticCalibration().
+// 4. Review residuals, especially the worst five points.
+// 5. Investigate unusually high residuals before trusting the new fit.
+// 6. Copy the generated production coefficients into the active model below.
+// 7. Run verifyStoredCalibrationConstants().
+// 8. Deploy after the stored constants match the regenerated constants.
+// Adding calibration points without regenerating the production constants does
+// not change normal runtime placement.
 const MAP_X_COEFFICIENTS = [
   5823.154897840979,
   0.811282831465505,
@@ -170,16 +68,23 @@ const MAP_Y_COEFFICIENTS = [
   0.000001695871407241305,
 ];
 
-function getWorldToMapPolynomialTerms(worldX, worldY) {
-  return [
-    1,
-    worldX,
-    worldY,
-    worldX * worldX,
-    worldX * worldY,
-    worldY * worldY,
-  ];
-}
+const WORLD_TO_MAP_MODELS = {
+  quadratic: {
+    terms: ["1", "x", "y", "x*x", "x*y", "y*y"],
+    getTerms(worldX, worldY) {
+      return [
+        1,
+        worldX,
+        worldY,
+        worldX * worldX,
+        worldX * worldY,
+        worldY * worldY,
+      ];
+    },
+    mapXCoefficients: MAP_X_COEFFICIENTS,
+    mapYCoefficients: MAP_Y_COEFFICIENTS,
+  },
+};
 
 function dotProduct(coefficients, terms) {
   return coefficients.reduce(
@@ -196,9 +101,12 @@ function worldToMapCoordinates(worldX, worldY) {
     return null;
   }
 
+  const model = WORLD_TO_MAP_MODELS[ACTIVE_WORLD_TO_MAP_MODEL];
+  const terms = model.getTerms(x, y);
+
   return {
-    x: dotProduct(MAP_X_COEFFICIENTS, getWorldToMapPolynomialTerms(x, y)),
-    y: dotProduct(MAP_Y_COEFFICIENTS, getWorldToMapPolynomialTerms(x, y)),
+    x: dotProduct(model.mapXCoefficients, terms),
+    y: dotProduct(model.mapYCoefficients, terms),
   };
 }
 
@@ -206,33 +114,142 @@ function isMapCoordinateInBounds(x, y) {
   return x >= 0 && x <= MAP_WIDTH && y >= 0 && y <= MAP_HEIGHT;
 }
 
-function getWorldToMapCalibrationReport(
-  mapXCoefficients = MAP_X_COEFFICIENTS,
-  mapYCoefficients = MAP_Y_COEFFICIENTS
-) {
-  const calculate = (worldX, worldY) => {
-    const terms = getWorldToMapPolynomialTerms(worldX, worldY);
-    return {
-      x: dotProduct(mapXCoefficients, terms),
-      y: dotProduct(mapYCoefficients, terms),
-    };
-  };
+async function loadWorldMapCalibrationPoints() {
+  const response = await fetch(WORLD_MAP_CALIBRATION_URL);
 
-  return WORLD_MAP_CALIBRATION_POINTS.map((point, index) => {
-    const calculated = calculate(point.worldX, point.worldY);
-    const errorX = calculated.x - point.mapX;
-    const errorY = calculated.y - point.mapY;
+  if (!response.ok) {
+    throw new Error(`Unable to load calibration data: ${response.status}`);
+  }
+
+  return normalizeCalibrationPoints(await response.json());
+}
+
+function normalizeCalibrationPoints(points) {
+  if (!Array.isArray(points)) {
+    throw new Error("Calibration data must be an array.");
+  }
+
+  return points.map((point, index) => {
+    const id = Number(point.id);
+    const worldX = Number(point.world && point.world.x);
+    const worldY = Number(point.world && point.world.y);
+    const worldZ =
+      point.world && point.world.z !== null && point.world.z !== undefined
+        ? Number(point.world.z)
+        : null;
+    const mapX = Number(point.map && point.map.x);
+    const mapY = Number(point.map && point.map.y);
 
     return {
-      index: index + 1,
+      id: Number.isFinite(id) ? id : index + 1,
+      name: String(point.name || `Calibration Point ${index + 1}`),
       world: {
-        x: point.worldX,
-        y: point.worldY,
+        x: worldX,
+        y: worldY,
+        z: Number.isFinite(worldZ) ? worldZ : null,
       },
-      expected: {
-        x: point.mapX,
-        y: point.mapY,
+      map: {
+        x: mapX,
+        y: mapY,
       },
+      verified: point.verified === true,
+      notes: String(point.notes || ""),
+    };
+  });
+}
+
+function getDuplicateValues(points, getKey) {
+  const counts = new Map();
+
+  points.forEach((point) => {
+    const key = getKey(point);
+    counts.set(key, (counts.get(key) || 0) + 1);
+  });
+
+  return [...counts.entries()]
+    .filter(([, count]) => count > 1)
+    .map(([key]) => key);
+}
+
+function getCalibrationDataWarnings(points) {
+  const warnings = [];
+  const duplicateIds = getDuplicateValues(points, (point) => String(point.id));
+  const duplicateWorldCoordinates = getDuplicateValues(
+    points,
+    (point) => `${point.world.x},${point.world.y}`
+  );
+  const duplicateMapCoordinates = getDuplicateValues(
+    points,
+    (point) => `${point.map.x},${point.map.y}`
+  );
+  const unverifiedPoints = points.filter((point) => !point.verified);
+
+  if (duplicateIds.length) {
+    warnings.push(`Duplicate calibration IDs: ${duplicateIds.join(", ")}`);
+  }
+
+  if (duplicateWorldCoordinates.length) {
+    warnings.push(
+      `Duplicate world coordinates: ${duplicateWorldCoordinates.join("; ")}`
+    );
+  }
+
+  if (duplicateMapCoordinates.length) {
+    warnings.push(
+      `Duplicate map coordinates: ${duplicateMapCoordinates.join("; ")}`
+    );
+  }
+
+  if (unverifiedPoints.length) {
+    warnings.push(
+      `Unverified calibration points: ${unverifiedPoints
+        .map((point) => `#${point.id}`)
+        .join(", ")}`
+    );
+  }
+
+  if (
+    points.some(
+      (point) =>
+        !Number.isFinite(point.world.x) ||
+        !Number.isFinite(point.world.y) ||
+        !Number.isFinite(point.map.x) ||
+        !Number.isFinite(point.map.y)
+    )
+  ) {
+    warnings.push("One or more calibration points contain invalid numbers.");
+  }
+
+  return warnings;
+}
+
+function calculateWithCalibrationModel(model, worldX, worldY) {
+  const terms = model.getTerms(worldX, worldY);
+
+  return {
+    x: dotProduct(model.mapXCoefficients, terms),
+    y: dotProduct(model.mapYCoefficients, terms),
+  };
+}
+
+function getWorldToMapCalibrationReport(
+  points,
+  model = WORLD_TO_MAP_MODELS[ACTIVE_WORLD_TO_MAP_MODEL]
+) {
+  return points.map((point) => {
+    const calculated = calculateWithCalibrationModel(
+      model,
+      point.world.x,
+      point.world.y
+    );
+    const errorX = calculated.x - point.map.x;
+    const errorY = calculated.y - point.map.y;
+
+    return {
+      id: point.id,
+      name: point.name,
+      world: { ...point.world },
+      expected: { ...point.map },
       calculated,
       errorX,
       errorY,
@@ -252,13 +269,17 @@ function summarizeCalibrationReport(report) {
   );
   const maxError = Math.max(...distanceErrors);
   const maxErrorPoint = report.find((row) => row.distanceError === maxError);
+  const worstFivePoints = [...report]
+    .sort((a, b) => b.distanceError - a.distanceError)
+    .slice(0, 5);
 
   return {
     pointCount: report.length,
     meanError,
     rmsError,
     maxError,
-    maxErrorPoint: maxErrorPoint ? maxErrorPoint.index : null,
+    maxErrorPoint: maxErrorPoint ? maxErrorPoint.id : null,
+    worstFivePoints,
   };
 }
 
@@ -311,20 +332,22 @@ function solveLinearSystem(matrix, vector) {
   return augmented.map((row) => row[size]);
 }
 
-function solveQuadraticCoefficients(targetKey) {
-  if (WORLD_MAP_CALIBRATION_POINTS.length < WORLD_TO_MAP_POLYNOMIAL_TERMS.length) {
+function solveQuadraticCoefficients(points, targetKey) {
+  const model = WORLD_TO_MAP_MODELS.quadratic;
+
+  if (points.length < model.terms.length) {
     throw new Error("At least six calibration points are required.");
   }
 
-  const termCount = WORLD_TO_MAP_POLYNOMIAL_TERMS.length;
+  const termCount = model.terms.length;
   const normalMatrix = Array.from({ length: termCount }, () =>
     Array(termCount).fill(0)
   );
   const normalVector = Array(termCount).fill(0);
 
-  WORLD_MAP_CALIBRATION_POINTS.forEach((point) => {
-    const terms = getWorldToMapPolynomialTerms(point.worldX, point.worldY);
-    const target = point[targetKey];
+  points.forEach((point) => {
+    const terms = model.getTerms(point.world.x, point.world.y);
+    const target = point.map[targetKey];
 
     for (let row = 0; row < termCount; row += 1) {
       normalVector[row] += terms[row] * target;
@@ -368,28 +391,14 @@ function getCalibrationWarnings(summary, coefficientComparisons, coefficients) {
     ...coefficientComparisons.mapY,
   ].some((comparison) => !comparison.withinTolerance);
 
-  if (WORLD_MAP_CALIBRATION_POINTS.length < WORLD_TO_MAP_POLYNOMIAL_TERMS.length) {
-    warnings.push("At least six calibration points are required.");
-  }
-
-  if (
-    WORLD_MAP_CALIBRATION_POINTS.some(
-      (point) =>
-        !Number.isFinite(point.worldX) ||
-        !Number.isFinite(point.worldY) ||
-        !Number.isFinite(point.mapX) ||
-        !Number.isFinite(point.mapY)
-    )
-  ) {
-    warnings.push("One or more calibration points contain invalid numbers.");
-  }
-
   if (coefficients.some((coefficient) => !Number.isFinite(coefficient))) {
     warnings.push("One or more coefficients are NaN or infinite.");
   }
 
   if (summary.maxError > CALIBRATION_RESIDUAL_THRESHOLD) {
-    warnings.push("One or more calibration points exceed 4 map units.");
+    warnings.push(
+      `One or more calibration points exceed ${CALIBRATION_RESIDUAL_THRESHOLD} map units.`
+    );
   }
 
   if (hasInvalidCoefficient) {
@@ -405,7 +414,7 @@ function getCalibrationWarnings(summary, coefficientComparisons, coefficients) {
 
 function formatCoefficientBlock(mapXCoefficients, mapYCoefficients) {
   const formatArray = (name, coefficients) =>
-    `const ${name} = [\n${coefficients
+    `export const ${name} = [\n${coefficients
       .map((coefficient) => `  ${coefficient.toPrecision(17)},`)
       .join("\n")}\n];`;
 
@@ -415,10 +424,11 @@ function formatCoefficientBlock(mapXCoefficients, mapYCoefficients) {
   ].join("\n");
 }
 
-function verifyStoredCalibrationConstants() {
-  const solvedMapXCoefficients = solveQuadraticCoefficients("mapX");
-  const solvedMapYCoefficients = solveQuadraticCoefficients("mapY");
-  const report = getWorldToMapCalibrationReport();
+async function verifyStoredCalibrationConstants() {
+  const points = await loadWorldMapCalibrationPoints();
+  const solvedMapXCoefficients = solveQuadraticCoefficients(points, "x");
+  const solvedMapYCoefficients = solveQuadraticCoefficients(points, "y");
+  const report = getWorldToMapCalibrationReport(points);
   const summary = summarizeCalibrationReport(report);
   const coefficientComparisons = {
     mapX: getCoefficientComparisons(solvedMapXCoefficients, MAP_X_COEFFICIENTS),
@@ -430,6 +440,8 @@ function verifyStoredCalibrationConstants() {
     ...solvedMapXCoefficients,
     ...solvedMapYCoefficients,
   ]);
+  warnings.push(...getCalibrationDataWarnings(points));
+
   const result = {
     residuals: report,
     ...summary,
@@ -437,9 +449,7 @@ function verifyStoredCalibrationConstants() {
     warnings,
   };
 
-  if (warnings.length) {
-    console.warn("Calibration verification warnings:", warnings);
-  }
+  printCalibrationReport(result, "Stored Calibration Verification");
 
   return result;
 }
@@ -448,13 +458,16 @@ function verifyWorldToMapCalibration() {
   return verifyStoredCalibrationConstants();
 }
 
-function regenerateQuadraticCalibration() {
-  const mapXCoefficients = solveQuadraticCoefficients("mapX");
-  const mapYCoefficients = solveQuadraticCoefficients("mapY");
-  const report = getWorldToMapCalibrationReport(
+async function regenerateQuadraticCalibration() {
+  const points = await loadWorldMapCalibrationPoints();
+  const mapXCoefficients = solveQuadraticCoefficients(points, "x");
+  const mapYCoefficients = solveQuadraticCoefficients(points, "y");
+  const model = {
+    ...WORLD_TO_MAP_MODELS.quadratic,
     mapXCoefficients,
-    mapYCoefficients
-  );
+    mapYCoefficients,
+  };
+  const report = getWorldToMapCalibrationReport(points, model);
   const summary = summarizeCalibrationReport(report);
   const coefficientComparisons = {
     mapX: getCoefficientComparisons(mapXCoefficients, MAP_X_COEFFICIENTS),
@@ -466,13 +479,15 @@ function regenerateQuadraticCalibration() {
     ...MAP_X_COEFFICIENTS,
     ...MAP_Y_COEFFICIENTS,
   ]);
+  warnings.push(...getCalibrationDataWarnings(points));
+
   const copyPasteConstants = formatCoefficientBlock(
     mapXCoefficients,
     mapYCoefficients
   );
 
   const result = {
-    terms: [...WORLD_TO_MAP_POLYNOMIAL_TERMS],
+    terms: [...WORLD_TO_MAP_MODELS.quadratic.terms],
     coefficients: {
       mapX: mapXCoefficients,
       mapY: mapYCoefficients,
@@ -484,11 +499,18 @@ function regenerateQuadraticCalibration() {
     warnings,
   };
 
+  printCalibrationReport(result, "Regenerated Quadratic Calibration");
+  console.log("Copy/paste-ready constants:\n" + copyPasteConstants);
+
+  return result;
+}
+
+function printCalibrationReport(result, title) {
+  console.log(title);
   console.table(
-    report.map((row) => ({
-      point: row.index,
-      worldX: row.world.x,
-      worldY: row.world.y,
+    result.residuals.map((row) => ({
+      id: row.id,
+      name: row.name,
       expectedX: row.expected.x,
       expectedY: row.expected.y,
       calculatedX: row.calculated.x,
@@ -498,16 +520,21 @@ function regenerateQuadraticCalibration() {
       distanceError: row.distanceError,
     }))
   );
-  console.log("Quadratic mapX coefficients:", mapXCoefficients);
-  console.log("Quadratic mapY coefficients:", mapYCoefficients);
-  console.log("Copy/paste-ready constants:\n" + copyPasteConstants);
-  console.log("Calibration summary:", summary);
+  console.log("Calibration Summary", {
+    totalPoints: result.pointCount,
+    meanError: result.meanError,
+    rmsError: result.rmsError,
+    maximumError: result.maxError,
+    maximumErrorPoint: result.maxErrorPoint,
+    worstFivePoints: result.worstFivePoints.map(
+      (row) => `#${row.id} ${row.distanceError.toFixed(2)} px`
+    ),
+  });
 
-  if (warnings.length) {
-    console.warn("Calibration warnings:", warnings);
+  if (result.warnings.length) {
+    console.warn("Calibration warnings:", result.warnings);
   }
 
-  return result;
 }
 
 function isValidWorldPosition(worldPosition) {
