@@ -1,5 +1,10 @@
 # RosalitaRP Explorer
 
+## v1.3.34 Remember Found By
+- Added browser-local persistence for the last non-empty Item Discovery Found By value.
+- Reused the Add Marker preferences localStorage object that already stores remembered Status and Confidence.
+- Kept blank Found By saves from clearing the remembered browser preference.
+
 ## v1.3.33 Sea of Coronado Calibration Points
 - Added three verified Sea of Coronado shore calibration points to the world-map calibration dataset.
 - Regenerated and stored the quadratic production coefficients from the expanded 20-point dataset.

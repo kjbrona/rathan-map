@@ -680,6 +680,9 @@ async function initializeMarkerDetailsPanel() {
       }
 
       await updateMarker(selectedMarkerId, markerUpdates);
+      saveLastUsedMarkerDefaults({
+        foundBy: markerUpdates.foundBy,
+      });
     });
 
   document

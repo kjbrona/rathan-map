@@ -114,6 +114,7 @@ async function openMarkerDialog(latlng) {
   document.getElementById("marker-form").reset();
   applyLastUsedMarkerDefaults();
   populateItemDiscoveryFields("marker");
+  applyLastUsedFoundByDefault();
   document.getElementById("marker-found-date").value = getLocalDateInputValue();
 
   await buildCategoryDropdown("marker-category");
@@ -186,11 +187,37 @@ function applyLastUsedMarkerDefaults() {
     prefs.confidence || "guess";
 }
 
-function saveLastUsedMarkerDefaults(status, confidence) {
+function applyLastUsedFoundByDefault() {
+  const prefs = loadAddMarkerPreferences();
+  const foundByInput = document.getElementById("marker-found-by");
+
+  if (foundByInput && prefs.foundBy) {
+    foundByInput.value = prefs.foundBy;
+  }
+}
+
+function saveLastUsedMarkerDefaults({ status, confidence, foundBy } = {}) {
+  const existingPrefs = loadAddMarkerPreferences();
+  const nextPrefs = {
+    ...existingPrefs,
+  };
+
+  if (isValidMarkerStatus(status)) {
+    nextPrefs.status = status;
+  }
+
+  if (isValidMarkerConfidence(confidence)) {
+    nextPrefs.confidence = confidence;
+  }
+
+  if (typeof foundBy === "string" && foundBy.trim()) {
+    nextPrefs.foundBy = foundBy.trim();
+  }
+
   try {
     localStorage.setItem(
       ADD_MARKER_PREFS_STORAGE_KEY,
-      JSON.stringify({ status, confidence })
+      JSON.stringify(nextPrefs)
     );
   } catch (error) {
     console.warn("Add Marker preferences could not be saved.", error);
@@ -211,6 +238,8 @@ function loadAddMarkerPreferences() {
       confidence: isValidMarkerConfidence(prefs.confidence)
         ? prefs.confidence
         : "",
+      foundBy:
+        typeof prefs.foundBy === "string" ? prefs.foundBy.trim() : "",
     };
   } catch (error) {
     console.warn("Add Marker preferences could not be loaded.", error);
@@ -527,7 +556,11 @@ function saveMarkerFromDialog(event) {
   markerData.stateOverride =
     markerData.state !== "" && markerData.state !== markerData.stateAuto;
 
-  saveLastUsedMarkerDefaults(markerData.status, markerData.confidence);
+  saveLastUsedMarkerDefaults({
+    status: markerData.status,
+    confidence: markerData.confidence,
+    foundBy: markerData.foundBy,
+  });
   addMarker(markerData);
   closeMarkerDialog();
 }
