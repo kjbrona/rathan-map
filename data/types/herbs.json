@@ -1,16 +1,16 @@
 [
   {
-    "id": "alaskan-ginseng",
-    "name": "Alaskan Ginseng",
-    "enabled": true,
-    "group": "roots"
-  },
-  {
     "id": "agarita",
     "name": "Agarita",
     "enabled": true,
     "group": "flowers",
     "uses": []
+  },
+  {
+    "id": "alaskan-ginseng",
+    "name": "Alaskan Ginseng",
+    "enabled": true,
+    "group": "roots"
   },
   {
     "id": "american-ginseng",
@@ -49,13 +49,6 @@
     "group": "flowers"
   },
   {
-    "id": "cardinal-flower",
-    "name": "Cardinal Flower",
-    "enabled": true,
-    "group": "flowers",
-    "uses": []
-  },
-  {
     "id": "bulrush",
     "name": "Bulrush",
     "enabled": true,
@@ -66,6 +59,13 @@
     "name": "Burdock Root",
     "enabled": true,
     "group": "roots"
+  },
+  {
+    "id": "cardinal-flower",
+    "name": "Cardinal Flower",
+    "enabled": true,
+    "group": "flowers",
+    "uses": []
   },
   {
     "id": "chanterelles",

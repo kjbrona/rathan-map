@@ -1,5 +1,9 @@
 # RosalitaRP Explorer
 
+## v1.3.45 Herb Catalog Order
+- Sorted the Herb type catalog alphabetically by display name.
+- Updated cache-busting references so browsers reload the corrected Herb order.
+
 ## v1.3.44 Browser Compatibility Fix
 - Replaced `String.replaceAll()` usage in marker/type escaping helpers with broadly compatible regular-expression replacements.
 - Prevented older or stricter browsers from failing during filter and marker rendering.
