@@ -1,0 +1,6209 @@
+[
+  {
+    "candidateId": "wildflower-candidate-002",
+    "candidateType": "wisteria",
+    "candidateTypeName": "Wisteria",
+    "candidateX": 7953.36305524046,
+    "candidateY": 5815.249879363518,
+    "nearbyMarkers": [
+      {
+        "id": "cee46e36-9789-49d5-b9e9-b4629ead7a9e",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 127.8054254573807
+      },
+      {
+        "id": "258b19e1-1b2d-4ef5-ae93-071451ab95cc",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 191.58565559256903
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-009",
+    "candidateType": "bitterweed",
+    "candidateTypeName": "Bitterweed",
+    "candidateX": 4235.775520536411,
+    "candidateY": 4694.3652199886255,
+    "nearbyMarkers": [
+      {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "type": "bitterweed",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 4.014770346882135
+      },
+      {
+        "id": "b72c7b29-92cf-4bc5-afa8-d12622d31001",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 168.58777157502652
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-015",
+    "candidateType": "wild-rhubarb",
+    "candidateTypeName": "Wild Rhubarb",
+    "candidateX": 5314.137837573504,
+    "candidateY": 4294.974613896013,
+    "nearbyMarkers": [
+      {
+        "id": "3fd99e86-b5d9-46fe-908e-f023165dfaf7",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 70.25504493459181
+      },
+      {
+        "id": "8dbd20e2-18b0-4dc0-b772-0e448421257b",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 130.6254126493395
+      },
+      {
+        "id": "7561d918-8201-43dc-ae7f-6e17ab91a4f6",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 132.127326532585
+      },
+      {
+        "id": "fecfb170-bdb7-467b-bb7a-143a81f43dfe",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 152.41640304725007
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-017",
+    "candidateType": "cardinal-flower",
+    "candidateTypeName": "Cardinal Flower",
+    "candidateX": 7581.27591262182,
+    "candidateY": 4080.0334320259617,
+    "nearbyMarkers": [
+      {
+        "id": "e3b994e6-6922-4d4a-8040-89ded0f80e53",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 110.62283591438649
+      },
+      {
+        "id": "72a30010-d58d-452a-be0d-56d8657282f9",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 159.70600814682666
+      },
+      {
+        "id": "b0ed4d15-95cf-429e-9f51-2e7335fe5783",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 161.78999494957912
+      },
+      {
+        "id": "c59f04b0-53cb-41e2-9873-e19b4b5ed9bc",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 164.71789107272238
+      },
+      {
+        "id": "dbb3e170-c209-4cf9-8181-3b0dcc09e13f",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 169.2425355658444
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-018",
+    "candidateType": "cardinal-flower",
+    "candidateTypeName": "Cardinal Flower",
+    "candidateX": 7370.8771288492235,
+    "candidateY": 3977.8436856616786,
+    "nearbyMarkers": [
+      {
+        "id": "fbda7348-6658-4afa-b345-6b0a7026a002",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 60.2257328771154
+      },
+      {
+        "id": "dbb3e170-c209-4cf9-8181-3b0dcc09e13f",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 80.33569034717038
+      },
+      {
+        "id": "72a30010-d58d-452a-be0d-56d8657282f9",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 129.36166577799227
+      },
+      {
+        "id": "b347a5b9-8e42-4421-a74c-c96aca5bac28",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 135.86995021355833
+      },
+      {
+        "id": "e3b994e6-6922-4d4a-8040-89ded0f80e53",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 146.62765582126215
+      },
+      {
+        "id": "6de8d6c4-cef6-4bf8-895f-3285f3ab6a43",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 163.9727147376894
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-019",
+    "candidateType": "blood-flower",
+    "candidateTypeName": "Blood Flower",
+    "candidateX": 7669.071466744139,
+    "candidateY": 3920.87825763866,
+    "nearbyMarkers": [
+      {
+        "id": "c59f04b0-53cb-41e2-9873-e19b4b5ed9bc",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 38.13054380280954
+      },
+      {
+        "id": "b0ed4d15-95cf-429e-9f51-2e7335fe5783",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 55.293025233784654
+      },
+      {
+        "id": "92234f9f-a45a-479e-9e53-9df37c84c7b7",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 131.22853962199176
+      },
+      {
+        "id": "e3b994e6-6922-4d4a-8040-89ded0f80e53",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 167.04354601355053
+      },
+      {
+        "id": "72a30010-d58d-452a-be0d-56d8657282f9",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 174.7443591522039
+      },
+      {
+        "id": "d9803875-803f-4f36-b110-6c57f35f22cb",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 181.62393347727306
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-020",
+    "candidateType": "agarita",
+    "candidateTypeName": "Agarita",
+    "candidateX": 5612.257015980266,
+    "candidateY": 3866.5186267497393,
+    "nearbyMarkers": [
+      {
+        "id": "209f9a57-31da-4f85-bd9f-44f4198510e1",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 13.008186018134362
+      },
+      {
+        "id": "afa9efb2-8ec8-4f06-99cf-8d0964184a35",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 50.320872065149196
+      },
+      {
+        "id": "a3420316-f1d5-425b-8f98-8198a9858642",
+        "name": "Burdock Root",
+        "type": "burdock-root",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 80.51071277113546
+      },
+      {
+        "id": "3490beca-f59b-4462-b7d3-51a082d328e7",
+        "name": "Garlic",
+        "type": "garlic",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 109.0632808240302
+      },
+      {
+        "id": "8ca88fd4-4d59-49cb-b25c-a2dfb5b6d5de",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 145.3518117168248
+      },
+      {
+        "id": "de2219c4-e6c4-4964-bdca-d3dbc3c3b288",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 155.78188929101697
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-021",
+    "candidateType": "blood-flower",
+    "candidateTypeName": "Blood Flower",
+    "candidateX": 6427.206240940282,
+    "candidateY": 3813.9595010504145,
+    "nearbyMarkers": [
+      {
+        "id": "c4ba2fb1-63a9-41d1-a76f-502a3b3a6891",
+        "name": "Hummingbird Sage",
+        "type": "hummingbird-sage",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 22.609295759632886
+      },
+      {
+        "id": "ca3fb906-fe84-4dc7-b286-2dd2c1c44d1e",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 23.83254302300064
+      },
+      {
+        "id": "508860bb-505f-4211-a650-042fa94e73f4",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 41.54901659483001
+      },
+      {
+        "id": "dc9aa7f9-3c15-433e-9025-b4211e79fc93",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 50.7648601864983
+      },
+      {
+        "id": "e4e24fae-2829-4acf-af30-f47d5f93f5aa",
+        "name": "Chanterelles",
+        "type": "chanterelles",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 95.31123499530516
+      },
+      {
+        "id": "ea0012b8-e955-4555-bff8-10e603bde34f",
+        "name": "Burdock Root",
+        "type": "burdock-root",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 119.80360374338115
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-023",
+    "candidateType": "wisteria",
+    "candidateTypeName": "Wisteria",
+    "candidateX": 4080.375736247909,
+    "candidateY": 3857.393558897329,
+    "nearbyMarkers": [
+      {
+        "id": "4f77bafa-4a8a-48aa-817a-c688fab53ccb",
+        "name": "Wisteria",
+        "type": "wisteria",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 12.076489513798807
+      },
+      {
+        "id": "4679f1dd-5ad7-4879-b392-1d6e89c50faa",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 155.63211244664973
+      },
+      {
+        "id": "666c1c64-ea5b-4cf5-901b-200ede88e6d4",
+        "name": "Indian Tobacco",
+        "type": "indian-tobacco",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 165.05589835124525
+      },
+      {
+        "id": "4e572e24-3216-4800-ab29-1d19253fd2be",
+        "name": "Alaskan Ginseng",
+        "type": "alaskan-ginseng",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 173.58895630435595
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-024",
+    "candidateType": "cardinal-flower",
+    "candidateTypeName": "Cardinal Flower",
+    "candidateX": 7524.039487855092,
+    "candidateY": 3851.388000747518,
+    "nearbyMarkers": [
+      {
+        "id": "6de8d6c4-cef6-4bf8-895f-3285f3ab6a43",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 57.39607763882061
+      },
+      {
+        "id": "b347a5b9-8e42-4421-a74c-c96aca5bac28",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 93.1537269111804
+      },
+      {
+        "id": "72a30010-d58d-452a-be0d-56d8657282f9",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 97.72113017777953
+      },
+      {
+        "id": "c59f04b0-53cb-41e2-9873-e19b4b5ed9bc",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 128.71996579877728
+      },
+      {
+        "id": "fbda7348-6658-4afa-b345-6b0a7026a002",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 138.6252987018843
+      },
+      {
+        "id": "e3b994e6-6922-4d4a-8040-89ded0f80e53",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 138.79063630530706
+      },
+      {
+        "id": "dbb3e170-c209-4cf9-8181-3b0dcc09e13f",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 141.00362105213776
+      },
+      {
+        "id": "03b0dd40-5b7c-413f-b017-ebd8a65408de",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 159.289662205235
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-025",
+    "candidateType": "cardinal-flower",
+    "candidateTypeName": "Cardinal Flower",
+    "candidateX": 7740.5294492877765,
+    "candidateY": 3773.9597800656697,
+    "nearbyMarkers": [
+      {
+        "id": "92234f9f-a45a-479e-9e53-9df37c84c7b7",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 34.340245835289444
+      },
+      {
+        "id": "d9803875-803f-4f36-b110-6c57f35f22cb",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 170.74935055125434
+      },
+      {
+        "id": "0c552951-d91c-45c8-ae90-da4a3c1c0722",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 171.18811374167467
+      },
+      {
+        "id": "c59f04b0-53cb-41e2-9873-e19b4b5ed9bc",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 184.9586100168282
+      },
+      {
+        "id": "dcff1b43-cd47-4022-a0b0-f07e377529df",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 185.04241419568385
+      },
+      {
+        "id": "1d1f9bea-29f2-4fa3-a168-46636a261f46",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 196.1928558608087
+      },
+      {
+        "id": "b0ed4d15-95cf-429e-9f51-2e7335fe5783",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 198.64632140788515
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-026",
+    "candidateType": "cardinal-flower",
+    "candidateTypeName": "Cardinal Flower",
+    "candidateX": 7372.865123742603,
+    "candidateY": 3708.412253038312,
+    "nearbyMarkers": [
+      {
+        "id": "3948fcb6-612a-4198-8393-b782754047bd",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 83.14076824054158
+      },
+      {
+        "id": "739f5aef-3016-4fef-8f2b-da1ba3c3c037",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 85.86105894269531
+      },
+      {
+        "id": "2744994d-94b2-4922-ad03-1e122c4290d3",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 90.02472195474526
+      },
+      {
+        "id": "5a42a3ee-2d35-4d4b-82c5-895e296c744d",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 110.80114336254216
+      },
+      {
+        "id": "03b0dd40-5b7c-413f-b017-ebd8a65408de",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 116.79629064661265
+      },
+      {
+        "id": "b347a5b9-8e42-4421-a74c-c96aca5bac28",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 158.62473606184543
+      },
+      {
+        "id": "6de8d6c4-cef6-4bf8-895f-3285f3ab6a43",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 165.88425949458127
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-027",
+    "candidateType": "chocolate-daisy",
+    "candidateTypeName": "Chocolate Daisy",
+    "candidateX": 6502.746758039597,
+    "candidateY": 3654.796643141678,
+    "nearbyMarkers": [
+      {
+        "id": "b15cb9b5-96c0-459c-9750-6c8972775540",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 25.8810524722083
+      },
+      {
+        "id": "e4e24fae-2829-4acf-af30-f47d5f93f5aa",
+        "name": "Chanterelles",
+        "type": "chanterelles",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 90.72841275362546
+      },
+      {
+        "id": "1df2e6d5-36a1-44bd-a3d7-65666da2f96d",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 126.21822563589149
+      },
+      {
+        "id": "508860bb-505f-4211-a650-042fa94e73f4",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 138.00608685238836
+      },
+      {
+        "id": "dded7605-6fa8-46c3-bec0-9143e42a2a4f",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 154.7876486959979
+      },
+      {
+        "id": "c4ba2fb1-63a9-41d1-a76f-502a3b3a6891",
+        "name": "Hummingbird Sage",
+        "type": "hummingbird-sage",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 158.01054378001982
+      },
+      {
+        "id": "ea0012b8-e955-4555-bff8-10e603bde34f",
+        "name": "Burdock Root",
+        "type": "burdock-root",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 160.54791130232525
+      },
+      {
+        "id": "ca3fb906-fe84-4dc7-b286-2dd2c1c44d1e",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 161.08408463479404
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-028",
+    "candidateType": "blood-flower",
+    "candidateTypeName": "Blood Flower",
+    "candidateX": 7693.5262035845835,
+    "candidateY": 3647.378597634738,
+    "nearbyMarkers": [
+      {
+        "id": "dcff1b43-cd47-4022-a0b0-f07e377529df",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 71.61100788919298
+      },
+      {
+        "id": "0c552951-d91c-45c8-ae90-da4a3c1c0722",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 80.2148111975935
+      },
+      {
+        "id": "57dc8af4-c30d-4c2b-9df6-a496bd256444",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 82.02886282799618
+      },
+      {
+        "id": "f2683b04-5232-4172-86a1-61fac146a044",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 90.54420664857199
+      },
+      {
+        "id": "bd4adddd-dc35-4fba-bb1b-4e5d9599a05e",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 95.41067317378172
+      },
+      {
+        "id": "48fb8fe8-3640-48fe-a527-708eaab8dc18",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 101.89204065670911
+      },
+      {
+        "id": "1d9ae48a-e1d4-49eb-92c3-2ca6e4b91d47",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 102.92104842293068
+      },
+      {
+        "id": "1d1f9bea-29f2-4fa3-a168-46636a261f46",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 105.8680561790289
+      },
+      {
+        "id": "6c72767e-8cc2-4833-b515-9b4f72eae96b",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 137.12946320743788
+      },
+      {
+        "id": "92234f9f-a45a-479e-9e53-9df37c84c7b7",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 166.14228323855914
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-029",
+    "candidateType": "cardinal-flower",
+    "candidateTypeName": "Cardinal Flower",
+    "candidateX": 7564.848314843043,
+    "candidateY": 3647.2979206596706,
+    "nearbyMarkers": [
+      {
+        "id": "03b0dd40-5b7c-413f-b017-ebd8a65408de",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 90.13800195589623
+      },
+      {
+        "id": "57dc8af4-c30d-4c2b-9df6-a496bd256444",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 94.79983268541383
+      },
+      {
+        "id": "6c72767e-8cc2-4833-b515-9b4f72eae96b",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 99.95407845536427
+      },
+      {
+        "id": "48fb8fe8-3640-48fe-a527-708eaab8dc18",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 141.76546824393068
+      },
+      {
+        "id": "739f5aef-3016-4fef-8f2b-da1ba3c3c037",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 143.1505933696774
+      },
+      {
+        "id": "f2683b04-5232-4172-86a1-61fac146a044",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 161.7108193842064
+      },
+      {
+        "id": "bd4adddd-dc35-4fba-bb1b-4e5d9599a05e",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 162.11865469947122
+      },
+      {
+        "id": "dcff1b43-cd47-4022-a0b0-f07e377529df",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 179.86173443785475
+      },
+      {
+        "id": "074b7f27-2bed-4228-9087-fb556cdc420f",
+        "name": "Cardinal Flower",
+        "type": "alaskan-ginseng",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 196.921120344012
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-030",
+    "candidateType": "blood-flower",
+    "candidateTypeName": "Blood Flower",
+    "candidateX": 7213.538079445376,
+    "candidateY": 3651.1599735483874,
+    "nearbyMarkers": [
+      {
+        "id": "5a42a3ee-2d35-4d4b-82c5-895e296c744d",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 76.96964500230082
+      },
+      {
+        "id": "2744994d-94b2-4922-ad03-1e122c4290d3",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 128.16020336011937
+      },
+      {
+        "id": "7d0e917b-cc24-476a-a613-31888519e0f9",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 143.6524567948911
+      },
+      {
+        "id": "e52bfdc0-62da-4fd0-86f1-5a21c6201563",
+        "name": "Blood Flower",
+        "type": "blood-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 144.44615421399934
+      },
+      {
+        "id": "3948fcb6-612a-4198-8393-b782754047bd",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 144.49603153710078
+      },
+      {
+        "id": "fa3a0314-0a75-4f22-9e1d-9d9996c10b2d",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 191.5075602924108
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-031",
+    "candidateType": "chocolate-daisy",
+    "candidateTypeName": "Chocolate Daisy",
+    "candidateX": 6382.2306346956475,
+    "candidateY": 3613.897950149041,
+    "nearbyMarkers": [
+      {
+        "id": "ea0012b8-e955-4555-bff8-10e603bde34f",
+        "name": "Burdock Root",
+        "type": "burdock-root",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 107.71801039867746
+      },
+      {
+        "id": "1df2e6d5-36a1-44bd-a3d7-65666da2f96d",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 112.90959617937057
+      },
+      {
+        "id": "b15cb9b5-96c0-459c-9750-6c8972775540",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 133.99771853329145
+      },
+      {
+        "id": "dded7605-6fa8-46c3-bec0-9143e42a2a4f",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 147.28517433318206
+      },
+      {
+        "id": "e4e24fae-2829-4acf-af30-f47d5f93f5aa",
+        "name": "Chanterelles",
+        "type": "chanterelles",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 171.63216413321945
+      },
+      {
+        "id": "508860bb-505f-4211-a650-042fa94e73f4",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 186.72538512804223
+      },
+      {
+        "id": "c4ba2fb1-63a9-41d1-a76f-502a3b3a6891",
+        "name": "Hummingbird Sage",
+        "type": "hummingbird-sage",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 199.3616318390212
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-032",
+    "candidateType": "creek-plum",
+    "candidateTypeName": "Creek Plum",
+    "candidateX": 4343.7987394662805,
+    "candidateY": 3559.549844542273,
+    "nearbyMarkers": [
+      {
+        "id": "64143c7f-e9c6-452f-bee5-0f9c3b4e1d03",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 115.65289638939731
+      },
+      {
+        "id": "dbc30758-5a71-46e5-8e79-7ae55ab7d386",
+        "name": "Indian Tobacco",
+        "type": "indian-tobacco",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 120.81840358659488
+      },
+      {
+        "id": "5d994905-aeb7-488a-8263-fe5155b67518",
+        "name": "Blackberry",
+        "type": "blackberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 123.45334212889297
+      },
+      {
+        "id": "dd791b9c-887f-4df4-b887-580add0630a6",
+        "name": "Blackberry",
+        "type": "blackberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 123.47182966340264
+      },
+      {
+        "id": "056d3c1a-ea19-468e-a414-b4bb232ac69d",
+        "name": "Alaskan Ginseng",
+        "type": "alaskan-ginseng",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 125.25532350618957
+      },
+      {
+        "id": "f42c3955-c0b9-4b34-ada6-20bd75bf7f05",
+        "name": "Indian Tobacco",
+        "type": "indian-tobacco",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 125.67301695773135
+      },
+      {
+        "id": "5a33421e-ed56-4c0b-9e31-e13ee09a3163",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 140.36351054020696
+      },
+      {
+        "id": "6641a02f-78ef-4d54-9c02-d58e4f04535b",
+        "name": "Hummingbird Sage",
+        "type": "hummingbird-sage",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 143.0819039495866
+      },
+      {
+        "id": "242cb21c-b563-43de-8987-3cc82d30a36e",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 149.16650108110454
+      },
+      {
+        "id": "cf132cb6-97b6-4fb2-90a3-8c48742c9a90",
+        "name": "Wisteria",
+        "type": "wisteria",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 167.29518938978643
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-033",
+    "candidateType": "blood-flower",
+    "candidateTypeName": "Blood Flower",
+    "candidateX": 7023.56683516311,
+    "candidateY": 3561.229974562721,
+    "nearbyMarkers": [
+      {
+        "id": "e52bfdc0-62da-4fd0-86f1-5a21c6201563",
+        "name": "Blood Flower",
+        "type": "blood-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 80.54431507238452
+      },
+      {
+        "id": "7d0e917b-cc24-476a-a613-31888519e0f9",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 97.15874084889342
+      },
+      {
+        "id": "fa3a0314-0a75-4f22-9e1d-9d9996c10b2d",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 166.63481900003603
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-034",
+    "candidateType": "chocolate-daisy",
+    "candidateTypeName": "Chocolate Daisy",
+    "candidateX": 6498.623752990299,
+    "candidateY": 3467.007645487979,
+    "nearbyMarkers": [
+      {
+        "id": "dded7605-6fa8-46c3-bec0-9143e42a2a4f",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 40.61778011782311
+      },
+      {
+        "id": "6a13a07c-642b-401e-b85c-80f5508c379c",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 66.0325624881258
+      },
+      {
+        "id": "1df2e6d5-36a1-44bd-a3d7-65666da2f96d",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 76.75944273639684
+      },
+      {
+        "id": "b15cb9b5-96c0-459c-9750-6c8972775540",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 165.80307148404438
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-035",
+    "candidateType": "wisteria",
+    "candidateTypeName": "Wisteria",
+    "candidateX": 4366.233270204138,
+    "candidateY": 3396.271377537466,
+    "nearbyMarkers": [
+      {
+        "id": "cf132cb6-97b6-4fb2-90a3-8c48742c9a90",
+        "name": "Wisteria",
+        "type": "wisteria",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 12.769613754863583
+      },
+      {
+        "id": "6641a02f-78ef-4d54-9c02-d58e4f04535b",
+        "name": "Hummingbird Sage",
+        "type": "hummingbird-sage",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 54.22642505308675
+      },
+      {
+        "id": "5d994905-aeb7-488a-8263-fe5155b67518",
+        "name": "Blackberry",
+        "type": "blackberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 68.89102611441905
+      },
+      {
+        "id": "743d8bf8-0fad-4746-9e20-8af067a40166",
+        "name": "Parasol Mushroom",
+        "type": "parasol-mushroom",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 79.12795981188097
+      },
+      {
+        "id": "0e47b88a-b5ee-4464-bffa-84fc9f5626ef",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 83.5463398866816
+      },
+      {
+        "id": "e43e89b3-c40f-4412-b59d-bc7759b6b7c7",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "approximate",
+        "distance": 87.77582162082076
+      },
+      {
+        "id": "ad793c85-c3c8-456b-8cb3-add4572d1030",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 91.6419723480512
+      },
+      {
+        "id": "011de11d-eb6d-445c-9263-3ca12437ba0d",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 95.14063282828957
+      },
+      {
+        "id": "5a33421e-ed56-4c0b-9e31-e13ee09a3163",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 110.71292615278558
+      },
+      {
+        "id": "242cb21c-b563-43de-8987-3cc82d30a36e",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 138.8232798755367
+      },
+      {
+        "id": "4bb2713f-8309-4217-9ed2-a4dbda2feb52",
+        "name": "Wisteria",
+        "type": "wisteria",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 141.3724399901635
+      },
+      {
+        "id": "dbc30758-5a71-46e5-8e79-7ae55ab7d386",
+        "name": "Indian Tobacco",
+        "type": "indian-tobacco",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 142.22580457121748
+      },
+      {
+        "id": "11a086f7-a0f9-4c7d-b35c-798a57207d8f",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 158.88503746650113
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-040",
+    "candidateType": "texas-bluebonnet",
+    "candidateTypeName": "Texas Bluebonnet",
+    "candidateX": 5285.300754153212,
+    "candidateY": 3098.838731579181,
+    "nearbyMarkers": [
+      {
+        "id": "9895d9c2-0166-4aed-821d-1a5a1196ae78",
+        "name": "American Ginseng",
+        "type": "american-ginseng",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 15.410840712865905
+      },
+      {
+        "id": "5384c068-5f9d-4cb3-bcd4-fb1f28c2de3d",
+        "name": "Texas Bluebonnet",
+        "type": "texas-bluebonnet",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 26.314124338264364
+      },
+      {
+        "id": "39f15c13-536c-4e72-823b-91d0dbce76ad",
+        "name": "Prairie Poppy",
+        "type": "prairie-poppy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 48.92192666256395
+      },
+      {
+        "id": "33c448dd-3430-49d9-b140-de4cd81cca06",
+        "name": "Texas Bluebonnet",
+        "type": "texas-bluebonnet",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 85.40870856516591
+      },
+      {
+        "id": "42c183d4-0f90-4096-a109-6f33327dc0cc",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 92.05461488145009
+      },
+      {
+        "id": "447527fd-12ba-4b76-b2e3-d11d6a34b1d1",
+        "name": "Prairie Poppy",
+        "type": "prairie-poppy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 95.71810291339709
+      },
+      {
+        "id": "707ab498-6722-4b20-9dbf-6f71f830de65",
+        "name": "Raspberry",
+        "type": "raspberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 101.77169127230088
+      },
+      {
+        "id": "dd120044-b2f9-4c72-84f1-7fdf86fd3353",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 109.73947549318646
+      },
+      {
+        "id": "4aa56807-77fc-47d3-9e36-a0e51e3cfef3",
+        "name": "Parasol Mushroom",
+        "type": "parasol-mushroom",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 132.38342531387886
+      },
+      {
+        "id": "6328ddd3-56d4-424b-933c-043f1f5a97fd",
+        "name": "Prairie Poppy",
+        "type": "prairie-poppy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 168.23941771331656
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-042",
+    "candidateType": "texas-bluebonnet",
+    "candidateTypeName": "Texas Bluebonnet",
+    "candidateX": 5238.307710151211,
+    "candidateY": 3029.255358823077,
+    "nearbyMarkers": [
+      {
+        "id": "707ab498-6722-4b20-9dbf-6f71f830de65",
+        "name": "Raspberry",
+        "type": "raspberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 31.450000719763118
+      },
+      {
+        "id": "447527fd-12ba-4b76-b2e3-d11d6a34b1d1",
+        "name": "Prairie Poppy",
+        "type": "prairie-poppy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 33.198438401062035
+      },
+      {
+        "id": "33c448dd-3430-49d9-b140-de4cd81cca06",
+        "name": "Texas Bluebonnet",
+        "type": "texas-bluebonnet",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 33.84127526167965
+      },
+      {
+        "id": "dd120044-b2f9-4c72-84f1-7fdf86fd3353",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 34.372587817430585
+      },
+      {
+        "id": "39f15c13-536c-4e72-823b-91d0dbce76ad",
+        "name": "Prairie Poppy",
+        "type": "prairie-poppy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 36.416749023801316
+      },
+      {
+        "id": "42c183d4-0f90-4096-a109-6f33327dc0cc",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 46.38063657909181
+      },
+      {
+        "id": "4aa56807-77fc-47d3-9e36-a0e51e3cfef3",
+        "name": "Parasol Mushroom",
+        "type": "parasol-mushroom",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 51.35720537252126
+      },
+      {
+        "id": "5384c068-5f9d-4cb3-bcd4-fb1f28c2de3d",
+        "name": "Texas Bluebonnet",
+        "type": "texas-bluebonnet",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 71.79134035334752
+      },
+      {
+        "id": "9895d9c2-0166-4aed-821d-1a5a1196ae78",
+        "name": "American Ginseng",
+        "type": "american-ginseng",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 74.79129390543862
+      },
+      {
+        "id": "6328ddd3-56d4-424b-933c-043f1f5a97fd",
+        "name": "Prairie Poppy",
+        "type": "prairie-poppy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 85.04883738209257
+      },
+      {
+        "id": "da7e00fa-fc57-4328-8de7-3e2970c9caca",
+        "name": "Bulrush",
+        "type": "bulrush",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 125.76473759667931
+      },
+      {
+        "id": "badcbce8-ef04-49b4-8c2f-d4b72d450c8a",
+        "name": "Texas Bluebonnet",
+        "type": "texas-bluebonnet",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 154.46150422551906
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-045",
+    "candidateType": "wisteria",
+    "candidateTypeName": "Wisteria",
+    "candidateX": 3896.3428728641015,
+    "candidateY": 2832.6175331094637,
+    "nearbyMarkers": [
+      {
+        "id": "a11bb51a-7886-46fd-a3aa-980338f4a770",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 100.44954081521495
+      },
+      {
+        "id": "03397457-8579-4c40-8b2e-63ba5ba6ea6c",
+        "name": "Wisteria",
+        "type": "wisteria",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 107.50185208814301
+      },
+      {
+        "id": "c37819ae-8f2e-4727-a9e1-38a96b811e68",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 126.0012490852057
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-048",
+    "candidateType": "texas-bluebonnet",
+    "candidateTypeName": "Texas Bluebonnet",
+    "candidateX": 4888.986005015467,
+    "candidateY": 2759.7582492883503,
+    "nearbyMarkers": [
+      {
+        "id": "c89ca44f-4187-411d-bf63-2b89e53ebc07",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 61.68572876461362
+      },
+      {
+        "id": "fc9211c5-03bb-4838-8dcf-d9999f787449",
+        "name": "Parasol Mushroom",
+        "type": "parasol-mushroom",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 95.2315204319454
+      },
+      {
+        "id": "ed8abe25-aef6-4fac-bac2-1d763eaefb54",
+        "name": "Texas Bluebonnet",
+        "type": "texas-bluebonnet",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 121.04576153836646
+      },
+      {
+        "id": "7815befa-3fa3-495f-bebb-3cfe0b5c55a9",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 133.5887831755504
+      },
+      {
+        "id": "31d16ab7-029f-484b-a8ee-20d1c619f3df",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 165.14301903177588
+      },
+      {
+        "id": "5df14069-ce15-4084-8191-9dc1a8bdb0a4",
+        "name": "Texas Bluebonnet",
+        "type": "texas-bluebonnet",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 172.6564244093379
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-049",
+    "candidateType": "texas-bluebonnet",
+    "candidateTypeName": "Texas Bluebonnet",
+    "candidateX": 5060.552393695314,
+    "candidateY": 2739.4542494058433,
+    "nearbyMarkers": [
+      {
+        "id": "5df14069-ce15-4084-8191-9dc1a8bdb0a4",
+        "name": "Texas Bluebonnet",
+        "type": "texas-bluebonnet",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 3.4981391842508573
+      },
+      {
+        "id": "c4007237-b2d5-42d4-84e8-84aea748696c",
+        "name": "Texas Bluebonnet",
+        "type": "texas-bluebonnet",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 58.432729975304376
+      },
+      {
+        "id": "1f8ff68d-ea28-4348-b88e-bb9600f91978",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 59.2381025694148
+      },
+      {
+        "id": "e0f5688f-11e8-4cf7-abf7-102f52c8ce41",
+        "name": "Raspberry",
+        "type": "raspberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 102.63926352370771
+      },
+      {
+        "id": "ed8abe25-aef6-4fac-bac2-1d763eaefb54",
+        "name": "Texas Bluebonnet",
+        "type": "texas-bluebonnet",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 142.7470990088387
+      },
+      {
+        "id": "5ff1dcdf-3bde-4667-aaa8-08f2954c8c86",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 147.74619371970724
+      },
+      {
+        "id": "52b7bf1a-fe60-4093-96ed-1a61c011c21f",
+        "name": "Texas Bluebonnet",
+        "type": "texas-bluebonnet",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 155.8690416192641
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-050",
+    "candidateType": "texas-bluebonnet",
+    "candidateTypeName": "Texas Bluebonnet",
+    "candidateX": 4664.29876326222,
+    "candidateY": 2702.4649910174394,
+    "nearbyMarkers": [
+      {
+        "id": "68646eb8-55d0-40ac-b49d-43bd069bf3e2",
+        "name": "Texas Bluebonnet",
+        "type": "texas-bluebonnet",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 73.93280394432828
+      },
+      {
+        "id": "7815befa-3fa3-495f-bebb-3cfe0b5c55a9",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 125.5309503345928
+      },
+      {
+        "id": "31d16ab7-029f-484b-a8ee-20d1c619f3df",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 149.17079398386392
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-051",
+    "candidateType": "wisteria",
+    "candidateTypeName": "Wisteria",
+    "candidateX": 4031.118546693259,
+    "candidateY": 2685.738753730554,
+    "nearbyMarkers": [
+      {
+        "id": "03397457-8579-4c40-8b2e-63ba5ba6ea6c",
+        "name": "Wisteria",
+        "type": "wisteria",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 96.16563661835069
+      },
+      {
+        "id": "c37819ae-8f2e-4727-a9e1-38a96b811e68",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 100.90132182107136
+      },
+      {
+        "id": "41c273e5-1a55-403c-ab93-55824fe65e0c",
+        "name": "Bay Bolete",
+        "type": "bay-bolete",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 111.83643602106947
+      },
+      {
+        "id": "a11bb51a-7886-46fd-a3aa-980338f4a770",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 120.15659655336152
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-058",
+    "candidateType": "wild-rhubarb",
+    "candidateTypeName": "Wild Rhubarb",
+    "candidateX": 2717.717701072288,
+    "candidateY": 2342.000974082487,
+    "nearbyMarkers": [
+      {
+        "id": "987f93b7-1ce6-4e36-aa49-ccd3223c8ed7",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 194.0376234644785
+      },
+      {
+        "id": "dbc994ff-75f5-4e41-9a58-b0353b4b51a6",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 195.4345414144015
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-060",
+    "candidateType": "wild-rhubarb",
+    "candidateTypeName": "Wild Rhubarb",
+    "candidateX": 3602.0964431889424,
+    "candidateY": 2211.921425444093,
+    "nearbyMarkers": [
+      {
+        "id": "44110eb3-343f-4f46-8a49-d37fb78dc1b9",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 1.5638733988728828
+      },
+      {
+        "id": "40aea4b7-d9c8-4ed9-b5d8-a9bbc6bed597",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 43.681680052997834
+      },
+      {
+        "id": "2ce961c0-9a98-4f97-b6c7-c8582092ab76",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 144.7980196928302
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-062",
+    "candidateType": "wild-rhubarb",
+    "candidateTypeName": "Wild Rhubarb",
+    "candidateX": 3902.3250279699455,
+    "candidateY": 2114.134139642788,
+    "nearbyMarkers": [
+      {
+        "id": "59694e1b-d266-4a7a-be55-e51e4468f333",
+        "name": "English Mace",
+        "type": "english-mace",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 109.35018379194985
+      },
+      {
+        "id": "174d1fa5-22c1-4853-8bef-9d22d8abb1b0",
+        "name": "English Mace",
+        "type": "english-mace",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 125.66195059821735
+      },
+      {
+        "id": "5e6fc983-1adf-488b-8bf7-101070137bfc",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 141.59506456205375
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-063",
+    "candidateType": "wild-rhubarb",
+    "candidateTypeName": "Wild Rhubarb",
+    "candidateX": 2719.712303393197,
+    "candidateY": 2105.228052151274,
+    "nearbyMarkers": [
+      {
+        "id": "94080f9b-e315-4440-babe-949bd11dd685",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 14.52616249180533
+      },
+      {
+        "id": "987f93b7-1ce6-4e36-aa49-ccd3223c8ed7",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 44.61553819726921
+      },
+      {
+        "id": "148f600c-01d3-4858-a44e-3959957c0155",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 187.95255386423824
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-065",
+    "candidateType": "bitterweed",
+    "candidateTypeName": "Bitterweed",
+    "candidateX": 1984.3985190147926,
+    "candidateY": 2047.614647153906,
+    "nearbyMarkers": [
+      {
+        "id": "e5d67102-6bd3-4f77-9956-08c973e029a2",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 150.28559613895214
+      },
+      {
+        "id": "a4a03a4e-7424-41bc-b4c5-917469b626c2",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 155.4161484105095
+      },
+      {
+        "id": "38667ddf-1637-44d4-a088-dcf494ea83c7",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 165.15850308910893
+      },
+      {
+        "id": "be0ca6b7-257f-4478-aaf3-ead1ff9e38a2",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 196.22509894295905
+      },
+      {
+        "id": "3b7beeab-a5db-4b09-a6c1-9ebfdd17719c",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 198.57174352049137
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-068",
+    "candidateType": "wild-rhubarb",
+    "candidateTypeName": "Wild Rhubarb",
+    "candidateX": 1945.5586905660723,
+    "candidateY": 1888.380076378442,
+    "nearbyMarkers": [
+      {
+        "id": "a4a03a4e-7424-41bc-b4c5-917469b626c2",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 67.19191285277925
+      },
+      {
+        "id": "3b7beeab-a5db-4b09-a6c1-9ebfdd17719c",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 96.5338858009514
+      },
+      {
+        "id": "be0ca6b7-257f-4478-aaf3-ead1ff9e38a2",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 107.78900588833196
+      },
+      {
+        "id": "38667ddf-1637-44d4-a088-dcf494ea83c7",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 157.59177903199154
+      },
+      {
+        "id": "65abf68f-d5c3-46ed-a414-4e4fab6040d4",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 193.5920507853871
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-069",
+    "candidateType": "bitterweed",
+    "candidateTypeName": "Bitterweed",
+    "candidateX": 3581.162463565543,
+    "candidateY": 1817.8571687294655,
+    "nearbyMarkers": [
+      {
+        "id": "285fe123-334d-4a0b-9e87-16ed5429835d",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 22.228099915930592
+      },
+      {
+        "id": "6fe29e2b-583f-4fdb-9023-a482b6dcd7a4",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 123.25820264631562
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-070",
+    "candidateType": "texas-bluebonnet",
+    "candidateTypeName": "Texas Bluebonnet",
+    "candidateX": 1351.1563578127386,
+    "candidateY": 1724.7148721280746,
+    "nearbyMarkers": [
+      {
+        "id": "06767974-0192-419a-b7be-fe014f3d7ce8",
+        "name": "Texas Blue Bonnet",
+        "type": "texas-bluebonnet",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 14.739036396105206
+      },
+      {
+        "id": "344d1713-57d5-464e-9508-bee398c058b1",
+        "name": "Black Currant",
+        "type": "black-currant",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 155.89193287514425
+      },
+      {
+        "id": "0a0a9492-5519-417c-a7ba-8ed497705687",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 162.09450991986978
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-079",
+    "candidateType": "wisteria",
+    "candidateTypeName": "Wisteria",
+    "candidateX": 7875.415097423585,
+    "candidateY": 5722.494604968972,
+    "nearbyMarkers": [
+      {
+        "id": "258b19e1-1b2d-4ef5-ae93-071451ab95cc",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 177.41018053952527
+      },
+      {
+        "id": "cee46e36-9789-49d5-b9e9-b4629ead7a9e",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 198.75605987564845
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-084",
+    "candidateType": "wild-rhubarb",
+    "candidateTypeName": "Wild Rhubarb",
+    "candidateX": 7393.556806418443,
+    "candidateY": 4696.923552076881,
+    "nearbyMarkers": [
+      {
+        "id": "71badd6b-c576-4402-b00a-0c4f28198e21",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 124.30542449200081
+      },
+      {
+        "id": "478f4d70-c39e-46a6-a0d0-e3aca08be71d",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 154.77358960850407
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-088",
+    "candidateType": "bitterweed",
+    "candidateTypeName": "Bitterweed",
+    "candidateX": 5209.144156312621,
+    "candidateY": 4336.252485735127,
+    "nearbyMarkers": [
+      {
+        "id": "7561d918-8201-43dc-ae7f-6e17ab91a4f6",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 157.1663266197769
+      },
+      {
+        "id": "3fd99e86-b5d9-46fe-908e-f023165dfaf7",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 179.75993570335154
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-091",
+    "candidateType": "creek-plum",
+    "candidateTypeName": "Creek Plum",
+    "candidateX": 7324.315596305668,
+    "candidateY": 4112.746952970187,
+    "nearbyMarkers": [
+      {
+        "id": "dbb3e170-c209-4cf9-8181-3b0dcc09e13f",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 189.36378457820393
+      },
+      {
+        "id": "fbda7348-6658-4afa-b345-6b0a7026a002",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 194.85772541267812
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-093",
+    "candidateType": "cardinal-flower",
+    "candidateTypeName": "Cardinal Flower",
+    "candidateX": 7698.317975263672,
+    "candidateY": 4035.3398055972684,
+    "nearbyMarkers": [
+      {
+        "id": "b0ed4d15-95cf-429e-9f51-2e7335fe5783",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 67.34055632489392
+      },
+      {
+        "id": "c59f04b0-53cb-41e2-9873-e19b4b5ed9bc",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 130.96542183046822
+      },
+      {
+        "id": "e3b994e6-6922-4d4a-8040-89ded0f80e53",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 186.90079220087813
+      },
+      {
+        "id": "d9803875-803f-4f36-b110-6c57f35f22cb",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 199.98975361564302
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-095",
+    "candidateType": "cardinal-flower",
+    "candidateTypeName": "Cardinal Flower",
+    "candidateX": 7857.742067720419,
+    "candidateY": 3970.069316233976,
+    "nearbyMarkers": [
+      {
+        "id": "d9803875-803f-4f36-b110-6c57f35f22cb",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 65.52828036614997
+      },
+      {
+        "id": "b0ed4d15-95cf-429e-9f51-2e7335fe5783",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 159.75547023270016
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-096",
+    "candidateType": "chocolate-daisy",
+    "candidateTypeName": "Chocolate Daisy",
+    "candidateX": 5769.262533710063,
+    "candidateY": 3887.2231683900327,
+    "nearbyMarkers": [
+      {
+        "id": "de2219c4-e6c4-4964-bdca-d3dbc3c3b288",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 17.269381018451874
+      },
+      {
+        "id": "a3420316-f1d5-425b-8f98-8198a9858642",
+        "name": "Burdock Root",
+        "type": "burdock-root",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 87.58254609428535
+      },
+      {
+        "id": "11ce87c9-aace-43fc-9465-e4856da26839",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 88.8623681256119
+      },
+      {
+        "id": "08b7d92c-851e-4969-89d3-5b1ec8495d0c",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 114.46606527545785
+      },
+      {
+        "id": "209f9a57-31da-4f85-bd9f-44f4198510e1",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 170.45052404648695
+      },
+      {
+        "id": "20161821-ed3c-4b81-932f-43b9cb9de67a",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 192.26945397945272
+      },
+      {
+        "id": "afa9efb2-8ec8-4f06-99cf-8d0964184a35",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 196.5581904623744
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-097",
+    "candidateType": "chocolate-daisy",
+    "candidateTypeName": "Chocolate Daisy",
+    "candidateX": 5605.7882015061705,
+    "candidateY": 3862.6239653850275,
+    "nearbyMarkers": [
+      {
+        "id": "209f9a57-31da-4f85-bd9f-44f4198510e1",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 5.460042857479778
+      },
+      {
+        "id": "afa9efb2-8ec8-4f06-99cf-8d0964184a35",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 48.234116381343306
+      },
+      {
+        "id": "a3420316-f1d5-425b-8f98-8198a9858642",
+        "name": "Burdock Root",
+        "type": "burdock-root",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 86.10187718687233
+      },
+      {
+        "id": "3490beca-f59b-4462-b7d3-51a082d328e7",
+        "name": "Garlic",
+        "type": "garlic",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 106.45762184266462
+      },
+      {
+        "id": "8ca88fd4-4d59-49cb-b25c-a2dfb5b6d5de",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 141.52642395414267
+      },
+      {
+        "id": "de2219c4-e6c4-4964-bdca-d3dbc3c3b288",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 162.3794120485846
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-099",
+    "candidateType": "blood-flower",
+    "candidateTypeName": "Blood Flower",
+    "candidateX": 7459.312557288859,
+    "candidateY": 3814.6245987329416,
+    "nearbyMarkers": [
+      {
+        "id": "6de8d6c4-cef6-4bf8-895f-3285f3ab6a43",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 31.333078009858518
+      },
+      {
+        "id": "b347a5b9-8e42-4421-a74c-c96aca5bac28",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 50.13506487723973
+      },
+      {
+        "id": "03b0dd40-5b7c-413f-b017-ebd8a65408de",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 122.2830310357029
+      },
+      {
+        "id": "fbda7348-6658-4afa-b345-6b0a7026a002",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 134.25990023483592
+      },
+      {
+        "id": "72a30010-d58d-452a-be0d-56d8657282f9",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 135.43896672756222
+      },
+      {
+        "id": "dbb3e170-c209-4cf9-8181-3b0dcc09e13f",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 157.59478269488557
+      },
+      {
+        "id": "739f5aef-3016-4fef-8f2b-da1ba3c3c037",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 180.52278473646217
+      },
+      {
+        "id": "e3b994e6-6922-4d4a-8040-89ded0f80e53",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 184.61953422141673
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-100",
+    "candidateType": "agarita",
+    "candidateTypeName": "Agarita",
+    "candidateX": 6451.846722064135,
+    "candidateY": 3797.731055425918,
+    "nearbyMarkers": [
+      {
+        "id": "c4ba2fb1-63a9-41d1-a76f-502a3b3a6891",
+        "name": "Hummingbird Sage",
+        "type": "hummingbird-sage",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 7.029611223854613
+      },
+      {
+        "id": "ca3fb906-fe84-4dc7-b286-2dd2c1c44d1e",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 9.451122467705554
+      },
+      {
+        "id": "508860bb-505f-4211-a650-042fa94e73f4",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 13.734483817823905
+      },
+      {
+        "id": "e4e24fae-2829-4acf-af30-f47d5f93f5aa",
+        "name": "Chanterelles",
+        "type": "chanterelles",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 66.889135823374
+      },
+      {
+        "id": "dc9aa7f9-3c15-433e-9025-b4211e79fc93",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 79.2783103300636
+      },
+      {
+        "id": "ea0012b8-e955-4555-bff8-10e603bde34f",
+        "name": "Burdock Root",
+        "type": "burdock-root",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 125.14498015695796
+      },
+      {
+        "id": "b15cb9b5-96c0-459c-9750-6c8972775540",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 177.35591122551648
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-101",
+    "candidateType": "cardinal-flower",
+    "candidateTypeName": "Cardinal Flower",
+    "candidateX": 7915.033667376844,
+    "candidateY": 3794.4507752984478,
+    "nearbyMarkers": [
+      {
+        "id": "d9803875-803f-4f36-b110-6c57f35f22cb",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 128.25953755801675
+      },
+      {
+        "id": "92234f9f-a45a-479e-9e53-9df37c84c7b7",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 179.54563638366616
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-102",
+    "candidateType": "agarita",
+    "candidateTypeName": "Agarita",
+    "candidateX": 5162.385401313863,
+    "candidateY": 3743.918480143305,
+    "nearbyMarkers": [
+      {
+        "id": "dfd6d715-3614-4d00-ac8b-83dfc38f2406",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 42.41220347763814
+      },
+      {
+        "id": "931e0358-4f56-4af4-91d9-7b03d3fa1a9c",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 48.734636441563765
+      },
+      {
+        "id": "65018ab6-33e2-40f8-b4b8-d333df2e7678",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "approximate",
+        "distance": 94.92344535760388
+      },
+      {
+        "id": "abe43abd-cc04-4819-a439-ecfe90e97a4f",
+        "name": "Parasol Mushroom",
+        "type": "parasol-mushroom",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 139.7985161621044
+      },
+      {
+        "id": "ad17d990-12e0-4823-a74d-c497957d584f",
+        "name": "Alaskan Ginseng",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 153.63703917228582
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-103",
+    "candidateType": "chocolate-daisy",
+    "candidateTypeName": "Chocolate Daisy",
+    "candidateX": 6173.9333185100395,
+    "candidateY": 3773.0689225202154,
+    "nearbyMarkers": [
+      {
+        "id": "1a12f76f-a036-440f-a232-de289195ad70",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 10.683763474258404
+      },
+      {
+        "id": "bed79e91-4ac1-442d-9be2-60557a040d74",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 40.11319017294529
+      },
+      {
+        "id": "fac5338d-79b6-4175-913f-0b0e568793c3",
+        "name": "Burdock Root",
+        "type": "burdock-root",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 52.553386915928094
+      },
+      {
+        "id": "3dd0a0c0-dd79-46f1-be4c-c08382dbdc2d",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 74.75714255191578
+      },
+      {
+        "id": "18cb483b-dba9-4943-add5-aada1762e134",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 145.63603597373705
+      },
+      {
+        "id": "1f64a7bb-f711-448a-8754-d56f6d53511f",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 150.29127648938157
+      },
+      {
+        "id": "88c01603-0b27-4584-bc22-7a6b90a97fe8",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 188.00822974501042
+      },
+      {
+        "id": "ea0012b8-e955-4555-bff8-10e603bde34f",
+        "name": "Burdock Root",
+        "type": "burdock-root",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 189.43328056855896
+      },
+      {
+        "id": "07a88dbb-1734-47f0-8281-e54f60035b82",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 197.64598194865422
+      },
+      {
+        "id": "2f64eb94-e4e1-425f-82ca-d40561ab6a8c",
+        "name": "Burdock Root",
+        "type": "burdock-root",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 198.17010023292815
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-105",
+    "candidateType": "cardinal-flower",
+    "candidateTypeName": "Cardinal Flower",
+    "candidateX": 7782.23276873455,
+    "candidateY": 3720.849822223111,
+    "nearbyMarkers": [
+      {
+        "id": "92234f9f-a45a-479e-9e53-9df37c84c7b7",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 98.65405410527083
+      },
+      {
+        "id": "0c552951-d91c-45c8-ae90-da4a3c1c0722",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 118.76325787762609
+      },
+      {
+        "id": "1d1f9bea-29f2-4fa3-a168-46636a261f46",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 139.98864304626335
+      },
+      {
+        "id": "dcff1b43-cd47-4022-a0b0-f07e377529df",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 140.05466812140688
+      },
+      {
+        "id": "1d9ae48a-e1d4-49eb-92c3-2ca6e4b91d47",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 161.8911729006243
+      },
+      {
+        "id": "f2683b04-5232-4172-86a1-61fac146a044",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 183.7782849897237
+      },
+      {
+        "id": "bd4adddd-dc35-4fba-bb1b-4e5d9599a05e",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 189.59523429770724
+      },
+      {
+        "id": "d9803875-803f-4f36-b110-6c57f35f22cb",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 196.22356027920006
+      },
+      {
+        "id": "57dc8af4-c30d-4c2b-9df6-a496bd256444",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 196.77110175529458
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-106",
+    "candidateType": "wisteria",
+    "candidateTypeName": "Wisteria",
+    "candidateX": 3999.6211291739455,
+    "candidateY": 3698.345344966371,
+    "nearbyMarkers": [
+      {
+        "id": "3ad5bd29-154a-4000-9784-75929a3dc266",
+        "name": "Wisteria",
+        "type": "wisteria",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 129.22592581674346
+      },
+      {
+        "id": "4f77bafa-4a8a-48aa-817a-c688fab53ccb",
+        "name": "Wisteria",
+        "type": "wisteria",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 167.7123855216655
+      },
+      {
+        "id": "4679f1dd-5ad7-4879-b392-1d6e89c50faa",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 183.4964894884891
+      },
+      {
+        "id": "666c1c64-ea5b-4cf5-901b-200ede88e6d4",
+        "name": "Indian Tobacco",
+        "type": "indian-tobacco",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 193.68884552955188
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-107",
+    "candidateType": "agarita",
+    "candidateTypeName": "Agarita",
+    "candidateX": 5009.137222870379,
+    "candidateY": 3698.900476590378,
+    "nearbyMarkers": [
+      {
+        "id": "3a5be17b-7bc7-4790-b989-1991c09cc3c9",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 132.94877715027727
+      },
+      {
+        "id": "b92613c8-3027-4cf8-b818-b11ce9ca2e3e",
+        "name": "Raspberry",
+        "type": "raspberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 142.13231370583193
+      },
+      {
+        "id": "aadfdceb-71b8-47a5-8a5e-40d3d7c4d569",
+        "name": "Golden Currant",
+        "type": "golden-currant",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 145.03898102368098
+      },
+      {
+        "id": "dfd6d715-3614-4d00-ac8b-83dfc38f2406",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 151.20897021074512
+      },
+      {
+        "id": "0a84c26f-376b-4f65-a05f-b6d6caae8b45",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 158.588702609451
+      },
+      {
+        "id": "c730bf05-7245-46d0-8154-00e5af6a75d6",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 161.13326381732892
+      },
+      {
+        "id": "b8ec1a7d-5785-4aa1-a73f-fd8ccd809947",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 162.88596977264905
+      },
+      {
+        "id": "651347fb-2c92-4113-8681-54ae80cdefea",
+        "name": "Raspberry",
+        "type": "raspberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 175.79222057871237
+      },
+      {
+        "id": "cd1bbf5c-8b1e-483e-a5f3-be51515c3df9",
+        "name": "Golden Currant",
+        "type": "golden-currant",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 180.7995989892291
+      },
+      {
+        "id": "e0f43cc1-bde0-4bcc-aac6-37753d06f962",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 182.039114934638
+      },
+      {
+        "id": "931e0358-4f56-4af4-91d9-7b03d3fa1a9c",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 183.9997936043959
+      },
+      {
+        "id": "41c11d95-d209-4918-a08f-b0f3f1235ec4",
+        "name": "Golden Currant",
+        "type": "golden-currant",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 194.0588900804297
+      },
+      {
+        "id": "357fefeb-9d44-4bda-8411-a3d5acc39b83",
+        "name": "Parasol Mushroom",
+        "type": "parasol-mushroom",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 198.3244290098856
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-108",
+    "candidateType": "cardinal-flower",
+    "candidateTypeName": "Cardinal Flower",
+    "candidateX": 7855.834261304814,
+    "candidateY": 3639.1926000030517,
+    "nearbyMarkers": [
+      {
+        "id": "1d1f9bea-29f2-4fa3-a168-46636a261f46",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 98.79214530113491
+      },
+      {
+        "id": "0c552951-d91c-45c8-ae90-da4a3c1c0722",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 101.15362678720228
+      },
+      {
+        "id": "1d9ae48a-e1d4-49eb-92c3-2ca6e4b91d47",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 130.18801726179424
+      },
+      {
+        "id": "dcff1b43-cd47-4022-a0b0-f07e377529df",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 130.84424251814255
+      },
+      {
+        "id": "f2683b04-5232-4172-86a1-61fac146a044",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 177.06667957096968
+      },
+      {
+        "id": "bd4adddd-dc35-4fba-bb1b-4e5d9599a05e",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 182.07015291405634
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-109",
+    "candidateType": "wisteria",
+    "candidateTypeName": "Wisteria",
+    "candidateX": 4202.003446957121,
+    "candidateY": 3526.8914740127525,
+    "nearbyMarkers": [
+      {
+        "id": "dbc30758-5a71-46e5-8e79-7ae55ab7d386",
+        "name": "Indian Tobacco",
+        "type": "indian-tobacco",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 67.86518034480237
+      },
+      {
+        "id": "4bb2713f-8309-4217-9ed2-a4dbda2feb52",
+        "name": "Wisteria",
+        "type": "wisteria",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 138.8096434302676
+      },
+      {
+        "id": "5d994905-aeb7-488a-8263-fe5155b67518",
+        "name": "Blackberry",
+        "type": "blackberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 140.9622752494776
+      },
+      {
+        "id": "64143c7f-e9c6-452f-bee5-0f9c3b4e1d03",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 142.9805468121367
+      },
+      {
+        "id": "dd791b9c-887f-4df4-b887-580add0630a6",
+        "name": "Blackberry",
+        "type": "blackberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 150.39081464099567
+      },
+      {
+        "id": "3ad5bd29-154a-4000-9784-75929a3dc266",
+        "name": "Wisteria",
+        "type": "wisteria",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 150.725365475045
+      },
+      {
+        "id": "6641a02f-78ef-4d54-9c02-d58e4f04535b",
+        "name": "Hummingbird Sage",
+        "type": "hummingbird-sage",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 157.68569173006196
+      },
+      {
+        "id": "f42c3955-c0b9-4b34-ada6-20bd75bf7f05",
+        "name": "Indian Tobacco",
+        "type": "indian-tobacco",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 158.03691015284397
+      },
+      {
+        "id": "056d3c1a-ea19-468e-a414-b4bb232ac69d",
+        "name": "Alaskan Ginseng",
+        "type": "alaskan-ginseng",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 160.99254250306475
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-110",
+    "candidateType": "cardinal-flower",
+    "candidateTypeName": "Cardinal Flower",
+    "candidateX": 7441.046256669685,
+    "candidateY": 3508.2481956630695,
+    "nearbyMarkers": [
+      {
+        "id": "074b7f27-2bed-4228-9087-fb556cdc420f",
+        "name": "Cardinal Flower",
+        "type": "alaskan-ginseng",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 17.629955232752803
+      },
+      {
+        "id": "739f5aef-3016-4fef-8f2b-da1ba3c3c037",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 131.14225338088644
+      },
+      {
+        "id": "3948fcb6-612a-4198-8393-b782754047bd",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 146.06456382984405
+      },
+      {
+        "id": "749bf0c7-ae0e-4162-9a8d-0405149f5ecd",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 149.3828213383515
+      },
+      {
+        "id": "2744994d-94b2-4922-ad03-1e122c4290d3",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 155.0626399756697
+      },
+      {
+        "id": "85a66ebd-19cd-41f8-80ed-a04fb554ae3a",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 157.8393310844796
+      },
+      {
+        "id": "6c72767e-8cc2-4833-b515-9b4f72eae96b",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 160.0499155518475
+      },
+      {
+        "id": "03b0dd40-5b7c-413f-b017-ebd8a65408de",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 193.7790017807986
+      },
+      {
+        "id": "5a42a3ee-2d35-4d4b-82c5-895e296c744d",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 198.59150958337858
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-111",
+    "candidateType": "wisteria",
+    "candidateTypeName": "Wisteria",
+    "candidateX": 4140.740375161043,
+    "candidateY": 3420.6507812628624,
+    "nearbyMarkers": [
+      {
+        "id": "9a5b92f5-8e86-4523-b359-2a029abd9c1d",
+        "name": "Blackberry",
+        "type": "blackberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 87.98495719988763
+      },
+      {
+        "id": "4bb2713f-8309-4217-9ed2-a4dbda2feb52",
+        "name": "Wisteria",
+        "type": "wisteria",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 89.66133375109733
+      },
+      {
+        "id": "beea5d50-f92f-4099-810d-a5d4497c4335",
+        "name": "Hummingbird Sage",
+        "type": "hummingbird-sage",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 97.8594426093262
+      },
+      {
+        "id": "c16c24da-376d-47ee-8002-584822ce7433",
+        "name": "Hummingbird Sage",
+        "type": "hummingbird-sage",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 103.85331031111579
+      },
+      {
+        "id": "ed1323bc-0578-4945-9366-52813cf87d13",
+        "name": "Blackberry",
+        "type": "blackberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 124.20784121161516
+      },
+      {
+        "id": "dbc30758-5a71-46e5-8e79-7ae55ab7d386",
+        "name": "Indian Tobacco",
+        "type": "indian-tobacco",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 126.5730315726395
+      },
+      {
+        "id": "029302ac-d2cb-4f91-8aac-e9e4bd139da5",
+        "name": "Hummingbird Sage",
+        "type": "hummingbird-sage",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 128.55080414188936
+      },
+      {
+        "id": "49151b61-6aeb-42f3-8bc3-7bf87fe2fa43",
+        "name": "Bay Bolete",
+        "type": "bay-bolete",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 136.05710851180726
+      },
+      {
+        "id": "5d994905-aeb7-488a-8263-fe5155b67518",
+        "name": "Blackberry",
+        "type": "blackberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 173.34292779169246
+      },
+      {
+        "id": "6641a02f-78ef-4d54-9c02-d58e4f04535b",
+        "name": "Hummingbird Sage",
+        "type": "hummingbird-sage",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 176.26735496724226
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-112",
+    "candidateType": "cardinal-flower",
+    "candidateTypeName": "Cardinal Flower",
+    "candidateX": 7641.368260541897,
+    "candidateY": 3377.642039539335,
+    "nearbyMarkers": [
+      {
+        "id": "48fb8fe8-3640-48fe-a527-708eaab8dc18",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 173.26435490569557
+      },
+      {
+        "id": "6c72767e-8cc2-4833-b515-9b4f72eae96b",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 180.41816416781322
+      },
+      {
+        "id": "bd4adddd-dc35-4fba-bb1b-4e5d9599a05e",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 182.71651630933854
+      },
+      {
+        "id": "f2683b04-5232-4172-86a1-61fac146a044",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 188.38974328125204
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-115",
+    "candidateType": "wisteria",
+    "candidateTypeName": "Wisteria",
+    "candidateX": 3844.5874854924514,
+    "candidateY": 3024.254103562311,
+    "nearbyMarkers": [
+      {
+        "id": "3d30abf1-18d7-42b1-ac98-338ad074cae8",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 47.2442978413948
+      },
+      {
+        "id": "203321b3-cf3b-4e37-b143-10eddccb5b35",
+        "name": "Bay Bolete",
+        "type": "bay-bolete",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 187.1172109668362
+      },
+      {
+        "id": "0b072f2f-66ba-4d9a-8f75-b7c0e0051e7b",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 192.30176253066153
+      },
+      {
+        "id": "8b209097-644d-4e45-a38a-674d92b611f0",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 196.41958056148746
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-116",
+    "candidateType": "texas-bluebonnet",
+    "candidateTypeName": "Texas Bluebonnet",
+    "candidateX": 4968.577844576478,
+    "candidateY": 2939.0896040729813,
+    "nearbyMarkers": [
+      {
+        "id": "ed8abe25-aef6-4fac-bac2-1d763eaefb54",
+        "name": "Texas Bluebonnet",
+        "type": "texas-bluebonnet",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 89.34760604337052
+      },
+      {
+        "id": "fc9211c5-03bb-4838-8dcf-d9999f787449",
+        "name": "Parasol Mushroom",
+        "type": "parasol-mushroom",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 120.693405633758
+      },
+      {
+        "id": "c89ca44f-4187-411d-bf63-2b89e53ebc07",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 182.41307274866588
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-118",
+    "candidateType": "texas-bluebonnet",
+    "candidateTypeName": "Texas Bluebonnet",
+    "candidateX": 4733.895171012276,
+    "candidateY": 2779.560236505883,
+    "nearbyMarkers": [
+      {
+        "id": "7815befa-3fa3-495f-bebb-3cfe0b5c55a9",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 24.950217121051303
+      },
+      {
+        "id": "31d16ab7-029f-484b-a8ee-20d1c619f3df",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 51.80075487191329
+      },
+      {
+        "id": "c89ca44f-4187-411d-bf63-2b89e53ebc07",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 114.73793933139689
+      },
+      {
+        "id": "fc9211c5-03bb-4838-8dcf-d9999f787449",
+        "name": "Parasol Mushroom",
+        "type": "parasol-mushroom",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 166.31428613093993
+      },
+      {
+        "id": "68646eb8-55d0-40ac-b49d-43bd069bf3e2",
+        "name": "Texas Bluebonnet",
+        "type": "texas-bluebonnet",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 166.48626043584815
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-119",
+    "candidateType": "wisteria",
+    "candidateTypeName": "Wisteria",
+    "candidateX": 3989.780433918288,
+    "candidateY": 2779.240858217743,
+    "nearbyMarkers": [
+      {
+        "id": "03397457-8579-4c40-8b2e-63ba5ba6ea6c",
+        "name": "Wisteria",
+        "type": "wisteria",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 12.282078861340556
+      },
+      {
+        "id": "a11bb51a-7886-46fd-a3aa-980338f4a770",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 19.796742797717773
+      },
+      {
+        "id": "c37819ae-8f2e-4727-a9e1-38a96b811e68",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 23.923126114517817
+      },
+      {
+        "id": "41c273e5-1a55-403c-ab93-55824fe65e0c",
+        "name": "Bay Bolete",
+        "type": "bay-bolete",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 119.95259589960551
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-120",
+    "candidateType": "texas-bluebonnet",
+    "candidateTypeName": "Texas Bluebonnet",
+    "candidateX": 5217.973655152855,
+    "candidateY": 2739.0673923239,
+    "nearbyMarkers": [
+      {
+        "id": "52b7bf1a-fe60-4093-96ed-1a61c011c21f",
+        "name": "Texas Bluebonnet",
+        "type": "texas-bluebonnet",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 11.241996598181014
+      },
+      {
+        "id": "5ff1dcdf-3bde-4667-aaa8-08f2954c8c86",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 22.753680058027893
+      },
+      {
+        "id": "e0f5688f-11e8-4cf7-abf7-102f52c8ce41",
+        "name": "Raspberry",
+        "type": "raspberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 76.56561924616902
+      },
+      {
+        "id": "1f8ff68d-ea28-4348-b88e-bb9600f91978",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 100.95852243083037
+      },
+      {
+        "id": "c4007237-b2d5-42d4-84e8-84aea748696c",
+        "name": "Texas Bluebonnet",
+        "type": "texas-bluebonnet",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 116.38244774184417
+      },
+      {
+        "id": "badcbce8-ef04-49b4-8c2f-d4b72d450c8a",
+        "name": "Texas Bluebonnet",
+        "type": "texas-bluebonnet",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 139.36531341440335
+      },
+      {
+        "id": "5df14069-ce15-4084-8191-9dc1a8bdb0a4",
+        "name": "Texas Bluebonnet",
+        "type": "texas-bluebonnet",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 158.00343229823156
+      },
+      {
+        "id": "da7e00fa-fc57-4328-8de7-3e2970c9caca",
+        "name": "Bulrush",
+        "type": "bulrush",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 165.17941753177928
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-126",
+    "candidateType": "bitterweed",
+    "candidateTypeName": "Bitterweed",
+    "candidateX": 2896.699811218338,
+    "candidateY": 2239.434983685378,
+    "nearbyMarkers": [
+      {
+        "id": "148f600c-01d3-4858-a44e-3959957c0155",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 116.12072056628493
+      },
+      {
+        "id": "987f93b7-1ce6-4e36-aa49-ccd3223c8ed7",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 189.12437930273404
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-127",
+    "candidateType": "bitterweed",
+    "candidateTypeName": "Bitterweed",
+    "candidateX": 3832.067519322879,
+    "candidateY": 2198.991432903368,
+    "nearbyMarkers": [
+      {
+        "id": "5e6fc983-1adf-488b-8bf7-101070137bfc",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 136.23633344836807
+      },
+      {
+        "id": "40aea4b7-d9c8-4ed9-b5d8-a9bbc6bed597",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 186.73932744131343
+      },
+      {
+        "id": "59694e1b-d266-4a7a-be55-e51e4468f333",
+        "name": "English Mace",
+        "type": "english-mace",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 195.97905577108844
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-128",
+    "candidateType": "agarita",
+    "candidateTypeName": "Agarita",
+    "candidateX": 3524.0946114905087,
+    "candidateY": 2182.591600381629,
+    "nearbyMarkers": [
+      {
+        "id": "44110eb3-343f-4f46-8a49-d37fb78dc1b9",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 84.744803994844
+      },
+      {
+        "id": "2ce961c0-9a98-4f97-b6c7-c8582092ab76",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 99.09603378456852
+      },
+      {
+        "id": "40aea4b7-d9c8-4ed9-b5d8-a9bbc6bed597",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 123.83472183144198
+      },
+      {
+        "id": "e6af6c00-51a5-4afa-b2ad-1b6d4fc511c2",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 189.76539379896136
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-129",
+    "candidateType": "agarita",
+    "candidateTypeName": "Agarita",
+    "candidateX": 2725.076398230424,
+    "candidateY": 2153.5580278202997,
+    "nearbyMarkers": [
+      {
+        "id": "987f93b7-1ce6-4e36-aa49-ccd3223c8ed7",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 7.785635098395476
+      },
+      {
+        "id": "94080f9b-e315-4440-babe-949bd11dd685",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 58.31080560700257
+      },
+      {
+        "id": "148f600c-01d3-4858-a44e-3959957c0155",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 184.1027324687668
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-130",
+    "candidateType": "bitterweed",
+    "candidateTypeName": "Bitterweed",
+    "candidateX": 2984.6179190531743,
+    "candidateY": 2129.191440698228,
+    "nearbyMarkers": [
+      {
+        "id": "148f600c-01d3-4858-a44e-3959957c0155",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 78.05781251446929
+      },
+      {
+        "id": "a680deda-bc40-4df3-b531-2edbbb942787",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 181.8910725030112
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-132",
+    "candidateType": "bitterweed",
+    "candidateTypeName": "Bitterweed",
+    "candidateX": 1860.764984305624,
+    "candidateY": 1879.3954638470477,
+    "nearbyMarkers": [
+      {
+        "id": "a4a03a4e-7424-41bc-b4c5-917469b626c2",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 152.45817299757155
+      },
+      {
+        "id": "3b7beeab-a5db-4b09-a6c1-9ebfdd17719c",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 177.28548578414728
+      },
+      {
+        "id": "be0ca6b7-257f-4478-aaf3-ead1ff9e38a2",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 190.22455718077768
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-135",
+    "candidateType": "bitterweed",
+    "candidateTypeName": "Bitterweed",
+    "candidateX": 3383.2820564006697,
+    "candidateY": 1712.7524181057106,
+    "nearbyMarkers": [
+      {
+        "id": "6fe29e2b-583f-4fdb-9023-a482b6dcd7a4",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 125.02939162998818
+      },
+      {
+        "id": "7c2b8af9-68d9-4b77-af57-e04fc68ef0db",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 140.41097490075524
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-152",
+    "candidateType": "bitterweed",
+    "candidateTypeName": "Bitterweed",
+    "candidateX": 4050.5197838894437,
+    "candidateY": 4701.666125640346,
+    "nearbyMarkers": [
+      {
+        "id": "06a99389-91e1-4433-bd8d-598035fcde57",
+        "name": "Burdock Root",
+        "type": "burdock-root",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 132.4368825577903
+      },
+      {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "type": "bitterweed",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 181.68701267054965
+      },
+      {
+        "id": "b72c7b29-92cf-4bc5-afa8-d12622d31001",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 195.8202196279439
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-157",
+    "candidateType": "chocolate-daisy",
+    "candidateTypeName": "Chocolate Daisy",
+    "candidateX": 5542.138595094064,
+    "candidateY": 4468.3953529402515,
+    "nearbyMarkers": [
+      {
+        "id": "fecfb170-bdb7-467b-bb7a-143a81f43dfe",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 157.61308438728204
+      },
+      {
+        "id": "a40ade93-e42d-416a-b219-06464b944648",
+        "name": "Bay Bolete",
+        "type": "bay-bolete",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 161.79449225122366
+      },
+      {
+        "id": "29da4cfd-be9c-4db6-86df-35fd0edffad4",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 163.59467959033208
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-159",
+    "candidateType": "agarita",
+    "candidateTypeName": "Agarita",
+    "candidateX": 5460.49343149015,
+    "candidateY": 4345.718266492655,
+    "nearbyMarkers": [
+      {
+        "id": "fecfb170-bdb7-467b-bb7a-143a81f43dfe",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 12.979477226061379
+      },
+      {
+        "id": "a163a6fb-b492-4b21-a909-b4e3a1950a6a",
+        "name": "Bay Bolete",
+        "type": "bay-bolete",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 121.10387143648309
+      },
+      {
+        "id": "8dbd20e2-18b0-4dc0-b772-0e448421257b",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 129.8011459639593
+      },
+      {
+        "id": "3fd99e86-b5d9-46fe-908e-f023165dfaf7",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 138.06320589143536
+      },
+      {
+        "id": "d4a935e0-ea58-445d-99d0-cf508084c458",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 163.7173868425007
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-161",
+    "candidateType": "agarita",
+    "candidateTypeName": "Agarita",
+    "candidateX": 5368.627454844778,
+    "candidateY": 4231.221405615652,
+    "nearbyMarkers": [
+      {
+        "id": "3fd99e86-b5d9-46fe-908e-f023165dfaf7",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 15.518833833534359
+      },
+      {
+        "id": "8dbd20e2-18b0-4dc0-b772-0e448421257b",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 54.47490359952156
+      },
+      {
+        "id": "d4a935e0-ea58-445d-99d0-cf508084c458",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 126.5155148767632
+      },
+      {
+        "id": "7561d918-8201-43dc-ae7f-6e17ab91a4f6",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 133.63123310303035
+      },
+      {
+        "id": "fecfb170-bdb7-467b-bb7a-143a81f43dfe",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 137.83047849585543
+      },
+      {
+        "id": "a163a6fb-b492-4b21-a909-b4e3a1950a6a",
+        "name": "Bay Bolete",
+        "type": "bay-bolete",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 181.99404338532162
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-163",
+    "candidateType": "agarita",
+    "candidateTypeName": "Agarita",
+    "candidateX": 5358.517431163443,
+    "candidateY": 4067.640904609758,
+    "nearbyMarkers": [
+      {
+        "id": "83769c53-0d00-4729-8d7a-79265a4457d4",
+        "name": "Garlic",
+        "type": "garlic",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 75.11915461758969
+      },
+      {
+        "id": "7561d918-8201-43dc-ae7f-6e17ab91a4f6",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 162.54834028537124
+      },
+      {
+        "id": "4cc5da39-ad1d-4208-b36e-c6bf64206a6f",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 163.15115036366086
+      },
+      {
+        "id": "8dbd20e2-18b0-4dc0-b772-0e448421257b",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 166.70284257251208
+      },
+      {
+        "id": "d4a935e0-ea58-445d-99d0-cf508084c458",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 172.60140334656327
+      },
+      {
+        "id": "28a82ed6-829c-441f-abe4-9702f95f88b9",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 172.68365521443965
+      },
+      {
+        "id": "3fd99e86-b5d9-46fe-908e-f023165dfaf7",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 178.7154577712602
+      },
+      {
+        "id": "8ca88fd4-4d59-49cb-b25c-a2dfb5b6d5de",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 183.36870817640101
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-164",
+    "candidateType": "cardinal-flower",
+    "candidateTypeName": "Cardinal Flower",
+    "candidateX": 7456.804631474766,
+    "candidateY": 4042.8688133185024,
+    "nearbyMarkers": [
+      {
+        "id": "dbb3e170-c209-4cf9-8181-3b0dcc09e13f",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 71.10613509206209
+      },
+      {
+        "id": "e3b994e6-6922-4d4a-8040-89ded0f80e53",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 80.11612705064667
+      },
+      {
+        "id": "72a30010-d58d-452a-be0d-56d8657282f9",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 105.42571571585727
+      },
+      {
+        "id": "fbda7348-6658-4afa-b345-6b0a7026a002",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 106.4347723802669
+      },
+      {
+        "id": "b347a5b9-8e42-4421-a74c-c96aca5bac28",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 188.64207483118335
+      },
+      {
+        "id": "6de8d6c4-cef6-4bf8-895f-3285f3ab6a43",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 198.13130197784918
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-165",
+    "candidateType": "blood-flower",
+    "candidateTypeName": "Blood Flower",
+    "candidateX": 7554.881703633862,
+    "candidateY": 4030.5892138060235,
+    "nearbyMarkers": [
+      {
+        "id": "e3b994e6-6922-4d4a-8040-89ded0f80e53",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 55.520336342594945
+      },
+      {
+        "id": "72a30010-d58d-452a-be0d-56d8657282f9",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 103.88728768602635
+      },
+      {
+        "id": "dbb3e170-c209-4cf9-8181-3b0dcc09e13f",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 119.26484949171547
+      },
+      {
+        "id": "c59f04b0-53cb-41e2-9873-e19b4b5ed9bc",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 131.79314841478447
+      },
+      {
+        "id": "b0ed4d15-95cf-429e-9f51-2e7335fe5783",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 156.2058143591388
+      },
+      {
+        "id": "fbda7348-6658-4afa-b345-6b0a7026a002",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 160.82581991188596
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-166",
+    "candidateType": "wisteria",
+    "candidateTypeName": "Wisteria",
+    "candidateX": 3901.8108202245317,
+    "candidateY": 4022.818994501238,
+    "nearbyMarkers": [
+      {
+        "id": "4e572e24-3216-4800-ab29-1d19253fd2be",
+        "name": "Alaskan Ginseng",
+        "type": "alaskan-ginseng",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 115.25247006613634
+      },
+      {
+        "id": "71b1d57a-672b-4767-ba41-d8bcb232b833",
+        "name": "Alaskan Ginseng",
+        "type": "alaskan-ginseng",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 146.18726471806252
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-167",
+    "candidateType": "creek-plum",
+    "candidateTypeName": "Creek Plum",
+    "candidateX": 4167.449083468051,
+    "candidateY": 3969.6252329154067,
+    "nearbyMarkers": [
+      {
+        "id": "f47dcc55-5e0e-4dd6-a11d-e17d5398c48c",
+        "name": "Violet Snowdrops",
+        "type": "violet-snowdrops",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 89.7188381473066
+      },
+      {
+        "id": "833b3fe5-8201-4bcc-809d-79dab3bb185d",
+        "name": "Alaskan Ginseng",
+        "type": "alaskan-ginseng",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 90.07468969993936
+      },
+      {
+        "id": "9cb5f805-3d43-4056-a893-7201944c566f",
+        "name": "Blackberry",
+        "type": "blackberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 94.0639894815384
+      },
+      {
+        "id": "3cf8b9cd-7682-4c6e-bbc5-29e32f95e3d1",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 97.33967361717153
+      },
+      {
+        "id": "54b10a61-9914-4ba7-a0b4-e7b419cf2b54",
+        "name": "Indian Tobacco",
+        "type": "indian-tobacco",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 104.80030914100773
+      },
+      {
+        "id": "101adc4a-1f84-42d9-8741-0bb69bdff6ff",
+        "name": "Alaskan Ginseng",
+        "type": "alaskan-ginseng",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 106.68492265253637
+      },
+      {
+        "id": "8ad91d5c-a201-4017-9719-575c70136fd2",
+        "name": "Rams Head",
+        "type": "rams-head",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 108.58295024913865
+      },
+      {
+        "id": "ce37255a-cb08-4797-ba53-79e7f35ec77a",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 110.97070921949971
+      },
+      {
+        "id": "0589169d-751b-4cee-a2c6-747e459b05fe",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 127.06570621416603
+      },
+      {
+        "id": "b88995c8-ddf2-445c-a0cc-a3f36ae6cf22",
+        "name": "Alaskan Ginseng",
+        "type": "alaskan-ginseng",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 149.30428342005794
+      },
+      {
+        "id": "4f77bafa-4a8a-48aa-817a-c688fab53ccb",
+        "name": "Wisteria",
+        "type": "wisteria",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 151.75116646367871
+      },
+      {
+        "id": "db121282-6687-4d99-a007-9f662cadc503",
+        "name": "Indian Tobacco",
+        "type": "indian-tobacco",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 157.20759742927245
+      },
+      {
+        "id": "4e572e24-3216-4800-ab29-1d19253fd2be",
+        "name": "Alaskan Ginseng",
+        "type": "alaskan-ginseng",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 158.3439116007761
+      },
+      {
+        "id": "61d6d614-c154-4e98-aed6-e4c249fb7ade",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 158.5753884335797
+      },
+      {
+        "id": "995a7ab2-5feb-43c8-add6-0b9503725a8c",
+        "name": "Violet Snowdrops",
+        "type": "violet-snowdrops",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 160.90273208301159
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-168",
+    "candidateType": "agarita",
+    "candidateTypeName": "Agarita",
+    "candidateX": 5289.141463756331,
+    "candidateY": 3928.6042817031066,
+    "nearbyMarkers": [
+      {
+        "id": "4cc5da39-ad1d-4208-b36e-c6bf64206a6f",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 7.90006121747686
+      },
+      {
+        "id": "83769c53-0d00-4729-8d7a-79265a4457d4",
+        "name": "Garlic",
+        "type": "garlic",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 80.40860024609367
+      },
+      {
+        "id": "28a82ed6-829c-441f-abe4-9702f95f88b9",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 100.93408538619691
+      },
+      {
+        "id": "65018ab6-33e2-40f8-b4b8-d333df2e7678",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "approximate",
+        "distance": 145.73060629591083
+      },
+      {
+        "id": "8ca88fd4-4d59-49cb-b25c-a2dfb5b6d5de",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 193.90836602344805
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-169",
+    "candidateType": "agarita",
+    "candidateTypeName": "Agarita",
+    "candidateX": 5587.437792441416,
+    "candidateY": 3924.4813546963132,
+    "nearbyMarkers": [
+      {
+        "id": "afa9efb2-8ec8-4f06-99cf-8d0964184a35",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 30.161432279209684
+      },
+      {
+        "id": "3490beca-f59b-4462-b7d3-51a082d328e7",
+        "name": "Garlic",
+        "type": "garlic",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 62.85906252585983
+      },
+      {
+        "id": "209f9a57-31da-4f85-bd9f-44f4198510e1",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 65.8921738701485
+      },
+      {
+        "id": "8ca88fd4-4d59-49cb-b25c-a2dfb5b6d5de",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 104.78463536151781
+      },
+      {
+        "id": "a3420316-f1d5-425b-8f98-8198a9858642",
+        "name": "Burdock Root",
+        "type": "burdock-root",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 128.23580048359082
+      },
+      {
+        "id": "de2219c4-e6c4-4964-bdca-d3dbc3c3b288",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 188.6025684023809
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-170",
+    "candidateType": "cardinal-flower",
+    "candidateTypeName": "Cardinal Flower",
+    "candidateX": 7411.951229409813,
+    "candidateY": 3895.6503641475265,
+    "nearbyMarkers": [
+      {
+        "id": "b347a5b9-8e42-4421-a74c-c96aca5bac28",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 43.988714894038715
+      },
+      {
+        "id": "fbda7348-6658-4afa-b345-6b0a7026a002",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 48.02885302997879
+      },
+      {
+        "id": "6de8d6c4-cef6-4bf8-895f-3285f3ab6a43",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 74.80525738053485
+      },
+      {
+        "id": "dbb3e170-c209-4cf9-8181-3b0dcc09e13f",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 85.75589413801453
+      },
+      {
+        "id": "72a30010-d58d-452a-be0d-56d8657282f9",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 97.46580116376003
+      },
+      {
+        "id": "e3b994e6-6922-4d4a-8040-89ded0f80e53",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 141.19878890416896
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-171",
+    "candidateType": "blood-flower",
+    "candidateTypeName": "Blood Flower",
+    "candidateX": 7738.858976222021,
+    "candidateY": 3879.2556124263783,
+    "nearbyMarkers": [
+      {
+        "id": "92234f9f-a45a-479e-9e53-9df37c84c7b7",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 71.312944458186
+      },
+      {
+        "id": "b0ed4d15-95cf-429e-9f51-2e7335fe5783",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 97.6986297945311
+      },
+      {
+        "id": "d9803875-803f-4f36-b110-6c57f35f22cb",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 114.08374405654023
+      },
+      {
+        "id": "c59f04b0-53cb-41e2-9873-e19b4b5ed9bc",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 116.39213975116053
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-172",
+    "candidateType": "agarita",
+    "candidateTypeName": "Agarita",
+    "candidateX": 5174.777564346976,
+    "candidateY": 3850.915806182643,
+    "nearbyMarkers": [
+      {
+        "id": "65018ab6-33e2-40f8-b4b8-d333df2e7678",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "approximate",
+        "distance": 12.917721430938677
+      },
+      {
+        "id": "dfd6d715-3614-4d00-ac8b-83dfc38f2406",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 81.3963445822029
+      },
+      {
+        "id": "4cc5da39-ad1d-4208-b36e-c6bf64206a6f",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 132.30899170852305
+      },
+      {
+        "id": "931e0358-4f56-4af4-91d9-7b03d3fa1a9c",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 146.05700271706908
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-174",
+    "candidateType": "blood-flower",
+    "candidateTypeName": "Blood Flower",
+    "candidateX": 7189.342201638056,
+    "candidateY": 3756.6308915308564,
+    "nearbyMarkers": [
+      {
+        "id": "5a42a3ee-2d35-4d4b-82c5-895e296c744d",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 156.4720063330149
+      },
+      {
+        "id": "2744994d-94b2-4922-ad03-1e122c4290d3",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 199.30917744989128
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-176",
+    "candidateType": "chocolate-daisy",
+    "candidateTypeName": "Chocolate Daisy",
+    "candidateX": 5258.63465730451,
+    "candidateY": 3711.8620329860114,
+    "nearbyMarkers": [
+      {
+        "id": "931e0358-4f56-4af4-91d9-7b03d3fa1a9c",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 65.89591542887607
+      },
+      {
+        "id": "ad17d990-12e0-4823-a74d-c497957d584f",
+        "name": "Alaskan Ginseng",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 118.12522464989607
+      },
+      {
+        "id": "abe43abd-cc04-4819-a439-ecfe90e97a4f",
+        "name": "Parasol Mushroom",
+        "type": "parasol-mushroom",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 118.89865508844781
+      },
+      {
+        "id": "dfd6d715-3614-4d00-ac8b-83dfc38f2406",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 138.01307005779574
+      },
+      {
+        "id": "65018ab6-33e2-40f8-b4b8-d333df2e7678",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "approximate",
+        "distance": 151.3457717442577
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-177",
+    "candidateType": "wisteria",
+    "candidateTypeName": "Wisteria",
+    "candidateX": 4116.569234822912,
+    "candidateY": 3662.915366506434,
+    "nearbyMarkers": [
+      {
+        "id": "3ad5bd29-154a-4000-9784-75929a3dc266",
+        "name": "Wisteria",
+        "type": "wisteria",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 9.955673759145629
+      },
+      {
+        "id": "4679f1dd-5ad7-4879-b392-1d6e89c50faa",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 96.88205902267282
+      },
+      {
+        "id": "666c1c64-ea5b-4cf5-901b-200ede88e6d4",
+        "name": "Indian Tobacco",
+        "type": "indian-tobacco",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 102.20128371702185
+      },
+      {
+        "id": "dd791b9c-887f-4df4-b887-580add0630a6",
+        "name": "Blackberry",
+        "type": "blackberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 155.45810408403236
+      },
+      {
+        "id": "64143c7f-e9c6-452f-bee5-0f9c3b4e1d03",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 156.88390692761266
+      },
+      {
+        "id": "f42c3955-c0b9-4b34-ada6-20bd75bf7f05",
+        "name": "Indian Tobacco",
+        "type": "indian-tobacco",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 160.46041686065604
+      },
+      {
+        "id": "056d3c1a-ea19-468e-a414-b4bb232ac69d",
+        "name": "Alaskan Ginseng",
+        "type": "alaskan-ginseng",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 163.835927689898
+      },
+      {
+        "id": "4f77bafa-4a8a-48aa-817a-c688fab53ccb",
+        "name": "Wisteria",
+        "type": "wisteria",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 185.9514260992212
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-178",
+    "candidateType": "agarita",
+    "candidateTypeName": "Agarita",
+    "candidateX": 4872.534826339942,
+    "candidateY": 3638.2935117554116,
+    "nearbyMarkers": [
+      {
+        "id": "0a84c26f-376b-4f65-a05f-b6d6caae8b45",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 17.361487284456324
+      },
+      {
+        "id": "3a5be17b-7bc7-4790-b989-1991c09cc3c9",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 19.44592450959027
+      },
+      {
+        "id": "de62340c-39eb-48ef-bb84-d8646b2bf307",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 94.45189176336106
+      },
+      {
+        "id": "efb5ea6a-b87d-4724-86c3-170901e8322e",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 111.11241891452386
+      },
+      {
+        "id": "b8ec1a7d-5785-4aa1-a73f-fd8ccd809947",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 114.22475322089066
+      },
+      {
+        "id": "e0f43cc1-bde0-4bcc-aac6-37753d06f962",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 116.48686267565174
+      },
+      {
+        "id": "cd1bbf5c-8b1e-483e-a5f3-be51515c3df9",
+        "name": "Golden Currant",
+        "type": "golden-currant",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 121.56905245438656
+      },
+      {
+        "id": "89fb4d34-8715-4bbc-a50d-f6042c1a9b5b",
+        "name": "Raspberry",
+        "type": "raspberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 122.37325278845013
+      },
+      {
+        "id": "270800be-430f-4542-a2c3-8f404b0a597e",
+        "name": "Raspberry",
+        "type": "raspberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 128.41079675802797
+      },
+      {
+        "id": "651347fb-2c92-4113-8681-54ae80cdefea",
+        "name": "Raspberry",
+        "type": "raspberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 131.31453497343725
+      },
+      {
+        "id": "b92613c8-3027-4cf8-b818-b11ce9ca2e3e",
+        "name": "Raspberry",
+        "type": "raspberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 132.1541039296968
+      },
+      {
+        "id": "ebb750c5-8c8d-46af-875e-1c235d5f4c93",
+        "name": "Raspberry",
+        "type": "raspberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 139.88678807723255
+      },
+      {
+        "id": "53ab6cd3-f8c0-4d55-aa79-01876fea7806",
+        "name": "American Ginseng",
+        "type": "american-ginseng",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 140.9290769396473
+      },
+      {
+        "id": "aadfdceb-71b8-47a5-8a5e-40d3d7c4d569",
+        "name": "Golden Currant",
+        "type": "golden-currant",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 144.81645787291103
+      },
+      {
+        "id": "795da826-0620-480f-910f-6000b9ceea3b",
+        "name": "Raspberry",
+        "type": "raspberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 154.75219424698005
+      },
+      {
+        "id": "71fda0f4-71db-489a-b180-48a985500bb7",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 171.16250815630292
+      },
+      {
+        "id": "c730bf05-7245-46d0-8154-00e5af6a75d6",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 173.43691182805438
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-179",
+    "candidateType": "chocolate-daisy",
+    "candidateTypeName": "Chocolate Daisy",
+    "candidateX": 4700.940177150616,
+    "candidateY": 3597.41730899055,
+    "nearbyMarkers": [
+      {
+        "id": "ebb750c5-8c8d-46af-875e-1c235d5f4c93",
+        "name": "Raspberry",
+        "type": "raspberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 93.54314354607018
+      },
+      {
+        "id": "53ab6cd3-f8c0-4d55-aa79-01876fea7806",
+        "name": "American Ginseng",
+        "type": "american-ginseng",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 102.61520308677946
+      },
+      {
+        "id": "e2b053a8-5960-4c0c-9bbe-ee80a15dc932",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 112.68505070167936
+      },
+      {
+        "id": "48d4d373-f156-4ef9-8556-60d8eeb9e04d",
+        "name": "Yarrow",
+        "type": "yarrow",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 114.69359944223474
+      },
+      {
+        "id": "adee4243-253b-4bb1-b22c-bb0f15851b78",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 122.81280365526464
+      },
+      {
+        "id": "de62340c-39eb-48ef-bb84-d8646b2bf307",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 133.95307642796612
+      },
+      {
+        "id": "270800be-430f-4542-a2c3-8f404b0a597e",
+        "name": "Raspberry",
+        "type": "raspberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 134.80587821808024
+      },
+      {
+        "id": "05f8e20e-028e-4cce-b507-2575a7a42012",
+        "name": "Yarrow",
+        "type": "yarrow",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 158.97277938371943
+      },
+      {
+        "id": "2892553a-b43f-42af-abca-000a2fe554dc",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 166.00994916990848
+      },
+      {
+        "id": "65bc26ac-ecc5-4930-8824-3e58b80d3cf6",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 166.37292293969597
+      },
+      {
+        "id": "0a84c26f-376b-4f65-a05f-b6d6caae8b45",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 171.68717675706287
+      },
+      {
+        "id": "dbc4b841-1469-40ee-91aa-f318d0061682",
+        "name": "American Ginseng",
+        "type": "american-ginseng",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 173.68542377340364
+      },
+      {
+        "id": "795da826-0620-480f-910f-6000b9ceea3b",
+        "name": "Raspberry",
+        "type": "raspberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 177.5658088023044
+      },
+      {
+        "id": "e12d6997-4941-465e-aff9-48f37f66bec4",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 177.76942099499624
+      },
+      {
+        "id": "71fda0f4-71db-489a-b180-48a985500bb7",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 181.40060242386977
+      },
+      {
+        "id": "3a5be17b-7bc7-4790-b989-1991c09cc3c9",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 191.6050616855375
+      },
+      {
+        "id": "efb5ea6a-b87d-4724-86c3-170901e8322e",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 197.65095704431772
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-180",
+    "candidateType": "cardinal-flower",
+    "candidateTypeName": "Cardinal Flower",
+    "candidateX": 7526.581550851845,
+    "candidateY": 3560.2951876626275,
+    "nearbyMarkers": [
+      {
+        "id": "6c72767e-8cc2-4833-b515-9b4f72eae96b",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 68.91947708882324
+      },
+      {
+        "id": "074b7f27-2bed-4228-9087-fb556cdc420f",
+        "name": "Cardinal Flower",
+        "type": "alaskan-ginseng",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 107.01399483468357
+      },
+      {
+        "id": "57dc8af4-c30d-4c2b-9df6-a496bd256444",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 114.57407129256691
+      },
+      {
+        "id": "739f5aef-3016-4fef-8f2b-da1ba3c3c037",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 130.28944177853933
+      },
+      {
+        "id": "03b0dd40-5b7c-413f-b017-ebd8a65408de",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 140.8125316012439
+      },
+      {
+        "id": "48fb8fe8-3640-48fe-a527-708eaab8dc18",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 140.8720061811674
+      },
+      {
+        "id": "bd4adddd-dc35-4fba-bb1b-4e5d9599a05e",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 169.6214050470166
+      },
+      {
+        "id": "f2683b04-5232-4172-86a1-61fac146a044",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 172.44993438208877
+      },
+      {
+        "id": "3948fcb6-612a-4198-8393-b782754047bd",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 183.1600324306173
+      },
+      {
+        "id": "2744994d-94b2-4922-ad03-1e122c4290d3",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 198.42769705763868
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-181",
+    "candidateType": "agarita",
+    "candidateTypeName": "Agarita",
+    "candidateX": 5007.437951982799,
+    "candidateY": 3548.30851510302,
+    "nearbyMarkers": [
+      {
+        "id": "c730bf05-7245-46d0-8154-00e5af6a75d6",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 12.313173922003733
+      },
+      {
+        "id": "aadfdceb-71b8-47a5-8a5e-40d3d7c4d569",
+        "name": "Golden Currant",
+        "type": "golden-currant",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 17.747738884582322
+      },
+      {
+        "id": "b92613c8-3027-4cf8-b818-b11ce9ca2e3e",
+        "name": "Raspberry",
+        "type": "raspberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 30.74748659764388
+      },
+      {
+        "id": "41c11d95-d209-4918-a08f-b0f3f1235ec4",
+        "name": "Golden Currant",
+        "type": "golden-currant",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 51.3851359735686
+      },
+      {
+        "id": "651347fb-2c92-4113-8681-54ae80cdefea",
+        "name": "Raspberry",
+        "type": "raspberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 58.47728669040751
+      },
+      {
+        "id": "357fefeb-9d44-4bda-8411-a3d5acc39b83",
+        "name": "Parasol Mushroom",
+        "type": "parasol-mushroom",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 59.09841152959357
+      },
+      {
+        "id": "b8ec1a7d-5785-4aa1-a73f-fd8ccd809947",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 63.11069603786392
+      },
+      {
+        "id": "cd1bbf5c-8b1e-483e-a5f3-be51515c3df9",
+        "name": "Golden Currant",
+        "type": "golden-currant",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 73.83759538281049
+      },
+      {
+        "id": "1a46cd5d-1abe-4657-826b-a40e7f5cacae",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 75.24647064885934
+      },
+      {
+        "id": "e0f43cc1-bde0-4bcc-aac6-37753d06f962",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "unverified",
+        "confidence": "guess",
+        "distance": 80.32061460625337
+      },
+      {
+        "id": "89fb4d34-8715-4bbc-a50d-f6042c1a9b5b",
+        "name": "Raspberry",
+        "type": "raspberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 116.45127364626028
+      },
+      {
+        "id": "efb5ea6a-b87d-4724-86c3-170901e8322e",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 123.12437600843374
+      },
+      {
+        "id": "08c792f8-8bef-4973-92f4-ad0253b1d4a0",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 132.40464004798952
+      },
+      {
+        "id": "d98f3440-25bb-4f94-b776-4deab9d66c30",
+        "name": "Golden Currant",
+        "type": "golden-currant",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 139.6108422423256
+      },
+      {
+        "id": "8532ce91-5b95-4d4e-b43c-e1df526163fb",
+        "name": "Golden Currant",
+        "type": "golden-currant",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 151.70842933448515
+      },
+      {
+        "id": "0a84c26f-376b-4f65-a05f-b6d6caae8b45",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 154.5942001427881
+      },
+      {
+        "id": "783bdf57-34a2-40ec-9306-1b28d4e1861e",
+        "name": "Alaskan Ginseng",
+        "type": "american-ginseng",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 158.0969624833959
+      },
+      {
+        "id": "3a5be17b-7bc7-4790-b989-1991c09cc3c9",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 162.50420908221525
+      },
+      {
+        "id": "9021e1cb-e7d8-43ca-beff-243b1bba14fe",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 169.46624786914336
+      },
+      {
+        "id": "795da826-0620-480f-910f-6000b9ceea3b",
+        "name": "Raspberry",
+        "type": "raspberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 178.30928688189888
+      },
+      {
+        "id": "de62340c-39eb-48ef-bb84-d8646b2bf307",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 179.5626759154245
+      },
+      {
+        "id": "71fda0f4-71db-489a-b180-48a985500bb7",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 191.31509212068633
+      },
+      {
+        "id": "7f573f28-6381-48e1-9587-964460228a69",
+        "name": "Parasol Mushroom",
+        "type": "parasol-mushroom",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 192.5611718409522
+      },
+      {
+        "id": "270800be-430f-4542-a2c3-8f404b0a597e",
+        "name": "Raspberry",
+        "type": "raspberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 194.95934236094814
+      },
+      {
+        "id": "ed56ae85-db90-4d65-ac56-b32c101c9cba",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 198.43498896993123
+      },
+      {
+        "id": "ff038da8-bef1-4dd1-9746-a70f4efbb0a4",
+        "name": "American Ginseng",
+        "type": "american-ginseng",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 198.72809585110036
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-182",
+    "candidateType": "creek-plum",
+    "candidateTypeName": "Creek Plum",
+    "candidateX": 6921.829652805101,
+    "candidateY": 3548.094250813526,
+    "nearbyMarkers": [
+      {
+        "id": "3f77bf85-8570-4cf7-9ff9-c89e22bb2abe",
+        "name": "Raspberry",
+        "type": "raspberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 127.00159365449464
+      },
+      {
+        "id": "690689d9-4adf-456c-8746-29b7c5fdded0",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 157.27058322858943
+      },
+      {
+        "id": "e52bfdc0-62da-4fd0-86f1-5a21c6201563",
+        "name": "Blood Flower",
+        "type": "blood-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 182.38790465840182
+      },
+      {
+        "id": "7d0e917b-cc24-476a-a613-31888519e0f9",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 197.23614578547196
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-183",
+    "candidateType": "cardinal-flower",
+    "candidateTypeName": "Cardinal Flower",
+    "candidateX": 7117.983797123294,
+    "candidateY": 3523.535051788567,
+    "nearbyMarkers": [
+      {
+        "id": "7d0e917b-cc24-476a-a613-31888519e0f9",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 19.491456517161218
+      },
+      {
+        "id": "e52bfdc0-62da-4fd0-86f1-5a21c6201563",
+        "name": "Blood Flower",
+        "type": "blood-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 36.269123793928564
+      },
+      {
+        "id": "fa3a0314-0a75-4f22-9e1d-9d9996c10b2d",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 71.03946643004811
+      },
+      {
+        "id": "fb1d58fc-08a7-41b5-b318-d3ff304fe762",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 143.40174139861173
+      },
+      {
+        "id": "806ec1f1-3df0-4689-9b02-171264664fae",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 153.6579226076453
+      },
+      {
+        "id": "85a66ebd-19cd-41f8-80ed-a04fb554ae3a",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 194.16861935569418
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-184",
+    "candidateType": "cardinal-flower",
+    "candidateTypeName": "Cardinal Flower",
+    "candidateX": 7669.6254522779245,
+    "candidateY": 3519.3837696356713,
+    "nearbyMarkers": [
+      {
+        "id": "48fb8fe8-3640-48fe-a527-708eaab8dc18",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 29.732374621893925
+      },
+      {
+        "id": "bd4adddd-dc35-4fba-bb1b-4e5d9599a05e",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 41.94562254542173
+      },
+      {
+        "id": "f2683b04-5232-4172-86a1-61fac146a044",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 47.7267727873856
+      },
+      {
+        "id": "57dc8af4-c30d-4c2b-9df6-a496bd256444",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 74.64665994179005
+      },
+      {
+        "id": "6c72767e-8cc2-4833-b515-9b4f72eae96b",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 81.4418603106765
+      },
+      {
+        "id": "1d9ae48a-e1d4-49eb-92c3-2ca6e4b91d47",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 91.85836982789247
+      },
+      {
+        "id": "dcff1b43-cd47-4022-a0b0-f07e377529df",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 95.5000053403412
+      },
+      {
+        "id": "1d1f9bea-29f2-4fa3-a168-46636a261f46",
+        "name": "Milkweed",
+        "type": "milkweed",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 122.93129889245509
+      },
+      {
+        "id": "0c552951-d91c-45c8-ae90-da4a3c1c0722",
+        "name": "Evergreen Huckleberry",
+        "type": "evergreen-huckleberry",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 124.53599645276455
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-185",
+    "candidateType": "chocolate-daisy",
+    "candidateTypeName": "Chocolate Daisy",
+    "candidateX": 4472.18336207092,
+    "candidateY": 3487.0253101482267,
+    "nearbyMarkers": [
+      {
+        "id": "242cb21c-b563-43de-8987-3cc82d30a36e",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 2.1837533523091865
+      },
+      {
+        "id": "5a33421e-ed56-4c0b-9e31-e13ee09a3163",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 28.792494033260343
+      },
+      {
+        "id": "05f8e20e-028e-4cce-b507-2575a7a42012",
+        "name": "Yarrow",
+        "type": "yarrow",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 96.940763091492
+      },
+      {
+        "id": "e43e89b3-c40f-4412-b59d-bc7759b6b7c7",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "approximate",
+        "distance": 105.77932941637881
+      },
+      {
+        "id": "cf132cb6-97b6-4fb2-90a3-8c48742c9a90",
+        "name": "Wisteria",
+        "type": "wisteria",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 130.264139556599
+      },
+      {
+        "id": "adee4243-253b-4bb1-b22c-bb0f15851b78",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 132.67221197817636
+      },
+      {
+        "id": "48d4d373-f156-4ef9-8556-60d8eeb9e04d",
+        "name": "Yarrow",
+        "type": "yarrow",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 144.88191505888418
+      },
+      {
+        "id": "65bc26ac-ecc5-4930-8824-3e58b80d3cf6",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 164.99828432960368
+      },
+      {
+        "id": "5d994905-aeb7-488a-8263-fe5155b67518",
+        "name": "Blackberry",
+        "type": "blackberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 165.98410331938007
+      },
+      {
+        "id": "dbc4b841-1469-40ee-91aa-f318d0061682",
+        "name": "American Ginseng",
+        "type": "american-ginseng",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 167.16709841976788
+      },
+      {
+        "id": "6641a02f-78ef-4d54-9c02-d58e4f04535b",
+        "name": "Hummingbird Sage",
+        "type": "hummingbird-sage",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 169.43824445619353
+      },
+      {
+        "id": "743d8bf8-0fad-4746-9e20-8af067a40166",
+        "name": "Parasol Mushroom",
+        "type": "parasol-mushroom",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 172.15770651464715
+      },
+      {
+        "id": "e12d6997-4941-465e-aff9-48f37f66bec4",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 180.24158961975468
+      },
+      {
+        "id": "0e47b88a-b5ee-4464-bffa-84fc9f5626ef",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 183.6727417407195
+      },
+      {
+        "id": "fedabfdc-66f3-4519-bf50-45277539c6e9",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 185.8948534177258
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-186",
+    "candidateType": "wisteria",
+    "candidateTypeName": "Wisteria",
+    "candidateX": 4243.376427994977,
+    "candidateY": 3454.33459237622,
+    "nearbyMarkers": [
+      {
+        "id": "dbc30758-5a71-46e5-8e79-7ae55ab7d386",
+        "name": "Indian Tobacco",
+        "type": "indian-tobacco",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 28.02516650919597
+      },
+      {
+        "id": "4bb2713f-8309-4217-9ed2-a4dbda2feb52",
+        "name": "Wisteria",
+        "type": "wisteria",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 66.90764442176216
+      },
+      {
+        "id": "5d994905-aeb7-488a-8263-fe5155b67518",
+        "name": "Blackberry",
+        "type": "blackberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 71.0839103970157
+      },
+      {
+        "id": "6641a02f-78ef-4d54-9c02-d58e4f04535b",
+        "name": "Hummingbird Sage",
+        "type": "hummingbird-sage",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 81.66372372830162
+      },
+      {
+        "id": "cf132cb6-97b6-4fb2-90a3-8c48742c9a90",
+        "name": "Wisteria",
+        "type": "wisteria",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 147.63698029660895
+      },
+      {
+        "id": "029302ac-d2cb-4f91-8aac-e9e4bd139da5",
+        "name": "Hummingbird Sage",
+        "type": "hummingbird-sage",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 170.31657504146906
+      },
+      {
+        "id": "49151b61-6aeb-42f3-8bc3-7bf87fe2fa43",
+        "name": "Bay Bolete",
+        "type": "bay-bolete",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 172.36376202642
+      },
+      {
+        "id": "ed1323bc-0578-4945-9366-52813cf87d13",
+        "name": "Blackberry",
+        "type": "blackberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 172.99934407881625
+      },
+      {
+        "id": "ad793c85-c3c8-456b-8cb3-add4572d1030",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 188.2535092351863
+      },
+      {
+        "id": "9a5b92f5-8e86-4523-b359-2a029abd9c1d",
+        "name": "Blackberry",
+        "type": "blackberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 191.259329474814
+      },
+      {
+        "id": "c16c24da-376d-47ee-8002-584822ce7433",
+        "name": "Hummingbird Sage",
+        "type": "hummingbird-sage",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 193.91769753415844
+      },
+      {
+        "id": "64143c7f-e9c6-452f-bee5-0f9c3b4e1d03",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 198.8839826988698
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-187",
+    "candidateType": "cardinal-flower",
+    "candidateTypeName": "Cardinal Flower",
+    "candidateX": 7289.69187351465,
+    "candidateY": 3388.5609868679767,
+    "nearbyMarkers": [
+      {
+        "id": "749bf0c7-ae0e-4162-9a8d-0405149f5ecd",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 49.72402231753292
+      },
+      {
+        "id": "85a66ebd-19cd-41f8-80ed-a04fb554ae3a",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 57.78436370970888
+      },
+      {
+        "id": "806ec1f1-3df0-4689-9b02-171264664fae",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 64.75579794549128
+      },
+      {
+        "id": "fb1d58fc-08a7-41b5-b318-d3ff304fe762",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 75.00570828610721
+      },
+      {
+        "id": "fa3a0314-0a75-4f22-9e1d-9d9996c10b2d",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 150.71256447236382
+      },
+      {
+        "id": "074b7f27-2bed-4228-9087-fb556cdc420f",
+        "name": "Cardinal Flower",
+        "type": "alaskan-ginseng",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 186.06698026081762
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-188",
+    "candidateType": "chocolate-daisy",
+    "candidateTypeName": "Chocolate Daisy",
+    "candidateX": 4361.96371012659,
+    "candidateY": 3319.366472889489,
+    "nearbyMarkers": [
+      {
+        "id": "ad793c85-c3c8-456b-8cb3-add4572d1030",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 14.90323928721732
+      },
+      {
+        "id": "011de11d-eb6d-445c-9263-3ca12437ba0d",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 28.258310033938045
+      },
+      {
+        "id": "0e47b88a-b5ee-4464-bffa-84fc9f5626ef",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 36.03815325761261
+      },
+      {
+        "id": "743d8bf8-0fad-4746-9e20-8af067a40166",
+        "name": "Parasol Mushroom",
+        "type": "parasol-mushroom",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 45.105883528466904
+      },
+      {
+        "id": "cf132cb6-97b6-4fb2-90a3-8c48742c9a90",
+        "name": "Wisteria",
+        "type": "wisteria",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 78.50434796906639
+      },
+      {
+        "id": "11a086f7-a0f9-4c7d-b35c-798a57207d8f",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 92.44673303519974
+      },
+      {
+        "id": "6641a02f-78ef-4d54-9c02-d58e4f04535b",
+        "name": "Hummingbird Sage",
+        "type": "hummingbird-sage",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 109.30953733699954
+      },
+      {
+        "id": "e43e89b3-c40f-4412-b59d-bc7759b6b7c7",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "unverified",
+        "confidence": "approximate",
+        "distance": 111.07129172940991
+      },
+      {
+        "id": "5d994905-aeb7-488a-8263-fe5155b67518",
+        "name": "Blackberry",
+        "type": "blackberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 130.1917538574662
+      },
+      {
+        "id": "4bb2713f-8309-4217-9ed2-a4dbda2feb52",
+        "name": "Wisteria",
+        "type": "wisteria",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 154.1043576402426
+      },
+      {
+        "id": "1e3a4d71-743b-4d11-9449-c6d9f5c02789",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 160.9932478529965
+      },
+      {
+        "id": "5a33421e-ed56-4c0b-9e31-e13ee09a3163",
+        "name": "Wild Mint",
+        "type": "wild-mint",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 173.13129454792693
+      },
+      {
+        "id": "c0b04e5d-4fe2-4761-bcf4-03f216e71816",
+        "name": "American Ginseng",
+        "type": "american-ginseng",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 174.9592627058142
+      },
+      {
+        "id": "49151b61-6aeb-42f3-8bc3-7bf87fe2fa43",
+        "name": "Bay Bolete",
+        "type": "bay-bolete",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 178.82640622119374
+      },
+      {
+        "id": "c2d98728-9c23-4ee2-8f23-a2db8f92ca7d",
+        "name": "Parasol Mushroom",
+        "type": "parasol-mushroom",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 186.02539319626908
+      },
+      {
+        "id": "029302ac-d2cb-4f91-8aac-e9e4bd139da5",
+        "name": "Hummingbird Sage",
+        "type": "hummingbird-sage",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 186.0366946261553
+      },
+      {
+        "id": "dbc30758-5a71-46e5-8e79-7ae55ab7d386",
+        "name": "Indian Tobacco",
+        "type": "indian-tobacco",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 195.4927482823568
+      },
+      {
+        "id": "ed1323bc-0578-4945-9366-52813cf87d13",
+        "name": "Blackberry",
+        "type": "blackberry",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 196.20390425462872
+      },
+      {
+        "id": "242cb21c-b563-43de-8987-3cc82d30a36e",
+        "name": "Chocolate Daisy",
+        "type": "chocolate-daisy",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 199.40793106574347
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-189",
+    "candidateType": "cardinal-flower",
+    "candidateTypeName": "Cardinal Flower",
+    "candidateX": 7191.696574454692,
+    "candidateY": 3274.0648120025726,
+    "nearbyMarkers": [
+      {
+        "id": "806ec1f1-3df0-4689-9b02-171264664fae",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 162.2522496842631
+      },
+      {
+        "id": "fb1d58fc-08a7-41b5-b318-d3ff304fe762",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 165.3473610019747
+      },
+      {
+        "id": "fa3a0314-0a75-4f22-9e1d-9d9996c10b2d",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 195.3618858704408
+      },
+      {
+        "id": "749bf0c7-ae0e-4162-9a8d-0405149f5ecd",
+        "name": "Vanilla Flower",
+        "type": "vanilla-flower",
+        "status": "unverified",
+        "confidence": "exact",
+        "distance": 199.33215541330247
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-191",
+    "candidateType": "wisteria",
+    "candidateTypeName": "Wisteria",
+    "candidateX": 3702.1771646020507,
+    "candidateY": 3106.784195805546,
+    "nearbyMarkers": [
+      {
+        "id": "787b2de1-644a-4150-9ede-06f8004120cb",
+        "name": "Wisteria",
+        "type": "wisteria",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 64.93450825945213
+      },
+      {
+        "id": "3d30abf1-18d7-42b1-ac98-338ad074cae8",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 176.59576803350748
+      },
+      {
+        "id": "0b072f2f-66ba-4d9a-8f75-b7c0e0051e7b",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 198.84797883726077
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-193",
+    "candidateType": "wisteria",
+    "candidateTypeName": "Wisteria",
+    "candidateX": 3920.9215561509955,
+    "candidateY": 2902.2826726103067,
+    "nearbyMarkers": [
+      {
+        "id": "a11bb51a-7886-46fd-a3aa-980338f4a770",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 124.81305522190328
+      },
+      {
+        "id": "03397457-8579-4c40-8b2e-63ba5ba6ea6c",
+        "name": "Wisteria",
+        "type": "wisteria",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 147.0306226908538
+      },
+      {
+        "id": "c37819ae-8f2e-4727-a9e1-38a96b811e68",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 149.109574193848
+      },
+      {
+        "id": "3d30abf1-18d7-42b1-ac98-338ad074cae8",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 166.75161232335802
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-195",
+    "candidateType": "texas-bluebonnet",
+    "candidateTypeName": "Texas Bluebonnet",
+    "candidateX": 4936.396088496958,
+    "candidateY": 2824.467742285052,
+    "nearbyMarkers": [
+      {
+        "id": "ed8abe25-aef6-4fac-bac2-1d763eaefb54",
+        "name": "Texas Bluebonnet",
+        "type": "texas-bluebonnet",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 42.003990429851676
+      },
+      {
+        "id": "fc9211c5-03bb-4838-8dcf-d9999f787449",
+        "name": "Parasol Mushroom",
+        "type": "parasol-mushroom",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 62.0459638643539
+      },
+      {
+        "id": "c89ca44f-4187-411d-bf63-2b89e53ebc07",
+        "name": "Oregano",
+        "type": "oregano",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 92.68430983611638
+      },
+      {
+        "id": "5df14069-ce15-4084-8191-9dc1a8bdb0a4",
+        "name": "Texas Bluebonnet",
+        "type": "texas-bluebonnet",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 152.00154066280416
+      },
+      {
+        "id": "7815befa-3fa3-495f-bebb-3cfe0b5c55a9",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 182.49638787527755
+      },
+      {
+        "id": "31d16ab7-029f-484b-a8ee-20d1c619f3df",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 196.50469197390578
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-198",
+    "candidateType": "wisteria",
+    "candidateTypeName": "Wisteria",
+    "candidateX": 4160.054816944704,
+    "candidateY": 2763.21152045316,
+    "nearbyMarkers": [
+      {
+        "id": "41c273e5-1a55-403c-ab93-55824fe65e0c",
+        "name": "Bay Bolete",
+        "type": "bay-bolete",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 51.130909941446966
+      },
+      {
+        "id": "6b9f8abe-9618-4c08-881c-7271c30c629e",
+        "name": "Indian Tobacco",
+        "type": "indian-tobacco",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 116.01010290604059
+      },
+      {
+        "id": "c37819ae-8f2e-4727-a9e1-38a96b811e68",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 148.66020660419994
+      },
+      {
+        "id": "a11bb51a-7886-46fd-a3aa-980338f4a770",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 172.8014652729597
+      },
+      {
+        "id": "03397457-8579-4c40-8b2e-63ba5ba6ea6c",
+        "name": "Wisteria",
+        "type": "wisteria",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 177.14941348699622
+      },
+      {
+        "id": "ecc4c8a4-a785-4229-98da-23f1aa9f55fb",
+        "name": "Bay Bolete",
+        "type": "bay-bolete",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 187.67006145493943
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-199",
+    "candidateType": "wild-rhubarb",
+    "candidateTypeName": "Wild Rhubarb",
+    "candidateX": 2924.0618454528517,
+    "candidateY": 2628.3950095298615,
+    "nearbyMarkers": [
+      {
+        "id": "fb5c1e6c-9b4f-454d-85b1-a83126122d61",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 9.215920542778766
+      },
+      {
+        "id": "dbc994ff-75f5-4e41-9a58-b0353b4b51a6",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 157.997187046326
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-201",
+    "candidateType": "bitterweed",
+    "candidateTypeName": "Bitterweed",
+    "candidateX": 3001.8028052053382,
+    "candidateY": 2468.8942168000085,
+    "nearbyMarkers": [
+      {
+        "id": "dbc994ff-75f5-4e41-9a58-b0353b4b51a6",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 164.9223474572572
+      },
+      {
+        "id": "fb5c1e6c-9b4f-454d-85b1-a83126122d61",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 172.1663031784908
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-204",
+    "candidateType": "bitterweed",
+    "candidateTypeName": "Bitterweed",
+    "candidateX": 3465.7174554958083,
+    "candidateY": 2268.4547942497647,
+    "nearbyMarkers": [
+      {
+        "id": "2ce961c0-9a98-4f97-b6c7-c8582092ab76",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 5.141194747441366
+      },
+      {
+        "id": "e6af6c00-51a5-4afa-b2ad-1b6d4fc511c2",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 127.90356705014862
+      },
+      {
+        "id": "44110eb3-343f-4f46-8a49-d37fb78dc1b9",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 148.20233741846423
+      },
+      {
+        "id": "40aea4b7-d9c8-4ed9-b5d8-a9bbc6bed597",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 189.995934284612
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-205",
+    "candidateType": "bitterweed",
+    "candidateTypeName": "Bitterweed",
+    "candidateX": 3649.6340577200904,
+    "candidateY": 2211.1806383762914,
+    "nearbyMarkers": [
+      {
+        "id": "40aea4b7-d9c8-4ed9-b5d8-a9bbc6bed597",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 5.879470253888473
+      },
+      {
+        "id": "44110eb3-343f-4f46-8a49-d37fb78dc1b9",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 46.49655258653035
+      },
+      {
+        "id": "2ce961c0-9a98-4f97-b6c7-c8582092ab76",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 190.1832338758149
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-206",
+    "candidateType": "bitterweed",
+    "candidateTypeName": "Bitterweed",
+    "candidateX": 3165.4597924383343,
+    "candidateY": 2145.8021755492073,
+    "nearbyMarkers": [
+      {
+        "id": "a680deda-bc40-4df3-b531-2edbbb942787",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 14.838680290406433
+      },
+      {
+        "id": "e6af6c00-51a5-4afa-b2ad-1b6d4fc511c2",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 198.2475533810494
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-208",
+    "candidateType": "bitterweed",
+    "candidateTypeName": "Bitterweed",
+    "candidateX": 3371.8189227465386,
+    "candidateY": 2137.599997607438,
+    "nearbyMarkers": [
+      {
+        "id": "e6af6c00-51a5-4afa-b2ad-1b6d4fc511c2",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 102.81891180429903
+      },
+      {
+        "id": "f84f17aa-bf06-433c-959c-a92ecf30dbb7",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 137.5706739760841
+      },
+      {
+        "id": "2ce961c0-9a98-4f97-b6c7-c8582092ab76",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 157.62668251575403
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-210",
+    "candidateType": "agarita",
+    "candidateTypeName": "Agarita",
+    "candidateX": 3500.6349314453328,
+    "candidateY": 1982.1830292232225,
+    "nearbyMarkers": [
+      {
+        "id": "f84f17aa-bf06-433c-959c-a92ecf30dbb7",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 170.1901303243798
+      },
+      {
+        "id": "6fe29e2b-583f-4fdb-9023-a482b6dcd7a4",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 174.4724469837401
+      },
+      {
+        "id": "285fe123-334d-4a0b-9e87-16ed5429835d",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 189.24755683082722
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-213",
+    "candidateType": "bitterweed",
+    "candidateTypeName": "Bitterweed",
+    "candidateX": 3854.129453806489,
+    "candidateY": 1924.8898936955047,
+    "nearbyMarkers": [
+      {
+        "id": "59694e1b-d266-4a7a-be55-e51e4468f333",
+        "name": "English Mace",
+        "type": "english-mace",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 85.93957505565758
+      },
+      {
+        "id": "174d1fa5-22c1-4853-8bef-9d22d8abb1b0",
+        "name": "English Mace",
+        "type": "english-mace",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 140.38721753686852
+      }
+    ]
+  },
+  {
+    "candidateId": "wildflower-candidate-214",
+    "candidateType": "bitterweed",
+    "candidateTypeName": "Bitterweed",
+    "candidateX": 3423.1181882549995,
+    "candidateY": 1794.072827691136,
+    "nearbyMarkers": [
+      {
+        "id": "6fe29e2b-583f-4fdb-9023-a482b6dcd7a4",
+        "name": "Creeping Thyme",
+        "type": "creeping-thyme",
+        "status": "verified",
+        "confidence": "exact",
+        "distance": 39.686000582360116
+      },
+      {
+        "id": "285fe123-334d-4a0b-9e87-16ed5429835d",
+        "name": "Wild Rhubarb",
+        "type": "wild-rhubarb",
+        "status": "verified",
+        "confidence": "approximate",
+        "distance": 141.1386509623421
+      }
+    ]
+  }
+]

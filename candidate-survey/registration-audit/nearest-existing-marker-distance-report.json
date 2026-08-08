@@ -1,0 +1,9 @@
+{
+  "matchingRule": "Nearest same-type existing Herb marker only.",
+  "alreadyCoveredRadius": 125,
+  "possibleMatchRadius": 300,
+  "previousSimpleRasterScalingMedianDistance": 1664.4913390352297,
+  "currentRegistrationMedianDistance": 757.477425390268,
+  "currentSameTypeCandidateCount": 146,
+  "samplePath": "C:\\Users\\kjbro\\OneDrive\\Documents\\GitHub\\rathan-map\\candidate-survey\\registration-audit\\nearest-existing-marker-sample.csv"
+}

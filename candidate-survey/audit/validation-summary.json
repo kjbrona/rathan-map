@@ -1,0 +1,54 @@
+{
+  "totalDetections": 235,
+  "validClassifiedDetections": 225,
+  "unresolvedDetections": 10,
+  "likelyFalseDetections": "0 confirmed; 10 unresolved detections need manual visual review.",
+  "mergedCandidateCount": 215,
+  "mergedDuplicateGroups": 9,
+  "duplicateMemberDetections": 19,
+  "alreadyCovered": 4,
+  "possibleMatches": 9,
+  "newSurveyTargets": 202,
+  "classificationCounts": {
+    "New Survey Target": 202,
+    "Already Covered": 4,
+    "Possible Match": 9
+  },
+  "typeCounts": {
+    "Agarita": 32,
+    "Bitterweed": 44,
+    "Blood Flower": 15,
+    "Cardinal Flower": 27,
+    "Chocolate Daisy": 12,
+    "Creek Plum": 15,
+    "Texas Bluebonnet": 27,
+    "Wild Rhubarb": 17,
+    "Wisteria": 26
+  },
+  "stateCountsFromDetections": {
+    "Unknown": 105,
+    "New Austin": 7,
+    "West Elizabeth": 43,
+    "Lemoyne": 42,
+    "New Hanover": 23,
+    "Ambarino": 5
+  },
+  "digitScoreMin": 0.42,
+  "digitScoreMedian": 0.67,
+  "lowConfidenceClassifiedCount": 16,
+  "mergeDistance": 85.0,
+  "alreadyCoveredDistance": 125.0,
+  "possibleMatchDistance": 300.0,
+  "alignmentConfidence": "Medium-High",
+  "classificationConfidence": "Medium",
+  "duplicateMergingConfidence": "Medium-High",
+  "existingMarkerMatchingConfidence": "Medium-High",
+  "recommendation": "Proceed after corrections",
+  "missingOrMismatchedTypeIds": 3,
+  "auditImages": [
+    "candidate-survey\\audit\\alignment-explorer-audit.jpg",
+    "candidate-survey\\audit\\rdo-wildflower-reference-map-a-audit.png",
+    "candidate-survey\\audit\\rdo-wildflower-reference-map-c-audit.png",
+    "candidate-survey\\audit\\rdo-wildflower-reference-map-b-audit.png"
+  ]
+}

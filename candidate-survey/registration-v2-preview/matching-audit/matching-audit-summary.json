@@ -1,0 +1,93 @@
+{
+  "candidateCount": 220,
+  "existingHerbMarkerCount": 281,
+  "currentClassificationLogic": {
+    "alreadyCovered": "nearest same-type existing Herb marker distance <= 125",
+    "possibleMatch": "nearest same-type existing Herb marker distance > 125 and <= 300",
+    "needsSurvey": "no same-type existing Herb marker within 300, including candidates with no same-type existing marker",
+    "sameTypeRequired": true,
+    "existingStatusAffectsClassification": false,
+    "existingConfidenceAffectsClassification": false
+  },
+  "sameTypeDistanceDistribution": {
+    "totalWithMatch": 144,
+    "noMatch": 76,
+    "within": {
+      "50": 23,
+      "100": 32,
+      "125": 35,
+      "150": 42,
+      "200": 49,
+      "250": 57,
+      "300": 63,
+      "400": 69,
+      "500": 77
+    },
+    "median": 451.1017148379991,
+    "p75": 2588.903977295397,
+    "p90": 3803.9956917162203,
+    "max": 4663.808331736625
+  },
+  "anyTypeDistanceDistribution": {
+    "totalWithMatch": 220,
+    "noMatch": 0,
+    "within": {
+      "50": 59,
+      "100": 95,
+      "125": 108,
+      "150": 117,
+      "200": 143,
+      "250": 162,
+      "300": 174,
+      "400": 196,
+      "500": 206
+    },
+    "median": 127.40350955593766,
+    "p75": 253.27729454327735,
+    "p90": 406.83960283296966,
+    "max": 833.9522778799078
+  },
+  "typeMismatchCount": 68,
+  "nearbyDifferentHerbCount": 73,
+  "malformedOrUnknownCandidateTypeIds": [],
+  "thresholdOptions": {
+    "current": {
+      "alreadyCoveredThreshold": 125.0,
+      "possibleMatchThreshold": 300.0,
+      "alreadyCovered": 35,
+      "possibleMatch": 28,
+      "needsSurvey": 157,
+      "likelyFalseMatchRisk": "low",
+      "nearbyDifferentHerbAtAlreadyThreshold": 73
+    },
+    "optionA": {
+      "alreadyCoveredThreshold": 150.0,
+      "possibleMatchThreshold": 350.0,
+      "alreadyCovered": 42,
+      "possibleMatch": 25,
+      "needsSurvey": 153,
+      "likelyFalseMatchRisk": "low",
+      "nearbyDifferentHerbAtAlreadyThreshold": 75
+    },
+    "optionB": {
+      "alreadyCoveredThreshold": 200.0,
+      "possibleMatchThreshold": 400.0,
+      "alreadyCovered": 49,
+      "possibleMatch": 20,
+      "needsSurvey": 151,
+      "likelyFalseMatchRisk": "medium",
+      "nearbyDifferentHerbAtAlreadyThreshold": 94
+    },
+    "optionC": {
+      "alreadyCoveredThreshold": 250.0,
+      "possibleMatchThreshold": 500.0,
+      "alreadyCovered": 57,
+      "possibleMatch": 20,
+      "needsSurvey": 143,
+      "likelyFalseMatchRisk": "higher",
+      "nearbyDifferentHerbAtAlreadyThreshold": 105
+    }
+  },
+  "clusteredCandidateCount": 111,
+  "recommendation": "Correct type mappings / manually review mismatched clusters before changing thresholds"
+}

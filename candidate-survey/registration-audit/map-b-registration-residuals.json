@@ -1,0 +1,275 @@
+{
+  "model": "affine",
+  "controlPointCount": 16,
+  "transform": [
+    [
+      4.5,
+      1.2636476556083352e-15,
+      -1.960990517416164e-12
+    ],
+    [
+      8.109068971862143e-13,
+      -4.750000000001552,
+      7167.999999999999
+    ]
+  ],
+  "meanError": 5.54736523741509e-10,
+  "rmsError": 7.257877328105738e-10,
+  "maxError": 1.7571438226694153e-09,
+  "worstPoints": [
+    {
+      "name": "Tumbleweed",
+      "sourceX": 255,
+      "sourceY": 1265,
+      "expectedX": 1147.5,
+      "expectedY": 1159.25,
+      "calculatedX": 1147.4999999999995,
+      "calculatedY": 1159.2499999982429,
+      "xResidual": -4.547473508864641e-13,
+      "yResidual": -1.7571437638252974e-09,
+      "distanceError": 1.7571438226694153e-09
+    },
+    {
+      "name": "Armadillo",
+      "sourceX": 635,
+      "sourceY": 1110,
+      "expectedX": 2857.5,
+      "expectedY": 1895.5,
+      "calculatedX": 2857.4999999999995,
+      "calculatedY": 1895.4999999987913,
+      "xResidual": -4.547473508864641e-13,
+      "yResidual": -1.2087184586562216e-09,
+      "distanceError": 1.2087185441993621e-09
+    },
+    {
+      "name": "MacFarlane's Ranch",
+      "sourceX": 800,
+      "sourceY": 1110,
+      "expectedX": 3600.0,
+      "expectedY": 1895.5,
+      "calculatedX": 3599.9999999999995,
+      "calculatedY": 1895.499999998925,
+      "xResidual": -4.547473508864641e-13,
+      "yResidual": -1.0750227374956012e-09,
+      "distanceError": 1.0750228336773547e-09
+    },
+    {
+      "name": "Annesburg",
+      "sourceX": 1835,
+      "sourceY": 375,
+      "expectedX": 8257.5,
+      "expectedY": 5386.75,
+      "calculatedX": 8257.499999999998,
+      "calculatedY": 5386.750000000905,
+      "xResidual": -1.8189894035458565e-12,
+      "yResidual": 9.049472282640636e-10,
+      "distanceError": 9.049490563922709e-10
+    },
+    {
+      "name": "Van Horn",
+      "sourceX": 1990,
+      "sourceY": 515,
+      "expectedX": 8955.0,
+      "expectedY": 4721.75,
+      "calculatedX": 8954.999999999998,
+      "calculatedY": 4721.750000000814,
+      "xResidual": -1.8189894035458565e-12,
+      "yResidual": 8.139977580867708e-10,
+      "distanceError": 8.139997904746286e-10
+    }
+  ],
+  "residuals": [
+    {
+      "name": "Colter",
+      "sourceX": 1015,
+      "sourceY": 100,
+      "expectedX": 4567.5,
+      "expectedY": 6693.0,
+      "calculatedX": 4567.499999999998,
+      "calculatedY": 6693.000000000667,
+      "xResidual": -1.8189894035458565e-12,
+      "yResidual": 6.666596163995564e-10,
+      "distanceError": 6.666620979630189e-10
+    },
+    {
+      "name": "Wallace Station",
+      "sourceX": 1060,
+      "sourceY": 500,
+      "expectedX": 4770.0,
+      "expectedY": 4793.0,
+      "calculatedX": 4769.999999999999,
+      "calculatedY": 4793.000000000083,
+      "xResidual": -9.094947017729282e-13,
+      "yResidual": 8.276401786133647e-11,
+      "distanceError": 8.276901493411755e-11
+    },
+    {
+      "name": "Strawberry",
+      "sourceX": 915,
+      "sourceY": 690,
+      "expectedX": 4117.5,
+      "expectedY": 3890.5,
+      "calculatedX": 4117.499999999999,
+      "calculatedY": 3890.4999999996708,
+      "xResidual": -9.094947017729282e-13,
+      "yResidual": -3.292370820418e-10,
+      "distanceError": 3.292383382475551e-10
+    },
+    {
+      "name": "Blackwater",
+      "sourceX": 1130,
+      "sourceY": 885,
+      "expectedX": 5085.0,
+      "expectedY": 2964.25,
+      "calculatedX": 5084.999999999999,
+      "calculatedY": 2964.2499999995425,
+      "xResidual": -9.094947017729282e-13,
+      "yResidual": -4.574758349917829e-10,
+      "distanceError": 4.5747673906116966e-10
+    },
+    {
+      "name": "Valentine",
+      "sourceX": 1245,
+      "sourceY": 520,
+      "expectedX": 5602.5,
+      "expectedY": 4698.0,
+      "calculatedX": 5602.499999999999,
+      "calculatedY": 4698.000000000202,
+      "xResidual": -9.094947017729282e-13,
+      "yResidual": 2.0190782379359007e-10,
+      "distanceError": 2.019098721946898e-10
+    },
+    {
+      "name": "Emerald Ranch",
+      "sourceX": 1615,
+      "sourceY": 530,
+      "expectedX": 7267.5,
+      "expectedY": 4650.5,
+      "calculatedX": 7267.499999999999,
+      "calculatedY": 4650.500000000487,
+      "xResidual": -9.094947017729282e-13,
+      "yResidual": 4.865796654485166e-10,
+      "distanceError": 4.865805154428226e-10
+    },
+    {
+      "name": "Rhodes",
+      "sourceX": 1575,
+      "sourceY": 890,
+      "expectedX": 7087.5,
+      "expectedY": 2940.5,
+      "calculatedX": 7087.499999999999,
+      "calculatedY": 2940.4999999998954,
+      "xResidual": -9.094947017729282e-13,
+      "yResidual": -1.0459189070388675e-10,
+      "distanceError": 1.0459584495392895e-10
+    },
+    {
+      "name": "Saint Denis",
+      "sourceX": 1828,
+      "sourceY": 890,
+      "expectedX": 8226.0,
+      "expectedY": 2940.5,
+      "calculatedX": 8226.0,
+      "calculatedY": 2940.500000000101,
+      "xResidual": 0.0,
+      "yResidual": 1.0095391189679503e-10,
+      "distanceError": 1.0095391189679503e-10
+    },
+    {
+      "name": "Van Horn",
+      "sourceX": 1990,
+      "sourceY": 515,
+      "expectedX": 8955.0,
+      "expectedY": 4721.75,
+      "calculatedX": 8954.999999999998,
+      "calculatedY": 4721.750000000814,
+      "xResidual": -1.8189894035458565e-12,
+      "yResidual": 8.139977580867708e-10,
+      "distanceError": 8.139997904746286e-10
+    },
+    {
+      "name": "Annesburg",
+      "sourceX": 1835,
+      "sourceY": 375,
+      "expectedX": 8257.5,
+      "expectedY": 5386.75,
+      "calculatedX": 8257.499999999998,
+      "calculatedY": 5386.750000000905,
+      "xResidual": -1.8189894035458565e-12,
+      "yResidual": 9.049472282640636e-10,
+      "distanceError": 9.049490563922709e-10
+    },
+    {
+      "name": "Tumbleweed",
+      "sourceX": 255,
+      "sourceY": 1265,
+      "expectedX": 1147.5,
+      "expectedY": 1159.25,
+      "calculatedX": 1147.4999999999995,
+      "calculatedY": 1159.2499999982429,
+      "xResidual": -4.547473508864641e-13,
+      "yResidual": -1.7571437638252974e-09,
+      "distanceError": 1.7571438226694153e-09
+    },
+    {
+      "name": "Armadillo",
+      "sourceX": 635,
+      "sourceY": 1110,
+      "expectedX": 2857.5,
+      "expectedY": 1895.5,
+      "calculatedX": 2857.4999999999995,
+      "calculatedY": 1895.4999999987913,
+      "xResidual": -4.547473508864641e-13,
+      "yResidual": -1.2087184586562216e-09,
+      "distanceError": 1.2087185441993621e-09
+    },
+    {
+      "name": "MacFarlane's Ranch",
+      "sourceX": 800,
+      "sourceY": 1110,
+      "expectedX": 3600.0,
+      "expectedY": 1895.5,
+      "calculatedX": 3599.9999999999995,
+      "calculatedY": 1895.499999998925,
+      "xResidual": -4.547473508864641e-13,
+      "yResidual": -1.0750227374956012e-09,
+      "distanceError": 1.0750228336773547e-09
+    },
+    {
+      "name": "Flatneck Station",
+      "sourceX": 1230,
+      "sourceY": 720,
+      "expectedX": 5535.0,
+      "expectedY": 3748.0,
+      "calculatedX": 5534.999999999999,
+      "calculatedY": 3747.999999999879,
+      "xResidual": -9.094947017729282e-13,
+      "yResidual": -1.2096279533579946e-10,
+      "distanceError": 1.2096621444049184e-10
+    },
+    {
+      "name": "Braithwaite Manor",
+      "sourceX": 1610,
+      "sourceY": 1010,
+      "expectedX": 7245.0,
+      "expectedY": 2370.5,
+      "calculatedX": 7244.999999999999,
+      "calculatedY": 2370.499999999737,
+      "xResidual": -9.094947017729282e-13,
+      "yResidual": -2.6284396881237626e-10,
+      "distanceError": 2.628455423279116e-10
+    },
+    {
+      "name": "Sisika Island Shoreline",
+      "sourceX": 2000,
+      "sourceY": 850,
+      "expectedX": 9000.0,
+      "expectedY": 3130.5,
+      "calculatedX": 9000.0,
+      "calculatedY": 3130.500000000302,
+      "xResidual": 0.0,
+      "yResidual": 3.019522409886122e-10,
+      "distanceError": 3.019522409886122e-10
+    }
+  ]
+}

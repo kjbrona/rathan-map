@@ -1,0 +1,714 @@
+{
+  "candidateCount": 220,
+  "pairCount": 21,
+  "verifiedPairCount": 21,
+  "globalOffsetValid": false,
+  "globalOffsetReason": "Residual vectors differ by direction and magnitude.",
+  "acceptanceCriteriaMet": false,
+  "acceptanceRecommendation": "Add specific regional samples first",
+  "meaningfulCandidateCountThreshold": 5,
+  "globalErrors": {
+    "count": 21,
+    "medianError": 14.056105435005902,
+    "rmsError": 32.20257413550015,
+    "maxError": 104.82274228429645
+  },
+  "candidateCoverage": {
+    "byState": {
+      "Lemoyne": 59,
+      "New Austin": 65,
+      "New Hanover": 33,
+      "Unknown": 1,
+      "West Elizabeth": 62
+    },
+    "byRegion": {
+      "middle-central": 68,
+      "middle-east": 67,
+      "middle-west": 3,
+      "north-central": 4,
+      "north-east": 18,
+      "south-central": 21,
+      "south-west": 39
+    },
+    "exemptStates": [
+      "Ambarino"
+    ],
+    "exemptRegions": [
+      "north-west",
+      "south-east"
+    ]
+  },
+  "residualCoverage": {
+    "byState": {
+      "Lemoyne": 2,
+      "New Austin": 4,
+      "New Hanover": 3,
+      "West Elizabeth": 12
+    },
+    "byRegion": {
+      "middle-central": 14,
+      "middle-east": 3,
+      "south-west": 4
+    }
+  },
+  "candidateNearestResidualDistance": {
+    "median": 501.6642652543695,
+    "p75": 771.1592276239965,
+    "p90": 1227.5270520809388,
+    "max": 2710.3413061224733,
+    "fartherThan": {
+      "500": 110,
+      "1000": 36,
+      "1500": 16
+    }
+  },
+  "coverageDensity": {
+    "middle-central": {
+      "candidateCount": 68,
+      "residualPairCount": 14,
+      "candidatesPerResidual": 4.857142857142857
+    },
+    "middle-east": {
+      "candidateCount": 67,
+      "residualPairCount": 3,
+      "candidatesPerResidual": 22.333333333333332
+    },
+    "middle-west": {
+      "candidateCount": 3,
+      "residualPairCount": 0,
+      "candidatesPerResidual": null
+    },
+    "north-central": {
+      "candidateCount": 4,
+      "residualPairCount": 0,
+      "candidatesPerResidual": null
+    },
+    "north-east": {
+      "candidateCount": 18,
+      "residualPairCount": 0,
+      "candidatesPerResidual": null
+    },
+    "south-central": {
+      "candidateCount": 21,
+      "residualPairCount": 0,
+      "candidatesPerResidual": null
+    },
+    "south-west": {
+      "candidateCount": 39,
+      "residualPairCount": 4,
+      "candidatesPerResidual": 9.75
+    }
+  },
+  "spatialCrossValidation": {
+    "middle-central": {
+      "status": "evaluated",
+      "residualPairCount": 14,
+      "candidateCount": 68,
+      "count": 14,
+      "medianError": 49.75217560220212,
+      "rmsError": 51.51707116843689,
+      "maxError": 76.71575909207716
+    },
+    "middle-east": {
+      "status": "evaluated",
+      "residualPairCount": 3,
+      "candidateCount": 67,
+      "count": 3,
+      "medianError": 29.229279161271002,
+      "rmsError": 25.42112913294308,
+      "maxError": 32.778473837641876
+    },
+    "south-west": {
+      "status": "evaluated",
+      "residualPairCount": 4,
+      "candidateCount": 39,
+      "count": 4,
+      "medianError": 42.67796862130871,
+      "rmsError": 60.855882240235715,
+      "maxError": 99.7785215633339
+    },
+    "middle-west": {
+      "status": "no-residual-coverage",
+      "reason": "Candidate-bearing region has no verified residual pairs.",
+      "residualPairCount": 0,
+      "candidateCount": 3
+    },
+    "north-central": {
+      "status": "no-residual-coverage",
+      "reason": "Candidate-bearing region has no verified residual pairs.",
+      "residualPairCount": 0,
+      "candidateCount": 4
+    },
+    "north-east": {
+      "status": "no-residual-coverage",
+      "reason": "Candidate-bearing region has no verified residual pairs.",
+      "residualPairCount": 0,
+      "candidateCount": 18
+    },
+    "south-central": {
+      "status": "no-residual-coverage",
+      "reason": "Candidate-bearing region has no verified residual pairs.",
+      "residualPairCount": 0,
+      "candidateCount": 21
+    }
+  },
+  "recommendedAdditionalSamples": [
+    "south-central: add first verified residual pairs for 21 candidates.",
+    "north-east: add first verified residual pairs for 18 candidates.",
+    "middle-east: add more samples; 67 candidates share 3 residual pairs.",
+    "south-west: add more samples; 39 candidates share 4 residual pairs.",
+    "Add samples near candidates farther than 1000 units from any verified residual pair."
+  ],
+  "pairs": [
+    {
+      "id": "residual-001",
+      "candidateId": "wildflower-candidate-103",
+      "candidate": {
+        "x": 6173.93,
+        "y": 3773.07
+      },
+      "confirmed": {
+        "x": 6172.13,
+        "y": 3762.54
+      },
+      "residual": {
+        "x": -1.800000000000182,
+        "y": -10.5300000000002
+      },
+      "verifiedSameLocation": true,
+      "notes": "",
+      "distanceError": 10.682738412972812,
+      "stateOrRegion": "New Hanover",
+      "spatialRegion": "middle-east",
+      "candidateHerbType": "Chocolate Daisy",
+      "candidateTypeDistance": 0.003489050238505357,
+      "confirmedMarkerType": "chocolate-daisy",
+      "confirmedMarkerName": "Chocolate Daisy",
+      "confirmedMarkerDistance": 0.003286088121051798
+    },
+    {
+      "id": "residual-002",
+      "candidateId": "wildflower-candidate-120",
+      "candidate": {
+        "x": 5217.97,
+        "y": 2739.07
+      },
+      "confirmed": {
+        "x": 5216.0,
+        "y": 2728.0
+      },
+      "residual": {
+        "x": -1.9700000000002547,
+        "y": -11.070000000000164
+      },
+      "verifiedSameLocation": true,
+      "notes": "",
+      "distanceError": 11.24392280300806,
+      "stateOrRegion": "West Elizabeth",
+      "spatialRegion": "middle-central",
+      "candidateHerbType": "Texas Bluebonnet",
+      "candidateTypeDistance": 0.0044900018968616,
+      "confirmedMarkerType": "texas-bluebonnet",
+      "confirmedMarkerName": "Texas Bluebonnet",
+      "confirmedMarkerDistance": 0.0
+    },
+    {
+      "id": "residual-003",
+      "candidateId": "wildflower-candidate-049",
+      "candidate": {
+        "x": 5060.55,
+        "y": 2739.45
+      },
+      "confirmed": {
+        "x": 5060.0,
+        "y": 2736.0
+      },
+      "residual": {
+        "x": -0.5500000000001819,
+        "y": -3.449999999999818
+      },
+      "verifiedSameLocation": true,
+      "notes": "",
+      "distanceError": 3.4935655139125337,
+      "stateOrRegion": "West Elizabeth",
+      "spatialRegion": "middle-central",
+      "candidateHerbType": "Texas Bluebonnet",
+      "candidateTypeDistance": 0.004877215115011624,
+      "confirmedMarkerType": "texas-bluebonnet",
+      "confirmedMarkerName": "Texas Bluebonnet",
+      "confirmedMarkerDistance": 0.0
+    },
+    {
+      "id": "residual-004",
+      "candidateId": "wildflower-candidate-042",
+      "candidate": {
+        "x": 5238.31,
+        "y": 3029.26
+      },
+      "confirmed": {
+        "x": 5269.0,
+        "y": 3015.0
+      },
+      "residual": {
+        "x": 30.6899999999996,
+        "y": -14.260000000000218
+      },
+      "verifiedSameLocation": true,
+      "notes": "",
+      "distanceError": 33.84115394013599,
+      "stateOrRegion": "West Elizabeth",
+      "spatialRegion": "middle-central",
+      "candidateHerbType": "Texas Bluebonnet",
+      "candidateTypeDistance": 0.00517531938247016,
+      "confirmedMarkerType": "texas-bluebonnet",
+      "confirmedMarkerName": "Texas Bluebonnet",
+      "confirmedMarkerDistance": 0.0
+    },
+    {
+      "id": "residual-005",
+      "candidateId": "wildflower-candidate-040",
+      "candidate": {
+        "x": 5285.3,
+        "y": 3098.84
+      },
+      "confirmed": {
+        "x": 5259.0,
+        "y": 3098.0
+      },
+      "residual": {
+        "x": -26.300000000000182,
+        "y": -0.8400000000001455
+      },
+      "verifiedSameLocation": true,
+      "notes": "",
+      "distanceError": 26.31341102935934,
+      "stateOrRegion": "West Elizabeth",
+      "spatialRegion": "middle-central",
+      "candidateHerbType": "Texas Bluebonnet",
+      "candidateTypeDistance": 0.001475682364823417,
+      "confirmedMarkerType": "texas-bluebonnet",
+      "confirmedMarkerName": "Texas Bluebonnet",
+      "confirmedMarkerDistance": 0.0
+    },
+    {
+      "id": "residual-006",
+      "candidateId": "wildflower-candidate-195",
+      "candidate": {
+        "x": 4936.4,
+        "y": 2824.47
+      },
+      "confirmed": {
+        "x": 4969.94,
+        "y": 2849.75
+      },
+      "residual": {
+        "x": 33.539999999999964,
+        "y": 25.2800000000002
+      },
+      "verifiedSameLocation": true,
+      "notes": "",
+      "distanceError": 42.00011904745042,
+      "stateOrRegion": "West Elizabeth",
+      "spatialRegion": "middle-central",
+      "candidateHerbType": "Texas Bluebonnet",
+      "candidateTypeDistance": 0.0045163185038775994,
+      "confirmedMarkerType": "texas-bluebonnet",
+      "confirmedMarkerName": "Texas Bluebonnet",
+      "confirmedMarkerDistance": 0.0034498991362143894
+    },
+    {
+      "id": "residual-007",
+      "candidateId": "wildflower-candidate-119",
+      "candidate": {
+        "x": 3989.78,
+        "y": 2779.24
+      },
+      "confirmed": {
+        "x": 3983.0,
+        "y": 2769.0
+      },
+      "residual": {
+        "x": -6.7800000000002,
+        "y": -10.239999999999782
+      },
+      "verifiedSameLocation": true,
+      "notes": "",
+      "distanceError": 12.281123727086143,
+      "stateOrRegion": "West Elizabeth",
+      "spatialRegion": "middle-central",
+      "candidateHerbType": "Wisteria",
+      "candidateTypeDistance": 0.0009616770640764561,
+      "confirmedMarkerType": "wisteria",
+      "confirmedMarkerName": "Wisteria",
+      "confirmedMarkerDistance": 0.0
+    },
+    {
+      "id": "residual-008",
+      "candidateId": "wildflower-candidate-217",
+      "candidate": {
+        "x": 2561.09,
+        "y": 1540.62
+      },
+      "confirmed": {
+        "x": 2528.66,
+        "y": 1640.3
+      },
+      "residual": {
+        "x": -32.43000000000029,
+        "y": 99.68000000000006
+      },
+      "verifiedSameLocation": true,
+      "notes": "",
+      "distanceError": 104.82274228429645,
+      "stateOrRegion": "New Austin",
+      "spatialRegion": "south-west",
+      "candidateHerbType": "Texas Bluebonnet",
+      "candidateTypeDistance": 0.0022546052749035936,
+      "confirmedMarkerType": "texas-bluebonnet",
+      "confirmedMarkerName": "Texas Bluebonnet",
+      "confirmedMarkerDistance": 0.005187662407878159
+    },
+    {
+      "id": "residual-009",
+      "candidateId": "wildflower-candidate-068",
+      "candidate": {
+        "x": 1945.56,
+        "y": 1888.38
+      },
+      "confirmed": {
+        "x": 2012.45,
+        "y": 1894.75
+      },
+      "residual": {
+        "x": 66.8900000000001,
+        "y": 6.369999999999891
+      },
+      "verifiedSameLocation": true,
+      "notes": "",
+      "distanceError": 67.19262608352209,
+      "stateOrRegion": "New Austin",
+      "spatialRegion": "south-west",
+      "candidateHerbType": "Wild Rhubarb",
+      "candidateTypeDistance": 0.001311659588939683,
+      "confirmedMarkerType": "wild-rhubarb",
+      "confirmedMarkerName": "Wild Rhubarb",
+      "confirmedMarkerDistance": 0.002168973164026695
+    },
+    {
+      "id": "residual-010",
+      "candidateId": "wildflower-candidate-070",
+      "candidate": {
+        "x": 1351.16,
+        "y": 1724.71
+      },
+      "confirmed": {
+        "x": 1352.0,
+        "y": 1710.0
+      },
+      "residual": {
+        "x": 0.8399999999999181,
+        "y": -14.710000000000036
+      },
+      "verifiedSameLocation": true,
+      "notes": "",
+      "distanceError": 14.733964164473896,
+      "stateOrRegion": "New Austin",
+      "spatialRegion": "south-west",
+      "candidateHerbType": "Texas Bluebonnet",
+      "candidateTypeDistance": 0.006083022276996628,
+      "confirmedMarkerType": "texas-bluebonnet",
+      "confirmedMarkerName": "Texas Blue Bonnet",
+      "confirmedMarkerDistance": 0.0
+    },
+    {
+      "id": "residual-011",
+      "candidateId": "wildflower-candidate-216",
+      "candidate": {
+        "x": 1167.66,
+        "y": 1593.94
+      },
+      "confirmed": {
+        "x": 1161.25,
+        "y": 1585.56
+      },
+      "residual": {
+        "x": -6.410000000000082,
+        "y": -8.38000000000011
+      },
+      "verifiedSameLocation": true,
+      "notes": "",
+      "distanceError": 10.550473923004732,
+      "stateOrRegion": "New Austin",
+      "spatialRegion": "south-west",
+      "candidateHerbType": "Texas Bluebonnet",
+      "candidateTypeDistance": 0.003907846860824703,
+      "confirmedMarkerType": "texas-bluebonnet",
+      "confirmedMarkerName": "Texas Blue Bonnet",
+      "confirmedMarkerDistance": 0.001492602534803246
+    },
+    {
+      "id": "residual-012",
+      "candidateId": "wildflower-candidate-186",
+      "candidate": {
+        "x": 4243.38,
+        "y": 3454.33
+      },
+      "confirmed": {
+        "x": 4239.33,
+        "y": 3440.87
+      },
+      "residual": {
+        "x": -4.050000000000182,
+        "y": -13.460000000000036
+      },
+      "verifiedSameLocation": true,
+      "notes": "",
+      "distanceError": 14.056105435005902,
+      "stateOrRegion": "West Elizabeth",
+      "spatialRegion": "middle-central",
+      "candidateHerbType": "Wisteria",
+      "candidateTypeDistance": 0.005818001308744365,
+      "confirmedMarkerType": "indian-tobacco",
+      "confirmedMarkerName": "Indian Tobacco",
+      "confirmedMarkerDistance": 42.082606858416106
+    },
+    {
+      "id": "residual-013",
+      "candidateId": "wildflower-candidate-109",
+      "candidate": {
+        "x": 4202.0,
+        "y": 3526.89
+      },
+      "confirmed": {
+        "x": 4197.95,
+        "y": 3518.37
+      },
+      "residual": {
+        "x": -4.050000000000182,
+        "y": -8.519999999999982
+      },
+      "verifiedSameLocation": true,
+      "notes": "",
+      "distanceError": 9.43360482530412,
+      "stateOrRegion": "West Elizabeth",
+      "spatialRegion": "middle-central",
+      "candidateHerbType": "Wisteria",
+      "candidateTypeDistance": 0.0037488967695851086,
+      "confirmedMarkerType": "indian-tobacco",
+      "confirmedMarkerName": "Indian Tobacco",
+      "confirmedMarkerDistance": 65.71087733396969
+    },
+    {
+      "id": "residual-014",
+      "candidateId": "wildflower-candidate-035",
+      "candidate": {
+        "x": 4366.23,
+        "y": 3396.27
+      },
+      "confirmed": {
+        "x": 4379.0,
+        "y": 3396.0
+      },
+      "residual": {
+        "x": 12.770000000000437,
+        "y": -0.2699999999999818
+      },
+      "verifiedSameLocation": true,
+      "notes": "",
+      "distanceError": 12.772854027194201,
+      "stateOrRegion": "West Elizabeth",
+      "spatialRegion": "middle-central",
+      "candidateHerbType": "Wisteria",
+      "candidateTypeDistance": 0.0035484989185103045,
+      "confirmedMarkerType": "wisteria",
+      "confirmedMarkerName": "Wisteria",
+      "confirmedMarkerDistance": 0.0
+    },
+    {
+      "id": "residual-015",
+      "candidateId": "wildflower-candidate-188",
+      "candidate": {
+        "x": 4361.96,
+        "y": 3319.37
+      },
+      "confirmed": {
+        "x": 4358.0,
+        "y": 3305.0
+      },
+      "residual": {
+        "x": -3.9600000000000364,
+        "y": -14.36999999999989
+      },
+      "verifiedSameLocation": true,
+      "notes": "",
+      "distanceError": 14.905653289943288,
+      "stateOrRegion": "West Elizabeth",
+      "spatialRegion": "middle-central",
+      "candidateHerbType": "Chocolate Daisy",
+      "candidateTypeDistance": 0.005119135460916376,
+      "confirmedMarkerType": "chocolate-daisy",
+      "confirmedMarkerName": "Chocolate Daisy",
+      "confirmedMarkerDistance": 0.0
+    },
+    {
+      "id": "residual-016",
+      "candidateId": "wildflower-candidate-185",
+      "candidate": {
+        "x": 4472.18,
+        "y": 3487.03
+      },
+      "confirmed": {
+        "x": 4473.0,
+        "y": 3485.0
+      },
+      "residual": {
+        "x": 0.819999999999709,
+        "y": -2.0300000000002
+      },
+      "verifiedSameLocation": true,
+      "notes": "",
+      "distanceError": 2.189360637263842,
+      "stateOrRegion": "West Elizabeth",
+      "spatialRegion": "middle-central",
+      "candidateHerbType": "Chocolate Daisy",
+      "candidateTypeDistance": 0.0057704618990816895,
+      "confirmedMarkerType": "chocolate-daisy",
+      "confirmedMarkerName": "Chocolate Daisy",
+      "confirmedMarkerDistance": 0.0
+    },
+    {
+      "id": "residual-017",
+      "candidateId": "wildflower-candidate-181",
+      "candidate": {
+        "x": 5007.44,
+        "y": 3548.31
+      },
+      "confirmed": {
+        "x": 5013.92,
+        "y": 3537.84
+      },
+      "residual": {
+        "x": 6.480000000000473,
+        "y": -10.4699999999998
+      },
+      "verifiedSameLocation": true,
+      "notes": "",
+      "distanceError": 12.313054048448011,
+      "stateOrRegion": "West Elizabeth",
+      "spatialRegion": "middle-central",
+      "candidateHerbType": "Chocolate Daisy",
+      "candidateTypeDistance": 0.0025296824890114235,
+      "confirmedMarkerType": "chocolate-daisy",
+      "confirmedMarkerName": "Chocolate Daisy",
+      "confirmedMarkerDistance": 0.003061465811653216
+    },
+    {
+      "id": "residual-018",
+      "candidateId": "wildflower-candidate-097",
+      "candidate": {
+        "x": 5605.79,
+        "y": 3862.62
+      },
+      "confirmed": {
+        "x": 5601.0,
+        "y": 3860.0
+      },
+      "residual": {
+        "x": -4.789999999999964,
+        "y": -2.619999999999891
+      },
+      "verifiedSameLocation": true,
+      "notes": "",
+      "distanceError": 5.459716109835664,
+      "stateOrRegion": "New Hanover",
+      "spatialRegion": "middle-central",
+      "candidateHerbType": "Chocolate Daisy",
+      "candidateTypeDistance": 0.004354177129163104,
+      "confirmedMarkerType": "chocolate-daisy",
+      "confirmedMarkerName": "Chocolate Daisy",
+      "confirmedMarkerDistance": 0.0
+    },
+    {
+      "id": "residual-019",
+      "candidateId": "wildflower-candidate-096",
+      "candidate": {
+        "x": 5769.26,
+        "y": 3887.22
+      },
+      "confirmed": {
+        "x": 5768.0,
+        "y": 3870.0
+      },
+      "residual": {
+        "x": -1.2600000000002183,
+        "y": -17.2199999999998
+      },
+      "verifiedSameLocation": true,
+      "notes": "",
+      "distanceError": 17.266036024519167,
+      "stateOrRegion": "New Hanover",
+      "spatialRegion": "middle-central",
+      "candidateHerbType": "Chocolate Daisy",
+      "candidateTypeDistance": 0.004056893156193332,
+      "confirmedMarkerType": "chocolate-daisy",
+      "confirmedMarkerName": "Chocolate Daisy",
+      "confirmedMarkerDistance": 0.0
+    },
+    {
+      "id": "residual-020",
+      "candidateId": "wildflower-candidate-039",
+      "candidate": {
+        "x": 6439.32,
+        "y": 3140.39
+      },
+      "confirmed": {
+        "x": 6425.0,
+        "y": 3124.0
+      },
+      "residual": {
+        "x": -14.319999999999709,
+        "y": -16.389999999999873
+      },
+      "verifiedSameLocation": true,
+      "notes": "",
+      "distanceError": 21.764523886361207,
+      "stateOrRegion": "Lemoyne",
+      "spatialRegion": "middle-east",
+      "candidateHerbType": "Chanterelles",
+      "candidateTypeDistance": 0.006792899419225932,
+      "confirmedMarkerType": "chanterelles",
+      "confirmedMarkerName": "Chanterelles",
+      "confirmedMarkerDistance": 0.0
+    },
+    {
+      "id": "residual-021",
+      "candidateId": "wildflower-candidate-110",
+      "candidate": {
+        "x": 7441.05,
+        "y": 3508.25
+      },
+      "confirmed": {
+        "x": 7444.98,
+        "y": 3491.06
+      },
+      "residual": {
+        "x": 3.9299999999993815,
+        "y": -17.190000000000055
+      },
+      "verifiedSameLocation": true,
+      "notes": "",
+      "distanceError": 17.633519217671697,
+      "stateOrRegion": "Lemoyne",
+      "spatialRegion": "middle-east",
+      "candidateHerbType": "Cardinal Flower",
+      "candidateTypeDistance": 0.004155496794160473,
+      "confirmedMarkerType": "alaskan-ginseng",
+      "confirmedMarkerName": "Cardinal Flower",
+      "confirmedMarkerDistance": 0.0026646644923182506
+    }
+  ],
+  "outputs": {
+    "report": "C:\\Users\\kjbro\\OneDrive\\Documents\\GitHub\\rathan-map\\candidate-survey\\registration-v3-preview\\candidate-residual-calibration-report.md",
+    "overlay": "C:\\Users\\kjbro\\OneDrive\\Documents\\GitHub\\rathan-map\\candidate-survey\\registration-v3-preview\\candidate-residual-vectors.svg"
+  }
+}

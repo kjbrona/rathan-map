@@ -1,0 +1,722 @@
+[
+  {
+    "candidateId": "wildflower-candidate-220",
+    "originalType": "texas-bluebonnet",
+    "reviewDecision": "confirm-candidate-type",
+    "reviewedType": "parasol-mushroom",
+    "notes": "",
+    "reviewedAt": "2026-08-04T15:40:17-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-020",
+    "originalType": "agarita",
+    "reviewDecision": "change-candidate-type",
+    "reviewedType": "chocolate-daisy",
+    "notes": "Corrected from new 2026-08-05 field review/export comparison.",
+    "reviewedAt": "2026-08-05T19:59:12-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-021",
+    "originalType": "blood-flower",
+    "reviewDecision": "confirm-candidate-type",
+    "reviewedType": "chocolate-daisy",
+    "notes": "",
+    "reviewedAt": "2026-08-04T15:32:12-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-064",
+    "originalType": "bitterweed",
+    "reviewDecision": "confirm-candidate-type",
+    "reviewedType": "wild-rhubarb",
+    "notes": "",
+    "reviewedAt": "2026-08-04T15:32:42-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-069",
+    "originalType": "bitterweed",
+    "reviewDecision": "confirm-candidate-type",
+    "reviewedType": "wild-rhubarb",
+    "notes": "",
+    "reviewedAt": "2026-08-04T15:32:58-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-071",
+    "originalType": "texas-bluebonnet",
+    "reviewDecision": "confirm-candidate-type",
+    "reviewedType": "parasol-mushroom",
+    "notes": "",
+    "reviewedAt": "2026-08-04T15:33:08-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-100",
+    "originalType": "agarita",
+    "reviewDecision": "confirm-candidate-type",
+    "reviewedType": "hummingbird-sage",
+    "notes": "",
+    "reviewedAt": "2026-08-04T15:33:25-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-110",
+    "originalType": "cardinal-flower",
+    "reviewDecision": "confirm-candidate-type",
+    "reviewedType": "cardinal-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T15:33:43-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-125",
+    "originalType": "bitterweed",
+    "reviewDecision": "confirm-candidate-type",
+    "reviewedType": "wild-rhubarb",
+    "notes": "",
+    "reviewedAt": "2026-08-04T15:34:53-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-129",
+    "originalType": "agarita",
+    "reviewDecision": "change-candidate-type",
+    "reviewedType": "wild-rhubarb",
+    "notes": "Corrected from new 2026-08-05 field review/export comparison.",
+    "reviewedAt": "2026-08-05T19:59:12-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-134",
+    "originalType": "bitterweed",
+    "reviewDecision": "confirm-candidate-type",
+    "reviewedType": "wild-rhubarb",
+    "notes": "",
+    "reviewedAt": "2026-08-04T15:35:20-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-161",
+    "originalType": "agarita",
+    "reviewDecision": "change-candidate-type",
+    "reviewedType": "chocolate-daisy",
+    "notes": "Corrected from new 2026-08-05 field review/export comparison.",
+    "reviewedAt": "2026-08-05T19:59:12-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-159",
+    "originalType": "agarita",
+    "reviewDecision": "change-candidate-type",
+    "reviewedType": "chocolate-daisy",
+    "notes": "Corrected from new 2026-08-05 field review/export comparison.",
+    "reviewedAt": "2026-08-05T19:59:12-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-168",
+    "originalType": "agarita",
+    "reviewDecision": "change-candidate-type",
+    "reviewedType": "chocolate-daisy",
+    "notes": "Corrected from new 2026-08-05 field review/export comparison.",
+    "reviewedAt": "2026-08-05T19:59:12-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-172",
+    "originalType": "agarita",
+    "reviewDecision": "change-candidate-type",
+    "reviewedType": "chocolate-daisy",
+    "notes": "Corrected from new 2026-08-05 field review/export comparison.",
+    "reviewedAt": "2026-08-05T19:59:12-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-178",
+    "originalType": "agarita",
+    "reviewDecision": "confirm-candidate-type",
+    "reviewedType": "wild-mint",
+    "notes": "",
+    "reviewedAt": "2026-08-04T15:38:57-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-204",
+    "originalType": "bitterweed",
+    "reviewDecision": "confirm-candidate-type",
+    "reviewedType": "wild-rhubarb",
+    "notes": "",
+    "reviewedAt": "2026-08-04T15:39:39-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-205",
+    "originalType": "bitterweed",
+    "reviewDecision": "confirm-candidate-type",
+    "reviewedType": "wild-rhubarb",
+    "notes": "",
+    "reviewedAt": "2026-08-04T15:39:56-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-206",
+    "originalType": "bitterweed",
+    "reviewDecision": "confirm-candidate-type",
+    "reviewedType": "wild-rhubarb",
+    "notes": "",
+    "reviewedAt": "2026-08-04T15:40:07-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-008",
+    "originalType": "bitterweed",
+    "reviewDecision": "change-candidate-type",
+    "reviewedType": "alaskan-ginseng",
+    "notes": "",
+    "reviewedAt": "2026-08-04T15:46:50-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-015",
+    "originalType": "wild-rhubarb",
+    "reviewDecision": "change-candidate-type",
+    "reviewedType": "chocolate-daisy",
+    "notes": "",
+    "reviewedAt": "2026-08-04T15:47:07-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-039",
+    "originalType": "creek-plum",
+    "reviewDecision": "change-candidate-type",
+    "reviewedType": "chanterelles",
+    "notes": "",
+    "reviewedAt": "2026-08-04T15:47:28-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-181",
+    "originalType": "agarita",
+    "reviewDecision": "change-candidate-type",
+    "reviewedType": "chocolate-daisy",
+    "notes": "",
+    "reviewedAt": "2026-08-04T15:57:07-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-198",
+    "originalType": "wisteria",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "wisteria",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:24-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-002",
+    "originalType": "wisteria",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "wisteria",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:00:39-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-004",
+    "originalType": "wisteria",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "wisteria",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:00:43-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-017",
+    "originalType": "cardinal-flower",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "cardinal-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:00:45-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-018",
+    "originalType": "cardinal-flower",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "cardinal-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:00:46-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-019",
+    "originalType": "blood-flower",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "blood-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:00:50-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-024",
+    "originalType": "cardinal-flower",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "cardinal-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:00:52-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-025",
+    "originalType": "cardinal-flower",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "cardinal-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:00:52-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-026",
+    "originalType": "cardinal-flower",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "cardinal-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:00:53-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-028",
+    "originalType": "blood-flower",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "blood-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:00:53-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-029",
+    "originalType": "cardinal-flower",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "cardinal-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:00:54-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-032",
+    "originalType": "creek-plum",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "creek-plum",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:00:54-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-075",
+    "originalType": "texas-bluebonnet",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "texas-bluebonnet",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:00:55-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-084",
+    "originalType": "wild-rhubarb",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "wild-rhubarb",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:00:55-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-093",
+    "originalType": "cardinal-flower",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "cardinal-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:00:56-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-095",
+    "originalType": "cardinal-flower",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "cardinal-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:00:56-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-099",
+    "originalType": "blood-flower",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "blood-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:00:56-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-101",
+    "originalType": "cardinal-flower",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "cardinal-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:00:57-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-102",
+    "originalType": "agarita",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "agarita",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:00:57-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-104",
+    "originalType": "creek-plum",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "creek-plum",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:00:58-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-105",
+    "originalType": "cardinal-flower",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "cardinal-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:00:58-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-107",
+    "originalType": "agarita",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "agarita",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:00:59-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-108",
+    "originalType": "cardinal-flower",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "cardinal-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:00:59-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-126",
+    "originalType": "bitterweed",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "bitterweed",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:00-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-127",
+    "originalType": "bitterweed",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "bitterweed",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:00-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-128",
+    "originalType": "agarita",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "agarita",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:01-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-130",
+    "originalType": "bitterweed",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "bitterweed",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:01-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-135",
+    "originalType": "bitterweed",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "bitterweed",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:02-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-142",
+    "originalType": "texas-bluebonnet",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "texas-bluebonnet",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:02-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-147",
+    "originalType": "wisteria",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "wisteria",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:03-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-149",
+    "originalType": "bitterweed",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "bitterweed",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:03-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-162",
+    "originalType": "wild-rhubarb",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "wild-rhubarb",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:04-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-163",
+    "originalType": "agarita",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "agarita",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:04-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-164",
+    "originalType": "cardinal-flower",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "cardinal-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:05-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-165",
+    "originalType": "blood-flower",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "blood-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:05-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-167",
+    "originalType": "creek-plum",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "creek-plum",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:06-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-169",
+    "originalType": "agarita",
+    "reviewDecision": "change-candidate-type",
+    "reviewedType": "chocolate-daisy",
+    "notes": "Corrected from new 2026-08-05 field review/export comparison.",
+    "reviewedAt": "2026-08-05T19:59:12-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-170",
+    "originalType": "cardinal-flower",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "cardinal-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:08-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-171",
+    "originalType": "blood-flower",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "blood-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:08-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-180",
+    "originalType": "cardinal-flower",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "cardinal-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:09-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-182",
+    "originalType": "creek-plum",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "creek-plum",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:09-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-183",
+    "originalType": "cardinal-flower",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "cardinal-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:09-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-184",
+    "originalType": "cardinal-flower",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "cardinal-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:10-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-187",
+    "originalType": "cardinal-flower",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "cardinal-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:10-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-208",
+    "originalType": "bitterweed",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "bitterweed",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:11-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-213",
+    "originalType": "bitterweed",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "bitterweed",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:11-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-214",
+    "originalType": "bitterweed",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "bitterweed",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:12-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-027",
+    "originalType": "chocolate-daisy",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "chocolate-daisy",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:16-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-030",
+    "originalType": "blood-flower",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "blood-flower",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:18-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-031",
+    "originalType": "chocolate-daisy",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "chocolate-daisy",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:19-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-062",
+    "originalType": "wild-rhubarb",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "wild-rhubarb",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:19-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-109",
+    "originalType": "wisteria",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "wisteria",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:20-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-115",
+    "originalType": "wisteria",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "wisteria",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:21-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-118",
+    "originalType": "texas-bluebonnet",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "texas-bluebonnet",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:21-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-166",
+    "originalType": "wisteria",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "wisteria",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:22-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-179",
+    "originalType": "chocolate-daisy",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "chocolate-daisy",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:22-05:00",
+    "reviewed": true
+  },
+  {
+    "candidateId": "wildflower-candidate-193",
+    "originalType": "wisteria",
+    "reviewDecision": "candidate-classification-uncertain",
+    "reviewedType": "wisteria",
+    "notes": "",
+    "reviewedAt": "2026-08-04T16:01:23-05:00",
+    "reviewed": true
+  }
+]

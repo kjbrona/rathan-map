@@ -1,0 +1,851 @@
+{
+  "map-a": {
+    "selectedModel": "affine",
+    "models": {
+      "affine": {
+        "accepted": true,
+        "training": {
+          "meanError": 2.8066057565361584,
+          "medianError": null,
+          "rmsError": 3.401151738492494,
+          "maxError": 9.135663127734958,
+          "worstPoints": [
+            {
+              "name": "Flat Iron Lake shoreline point",
+              "sourceX": 1380.75,
+              "sourceY": 1111.5,
+              "expectedX": 5925.468,
+              "expectedY": 4801.53,
+              "calculatedX": 5929.561544934078,
+              "calculatedY": 4809.6972045802795,
+              "xResidual": 4.093544934077727,
+              "yResidual": 8.167204580279758,
+              "distanceError": 9.135663127734958
+            },
+            {
+              "name": "Saint Denis northern bridge",
+              "sourceX": 1884.0,
+              "sourceY": 700.25,
+              "expectedX": 7985.333,
+              "expectedY": 3134.217,
+              "calculatedX": 7985.6836686144225,
+              "calculatedY": 3129.556728591007,
+              "xResidual": 0.3506686144228297,
+              "yResidual": -4.66027140899314,
+              "distanceError": 4.673446060737208
+            },
+            {
+              "name": "Armadillo main road intersection",
+              "sourceX": 617.496,
+              "sourceY": 1152.551,
+              "expectedX": 2810.665,
+              "expectedY": 4983.78,
+              "calculatedX": 2811.6256304270564,
+              "calculatedY": 4979.235096039675,
+              "xResidual": 0.9606304270564578,
+              "yResidual": -4.544903960324518,
+              "distanceError": 4.64531622453845
+            },
+            {
+              "name": "Northeast coastline point",
+              "sourceX": 2028.919,
+              "sourceY": 355.252,
+              "expectedX": 8577.589,
+              "expectedY": 1717.345,
+              "calculatedX": 8577.964515720354,
+              "calculatedY": 1720.7954568719158,
+              "xResidual": 0.37551572035408753,
+              "yResidual": 3.450456871915776,
+              "distanceError": 3.4708305463078792
+            },
+            {
+              "name": "Blackwater central road intersection",
+              "sourceX": 1195.07,
+              "sourceY": 900.905,
+              "expectedX": 5174.015,
+              "expectedY": 3948.782,
+              "calculatedX": 5171.230389857044,
+              "calculatedY": 3950.4578809318496,
+              "xResidual": -2.7846101429558985,
+              "yResidual": 1.675880931849406,
+              "distanceError": 3.250020083936298
+            }
+          ]
+        },
+        "leaveOneOut": {
+          "meanError": 3.4186290815004754,
+          "medianError": 3.1273848158612663,
+          "rmsError": 4.187426876091995,
+          "maxError": 11.475025027425698,
+          "worstPoints": [
+            {
+              "name": "Flat Iron Lake shoreline point",
+              "sourceX": 1380.75,
+              "sourceY": 1111.5,
+              "expectedX": 5925.468,
+              "expectedY": 4801.53,
+              "calculatedX": 5930.609775688855,
+              "calculatedY": 4811.788574079546,
+              "xResidual": 5.1417756888549775,
+              "yResidual": 10.258574079546634,
+              "distanceError": 11.475025027425698
+            },
+            {
+              "name": "Armadillo main road intersection",
+              "sourceX": 617.496,
+              "sourceY": 1152.551,
+              "expectedX": 2810.665,
+              "expectedY": 4983.78,
+              "calculatedX": 2811.8546362570373,
+              "calculatedY": 4978.151630978758,
+              "xResidual": 1.189636257037364,
+              "yResidual": -5.628369021242179,
+              "distanceError": 5.752718684529647
+            },
+            {
+              "name": "Saint Denis northern bridge",
+              "sourceX": 1884.0,
+              "sourceY": 700.25,
+              "expectedX": 7985.333,
+              "expectedY": 3134.217,
+              "calculatedX": 7985.751837985088,
+              "calculatedY": 3128.650779908961,
+              "xResidual": 0.4188379850884303,
+              "yResidual": -5.566220091039213,
+              "distanceError": 5.581955872240618
+            },
+            {
+              "name": "Northeast coastline point",
+              "sourceX": 2028.919,
+              "sourceY": 355.252,
+              "expectedX": 8577.589,
+              "expectedY": 1717.345,
+              "calculatedX": 8578.064325527,
+              "calculatedY": 1721.7125674350498,
+              "xResidual": 0.47532552700067754,
+              "yResidual": 4.36756743504975,
+              "distanceError": 4.393356308828767
+            },
+            {
+              "name": "Saint Denis western bridge",
+              "sourceX": 1804.5,
+              "sourceY": 898.5,
+              "expectedX": 7661.994,
+              "expectedY": 3942.048,
+              "calculatedX": 7660.400565983595,
+              "calculatedY": 3938.2097790677717,
+              "xResidual": -1.593434016404899,
+              "yResidual": -3.8382209322280687,
+              "distanceError": 4.155835883336823
+            }
+          ]
+        }
+      },
+      "homography": {
+        "accepted": true,
+        "training": {
+          "meanError": 2.712538674256345,
+          "medianError": null,
+          "rmsError": 3.2862507457847188,
+          "maxError": 8.286187916832708,
+          "worstPoints": [
+            {
+              "name": "Flat Iron Lake shoreline point",
+              "sourceX": 1380.75,
+              "sourceY": 1111.5,
+              "expectedX": 5925.468,
+              "expectedY": 4801.53,
+              "calculatedX": 5929.908781896522,
+              "calculatedY": 4808.525739156128,
+              "xResidual": 4.440781896521912,
+              "yResidual": 6.995739156128366,
+              "distanceError": 8.286187916832708
+            },
+            {
+              "name": "Armadillo main road intersection",
+              "sourceX": 617.496,
+              "sourceY": 1152.551,
+              "expectedX": 2810.665,
+              "expectedY": 4983.78,
+              "calculatedX": 2811.927517629327,
+              "calculatedY": 4979.508878811128,
+              "xResidual": 1.2625176293272489,
+              "yResidual": -4.271121188871803,
+              "distanceError": 4.45381038823969
+            },
+            {
+              "name": "Saint Denis western bridge",
+              "sourceX": 1804.5,
+              "sourceY": 898.5,
+              "expectedX": 7661.994,
+              "expectedY": 3942.048,
+              "calculatedX": 7659.39663425453,
+              "calculatedY": 3938.8095396016993,
+              "xResidual": -2.5973657454696877,
+              "yResidual": -3.2384603983005036,
+              "distanceError": 4.151377430094734
+            },
+            {
+              "name": "Saint Denis northern bridge",
+              "sourceX": 1884.0,
+              "sourceY": 700.25,
+              "expectedX": 7985.333,
+              "expectedY": 3134.217,
+              "calculatedX": 7984.86098450714,
+              "calculatedY": 3130.0980144638725,
+              "xResidual": -0.47201549286000954,
+              "yResidual": -4.118985536127639,
+              "distanceError": 4.145942651837887
+            },
+            {
+              "name": "Northeast coastline point",
+              "sourceX": 2028.919,
+              "sourceY": 355.252,
+              "expectedX": 8577.589,
+              "expectedY": 1717.345,
+              "calculatedX": 8578.709398193358,
+              "calculatedY": 1721.159594695557,
+              "xResidual": 1.120398193357687,
+              "yResidual": 3.8145946955569343,
+              "distanceError": 3.9757294680410875
+            }
+          ]
+        },
+        "leaveOneOut": {
+          "meanError": 3.5426577042567193,
+          "medianError": 3.350949604881639,
+          "rmsError": 4.355480869505636,
+          "maxError": 11.196978524394805,
+          "worstPoints": [
+            {
+              "name": "Flat Iron Lake shoreline point",
+              "sourceX": 1380.75,
+              "sourceY": 1111.5,
+              "expectedX": 5925.468,
+              "expectedY": 4801.53,
+              "calculatedX": 5930.930135495716,
+              "calculatedY": 4811.304323705617,
+              "xResidual": 5.462135495716211,
+              "yResidual": 9.774323705617462,
+              "distanceError": 11.196978524394805
+            },
+            {
+              "name": "Saint Denis western bridge",
+              "sourceX": 1804.5,
+              "sourceY": 898.5,
+              "expectedX": 7661.994,
+              "expectedY": 3942.048,
+              "calculatedX": 7657.732407089683,
+              "calculatedY": 3937.649377405903,
+              "xResidual": -4.261592910316722,
+              "yResidual": -4.398622594096651,
+              "distanceError": 6.124463638438822
+            },
+            {
+              "name": "Armadillo main road intersection",
+              "sourceX": 617.496,
+              "sourceY": 1152.551,
+              "expectedX": 2810.665,
+              "expectedY": 4983.78,
+              "calculatedX": 2812.4300565960393,
+              "calculatedY": 4978.3370699196175,
+              "xResidual": 1.7650565960393578,
+              "yResidual": -5.442930080382212,
+              "distanceError": 5.721967550340665
+            },
+            {
+              "name": "Northeast coastline point",
+              "sourceX": 2028.919,
+              "sourceY": 355.252,
+              "expectedX": 8577.589,
+              "expectedY": 1717.345,
+              "calculatedX": 8578.939880143547,
+              "calculatedY": 1722.435750086503,
+              "xResidual": 1.3508801435473288,
+              "yResidual": 5.0907500865030215,
+              "distanceError": 5.266935883932988
+            },
+            {
+              "name": "Saint Denis northern bridge",
+              "sourceX": 1884.0,
+              "sourceY": 700.25,
+              "expectedX": 7985.333,
+              "expectedY": 3134.217,
+              "calculatedX": 7984.923447874594,
+              "calculatedY": 3129.1784904916703,
+              "xResidual": -0.40955212540575303,
+              "yResidual": -5.038509508329753,
+              "distanceError": 5.055127200076542
+            }
+          ]
+        }
+      }
+    }
+  },
+  "map-b": {
+    "selectedModel": "affine",
+    "models": {
+      "affine": {
+        "accepted": true,
+        "training": {
+          "meanError": 2.1603741579818228,
+          "medianError": null,
+          "rmsError": 2.648851407991336,
+          "maxError": 7.141930322628806,
+          "worstPoints": [
+            {
+              "name": "Flat Iron Lake shoreline point",
+              "sourceX": 1380.0,
+              "sourceY": 1111.25,
+              "expectedX": 5924.972,
+              "expectedY": 4802.687,
+              "calculatedX": 5927.243464840084,
+              "calculatedY": 4809.458086782308,
+              "xResidual": 2.2714648400842634,
+              "yResidual": 6.771086782307975,
+              "distanceError": 7.141930322628806
+            },
+            {
+              "name": "Rhodes main intersection",
+              "sourceX": 1597.25,
+              "sourceY": 894.0,
+              "expectedX": 6812.202,
+              "expectedY": 3923.787,
+              "calculatedX": 6814.803954530591,
+              "calculatedY": 3921.5288000683336,
+              "xResidual": 2.601954530590774,
+              "yResidual": -2.2581999316662404,
+              "distanceError": 3.4452335640184497
+            },
+            {
+              "name": "Northeast coastline point",
+              "sourceX": 2028.583,
+              "sourceY": 354.42,
+              "expectedX": 8577.962,
+              "expectedY": 1713.51,
+              "calculatedX": 8576.804953260485,
+              "calculatedY": 1716.4377486828646,
+              "xResidual": -1.157046739514044,
+              "yResidual": 2.9277486828646033,
+              "distanceError": 3.1480898188322866
+            },
+            {
+              "name": "Saint Denis western bridge",
+              "sourceX": 1804.631,
+              "sourceY": 898.206,
+              "expectedX": 7663.936,
+              "expectedY": 3940.725,
+              "calculatedX": 7662.399898239096,
+              "calculatedY": 3938.243733512271,
+              "xResidual": -1.5361017609038754,
+              "yResidual": -2.4812664877290445,
+              "distanceError": 2.9182686653183967
+            },
+            {
+              "name": "Armadillo main road intersection",
+              "sourceX": 617.75,
+              "sourceY": 1152.75,
+              "expectedX": 2812.655,
+              "expectedY": 4983.178,
+              "calculatedX": 2811.913652936871,
+              "calculatedY": 4980.693921053123,
+              "xResidual": -0.7413470631290693,
+              "yResidual": -2.484078946877162,
+              "distanceError": 2.592343280186566
+            }
+          ]
+        },
+        "leaveOneOut": {
+          "meanError": 2.606055110662963,
+          "medianError": 2.5143077369757587,
+          "rmsError": 3.236466200434243,
+          "maxError": 8.91353392829379,
+          "worstPoints": [
+            {
+              "name": "Flat Iron Lake shoreline point",
+              "sourceX": 1380.0,
+              "sourceY": 1111.25,
+              "expectedX": 5924.972,
+              "expectedY": 4802.687,
+              "calculatedX": 5927.806916893104,
+              "calculatedY": 4811.13770016626,
+              "xResidual": 2.8349168931044915,
+              "yResidual": 8.450700166260503,
+              "distanceError": 8.91353392829379
+            },
+            {
+              "name": "Northeast coastline point",
+              "sourceX": 2028.583,
+              "sourceY": 354.42,
+              "expectedX": 8577.962,
+              "expectedY": 1713.51,
+              "calculatedX": 8576.47379930361,
+              "calculatedY": 1717.2756885256522,
+              "xResidual": -1.488200696388958,
+              "yResidual": 3.7656885256521946,
+              "distanceError": 4.049092661938126
+            },
+            {
+              "name": "Rhodes main intersection",
+              "sourceX": 1597.25,
+              "sourceY": 894.0,
+              "expectedX": 6812.202,
+              "expectedY": 3923.787,
+              "calculatedX": 6815.186560165757,
+              "calculatedY": 3921.1967419908597,
+              "xResidual": 2.9845601657571024,
+              "yResidual": -2.5902580091401433,
+              "distanceError": 3.9518395636638286
+            },
+            {
+              "name": "Saint Denis western bridge",
+              "sourceX": 1804.631,
+              "sourceY": 898.206,
+              "expectedX": 7663.936,
+              "expectedY": 3940.725,
+              "calculatedX": 7661.981111364645,
+              "calculatedY": 3937.5672667159433,
+              "xResidual": -1.9548886353550188,
+              "yResidual": -3.157733284056576,
+              "distanceError": 3.7138752092496237
+            },
+            {
+              "name": "Armadillo main road intersection",
+              "sourceX": 617.75,
+              "sourceY": 1152.75,
+              "expectedX": 2812.655,
+              "expectedY": 4983.178,
+              "calculatedX": 2811.6997476694432,
+              "calculatedY": 4979.977175011539,
+              "xResidual": -0.9552523305569594,
+              "yResidual": -3.200824988461136,
+              "distanceError": 3.340327472238573
+            }
+          ]
+        }
+      },
+      "homography": {
+        "accepted": true,
+        "training": {
+          "meanError": 2.219671573081144,
+          "medianError": null,
+          "rmsError": 2.6298771810136,
+          "maxError": 6.863229571162725,
+          "worstPoints": [
+            {
+              "name": "Flat Iron Lake shoreline point",
+              "sourceX": 1380.0,
+              "sourceY": 1111.25,
+              "expectedX": 5924.972,
+              "expectedY": 4802.687,
+              "calculatedX": 5927.202252239493,
+              "calculatedY": 4809.177754585926,
+              "xResidual": 2.230252239492984,
+              "yResidual": 6.49075458592597,
+              "distanceError": 6.863229571162725
+            },
+            {
+              "name": "Rhodes main intersection",
+              "sourceX": 1597.25,
+              "sourceY": 894.0,
+              "expectedX": 6812.202,
+              "expectedY": 3923.787,
+              "calculatedX": 6814.653872438396,
+              "calculatedY": 3921.587292639697,
+              "xResidual": 2.4518724383960944,
+              "yResidual": -2.1997073603029094,
+              "distanceError": 3.2939931580282926
+            },
+            {
+              "name": "Saint Denis western bridge",
+              "sourceX": 1804.631,
+              "sourceY": 898.206,
+              "expectedX": 7663.936,
+              "expectedY": 3940.725,
+              "calculatedX": 7662.047722033665,
+              "calculatedY": 3938.255785009709,
+              "xResidual": -1.888277966334499,
+              "yResidual": -2.469214990290766,
+              "distanceError": 3.1084749229197555
+            },
+            {
+              "name": "Northeast coastline point",
+              "sourceX": 2028.583,
+              "sourceY": 354.42,
+              "expectedX": 8577.962,
+              "expectedY": 1713.51,
+              "calculatedX": 8577.329137395365,
+              "calculatedY": 1716.3466986065735,
+              "xResidual": -0.6328626046342833,
+              "yResidual": 2.8366986065734636,
+              "distanceError": 2.9064366603936715
+            },
+            {
+              "name": "Annesburg rail/road point",
+              "sourceX": 1942.975,
+              "sourceY": 377.706,
+              "expectedX": 8226.235,
+              "expectedY": 1814.168,
+              "calculatedX": 8227.410032332833,
+              "calculatedY": 1811.67631144619,
+              "xResidual": 1.1750323328324157,
+              "yResidual": -2.4916885538098086,
+              "distanceError": 2.7548525972161206
+            }
+          ]
+        },
+        "leaveOneOut": {
+          "meanError": 2.932996718901304,
+          "medianError": 2.5675008050714316,
+          "rmsError": 3.511551880906986,
+          "maxError": 9.454880282698099,
+          "worstPoints": [
+            {
+              "name": "Flat Iron Lake shoreline point",
+              "sourceX": 1380.0,
+              "sourceY": 1111.25,
+              "expectedX": 5924.972,
+              "expectedY": 4802.687,
+              "calculatedX": 5927.342713489289,
+              "calculatedY": 4811.839839926048,
+              "xResidual": 2.370713489289301,
+              "yResidual": 9.152839926047818,
+              "distanceError": 9.454880282698099
+            },
+            {
+              "name": "Saint Denis western bridge",
+              "sourceX": 1804.631,
+              "sourceY": 898.206,
+              "expectedX": 7663.936,
+              "expectedY": 3940.725,
+              "calculatedX": 7660.902736074978,
+              "calculatedY": 3937.458924801624,
+              "xResidual": -3.0332639250218563,
+              "yResidual": -3.266075198375802,
+              "distanceError": 4.45734643485163
+            },
+            {
+              "name": "Northeast coastline point",
+              "sourceX": 2028.583,
+              "sourceY": 354.42,
+              "expectedX": 8577.962,
+              "expectedY": 1713.51,
+              "calculatedX": 8576.407769052466,
+              "calculatedY": 1717.6768426196018,
+              "xResidual": -1.5542309475331422,
+              "yResidual": 4.166842619601766,
+              "distanceError": 4.4472700901563735
+            },
+            {
+              "name": "Rhodes main intersection",
+              "sourceX": 1597.25,
+              "sourceY": 894.0,
+              "expectedX": 6812.202,
+              "expectedY": 3923.787,
+              "calculatedX": 6815.083611525868,
+              "calculatedY": 3921.225667322936,
+              "xResidual": 2.881611525867811,
+              "yResidual": -2.5613326770640015,
+              "distanceError": 3.855400117836028
+            },
+            {
+              "name": "Annesburg rail/road point",
+              "sourceX": 1942.975,
+              "sourceY": 377.706,
+              "expectedX": 8226.235,
+              "expectedY": 1814.168,
+              "calculatedX": 8228.11053348216,
+              "calculatedY": 1810.8179332883262,
+              "xResidual": 1.8755334821598808,
+              "yResidual": -3.350066711673662,
+              "distanceError": 3.8393453628667937
+            }
+          ]
+        }
+      }
+    }
+  },
+  "map-c": {
+    "selectedModel": "affine",
+    "models": {
+      "affine": {
+        "accepted": true,
+        "training": {
+          "meanError": 3.0262294197056585,
+          "medianError": null,
+          "rmsError": 4.03392495304927,
+          "maxError": 13.301684289694418,
+          "worstPoints": [
+            {
+              "name": "Flat Iron Lake shoreline point",
+              "sourceX": 1380.222,
+              "sourceY": 1111.603,
+              "expectedX": 5922.658,
+              "expectedY": 4800.373,
+              "calculatedX": 5928.512656501837,
+              "calculatedY": 4812.316944163809,
+              "xResidual": 5.854656501836871,
+              "yResidual": 11.943944163809647,
+              "distanceError": 13.301684289694418
+            },
+            {
+              "name": "Dakota River bend",
+              "sourceX": 1344.399,
+              "sourceY": 321.546,
+              "expectedX": 5776.546,
+              "expectedY": 1578.202,
+              "calculatedX": 5780.048133132636,
+              "calculatedY": 1581.3299809100313,
+              "xResidual": 3.502133132636118,
+              "yResidual": 3.127980910031283,
+              "distanceError": 4.69565768047755
+            },
+            {
+              "name": "Valentine main road/rail crossing",
+              "sourceX": 1319.059,
+              "sourceY": 513.995,
+              "expectedX": 5674.595,
+              "expectedY": 2371.381,
+              "calculatedX": 5677.01109651286,
+              "calculatedY": 2368.346488766426,
+              "xResidual": 2.41609651285944,
+              "yResidual": -3.034511233573994,
+              "distanceError": 3.878889117535884
+            },
+            {
+              "name": "Saint Denis western bridge",
+              "sourceX": 1804.443,
+              "sourceY": 897.854,
+              "expectedX": 7662.779,
+              "expectedY": 3941.882,
+              "calculatedX": 7661.407009790583,
+              "calculatedY": 3938.3756353482904,
+              "xResidual": -1.371990209417163,
+              "yResidual": -3.506364651709646,
+              "distanceError": 3.7652291039849697
+            },
+            {
+              "name": "Southwest San Luis River bend",
+              "sourceX": 180.467,
+              "sourceY": 1399.8,
+              "expectedX": 1029.95,
+              "expectedY": 5990.154,
+              "calculatedX": 1026.8160656185048,
+              "calculatedY": 5990.361725913079,
+              "xResidual": -3.133934381495237,
+              "yResidual": 0.20772591307832045,
+              "distanceError": 3.140811163136389
+            }
+          ]
+        },
+        "leaveOneOut": {
+          "meanError": 3.742886454701041,
+          "medianError": 2.512830526261883,
+          "rmsError": 5.036519396367278,
+          "maxError": 16.325131898143397,
+          "worstPoints": [
+            {
+              "name": "Flat Iron Lake shoreline point",
+              "sourceX": 1380.222,
+              "sourceY": 1111.603,
+              "expectedX": 5922.658,
+              "expectedY": 4800.373,
+              "calculatedX": 5929.843408819369,
+              "calculatedY": 4815.03178001712,
+              "xResidual": 7.185408819368604,
+              "yResidual": 14.65878001712008,
+              "distanceError": 16.325131898143397
+            },
+            {
+              "name": "Dakota River bend",
+              "sourceX": 1344.399,
+              "sourceY": 321.546,
+              "expectedX": 5776.546,
+              "expectedY": 1578.202,
+              "calculatedX": 5781.6461303296655,
+              "calculatedY": 1582.7572552411416,
+              "xResidual": 5.100130329665262,
+              "yResidual": 4.5552552411415945,
+              "distanceError": 6.838251215882571
+            },
+            {
+              "name": "Southwest San Luis River bend",
+              "sourceX": 180.467,
+              "sourceY": 1399.8,
+              "expectedX": 1029.95,
+              "expectedY": 5990.154,
+              "calculatedX": 1025.161076487645,
+              "calculatedY": 5990.471423211688,
+              "xResidual": -4.788923512355041,
+              "yResidual": 0.31742321168712806,
+              "distanceError": 4.799431831217598
+            },
+            {
+              "name": "Saint Denis western bridge",
+              "sourceX": 1804.443,
+              "sourceY": 897.854,
+              "expectedX": 7662.779,
+              "expectedY": 3941.882,
+              "calculatedX": 7661.0528553132435,
+              "calculatedY": 3937.470530681887,
+              "xResidual": -1.7261446867569248,
+              "yResidual": -4.411469318113177,
+              "distanceError": 4.737154950418352
+            },
+            {
+              "name": "Valentine main road/rail crossing",
+              "sourceX": 1319.059,
+              "sourceY": 513.995,
+              "expectedX": 5674.595,
+              "expectedY": 2371.381,
+              "calculatedX": 5677.4473160601465,
+              "calculatedY": 2367.798616150376,
+              "xResidual": 2.8523160601462223,
+              "yResidual": -3.582383849623966,
+              "distanceError": 4.579211826615437
+            }
+          ]
+        }
+      },
+      "homography": {
+        "accepted": true,
+        "training": {
+          "meanError": 2.877352540725584,
+          "medianError": null,
+          "rmsError": 3.7962112308529496,
+          "maxError": 12.314095584767495,
+          "worstPoints": [
+            {
+              "name": "Flat Iron Lake shoreline point",
+              "sourceX": 1380.222,
+              "sourceY": 1111.603,
+              "expectedX": 5922.658,
+              "expectedY": 4800.373,
+              "calculatedX": 5928.044974681815,
+              "calculatedY": 4811.4462765633425,
+              "xResidual": 5.386974681814536,
+              "yResidual": 11.073276563342915,
+              "distanceError": 12.314095584767495
+            },
+            {
+              "name": "Saint Denis western bridge",
+              "sourceX": 1804.443,
+              "sourceY": 897.854,
+              "expectedX": 7662.779,
+              "expectedY": 3941.882,
+              "calculatedX": 7660.170635919763,
+              "calculatedY": 3938.3739192112953,
+              "xResidual": -2.608364080237152,
+              "yResidual": -3.508080788704774,
+              "distanceError": 4.371520787454969
+            },
+            {
+              "name": "Owanjila dam or shoreline point",
+              "sourceX": 894.305,
+              "sourceY": 730.12,
+              "expectedX": 3941.882,
+              "expectedY": 3249.999,
+              "calculatedX": 3939.9732514625716,
+              "calculatedY": 3253.056105942948,
+              "xResidual": -1.908748537428437,
+              "yResidual": 3.0571059429480556,
+              "distanceError": 3.6040557328575704
+            },
+            {
+              "name": "Valentine main road/rail crossing",
+              "sourceX": 1319.059,
+              "sourceY": 513.995,
+              "expectedX": 5674.595,
+              "expectedY": 2371.381,
+              "calculatedX": 5676.360852741983,
+              "calculatedY": 2368.482372178541,
+              "xResidual": 1.7658527419825987,
+              "yResidual": -2.898627821458831,
+              "distanceError": 3.394153672670498
+            },
+            {
+              "name": "Dakota River bend",
+              "sourceX": 1344.399,
+              "sourceY": 321.546,
+              "expectedX": 5776.546,
+              "expectedY": 1578.202,
+              "calculatedX": 5779.4551376012305,
+              "calculatedY": 1579.937289410426,
+              "xResidual": 2.9091376012302135,
+              "yResidual": 1.7352894104260486,
+              "distanceError": 3.3873752258685874
+            }
+          ]
+        },
+        "leaveOneOut": {
+          "meanError": 3.7677680449420805,
+          "medianError": 2.523224383897107,
+          "rmsError": 5.039890237806011,
+          "maxError": 16.281976038819355,
+          "worstPoints": [
+            {
+              "name": "Flat Iron Lake shoreline point",
+              "sourceX": 1380.222,
+              "sourceY": 1111.603,
+              "expectedX": 5922.658,
+              "expectedY": 4800.373,
+              "calculatedX": 5928.791447404512,
+              "calculatedY": 4815.455558359402,
+              "xResidual": 6.133447404511571,
+              "yResidual": 15.082558359402356,
+              "distanceError": 16.281976038819355
+            },
+            {
+              "name": "Saint Denis western bridge",
+              "sourceX": 1804.443,
+              "sourceY": 897.854,
+              "expectedX": 7662.779,
+              "expectedY": 3941.882,
+              "calculatedX": 7658.697747123387,
+              "calculatedY": 3937.296586568687,
+              "xResidual": -4.081252876613689,
+              "yResidual": -4.5854134313131,
+              "distanceError": 6.138618849459061
+            },
+            {
+              "name": "Dakota River bend",
+              "sourceX": 1344.399,
+              "sourceY": 321.546,
+              "expectedX": 5776.546,
+              "expectedY": 1578.202,
+              "calculatedX": 5780.866248993195,
+              "calculatedY": 1581.5789316838561,
+              "xResidual": 4.320248993194582,
+              "yResidual": 3.376931683856128,
+              "distanceError": 5.483449549383142
+            },
+            {
+              "name": "Owanjila dam or shoreline point",
+              "sourceX": 894.305,
+              "sourceY": 730.12,
+              "expectedX": 3941.882,
+              "expectedY": 3249.999,
+              "calculatedX": 3938.74481003167,
+              "calculatedY": 3254.071821676261,
+              "xResidual": -3.137189968329949,
+              "yResidual": 4.072821676261356,
+              "distanceError": 5.14099575024279
+            },
+            {
+              "name": "Valentine main road/rail crossing",
+              "sourceX": 1319.059,
+              "sourceY": 513.995,
+              "expectedX": 5674.595,
+              "expectedY": 2371.381,
+              "calculatedX": 5676.7993978381455,
+              "calculatedY": 2367.888492210254,
+              "xResidual": 2.204397838145269,
+              "yResidual": -3.492507789746014,
+              "distanceError": 4.13000974457157
+            }
+          ]
+        }
+      }
+    }
+  }
+}

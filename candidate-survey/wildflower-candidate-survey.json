@@ -1,0 +1,4329 @@
+{
+  "name": "RosalitaRP Explorer Wildflower Candidate Survey",
+  "source": "RDO Wildflower Reference Maps",
+  "notes": "RDO day/cycle labels intentionally ignored. All reference maps are treated as one combined candidate source.",
+  "thresholds": {
+    "mergeDistance": 85,
+    "alreadyCoveredDistance": 125,
+    "possibleMatchDistance": 300
+  },
+  "candidates": [
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 8577.0,
+      "y": 6118.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "cf132cb6-97b6-4fb2-90a3-8c48742c9a90",
+        "name": "Wisteria",
+        "x": 4379,
+        "y": 3396,
+        "distance": 5003.383761266622
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 8442.0,
+      "y": 5909.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "cf132cb6-97b6-4fb2-90a3-8c48742c9a90",
+        "name": "Wisteria",
+        "x": 4379,
+        "y": 3396,
+        "distance": 4777.488311079951
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 8322.75,
+      "y": 5781.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wisteria",
+      "sourceDetections": 2,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A",
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "cf132cb6-97b6-4fb2-90a3-8c48742c9a90",
+        "name": "Wisteria",
+        "x": 4379,
+        "y": 3396,
+        "distance": 4608.838146703025
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 8214.75,
+      "y": 5168.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "cf132cb6-97b6-4fb2-90a3-8c48742c9a90",
+        "name": "Wisteria",
+        "x": 4379,
+        "y": 3396,
+        "distance": 4225.381417695084
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 8124.75,
+      "y": 4983.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 3903.537186002002
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 8298.0,
+      "y": 4916.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "cf132cb6-97b6-4fb2-90a3-8c48742c9a90",
+        "name": "Wisteria",
+        "x": 4379,
+        "y": 3396,
+        "distance": 4203.6271540185735
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 8511.75,
+      "y": 4816.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 4281.538756685518
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 3816.0,
+      "y": 4769.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 422.93032818655416
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 4347.0,
+      "y": 4607.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Possible Match",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 143.1522353999718
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 4794.75,
+      "y": 4607.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 569.1705587958625
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wild-rhubarb",
+      "x": 8370.0,
+      "y": 4422.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wild Rhubarb",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "5e6fc983-1adf-488b-8bf7-101070137bfc",
+        "name": "Wild Rhubarb",
+        "x": 3961,
+        "y": 2243,
+        "distance": 4918.282347527706
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "creek-plum",
+      "x": 4574.25,
+      "y": 4313.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Creek Plum",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 4794.75,
+      "y": 4261.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 709.4445450492051
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 8106.75,
+      "y": 4256.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 3899.2868739039386
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wild-rhubarb",
+      "x": 5535.0,
+      "y": 4142.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wild Rhubarb",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "5e6fc983-1adf-488b-8bf7-101070137bfc",
+        "name": "Wild Rhubarb",
+        "x": 3961,
+        "y": 2243,
+        "distance": 2466.703582212509
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 5044.5,
+      "y": 3961.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 1093.1069538248314
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 8032.5,
+      "y": 3890.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 7800.75,
+      "y": 3771.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "blood-flower",
+      "x": 8129.25,
+      "y": 3705.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Blood Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "e52bfdc0-62da-4fd0-86f1-5a21c6201563",
+        "name": "Blood Flower",
+        "x": 7104,
+        "y": 3557,
+        "distance": 1035.9129427708183
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 5850.0,
+      "y": 3676.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 2,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A",
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "blood-flower",
+      "x": 6761.25,
+      "y": 3581.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Blood Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "e52bfdc0-62da-4fd0-86f1-5a21c6201563",
+        "name": "Blood Flower",
+        "x": 7104,
+        "y": 3557,
+        "distance": 343.64243771688456
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "creek-plum",
+      "x": 7182.0,
+      "y": 3638.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Creek Plum",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 4176.0,
+      "y": 3634.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Already Covered",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "3ad5bd29-154a-4000-9784-75929a3dc266",
+        "name": "Wisteria",
+        "x": 4121,
+        "y": 3654,
+        "distance": 58.523499553734965
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 7969.5,
+      "y": 3624.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 8230.5,
+      "y": 3503.38,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 2,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A",
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 7803.0,
+      "y": 3458.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "chocolate-daisy",
+      "x": 6844.5,
+      "y": 3396.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Chocolate Daisy",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "dded7605-6fa8-46c3-bec0-9143e42a2a4f",
+        "name": "Chocolate Daisy",
+        "x": 6478,
+        "y": 3502,
+        "distance": 381.38235407527606
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "blood-flower",
+      "x": 8156.25,
+      "y": 3387.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Blood Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "e52bfdc0-62da-4fd0-86f1-5a21c6201563",
+        "name": "Blood Flower",
+        "x": 7104,
+        "y": 3557,
+        "distance": 1065.8940202946626
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 8014.5,
+      "y": 3387.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "blood-flower",
+      "x": 7627.5,
+      "y": 3391.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Blood Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "e52bfdc0-62da-4fd0-86f1-5a21c6201563",
+        "name": "Blood Flower",
+        "x": 7104,
+        "y": 3557,
+        "distance": 548.9624873340188
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "chocolate-daisy",
+      "x": 6711.75,
+      "y": 3349.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Possible Match",
+      "typeName": "Chocolate Daisy",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "dded7605-6fa8-46c3-bec0-9143e42a2a4f",
+        "name": "Chocolate Daisy",
+        "x": 6478,
+        "y": 3502,
+        "distance": 279.37083330228194
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "creek-plum",
+      "x": 4466.25,
+      "y": 3287.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Creek Plum",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "blood-flower",
+      "x": 7418.25,
+      "y": 3287.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Blood Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "e52bfdc0-62da-4fd0-86f1-5a21c6201563",
+        "name": "Blood Flower",
+        "x": 7104,
+        "y": 3557,
+        "distance": 414.1474676971509
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "chocolate-daisy",
+      "x": 6840.0,
+      "y": 3178.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Chocolate Daisy",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "dded7605-6fa8-46c3-bec0-9143e42a2a4f",
+        "name": "Chocolate Daisy",
+        "x": 6478,
+        "y": 3502,
+        "distance": 485.8188962978343
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 4491.0,
+      "y": 3097.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "cf132cb6-97b6-4fb2-90a3-8c48742c9a90",
+        "name": "Wisteria",
+        "x": 4379,
+        "y": 3396,
+        "distance": 319.0541685988622
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "chocolate-daisy",
+      "x": 6671.25,
+      "y": 3016.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Chocolate Daisy",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "c95be721-9047-439d-8a0c-715c2e0ded2f",
+        "name": "Chocolate Daisy",
+        "x": 6347,
+        "y": 3324,
+        "distance": 446.8716957920858
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "blood-flower",
+      "x": 8055.0,
+      "y": 3002.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Blood Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "e52bfdc0-62da-4fd0-86f1-5a21c6201563",
+        "name": "Blood Flower",
+        "x": 7104,
+        "y": 3557,
+        "distance": 1100.9761861638508
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 8176.5,
+      "y": 2940.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "creek-plum",
+      "x": 6774.75,
+      "y": 2798.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Creek Plum",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 5503.5,
+      "y": 2750.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Possible Match",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "52b7bf1a-fe60-4093-96ed-1a61c011c21f",
+        "name": "Texas Bluebonnet",
+        "x": 5216,
+        "y": 2728,
+        "distance": 288.3790907815251
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 6885.0,
+      "y": 2631.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 5451.75,
+      "y": 2669.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Possible Match",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 2,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A",
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "52b7bf1a-fe60-4093-96ed-1a61c011c21f",
+        "name": "Texas Bluebonnet",
+        "x": 5216,
+        "y": 2728,
+        "distance": 242.83971050892072
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "creek-plum",
+      "x": 7285.5,
+      "y": 2593.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Creek Plum",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "blood-flower",
+      "x": 7929.0,
+      "y": 2570.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Blood Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "e52bfdc0-62da-4fd0-86f1-5a21c6201563",
+        "name": "Blood Flower",
+        "x": 7104,
+        "y": 3557,
+        "distance": 1286.387966361682
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 3973.5,
+      "y": 2441.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "03397457-8579-4c40-8b2e-63ba5ba6ea6c",
+        "name": "Wisteria",
+        "x": 3983,
+        "y": 2769,
+        "distance": 327.3878624820152
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 6860.25,
+      "y": 2441.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "blood-flower",
+      "x": 8070.75,
+      "y": 2418.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Blood Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "e52bfdc0-62da-4fd0-86f1-5a21c6201563",
+        "name": "Blood Flower",
+        "x": 7104,
+        "y": 3557,
+        "distance": 1493.963373881777
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 5067.0,
+      "y": 2356.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "c4007237-b2d5-42d4-84e8-84aea748696c",
+        "name": "Texas Bluebonnet",
+        "x": 5107,
+        "y": 2704,
+        "distance": 350.04294379469883
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 5256.0,
+      "y": 2332.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "52b7bf1a-fe60-4093-96ed-1a61c011c21f",
+        "name": "Texas Bluebonnet",
+        "x": 5216,
+        "y": 2728,
+        "distance": 397.5176096734601
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 4819.5,
+      "y": 2289.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "68646eb8-55d0-40ac-b49d-43bd069bf3e2",
+        "name": "Texas Bluebonnet",
+        "x": 4590.8002651773,
+        "y": 2694.4630988454855,
+        "distance": 464.86155044881474
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 4122.0,
+      "y": 2270.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "03397457-8579-4c40-8b2e-63ba5ba6ea6c",
+        "name": "Wisteria",
+        "x": 3983,
+        "y": 2769,
+        "distance": 517.2756156062785
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 7706.25,
+      "y": 2275.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 6932.25,
+      "y": 2209.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 7933.5,
+      "y": 2190.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 4257.0,
+      "y": 2152.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "03397457-8579-4c40-8b2e-63ba5ba6ea6c",
+        "name": "Wisteria",
+        "x": 3983,
+        "y": 2769,
+        "distance": 675.1036957394597
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wild-rhubarb",
+      "x": 3312.0,
+      "y": 2090.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Already Covered",
+      "typeName": "Wild Rhubarb",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "f84f17aa-bf06-433c-959c-a92ecf30dbb7",
+        "name": "Wild Rhubarb",
+        "x": 3332.1035854818333,
+        "y": 2005.8867396408054,
+        "distance": 86.72550863200085
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wild-rhubarb",
+      "x": 2533.5,
+      "y": 1919.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Possible Match",
+      "typeName": "Wild Rhubarb",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "94080f9b-e315-4440-babe-949bd11dd685",
+        "name": "Wild Rhubarb",
+        "x": 2730.5,
+        "y": 2095.5,
+        "distance": 264.33513292871964
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wild-rhubarb",
+      "x": 2675.25,
+      "y": 1871.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Possible Match",
+      "typeName": "Wild Rhubarb",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "94080f9b-e315-4440-babe-949bd11dd685",
+        "name": "Wild Rhubarb",
+        "x": 2730.5,
+        "y": 2095.5,
+        "distance": 230.47044279160585
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wild-rhubarb",
+      "x": 1667.25,
+      "y": 1852.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Possible Match",
+      "typeName": "Wild Rhubarb",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "e5d67102-6bd3-4f77-9956-08c973e029a2",
+        "name": "Wild Rhubarb",
+        "x": 1839.25666025185,
+        "y": 2086.5967102301242,
+        "distance": 290.2939459532688
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wild-rhubarb",
+      "x": 3649.5,
+      "y": 1719.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Already Covered",
+      "typeName": "Wild Rhubarb",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "285fe123-334d-4a0b-9e87-16ed5429835d",
+        "name": "Wild Rhubarb",
+        "x": 3563.9191583367387,
+        "y": 1803.8301643928694,
+        "distance": 119.97314076205949
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wild-rhubarb",
+      "x": 4302.0,
+      "y": 1696.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wild Rhubarb",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "5e6fc983-1adf-488b-8bf7-101070137bfc",
+        "name": "Wild Rhubarb",
+        "x": 3961,
+        "y": 2243,
+        "distance": 644.5851378996481
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wild-rhubarb",
+      "x": 3980.25,
+      "y": 1605.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wild Rhubarb",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "285fe123-334d-4a0b-9e87-16ed5429835d",
+        "name": "Wild Rhubarb",
+        "x": 3563.9191583367387,
+        "y": 1803.8301643928694,
+        "distance": 461.05002033009526
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wild-rhubarb",
+      "x": 2677.5,
+      "y": 1596.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wild Rhubarb",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "94080f9b-e315-4440-babe-949bd11dd685",
+        "name": "Wild Rhubarb",
+        "x": 2730.5,
+        "y": 2095.5,
+        "distance": 502.0553380866853
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 1714.5,
+      "y": 1586.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 3998.32406296806
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 1867.5,
+      "y": 1529.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 3949.305105016518
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wild-rhubarb",
+      "x": 4497.75,
+      "y": 1453.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wild Rhubarb",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "5e6fc983-1adf-488b-8bf7-101070137bfc",
+        "name": "Wild Rhubarb",
+        "x": 3961,
+        "y": 2243,
+        "distance": 954.4716470391712
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wild-rhubarb",
+      "x": 2589.75,
+      "y": 1415.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wild Rhubarb",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "65abf68f-d5c3-46ed-a414-4e4fab6040d4",
+        "name": "Wild Rhubarb",
+        "x": 2138.429550788488,
+        "y": 1905.0747882464934,
+        "distance": 665.6792743283655
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wild-rhubarb",
+      "x": 1824.75,
+      "y": 1344.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wild Rhubarb",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "3b7beeab-a5db-4b09-a6c1-9ebfdd17719c",
+        "name": "Wild Rhubarb",
+        "x": 2036.5,
+        "y": 1856,
+        "distance": 553.5976088293831
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 3626.25,
+      "y": 1262.17,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 3,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A",
+        "RDO Wildflower Reference Map B",
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 3483.898739002021
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 1170.0,
+      "y": 1154.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "c80b373d-e8bb-414c-b9c8-b8e33d37799f",
+        "name": "Texas Blue Bonnet",
+        "x": 1161.250409835617,
+        "y": 1585.56143523416,
+        "distance": 431.15022471951823
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 2209.5,
+      "y": 993.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "ea019f47-bdd8-42e9-9d30-36c3fdc79506",
+        "name": "Texas Bluebonnet",
+        "x": 2528.655788422769,
+        "y": 1640.2969710631423,
+        "distance": 721.7020063941729
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 774.0,
+      "y": 893.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "c80b373d-e8bb-414c-b9c8-b8e33d37799f",
+        "name": "Texas Blue Bonnet",
+        "x": 1161.250409835617,
+        "y": 1585.56143523416,
+        "distance": 793.2578416104583
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 1152.0,
+      "y": 760.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "c80b373d-e8bb-414c-b9c8-b8e33d37799f",
+        "name": "Texas Blue Bonnet",
+        "x": 1161.250409835617,
+        "y": 1585.56143523416,
+        "distance": 825.3632746939431
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 738.0,
+      "y": 684.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 1894.5,
+      "y": 622.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": {
+        "id": "ea019f47-bdd8-42e9-9d30-36c3fdc79506",
+        "name": "Texas Bluebonnet",
+        "x": 2528.655788422769,
+        "y": 1640.2969710631423,
+        "distance": 1199.1931613793797
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 1701.0,
+      "y": 617.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 1440.0,
+      "y": 532.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map A"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 8556.75,
+      "y": 6218.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "cf132cb6-97b6-4fb2-90a3-8c48742c9a90",
+        "name": "Wisteria",
+        "x": 4379,
+        "y": 3396,
+        "distance": 5041.555222598175
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 8131.5,
+      "y": 5035.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "cf132cb6-97b6-4fb2-90a3-8c48742c9a90",
+        "name": "Wisteria",
+        "x": 4379,
+        "y": 3396,
+        "distance": 4094.9232975115065
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 3852.0,
+      "y": 4954.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 461.28326438316117
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 7949.25,
+      "y": 4940.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 4565.25,
+      "y": 4731.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 335.43795998664393
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wild-rhubarb",
+      "x": 7825.5,
+      "y": 4607.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wild Rhubarb",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "5e6fc983-1adf-488b-8bf7-101070137bfc",
+        "name": "Wild Rhubarb",
+        "x": 3961,
+        "y": 2243,
+        "distance": 4530.60733373603
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 3894.75,
+      "y": 4598.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 350.307186623436
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 4596.75,
+      "y": 4489.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 417.92171814828987
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 8489.25,
+      "y": 4441.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 4264.672298371783
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 5420.25,
+      "y": 4189.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 1290.4257533852904
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 4911.75,
+      "y": 4090.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 908.6633383713382
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 8039.25,
+      "y": 4085.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 3855.4523243063786
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "creek-plum",
+      "x": 7749.0,
+      "y": 3928.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Creek Plum",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "creek-plum",
+      "x": 6972.75,
+      "y": 3862.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Creek Plum",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 8160.75,
+      "y": 3838.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "creek-plum",
+      "x": 5060.25,
+      "y": 3767.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Creek Plum",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 8336.25,
+      "y": 3762.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "chocolate-daisy",
+      "x": 6036.75,
+      "y": 3667.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Already Covered",
+      "typeName": "Chocolate Daisy",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "18cb483b-dba9-4943-add5-aada1762e134",
+        "name": "Chocolate Daisy",
+        "x": 6068.319386381455,
+        "y": 3672.791545637479,
+        "distance": 32.05206521512369
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "chocolate-daisy",
+      "x": 5856.75,
+      "y": 3638.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Possible Match",
+      "typeName": "Chocolate Daisy",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "11ce87c9-aace-43fc-9465-e4856da26839",
+        "name": "Chocolate Daisy",
+        "x": 5849,
+        "y": 3848,
+        "distance": 209.3934693347457
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "blood-flower",
+      "x": 8581.5,
+      "y": 3615.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Blood Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "e52bfdc0-62da-4fd0-86f1-5a21c6201563",
+        "name": "Blood Flower",
+        "x": 7104,
+        "y": 3557,
+        "distance": 1478.6379712424691
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "blood-flower",
+      "x": 7897.5,
+      "y": 3581.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Blood Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "e52bfdc0-62da-4fd0-86f1-5a21c6201563",
+        "name": "Blood Flower",
+        "x": 7104,
+        "y": 3557,
+        "distance": 793.8858938789698
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 6788.25,
+      "y": 3562.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 8399.25,
+      "y": 3558.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 5368.5,
+      "y": 3501.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "chocolate-daisy",
+      "x": 6482.25,
+      "y": 3534.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Already Covered",
+      "typeName": "Chocolate Daisy",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "dded7605-6fa8-46c3-bec0-9143e42a2a4f",
+        "name": "Chocolate Daisy",
+        "x": 6478,
+        "y": 3502,
+        "distance": 32.52883336362881
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "creek-plum",
+      "x": 4664.25,
+      "y": 3486.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Creek Plum",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 4088.25,
+      "y": 3448.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Possible Match",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "4bb2713f-8309-4217-9ed2-a4dbda2feb52",
+        "name": "Wisteria",
+        "x": 4225,
+        "y": 3390,
+        "distance": 148.83589956708673
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 5199.75,
+      "y": 3448.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 8334.0,
+      "y": 3377.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 4311.0,
+      "y": 3249.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Possible Match",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "cf132cb6-97b6-4fb2-90a3-8c48742c9a90",
+        "name": "Wisteria",
+        "x": 4379,
+        "y": 3396,
+        "distance": 161.73918047321786
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 7877.25,
+      "y": 3225.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 4243.5,
+      "y": 3125.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Possible Match",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "4bb2713f-8309-4217-9ed2-a4dbda2feb52",
+        "name": "Wisteria",
+        "x": 4225,
+        "y": 3390,
+        "distance": 264.89679594191796
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 8097.75,
+      "y": 3073.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 6912.0,
+      "y": 2864.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 3731.62,
+      "y": 2788.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Possible Match",
+      "typeName": "Wisteria",
+      "sourceDetections": 2,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B",
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "03397457-8579-4c40-8b2e-63ba5ba6ea6c",
+        "name": "Wisteria",
+        "x": 3983,
+        "y": 2769,
+        "distance": 252.13020569731552
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 3917.25,
+      "y": 2665.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Already Covered",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "03397457-8579-4c40-8b2e-63ba5ba6ea6c",
+        "name": "Wisteria",
+        "x": 3983,
+        "y": 2769,
+        "distance": 123.04089767292558
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 5154.75,
+      "y": 2565.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Possible Match",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "c4007237-b2d5-42d4-84e8-84aea748696c",
+        "name": "Texas Bluebonnet",
+        "x": 5107,
+        "y": 2704,
+        "distance": 146.73658371435417
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "blood-flower",
+      "x": 8160.75,
+      "y": 2541.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Blood Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "e52bfdc0-62da-4fd0-86f1-5a21c6201563",
+        "name": "Blood Flower",
+        "x": 7104,
+        "y": 3557,
+        "distance": 1465.5923077377565
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 4896.0,
+      "y": 2380.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 2,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B",
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "c4007237-b2d5-42d4-84e8-84aea748696c",
+        "name": "Texas Bluebonnet",
+        "x": 5107,
+        "y": 2704,
+        "distance": 386.64841911023376
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 4077.0,
+      "y": 2380.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "03397457-8579-4c40-8b2e-63ba5ba6ea6c",
+        "name": "Wisteria",
+        "x": 3983,
+        "y": 2769,
+        "distance": 400.1962018818344
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 5429.25,
+      "y": 2332.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "52b7bf1a-fe60-4093-96ed-1a61c011c21f",
+        "name": "Texas Bluebonnet",
+        "x": 5216,
+        "y": 2728,
+        "distance": 449.3281790634501
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 7890.75,
+      "y": 2266.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "creek-plum",
+      "x": 7341.75,
+      "y": 2076.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Creek Plum",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 3318.75,
+      "y": 2038.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 1854.0,
+      "y": 1829.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 4065.75,
+      "y": 1772.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 2925.727270698009
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 2873.25,
+      "y": 1753.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 3238.7963138344103
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 3902.62,
+      "y": 1705.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 2,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B",
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 3005.6021261357046
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 3564.0,
+      "y": 1686.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 2684.25,
+      "y": 1653.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 2970.0,
+      "y": 1624.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 3317.6500813840867
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 2490.75,
+      "y": 1472.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 3660.868971297539
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 1732.5,
+      "y": 1335.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 4186.127596002147
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 2279.25,
+      "y": 1306.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 3181.5,
+      "y": 1301.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 3550.229121128539
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 3408.75,
+      "y": 1140.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 3646.885400586319
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 2913.75,
+      "y": 1116.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 3069.0,
+      "y": 931.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 1487.25,
+      "y": 888.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "c80b373d-e8bb-414c-b9c8-b8e33d37799f",
+        "name": "Texas Blue Bonnet",
+        "x": 1161.250409835617,
+        "y": 1585.56143523416,
+        "distance": 769.5260731648661
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 434.25,
+      "y": 831.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "c80b373d-e8bb-414c-b9c8-b8e33d37799f",
+        "name": "Texas Blue Bonnet",
+        "x": 1161.250409835617,
+        "y": 1585.56143523416,
+        "distance": 1047.4436710446828
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 2531.25,
+      "y": 703.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "ea019f47-bdd8-42e9-9d30-36c3fdc79506",
+        "name": "Texas Bluebonnet",
+        "x": 2528.655788422769,
+        "y": 1640.2969710631423,
+        "distance": 937.050562091193
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 740.25,
+      "y": 693.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "c80b373d-e8bb-414c-b9c8-b8e33d37799f",
+        "name": "Texas Blue Bonnet",
+        "x": 1161.250409835617,
+        "y": 1585.56143523416,
+        "distance": 986.1891203515199
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 2025.0,
+      "y": 655.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "ea019f47-bdd8-42e9-9d30-36c3fdc79506",
+        "name": "Texas Bluebonnet",
+        "x": 2528.655788422769,
+        "y": 1640.2969710631423,
+        "distance": 1105.8941592416709
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 1325.25,
+      "y": 503.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map B"
+      ],
+      "nearestExistingMarker": {
+        "id": "c80b373d-e8bb-414c-b9c8-b8e33d37799f",
+        "name": "Texas Blue Bonnet",
+        "x": 1161.250409835617,
+        "y": 1585.56143523416,
+        "distance": 1094.1717630160604
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 8676.0,
+      "y": 6260.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "cf132cb6-97b6-4fb2-90a3-8c48742c9a90",
+        "name": "Wisteria",
+        "x": 4379,
+        "y": 3396,
+        "distance": 5164.397502372105
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 8446.5,
+      "y": 6028.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "cf132cb6-97b6-4fb2-90a3-8c48742c9a90",
+        "name": "Wisteria",
+        "x": 4379,
+        "y": 3396,
+        "distance": 4844.788978893305
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 8257.5,
+      "y": 5648.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "cf132cb6-97b6-4fb2-90a3-8c48742c9a90",
+        "name": "Wisteria",
+        "x": 4379,
+        "y": 3396,
+        "distance": 4484.893114668893
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 8118.0,
+      "y": 5367.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "cf132cb6-97b6-4fb2-90a3-8c48742c9a90",
+        "name": "Wisteria",
+        "x": 4379,
+        "y": 3396,
+        "distance": 4227.046139150061
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 8570.25,
+      "y": 5092.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 4356.582792166433
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 4041.0,
+      "y": 4907.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Possible Match",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 286.83967647450004
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 8646.75,
+      "y": 4816.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 4416.4840795592345
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wild-rhubarb",
+      "x": 8149.5,
+      "y": 4702.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wild Rhubarb",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "5e6fc983-1adf-488b-8bf7-101070137bfc",
+        "name": "Wild Rhubarb",
+        "x": 3961,
+        "y": 2243,
+        "distance": 4857.3554854985905
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 4144.5,
+      "y": 4612.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Already Covered",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 118.89701426030221
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 3829.5,
+      "y": 4508.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 442.9799656870132
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 4932.0,
+      "y": 4436.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 745.4287776172858
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 4686.75,
+      "y": 4422.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 529.1198470101341
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 5512.5,
+      "y": 4403.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "chocolate-daisy",
+      "x": 5787.0,
+      "y": 4341.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Chocolate Daisy",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "fecfb170-bdb7-467b-bb7a-143a81f43dfe",
+        "name": "Chocolate Daisy",
+        "x": 5461.785239876387,
+        "y": 4332.803234159939,
+        "distance": 325.3378010948889
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 8244.0,
+      "y": 4261.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 5697.0,
+      "y": 4199.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "creek-plum",
+      "x": 4038.75,
+      "y": 4094.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Creek Plum",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 5595.75,
+      "y": 4066.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "wild-rhubarb",
+      "x": 5343.75,
+      "y": 3995.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wild Rhubarb",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "5e6fc983-1adf-488b-8bf7-101070137bfc",
+        "name": "Wild Rhubarb",
+        "x": 3961,
+        "y": 2243,
+        "distance": 2231.927768208402
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 5584.5,
+      "y": 3876.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 7895.25,
+      "y": 3847.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "blood-flower",
+      "x": 8003.25,
+      "y": 3833.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Blood Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "e52bfdc0-62da-4fd0-86f1-5a21c6201563",
+        "name": "Blood Flower",
+        "x": 7104,
+        "y": 3557,
+        "distance": 940.7990287517271
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 3980.25,
+      "y": 3824.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Already Covered",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "4f77bafa-4a8a-48aa-817a-c688fab53ccb",
+        "name": "Wisteria",
+        "x": 4080.409387588416,
+        "y": 3845.3171162686335,
+        "distance": 102.40274590123639
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "creek-plum",
+      "x": 4272.75,
+      "y": 3762.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Creek Plum",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 5508.0,
+      "y": 3714.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 7845.75,
+      "y": 3676.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "blood-flower",
+      "x": 8205.75,
+      "y": 3657.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Blood Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "e52bfdc0-62da-4fd0-86f1-5a21c6201563",
+        "name": "Blood Flower",
+        "x": 7104,
+        "y": 3557,
+        "distance": 1106.3469731508587
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 5382.0,
+      "y": 3624.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "creek-plum",
+      "x": 4801.5,
+      "y": 3596.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Creek Plum",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "blood-flower",
+      "x": 7600.5,
+      "y": 3515.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Blood Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "e52bfdc0-62da-4fd0-86f1-5a21c6201563",
+        "name": "Blood Flower",
+        "x": 7104,
+        "y": 3557,
+        "distance": 498.25225789752767
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "blood-flower",
+      "x": 8543.25,
+      "y": 3510.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Blood Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "e52bfdc0-62da-4fd0-86f1-5a21c6201563",
+        "name": "Blood Flower",
+        "x": 7104,
+        "y": 3557,
+        "distance": 1440.0009765621578
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "chocolate-daisy",
+      "x": 5474.25,
+      "y": 3463.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Chocolate Daisy",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "931e0358-4f56-4af4-91d9-7b03d3fa1a9c",
+        "name": "Chocolate Daisy",
+        "x": 5193,
+        "y": 3706,
+        "distance": 371.6861074887097
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 4216.5,
+      "y": 3406.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Already Covered",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "4bb2713f-8309-4217-9ed2-a4dbda2feb52",
+        "name": "Wisteria",
+        "x": 4225,
+        "y": 3390,
+        "distance": 18.117670931579017
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 5049.0,
+      "y": 3377.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "chocolate-daisy",
+      "x": 4860.0,
+      "y": 3330.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Possible Match",
+      "typeName": "Chocolate Daisy",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "fedabfdc-66f3-4519-bf50-45277539c6e9",
+        "name": "Chocolate Daisy",
+        "x": 4619,
+        "y": 3373,
+        "distance": 244.80604567704643
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 7971.75,
+      "y": 3287.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 5197.5,
+      "y": 3273.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "creek-plum",
+      "x": 7305.75,
+      "y": 3273.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Creek Plum",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 7521.75,
+      "y": 3244.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 8129.25,
+      "y": 3239.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "chocolate-daisy",
+      "x": 4608.0,
+      "y": 3201.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Possible Match",
+      "typeName": "Chocolate Daisy",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "fedabfdc-66f3-4519-bf50-45277539c6e9",
+        "name": "Chocolate Daisy",
+        "x": 4619,
+        "y": 3373,
+        "distance": 171.6029210129002
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 4356.0,
+      "y": 3163.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Possible Match",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "cf132cb6-97b6-4fb2-90a3-8c48742c9a90",
+        "name": "Wisteria",
+        "x": 4379,
+        "y": 3396,
+        "distance": 233.38608034808627
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 7710.75,
+      "y": 3087.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "chocolate-daisy",
+      "x": 4486.5,
+      "y": 3007.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Chocolate Daisy",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "011de11d-eb6d-445c-9263-3ca12437ba0d",
+        "name": "Chocolate Daisy",
+        "x": 4385,
+        "y": 3303,
+        "distance": 312.91891921123374
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 7602.75,
+      "y": 2954.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 8030.25,
+      "y": 2783.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 7881.75,
+      "y": 2693.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 4000.5,
+      "y": 2522.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Possible Match",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "03397457-8579-4c40-8b2e-63ba5ba6ea6c",
+        "name": "Wisteria",
+        "x": 3983,
+        "y": 2769,
+        "distance": 247.12041599267596
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 7800.75,
+      "y": 2498.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 5118.75,
+      "y": 2432.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Possible Match",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "c4007237-b2d5-42d4-84e8-84aea748696c",
+        "name": "Texas Bluebonnet",
+        "x": 5107,
+        "y": 2704,
+        "distance": 272.0039062225763
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "creek-plum",
+      "x": 7602.75,
+      "y": 2460.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Creek Plum",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "cardinal-flower",
+      "x": 7960.5,
+      "y": 2370.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Cardinal Flower",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "wisteria",
+      "x": 4263.75,
+      "y": 2361.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Wisteria",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "03397457-8579-4c40-8b2e-63ba5ba6ea6c",
+        "name": "Wisteria",
+        "x": 3983,
+        "y": 2769,
+        "distance": 495.26211494586863
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "wild-rhubarb",
+      "x": 2902.5,
+      "y": 2204.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Already Covered",
+      "typeName": "Wild Rhubarb",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "148f600c-01d3-4858-a44e-3959957c0155",
+        "name": "Wild Rhubarb",
+        "x": 2906.75,
+        "y": 2123.75,
+        "distance": 80.61211137182161
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 1854.0,
+      "y": 2028.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 2988.0,
+      "y": 2019.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 2949.2053166922983
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 1469.25,
+      "y": 1848.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Possible Match",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "06767974-0192-419a-b7be-fe014f3d7ce8",
+        "name": "Texas Blue Bonnet",
+        "x": 1352,
+        "y": 1710,
+        "distance": 181.08440711334848
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 4320.0,
+      "y": 1791.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 2903.333945657247
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 3498.75,
+      "y": 1786.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 2997.8077198190285
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 3701.25,
+      "y": 1719.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 3020.250175897127
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 3168.0,
+      "y": 1643.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 3229.554390702768
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 4531.5,
+      "y": 1643.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 3063.923271315068
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 3395.25,
+      "y": 1634.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 3171.135778393496
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 1282.5,
+      "y": 1610.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 3537.0,
+      "y": 1453.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 1053.0,
+      "y": 1434.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "Possible Match",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "c80b373d-e8bb-414c-b9c8-b8e33d37799f",
+        "name": "Texas Blue Bonnet",
+        "x": 1161.250409835617,
+        "y": 1585.56143523416,
+        "distance": 185.64008249156245
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 4281.75,
+      "y": 1411.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 3282.377044537585
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 3926.25,
+      "y": 1387.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 3319.8593531967304
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "bitterweed",
+      "x": 3451.5,
+      "y": 1235.25,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Bitterweed",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+        "name": "Bitterweed",
+        "x": 4232,
+        "y": 4693,
+        "distance": 3544.744745748149
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 1840.5,
+      "y": 1097.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "06767974-0192-419a-b7be-fe014f3d7ce8",
+        "name": "Texas Blue Bonnet",
+        "x": 1352,
+        "y": 1710,
+        "distance": 783.4465521029643
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 967.5,
+      "y": 1002.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "c80b373d-e8bb-414c-b9c8-b8e33d37799f",
+        "name": "Texas Blue Bonnet",
+        "x": 1161.250409835617,
+        "y": 1585.56143523416,
+        "distance": 614.4101712788727
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 2502.0,
+      "y": 940.75,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "ea019f47-bdd8-42e9-9d30-36c3fdc79506",
+        "name": "Texas Bluebonnet",
+        "x": 2528.655788422769,
+        "y": 1640.2969710631423,
+        "distance": 700.0546377121382
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "agarita",
+      "x": 2810.25,
+      "y": 784.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Agarita",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": null
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 1489.5,
+      "y": 717.5,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "c80b373d-e8bb-414c-b9c8-b8e33d37799f",
+        "name": "Texas Blue Bonnet",
+        "x": 1161.250409835617,
+        "y": 1585.56143523416,
+        "distance": 928.0508869599066
+      }
+    },
+    {
+      "category": "herbs",
+      "type": "texas-bluebonnet",
+      "x": 1077.75,
+      "y": 613.0,
+      "status": "candidate",
+      "confidence": "guess",
+      "source": "RDO Wildflower Reference Maps",
+      "classification": "New Survey Target",
+      "typeName": "Texas Bluebonnet",
+      "sourceDetections": 1,
+      "sourceImages": [
+        "RDO Wildflower Reference Map C"
+      ],
+      "nearestExistingMarker": {
+        "id": "c80b373d-e8bb-414c-b9c8-b8e33d37799f",
+        "name": "Texas Blue Bonnet",
+        "x": 1161.250409835617,
+        "y": 1585.56143523416,
+        "distance": 976.1393669713525
+      }
+    }
+  ]
+}

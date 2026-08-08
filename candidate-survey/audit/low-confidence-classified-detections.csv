@@ -1,0 +1,17 @@
+detectionId,sourceImage,imageX,imageY,assignedNumber,type,digitScore,explorerX,explorerY
+D006,RDO Wildflower Reference Map A,1844.0,474.0,4,wisteria,0.526,8298.0,2213.44
+D019,RDO Wildflower Reference Map A,1806.5,729.0,1,blood-flower,0.42,8129.25,3404.22
+D031,RDO Wildflower Reference Map A,1491.5,804.0,3,chocolate-daisy,0.522,6711.75,3754.44
+D047,RDO Wildflower Reference Map A,1793.5,1000.0,1,blood-flower,0.539,8070.75,4669.71
+D093,RDO Wildflower Reference Map B,1813.5,701.0,5,cardinal-flower,0.521,8160.75,3273.46
+D103,RDO Wildflower Reference Map B,1508.5,759.0,9,agarita,0.465,6788.25,3544.31
+D104,RDO Wildflower Reference Map B,1866.5,760.0,5,cardinal-flower,0.52,8399.25,3548.98
+D105,RDO Wildflower Reference Map B,1193.0,772.0,9,agarita,0.521,5368.5,3605.01
+D115,RDO Wildflower Reference Map B,943.0,851.0,4,wisteria,0.528,4243.5,3973.92
+D120,RDO Wildflower Reference Map B,1536.0,906.0,9,agarita,0.528,6912.0,4230.75
+D149,RDO Wildflower Reference Map B,96.5,1334.0,7,texas-bluebonnet,0.488,434.25,6229.39
+D156,RDO Wildflower Reference Map C,1835.0,320.0,4,wisteria,0.54,8257.5,1494.31
+D170,RDO Wildflower Reference Map C,897.5,647.0,2,creek-plum,0.491,4038.75,3021.3
+D187,RDO Wildflower Reference Map C,1216.5,780.0,3,chocolate-daisy,0.488,5474.25,3642.37
+D196,RDO Wildflower Reference Map C,1024.0,835.0,3,chocolate-daisy,0.47,4608.0,3899.21
+D235,RDO Wildflower Reference Map C,239.5,1380.0,7,texas-bluebonnet,0.538,1077.75,6444.2

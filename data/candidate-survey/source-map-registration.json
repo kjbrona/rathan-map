@@ -1,0 +1,2052 @@
+{
+  "metadata": {
+    "model": "affine",
+    "note": "Previous control points were retired because Explorer coordinates were formula-derived from source image coordinates. V2 registration must use independent sourceVisual and explorerVisual top-left image coordinates selected manually.",
+    "yAxis": "Explorer map Y is Leaflet/app Y; convert visual image Y with explorerY = 7168 - visualImageY.",
+    "coordinateConventions": {
+      "sourceVisual": "Top-left visual image coordinates from the RDO reference image; Y increases downward.",
+      "explorerVisual": "Top-left visual image coordinates from images/rdr2-map.jpg; Y increases downward.",
+      "leafletConversion": "Convert transformed Explorer visual coordinates with explorerVisualToLeafletCoordinates(x, visualY)."
+    },
+    "registrationStatus": "manual-control-points-in-progress"
+  },
+  "maps": {
+    "map-a": {
+      "name": "RDO Wildflower Reference Map A",
+      "sourceImage": "C:/Users/kjbro/Downloads/Day1.png",
+      "model": "affine",
+      "controlPoints": [
+        {
+          "name": "Colter",
+          "explorer": {
+            "x": 4567.5,
+            "y": 6693
+          },
+          "sourceVisual": {
+            "x": 1015,
+            "y": 100
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 4567.5,
+            "y": 6693
+          }
+        },
+        {
+          "name": "Wallace Station",
+          "explorer": {
+            "x": 4770,
+            "y": 4793
+          },
+          "sourceVisual": {
+            "x": 1060,
+            "y": 500
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 4770,
+            "y": 4793
+          }
+        },
+        {
+          "name": "Strawberry",
+          "explorer": {
+            "x": 4117.5,
+            "y": 3890.5
+          },
+          "sourceVisual": {
+            "x": 915,
+            "y": 690
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 4117.5,
+            "y": 3890.5
+          }
+        },
+        {
+          "name": "Blackwater",
+          "explorer": {
+            "x": 5085,
+            "y": 2964.25
+          },
+          "sourceVisual": {
+            "x": 1130,
+            "y": 885
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 5085,
+            "y": 2964.25
+          }
+        },
+        {
+          "name": "Valentine",
+          "explorer": {
+            "x": 5602.5,
+            "y": 4698
+          },
+          "sourceVisual": {
+            "x": 1245,
+            "y": 520
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 5602.5,
+            "y": 4698
+          }
+        },
+        {
+          "name": "Emerald Ranch",
+          "explorer": {
+            "x": 7267.5,
+            "y": 4650.5
+          },
+          "sourceVisual": {
+            "x": 1615,
+            "y": 530
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 7267.5,
+            "y": 4650.5
+          }
+        },
+        {
+          "name": "Rhodes",
+          "explorer": {
+            "x": 7087.5,
+            "y": 2940.5
+          },
+          "sourceVisual": {
+            "x": 1575,
+            "y": 890
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 7087.5,
+            "y": 2940.5
+          }
+        },
+        {
+          "name": "Saint Denis",
+          "explorer": {
+            "x": 8226,
+            "y": 2940.5
+          },
+          "sourceVisual": {
+            "x": 1828,
+            "y": 890
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 8226,
+            "y": 2940.5
+          }
+        },
+        {
+          "name": "Van Horn",
+          "explorer": {
+            "x": 8955,
+            "y": 4721.75
+          },
+          "sourceVisual": {
+            "x": 1990,
+            "y": 515
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 8955,
+            "y": 4721.75
+          }
+        },
+        {
+          "name": "Annesburg",
+          "explorer": {
+            "x": 8257.5,
+            "y": 5386.75
+          },
+          "sourceVisual": {
+            "x": 1835,
+            "y": 375
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 8257.5,
+            "y": 5386.75
+          }
+        },
+        {
+          "name": "Tumbleweed",
+          "explorer": {
+            "x": 1147.5,
+            "y": 1159.25
+          },
+          "sourceVisual": {
+            "x": 255,
+            "y": 1265
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 1147.5,
+            "y": 1159.25
+          }
+        },
+        {
+          "name": "Armadillo",
+          "explorer": {
+            "x": 2857.5,
+            "y": 1895.5
+          },
+          "sourceVisual": {
+            "x": 635,
+            "y": 1110
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 2857.5,
+            "y": 1895.5
+          }
+        },
+        {
+          "name": "MacFarlane's Ranch",
+          "explorer": {
+            "x": 3600,
+            "y": 1895.5
+          },
+          "sourceVisual": {
+            "x": 800,
+            "y": 1110
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 3600,
+            "y": 1895.5
+          }
+        },
+        {
+          "name": "Flatneck Station",
+          "explorer": {
+            "x": 5535,
+            "y": 3748
+          },
+          "sourceVisual": {
+            "x": 1230,
+            "y": 720
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 5535,
+            "y": 3748
+          }
+        },
+        {
+          "name": "Braithwaite Manor",
+          "explorer": {
+            "x": 7245,
+            "y": 2370.5
+          },
+          "sourceVisual": {
+            "x": 1610,
+            "y": 1010
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 7245,
+            "y": 2370.5
+          }
+        },
+        {
+          "name": "Sisika Island Shoreline",
+          "explorer": {
+            "x": 9000,
+            "y": 3130.5
+          },
+          "sourceVisual": {
+            "x": 2000,
+            "y": 850
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 9000,
+            "y": 3130.5
+          }
+        },
+        {
+          "name": "Tumbleweed road intersection",
+          "sourceVisual": {
+            "x": 361.609,
+            "y": 1246.37
+          },
+          "explorerVisual": {
+            "x": 1765.792,
+            "y": 5360.586
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Armadillo main road intersection",
+          "sourceVisual": {
+            "x": 617.496,
+            "y": 1152.551
+          },
+          "explorerVisual": {
+            "x": 2810.665,
+            "y": 4983.78
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "MacFarlane's Ranch rail/road crossing",
+          "sourceVisual": {
+            "x": 859.25,
+            "y": 1120.75
+          },
+          "explorerVisual": {
+            "x": 3800.522,
+            "y": 4850.082
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Annesburg rail/road point",
+          "sourceVisual": {
+            "x": 1943.25,
+            "y": 377.75
+          },
+          "explorerVisual": {
+            "x": 8226.235,
+            "y": 1814.168
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Saint Denis northern bridge",
+          "sourceVisual": {
+            "x": 1884.0,
+            "y": 700.25
+          },
+          "explorerVisual": {
+            "x": 7985.333,
+            "y": 3134.217
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Saint Denis western bridge",
+          "sourceVisual": {
+            "x": 1804.5,
+            "y": 898.5
+          },
+          "explorerVisual": {
+            "x": 7661.994,
+            "y": 3942.048
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Dakota River bend",
+          "sourceVisual": {
+            "x": 1343.75,
+            "y": 321.0
+          },
+          "explorerVisual": {
+            "x": 5779.811,
+            "y": 1580.538
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Valentine main road/rail crossing",
+          "sourceVisual": {
+            "x": 1319.25,
+            "y": 513.75
+          },
+          "explorerVisual": {
+            "x": 5678.573,
+            "y": 2369.774
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Flatneck Station rail junction",
+          "sourceVisual": {
+            "x": 1287.25,
+            "y": 704.75
+          },
+          "explorerVisual": {
+            "x": 5547.379,
+            "y": 3146.614
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Van Horn central road",
+          "sourceVisual": {
+            "x": 1943.5,
+            "y": 519.25
+          },
+          "explorerVisual": {
+            "x": 8230.161,
+            "y": 2391.468
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Braithwaite Manor entrance-road junction",
+          "sourceVisual": {
+            "x": 1555.25,
+            "y": 961.75
+          },
+          "explorerVisual": {
+            "x": 6643.425,
+            "y": 4199.273
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Flat Iron Lake shoreline point",
+          "sourceVisual": {
+            "x": 1380.75,
+            "y": 1111.5
+          },
+          "explorerVisual": {
+            "x": 5925.468,
+            "y": 4801.53
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Northeast coastline point",
+          "sourceVisual": {
+            "x": 2028.919,
+            "y": 355.252
+          },
+          "explorerVisual": {
+            "x": 8577.589,
+            "y": 1717.345
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Thieves Landing bridge or road junction",
+          "sourceVisual": {
+            "x": 1083.08,
+            "y": 1045.494
+          },
+          "explorerVisual": {
+            "x": 4715.236,
+            "y": 4540.462
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Blackwater central road intersection",
+          "sourceVisual": {
+            "x": 1195.07,
+            "y": 900.905
+          },
+          "explorerVisual": {
+            "x": 5174.015,
+            "y": 3948.782
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Strawberry central bridge",
+          "sourceVisual": {
+            "x": 1001.5,
+            "y": 717.5
+          },
+          "explorerVisual": {
+            "x": 4380.384,
+            "y": 3203.72
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Owanjila dam or shoreline point",
+          "sourceVisual": {
+            "x": 894.25,
+            "y": 729.5
+          },
+          "explorerVisual": {
+            "x": 3941.882,
+            "y": 3254.627
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Wallace Station rail intersection",
+          "sourceVisual": {
+            "x": 1095.75,
+            "y": 552.0
+          },
+          "explorerVisual": {
+            "x": 4765.663,
+            "y": 2525.72
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        }
+      ],
+      "geographicBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 2048,
+        "bottom": 1498
+      },
+      "blankMargins": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 37,
+        "notes": "The geographic map artwork reaches the image edges in at least one region; logo, day heading, and legend are interior overlays rather than removable rectangular margins."
+      },
+      "controlPointSelection": "retired-derived-points-awaiting-independent-manual-selection",
+      "geographicBoundsVisual": {
+        "left": 0.481,
+        "top": 0.0,
+        "right": 2035.702,
+        "bottom": 1499.857
+      }
+    },
+    "map-b": {
+      "name": "RDO Wildflower Reference Map B",
+      "sourceImage": "C:/Users/kjbro/Downloads/Day2.png",
+      "model": "affine",
+      "controlPoints": [
+        {
+          "name": "Colter",
+          "explorer": {
+            "x": 4567.5,
+            "y": 6693
+          },
+          "sourceVisual": {
+            "x": 1015,
+            "y": 100
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 4567.5,
+            "y": 6693
+          }
+        },
+        {
+          "name": "Wallace Station",
+          "explorer": {
+            "x": 4770,
+            "y": 4793
+          },
+          "sourceVisual": {
+            "x": 1060,
+            "y": 500
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 4770,
+            "y": 4793
+          }
+        },
+        {
+          "name": "Strawberry",
+          "explorer": {
+            "x": 4117.5,
+            "y": 3890.5
+          },
+          "sourceVisual": {
+            "x": 915,
+            "y": 690
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 4117.5,
+            "y": 3890.5
+          }
+        },
+        {
+          "name": "Blackwater",
+          "explorer": {
+            "x": 5085,
+            "y": 2964.25
+          },
+          "sourceVisual": {
+            "x": 1130,
+            "y": 885
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 5085,
+            "y": 2964.25
+          }
+        },
+        {
+          "name": "Valentine",
+          "explorer": {
+            "x": 5602.5,
+            "y": 4698
+          },
+          "sourceVisual": {
+            "x": 1245,
+            "y": 520
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 5602.5,
+            "y": 4698
+          }
+        },
+        {
+          "name": "Emerald Ranch",
+          "explorer": {
+            "x": 7267.5,
+            "y": 4650.5
+          },
+          "sourceVisual": {
+            "x": 1615,
+            "y": 530
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 7267.5,
+            "y": 4650.5
+          }
+        },
+        {
+          "name": "Rhodes",
+          "explorer": {
+            "x": 7087.5,
+            "y": 2940.5
+          },
+          "sourceVisual": {
+            "x": 1575,
+            "y": 890
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 7087.5,
+            "y": 2940.5
+          }
+        },
+        {
+          "name": "Saint Denis",
+          "explorer": {
+            "x": 8226,
+            "y": 2940.5
+          },
+          "sourceVisual": {
+            "x": 1828,
+            "y": 890
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 8226,
+            "y": 2940.5
+          }
+        },
+        {
+          "name": "Van Horn",
+          "explorer": {
+            "x": 8955,
+            "y": 4721.75
+          },
+          "sourceVisual": {
+            "x": 1990,
+            "y": 515
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 8955,
+            "y": 4721.75
+          }
+        },
+        {
+          "name": "Annesburg",
+          "explorer": {
+            "x": 8257.5,
+            "y": 5386.75
+          },
+          "sourceVisual": {
+            "x": 1835,
+            "y": 375
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 8257.5,
+            "y": 5386.75
+          }
+        },
+        {
+          "name": "Tumbleweed",
+          "explorer": {
+            "x": 1147.5,
+            "y": 1159.25
+          },
+          "sourceVisual": {
+            "x": 255,
+            "y": 1265
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 1147.5,
+            "y": 1159.25
+          }
+        },
+        {
+          "name": "Armadillo",
+          "explorer": {
+            "x": 2857.5,
+            "y": 1895.5
+          },
+          "sourceVisual": {
+            "x": 635,
+            "y": 1110
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 2857.5,
+            "y": 1895.5
+          }
+        },
+        {
+          "name": "MacFarlane's Ranch",
+          "explorer": {
+            "x": 3600,
+            "y": 1895.5
+          },
+          "sourceVisual": {
+            "x": 800,
+            "y": 1110
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 3600,
+            "y": 1895.5
+          }
+        },
+        {
+          "name": "Flatneck Station",
+          "explorer": {
+            "x": 5535,
+            "y": 3748
+          },
+          "sourceVisual": {
+            "x": 1230,
+            "y": 720
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 5535,
+            "y": 3748
+          }
+        },
+        {
+          "name": "Braithwaite Manor",
+          "explorer": {
+            "x": 7245,
+            "y": 2370.5
+          },
+          "sourceVisual": {
+            "x": 1610,
+            "y": 1010
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 7245,
+            "y": 2370.5
+          }
+        },
+        {
+          "name": "Sisika Island Shoreline",
+          "explorer": {
+            "x": 9000,
+            "y": 3130.5
+          },
+          "sourceVisual": {
+            "x": 2000,
+            "y": 850
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 9000,
+            "y": 3130.5
+          }
+        },
+        {
+          "name": "Flat Iron Lake shoreline point",
+          "sourceVisual": {
+            "x": 1380.0,
+            "y": 1111.25
+          },
+          "explorerVisual": {
+            "x": 5924.972,
+            "y": 4802.687
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Braithwaite Manor entrance-road junction",
+          "sourceVisual": {
+            "x": 1555.339,
+            "y": 961.557
+          },
+          "explorerVisual": {
+            "x": 6643.466,
+            "y": 4198.735
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Saint Denis western bridge",
+          "sourceVisual": {
+            "x": 1804.631,
+            "y": 898.206
+          },
+          "explorerVisual": {
+            "x": 7663.936,
+            "y": 3940.725
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Saint Denis northern bridge",
+          "sourceVisual": {
+            "x": 1883.391,
+            "y": 700.964
+          },
+          "explorerVisual": {
+            "x": 7985.58,
+            "y": 3131.986
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Northeast coastline point",
+          "sourceVisual": {
+            "x": 2028.583,
+            "y": 354.42
+          },
+          "explorerVisual": {
+            "x": 8577.962,
+            "y": 1713.51
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Annesburg rail/road point",
+          "sourceVisual": {
+            "x": 1942.975,
+            "y": 377.706
+          },
+          "explorerVisual": {
+            "x": 8226.235,
+            "y": 1814.168
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Valentine main road/rail crossing",
+          "sourceVisual": {
+            "x": 1318.374,
+            "y": 514.337
+          },
+          "explorerVisual": {
+            "x": 5674.603,
+            "y": 2371.597
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Dakota River bend",
+          "sourceVisual": {
+            "x": 1344.056,
+            "y": 321.889
+          },
+          "explorerVisual": {
+            "x": 5777.009,
+            "y": 1584.858
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Wallace Station rail intersection",
+          "sourceVisual": {
+            "x": 1095.5,
+            "y": 552.5
+          },
+          "explorerVisual": {
+            "x": 4763.349,
+            "y": 2525.72
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Owanjila dam or shoreline point",
+          "sourceVisual": {
+            "x": 894.25,
+            "y": 729.75
+          },
+          "explorerVisual": {
+            "x": 3941.882,
+            "y": 3252.313
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Strawberry central bridge",
+          "sourceVisual": {
+            "x": 1001.75,
+            "y": 717.25
+          },
+          "explorerVisual": {
+            "x": 4381.541,
+            "y": 3201.406
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Blackwater central road intersection",
+          "sourceVisual": {
+            "x": 1195.75,
+            "y": 900.25
+          },
+          "explorerVisual": {
+            "x": 5176.396,
+            "y": 3947.667
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Thieves Landing bridge or road junction",
+          "sourceVisual": {
+            "x": 1083.25,
+            "y": 1045.25
+          },
+          "explorerVisual": {
+            "x": 4713.598,
+            "y": 4541.206
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Armadillo main road intersection",
+          "sourceVisual": {
+            "x": 617.75,
+            "y": 1152.75
+          },
+          "explorerVisual": {
+            "x": 2812.655,
+            "y": 4983.178
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Tumbleweed road intersection",
+          "sourceVisual": {
+            "x": 362.0,
+            "y": 1245.25
+          },
+          "explorerVisual": {
+            "x": 1766.732,
+            "y": 5359.202
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Flatneck Station rail junction",
+          "sourceVisual": {
+            "x": 1287.5,
+            "y": 704.5
+          },
+          "explorerVisual": {
+            "x": 5547.792,
+            "y": 3145.87
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Emerald Ranch rail/road crossing",
+          "sourceVisual": {
+            "x": 1658.5,
+            "y": 547.25
+          },
+          "explorerVisual": {
+            "x": 7064.612,
+            "y": 2507.208
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Rhodes main intersection",
+          "sourceVisual": {
+            "x": 1597.25,
+            "y": 894.0
+          },
+          "explorerVisual": {
+            "x": 6812.202,
+            "y": 3923.787
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        }
+      ],
+      "geographicBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 2048,
+        "bottom": 1498
+      },
+      "blankMargins": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 37,
+        "notes": "The geographic map artwork reaches the image edges in at least one region; logo, day heading, and legend are interior overlays rather than removable rectangular margins."
+      },
+      "controlPointSelection": "retired-derived-points-awaiting-independent-manual-selection",
+      "geographicBoundsVisual": {
+        "left": 0.0,
+        "top": 0.0,
+        "right": 2034.997,
+        "bottom": 1496.124
+      }
+    },
+    "map-c": {
+      "name": "RDO Wildflower Reference Map C",
+      "sourceImage": "C:/Users/kjbro/Downloads/Day3.png",
+      "model": "affine",
+      "controlPoints": [
+        {
+          "name": "Colter",
+          "explorer": {
+            "x": 4567.5,
+            "y": 6693
+          },
+          "sourceVisual": {
+            "x": 1015,
+            "y": 100
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 4567.5,
+            "y": 6693
+          }
+        },
+        {
+          "name": "Wallace Station",
+          "explorer": {
+            "x": 4770,
+            "y": 4793
+          },
+          "sourceVisual": {
+            "x": 1060,
+            "y": 500
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 4770,
+            "y": 4793
+          }
+        },
+        {
+          "name": "Strawberry",
+          "explorer": {
+            "x": 4117.5,
+            "y": 3890.5
+          },
+          "sourceVisual": {
+            "x": 915,
+            "y": 690
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 4117.5,
+            "y": 3890.5
+          }
+        },
+        {
+          "name": "Blackwater",
+          "explorer": {
+            "x": 5085,
+            "y": 2964.25
+          },
+          "sourceVisual": {
+            "x": 1130,
+            "y": 885
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 5085,
+            "y": 2964.25
+          }
+        },
+        {
+          "name": "Valentine",
+          "explorer": {
+            "x": 5602.5,
+            "y": 4698
+          },
+          "sourceVisual": {
+            "x": 1245,
+            "y": 520
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 5602.5,
+            "y": 4698
+          }
+        },
+        {
+          "name": "Emerald Ranch",
+          "explorer": {
+            "x": 7267.5,
+            "y": 4650.5
+          },
+          "sourceVisual": {
+            "x": 1615,
+            "y": 530
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 7267.5,
+            "y": 4650.5
+          }
+        },
+        {
+          "name": "Rhodes",
+          "explorer": {
+            "x": 7087.5,
+            "y": 2940.5
+          },
+          "sourceVisual": {
+            "x": 1575,
+            "y": 890
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 7087.5,
+            "y": 2940.5
+          }
+        },
+        {
+          "name": "Saint Denis",
+          "explorer": {
+            "x": 8226,
+            "y": 2940.5
+          },
+          "sourceVisual": {
+            "x": 1828,
+            "y": 890
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 8226,
+            "y": 2940.5
+          }
+        },
+        {
+          "name": "Van Horn",
+          "explorer": {
+            "x": 8955,
+            "y": 4721.75
+          },
+          "sourceVisual": {
+            "x": 1990,
+            "y": 515
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 8955,
+            "y": 4721.75
+          }
+        },
+        {
+          "name": "Annesburg",
+          "explorer": {
+            "x": 8257.5,
+            "y": 5386.75
+          },
+          "sourceVisual": {
+            "x": 1835,
+            "y": 375
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 8257.5,
+            "y": 5386.75
+          }
+        },
+        {
+          "name": "Tumbleweed",
+          "explorer": {
+            "x": 1147.5,
+            "y": 1159.25
+          },
+          "sourceVisual": {
+            "x": 255,
+            "y": 1265
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 1147.5,
+            "y": 1159.25
+          }
+        },
+        {
+          "name": "Armadillo",
+          "explorer": {
+            "x": 2857.5,
+            "y": 1895.5
+          },
+          "sourceVisual": {
+            "x": 635,
+            "y": 1110
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 2857.5,
+            "y": 1895.5
+          }
+        },
+        {
+          "name": "MacFarlane's Ranch",
+          "explorer": {
+            "x": 3600,
+            "y": 1895.5
+          },
+          "sourceVisual": {
+            "x": 800,
+            "y": 1110
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 3600,
+            "y": 1895.5
+          }
+        },
+        {
+          "name": "Flatneck Station",
+          "explorer": {
+            "x": 5535,
+            "y": 3748
+          },
+          "sourceVisual": {
+            "x": 1230,
+            "y": 720
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 5535,
+            "y": 3748
+          }
+        },
+        {
+          "name": "Braithwaite Manor",
+          "explorer": {
+            "x": 7245,
+            "y": 2370.5
+          },
+          "sourceVisual": {
+            "x": 1610,
+            "y": 1010
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 7245,
+            "y": 2370.5
+          }
+        },
+        {
+          "name": "Sisika Island Shoreline",
+          "explorer": {
+            "x": 9000,
+            "y": 3130.5
+          },
+          "sourceVisual": {
+            "x": 2000,
+            "y": 850
+          },
+          "selection": "manual",
+          "retired": true,
+          "validForRegistration": false,
+          "sourceCoordinateMethod": "unknown; previously labeled manual",
+          "explorerCoordinateMethod": "formula-derived from source coordinate",
+          "retirementReason": "Explorer coordinate matches explorerX = sourceX * 4.5 and explorerY = 7168 - sourceY * 4.75; not independently selected.",
+          "derivedFormula": {
+            "explorerX": "sourceX * 4.5",
+            "explorerY": "7168 - (sourceY * 4.75)"
+          },
+          "derivedExplorer": {
+            "x": 9000,
+            "y": 3130.5
+          }
+        },
+        {
+          "name": "Tumbleweed road intersection",
+          "sourceVisual": {
+            "x": 361.252,
+            "y": 1244.836
+          },
+          "explorerVisual": {
+            "x": 1765.938,
+            "y": 5359.712
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Flat Iron Lake shoreline point",
+          "sourceVisual": {
+            "x": 1380.222,
+            "y": 1111.603
+          },
+          "explorerVisual": {
+            "x": 5922.658,
+            "y": 4800.373
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Braithwaite Manor entrance-road junction",
+          "sourceVisual": {
+            "x": 1555.479,
+            "y": 961.733
+          },
+          "explorerVisual": {
+            "x": 6643.466,
+            "y": 4202.206
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Saint Denis western bridge",
+          "sourceVisual": {
+            "x": 1804.443,
+            "y": 897.854
+          },
+          "explorerVisual": {
+            "x": 7662.779,
+            "y": 3941.882
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Saint Denis northern bridge",
+          "sourceVisual": {
+            "x": 1883.882,
+            "y": 700.211
+          },
+          "explorerVisual": {
+            "x": 7986.737,
+            "y": 3131.986
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Northeast coastline point",
+          "sourceVisual": {
+            "x": 2028.838,
+            "y": 354.337
+          },
+          "explorerVisual": {
+            "x": 8577.962,
+            "y": 1714.667
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Valentine main road/rail crossing",
+          "sourceVisual": {
+            "x": 1319.059,
+            "y": 513.995
+          },
+          "explorerVisual": {
+            "x": 5674.595,
+            "y": 2371.381
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Dakota River bend",
+          "sourceVisual": {
+            "x": 1344.399,
+            "y": 321.546
+          },
+          "explorerVisual": {
+            "x": 5776.546,
+            "y": 1578.202
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "MacFarlane's Ranch rail/road crossing",
+          "sourceVisual": {
+            "x": 859.484,
+            "y": 1121.049
+          },
+          "explorerVisual": {
+            "x": 3799.594,
+            "y": 4851.812
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Thieves Landing bridge or road junction",
+          "sourceVisual": {
+            "x": 1083.256,
+            "y": 1044.732
+          },
+          "explorerVisual": {
+            "x": 4713.598,
+            "y": 4540.049
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Blackwater central road intersection",
+          "sourceVisual": {
+            "x": 1195.77,
+            "y": 900.726
+          },
+          "explorerVisual": {
+            "x": 5175.239,
+            "y": 3948.824
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Strawberry central bridge",
+          "sourceVisual": {
+            "x": 1001.316,
+            "y": 717.278
+          },
+          "explorerVisual": {
+            "x": 4380.384,
+            "y": 3200.249
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Owanjila dam or shoreline point",
+          "sourceVisual": {
+            "x": 894.305,
+            "y": 730.12
+          },
+          "explorerVisual": {
+            "x": 3941.882,
+            "y": 3249.999
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Emerald Ranch rail/road crossing",
+          "sourceVisual": {
+            "x": 1658.057,
+            "y": 547.59
+          },
+          "explorerVisual": {
+            "x": 7064.612,
+            "y": 2504.894
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Rhodes main intersection",
+          "sourceVisual": {
+            "x": 1597.213,
+            "y": 893.999
+          },
+          "explorerVisual": {
+            "x": 6814.701,
+            "y": 3924.528
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Annesburg rail/road point",
+          "sourceVisual": {
+            "x": 1943.011,
+            "y": 377.901
+          },
+          "explorerVisual": {
+            "x": 8227.392,
+            "y": 1811.854
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Van Horn central road",
+          "sourceVisual": {
+            "x": 1928.925,
+            "y": 510.212
+          },
+          "explorerVisual": {
+            "x": 8170.7,
+            "y": 2354.485
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        },
+        {
+          "name": "Southwest San Luis River bend",
+          "sourceVisual": {
+            "x": 180.467,
+            "y": 1399.8
+          },
+          "explorerVisual": {
+            "x": 1029.95,
+            "y": 5990.154
+          },
+          "selection": "independent-manual",
+          "sourceCoordinateMethod": "manual-click",
+          "explorerCoordinateMethod": "manual-click"
+        }
+      ],
+      "geographicBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 2048,
+        "bottom": 1498
+      },
+      "blankMargins": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 37,
+        "notes": "The geographic map artwork reaches the image edges in at least one region; logo, day heading, and legend are interior overlays rather than removable rectangular margins."
+      },
+      "controlPointSelection": "retired-derived-points-awaiting-independent-manual-selection",
+      "geographicBoundsVisual": {
+        "left": 0.0,
+        "top": 0.0,
+        "right": 2035.691,
+        "bottom": 1499.557
+      }
+    }
+  }
+}

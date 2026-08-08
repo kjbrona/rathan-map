@@ -11,7 +11,9 @@ let TYPE_GROUPS = {};
 let TYPE_GROUP_LIST = [];
 
 async function loadTypeGroupData() {
-  const response = await fetch("data/type-groups.json");
+  const response = await fetch(
+    `data/type-groups.json?v=${encodeURIComponent(APP_VERSION)}`
+  );
   TYPE_GROUP_LIST = await response.json();
   TYPE_GROUPS = TYPE_GROUP_LIST.reduce((groupsById, group) => {
     groupsById[group.id] = group;
@@ -26,7 +28,9 @@ async function loadTypesForCategory(categoryId) {
     return TYPE_DATA[categoryId];
   }
 
-  const response = await fetch(`data/types/${categoryId}.json`);
+  const response = await fetch(
+    `data/types/${categoryId}.json?v=${encodeURIComponent(APP_VERSION)}`
+  );
   TYPE_DATA[categoryId] = await response.json();
 
   return TYPE_DATA[categoryId];
@@ -68,9 +72,9 @@ function createTypeGroupIconHtml(categoryId, typeId, className = "type-group-ico
 
 function escapeAttribute(value) {
   return String(value)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 }

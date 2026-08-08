@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9216" height="7168" viewBox="0 0 9216 7168">
+  <image href="../../images/rdr2-map.jpg" x="0" y="0" width="9216" height="7168" opacity="0.78" />
+  <rect x="80" y="80" width="1800" height="760" rx="28" fill="#1b140e" opacity="0.86" />
+  <text x="150" y="190" fill="#ffd36a" font-family="Arial" font-size="86" font-weight="700">Residual Survey Targets</text>
+  <text x="150" y="300" fill="#f2e2bd" font-family="Arial" font-size="56">Numbers show recommended priority order.</text>
+  <circle cx="190" cy="410" r="35" fill="#d94f3d" stroke="#f2e2bd" stroke-width="9" />
+  <text x="250" y="430" fill="#f2e2bd" font-family="Arial" font-size="54">Top 10 targets</text>
+  <circle cx="190" cy="515" r="30" fill="#d7a541" stroke="#1b140e" stroke-width="8" />
+  <text x="250" y="535" fill="#f2e2bd" font-family="Arial" font-size="54">Priority 11-20</text>
+  <circle cx="190" cy="620" r="25" fill="#3f5f6f" stroke="#f2e2bd" stroke-width="7" />
+  <text x="250" y="640" fill="#f2e2bd" font-family="Arial" font-size="54">Priority 21-30</text>
+  <rect x="155" y="690" width="70" height="70" fill="#1b140e" stroke="#55d66b" stroke-width="10" />
+  <text x="250" y="742" fill="#f2e2bd" font-family="Arial" font-size="54">Existing residual pair</text>
+  <rect x="6155.93" y="3376.93" width="36" height="36" fill="#1b140e" stroke="#55d66b" stroke-width="7" opacity="0.88" />
+  <rect x="5199.97" y="4410.93" width="36" height="36" fill="#1b140e" stroke="#55d66b" stroke-width="7" opacity="0.88" />
+  <rect x="5042.55" y="4410.55" width="36" height="36" fill="#1b140e" stroke="#55d66b" stroke-width="7" opacity="0.88" />
+  <rect x="5220.31" y="4120.74" width="36" height="36" fill="#1b140e" stroke="#55d66b" stroke-width="7" opacity="0.88" />
+  <rect x="5267.30" y="4051.16" width="36" height="36" fill="#1b140e" stroke="#55d66b" stroke-width="7" opacity="0.88" />
+  <rect x="4918.40" y="4325.53" width="36" height="36" fill="#1b140e" stroke="#55d66b" stroke-width="7" opacity="0.88" />
+  <rect x="3971.78" y="4370.76" width="36" height="36" fill="#1b140e" stroke="#55d66b" stroke-width="7" opacity="0.88" />
+  <rect x="2543.09" y="5609.38" width="36" height="36" fill="#1b140e" stroke="#55d66b" stroke-width="7" opacity="0.88" />
+  <rect x="1927.56" y="5261.62" width="36" height="36" fill="#1b140e" stroke="#55d66b" stroke-width="7" opacity="0.88" />
+  <rect x="1333.16" y="5425.29" width="36" height="36" fill="#1b140e" stroke="#55d66b" stroke-width="7" opacity="0.88" />
+  <rect x="1149.66" y="5556.06" width="36" height="36" fill="#1b140e" stroke="#55d66b" stroke-width="7" opacity="0.88" />
+  <rect x="4225.38" y="3695.67" width="36" height="36" fill="#1b140e" stroke="#55d66b" stroke-width="7" opacity="0.88" />
+  <rect x="4184.00" y="3623.11" width="36" height="36" fill="#1b140e" stroke="#55d66b" stroke-width="7" opacity="0.88" />
+  <rect x="4348.23" y="3753.73" width="36" height="36" fill="#1b140e" stroke="#55d66b" stroke-width="7" opacity="0.88" />
+  <rect x="4343.96" y="3830.63" width="36" height="36" fill="#1b140e" stroke="#55d66b" stroke-width="7" opacity="0.88" />
+  <rect x="4454.18" y="3662.97" width="36" height="36" fill="#1b140e" stroke="#55d66b" stroke-width="7" opacity="0.88" />
+  <rect x="4989.44" y="3601.69" width="36" height="36" fill="#1b140e" stroke="#55d66b" stroke-width="7" opacity="0.88" />
+  <rect x="5587.79" y="3287.38" width="36" height="36" fill="#1b140e" stroke="#55d66b" stroke-width="7" opacity="0.88" />
+  <rect x="5751.26" y="3262.78" width="36" height="36" fill="#1b140e" stroke="#55d66b" stroke-width="7" opacity="0.88" />
+  <rect x="6421.32" y="4009.61" width="36" height="36" fill="#1b140e" stroke="#55d66b" stroke-width="7" opacity="0.88" />
+  <rect x="7423.05" y="3641.75" width="36" height="36" fill="#1b140e" stroke="#55d66b" stroke-width="7" opacity="0.88" />
+  <polyline points="3999.62,3469.65 4116.57,3505.08 4202.00,3641.11 4243.38,3713.67 4140.74,3747.35 4366.23,3771.73 4343.80,3608.45" fill="none" stroke="#3f5f6f" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="4201.76" cy="3636.72" r="40" fill="#3f5f6f" stroke="#1b140e" stroke-width="10" opacity="0.96" />
+  <text x="4201.76" y="3656.72" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="48" font-weight="800">30</text>
+  <text x="4259.76" y="3586.72" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-106 · Wisteria</text>
+  <polyline points="1453.35,5050.63 1245.05,5201.92 1351.16,5443.29 1860.76,5288.60" fill="none" stroke="#3f5f6f" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="1477.58" cy="5246.11" r="40" fill="#3f5f6f" stroke="#1b140e" stroke-width="10" opacity="0.96" />
+  <text x="1477.58" y="5266.11" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="48" font-weight="800">29</text>
+  <text x="1535.58" y="5196.11" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-209 · Agarita</text>
+  <polyline points="2549.39,5169.76 2640.02,5217.95 2357.36,5312.84 2294.77,5581.49 2561.09,5627.38" fill="none" stroke="#3f5f6f" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="2480.53" cy="5381.89" r="40" fill="#3f5f6f" stroke="#1b140e" stroke-width="10" opacity="0.96" />
+  <text x="2480.53" y="5401.89" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="48" font-weight="800">28</text>
+  <text x="2538.53" y="5331.89" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-131 · Bitterweed</text>
+  <polyline points="3650.40,4013.14 3702.18,4061.22 3844.59,4143.75 3920.92,4265.72 3896.34,4335.38" fill="none" stroke="#3f5f6f" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="3802.89" cy="4163.84" r="40" fill="#3f5f6f" stroke="#1b140e" stroke-width="10" opacity="0.96" />
+  <text x="3802.89" y="4183.84" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="48" font-weight="800">27</text>
+  <text x="3860.89" y="4113.84" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-114 · Wisteria</text>
+  <polyline points="5174.78,3317.08 5162.39,3424.08 5258.63,3456.14 5289.14,3239.40 5587.44,3243.52 5612.26,3301.48 5605.79,3305.38 5009.14,3469.10 4872.53,3529.71 5007.44,3619.69" fill="none" stroke="#3f5f6f" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="5257.95" cy="3390.56" r="40" fill="#3f5f6f" stroke="#1b140e" stroke-width="10" opacity="0.96" />
+  <text x="5257.95" y="3410.56" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="48" font-weight="800">26</text>
+  <text x="5315.95" y="3340.56" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-172 · Agarita</text>
+  <polyline points="681.81,5722.25 959.78,5840.56 958.91,5847.68 991.63,5668.04" fill="none" stroke="#3f5f6f" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="898.03" cy="5769.63" r="40" fill="#3f5f6f" stroke="#1b140e" stroke-width="10" opacity="0.96" />
+  <text x="898.03" y="5789.63" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="48" font-weight="800">25</text>
+  <text x="956.03" y="5719.63" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-139 · Texas Bluebonnet</text>
+  <polyline points="6498.62,3700.99 6345.41,3839.89 6439.32,4027.61 6564.49,3970.69 6539.38,4170.43 6173.93,3394.93" fill="none" stroke="#3f5f6f" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="6426.86" cy="3850.76" r="40" fill="#3f5f6f" stroke="#1b140e" stroke-width="10" opacity="0.96" />
+  <text x="6426.86" y="3870.76" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="48" font-weight="800">24</text>
+  <text x="6484.86" y="3800.76" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-034 · Chocolate Daisy</text>
+  <polyline points="3954.78,2912.08 3901.81,3145.18 4080.38,3310.61 4167.45,3198.37" fill="none" stroke="#3f5f6f" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="4026.10" cy="3141.56" r="40" fill="#3f5f6f" stroke="#1b140e" stroke-width="10" opacity="0.96" />
+  <text x="4026.10" y="3161.56" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="48" font-weight="800">23</text>
+  <text x="4084.10" y="3091.56" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-160 · Creek Plum</text>
+  <polyline points="5292.85,2646.41 5314.14,2873.03 5368.63,2936.78 5460.49,2822.28 5542.14,2699.60 5358.52,3100.36" fill="none" stroke="#3f5f6f" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="5389.46" cy="2846.41" r="40" fill="#3f5f6f" stroke="#1b140e" stroke-width="10" opacity="0.96" />
+  <text x="5389.46" y="2866.41" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="48" font-weight="800">22</text>
+  <text x="5447.46" y="2796.41" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-156 · Agarita</text>
+  <polyline points="4747.34,2917.78 4868.84,3028.43 4882.32,3195.48 4647.67,3341.56 5139.84,2998.10 5209.14,2831.75" fill="none" stroke="#3f5f6f" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="4915.86" cy="3052.18" r="40" fill="#3f5f6f" stroke="#1b140e" stroke-width="10" opacity="0.96" />
+  <text x="4915.86" y="3072.18" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="48" font-weight="800">21</text>
+  <text x="4973.86" y="3002.18" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-089 · Bitterweed</text>
+  <polyline points="1833.09,5904.28 2008.75,5900.09 2126.67,5872.60 1960.33,5492.36 1638.18,5672.71 1641.82,5819.49 1596.15,5977.91 1491.17,6003.66" fill="none" stroke="#d7a541" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="1787.02" cy="5830.39" r="48" fill="#d7a541" stroke="#1b140e" stroke-width="10" opacity="0.96" />
+  <text x="1787.02" y="5850.39" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="48" font-weight="800">20</text>
+  <text x="1853.02" y="5772.39" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-076 · Agarita</text>
+  <polyline points="7579.98,4041.20 7711.83,3904.35 7601.55,3851.35 7641.37,3790.36 7669.63,3648.62 7526.58,3607.70 7441.05,3659.75 7289.69,3779.44 7191.70,3893.94" fill="none" stroke="#d7a541" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="7517.04" cy="3797.41" r="48" fill="#d7a541" stroke="#1b140e" stroke-width="10" opacity="0.96" />
+  <text x="7517.04" y="3817.41" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="48" font-weight="800">19</text>
+  <text x="7583.04" y="3739.41" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-190 · Cardinal Flower</text>
+  <polyline points="6955.09,4648.56 6582.20,4533.73 6902.94,4202.86" fill="none" stroke="#d7a541" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="6813.41" cy="4461.72" r="48" fill="#d7a541" stroke="#1b140e" stroke-width="10" opacity="0.96" />
+  <text x="6813.41" y="4481.72" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="48" font-weight="800">18</text>
+  <text x="6879.41" y="4403.72" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-122 · Creek Plum</text>
+  <polyline points="3074.78,5635.15 2933.71,5475.92 2841.08,5762.37" fill="none" stroke="#d7a541" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="2949.86" cy="5624.48" r="48" fill="#d7a541" stroke="#1b140e" stroke-width="10" opacity="0.96" />
+  <text x="2949.86" y="5644.48" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="48" font-weight="800">17</text>
+  <text x="3015.86" y="5566.48" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-137 · Agarita</text>
+  <polyline points="8080.54,3324.44 8045.41,3415.55 7915.03,3373.55 7782.23,3447.15 7855.83,3528.81 7693.53,3520.62" fill="none" stroke="#d7a541" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="7895.43" cy="3435.02" r="48" fill="#d7a541" stroke="#1b140e" stroke-width="10" opacity="0.96" />
+  <text x="7895.43" y="3455.02" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="48" font-weight="800">16</text>
+  <text x="7961.43" y="3377.02" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-098 · Blood Flower</text>
+  <polyline points="6809.16,3304.81 6619.31,3112.83 6451.85,3370.27 6427.21,3354.04 6502.75,3513.20 6382.23,3554.10 6921.83,3619.91 7023.57,3606.77 7117.98,3644.46 7213.54,3516.84 7189.34,3411.37" fill="none" stroke="#d7a541" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="6787.16" cy="3455.33" r="48" fill="#d7a541" stroke="#1b140e" stroke-width="10" opacity="0.96" />
+  <text x="6787.16" y="3475.33" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="48" font-weight="800">15</text>
+  <text x="6853.16" y="3397.33" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-022 · Creek Plum</text>
+  <polyline points="1972.07,4690.81 1970.94,4863.72 1802.67,4842.90 1622.80,4846.17 1845.52,5071.48 1984.40,5120.39" fill="none" stroke="#d7a541" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="1866.40" cy="4905.91" r="48" fill="#d7a541" stroke="#1b140e" stroke-width="10" opacity="0.96" />
+  <text x="1866.40" y="4925.91" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="48" font-weight="800">14</text>
+  <text x="1932.40" y="4847.91" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-200 · Agarita</text>
+  <polyline points="7491.11,4549.49 7453.65,4484.89 7516.88,4396.99 7615.74,4353.46 7698.78,4247.83 7487.09,4222.91 7445.19,4118.89 7371.74,4286.55 7191.97,4319.25 7284.83,4476.14" fill="none" stroke="#d7a541" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="7455.70" cy="4345.64" r="48" fill="#d7a541" stroke="#1b140e" stroke-width="10" opacity="0.96" />
+  <text x="7455.70" y="4365.64" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="48" font-weight="800">13</text>
+  <text x="7521.70" y="4287.64" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-054 · Cardinal Flower</text>
+  <polyline points="7587.88,2920.31 7581.28,3087.97 7554.88,3137.41 7456.80,3125.13 7370.88,3190.16 7411.95,3272.35 7459.31,3353.38 7524.04,3316.61 7669.07,3247.12 7738.86,3288.74 7740.53,3394.04 7857.74,3197.93 7698.32,3132.66 7324.32,3055.25" fill="none" stroke="#d7a541" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="7569.70" cy="3194.22" r="48" fill="#d7a541" stroke="#1b140e" stroke-width="10" opacity="0.96" />
+  <text x="7569.70" y="3214.22" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="48" font-weight="800">12</text>
+  <text x="7635.70" y="3136.22" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-090 · Bitterweed</text>
+  <polyline points="3165.46,5022.20 2984.62,5038.81 2725.08,5014.44 2719.71,5062.77" fill="none" stroke="#d7a541" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="2898.72" cy="5034.56" r="48" fill="#d7a541" stroke="#1b140e" stroke-width="10" opacity="0.96" />
+  <text x="2898.72" y="5054.56" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="48" font-weight="800">11</text>
+  <text x="2964.72" y="4976.56" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-206 · Bitterweed</text>
+  <polyline points="7996.46,2613.72 7887.74,2630.56 7773.26,2769.38 7648.74,2773.59" fill="none" stroke="#d94f3d" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="7826.55" cy="2696.81" r="58" fill="#d94f3d" stroke="#f2e2bd" stroke-width="10" opacity="0.96" />
+  <text x="7826.55" y="2716.81" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="58" font-weight="800">10</text>
+  <text x="7902.55" y="2628.81" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-087 · Bitterweed</text>
+  <polyline points="4372.08,5184.21 4403.58,5022.34 4194.42,4976.12 4211.45,4895.54 3979.78,4911.63 4176.93,5222.70" fill="none" stroke="#d94f3d" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="4223.04" cy="5035.42" r="58" fill="#d94f3d" stroke="#f2e2bd" stroke-width="10" opacity="0.96" />
+  <text x="4223.04" y="5055.42" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="58" font-weight="800">9</text>
+  <text x="4299.04" y="4967.42" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-066 · Wild Rhubarb</text>
+  <polyline points="2924.06,4539.60 3001.80,4699.11 2896.70,4928.57 2717.72,4826.00 2589.05,4785.26 3301.22,4683.25 3295.78,4637.85" fill="none" stroke="#d94f3d" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="2960.91" cy="4728.52" r="58" fill="#d94f3d" stroke="#f2e2bd" stroke-width="10" opacity="0.96" />
+  <text x="2960.91" y="4748.52" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="58" font-weight="800">8</text>
+  <text x="3036.91" y="4660.52" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-199 · Wild Rhubarb</text>
+  <polyline points="3581.16,5350.14 3423.12,5373.93 3383.28,5455.25 3176.83,5316.48 3371.82,5030.40 3524.09,4985.41 3602.10,4956.08 3649.63,4956.82 3832.07,4969.01 3902.33,5053.87 3854.13,5243.11 3500.63,5185.82 3465.72,4899.55" fill="none" stroke="#d94f3d" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="3558.99" cy="5136.60" r="58" fill="#d94f3d" stroke="#f2e2bd" stroke-width="10" opacity="0.96" />
+  <text x="3558.99" y="5156.60" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="58" font-weight="800">7</text>
+  <text x="3634.99" y="5068.60" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-069 · Bitterweed</text>
+  <polyline points="4432.40,2366.50 4461.10,2574.81 4543.01,2629.97 4442.02,2726.61 4642.17,2771.39 4765.70,2617.73 4642.23,2473.38 4235.78,2473.63" fill="none" stroke="#d94f3d" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="4520.55" cy="2579.25" r="58" fill="#d94f3d" stroke="#f2e2bd" stroke-width="10" opacity="0.96" />
+  <text x="4520.55" y="2599.25" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="58" font-weight="800">6</text>
+  <text x="4596.55" y="2511.25" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-083 · Bitterweed</text>
+  <polyline points="3784.52,2174.86 3753.77,2335.14 3823.47,2481.21 3764.54,2556.27 4050.52,2466.33 3956.37,2212.77" fill="none" stroke="#d94f3d" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="3855.53" cy="2371.10" r="58" fill="#d94f3d" stroke="#f2e2bd" stroke-width="10" opacity="0.96" />
+  <text x="3855.53" y="2391.10" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="58" font-weight="800">5</text>
+  <text x="3931.53" y="2303.10" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-081 · Bitterweed</text>
+  <polyline points="7505.84,2185.07 7687.20,2389.04 7393.56,2471.08" fill="none" stroke="#d94f3d" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="7528.86" cy="2348.40" r="58" fill="#d94f3d" stroke="#f2e2bd" stroke-width="10" opacity="0.96" />
+  <text x="7528.86" y="2368.40" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="58" font-weight="800">4</text>
+  <text x="7604.86" y="2280.40" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-082 · Agarita</text>
+  <polyline points="8069.05,2053.74 8016.49,2291.64 8138.66,2290.94 7822.47,2206.04 7665.21,2148.98 7671.33,2103.28 7746.94,1989.72" fill="none" stroke="#d94f3d" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="7875.74" cy="2154.91" r="58" fill="#d94f3d" stroke="#f2e2bd" stroke-width="10" opacity="0.96" />
+  <text x="7875.74" y="2174.91" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="58" font-weight="800">3</text>
+  <text x="7951.74" y="2086.91" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-148 · Bitterweed</text>
+  <polyline points="7814.45,1479.39 7784.75,1575.23 7658.23,1816.50" fill="none" stroke="#d94f3d" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="7752.47" cy="1623.71" r="58" fill="#d94f3d" stroke="#f2e2bd" stroke-width="10" opacity="0.96" />
+  <text x="7752.47" y="1643.71" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="58" font-weight="800">2</text>
+  <text x="7828.47" y="1555.71" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-003 · Wisteria</text>
+  <polyline points="8164.42,1047.72 8057.14,1085.94 8075.95,1173.05 7956.16,1248.09 7953.36,1352.75 7875.42,1445.51" fill="none" stroke="#d94f3d" stroke-width="10" stroke-dasharray="24 18" opacity="0.62" />
+  <circle cx="8013.74" cy="1225.51" r="58" fill="#d94f3d" stroke="#f2e2bd" stroke-width="10" opacity="0.96" />
+  <text x="8013.74" y="1245.51" text-anchor="middle" fill="#ffffff" stroke="#1b140e" stroke-width="8" paint-order="stroke" font-family="Arial" font-size="58" font-weight="800">1</text>
+  <text x="8089.74" y="1157.51" fill="#1b140e" stroke="#f2e2bd" stroke-width="7" paint-order="stroke" font-family="Arial" font-size="54" font-weight="700">wildflower-candidate-144 · Wisteria</text>
+</svg>

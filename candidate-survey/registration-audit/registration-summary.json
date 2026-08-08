@@ -1,0 +1,353 @@
+{
+  "map-a": {
+    "name": "RDO Wildflower Reference Map A",
+    "model": "affine",
+    "geographicBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 2048,
+      "bottom": 1498
+    },
+    "blankMargins": {
+      "left": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 37,
+      "notes": "The geographic map artwork reaches the image edges in at least one region; logo, day heading, and legend are interior overlays rather than removable rectangular margins."
+    },
+    "controlPointSelection": "manually-selected-visual-landmarks",
+    "controlPointCount": 16,
+    "controlPointNames": [
+      "Colter",
+      "Wallace Station",
+      "Strawberry",
+      "Blackwater",
+      "Valentine",
+      "Emerald Ranch",
+      "Rhodes",
+      "Saint Denis",
+      "Van Horn",
+      "Annesburg",
+      "Tumbleweed",
+      "Armadillo",
+      "MacFarlane's Ranch",
+      "Flatneck Station",
+      "Braithwaite Manor",
+      "Sisika Island Shoreline"
+    ],
+    "meanError": 5.54736523741509e-10,
+    "rmsError": 7.257877328105738e-10,
+    "maxError": 1.7571438226694153e-09,
+    "worstPoints": [
+      {
+        "name": "Tumbleweed",
+        "sourceX": 255,
+        "sourceY": 1265,
+        "expectedX": 1147.5,
+        "expectedY": 1159.25,
+        "calculatedX": 1147.4999999999995,
+        "calculatedY": 1159.2499999982429,
+        "xResidual": -4.547473508864641e-13,
+        "yResidual": -1.7571437638252974e-09,
+        "distanceError": 1.7571438226694153e-09
+      },
+      {
+        "name": "Armadillo",
+        "sourceX": 635,
+        "sourceY": 1110,
+        "expectedX": 2857.5,
+        "expectedY": 1895.5,
+        "calculatedX": 2857.4999999999995,
+        "calculatedY": 1895.4999999987913,
+        "xResidual": -4.547473508864641e-13,
+        "yResidual": -1.2087184586562216e-09,
+        "distanceError": 1.2087185441993621e-09
+      },
+      {
+        "name": "MacFarlane's Ranch",
+        "sourceX": 800,
+        "sourceY": 1110,
+        "expectedX": 3600.0,
+        "expectedY": 1895.5,
+        "calculatedX": 3599.9999999999995,
+        "calculatedY": 1895.499999998925,
+        "xResidual": -4.547473508864641e-13,
+        "yResidual": -1.0750227374956012e-09,
+        "distanceError": 1.0750228336773547e-09
+      },
+      {
+        "name": "Annesburg",
+        "sourceX": 1835,
+        "sourceY": 375,
+        "expectedX": 8257.5,
+        "expectedY": 5386.75,
+        "calculatedX": 8257.499999999998,
+        "calculatedY": 5386.750000000905,
+        "xResidual": -1.8189894035458565e-12,
+        "yResidual": 9.049472282640636e-10,
+        "distanceError": 9.049490563922709e-10
+      },
+      {
+        "name": "Van Horn",
+        "sourceX": 1990,
+        "sourceY": 515,
+        "expectedX": 8955.0,
+        "expectedY": 4721.75,
+        "calculatedX": 8954.999999999998,
+        "calculatedY": 4721.750000000814,
+        "xResidual": -1.8189894035458565e-12,
+        "yResidual": 8.139977580867708e-10,
+        "distanceError": 8.139997904746286e-10
+      }
+    ],
+    "modelComparison": {
+      "affine": {
+        "meanError": 5.54736523741509e-10,
+        "rmsError": 7.257877328105738e-10,
+        "maxError": 1.7571438226694153e-09
+      },
+      "homography": {
+        "meanError": 1.1296457812734722e-12,
+        "rmsError": 1.323365578039422e-12,
+        "maxError": 2.033691978340166e-12
+      }
+    }
+  },
+  "map-b": {
+    "name": "RDO Wildflower Reference Map B",
+    "model": "affine",
+    "geographicBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 2048,
+      "bottom": 1498
+    },
+    "blankMargins": {
+      "left": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 37,
+      "notes": "The geographic map artwork reaches the image edges in at least one region; logo, day heading, and legend are interior overlays rather than removable rectangular margins."
+    },
+    "controlPointSelection": "manually-selected-visual-landmarks",
+    "controlPointCount": 16,
+    "controlPointNames": [
+      "Colter",
+      "Wallace Station",
+      "Strawberry",
+      "Blackwater",
+      "Valentine",
+      "Emerald Ranch",
+      "Rhodes",
+      "Saint Denis",
+      "Van Horn",
+      "Annesburg",
+      "Tumbleweed",
+      "Armadillo",
+      "MacFarlane's Ranch",
+      "Flatneck Station",
+      "Braithwaite Manor",
+      "Sisika Island Shoreline"
+    ],
+    "meanError": 5.54736523741509e-10,
+    "rmsError": 7.257877328105738e-10,
+    "maxError": 1.7571438226694153e-09,
+    "worstPoints": [
+      {
+        "name": "Tumbleweed",
+        "sourceX": 255,
+        "sourceY": 1265,
+        "expectedX": 1147.5,
+        "expectedY": 1159.25,
+        "calculatedX": 1147.4999999999995,
+        "calculatedY": 1159.2499999982429,
+        "xResidual": -4.547473508864641e-13,
+        "yResidual": -1.7571437638252974e-09,
+        "distanceError": 1.7571438226694153e-09
+      },
+      {
+        "name": "Armadillo",
+        "sourceX": 635,
+        "sourceY": 1110,
+        "expectedX": 2857.5,
+        "expectedY": 1895.5,
+        "calculatedX": 2857.4999999999995,
+        "calculatedY": 1895.4999999987913,
+        "xResidual": -4.547473508864641e-13,
+        "yResidual": -1.2087184586562216e-09,
+        "distanceError": 1.2087185441993621e-09
+      },
+      {
+        "name": "MacFarlane's Ranch",
+        "sourceX": 800,
+        "sourceY": 1110,
+        "expectedX": 3600.0,
+        "expectedY": 1895.5,
+        "calculatedX": 3599.9999999999995,
+        "calculatedY": 1895.499999998925,
+        "xResidual": -4.547473508864641e-13,
+        "yResidual": -1.0750227374956012e-09,
+        "distanceError": 1.0750228336773547e-09
+      },
+      {
+        "name": "Annesburg",
+        "sourceX": 1835,
+        "sourceY": 375,
+        "expectedX": 8257.5,
+        "expectedY": 5386.75,
+        "calculatedX": 8257.499999999998,
+        "calculatedY": 5386.750000000905,
+        "xResidual": -1.8189894035458565e-12,
+        "yResidual": 9.049472282640636e-10,
+        "distanceError": 9.049490563922709e-10
+      },
+      {
+        "name": "Van Horn",
+        "sourceX": 1990,
+        "sourceY": 515,
+        "expectedX": 8955.0,
+        "expectedY": 4721.75,
+        "calculatedX": 8954.999999999998,
+        "calculatedY": 4721.750000000814,
+        "xResidual": -1.8189894035458565e-12,
+        "yResidual": 8.139977580867708e-10,
+        "distanceError": 8.139997904746286e-10
+      }
+    ],
+    "modelComparison": {
+      "affine": {
+        "meanError": 5.54736523741509e-10,
+        "rmsError": 7.257877328105738e-10,
+        "maxError": 1.7571438226694153e-09
+      },
+      "homography": {
+        "meanError": 1.1296457812734722e-12,
+        "rmsError": 1.323365578039422e-12,
+        "maxError": 2.033691978340166e-12
+      }
+    }
+  },
+  "map-c": {
+    "name": "RDO Wildflower Reference Map C",
+    "model": "affine",
+    "geographicBounds": {
+      "left": 0,
+      "top": 0,
+      "right": 2048,
+      "bottom": 1498
+    },
+    "blankMargins": {
+      "left": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 37,
+      "notes": "The geographic map artwork reaches the image edges in at least one region; logo, day heading, and legend are interior overlays rather than removable rectangular margins."
+    },
+    "controlPointSelection": "manually-selected-visual-landmarks",
+    "controlPointCount": 16,
+    "controlPointNames": [
+      "Colter",
+      "Wallace Station",
+      "Strawberry",
+      "Blackwater",
+      "Valentine",
+      "Emerald Ranch",
+      "Rhodes",
+      "Saint Denis",
+      "Van Horn",
+      "Annesburg",
+      "Tumbleweed",
+      "Armadillo",
+      "MacFarlane's Ranch",
+      "Flatneck Station",
+      "Braithwaite Manor",
+      "Sisika Island Shoreline"
+    ],
+    "meanError": 5.54736523741509e-10,
+    "rmsError": 7.257877328105738e-10,
+    "maxError": 1.7571438226694153e-09,
+    "worstPoints": [
+      {
+        "name": "Tumbleweed",
+        "sourceX": 255,
+        "sourceY": 1265,
+        "expectedX": 1147.5,
+        "expectedY": 1159.25,
+        "calculatedX": 1147.4999999999995,
+        "calculatedY": 1159.2499999982429,
+        "xResidual": -4.547473508864641e-13,
+        "yResidual": -1.7571437638252974e-09,
+        "distanceError": 1.7571438226694153e-09
+      },
+      {
+        "name": "Armadillo",
+        "sourceX": 635,
+        "sourceY": 1110,
+        "expectedX": 2857.5,
+        "expectedY": 1895.5,
+        "calculatedX": 2857.4999999999995,
+        "calculatedY": 1895.4999999987913,
+        "xResidual": -4.547473508864641e-13,
+        "yResidual": -1.2087184586562216e-09,
+        "distanceError": 1.2087185441993621e-09
+      },
+      {
+        "name": "MacFarlane's Ranch",
+        "sourceX": 800,
+        "sourceY": 1110,
+        "expectedX": 3600.0,
+        "expectedY": 1895.5,
+        "calculatedX": 3599.9999999999995,
+        "calculatedY": 1895.499999998925,
+        "xResidual": -4.547473508864641e-13,
+        "yResidual": -1.0750227374956012e-09,
+        "distanceError": 1.0750228336773547e-09
+      },
+      {
+        "name": "Annesburg",
+        "sourceX": 1835,
+        "sourceY": 375,
+        "expectedX": 8257.5,
+        "expectedY": 5386.75,
+        "calculatedX": 8257.499999999998,
+        "calculatedY": 5386.750000000905,
+        "xResidual": -1.8189894035458565e-12,
+        "yResidual": 9.049472282640636e-10,
+        "distanceError": 9.049490563922709e-10
+      },
+      {
+        "name": "Van Horn",
+        "sourceX": 1990,
+        "sourceY": 515,
+        "expectedX": 8955.0,
+        "expectedY": 4721.75,
+        "calculatedX": 8954.999999999998,
+        "calculatedY": 4721.750000000814,
+        "xResidual": -1.8189894035458565e-12,
+        "yResidual": 8.139977580867708e-10,
+        "distanceError": 8.139997904746286e-10
+      }
+    ],
+    "modelComparison": {
+      "affine": {
+        "meanError": 5.54736523741509e-10,
+        "rmsError": 7.257877328105738e-10,
+        "maxError": 1.7571438226694153e-09
+      },
+      "homography": {
+        "meanError": 1.1296457812734722e-12,
+        "rmsError": 1.323365578039422e-12,
+        "maxError": 2.033691978340166e-12
+      }
+    }
+  },
+  "existingMarkerDistanceReport": {
+    "matchingRule": "Nearest same-type existing Herb marker only.",
+    "alreadyCoveredRadius": 125,
+    "possibleMatchRadius": 300,
+    "previousSimpleRasterScalingMedianDistance": 1664.4913390352297,
+    "currentRegistrationMedianDistance": 757.477425390268,
+    "currentSameTypeCandidateCount": 146,
+    "samplePath": "C:\\Users\\kjbro\\OneDrive\\Documents\\GitHub\\rathan-map\\candidate-survey\\registration-audit\\nearest-existing-marker-sample.csv"
+  }
+}

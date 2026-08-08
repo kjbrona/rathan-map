@@ -1,0 +1,380 @@
+[
+  {
+    "id": "residual-001",
+    "candidateId": "wildflower-candidate-103",
+    "candidate": {
+      "x": 6173.93,
+      "y": 3773.07
+    },
+    "confirmed": {
+      "x": 6172.13,
+      "y": 3762.54
+    },
+    "residual": {
+      "x": -1.800000000000182,
+      "y": -10.5300000000002
+    },
+    "verifiedSameLocation": true,
+    "notes": ""
+  },
+  {
+    "id": "residual-002",
+    "candidateId": "wildflower-candidate-120",
+    "candidate": {
+      "x": 5217.97,
+      "y": 2739.07
+    },
+    "confirmed": {
+      "x": 5216.0,
+      "y": 2728.0
+    },
+    "residual": {
+      "x": -1.9700000000002547,
+      "y": -11.070000000000164
+    },
+    "verifiedSameLocation": true,
+    "notes": ""
+  },
+  {
+    "id": "residual-003",
+    "candidateId": "wildflower-candidate-049",
+    "candidate": {
+      "x": 5060.55,
+      "y": 2739.45
+    },
+    "confirmed": {
+      "x": 5060.0,
+      "y": 2736.0
+    },
+    "residual": {
+      "x": -0.5500000000001819,
+      "y": -3.449999999999818
+    },
+    "verifiedSameLocation": true,
+    "notes": ""
+  },
+  {
+    "id": "residual-004",
+    "candidateId": "wildflower-candidate-042",
+    "candidate": {
+      "x": 5238.31,
+      "y": 3029.26
+    },
+    "confirmed": {
+      "x": 5269.0,
+      "y": 3015.0
+    },
+    "residual": {
+      "x": 30.6899999999996,
+      "y": -14.260000000000218
+    },
+    "verifiedSameLocation": true,
+    "notes": ""
+  },
+  {
+    "id": "residual-005",
+    "candidateId": "wildflower-candidate-040",
+    "candidate": {
+      "x": 5285.3,
+      "y": 3098.84
+    },
+    "confirmed": {
+      "x": 5259.0,
+      "y": 3098.0
+    },
+    "residual": {
+      "x": -26.300000000000182,
+      "y": -0.8400000000001455
+    },
+    "verifiedSameLocation": true,
+    "notes": ""
+  },
+  {
+    "id": "residual-006",
+    "candidateId": "wildflower-candidate-195",
+    "candidate": {
+      "x": 4936.4,
+      "y": 2824.47
+    },
+    "confirmed": {
+      "x": 4969.94,
+      "y": 2849.75
+    },
+    "residual": {
+      "x": 33.539999999999964,
+      "y": 25.2800000000002
+    },
+    "verifiedSameLocation": true,
+    "notes": ""
+  },
+  {
+    "id": "residual-007",
+    "candidateId": "wildflower-candidate-119",
+    "candidate": {
+      "x": 3989.78,
+      "y": 2779.24
+    },
+    "confirmed": {
+      "x": 3983.0,
+      "y": 2769.0
+    },
+    "residual": {
+      "x": -6.7800000000002,
+      "y": -10.239999999999782
+    },
+    "verifiedSameLocation": true,
+    "notes": ""
+  },
+  {
+    "id": "residual-008",
+    "candidateId": "wildflower-candidate-217",
+    "candidate": {
+      "x": 2561.09,
+      "y": 1540.62
+    },
+    "confirmed": {
+      "x": 2528.66,
+      "y": 1640.3
+    },
+    "residual": {
+      "x": -32.43000000000029,
+      "y": 99.68000000000006
+    },
+    "verifiedSameLocation": true,
+    "notes": ""
+  },
+  {
+    "id": "residual-009",
+    "candidateId": "wildflower-candidate-068",
+    "candidate": {
+      "x": 1945.56,
+      "y": 1888.38
+    },
+    "confirmed": {
+      "x": 2012.45,
+      "y": 1894.75
+    },
+    "residual": {
+      "x": 66.8900000000001,
+      "y": 6.369999999999891
+    },
+    "verifiedSameLocation": true,
+    "notes": ""
+  },
+  {
+    "id": "residual-010",
+    "candidateId": "wildflower-candidate-070",
+    "candidate": {
+      "x": 1351.16,
+      "y": 1724.71
+    },
+    "confirmed": {
+      "x": 1352.0,
+      "y": 1710.0
+    },
+    "residual": {
+      "x": 0.8399999999999181,
+      "y": -14.710000000000036
+    },
+    "verifiedSameLocation": true,
+    "notes": ""
+  },
+  {
+    "id": "residual-011",
+    "candidateId": "wildflower-candidate-216",
+    "candidate": {
+      "x": 1167.66,
+      "y": 1593.94
+    },
+    "confirmed": {
+      "x": 1161.25,
+      "y": 1585.56
+    },
+    "residual": {
+      "x": -6.410000000000082,
+      "y": -8.38000000000011
+    },
+    "verifiedSameLocation": true,
+    "notes": ""
+  },
+  {
+    "id": "residual-012",
+    "candidateId": "wildflower-candidate-186",
+    "candidate": {
+      "x": 4243.38,
+      "y": 3454.33
+    },
+    "confirmed": {
+      "x": 4239.33,
+      "y": 3440.87
+    },
+    "residual": {
+      "x": -4.050000000000182,
+      "y": -13.460000000000036
+    },
+    "verifiedSameLocation": true,
+    "notes": ""
+  },
+  {
+    "id": "residual-013",
+    "candidateId": "wildflower-candidate-109",
+    "candidate": {
+      "x": 4202.0,
+      "y": 3526.89
+    },
+    "confirmed": {
+      "x": 4197.95,
+      "y": 3518.37
+    },
+    "residual": {
+      "x": -4.050000000000182,
+      "y": -8.519999999999982
+    },
+    "verifiedSameLocation": true,
+    "notes": ""
+  },
+  {
+    "id": "residual-014",
+    "candidateId": "wildflower-candidate-035",
+    "candidate": {
+      "x": 4366.23,
+      "y": 3396.27
+    },
+    "confirmed": {
+      "x": 4379.0,
+      "y": 3396.0
+    },
+    "residual": {
+      "x": 12.770000000000437,
+      "y": -0.2699999999999818
+    },
+    "verifiedSameLocation": true,
+    "notes": ""
+  },
+  {
+    "id": "residual-015",
+    "candidateId": "wildflower-candidate-188",
+    "candidate": {
+      "x": 4361.96,
+      "y": 3319.37
+    },
+    "confirmed": {
+      "x": 4358.0,
+      "y": 3305.0
+    },
+    "residual": {
+      "x": -3.9600000000000364,
+      "y": -14.36999999999989
+    },
+    "verifiedSameLocation": true,
+    "notes": ""
+  },
+  {
+    "id": "residual-016",
+    "candidateId": "wildflower-candidate-185",
+    "candidate": {
+      "x": 4472.18,
+      "y": 3487.03
+    },
+    "confirmed": {
+      "x": 4473.0,
+      "y": 3485.0
+    },
+    "residual": {
+      "x": 0.819999999999709,
+      "y": -2.0300000000002
+    },
+    "verifiedSameLocation": true,
+    "notes": ""
+  },
+  {
+    "id": "residual-017",
+    "candidateId": "wildflower-candidate-181",
+    "candidate": {
+      "x": 5007.44,
+      "y": 3548.31
+    },
+    "confirmed": {
+      "x": 5013.92,
+      "y": 3537.84
+    },
+    "residual": {
+      "x": 6.480000000000473,
+      "y": -10.4699999999998
+    },
+    "verifiedSameLocation": true,
+    "notes": ""
+  },
+  {
+    "id": "residual-018",
+    "candidateId": "wildflower-candidate-097",
+    "candidate": {
+      "x": 5605.79,
+      "y": 3862.62
+    },
+    "confirmed": {
+      "x": 5601.0,
+      "y": 3860.0
+    },
+    "residual": {
+      "x": -4.789999999999964,
+      "y": -2.619999999999891
+    },
+    "verifiedSameLocation": true,
+    "notes": ""
+  },
+  {
+    "id": "residual-019",
+    "candidateId": "wildflower-candidate-096",
+    "candidate": {
+      "x": 5769.26,
+      "y": 3887.22
+    },
+    "confirmed": {
+      "x": 5768.0,
+      "y": 3870.0
+    },
+    "residual": {
+      "x": -1.2600000000002183,
+      "y": -17.2199999999998
+    },
+    "verifiedSameLocation": true,
+    "notes": ""
+  },
+  {
+    "id": "residual-020",
+    "candidateId": "wildflower-candidate-039",
+    "candidate": {
+      "x": 6439.32,
+      "y": 3140.39
+    },
+    "confirmed": {
+      "x": 6425.0,
+      "y": 3124.0
+    },
+    "residual": {
+      "x": -14.319999999999709,
+      "y": -16.389999999999873
+    },
+    "verifiedSameLocation": true,
+    "notes": ""
+  },
+  {
+    "id": "residual-021",
+    "candidateId": "wildflower-candidate-110",
+    "candidate": {
+      "x": 7441.05,
+      "y": 3508.25
+    },
+    "confirmed": {
+      "x": 7444.98,
+      "y": 3491.06
+    },
+    "residual": {
+      "x": 3.9299999999993815,
+      "y": -17.190000000000055
+    },
+    "verifiedSameLocation": true,
+    "notes": ""
+  }
+]

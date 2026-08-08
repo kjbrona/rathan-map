@@ -1,0 +1,253 @@
+[
+  {
+    "groupId": "G01",
+    "type": "wisteria",
+    "typeName": "Wisteria",
+    "memberCount": 2,
+    "coordinateSpread": 77.14,
+    "mergedX": 8322.75,
+    "mergedY": 1363.56,
+    "members": [
+      {
+        "detectionId": "D003",
+        "source": "RDO Wildflower Reference Map A",
+        "imageX": 1842.0,
+        "imageY": 296.0,
+        "x": 8289.0,
+        "y": 1382.23
+      },
+      {
+        "detectionId": "D079",
+        "source": "RDO Wildflower Reference Map B",
+        "imageX": 1857.0,
+        "imageY": 288.0,
+        "x": 8356.5,
+        "y": 1344.88
+      }
+    ]
+  },
+  {
+    "groupId": "G02",
+    "type": "agarita",
+    "typeName": "Agarita",
+    "memberCount": 2,
+    "coordinateSpread": 70.73,
+    "mergedX": 5850.0,
+    "mergedY": 3432.24,
+    "members": [
+      {
+        "detectionId": "D020",
+        "source": "RDO Wildflower Reference Map A",
+        "imageX": 1303.0,
+        "imageY": 742.0,
+        "x": 5863.5,
+        "y": 3464.92
+      },
+      {
+        "detectionId": "D180",
+        "source": "RDO Wildflower Reference Map C",
+        "imageX": 1297.0,
+        "imageY": 728.0,
+        "x": 5836.5,
+        "y": 3399.55
+      }
+    ]
+  },
+  {
+    "groupId": "G03",
+    "type": "cardinal-flower",
+    "typeName": "Cardinal Flower",
+    "memberCount": 2,
+    "coordinateSpread": 75.56,
+    "mergedX": 8230.5,
+    "mergedY": 3602.68,
+    "members": [
+      {
+        "detectionId": "D025",
+        "source": "RDO Wildflower Reference Map A",
+        "imageX": 1824.0,
+        "imageY": 765.0,
+        "x": 8208.0,
+        "y": 3572.33
+      },
+      {
+        "detectionId": "D108",
+        "source": "RDO Wildflower Reference Map B",
+        "imageX": 1834.0,
+        "imageY": 778.0,
+        "x": 8253.0,
+        "y": 3633.03
+      }
+    ]
+  },
+  {
+    "groupId": "G04",
+    "type": "texas-bluebonnet",
+    "typeName": "Texas Bluebonnet",
+    "memberCount": 2,
+    "coordinateSpread": 59.24,
+    "mergedX": 5451.75,
+    "mergedY": 4422.21,
+    "members": [
+      {
+        "detectionId": "D042",
+        "source": "RDO Wildflower Reference Map A",
+        "imageX": 1205.0,
+        "imageY": 946.0,
+        "x": 5422.5,
+        "y": 4417.54
+      },
+      {
+        "detectionId": "D124",
+        "source": "RDO Wildflower Reference Map B",
+        "imageX": 1218.0,
+        "imageY": 948.0,
+        "x": 5481.0,
+        "y": 4426.88
+      }
+    ]
+  },
+  {
+    "groupId": "G05",
+    "type": "wisteria",
+    "typeName": "Wisteria",
+    "memberCount": 2,
+    "coordinateSpread": 83.86,
+    "mergedX": 3987.0,
+    "mergedY": 4606.66,
+    "members": [
+      {
+        "detectionId": "D045",
+        "source": "RDO Wildflower Reference Map A",
+        "imageX": 883.0,
+        "imageY": 995.0,
+        "x": 3973.5,
+        "y": 4646.36
+      },
+      {
+        "detectionId": "D205",
+        "source": "RDO Wildflower Reference Map C",
+        "imageX": 889.0,
+        "imageY": 978.0,
+        "x": 4000.5,
+        "y": 4566.97
+      }
+    ]
+  },
+  {
+    "groupId": "G06",
+    "type": "bitterweed",
+    "typeName": "Bitterweed",
+    "memberCount": 3,
+    "coordinateSpread": 42.15,
+    "mergedX": 3626.25,
+    "mergedY": 5806.0,
+    "members": [
+      {
+        "detectionId": "D069",
+        "source": "RDO Wildflower Reference Map A",
+        "imageX": 808.0,
+        "imageY": 1241.0,
+        "x": 3636.0,
+        "y": 5795.11
+      },
+      {
+        "detectionId": "D144",
+        "source": "RDO Wildflower Reference Map B",
+        "imageX": 808.5,
+        "imageY": 1242.0,
+        "x": 3638.25,
+        "y": 5799.78
+      },
+      {
+        "detectionId": "D228",
+        "source": "RDO Wildflower Reference Map C",
+        "imageX": 801.0,
+        "imageY": 1247.0,
+        "x": 3604.5,
+        "y": 5823.12
+      }
+    ]
+  },
+  {
+    "groupId": "G07",
+    "type": "wisteria",
+    "typeName": "Wisteria",
+    "memberCount": 2,
+    "coordinateSpread": 79.4,
+    "mergedX": 3731.62,
+    "mergedY": 4305.47,
+    "members": [
+      {
+        "detectionId": "D122",
+        "source": "RDO Wildflower Reference Map B",
+        "imageX": 823.0,
+        "imageY": 916.0,
+        "x": 3703.5,
+        "y": 4277.45
+      },
+      {
+        "detectionId": "D203",
+        "source": "RDO Wildflower Reference Map C",
+        "imageX": 835.5,
+        "imageY": 928.0,
+        "x": 3759.75,
+        "y": 4333.49
+      }
+    ]
+  },
+  {
+    "groupId": "G08",
+    "type": "texas-bluebonnet",
+    "typeName": "Texas Bluebonnet",
+    "memberCount": 2,
+    "coordinateSpread": 65.66,
+    "mergedX": 4896.0,
+    "mergedY": 4707.07,
+    "members": [
+      {
+        "detectionId": "D127",
+        "source": "RDO Wildflower Reference Map B",
+        "imageX": 1082.0,
+        "imageY": 1004.0,
+        "x": 4869.0,
+        "y": 4688.39
+      },
+      {
+        "detectionId": "D211",
+        "source": "RDO Wildflower Reference Map C",
+        "imageX": 1094.0,
+        "imageY": 1012.0,
+        "x": 4923.0,
+        "y": 4725.74
+      }
+    ]
+  },
+  {
+    "groupId": "G09",
+    "type": "bitterweed",
+    "typeName": "Bitterweed",
+    "memberCount": 2,
+    "coordinateSpread": 63.56,
+    "mergedX": 3902.62,
+    "mergedY": 5370.16,
+    "members": [
+      {
+        "detectionId": "D136",
+        "source": "RDO Wildflower Reference Map B",
+        "imageX": 860.5,
+        "imageY": 1152.0,
+        "x": 3872.25,
+        "y": 5379.5
+      },
+      {
+        "detectionId": "D219",
+        "source": "RDO Wildflower Reference Map C",
+        "imageX": 874.0,
+        "imageY": 1148.0,
+        "x": 3933.0,
+        "y": 5360.82
+      }
+    ]
+  }
+]

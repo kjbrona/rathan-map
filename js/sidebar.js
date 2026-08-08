@@ -307,8 +307,23 @@ function updateMapLayerSummary() {
     return;
   }
 
-  mapLayerSummary.textContent = stateZoneToggle.checked ? "Zones On" : "Zones Off";
-  mapLayerSummary.classList.toggle("empty", !stateZoneToggle.checked);
+  const summaryItems = [];
+
+  if (stateZoneToggle.checked) {
+    summaryItems.push("Zones On");
+  }
+
+  if (typeof getCandidateLayerSummary === "function") {
+    const candidateSummary = getCandidateLayerSummary();
+
+    if (candidateSummary && candidateSummary !== "Candidates Off") {
+      summaryItems.push(candidateSummary);
+    }
+  }
+
+  mapLayerSummary.textContent =
+    summaryItems.length > 0 ? summaryItems.join(" · ") : "Layers Off";
+  mapLayerSummary.classList.toggle("empty", summaryItems.length === 0);
 }
 
 function hasCategoryTypeFilterRestrictions(filterState = getActiveFilterState()) {

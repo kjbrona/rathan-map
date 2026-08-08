@@ -9,7 +9,9 @@ Creator : Rathan
 let CATEGORIES = [];
 
 async function loadCategoryData() {
-  const response = await fetch("data/categories.json");
+  const response = await fetch(
+    `data/categories.json?v=${encodeURIComponent(APP_VERSION)}`
+  );
   CATEGORIES = await response.json();
   return CATEGORIES;
 }

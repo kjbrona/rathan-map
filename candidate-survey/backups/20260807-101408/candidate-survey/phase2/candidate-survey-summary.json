@@ -1,0 +1,25 @@
+{
+  "totalCandidates": 222,
+  "highConfidence": 141,
+  "mediumConfidence": 65,
+  "lowConfidence": 16,
+  "alreadyCovered": 10,
+  "possibleMatches": 22,
+  "needsSurvey": 190,
+  "previousDuplicateThreshold": 85.0,
+  "previousMergedCandidateCount": 216,
+  "previousMergedDuplicates": 9,
+  "duplicateThreshold": 60.0,
+  "mergedCandidateCount": 222,
+  "mergedDuplicates": 3,
+  "thresholdReason": "Reduced from 85 to 60 Explorer units to avoid merging nearby but distinct wildflower pins while still merging same-type repeat detections from multiple reference maps.",
+  "maximumAlignmentEstimate": 45,
+  "unresolvedDetections": 10,
+  "missingHerbTypesAdded": [
+    "Agarita",
+    "Cardinal Flower",
+    "Creek Plum"
+  ],
+  "validationErrors": [],
+  "importedOn": "2026-08-04T12:55:17-05:00"
+}

@@ -1,0 +1,31 @@
+candidateId,type,x,y,nearestExistingId,nearestExistingName,nearestDistance,classification
+wildflower-candidate-001,wisteria,8577.0,6118.25,cf132cb6-97b6-4fb2-90a3-8c48742c9a90,Wisteria,5003.38,New Survey Target
+wildflower-candidate-002,wisteria,8442.0,5909.25,cf132cb6-97b6-4fb2-90a3-8c48742c9a90,Wisteria,4777.49,New Survey Target
+wildflower-candidate-003,wisteria,8289.0,5762.0,cf132cb6-97b6-4fb2-90a3-8c48742c9a90,Wisteria,4570.13,New Survey Target
+wildflower-candidate-004,wisteria,8214.75,5168.25,cf132cb6-97b6-4fb2-90a3-8c48742c9a90,Wisteria,4225.38,New Survey Target
+wildflower-candidate-005,bitterweed,8124.75,4983.0,d20dfd1d-4790-4e45-b076-dbe4fa76e8a3,Bitterweed,3903.54,New Survey Target
+wildflower-candidate-006,wisteria,8298.0,4916.5,cf132cb6-97b6-4fb2-90a3-8c48742c9a90,Wisteria,4203.63,New Survey Target
+wildflower-candidate-007,bitterweed,8511.75,4816.75,d20dfd1d-4790-4e45-b076-dbe4fa76e8a3,Bitterweed,4281.54,New Survey Target
+wildflower-candidate-008,bitterweed,3816.0,4769.25,d20dfd1d-4790-4e45-b076-dbe4fa76e8a3,Bitterweed,422.93,New Survey Target
+wildflower-candidate-009,bitterweed,4347.0,4607.75,d20dfd1d-4790-4e45-b076-dbe4fa76e8a3,Bitterweed,143.15,Possible Match
+wildflower-candidate-010,bitterweed,4794.75,4607.75,d20dfd1d-4790-4e45-b076-dbe4fa76e8a3,Bitterweed,569.17,New Survey Target
+wildflower-candidate-011,wild-rhubarb,8370.0,4422.5,5e6fc983-1adf-488b-8bf7-101070137bfc,Wild Rhubarb,4918.28,New Survey Target
+wildflower-candidate-012,creek-plum,4574.25,4313.25,,,,New Survey Target
+wildflower-candidate-013,bitterweed,4794.75,4261.0,d20dfd1d-4790-4e45-b076-dbe4fa76e8a3,Bitterweed,709.44,New Survey Target
+wildflower-candidate-014,bitterweed,8106.75,4256.25,d20dfd1d-4790-4e45-b076-dbe4fa76e8a3,Bitterweed,3899.29,New Survey Target
+wildflower-candidate-015,wild-rhubarb,5535.0,4142.25,5e6fc983-1adf-488b-8bf7-101070137bfc,Wild Rhubarb,2466.7,New Survey Target
+wildflower-candidate-016,bitterweed,5044.5,3961.75,d20dfd1d-4790-4e45-b076-dbe4fa76e8a3,Bitterweed,1093.11,New Survey Target
+wildflower-candidate-017,cardinal-flower,8032.5,3890.5,,,,New Survey Target
+wildflower-candidate-018,cardinal-flower,7800.75,3771.75,,,,New Survey Target
+wildflower-candidate-019,blood-flower,8129.25,3705.25,e52bfdc0-62da-4fd0-86f1-5a21c6201563,Blood Flower,1035.91,New Survey Target
+wildflower-candidate-020,agarita,5863.5,3643.5,,,,New Survey Target
+wildflower-candidate-021,blood-flower,6761.25,3581.75,e52bfdc0-62da-4fd0-86f1-5a21c6201563,Blood Flower,343.64,New Survey Target
+wildflower-candidate-022,creek-plum,7182.0,3638.75,,,,New Survey Target
+wildflower-candidate-023,wisteria,4176.0,3634.0,3ad5bd29-154a-4000-9784-75929a3dc266,Wisteria,58.52,Already Covered
+wildflower-candidate-024,cardinal-flower,7969.5,3624.5,,,,New Survey Target
+wildflower-candidate-025,cardinal-flower,8208.0,3534.25,,,,New Survey Target
+wildflower-candidate-026,cardinal-flower,7803.0,3458.25,,,,New Survey Target
+wildflower-candidate-027,chocolate-daisy,6844.5,3396.5,dded7605-6fa8-46c3-bec0-9143e42a2a4f,Chocolate Daisy,381.38,New Survey Target
+wildflower-candidate-028,blood-flower,8156.25,3387.0,e52bfdc0-62da-4fd0-86f1-5a21c6201563,Blood Flower,1065.89,New Survey Target
+wildflower-candidate-029,cardinal-flower,8014.5,3387.0,,,,New Survey Target
+wildflower-candidate-030,blood-flower,7627.5,3391.75,e52bfdc0-62da-4fd0-86f1-5a21c6201563,Blood Flower,548.96,New Survey Target

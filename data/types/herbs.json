@@ -6,6 +6,13 @@
     "group": "roots"
   },
   {
+    "id": "agarita",
+    "name": "Agarita",
+    "enabled": true,
+    "group": "flowers",
+    "uses": []
+  },
+  {
     "id": "american-ginseng",
     "name": "American Ginseng",
     "enabled": true,
@@ -42,6 +49,13 @@
     "group": "flowers"
   },
   {
+    "id": "cardinal-flower",
+    "name": "Cardinal Flower",
+    "enabled": true,
+    "group": "flowers",
+    "uses": []
+  },
+  {
     "id": "bulrush",
     "name": "Bulrush",
     "enabled": true,
@@ -64,6 +78,13 @@
     "name": "Chocolate Daisy",
     "enabled": true,
     "group": "flowers"
+  },
+  {
+    "id": "creek-plum",
+    "name": "Creek Plum",
+    "enabled": true,
+    "group": "flowers",
+    "uses": []
   },
   {
     "id": "creeping-thyme",
@@ -100,6 +121,13 @@
     "name": "Golden Currant",
     "enabled": true,
     "group": "berries"
+  },
+  {
+    "id": "harrietum-officinalis",
+    "name": "Harrietum Officinalis",
+    "enabled": true,
+    "group": "flowers",
+    "uses": []
   },
   {
     "id": "hummingbird-sage",

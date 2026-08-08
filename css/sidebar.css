@@ -549,7 +549,8 @@ Creator : Rathan
 }
 
 .filter-disclosure[open] .quick-filter-grid,
-.filter-disclosure[open] .state-zone-toggle {
+.filter-disclosure[open] .state-zone-toggle,
+.filter-disclosure[open] .candidate-layer-control {
   margin-top: 4px;
 }
 
@@ -597,6 +598,86 @@ Creator : Rathan
 
 .state-zone-toggle input {
   accent-color: #c49a5a;
+}
+
+.candidate-layer-control {
+  display: grid;
+  gap: 7px;
+}
+
+.candidate-survey-status {
+  color: #8e7858;
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+.candidate-suggested-herb-filter {
+  display: grid;
+  gap: 3px;
+  color: #c8aa72;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.candidate-suggested-herb-filter select {
+  width: 100%;
+  padding: 4px 6px;
+  box-sizing: border-box;
+  background: #2a2118;
+  color: #f2e2bd;
+  border: 1px solid #8b5a2b;
+  font: inherit;
+  font-weight: 400;
+}
+
+.candidate-survey-summary {
+  display: grid;
+  gap: 3px;
+  padding: 6px 7px;
+  background: rgba(216, 195, 163, 0.07);
+  border: 1px solid rgba(196, 154, 90, 0.18);
+}
+
+.candidate-survey-summary div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px;
+  color: #c8aa72;
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.candidate-survey-summary strong {
+  color: #f2e2bd;
+  font-weight: 600;
+}
+
+.candidate-layer-actions {
+  display: grid;
+  gap: 4px;
+}
+
+.candidate-layer-actions button {
+  padding: 3px 7px;
+  background: #2a2118;
+  color: #f2e2bd;
+  border: 1px solid #8b5a2b;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.candidate-layer-actions button:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+
+.candidate-layer-actions button:hover,
+.candidate-layer-actions button:focus {
+  background: #3a2a1d;
+  border-color: #c49a5a;
 }
 
 .filter-control {

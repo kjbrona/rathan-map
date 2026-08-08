@@ -1,0 +1,19 @@
+{
+  "generatedOn": "2026-08-04T14:39:29-05:00",
+  "totalDetections": 235,
+  "candidatesInsideValidGeographicBounds": 225,
+  "rejectedCandidates": 10,
+  "mergedPreviewCandidates": 220,
+  "alreadyCovered": 35,
+  "possibleMatches": 28,
+  "needsSurvey": 157,
+  "medianNearestSameTypeDistance": 451.1017148379991,
+  "p75NearestSameTypeDistance": 2588.903977295397,
+  "within125SameTypeMarkers": 35,
+  "within300SameTypeMarkers": 63,
+  "selectedModels": {
+    "map-a": "affine",
+    "map-b": "affine",
+    "map-c": "affine"
+  }
+}

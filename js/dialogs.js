@@ -103,7 +103,7 @@ async function initializeMarkerDialogControls() {
     .addEventListener("click", useCurrentPendingMapPosition);
 }
 
-async function openMarkerDialog(latlng) {
+async function openMarkerDialog(latlng, prefill = null) {
   pendingMarkerLatLng = latlng;
   pendingMarkerOriginalLatLng = latlng;
   markerNameManuallyEdited = false;
@@ -112,6 +112,7 @@ async function openMarkerDialog(latlng) {
   const y = latlng.lat;
 
   document.getElementById("marker-form").reset();
+  setCandidatePromotionWarning("");
   applyLastUsedMarkerDefaults();
   populateItemDiscoveryFields("marker");
   applyLastUsedFoundByDefault();
@@ -130,8 +131,6 @@ async function openMarkerDialog(latlng) {
     renderTemplateFields("marker-template-fields", categoryId);
   }
 
-  autoFillMarkerName();
-
   setPendingMarkerMapCoordinates(x, y, {
     updatePreview: false,
     updateCalculatedPosition: false,
@@ -142,10 +141,69 @@ async function openMarkerDialog(latlng) {
   hideCalculatedPosition();
   buildStateDropdown("marker-state", getStateIdForCoordinates(x, y));
   updateMarkerDialogStateHelper();
+
+  if (prefill) {
+    await applyMarkerDialogPrefill(prefill);
+  } else {
+    autoFillMarkerName();
+  }
+
   renderPendingMarkerPreview();
 
   document.getElementById("marker-dialog").classList.remove("hidden");
   focusFirstTemplateField("marker-template-fields");
+}
+
+async function applyMarkerDialogPrefill(prefill) {
+  const categorySelect = document.getElementById("marker-category");
+  const typeSelect = document.getElementById("marker-type");
+  const nameInput = document.getElementById("marker-name");
+  const categoryId = prefill.category || categorySelect.value;
+
+  categorySelect.value = categoryId;
+  await buildTypeDropdown("marker-type", categoryId, prefill.type);
+
+  if (prefill.type) {
+    typeSelect.value = prefill.type;
+  }
+
+  updateTypeIconPreview("marker-type-icon", categoryId, typeSelect.value);
+  renderTemplateFields("marker-template-fields", categoryId, {
+    notes: prefill.notes || "",
+    fields: {},
+    templateData: {},
+  });
+
+  if (prefill.name) {
+    nameInput.value = prefill.name;
+    markerNameManuallyEdited = true;
+  } else {
+    markerNameManuallyEdited = false;
+    autoFillMarkerName();
+  }
+
+  if (isValidMarkerStatus(prefill.status)) {
+    document.getElementById("marker-status").value = prefill.status;
+  }
+
+  if (isValidMarkerConfidence(prefill.confidence)) {
+    document.getElementById("marker-confidence").value = prefill.confidence;
+  }
+
+  const itemNotesInput = document.getElementById("marker-item-notes");
+
+  if (itemNotesInput && prefill.itemNotes) {
+    itemNotesInput.value = prefill.itemNotes;
+  }
+
+  setCandidatePromotionWarning(prefill.candidateReviewWarning || "");
+
+  if (Number.isFinite(Number(prefill.x)) && Number.isFinite(Number(prefill.y))) {
+    setPendingMarkerMapCoordinates(Number(prefill.x), Number(prefill.y), {
+      updatePreview: false,
+      updateCalculatedPosition: false,
+    });
+  }
 }
 
 function focusFirstTemplateField(containerId) {
@@ -174,9 +232,21 @@ function closeMarkerDialog() {
   pendingMarkerLatLng = null;
   pendingMarkerOriginalLatLng = null;
   markerNameManuallyEdited = false;
+  setCandidatePromotionWarning("");
   document.getElementById("marker-dialog").classList.add("hidden");
   removePendingMarkerPreview();
   clearAddMarkerMode();
+}
+
+function setCandidatePromotionWarning(message) {
+  const warning = document.getElementById("marker-candidate-warning");
+
+  if (!warning) {
+    return;
+  }
+
+  warning.textContent = message || "";
+  warning.classList.toggle("hidden", !message);
 }
 
 function applyLastUsedMarkerDefaults() {
@@ -562,5 +632,8 @@ function saveMarkerFromDialog(event) {
     foundBy: markerData.foundBy,
   });
   addMarker(markerData);
+  if (typeof handleCandidatePromotedMarkerSaved === "function") {
+    handleCandidatePromotedMarkerSaved(markerData);
+  }
   closeMarkerDialog();
 }

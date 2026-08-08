@@ -1,5 +1,28 @@
 # RosalitaRP Explorer
 
+## v1.3.44 Browser Compatibility Fix
+- Replaced `String.replaceAll()` usage in marker/type escaping helpers with broadly compatible regular-expression replacements.
+- Prevented older or stricter browsers from failing during filter and marker rendering.
+
+## v1.3.43 Startup Resilience
+- Made Possible Locations initialization non-blocking so normal filters and markers render even if the survey layer has a browser-specific failure.
+- Rendered normal markers before loading the Possible Locations layer.
+
+## v1.3.42 Catalog Cache Fix
+- Added app-version cache busting to category, type group, and type catalog JSON requests.
+- Ensured browsers reload fresh Herb catalog data after adding new types.
+
+## v1.3.41 Harrietum Officinalis
+- Added Harrietum Officinalis to the Herb type catalog with the `flowers` group.
+- Left Uses empty until Rosalita-specific usage is confirmed.
+- Kept existing markers, Firebase data, and automatic marker creation unchanged.
+
+## v1.3.40 Possible Locations Survey Layer
+- Promoted the reviewed Candidate Survey preview into the production Possible Locations dataset with a timestamped backup.
+- Simplified blue survey markers to mean approximate field-survey locations rather than precise Rosalita spawn points.
+- Replaced candidate classification/review filters with a compact Suggested Herb filter, local Remove Survey Point workflow, Restore Removed Locations, and simple progress counts.
+- Kept normal Explorer markers, Firebase sync, normal search, exports, statistics, state zones, and coordinate calibration behavior unchanged.
+
 ## v1.3.34 Remember Found By
 - Added browser-local persistence for the last non-empty Item Discovery Found By value.
 - Reused the Add Marker preferences localStorage object that already stores remembered Status and Confidence.

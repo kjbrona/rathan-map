@@ -1,0 +1,33 @@
+sampleId,candidateType,candidateTypeName,candidateX,candidateY,classification,nearestSameTypeMarker,nearestSameType,sameTypeDistance,nearestAnyMarker,nearestAnyType,nearestAnyDistance
+M01,wisteria,Wisteria,4176.0,3474.26,Already Covered,Wisteria,wisteria,97.47,Indian Tobacco,indian-tobacco,76.3
+M02,chocolate-daisy,Chocolate Daisy,6482.25,3572.33,Already Covered,Chocolate Daisy,chocolate-daisy,70.46,Evergreen Huckleberry,evergreen-huckleberry,42.0
+M03,wisteria,Wisteria,4088.25,3656.38,Already Covered,Wisteria,wisteria,32.84,Wisteria,wisteria,32.84
+M04,wisteria,Wisteria,4216.5,3698.41,Already Covered,Wisteria,wisteria,105.32,Indian Tobacco,indian-tobacco,44.37
+M05,chocolate-daisy,Chocolate Daisy,6711.75,3754.44,Possible Match,Chocolate Daisy,chocolate-daisy,256.58,Creeping Thyme,creeping-thyme,137.53
+M06,chocolate-daisy,Chocolate Daisy,6036.75,3441.57,Possible Match,Chocolate Daisy,chocolate-daisy,233.37,Chocolate Daisy,chocolate-daisy,233.37
+M07,chocolate-daisy,Chocolate Daisy,5856.75,3469.59,Possible Match,Chocolate Daisy,chocolate-daisy,293.35,Chocolate Daisy,chocolate-daisy,293.35
+M08,wisteria,Wisteria,4311.0,3852.51,Possible Match,Wisteria,wisteria,230.7,Creeping Thyme,creeping-thyme,30.74
+M09,wisteria,Wisteria,4243.5,3973.92,Possible Match,Wisteria,wisteria,207.7,Alaskan Ginseng,alaskan-ginseng,59.02
+M10,wisteria,Wisteria,3980.25,3287.47,Possible Match,Wisteria,wisteria,265.36,Bay Bolete,bay-bolete,49.92
+M11,chocolate-daisy,Chocolate Daisy,5474.25,3642.37,Possible Match,Chocolate Daisy,chocolate-daisy,251.85,Chocolate Daisy,chocolate-daisy,251.85
+M12,chocolate-daisy,Chocolate Daisy,4860.0,3773.12,Possible Match,Chocolate Daisy,chocolate-daisy,277.79,Wild Mint,wild-mint,121.51
+M13,wisteria,Wisteria,4356.0,3936.56,Possible Match,Wisteria,wisteria,290.3,Violet Snowdrops,violet-snowdrops,61.99
+M14,wisteria,Wisteria,8577.0,1032.01,New Survey Target,Wisteria,wisteria,4817.85,Vanilla Flower,vanilla-flower,2661.41
+M15,creek-plum,Creek Plum,4574.25,2806.49,New Survey Target,,,,Texas Bluebonnet,texas-bluebonnet,113.24
+M16,cardinal-flower,Cardinal Flower,7969.5,3483.6,New Survey Target,,,,Milkweed,milkweed,216.63
+M17,chocolate-daisy,Chocolate Daisy,6671.25,4081.32,New Survey Target,Chocolate Daisy,chocolate-daisy,352.42,Chocolate Daisy,chocolate-daisy,352.42
+M18,blood-flower,Blood Flower,8070.75,4669.71,New Survey Target,Blood Flower,blood-flower,1474.02,Violet Snowdrops,violet-snowdrops,685.72
+M19,wild-rhubarb,Wild Rhubarb,2675.25,5206.72,New Survey Target,Wild Rhubarb,wild-rhubarb,2598.0,Alaskan Ginseng,alaskan-ginseng,1160.57
+M20,bitterweed,Bitterweed,3626.25,5806.0,New Survey Target,Bitterweed,bitterweed,1267.16,Alaskan Ginseng,alaskan-ginseng,984.15
+M21,bitterweed,Bitterweed,3852.0,2176.08,New Survey Target,Bitterweed,bitterweed,2545.44,Wild Rhubarb,wild-rhubarb,127.9
+M22,creek-plum,Creek Plum,6972.75,3250.12,New Survey Target,,,,Raspberry,raspberry,215.87
+M23,cardinal-flower,Cardinal Flower,8334.0,3726.43,New Survey Target,,,,Evergreen Huckleberry,evergreen-huckleberry,515.89
+M24,cardinal-flower,Cardinal Flower,7890.75,4819.14,New Survey Target,,,,Violet Snowdrops,violet-snowdrops,463.64
+M25,bitterweed,Bitterweed,1732.5,5734.4,New Survey Target,Bitterweed,bitterweed,2707.77,Alaskan Ginseng,alaskan-ginseng,2231.65
+M26,texas-bluebonnet,Texas Bluebonnet,1325.25,6551.6,New Survey Target,Texas Blue Bonnet,texas-bluebonnet,4841.67,Alaskan Ginseng,alaskan-ginseng,2991.65
+M27,bitterweed,Bitterweed,4932.0,2685.08,New Survey Target,Bitterweed,bitterweed,2126.44,Texas Bluebonnet,texas-bluebonnet,137.76
+M28,blood-flower,Blood Flower,8003.25,3278.13,New Survey Target,Blood Flower,blood-flower,941.5,Milkweed,milkweed,378.65
+M29,agarita,Agarita,5197.5,3829.16,New Survey Target,,,,Chocolate Daisy,chocolate-daisy,24.17
+M30,texas-bluebonnet,Texas Bluebonnet,5118.75,4655.7,New Survey Target,Texas Bluebonnet,texas-bluebonnet,1564.0,Creeping Thyme,creeping-thyme,155.32
+M31,bitterweed,Bitterweed,3168.0,5430.87,New Survey Target,Bitterweed,bitterweed,1294.82,Alaskan Ginseng,alaskan-ginseng,851.28
+M32,texas-bluebonnet,Texas Bluebonnet,2502.0,6121.99,New Survey Target,Texas Bluebonnet,texas-bluebonnet,4013.85,Alaskan Ginseng,alaskan-ginseng,1810.93

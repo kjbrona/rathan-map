@@ -90,3 +90,114 @@ Creator : Rathan
 body.move-marker-mode .leaflet-container {
     cursor: crosshair;
 }
+
+.candidate-survey-marker {
+    background: transparent;
+    border: none;
+}
+
+.candidate-survey-marker-icon {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background: #b8c1bd;
+    border: 2px dashed #3f5f6f;
+    border-radius: 50%;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+.candidate-survey-marker-icon::after {
+    content: "?";
+    position: absolute;
+    right: -4px;
+    bottom: -5px;
+    width: 13px;
+    height: 13px;
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+    background: #263946;
+    border: 1px solid #d8c3a3;
+    border-radius: 50%;
+    color: #f2e2bd;
+    font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.candidate-survey-icon-image {
+    width: 18px;
+    height: 18px;
+    display: block;
+    object-fit: contain;
+}
+
+.candidate-popup {
+    min-width: 220px;
+    color: #2a2118;
+    font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.candidate-popup h3 {
+    margin: 0 0 6px;
+    color: #1b140e;
+    font-size: 16px;
+}
+
+.candidate-review-warning {
+    margin: 0 0 7px;
+    padding: 5px 7px;
+    background: rgba(217, 127, 127, 0.18);
+    border: 1px solid rgba(111, 47, 36, 0.45);
+    color: #4a2018;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.candidate-popup dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 3px 8px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.25;
+}
+
+.candidate-popup dt {
+    font-weight: 700;
+}
+
+.candidate-popup dd {
+    margin: 0;
+}
+
+.candidate-popup-note {
+    margin: 7px 0 0;
+    color: #5a4024;
+    font-size: 12px;
+    line-height: 1.25;
+}
+
+.candidate-popup-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    margin-top: 9px;
+}
+
+.candidate-popup-actions button {
+    padding: 5px 8px;
+    cursor: pointer;
+    background: #2a2118;
+    color: #f2e2bd;
+    border: 1px solid #8b5a2b;
+    font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}

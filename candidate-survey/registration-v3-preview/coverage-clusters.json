@@ -1,0 +1,1839 @@
+[
+  {
+    "clusterId": "coverage-cluster-001",
+    "center": {
+      "x": 8013.741668476091,
+      "y": 5942.4909853025565
+    },
+    "candidateCount": 6,
+    "averageDistanceToNearestResidual": 2501.506902404396,
+    "maximumDistanceToNearestResidual": 2710.3413061224733,
+    "states": [
+      "New Hanover"
+    ],
+    "regions": [
+      "north-east"
+    ],
+    "herbDiversity": 1,
+    "herbTypes": [
+      "Wisteria"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-144",
+      "herbType": "Wisteria",
+      "type": "wisteria",
+      "x": 8164.422900406086,
+      "y": 6120.276347997233,
+      "state": "New Hanover",
+      "region": "north-east",
+      "nearestResidualId": "residual-021",
+      "nearestResidualDistance": 2710.3413061224733,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-144",
+      "wildflower-candidate-078",
+      "wildflower-candidate-001",
+      "wildflower-candidate-145",
+      "wildflower-candidate-002",
+      "wildflower-candidate-079"
+    ],
+    "priorityScore": 12.8954903093955,
+    "expectedBenefit": "high coverage increase and reduced extrapolation",
+    "reason": "no residual coverage in north-east; far from existing residuals; 6 nearby candidates; near calibrated-area edge",
+    "priority": 1
+  },
+  {
+    "clusterId": "coverage-cluster-002",
+    "center": {
+      "x": 7752.473461972745,
+      "y": 5544.292825995352
+    },
+    "candidateCount": 3,
+    "averageDistanceToNearestResidual": 2060.2549654386216,
+    "maximumDistanceToNearestResidual": 2212.1030132551396,
+    "states": [
+      "New Hanover"
+    ],
+    "regions": [
+      "north-east"
+    ],
+    "herbDiversity": 1,
+    "herbTypes": [
+      "Wisteria"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-003",
+      "herbType": "Wisteria",
+      "type": "wisteria",
+      "x": 7814.447031864739,
+      "y": 5688.611070521823,
+      "state": "New Hanover",
+      "region": "north-east",
+      "nearestResidualId": "residual-021",
+      "nearestResidualDistance": 2212.1030132551396,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-003",
+      "wildflower-candidate-146",
+      "wildflower-candidate-147"
+    ],
+    "priorityScore": 10.55610669226125,
+    "expectedBenefit": "high coverage increase and reduced extrapolation",
+    "reason": "no residual coverage in north-east; far from existing residuals",
+    "priority": 2
+  },
+  {
+    "clusterId": "coverage-cluster-003",
+    "center": {
+      "x": 7875.735734285465,
+      "y": 5013.0934515056715
+    },
+    "candidateCount": 7,
+    "averageDistanceToNearestResidual": 1578.0575032200722,
+    "maximumDistanceToNearestResidual": 1724.4264951180244,
+    "states": [
+      "New Hanover"
+    ],
+    "regions": [
+      "north-east"
+    ],
+    "herbDiversity": 2,
+    "herbTypes": [
+      "Bitterweed",
+      "Wisteria"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-148",
+      "herbType": "Bitterweed",
+      "type": "bitterweed",
+      "x": 8069.045758353533,
+      "y": 5114.259982707145,
+      "state": "New Hanover",
+      "region": "north-east",
+      "nearestResidualId": "residual-021",
+      "nearestResidualDistance": 1724.4264951180244,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-148",
+      "wildflower-candidate-004",
+      "wildflower-candidate-080",
+      "wildflower-candidate-150",
+      "wildflower-candidate-005",
+      "wildflower-candidate-006",
+      "wildflower-candidate-007"
+    ],
+    "priorityScore": 10.02799015372357,
+    "expectedBenefit": "high coverage increase and reduced extrapolation",
+    "reason": "no residual coverage in north-east; far from existing residuals; 7 nearby candidates; near calibrated-area edge",
+    "priority": 3
+  },
+  {
+    "clusterId": "coverage-cluster-005",
+    "center": {
+      "x": 7528.864260032566,
+      "y": 4819.603717838264
+    },
+    "candidateCount": 3,
+    "averageDistanceToNearestResidual": 1320.0178314149953,
+    "maximumDistanceToNearestResidual": 1476.0995986204853,
+    "states": [
+      "New Hanover"
+    ],
+    "regions": [
+      "middle-east",
+      "north-east"
+    ],
+    "herbDiversity": 2,
+    "herbTypes": [
+      "Agarita",
+      "Wild Rhubarb"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-082",
+      "herbType": "Agarita",
+      "type": "agarita",
+      "x": 7505.835009465139,
+      "y": 4982.927228276127,
+      "state": "New Hanover",
+      "region": "north-east",
+      "nearestResidualId": "residual-021",
+      "nearestResidualDistance": 1476.0995986204853,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-082",
+      "wildflower-candidate-151",
+      "wildflower-candidate-084"
+    ],
+    "priorityScore": 9.023869113946079,
+    "expectedBenefit": "high coverage increase and reduced extrapolation",
+    "reason": "no residual coverage in north-east; moderately far from existing residuals",
+    "priority": 4
+  },
+  {
+    "clusterId": "coverage-cluster-004",
+    "center": {
+      "x": 3855.5324075409408,
+      "y": 4796.901726076182
+    },
+    "candidateCount": 6,
+    "averageDistanceToNearestResidual": 1321.4836405673295,
+    "maximumDistanceToNearestResidual": 1524.52233487059,
+    "states": [
+      "West Elizabeth"
+    ],
+    "regions": [
+      "middle-central",
+      "north-central"
+    ],
+    "herbDiversity": 2,
+    "herbTypes": [
+      "Alaskan Ginseng",
+      "Bitterweed"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-081",
+      "herbType": "Bitterweed",
+      "type": "bitterweed",
+      "x": 3784.516608018376,
+      "y": 4993.135534328679,
+      "state": "West Elizabeth",
+      "region": "north-central",
+      "nearestResidualId": "residual-013",
+      "nearestResidualDistance": 1524.52233487059,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-081",
+      "wildflower-candidate-149",
+      "wildflower-candidate-008",
+      "wildflower-candidate-085",
+      "wildflower-candidate-152",
+      "wildflower-candidate-153"
+    ],
+    "priorityScore": 9.00595469093091,
+    "expectedBenefit": "high coverage increase and reduced extrapolation",
+    "reason": "no residual coverage in north-central; far from existing residuals; 6 nearby candidates",
+    "priority": 5
+  },
+  {
+    "clusterId": "coverage-cluster-006",
+    "center": {
+      "x": 4520.552515069996,
+      "y": 4588.747633077687
+    },
+    "candidateCount": 8,
+    "averageDistanceToNearestResidual": 1089.6007761096785,
+    "maximumDistanceToNearestResidual": 1295.2688974146797,
+    "states": [
+      "West Elizabeth"
+    ],
+    "regions": [
+      "middle-central",
+      "north-central"
+    ],
+    "herbDiversity": 2,
+    "herbTypes": [
+      "Bitterweed",
+      "Creek Plum"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-083",
+      "herbType": "Bitterweed",
+      "type": "bitterweed",
+      "x": 4432.402261661839,
+      "y": 4801.502221199432,
+      "state": "West Elizabeth",
+      "region": "north-central",
+      "nearestResidualId": "residual-013",
+      "nearestResidualDistance": 1295.2688974146797,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-083",
+      "wildflower-candidate-010",
+      "wildflower-candidate-009",
+      "wildflower-candidate-086",
+      "wildflower-candidate-155",
+      "wildflower-candidate-154",
+      "wildflower-candidate-012",
+      "wildflower-candidate-013"
+    ],
+    "priorityScore": 8.632337413914314,
+    "expectedBenefit": "high coverage increase and reduced extrapolation",
+    "reason": "no residual coverage in north-central; moderately far from existing residuals; 8 nearby candidates",
+    "priority": 6
+  },
+  {
+    "clusterId": "coverage-cluster-009",
+    "center": {
+      "x": 3558.992859045116,
+      "y": 2031.396487442369
+    },
+    "candidateCount": 13,
+    "averageDistanceToNearestResidual": 790.3108667847259,
+    "maximumDistanceToNearestResidual": 1044.6172693113558,
+    "states": [
+      "New Austin"
+    ],
+    "regions": [
+      "south-central"
+    ],
+    "herbDiversity": 3,
+    "herbTypes": [
+      "Agarita",
+      "Bitterweed",
+      "Wild Rhubarb"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-069",
+      "herbType": "Bitterweed",
+      "type": "bitterweed",
+      "x": 3581.162463565543,
+      "y": 1817.8571687294655,
+      "state": "New Austin",
+      "region": "south-central",
+      "nearestResidualId": "residual-007",
+      "nearestResidualDistance": 1044.6172693113558,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-069",
+      "wildflower-candidate-210",
+      "wildflower-candidate-214",
+      "wildflower-candidate-208",
+      "wildflower-candidate-213",
+      "wildflower-candidate-135",
+      "wildflower-candidate-128",
+      "wildflower-candidate-204",
+      "wildflower-candidate-134",
+      "wildflower-candidate-060",
+      "wildflower-candidate-062",
+      "wildflower-candidate-205",
+      "wildflower-candidate-127"
+    ],
+    "priorityScore": 8.43267346995314,
+    "expectedBenefit": "high coverage increase and reduced extrapolation",
+    "reason": "no residual coverage in south-central; moderately far from existing residuals; 13 nearby candidates",
+    "priority": 7
+  },
+  {
+    "clusterId": "coverage-cluster-008",
+    "center": {
+      "x": 2960.905470119832,
+      "y": 2439.4812790757155
+    },
+    "candidateCount": 7,
+    "averageDistanceToNearestResidual": 856.198045506785,
+    "maximumDistanceToNearestResidual": 1076.3407434828973,
+    "states": [
+      "New Austin"
+    ],
+    "regions": [
+      "middle-central",
+      "middle-west",
+      "south-west"
+    ],
+    "herbDiversity": 3,
+    "herbTypes": [
+      "Agarita",
+      "Bitterweed",
+      "Wild Rhubarb"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-199",
+      "herbType": "Wild Rhubarb",
+      "type": "wild-rhubarb",
+      "x": 2924.0618454528517,
+      "y": 2628.3950095298615,
+      "state": "New Austin",
+      "region": "middle-west",
+      "nearestResidualId": "residual-007",
+      "nearestResidualDistance": 1076.3407434828973,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-199",
+      "wildflower-candidate-201",
+      "wildflower-candidate-058",
+      "wildflower-candidate-057",
+      "wildflower-candidate-126",
+      "wildflower-candidate-123",
+      "wildflower-candidate-056"
+    ],
+    "priorityScore": 7.8283241575484865,
+    "expectedBenefit": "moderate coverage increase",
+    "reason": "no residual coverage in middle-west; moderately far from existing residuals; 7 nearby candidates",
+    "priority": 8
+  },
+  {
+    "clusterId": "coverage-cluster-011",
+    "center": {
+      "x": 4223.038417706649,
+      "y": 2132.5786508533174
+    },
+    "candidateCount": 6,
+    "averageDistanceToNearestResidual": 698.6752828582277,
+    "maximumDistanceToNearestResidual": 882.5433780146859,
+    "states": [
+      "New Austin"
+    ],
+    "regions": [
+      "south-central"
+    ],
+    "herbDiversity": 2,
+    "herbTypes": [
+      "Bitterweed",
+      "Wild Rhubarb"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-066",
+      "herbType": "Wild Rhubarb",
+      "type": "wild-rhubarb",
+      "x": 4372.075017474972,
+      "y": 1983.7946318625118,
+      "state": "New Austin",
+      "region": "south-central",
+      "nearestResidualId": "residual-007",
+      "nearestResidualDistance": 882.5433780146859,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-066",
+      "wildflower-candidate-212",
+      "wildflower-candidate-207",
+      "wildflower-candidate-061",
+      "wildflower-candidate-203",
+      "wildflower-candidate-125"
+    ],
+    "priorityScore": 7.080017820363199,
+    "expectedBenefit": "moderate coverage increase",
+    "reason": "no residual coverage in south-central; 6 nearby candidates",
+    "priority": 9
+  },
+  {
+    "clusterId": "coverage-cluster-007",
+    "center": {
+      "x": 7826.551873704479,
+      "y": 4471.19152380099
+    },
+    "candidateCount": 4,
+    "averageDistanceToNearestResidual": 1041.7009689860936,
+    "maximumDistanceToNearestResidual": 1184.3446524557348,
+    "states": [
+      "New Hanover"
+    ],
+    "regions": [
+      "middle-east"
+    ],
+    "herbDiversity": 3,
+    "herbTypes": [
+      "Agarita",
+      "Bitterweed",
+      "Wild Rhubarb"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-087",
+      "herbType": "Bitterweed",
+      "type": "bitterweed",
+      "x": 7996.464142581532,
+      "y": 4554.284122780379,
+      "state": "New Hanover",
+      "region": "middle-east",
+      "nearestResidualId": "residual-021",
+      "nearestResidualDistance": 1184.3446524557348,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-087",
+      "wildflower-candidate-011",
+      "wildflower-candidate-158",
+      "wildflower-candidate-014"
+    ],
+    "priorityScore": 6.592915722190096,
+    "expectedBenefit": "moderate coverage increase",
+    "reason": "sparse residual coverage in middle-east; moderately far from existing residuals",
+    "priority": 10
+  },
+  {
+    "clusterId": "coverage-cluster-012",
+    "center": {
+      "x": 2898.7166032787823,
+      "y": 2133.444924054752
+    },
+    "candidateCount": 4,
+    "averageDistanceToNearestResidual": 700.3400556864552,
+    "maximumDistanceToNearestResidual": 855.2825916703945,
+    "states": [
+      "New Austin"
+    ],
+    "regions": [
+      "south-central",
+      "south-west"
+    ],
+    "herbDiversity": 3,
+    "herbTypes": [
+      "Agarita",
+      "Bitterweed",
+      "Wild Rhubarb"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-206",
+      "herbType": "Bitterweed",
+      "type": "bitterweed",
+      "x": 3165.4597924383343,
+      "y": 2145.8021755492073,
+      "state": "New Austin",
+      "region": "south-central",
+      "nearestResidualId": "residual-008",
+      "nearestResidualDistance": 855.2825916703945,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-206",
+      "wildflower-candidate-130",
+      "wildflower-candidate-129",
+      "wildflower-candidate-063"
+    ],
+    "priorityScore": 6.577645165553809,
+    "expectedBenefit": "moderate coverage increase",
+    "reason": "no residual coverage in south-central",
+    "priority": 11
+  },
+  {
+    "clusterId": "coverage-cluster-015",
+    "center": {
+      "x": 7569.704074938677,
+      "y": 3973.7814940836784
+    },
+    "candidateCount": 14,
+    "averageDistanceToNearestResidual": 507.64745676646334,
+    "maximumDistanceToNearestResidual": 753.8798247769171,
+    "states": [
+      "Lemoyne",
+      "New Hanover"
+    ],
+    "regions": [
+      "middle-east"
+    ],
+    "herbDiversity": 4,
+    "herbTypes": [
+      "Bitterweed",
+      "Blood Flower",
+      "Cardinal Flower",
+      "Creek Plum"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-090",
+      "herbType": "Bitterweed",
+      "type": "bitterweed",
+      "x": 7587.878866464343,
+      "y": 4247.6930837992,
+      "state": "New Hanover",
+      "region": "middle-east",
+      "nearestResidualId": "residual-021",
+      "nearestResidualDistance": 753.8798247769171,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-090",
+      "wildflower-candidate-095",
+      "wildflower-candidate-091",
+      "wildflower-candidate-017",
+      "wildflower-candidate-093",
+      "wildflower-candidate-164",
+      "wildflower-candidate-165",
+      "wildflower-candidate-171",
+      "wildflower-candidate-018",
+      "wildflower-candidate-019",
+      "wildflower-candidate-025",
+      "wildflower-candidate-170",
+      "wildflower-candidate-024",
+      "wildflower-candidate-099"
+    ],
+    "priorityScore": 6.532093378452224,
+    "expectedBenefit": "moderate coverage increase",
+    "reason": "sparse residual coverage in middle-east; 14 nearby candidates",
+    "priority": 12
+  },
+  {
+    "clusterId": "coverage-cluster-010",
+    "center": {
+      "x": 7455.697305195393,
+      "y": 2822.360174973814
+    },
+    "candidateCount": 10,
+    "averageDistanceToNearestResidual": 700.5941524104663,
+    "maximumDistanceToNearestResidual": 891.1484288014308,
+    "states": [
+      "Lemoyne"
+    ],
+    "regions": [
+      "middle-east"
+    ],
+    "herbDiversity": 3,
+    "herbTypes": [
+      "Blood Flower",
+      "Cardinal Flower",
+      "Creek Plum"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-054",
+      "herbType": "Cardinal Flower",
+      "type": "cardinal-flower",
+      "x": 7491.109958737829,
+      "y": 2618.5087327282017,
+      "state": "Lemoyne",
+      "region": "middle-east",
+      "nearestResidualId": "residual-021",
+      "nearestResidualDistance": 891.1484288014308,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-054",
+      "wildflower-candidate-052",
+      "wildflower-candidate-121",
+      "wildflower-candidate-197",
+      "wildflower-candidate-047",
+      "wildflower-candidate-196",
+      "wildflower-candidate-117",
+      "wildflower-candidate-194",
+      "wildflower-candidate-044",
+      "wildflower-candidate-192"
+    ],
+    "priorityScore": 6.49286843584414,
+    "expectedBenefit": "moderate coverage increase",
+    "reason": "sparse residual coverage in middle-east; 10 nearby candidates",
+    "priority": 13
+  },
+  {
+    "clusterId": "coverage-cluster-021",
+    "center": {
+      "x": 1866.4004003897883,
+      "y": 2262.087617026072
+    },
+    "candidateCount": 6,
+    "averageDistanceToNearestResidual": 400.13839593731745,
+    "maximumDistanceToNearestResidual": 589.4050896882966,
+    "states": [
+      "New Austin"
+    ],
+    "regions": [
+      "middle-west",
+      "south-west"
+    ],
+    "herbDiversity": 4,
+    "herbTypes": [
+      "Agarita",
+      "Bitterweed",
+      "Texas Bluebonnet",
+      "Wild Rhubarb"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-200",
+      "herbType": "Agarita",
+      "type": "agarita",
+      "x": 1972.0713638711065,
+      "y": 2477.1885489666083,
+      "state": "New Austin",
+      "region": "middle-west",
+      "nearestResidualId": "residual-009",
+      "nearestResidualDistance": 589.4050896882966,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-200",
+      "wildflower-candidate-202",
+      "wildflower-candidate-059",
+      "wildflower-candidate-124",
+      "wildflower-candidate-064",
+      "wildflower-candidate-065"
+    ],
+    "priorityScore": 6.200602955384031,
+    "expectedBenefit": "moderate coverage increase",
+    "reason": "no residual coverage in middle-west; 6 nearby candidates",
+    "priority": 14
+  },
+  {
+    "clusterId": "coverage-cluster-019",
+    "center": {
+      "x": 6787.1607604696355,
+      "y": 3712.6720831521593
+    },
+    "candidateCount": 11,
+    "averageDistanceToNearestResidual": 382.114878183239,
+    "maximumDistanceToNearestResidual": 641.5951098382336,
+    "states": [
+      "Lemoyne"
+    ],
+    "regions": [
+      "middle-east"
+    ],
+    "herbDiversity": 5,
+    "herbTypes": [
+      "Agarita",
+      "Blood Flower",
+      "Cardinal Flower",
+      "Chocolate Daisy",
+      "Creek Plum"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-022",
+      "herbType": "Creek Plum",
+      "type": "creek-plum",
+      "x": 6809.164805965195,
+      "y": 3863.186736840036,
+      "state": "Lemoyne",
+      "region": "middle-east",
+      "nearestResidualId": "residual-001",
+      "nearestResidualDistance": 641.5951098382336,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-022",
+      "wildflower-candidate-092",
+      "wildflower-candidate-182",
+      "wildflower-candidate-033",
+      "wildflower-candidate-174",
+      "wildflower-candidate-027",
+      "wildflower-candidate-183",
+      "wildflower-candidate-100",
+      "wildflower-candidate-030",
+      "wildflower-candidate-031",
+      "wildflower-candidate-021"
+    ],
+    "priorityScore": 5.830918641749701,
+    "expectedBenefit": "moderate coverage increase",
+    "reason": "sparse residual coverage in middle-east; 11 nearby candidates",
+    "priority": 15
+  },
+  {
+    "clusterId": "coverage-cluster-018",
+    "center": {
+      "x": 7895.429211673044,
+      "y": 3732.9796229710714
+    },
+    "candidateCount": 6,
+    "averageDistanceToNearestResidual": 508.80319482994724,
+    "maximumDistanceToNearestResidual": 722.0681720662398,
+    "states": [
+      "Lemoyne",
+      "Unknown"
+    ],
+    "regions": [
+      "middle-east"
+    ],
+    "herbDiversity": 2,
+    "herbTypes": [
+      "Blood Flower",
+      "Cardinal Flower"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-098",
+      "herbType": "Blood Flower",
+      "type": "blood-flower",
+      "x": 8080.541498987021,
+      "y": 3843.5604051985465,
+      "state": "Unknown",
+      "region": "middle-east",
+      "nearestResidualId": "residual-021",
+      "nearestResidualDistance": 722.0681720662398,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-098",
+      "wildflower-candidate-175",
+      "wildflower-candidate-101",
+      "wildflower-candidate-108",
+      "wildflower-candidate-105",
+      "wildflower-candidate-028"
+    ],
+    "priorityScore": 5.66494176455844,
+    "expectedBenefit": "moderate coverage increase",
+    "reason": "sparse residual coverage in middle-east; 6 nearby candidates; near calibrated-area edge",
+    "priority": 16
+  },
+  {
+    "clusterId": "coverage-cluster-022",
+    "center": {
+      "x": 2949.8568461258,
+      "y": 1543.5200700093476
+    },
+    "candidateCount": 3,
+    "averageDistanceToNearestResidual": 408.9356864549913,
+    "maximumDistanceToNearestResidual": 513.7478079439547,
+    "states": [
+      "New Austin"
+    ],
+    "regions": [
+      "south-central",
+      "south-west"
+    ],
+    "herbDiversity": 1,
+    "herbTypes": [
+      "Agarita"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-137",
+      "herbType": "Agarita",
+      "type": "agarita",
+      "x": 3074.779014612095,
+      "y": 1532.847842379785,
+      "state": "New Austin",
+      "region": "south-central",
+      "nearestResidualId": "residual-008",
+      "nearestResidualDistance": 513.7478079439547,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-137",
+      "wildflower-candidate-136",
+      "wildflower-candidate-218"
+    ],
+    "priorityScore": 5.416600225226534,
+    "expectedBenefit": "moderate coverage increase",
+    "reason": "no residual coverage in south-central",
+    "priority": 17
+  },
+  {
+    "clusterId": "coverage-cluster-013",
+    "center": {
+      "x": 6813.407391648182,
+      "y": 2706.281192233157
+    },
+    "candidateCount": 3,
+    "averageDistanceToNearestResidual": 609.5844657481535,
+    "maximumDistanceToNearestResidual": 807.2141370787389,
+    "states": [
+      "Lemoyne"
+    ],
+    "regions": [
+      "middle-east"
+    ],
+    "herbDiversity": 2,
+    "herbTypes": [
+      "Agarita",
+      "Creek Plum"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-122",
+      "herbType": "Creek Plum",
+      "type": "creek-plum",
+      "x": 6955.085772814582,
+      "y": 2519.4388499948245,
+      "state": "Lemoyne",
+      "region": "middle-east",
+      "nearestResidualId": "residual-020",
+      "nearestResidualDistance": 807.2141370787389,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-122",
+      "wildflower-candidate-053",
+      "wildflower-candidate-043"
+    ],
+    "priorityScore": 4.95451036263608,
+    "expectedBenefit": "local refinement",
+    "reason": "sparse residual coverage in middle-east",
+    "priority": 18
+  },
+  {
+    "clusterId": "coverage-cluster-026",
+    "center": {
+      "x": 7517.041063579824,
+      "y": 3370.5887831999808
+    },
+    "candidateCount": 9,
+    "averageDistanceToNearestResidual": 235.99468354766006,
+    "maximumDistanceToNearestResidual": 405.9652753370396,
+    "states": [
+      "Lemoyne"
+    ],
+    "regions": [
+      "middle-east"
+    ],
+    "herbDiversity": 2,
+    "herbTypes": [
+      "Blood Flower",
+      "Cardinal Flower"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-190",
+      "herbType": "Cardinal Flower",
+      "type": "cardinal-flower",
+      "x": 7579.981956353804,
+      "y": 3126.7978846785836,
+      "state": "Lemoyne",
+      "region": "middle-east",
+      "nearestResidualId": "residual-021",
+      "nearestResidualDistance": 405.9652753370396,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-190",
+      "wildflower-candidate-038",
+      "wildflower-candidate-189",
+      "wildflower-candidate-037",
+      "wildflower-candidate-112",
+      "wildflower-candidate-184",
+      "wildflower-candidate-187",
+      "wildflower-candidate-180",
+      "wildflower-candidate-110"
+    ],
+    "priorityScore": 4.9522611164646895,
+    "expectedBenefit": "local refinement",
+    "reason": "sparse residual coverage in middle-east; 9 nearby candidates",
+    "priority": 19
+  },
+  {
+    "clusterId": "coverage-cluster-020",
+    "center": {
+      "x": 1787.0195764430557,
+      "y": 1337.611960257998
+    },
+    "candidateCount": 8,
+    "averageDistanceToNearestResidual": 491.4402459057275,
+    "maximumDistanceToNearestResidual": 634.707862732862,
+    "states": [
+      "New Austin"
+    ],
+    "regions": [
+      "south-west"
+    ],
+    "herbDiversity": 2,
+    "herbTypes": [
+      "Agarita",
+      "Texas Bluebonnet"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-076",
+      "herbType": "Agarita",
+      "type": "agarita",
+      "x": 1833.094484137028,
+      "y": 1263.7156271111717,
+      "state": "New Austin",
+      "region": "south-west",
+      "nearestResidualId": "residual-009",
+      "nearestResidualDistance": 634.707862732862,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-076",
+      "wildflower-candidate-075",
+      "wildflower-candidate-077",
+      "wildflower-candidate-143",
+      "wildflower-candidate-142",
+      "wildflower-candidate-219",
+      "wildflower-candidate-138",
+      "wildflower-candidate-215"
+    ],
+    "priorityScore": 4.9075365541699725,
+    "expectedBenefit": "local refinement",
+    "reason": "8 nearby candidates; near calibrated-area edge",
+    "priority": 20
+  },
+  {
+    "clusterId": "coverage-cluster-016",
+    "center": {
+      "x": 4915.859234134862,
+      "y": 4115.815907133457
+    },
+    "candidateCount": 6,
+    "averageDistanceToNearestResidual": 559.3560384723313,
+    "maximumDistanceToNearestResidual": 748.5493219796112,
+    "states": [
+      "West Elizabeth"
+    ],
+    "regions": [
+      "middle-central"
+    ],
+    "herbDiversity": 3,
+    "herbTypes": [
+      "Bitterweed",
+      "Creek Plum",
+      "Wild Rhubarb"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-089",
+      "herbType": "Bitterweed",
+      "type": "bitterweed",
+      "x": 4747.3359552581205,
+      "y": 4250.215957621853,
+      "state": "West Elizabeth",
+      "region": "middle-central",
+      "nearestResidualId": "residual-017",
+      "nearestResidualDistance": 748.5493219796112,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-089",
+      "wildflower-candidate-088",
+      "wildflower-candidate-016",
+      "wildflower-candidate-162",
+      "wildflower-candidate-094",
+      "wildflower-candidate-173"
+    ],
+    "priorityScore": 4.678035652257975,
+    "expectedBenefit": "local refinement",
+    "reason": "6 nearby candidates",
+    "priority": 21
+  },
+  {
+    "clusterId": "coverage-cluster-017",
+    "center": {
+      "x": 5389.459990298119,
+      "y": 4321.589638119358
+    },
+    "candidateCount": 6,
+    "averageDistanceToNearestResidual": 520.6889971836634,
+    "maximumDistanceToNearestResidual": 729.5014297476035,
+    "states": [
+      "New Hanover",
+      "West Elizabeth"
+    ],
+    "regions": [
+      "middle-central"
+    ],
+    "herbDiversity": 2,
+    "herbTypes": [
+      "Agarita",
+      "Chocolate Daisy"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-156",
+      "herbType": "Agarita",
+      "type": "agarita",
+      "x": 5292.845191622774,
+      "y": 4521.58728516182,
+      "state": "New Hanover",
+      "region": "middle-central",
+      "nearestResidualId": "residual-018",
+      "nearestResidualDistance": 729.5014297476035,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-156",
+      "wildflower-candidate-157",
+      "wildflower-candidate-015",
+      "wildflower-candidate-159",
+      "wildflower-candidate-161",
+      "wildflower-candidate-163"
+    ],
+    "priorityScore": 4.6208919755619515,
+    "expectedBenefit": "local refinement",
+    "reason": "6 nearby candidates",
+    "priority": 22
+  },
+  {
+    "clusterId": "coverage-cluster-014",
+    "center": {
+      "x": 4026.1042243590073,
+      "y": 4026.438669648075
+    },
+    "candidateCount": 4,
+    "averageDistanceToNearestResidual": 536.4406911476004,
+    "maximumDistanceToNearestResidual": 769.8034270581558,
+    "states": [
+      "West Elizabeth"
+    ],
+    "regions": [
+      "middle-central"
+    ],
+    "herbDiversity": 2,
+    "herbTypes": [
+      "Creek Plum",
+      "Wisteria"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-160",
+      "herbType": "Creek Plum",
+      "type": "creek-plum",
+      "x": 3954.7812574955374,
+      "y": 4255.916892278326,
+      "state": "West Elizabeth",
+      "region": "middle-central",
+      "nearestResidualId": "residual-013",
+      "nearestResidualDistance": 769.8034270581558,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-160",
+      "wildflower-candidate-166",
+      "wildflower-candidate-167",
+      "wildflower-candidate-023"
+    ],
+    "priorityScore": 4.321207671717093,
+    "expectedBenefit": "local refinement",
+    "reason": "fills local coverage gap",
+    "priority": 23
+  },
+  {
+    "clusterId": "coverage-cluster-030",
+    "center": {
+      "x": 6426.859545227778,
+      "y": 3317.242833514881
+    },
+    "candidateCount": 6,
+    "averageDistanceToNearestResidual": 142.29359068563187,
+    "maximumDistanceToNearestResidual": 331.95786097462087,
+    "states": [
+      "Lemoyne",
+      "New Hanover"
+    ],
+    "regions": [
+      "middle-east"
+    ],
+    "herbDiversity": 3,
+    "herbTypes": [
+      "Agarita",
+      "Chanterelles",
+      "Chocolate Daisy"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-034",
+      "herbType": "Chocolate Daisy",
+      "type": "chocolate-daisy",
+      "x": 6498.623752990299,
+      "y": 3467.007645487979,
+      "state": "Lemoyne",
+      "region": "middle-east",
+      "nearestResidualId": "residual-020",
+      "nearestResidualDistance": 331.95786097462087,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-034",
+      "wildflower-candidate-036",
+      "wildflower-candidate-041",
+      "wildflower-candidate-113",
+      "wildflower-candidate-039",
+      "wildflower-candidate-103"
+    ],
+    "priorityScore": 4.228261269243004,
+    "expectedBenefit": "local refinement",
+    "reason": "sparse residual coverage in middle-east; 6 nearby candidates",
+    "priority": 24
+  },
+  {
+    "clusterId": "coverage-cluster-023",
+    "center": {
+      "x": 898.034570307553,
+      "y": 1398.3680249294116
+    },
+    "candidateCount": 4,
+    "averageDistanceToNearestResidual": 347.40833300070904,
+    "maximumDistanceToNearestResidual": 507.94610163022116,
+    "states": [
+      "New Austin"
+    ],
+    "regions": [
+      "south-west"
+    ],
+    "herbDiversity": 2,
+    "herbTypes": [
+      "Agarita",
+      "Texas Bluebonnet"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-139",
+      "herbType": "Texas Bluebonnet",
+      "type": "texas-bluebonnet",
+      "x": 681.8114845229194,
+      "y": 1445.7493721922474,
+      "state": "New Austin",
+      "region": "south-west",
+      "nearestResidualId": "residual-011",
+      "nearestResidualDistance": 507.94610163022116,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-139",
+      "wildflower-candidate-074",
+      "wildflower-candidate-141",
+      "wildflower-candidate-072"
+    ],
+    "priorityScore": 4.036727600817981,
+    "expectedBenefit": "local refinement",
+    "reason": "near calibrated-area edge",
+    "priority": 25
+  },
+  {
+    "clusterId": "coverage-cluster-029",
+    "center": {
+      "x": 5257.953209784266,
+      "y": 3777.442705129496
+    },
+    "candidateCount": 10,
+    "averageDistanceToNearestResidual": 160.3376374476111,
+    "maximumDistanceToNearestResidual": 345.7920392042386,
+    "states": [
+      "New Hanover",
+      "West Elizabeth"
+    ],
+    "regions": [
+      "middle-central"
+    ],
+    "herbDiversity": 2,
+    "herbTypes": [
+      "Agarita",
+      "Chocolate Daisy"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-172",
+      "herbType": "Agarita",
+      "type": "agarita",
+      "x": 5174.777564346976,
+      "y": 3850.915806182643,
+      "state": "West Elizabeth",
+      "region": "middle-central",
+      "nearestResidualId": "residual-017",
+      "nearestResidualDistance": 345.7920392042386,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-172",
+      "wildflower-candidate-168",
+      "wildflower-candidate-176",
+      "wildflower-candidate-102",
+      "wildflower-candidate-178",
+      "wildflower-candidate-107",
+      "wildflower-candidate-169",
+      "wildflower-candidate-020",
+      "wildflower-candidate-097",
+      "wildflower-candidate-181"
+    ],
+    "priorityScore": 4.034745208610679,
+    "expectedBenefit": "local refinement",
+    "reason": "10 nearby candidates",
+    "priority": 26
+  },
+  {
+    "clusterId": "coverage-cluster-024",
+    "center": {
+      "x": 3802.885045053291,
+      "y": 3004.16042720367
+    },
+    "candidateCount": 5,
+    "averageDistanceToNearestResidual": 295.10760302910063,
+    "maximumDistanceToNearestResidual": 506.2356292903588,
+    "states": [
+      "West Elizabeth"
+    ],
+    "regions": [
+      "middle-central"
+    ],
+    "herbDiversity": 1,
+    "herbTypes": [
+      "Wisteria"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-114",
+      "herbType": "Wisteria",
+      "type": "wisteria",
+      "x": 3650.3961461568574,
+      "y": 3154.8636309307253,
+      "state": "West Elizabeth",
+      "region": "middle-central",
+      "nearestResidualId": "residual-007",
+      "nearestResidualDistance": 506.2356292903588,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-114",
+      "wildflower-candidate-191",
+      "wildflower-candidate-115",
+      "wildflower-candidate-193",
+      "wildflower-candidate-045"
+    ],
+    "priorityScore": 3.758406224406145,
+    "expectedBenefit": "local refinement",
+    "reason": "5 nearby candidates",
+    "priority": 27
+  },
+  {
+    "clusterId": "coverage-cluster-025",
+    "center": {
+      "x": 2480.526583824346,
+      "y": 1786.1141649213423
+    },
+    "candidateCount": 5,
+    "averageDistanceToNearestResidual": 303.948028422149,
+    "maximumDistanceToNearestResidual": 457.76523157229474,
+    "states": [
+      "New Austin"
+    ],
+    "regions": [
+      "south-west"
+    ],
+    "herbDiversity": 4,
+    "herbTypes": [
+      "Agarita",
+      "Bitterweed",
+      "Texas Bluebonnet",
+      "Wild Rhubarb"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-131",
+      "herbType": "Bitterweed",
+      "type": "bitterweed",
+      "x": 2549.3943659626516,
+      "y": 1998.2357988759795,
+      "state": "New Austin",
+      "region": "south-west",
+      "nearestResidualId": "residual-008",
+      "nearestResidualDistance": 457.76523157229474,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-131",
+      "wildflower-candidate-067",
+      "wildflower-candidate-133",
+      "wildflower-candidate-071",
+      "wildflower-candidate-217"
+    ],
+    "priorityScore": 3.6207093840734292,
+    "expectedBenefit": "local refinement",
+    "reason": "5 nearby candidates",
+    "priority": 28
+  },
+  {
+    "clusterId": "coverage-cluster-027",
+    "center": {
+      "x": 1477.5825931386162,
+      "y": 1921.8886666810463
+    },
+    "candidateCount": 4,
+    "averageDistanceToNearestResidual": 188.66834386174767,
+    "maximumDistanceToNearestResidual": 405.7378268506794,
+    "states": [
+      "New Austin"
+    ],
+    "regions": [
+      "south-west"
+    ],
+    "herbDiversity": 3,
+    "herbTypes": [
+      "Agarita",
+      "Bitterweed",
+      "Texas Bluebonnet"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-209",
+      "herbType": "Agarita",
+      "type": "agarita",
+      "x": 1453.3541961907174,
+      "y": 2117.3670136931787,
+      "state": "New Austin",
+      "region": "south-west",
+      "nearestResidualId": "residual-010",
+      "nearestResidualDistance": 405.7378268506794,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-209",
+      "wildflower-candidate-211",
+      "wildflower-candidate-132",
+      "wildflower-candidate-070"
+    ],
+    "priorityScore": 3.4081316526843213,
+    "expectedBenefit": "local refinement",
+    "reason": "fills local coverage gap",
+    "priority": 29
+  },
+  {
+    "clusterId": "coverage-cluster-033",
+    "center": {
+      "x": 4201.763231968631,
+      "y": 3531.27982588634
+    },
+    "candidateCount": 7,
+    "averageDistanceToNearestResidual": 97.0509431010752,
+    "maximumDistanceToNearestResidual": 265.243553501996,
+    "states": [
+      "West Elizabeth"
+    ],
+    "regions": [
+      "middle-central"
+    ],
+    "herbDiversity": 2,
+    "herbTypes": [
+      "Creek Plum",
+      "Wisteria"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-106",
+      "herbType": "Wisteria",
+      "type": "wisteria",
+      "x": 3999.6211291739455,
+      "y": 3698.345344966371,
+      "state": "West Elizabeth",
+      "region": "middle-central",
+      "nearestResidualId": "residual-013",
+      "nearestResidualDistance": 265.243553501996,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-106",
+      "wildflower-candidate-177",
+      "wildflower-candidate-032",
+      "wildflower-candidate-111",
+      "wildflower-candidate-186",
+      "wildflower-candidate-109",
+      "wildflower-candidate-035"
+    ],
+    "priorityScore": 3.3950325876057827,
+    "expectedBenefit": "local refinement",
+    "reason": "7 nearby candidates",
+    "priority": 30
+  },
+  {
+    "clusterId": "coverage-cluster-032",
+    "center": {
+      "x": 4875.451044343118,
+      "y": 2790.799178762592
+    },
+    "candidateCount": 6,
+    "averageDistanceToNearestResidual": 117.48493000568322,
+    "maximumDistanceToNearestResidual": 298.2017861299022,
+    "states": [
+      "West Elizabeth"
+    ],
+    "regions": [
+      "middle-central"
+    ],
+    "herbDiversity": 1,
+    "herbTypes": [
+      "Texas Bluebonnet"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-050",
+      "herbType": "Texas Bluebonnet",
+      "type": "texas-bluebonnet",
+      "x": 4664.29876326222,
+      "y": 2702.4649910174394,
+      "state": "West Elizabeth",
+      "region": "middle-central",
+      "nearestResidualId": "residual-006",
+      "nearestResidualDistance": 298.2017861299022,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-050",
+      "wildflower-candidate-118",
+      "wildflower-candidate-116",
+      "wildflower-candidate-048",
+      "wildflower-candidate-049",
+      "wildflower-candidate-195"
+    ],
+    "priorityScore": 3.326993044708848,
+    "expectedBenefit": "local refinement",
+    "reason": "6 nearby candidates",
+    "priority": 31
+  },
+  {
+    "clusterId": "coverage-cluster-028",
+    "center": {
+      "x": 1256.7966378037454,
+      "y": 1412.798178150466
+    },
+    "candidateCount": 3,
+    "averageDistanceToNearestResidual": 205.63253821644548,
+    "maximumDistanceToNearestResidual": 350.0409945890059,
+    "states": [
+      "New Austin"
+    ],
+    "regions": [
+      "south-west"
+    ],
+    "herbDiversity": 1,
+    "herbTypes": [
+      "Texas Bluebonnet"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-220",
+      "herbType": "Texas Bluebonnet",
+      "type": "texas-bluebonnet",
+      "x": 1267.9853630822288,
+      "y": 1258.584189829251,
+      "state": "New Austin",
+      "region": "south-west",
+      "nearestResidualId": "residual-011",
+      "nearestResidualDistance": 350.0409945890059,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-220",
+      "wildflower-candidate-073",
+      "wildflower-candidate-216"
+    ],
+    "priorityScore": 3.0847705808314667,
+    "expectedBenefit": "local refinement",
+    "reason": "near calibrated-area edge",
+    "priority": 32
+  },
+  {
+    "clusterId": "coverage-cluster-036",
+    "center": {
+      "x": 7468.856719292823,
+      "y": 3677.855086848991
+    },
+    "candidateCount": 2,
+    "averageDistanceToNearestResidual": 198.8149974275182,
+    "maximumDistanceToNearestResidual": 211.45709941170054,
+    "states": [
+      "Lemoyne"
+    ],
+    "regions": [
+      "middle-east"
+    ],
+    "herbDiversity": 1,
+    "herbTypes": [
+      "Cardinal Flower"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-026",
+      "herbType": "Cardinal Flower",
+      "type": "cardinal-flower",
+      "x": 7372.865123742603,
+      "y": 3708.412253038312,
+      "state": "Lemoyne",
+      "region": "middle-east",
+      "nearestResidualId": "residual-021",
+      "nearestResidualDistance": 211.45709941170054,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "uncertain"
+    },
+    "candidates": [
+      "wildflower-candidate-026",
+      "wildflower-candidate-029"
+    ],
+    "priorityScore": 2.837001503121807,
+    "expectedBenefit": "local refinement",
+    "reason": "sparse residual coverage in middle-east",
+    "priority": 33
+  },
+  {
+    "clusterId": "coverage-cluster-034",
+    "center": {
+      "x": 4083.650516567129,
+      "y": 2702.987218858345
+    },
+    "candidateCount": 4,
+    "averageDistanceToNearestResidual": 132.08525607906776,
+    "maximumDistanceToNearestResidual": 255.08061917772028,
+    "states": [
+      "West Elizabeth"
+    ],
+    "regions": [
+      "middle-central"
+    ],
+    "herbDiversity": 1,
+    "herbTypes": [
+      "Wisteria"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-055",
+      "herbType": "Wisteria",
+      "type": "wisteria",
+      "x": 4153.648268712266,
+      "y": 2583.7577430319216,
+      "state": "West Elizabeth",
+      "region": "middle-central",
+      "nearestResidualId": "residual-007",
+      "nearestResidualDistance": 255.08061917772028,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-055",
+      "wildflower-candidate-198",
+      "wildflower-candidate-051",
+      "wildflower-candidate-119"
+    ],
+    "priorityScore": 2.7770392480757864,
+    "expectedBenefit": "local refinement",
+    "reason": "fills local coverage gap",
+    "priority": 34
+  },
+  {
+    "clusterId": "coverage-cluster-035",
+    "center": {
+      "x": 4514.461252931951,
+      "y": 3533.780296850792
+    },
+    "candidateCount": 4,
+    "averageDistanceToNearestResidual": 125.86878814454562,
+    "maximumDistanceToNearestResidual": 254.0011351080076,
+    "states": [
+      "West Elizabeth"
+    ],
+    "regions": [
+      "middle-central"
+    ],
+    "herbDiversity": 2,
+    "herbTypes": [
+      "Chocolate Daisy",
+      "Creek Plum"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-179",
+      "herbType": "Chocolate Daisy",
+      "type": "chocolate-daisy",
+      "x": 4700.940177150616,
+      "y": 3597.41730899055,
+      "state": "West Elizabeth",
+      "region": "middle-central",
+      "nearestResidualId": "residual-016",
+      "nearestResidualDistance": 254.0011351080076,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "uncertain"
+    },
+    "candidates": [
+      "wildflower-candidate-179",
+      "wildflower-candidate-104",
+      "wildflower-candidate-185",
+      "wildflower-candidate-188"
+    ],
+    "priorityScore": 2.773800795866648,
+    "expectedBenefit": "local refinement",
+    "reason": "fills local coverage gap",
+    "priority": 35
+  },
+  {
+    "clusterId": "coverage-cluster-031",
+    "center": {
+      "x": 6516.878289616413,
+      "y": 2834.2605261096433
+    },
+    "candidateCount": 1,
+    "averageDistanceToNearestResidual": 315.8014298140684,
+    "maximumDistanceToNearestResidual": 315.8014298140684,
+    "states": [
+      "Lemoyne"
+    ],
+    "regions": [
+      "middle-east"
+    ],
+    "herbDiversity": 1,
+    "herbTypes": [
+      "Agarita"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-046",
+      "herbType": "Agarita",
+      "type": "agarita",
+      "x": 6516.878289616413,
+      "y": 2834.2605261096433,
+      "state": "Lemoyne",
+      "region": "middle-east",
+      "nearestResidualId": "residual-020",
+      "nearestResidualDistance": 315.8014298140684,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-046"
+    ],
+    "priorityScore": 2.613838265142137,
+    "expectedBenefit": "local refinement",
+    "reason": "sparse residual coverage in middle-east",
+    "priority": 36
+  },
+  {
+    "clusterId": "coverage-cluster-037",
+    "center": {
+      "x": 2586.449850042228,
+      "y": 1336.5048413786644
+    },
+    "candidateCount": 1,
+    "averageDistanceToNearestResidual": 205.6845156378506,
+    "maximumDistanceToNearestResidual": 205.6845156378506,
+    "states": [
+      "New Austin"
+    ],
+    "regions": [
+      "south-west"
+    ],
+    "herbDiversity": 1,
+    "herbTypes": [
+      "Texas Bluebonnet"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-140",
+      "herbType": "Texas Bluebonnet",
+      "type": "texas-bluebonnet",
+      "x": 2586.449850042228,
+      "y": 1336.5048413786644,
+      "state": "New Austin",
+      "region": "south-west",
+      "nearestResidualId": "residual-008",
+      "nearestResidualDistance": 205.6845156378506,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-140"
+    ],
+    "priorityScore": 1.7409848329586697,
+    "expectedBenefit": "local refinement",
+    "reason": "near calibrated-area edge",
+    "priority": 37
+  },
+  {
+    "clusterId": "coverage-cluster-038",
+    "center": {
+      "x": 5247.194039819093,
+      "y": 2955.7204942420526
+    },
+    "candidateCount": 3,
+    "averageDistanceToNearestResidual": 0.003713667881385059,
+    "maximumDistanceToNearestResidual": 0.00517531938247016,
+    "states": [
+      "West Elizabeth"
+    ],
+    "regions": [
+      "middle-central"
+    ],
+    "herbDiversity": 1,
+    "herbTypes": [
+      "Texas Bluebonnet"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-042",
+      "herbType": "Texas Bluebonnet",
+      "type": "texas-bluebonnet",
+      "x": 5238.307710151211,
+      "y": 3029.255358823077,
+      "state": "West Elizabeth",
+      "region": "middle-central",
+      "nearestResidualId": "residual-004",
+      "nearestResidualDistance": 0.00517531938247016,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-042",
+      "wildflower-candidate-120",
+      "wildflower-candidate-040"
+    ],
+    "priorityScore": 1.7328834773580106,
+    "expectedBenefit": "local refinement",
+    "reason": "fills local coverage gap",
+    "priority": 38
+  },
+  {
+    "clusterId": "coverage-cluster-039",
+    "center": {
+      "x": 5769.262533710063,
+      "y": 3887.2231683900327
+    },
+    "candidateCount": 1,
+    "averageDistanceToNearestResidual": 0.004056893156193332,
+    "maximumDistanceToNearestResidual": 0.004056893156193332,
+    "states": [
+      "New Hanover"
+    ],
+    "regions": [
+      "middle-central"
+    ],
+    "herbDiversity": 1,
+    "herbTypes": [
+      "Chocolate Daisy"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-096",
+      "herbType": "Chocolate Daisy",
+      "type": "chocolate-daisy",
+      "x": 5769.262533710063,
+      "y": 3887.2231683900327,
+      "state": "New Hanover",
+      "region": "middle-central",
+      "nearestResidualId": "residual-019",
+      "nearestResidualDistance": 0.004056893156193332,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-096"
+    ],
+    "priorityScore": 0.8664461463794002,
+    "expectedBenefit": "local refinement",
+    "reason": "fills local coverage gap",
+    "priority": 39
+  },
+  {
+    "clusterId": "coverage-cluster-040",
+    "center": {
+      "x": 1945.5586905660723,
+      "y": 1888.380076378442
+    },
+    "candidateCount": 1,
+    "averageDistanceToNearestResidual": 0.001311659588939683,
+    "maximumDistanceToNearestResidual": 0.001311659588939683,
+    "states": [
+      "New Austin"
+    ],
+    "regions": [
+      "south-west"
+    ],
+    "herbDiversity": 1,
+    "herbTypes": [
+      "Wild Rhubarb"
+    ],
+    "representativeCandidate": {
+      "candidateId": "wildflower-candidate-068",
+      "herbType": "Wild Rhubarb",
+      "type": "wild-rhubarb",
+      "x": 1945.5586905660723,
+      "y": 1888.380076378442,
+      "state": "New Austin",
+      "region": "south-west",
+      "nearestResidualId": "residual-009",
+      "nearestResidualDistance": 0.001311659588939683,
+      "surveyConfidence": "medium",
+      "typeReviewStatus": "confirmed"
+    },
+    "candidates": [
+      "wildflower-candidate-068"
+    ],
+    "priorityScore": 0.8664379106786985,
+    "expectedBenefit": "local refinement",
+    "reason": "fills local coverage gap",
+    "priority": 40
+  }
+]

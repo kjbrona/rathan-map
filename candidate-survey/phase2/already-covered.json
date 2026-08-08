@@ -1,0 +1,292 @@
+[
+  {
+    "candidateId": "wildflower-candidate-023",
+    "category": "herbs",
+    "type": "wisteria",
+    "typeName": "Wisteria",
+    "x": 4176.0,
+    "y": 3634.0,
+    "status": "candidate",
+    "surveyStatus": "needs-survey",
+    "surveyConfidence": "medium",
+    "reviewed": false,
+    "source": "RDO Wildflower Reference Maps",
+    "importedOn": "2026-08-04T12:55:17-05:00",
+    "classification": "Already Covered",
+    "sourceDetections": 1,
+    "sourceImages": [
+      "RDO Wildflower Reference Map A"
+    ],
+    "duplicateSpread": 0.0,
+    "digitScoreMin": 0.645,
+    "nearestExistingMarker": {
+      "id": "3ad5bd29-154a-4000-9784-75929a3dc266",
+      "name": "Wisteria",
+      "type": "wisteria",
+      "x": 4121,
+      "y": 3654,
+      "distance": 58.52349955359813
+    }
+  },
+  {
+    "candidateId": "wildflower-candidate-056",
+    "category": "herbs",
+    "type": "wild-rhubarb",
+    "typeName": "Wild Rhubarb",
+    "x": 3312.0,
+    "y": 2090.25,
+    "status": "candidate",
+    "surveyStatus": "needs-survey",
+    "surveyConfidence": "high",
+    "reviewed": false,
+    "source": "RDO Wildflower Reference Maps",
+    "importedOn": "2026-08-04T12:55:17-05:00",
+    "classification": "Already Covered",
+    "sourceDetections": 1,
+    "sourceImages": [
+      "RDO Wildflower Reference Map A"
+    ],
+    "duplicateSpread": 0.0,
+    "digitScoreMin": 0.769,
+    "nearestExistingMarker": {
+      "id": "f84f17aa-bf06-433c-959c-a92ecf30dbb7",
+      "name": "Wild Rhubarb",
+      "type": "wild-rhubarb",
+      "x": 3332.1035854818333,
+      "y": 2005.8867396408054,
+      "distance": 86.72550863303499
+    }
+  },
+  {
+    "candidateId": "wildflower-candidate-060",
+    "category": "herbs",
+    "type": "wild-rhubarb",
+    "typeName": "Wild Rhubarb",
+    "x": 3649.5,
+    "y": 1719.75,
+    "status": "candidate",
+    "surveyStatus": "needs-survey",
+    "surveyConfidence": "high",
+    "reviewed": false,
+    "source": "RDO Wildflower Reference Maps",
+    "importedOn": "2026-08-04T12:55:17-05:00",
+    "classification": "Already Covered",
+    "sourceDetections": 1,
+    "sourceImages": [
+      "RDO Wildflower Reference Map A"
+    ],
+    "duplicateSpread": 0.0,
+    "digitScoreMin": 0.733,
+    "nearestExistingMarker": {
+      "id": "285fe123-334d-4a0b-9e87-16ed5429835d",
+      "name": "Wild Rhubarb",
+      "type": "wild-rhubarb",
+      "x": 3563.9191583367387,
+      "y": 1803.8301643928694,
+      "distance": 119.97314076127263
+    }
+  },
+  {
+    "candidateId": "wildflower-candidate-096",
+    "category": "herbs",
+    "type": "chocolate-daisy",
+    "typeName": "Chocolate Daisy",
+    "x": 6036.75,
+    "y": 3667.25,
+    "status": "candidate",
+    "surveyStatus": "needs-survey",
+    "surveyConfidence": "medium",
+    "reviewed": false,
+    "source": "RDO Wildflower Reference Maps",
+    "importedOn": "2026-08-04T12:55:17-05:00",
+    "classification": "Already Covered",
+    "sourceDetections": 1,
+    "sourceImages": [
+      "RDO Wildflower Reference Map B"
+    ],
+    "duplicateSpread": 0.0,
+    "digitScoreMin": 0.606,
+    "nearestExistingMarker": {
+      "id": "18cb483b-dba9-4943-add5-aada1762e134",
+      "name": "Chocolate Daisy",
+      "type": "chocolate-daisy",
+      "x": 6068.319386381455,
+      "y": 3672.791545637479,
+      "distance": 32.05206521511296
+    }
+  },
+  {
+    "candidateId": "wildflower-candidate-103",
+    "category": "herbs",
+    "type": "chocolate-daisy",
+    "typeName": "Chocolate Daisy",
+    "x": 6482.25,
+    "y": 3534.25,
+    "status": "candidate",
+    "surveyStatus": "needs-survey",
+    "surveyConfidence": "high",
+    "reviewed": false,
+    "source": "RDO Wildflower Reference Maps",
+    "importedOn": "2026-08-04T12:55:17-05:00",
+    "classification": "Already Covered",
+    "sourceDetections": 1,
+    "sourceImages": [
+      "RDO Wildflower Reference Map B"
+    ],
+    "duplicateSpread": 0.0,
+    "digitScoreMin": 0.761,
+    "nearestExistingMarker": {
+      "id": "dded7605-6fa8-46c3-bec0-9143e42a2a4f",
+      "name": "Chocolate Daisy",
+      "type": "chocolate-daisy",
+      "x": 6478,
+      "y": 3502,
+      "distance": 32.52883336364832
+    }
+  },
+  {
+    "candidateId": "wildflower-candidate-115",
+    "category": "herbs",
+    "type": "wisteria",
+    "typeName": "Wisteria",
+    "x": 3917.25,
+    "y": 2665.0,
+    "status": "candidate",
+    "surveyStatus": "needs-survey",
+    "surveyConfidence": "high",
+    "reviewed": false,
+    "source": "RDO Wildflower Reference Maps",
+    "importedOn": "2026-08-04T12:55:17-05:00",
+    "classification": "Already Covered",
+    "sourceDetections": 1,
+    "sourceImages": [
+      "RDO Wildflower Reference Map B"
+    ],
+    "duplicateSpread": 0.0,
+    "digitScoreMin": 0.692,
+    "nearestExistingMarker": {
+      "id": "03397457-8579-4c40-8b2e-63ba5ba6ea6c",
+      "name": "Wisteria",
+      "type": "wisteria",
+      "x": 3983,
+      "y": 2769,
+      "distance": 123.04089767227806
+    }
+  },
+  {
+    "candidateId": "wildflower-candidate-152",
+    "category": "herbs",
+    "type": "bitterweed",
+    "typeName": "Bitterweed",
+    "x": 4144.5,
+    "y": 4612.5,
+    "status": "candidate",
+    "surveyStatus": "needs-survey",
+    "surveyConfidence": "high",
+    "reviewed": false,
+    "source": "RDO Wildflower Reference Maps",
+    "importedOn": "2026-08-04T12:55:17-05:00",
+    "classification": "Already Covered",
+    "sourceDetections": 1,
+    "sourceImages": [
+      "RDO Wildflower Reference Map C"
+    ],
+    "duplicateSpread": 0.0,
+    "digitScoreMin": 0.845,
+    "nearestExistingMarker": {
+      "id": "d20dfd1d-4790-4e45-b076-dbe4fa76e8a3",
+      "name": "Bitterweed",
+      "type": "bitterweed",
+      "x": 4232,
+      "y": 4693,
+      "distance": 118.8970142602412
+    }
+  },
+  {
+    "candidateId": "wildflower-candidate-166",
+    "category": "herbs",
+    "type": "wisteria",
+    "typeName": "Wisteria",
+    "x": 3980.25,
+    "y": 3824.0,
+    "status": "candidate",
+    "surveyStatus": "needs-survey",
+    "surveyConfidence": "high",
+    "reviewed": false,
+    "source": "RDO Wildflower Reference Maps",
+    "importedOn": "2026-08-04T12:55:17-05:00",
+    "classification": "Already Covered",
+    "sourceDetections": 1,
+    "sourceImages": [
+      "RDO Wildflower Reference Map C"
+    ],
+    "duplicateSpread": 0.0,
+    "digitScoreMin": 0.685,
+    "nearestExistingMarker": {
+      "id": "4f77bafa-4a8a-48aa-817a-c688fab53ccb",
+      "name": "Wisteria",
+      "type": "wisteria",
+      "x": 4080.409387588416,
+      "y": 3845.3171162686335,
+      "distance": 102.4027459011572
+    }
+  },
+  {
+    "candidateId": "wildflower-candidate-177",
+    "category": "herbs",
+    "type": "wisteria",
+    "typeName": "Wisteria",
+    "x": 4216.5,
+    "y": 3406.0,
+    "status": "candidate",
+    "surveyStatus": "needs-survey",
+    "surveyConfidence": "high",
+    "reviewed": false,
+    "source": "RDO Wildflower Reference Maps",
+    "importedOn": "2026-08-04T12:55:17-05:00",
+    "classification": "Already Covered",
+    "sourceDetections": 1,
+    "sourceImages": [
+      "RDO Wildflower Reference Map C"
+    ],
+    "duplicateSpread": 0.0,
+    "digitScoreMin": 0.697,
+    "nearestExistingMarker": {
+      "id": "4bb2713f-8309-4217-9ed2-a4dbda2feb52",
+      "name": "Wisteria",
+      "type": "wisteria",
+      "x": 4225,
+      "y": 3390,
+      "distance": 18.117670931993437
+    }
+  },
+  {
+    "candidateId": "wildflower-candidate-200",
+    "category": "herbs",
+    "type": "wild-rhubarb",
+    "typeName": "Wild Rhubarb",
+    "x": 2902.5,
+    "y": 2204.25,
+    "status": "candidate",
+    "surveyStatus": "needs-survey",
+    "surveyConfidence": "high",
+    "reviewed": false,
+    "source": "RDO Wildflower Reference Maps",
+    "importedOn": "2026-08-04T12:55:17-05:00",
+    "classification": "Already Covered",
+    "sourceDetections": 1,
+    "sourceImages": [
+      "RDO Wildflower Reference Map C"
+    ],
+    "duplicateSpread": 0.0,
+    "digitScoreMin": 0.676,
+    "nearestExistingMarker": {
+      "id": "148f600c-01d3-4858-a44e-3959957c0155",
+      "name": "Wild Rhubarb",
+      "type": "wild-rhubarb",
+      "x": 2906.75,
+      "y": 2123.75,
+      "distance": 80.61211137291964
+    }
+  }
+]

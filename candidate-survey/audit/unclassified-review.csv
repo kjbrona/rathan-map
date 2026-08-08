@@ -1,0 +1,11 @@
+reviewId,sourceImage,sourcePixelX,sourcePixelY,convertedExplorerX,convertedExplorerY,nearestVisibleLegendNumber,likelyHerbType,confidence,recommendation
+U01,RDO Wildflower Reference Map B,1253.5,732.0,5640.75,3418.23,3,Chocolate Daisy,Low,Classify only after visual confirmation
+U02,RDO Wildflower Reference Map B,1827.5,731.0,8223.75,3413.56,5,Cardinal Flower,Medium,Classify only after visual confirmation
+U03,RDO Wildflower Reference Map B,1800.0,755.0,8100.0,3525.63,5,Cardinal Flower,Low,Classify only after visual confirmation
+U04,RDO Wildflower Reference Map B,1772.0,841.0,7974.0,3927.22,5,Cardinal Flower,Medium,Classify only after visual confirmation
+U05,RDO Wildflower Reference Map B,1060.5,861.0,4772.25,4020.62,not discernible by script,Unknown,Unknown,Manual review or discard if no real pin is visible
+U06,RDO Wildflower Reference Map B,1732.0,863.0,7794.0,4029.96,5,Cardinal Flower,Low,Classify only after visual confirmation
+U07,RDO Wildflower Reference Map B,1776.0,873.0,7992.0,4076.65,5,Cardinal Flower,Medium,Classify only after visual confirmation
+U08,RDO Wildflower Reference Map B,858.5,908.0,3863.25,4240.09,4,Wisteria,Low,Classify only after visual confirmation
+U09,RDO Wildflower Reference Map C,1271.5,723.0,5721.75,3376.2,9,Agarita,Medium,Classify only after visual confirmation
+U10,RDO Wildflower Reference Map C,1644.5,835.0,7400.25,3899.21,2,Creek Plum,Medium,Classify only after visual confirmation

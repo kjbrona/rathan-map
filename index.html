@@ -12,10 +12,10 @@
   />
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
 
-  <link rel="stylesheet" href="css/main.css?v=1.3.34" />
-  <link rel="stylesheet" href="css/map.css?v=1.3.34" />
-  <link rel="stylesheet" href="css/sidebar.css?v=1.3.34" />
-  <link rel="stylesheet" href="css/dialogs.css?v=1.3.34" />
+  <link rel="stylesheet" href="css/main.css?v=1.3.44" />
+  <link rel="stylesheet" href="css/map.css?v=1.3.44" />
+  <link rel="stylesheet" href="css/sidebar.css?v=1.3.44" />
+  <link rel="stylesheet" href="css/dialogs.css?v=1.3.44" />
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
   <link rel="shortcut icon" href="images/favicons/favicon.ico">
@@ -112,6 +112,35 @@
               <input type="checkbox" id="show-state-zones" />
               <span>Show State Zones</span>
             </label>
+            <div class="candidate-layer-control">
+              <label class="state-zone-toggle">
+                <input type="checkbox" id="show-candidate-survey" />
+              <span>Show Possible Locations</span>
+              </label>
+
+              <div id="candidate-survey-status" class="candidate-survey-status">
+                Possible Locations not loaded
+              </div>
+
+              <label class="candidate-suggested-herb-filter">
+                <span>Suggested Herb</span>
+                <select id="possible-location-suggested-herb-filter">
+                  <option value="">All Suggested Herbs</option>
+                </select>
+              </label>
+
+              <div id="candidate-survey-summary" class="candidate-survey-summary">
+                <div><span>Possible Locations</span><strong>0</strong></div>
+                <div><span>Remaining</span><strong>0</strong></div>
+                <div><span>Removed</span><strong>0</strong></div>
+              </div>
+
+              <div class="candidate-layer-actions">
+                <button type="button" id="restore-hidden-candidates">
+                  Restore Removed Locations (0)
+                </button>
+              </div>
+            </div>
           </details>
 
           <div class="filter-header-section category-filter-section">
@@ -291,12 +320,16 @@
     <div class="modal-content">
       <div class="modal-header">
         <h2>Add Marker</h2>
-        <button id="marker-dialog-close">×</button>
+        <button id="marker-dialog-close">ÃƒÆ’Ã¢â‚¬â€</button>
       </div>
 
       <form id="marker-form">
         <input type="hidden" id="marker-x" />
         <input type="hidden" id="marker-y" />
+        <div
+          id="marker-candidate-warning"
+          class="candidate-promotion-warning hidden"
+        ></div>
 
         <div class="form-section">
           <h3>Basic Information</h3>
@@ -439,7 +472,7 @@
     <div class="modal-content import-mode-content">
       <div class="modal-header">
         <h2>Import Mode</h2>
-        <button id="import-mode-close">×</button>
+        <button id="import-mode-close">ÃƒÆ’Ã¢â‚¬â€</button>
       </div>
 
       <form id="import-mode-form">
@@ -477,24 +510,25 @@
   <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
 
-  <script src="js/config.js?v=1.3.34"></script>
-  <script src="js/firebaseConfig.js?v=1.3.34"></script>
-  <script src="js/firebaseStorage.js?v=1.3.34"></script>
-  <script src="js/map.js?v=1.3.34"></script>
-  <script src="js/stateZones.js?v=1.3.34"></script>
-  <script src="js/categories.js?v=1.3.34"></script>
-  <script src="js/types.js?v=1.3.34"></script>
-  <script src="js/uses.js?v=1.3.34"></script>
-  <script src="js/templates.js?v=1.3.34"></script>
-  <script src="js/worldPosition.js?v=1.3.34"></script>
-  <script src="js/storage.js?v=1.3.34"></script>
-  <script src="js/ui.js?v=1.3.34"></script>
-  <script src="js/markers.js?v=1.3.34"></script>
-  <script src="js/markerManager.js?v=1.3.34"></script>
-  <script src="js/search.js?v=1.3.34"></script>
-  <script src="js/contextMenu.js?v=1.3.34"></script>
-  <script src="js/sidebar.js?v=1.3.34"></script>
-  <script src="js/dialogs.js?v=1.3.34"></script>
-  <script src="js/main.js?v=1.3.34"></script>
+  <script src="js/config.js?v=1.3.44"></script>
+  <script src="js/firebaseConfig.js?v=1.3.44"></script>
+  <script src="js/firebaseStorage.js?v=1.3.44"></script>
+  <script src="js/map.js?v=1.3.44"></script>
+  <script src="js/stateZones.js?v=1.3.44"></script>
+  <script src="js/categories.js?v=1.3.44"></script>
+  <script src="js/types.js?v=1.3.44"></script>
+  <script src="js/uses.js?v=1.3.44"></script>
+  <script src="js/templates.js?v=1.3.44"></script>
+  <script src="js/worldPosition.js?v=1.3.44"></script>
+  <script src="js/storage.js?v=1.3.44"></script>
+  <script src="js/ui.js?v=1.3.44"></script>
+  <script src="js/markers.js?v=1.3.44"></script>
+  <script src="js/markerManager.js?v=1.3.44"></script>
+  <script src="js/search.js?v=1.3.44"></script>
+  <script src="js/contextMenu.js?v=1.3.44"></script>
+  <script src="js/sidebar.js?v=1.3.44"></script>
+  <script src="js/dialogs.js?v=1.3.44"></script>
+  <script src="js/candidateSurvey.js?v=1.3.44"></script>
+  <script src="js/main.js?v=1.3.44"></script>
 </body>
 </html>

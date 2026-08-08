@@ -23,6 +23,12 @@ async function initializeApp() {
   initializeContextMenus();
   refreshMarkers();
 
+  try {
+    await initializeCandidateSurveyLayer();
+  } catch (error) {
+    console.warn("Possible Locations layer could not be initialized.", error);
+  }
+
   map.on("click", function (event) {
     closeContextMenu();
 
@@ -58,4 +64,6 @@ async function initializeApp() {
   });
 }
 
-initializeApp();
+initializeApp().catch((error) => {
+  console.error("RosalitaRP Explorer could not be initialized.", error);
+});

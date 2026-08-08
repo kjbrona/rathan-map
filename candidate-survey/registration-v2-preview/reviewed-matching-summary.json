@@ -1,0 +1,47 @@
+{
+  "decisionsApplied": 80,
+  "decisionCounts": {
+    "confirm-candidate-type": 13,
+    "change-candidate-type": 11,
+    "candidate-classification-uncertain": 56
+  },
+  "candidateTypeChanges": 11,
+  "existingMarkerReviewFlags": 0,
+  "rejectedCandidates": 0,
+  "before": {
+    "totalCandidates": 220,
+    "alreadyCovered": 35,
+    "possibleMatches": 28,
+    "needsSurvey": 157,
+    "sameTypeDistanceDistribution": {
+      "totalWithMatch": 144,
+      "noMatch": 76,
+      "within125": 35,
+      "within300": 63,
+      "median": 451.1017148379991,
+      "p75": 2588.903977295397,
+      "p90": 3803.9956917162203,
+      "max": 4663.808331736625
+    },
+    "typeMismatchCount": 68,
+    "nearbyDifferentHerbCount": 73
+  },
+  "after": {
+    "totalCandidates": 220,
+    "alreadyCovered": 46,
+    "possibleMatches": 28,
+    "needsSurvey": 146,
+    "sameTypeDistanceDistribution": {
+      "totalWithMatch": 153,
+      "noMatch": 67,
+      "within125": 46,
+      "within300": 74,
+      "median": 343.9570747304646,
+      "p75": 2542.7560623737127,
+      "p90": 3787.708067678934,
+      "max": 4663.808331736625
+    },
+    "typeMismatchCount": 57,
+    "nearbyDifferentHerbCount": 62
+  }
+}
