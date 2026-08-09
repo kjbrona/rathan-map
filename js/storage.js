@@ -67,6 +67,16 @@ const SUPPORTED_IMPORT_VERSIONS = [
   "1.3.36",
   "1.3.37",
   "1.3.38",
+  "1.3.39",
+  "1.3.40",
+  "1.3.41",
+  "1.3.42",
+  "1.3.43",
+  "1.3.44",
+  "1.3.45",
+  "1.3.46",
+  "1.3.47",
+  "1.3.48",
 ];
 
 const MARKER_STORAGE_FIELDS = [
@@ -120,6 +130,19 @@ const GENERIC_TYPE_IDS_BY_CATEGORY = {
 const TYPE_ID_ALIASES = {
   "gold-flakes": "gold",
   "gatherable-saplings": "tree",
+  "harietum-officinalis": "harrietum-officinalis",
+  "harrietum-officianalis": "harrietum-officinalis",
+  "harrietum-officinialis": "harrietum-officinalis",
+  "harrietum-officinales": "harrietum-officinalis",
+  "harrietum-officinalus": "harrietum-officinalis",
+};
+
+const CATEGORY_ID_ALIASES = {
+  "dangerous-animals": "animals",
+};
+
+const CORRECTED_TYPE_NAMES = {
+  "harrietum-officinalis": "Harrietum Officinalis",
 };
 
 
@@ -441,6 +464,7 @@ function normalizeStoredMarker(markerData) {
     storedMarker[fieldName] = markerData[fieldName] || "";
   });
 
+  storedMarker.category = getMigratedCategoryId(markerData.category);
   storedMarker.status = markerData.status || "unverified";
   storedMarker.confidence = markerData.confidence || "guess";
   const calculatedState = getStateIdForCoordinates(x, y);
@@ -486,10 +510,6 @@ function normalizeStoredMarker(markerData) {
   ITEM_DISCOVERY_FIELDS.forEach((field) => {
     storedMarker[field.id] = markerData[field.id] || "";
   });
-  storedMarker.dangerRadius = getDangerRadiusValue(
-    storedMarker.category,
-    markerData.dangerRadius
-  );
   storedMarker.fields =
     markerData.fields && typeof markerData.fields === "object"
       ? { ...markerData.fields }
@@ -502,6 +522,12 @@ function normalizeStoredMarker(markerData) {
   storedMarker.y = y;
 
   migrateMarkerTemplateData(storedMarker);
+  storedMarker.dangerRadius = getDangerRadiusValue(
+    storedMarker.category,
+    markerData.dangerRadius,
+    storedMarker
+  );
+  migrateCorrectedTypeDisplayNames(storedMarker);
   migrateMarkerUses(storedMarker, markerData);
 
   return storedMarker;
@@ -585,6 +611,33 @@ function getMigratedTypeId(value) {
   return TYPE_ID_ALIASES[typeId] || typeId;
 }
 
+function getMigratedCategoryId(value) {
+  const categoryId = String(value || "").trim();
+
+  return CATEGORY_ID_ALIASES[categoryId] || categoryId;
+}
+
+function migrateCorrectedTypeDisplayNames(markerData) {
+  if (!markerData || markerData.category !== "herbs") {
+    return;
+  }
+
+  const correctedName = CORRECTED_TYPE_NAMES[markerData.type];
+
+  if (!correctedName) {
+    return;
+  }
+
+  const markerNameSlug = slugifyTypeValue(markerData.name);
+
+  if (
+    markerNameSlug === markerData.type ||
+    markerNameSlug.includes("officinal") && markerNameSlug.includes("har")
+  ) {
+    markerData.name = correctedName;
+  }
+}
+
 function slugifyTypeValue(value) {
   return String(value || "")
     .trim()
@@ -606,8 +659,27 @@ function removeDuplicatedTemplateFields(categoryId, templateValues) {
   );
 }
 
-function getDangerRadiusValue(categoryId, value) {
-  if (categoryId !== "dangerous-animals") {
+function isDangerousAnimalMarker(markerData = {}) {
+  return isDangerousAnimalType(markerData.category, markerData.type);
+}
+
+function isDangerousAnimalType(categoryId, typeId) {
+  if (getMigratedCategoryId(categoryId) !== "animals") {
+    return false;
+  }
+
+  const group = getTypeGroupForType("animals", getMigratedTypeId(typeId));
+
+  return Boolean(group && group.id === "dangerous");
+}
+
+function getDangerRadiusValue(categoryId, value, markerData = {}) {
+  if (
+    !isDangerousAnimalType(
+      getMigratedCategoryId(categoryId),
+      markerData.type
+    )
+  ) {
     return "";
   }
 

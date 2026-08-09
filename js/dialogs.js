@@ -36,26 +36,85 @@ async function initializeMarkerDialogControls() {
   await buildCategoryDropdown("marker-category");
 
   if (CATEGORIES.length > 0) {
-    await buildTypeDropdown("marker-type", categorySelect.value);
+    const animalGroupId = await buildAnimalGroupDropdown(
+      "marker-animal-group",
+      categorySelect.value
+    );
+    await buildTypeDropdown(
+      "marker-type",
+      categorySelect.value,
+      null,
+      animalGroupId
+    );
     updateTypeIconPreview(
       "marker-type-icon",
       categorySelect.value,
       typeSelect.value
     );
-    renderTemplateFields("marker-template-fields", categorySelect.value);
+    updateTypeGroupHelper(
+      "marker-type-group",
+      categorySelect.value,
+      typeSelect.value
+    );
+    renderTemplateFields(
+      "marker-template-fields",
+      categorySelect.value,
+      {},
+      typeSelect.value
+    );
   }
 
   categorySelect.addEventListener("change", async function () {
-    await buildTypeDropdown("marker-type", this.value);
+    const animalGroupId = await buildAnimalGroupDropdown(
+      "marker-animal-group",
+      this.value
+    );
+    await buildTypeDropdown("marker-type", this.value, null, animalGroupId);
     updateTypeIconPreview(
       "marker-type-icon",
       this.value,
       document.getElementById("marker-type").value
     );
-    renderTemplateFields("marker-template-fields", this.value);
+    updateTypeGroupHelper(
+      "marker-type-group",
+      this.value,
+      document.getElementById("marker-type").value
+    );
+    renderTemplateFields(
+      "marker-template-fields",
+      this.value,
+      {},
+      document.getElementById("marker-type").value
+    );
     autoFillMarkerName();
     renderPendingMarkerPreview();
   });
+
+  document
+    .getElementById("marker-animal-group")
+    .addEventListener("change", async function () {
+      const categoryId = document.getElementById("marker-category").value;
+
+      await buildTypeDropdown("marker-type", categoryId, null, this.value);
+      updateTypeIconPreview(
+        "marker-type-icon",
+        categoryId,
+        document.getElementById("marker-type").value
+      );
+      updateTypeGroupHelper(
+        "marker-type-group",
+        categoryId,
+        document.getElementById("marker-type").value
+      );
+      renderTemplateFields(
+        "marker-template-fields",
+        categoryId,
+        {},
+        document.getElementById("marker-type").value
+      );
+      autoFillMarkerName();
+      renderPendingMarkerPreview();
+    });
 
   typeSelect.addEventListener("change", function () {
     updateTypeIconPreview(
@@ -63,7 +122,18 @@ async function initializeMarkerDialogControls() {
       document.getElementById("marker-category").value,
       this.value
     );
+    updateTypeGroupHelper(
+      "marker-type-group",
+      document.getElementById("marker-category").value,
+      this.value
+    );
     autoFillMarkerName();
+    renderTemplateFields(
+      "marker-template-fields",
+      document.getElementById("marker-category").value,
+      {},
+      this.value
+    );
     renderPendingMarkerPreview();
   });
 
@@ -122,13 +192,27 @@ async function openMarkerDialog(latlng, prefill = null) {
 
   if (CATEGORIES.length > 0) {
     const categoryId = document.getElementById("marker-category").value;
-    await buildTypeDropdown("marker-type", categoryId);
+    const animalGroupId = await buildAnimalGroupDropdown(
+      "marker-animal-group",
+      categoryId
+    );
+    await buildTypeDropdown("marker-type", categoryId, null, animalGroupId);
     updateTypeIconPreview(
       "marker-type-icon",
       categoryId,
       document.getElementById("marker-type").value
     );
-    renderTemplateFields("marker-template-fields", categoryId);
+    updateTypeGroupHelper(
+      "marker-type-group",
+      categoryId,
+      document.getElementById("marker-type").value
+    );
+    renderTemplateFields(
+      "marker-template-fields",
+      categoryId,
+      {},
+      document.getElementById("marker-type").value
+    );
   }
 
   setPendingMarkerMapCoordinates(x, y, {
@@ -161,18 +245,29 @@ async function applyMarkerDialogPrefill(prefill) {
   const categoryId = prefill.category || categorySelect.value;
 
   categorySelect.value = categoryId;
-  await buildTypeDropdown("marker-type", categoryId, prefill.type);
+  const animalGroupId = await buildAnimalGroupDropdown(
+    "marker-animal-group",
+    categoryId,
+    getTypeGroupIdForType(categoryId, prefill.type)
+  );
+  await buildTypeDropdown("marker-type", categoryId, prefill.type, animalGroupId);
 
   if (prefill.type) {
     typeSelect.value = prefill.type;
   }
 
   updateTypeIconPreview("marker-type-icon", categoryId, typeSelect.value);
-  renderTemplateFields("marker-template-fields", categoryId, {
-    notes: prefill.notes || "",
-    fields: {},
-    templateData: {},
-  });
+  updateTypeGroupHelper("marker-type-group", categoryId, typeSelect.value);
+  renderTemplateFields(
+    "marker-template-fields",
+    categoryId,
+    {
+      notes: prefill.notes || "",
+      fields: {},
+      templateData: {},
+    },
+    typeSelect.value
+  );
 
   if (prefill.name) {
     nameInput.value = prefill.name;
@@ -582,9 +677,11 @@ function getWorldPositionFromField(inputId, errorId) {
 function saveMarkerFromDialog(event) {
   event.preventDefault();
   const categoryId = document.getElementById("marker-category").value;
+  const typeId = document.getElementById("marker-type").value;
   const templateValues = collectTemplateFieldValues(
     "marker-template-fields",
-    categoryId
+    categoryId,
+    typeId
   );
   const worldPositionResult = getWorldPositionFromField(
     "marker-game-vector",
@@ -599,7 +696,7 @@ function saveMarkerFromDialog(event) {
     id: crypto.randomUUID(),
     name: document.getElementById("marker-name").value.trim(),
     category: categoryId,
-    type: document.getElementById("marker-type").value,
+    type: typeId,
     status: document.getElementById("marker-status").value,
     confidence: document.getElementById("marker-confidence").value,
     uses: normalizeUses(templateValues.shared.uses),
@@ -609,7 +706,8 @@ function saveMarkerFromDialog(event) {
     templateData: templateValues.templateData,
     dangerRadius: getDangerRadiusValue(
       categoryId,
-      templateValues.shared.dangerRadius
+      templateValues.shared.dangerRadius,
+      { type: typeId }
     ),
     x: Number(document.getElementById("marker-x").value),
     y: Number(document.getElementById("marker-y").value),

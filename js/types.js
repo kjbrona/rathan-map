@@ -24,20 +24,35 @@ async function loadTypeGroupData() {
 }
 
 async function loadTypesForCategory(categoryId) {
-  if (TYPE_DATA[categoryId]) {
-    return TYPE_DATA[categoryId];
+  const resolvedCategoryId =
+    typeof getMigratedCategoryId === "function"
+      ? getMigratedCategoryId(categoryId)
+      : categoryId;
+
+  if (TYPE_DATA[resolvedCategoryId]) {
+    return TYPE_DATA[resolvedCategoryId];
   }
 
   const response = await fetch(
-    `data/types/${categoryId}.json?v=${encodeURIComponent(APP_VERSION)}`
+    `data/types/${resolvedCategoryId}.json?v=${encodeURIComponent(
+      APP_VERSION
+    )}`
   );
-  TYPE_DATA[categoryId] = await response.json();
+  TYPE_DATA[resolvedCategoryId] = await response.json();
 
-  return TYPE_DATA[categoryId];
+  if (resolvedCategoryId !== categoryId) {
+    TYPE_DATA[categoryId] = TYPE_DATA[resolvedCategoryId];
+  }
+
+  return TYPE_DATA[resolvedCategoryId];
 }
 
 function getTypeById(categoryId, typeId) {
-  const types = TYPE_DATA[categoryId] || [];
+  const resolvedCategoryId =
+    typeof getMigratedCategoryId === "function"
+      ? getMigratedCategoryId(categoryId)
+      : categoryId;
+  const types = TYPE_DATA[resolvedCategoryId] || TYPE_DATA[categoryId] || [];
   return types.find((type) => type.id === typeId);
 }
 

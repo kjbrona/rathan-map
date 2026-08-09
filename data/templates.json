@@ -159,7 +159,14 @@
         "default": ""
       }
     ],
-    "dangerous-animals": [
+    "animals": [
+      {
+        "id": "observedCount",
+        "label": "Observed Count",
+        "type": "text",
+        "default": "",
+        "placeholder": "Approximate count"
+      },
       {
         "id": "dangerRadius",
         "label": "Danger Radius",
@@ -167,7 +174,8 @@
         "shared": true,
         "default": "50",
         "min": 0,
-        "step": 25
+        "step": 25,
+        "visibleWhenGroup": "dangerous"
       },
       {
         "id": "notes",

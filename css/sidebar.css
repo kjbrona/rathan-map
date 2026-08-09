@@ -381,6 +381,22 @@ Creator : Rathan
   display: none;
 }
 
+.type-group-helper {
+  display: block;
+  margin-top: 3px;
+  color: #b99762;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.type-group-helper.hidden {
+  display: none;
+}
+
+.animal-group-field.hidden {
+  display: none;
+}
+
 .field-error {
   display: block;
   margin-top: 3px;
@@ -833,6 +849,14 @@ Creator : Rathan
   letter-spacing: normal;
   text-shadow: none;
   transition: background 160ms ease, color 160ms ease;
+}
+
+.type-filter-group-heading {
+  margin: 3px 5px 1px;
+  color: #e4c27a;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 .type-filter-icon {

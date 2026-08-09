@@ -1,5 +1,21 @@
 # RosalitaRP Explorer
 
+## v1.3.48 Animal Category Startup Compatibility
+- Restored a compatibility type catalog for stale `dangerous-animals` requests so cached browsers do not stall on the Filters loading state.
+- Hardened type loading so old `dangerous-animals` category requests resolve to the new `animals` catalog.
+- Updated cache-busting references through v1.3.48.
+
+## v1.3.47 Animals Category
+- Renamed the Dangerous Animals category to Animals and migrated the category ID from `dangerous-animals` to `animals`.
+- Reorganized animal types into Dangerous and Wildlife groups, preserving Bear, Wolf, Cougar, Panther, Alligator, and Snake as dangerous types.
+- Added Boar and Goat as initial Wildlife types without adding small-game or livestock-only entries.
+- Kept Danger Radius available only for Animals in the Dangerous group, with old imports and saved filters migrating to the new category.
+
+## v1.3.46 Harrietum Officinalis Correction
+- Confirmed the Herb catalog uses `Harrietum Officinalis` with type ID `harrietum-officinalis`.
+- Added safe marker/type aliases so old saved or imported Harrietum spelling variants migrate to the corrected type/name.
+- Extended supported import versions through v1.3.46 and updated cache-busting references.
+
 ## v1.3.45 Herb Catalog Order
 - Sorted the Herb type catalog alphabetically by display name.
 - Updated cache-busting references so browsers reload the corrected Herb order.

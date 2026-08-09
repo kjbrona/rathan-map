@@ -40,5 +40,19 @@
     "enabled": true,
     "description": "Dangerous snake territory or spawn location.",
     "group": "dangerous"
+  },
+  {
+    "id": "boar",
+    "name": "Boar",
+    "enabled": true,
+    "description": "Useful larger wildlife spawn location.",
+    "group": "wildlife"
+  },
+  {
+    "id": "goat",
+    "name": "Goat",
+    "enabled": true,
+    "description": "Useful larger wildlife spawn location.",
+    "group": "wildlife"
   }
 ]

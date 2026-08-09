@@ -19,22 +19,32 @@ async function loadTemplateData() {
   return TEMPLATE_DATA;
 }
 
-function getTemplateFields(categoryId) {
-  return (
+function getTemplateFields(categoryId, typeId = "") {
+  const fields =
     TEMPLATE_DATA.categories[categoryId] ||
     TEMPLATE_DATA.default ||
-    []
-  );
+    [];
+
+  return fields.filter((field) => isTemplateFieldVisible(field, categoryId, typeId));
 }
 
-function getTemplateFieldById(categoryId, fieldId) {
-  return getTemplateFields(categoryId).find((field) => field.id === fieldId);
+function isTemplateFieldVisible(field, categoryId, typeId = "") {
+  if (!field.visibleWhenGroup) {
+    return true;
+  }
+
+  const group = getTypeGroupForType(categoryId, typeId);
+  return group && group.id === field.visibleWhenGroup;
 }
 
-function getDefaultTemplateValues(categoryId) {
+function getTemplateFieldById(categoryId, fieldId, typeId = "") {
+  return getTemplateFields(categoryId, typeId).find((field) => field.id === fieldId);
+}
+
+function getDefaultTemplateValues(categoryId, typeId = "") {
   const values = {};
 
-  getTemplateFields(categoryId).forEach((field) => {
+  getTemplateFields(categoryId, typeId).forEach((field) => {
     values[field.id] = field.default || "";
   });
 

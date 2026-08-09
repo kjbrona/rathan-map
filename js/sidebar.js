@@ -500,9 +500,7 @@ function createCategoryFilter(category, types, isExpanded) {
     ? "type-filter-list"
     : "type-filter-list hidden";
 
-  types.forEach((type) => {
-    typeList.appendChild(createTypeFilter(category.id, type));
-  });
+  appendGroupedTypeFilters(typeList, category.id, types);
 
   categoryToggle.addEventListener("click", function () {
     toggleCategoryExpansion(category.id, categoryToggle, typeList, category);
@@ -511,6 +509,23 @@ function createCategoryFilter(category, types, isExpanded) {
   categoryItem.appendChild(typeList);
 
   return categoryItem;
+}
+
+function appendGroupedTypeFilters(typeList, categoryId, types) {
+  const groupedTypes = getGroupedTypesForDropdown(types, categoryId);
+
+  groupedTypes.forEach((groupData) => {
+    if (groupData.group) {
+      const groupHeading = document.createElement("div");
+      groupHeading.className = "type-filter-group-heading";
+      groupHeading.textContent = groupData.group.name;
+      typeList.appendChild(groupHeading);
+    }
+
+    groupData.types.forEach((type) => {
+      typeList.appendChild(createTypeFilter(categoryId, type));
+    });
+  });
 }
 
 function createTypeFilter(categoryId, type) {
@@ -580,9 +595,23 @@ async function initializeMarkerDetailsPanel() {
   await buildCategoryDropdown("edit-marker-category");
 
   const initialCategory = document.getElementById("edit-marker-category").value;
-  await buildTypeDropdown("edit-marker-type", initialCategory);
+  const initialAnimalGroup = await buildAnimalGroupDropdown(
+    "edit-marker-animal-group",
+    initialCategory
+  );
+  await buildTypeDropdown(
+    "edit-marker-type",
+    initialCategory,
+    null,
+    initialAnimalGroup
+  );
   updateTypeIconPreview(
     "edit-marker-type-icon",
+    initialCategory,
+    document.getElementById("edit-marker-type").value
+  );
+  updateTypeGroupHelper(
+    "edit-marker-type-group",
     initialCategory,
     document.getElementById("edit-marker-type").value
   );
@@ -590,18 +619,58 @@ async function initializeMarkerDetailsPanel() {
   document
     .getElementById("edit-marker-category")
     .addEventListener("change", async function () {
-      await buildTypeDropdown("edit-marker-type", this.value);
+      const animalGroupId = await buildAnimalGroupDropdown(
+        "edit-marker-animal-group",
+        this.value
+      );
+      await buildTypeDropdown(
+        "edit-marker-type",
+        this.value,
+        null,
+        animalGroupId
+      );
+      const selectedType = document.getElementById("edit-marker-type").value;
       updateTypeIconPreview(
         "edit-marker-type-icon",
         this.value,
-        document.getElementById("edit-marker-type").value
+        selectedType
+      );
+      updateTypeGroupHelper(
+        "edit-marker-type-group",
+        this.value,
+        selectedType
       );
       renderTemplateFields("edit-marker-template-fields", this.value, {
         notes: "",
         dangerRadius: DEFAULT_DANGER_RADIUS,
         fields: {},
         templateData: {},
-      });
+      }, selectedType);
+    });
+
+  document
+    .getElementById("edit-marker-animal-group")
+    .addEventListener("change", async function () {
+      const categoryId = document.getElementById("edit-marker-category").value;
+
+      await buildTypeDropdown("edit-marker-type", categoryId, null, this.value);
+      const selectedType = document.getElementById("edit-marker-type").value;
+      updateTypeIconPreview(
+        "edit-marker-type-icon",
+        categoryId,
+        selectedType
+      );
+      updateTypeGroupHelper(
+        "edit-marker-type-group",
+        categoryId,
+        selectedType
+      );
+      renderTemplateFields(
+        "edit-marker-template-fields",
+        categoryId,
+        getMarkerById(selectedMarkerId) || {},
+        selectedType
+      );
     });
 
   document
@@ -610,6 +679,17 @@ async function initializeMarkerDetailsPanel() {
       updateTypeIconPreview(
         "edit-marker-type-icon",
         document.getElementById("edit-marker-category").value,
+        this.value
+      );
+      updateTypeGroupHelper(
+        "edit-marker-type-group",
+        document.getElementById("edit-marker-category").value,
+        this.value
+      );
+      renderTemplateFields(
+        "edit-marker-template-fields",
+        document.getElementById("edit-marker-category").value,
+        getMarkerById(selectedMarkerId) || {},
         this.value
       );
     });
@@ -637,6 +717,7 @@ async function initializeMarkerDetailsPanel() {
       }
 
       const categoryId = document.getElementById("edit-marker-category").value;
+      const typeId = document.getElementById("edit-marker-type").value;
       const existingMarker = getMarkerById(selectedMarkerId);
 
       if (!existingMarker) {
@@ -645,7 +726,8 @@ async function initializeMarkerDetailsPanel() {
 
       const templateValues = collectTemplateFieldValues(
         "edit-marker-template-fields",
-        categoryId
+        categoryId,
+        typeId
       );
       const hasTemplateNotes = Object.prototype.hasOwnProperty.call(
         templateValues.shared,
@@ -668,7 +750,7 @@ async function initializeMarkerDetailsPanel() {
       const markerUpdates = {
         name: document.getElementById("edit-marker-name").value.trim(),
         category: categoryId,
-        type: document.getElementById("edit-marker-type").value,
+        type: typeId,
         status: document.getElementById("edit-marker-status").value,
         confidence: document.getElementById("edit-marker-confidence").value,
         state: selectedState,
@@ -684,7 +766,7 @@ async function initializeMarkerDetailsPanel() {
         dangerRadius: getDangerRadiusValue(
           categoryId,
           templateValues.shared.dangerRadius,
-          existingMarker
+          { ...existingMarker, category: categoryId, type: typeId }
         ),
       };
 
@@ -754,13 +836,24 @@ async function renderMarkerDetails(markerData) {
   }
 
   await buildCategoryDropdown("edit-marker-category", markerData.category);
+  const animalGroupId = await buildAnimalGroupDropdown(
+    "edit-marker-animal-group",
+    markerData.category,
+    getTypeGroupIdForType(markerData.category, markerData.type)
+  );
   await buildTypeDropdown(
     "edit-marker-type",
     markerData.category,
-    markerData.type
+    markerData.type,
+    animalGroupId
   );
   updateTypeIconPreview(
     "edit-marker-type-icon",
+    markerData.category,
+    document.getElementById("edit-marker-type").value
+  );
+  updateTypeGroupHelper(
+    "edit-marker-type-group",
     markerData.category,
     document.getElementById("edit-marker-type").value
   );
@@ -768,7 +861,8 @@ async function renderMarkerDetails(markerData) {
   renderTemplateFields(
     "edit-marker-template-fields",
     markerData.category,
-    markerData
+    markerData,
+    markerData.type
   );
   document.getElementById("edit-marker-x-display").textContent = markerData.x;
   document.getElementById("edit-marker-y-display").textContent = markerData.y;

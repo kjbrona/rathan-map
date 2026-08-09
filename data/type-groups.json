@@ -66,40 +66,16 @@
     "description": "Gem and precious stone mining locations."
   },
   {
-    "id": "bear",
-    "name": "Bear",
+    "id": "dangerous",
+    "name": "Dangerous",
     "icon": "images/icons/bear.svg",
-    "description": "Bear territory or spawn locations."
+    "description": "Dangerous animal territory or spawn locations."
   },
   {
-    "id": "wolf",
-    "name": "Wolf",
-    "icon": "images/icons/wolf.svg",
-    "description": "Wolf territory or spawn locations."
-  },
-  {
-    "id": "cougar",
-    "name": "Cougar",
-    "icon": "images/icons/cougar.svg",
-    "description": "Cougar territory or spawn locations."
-  },
-  {
-    "id": "panther",
-    "name": "Panther",
-    "icon": "images/icons/panther.svg",
-    "description": "Panther territory or spawn locations."
-  },
-  {
-    "id": "alligator",
-    "name": "Alligator",
-    "icon": "images/icons/alligator.svg",
-    "description": "Alligator territory or spawn locations."
-  },
-  {
-    "id": "snake",
-    "name": "Snake",
-    "icon": "images/icons/snake.svg",
-    "description": "Snake territory or spawn locations."
+    "id": "wildlife",
+    "name": "Wildlife",
+    "icon": "images/icons/misc.svg",
+    "description": "Useful larger wildlife spawn locations."
   },
   {
     "id": "fish",

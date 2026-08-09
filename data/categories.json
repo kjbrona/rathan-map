@@ -35,8 +35,8 @@
     "enabled": true
   },
   {
-    "id": "dangerous-animals",
-    "name": "Dangerous Animals",
+    "id": "animals",
+    "name": "Animals",
     "enabled": true
   }
 ]

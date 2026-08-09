@@ -25,13 +25,123 @@ async function buildCategoryDropdown(selectId, selectedCategoryId = null) {
   return select.value;
 }
 
-async function buildTypeDropdown(selectId, categoryId, selectedTypeId = null) {
+async function buildTypeDropdown(
+  selectId,
+  categoryId,
+  selectedTypeId = null,
+  groupId = ""
+) {
   const select = document.getElementById(selectId);
   select.innerHTML = "";
 
-  const types = await loadTypesForCategory(categoryId);
+  let types = await loadTypesForCategory(categoryId);
 
-  types.forEach((type) => {
+  if (categoryId === "animals" && groupId) {
+    types = types.filter((type) => type.group === groupId);
+  }
+
+  const groupedTypes = getGroupedTypesForDropdown(types, categoryId);
+
+  groupedTypes.forEach((groupData) => {
+    const parent = groupData.group
+      ? createTypeOptGroup(groupData.group)
+      : select;
+
+    groupData.types.forEach((type) => {
+      parent.appendChild(createTypeOption(type, selectedTypeId));
+    });
+
+    if (groupData.group) {
+      select.appendChild(parent);
+    }
+  });
+
+  return select.value;
+}
+
+async function buildAnimalGroupDropdown(
+  selectId,
+  categoryId,
+  selectedGroupId = ""
+) {
+  const select = document.getElementById(selectId);
+
+  if (!select) {
+    return "";
+  }
+
+  const field = select.closest(".animal-group-field");
+  select.innerHTML = "";
+
+  if (categoryId !== "animals") {
+    if (field) {
+      field.classList.add("hidden");
+    }
+
+    return "";
+  }
+
+  const types = await loadTypesForCategory(categoryId);
+  const groupIds = types
+    .map((type) => type.group)
+    .filter((groupId, index, groupList) => {
+      return groupId && groupList.indexOf(groupId) === index;
+    });
+
+  groupIds.forEach((groupId) => {
+    const group = getTypeGroupById(groupId);
+    const option = document.createElement("option");
+
+    option.value = groupId;
+    option.textContent = group ? group.name : groupId;
+    select.appendChild(option);
+  });
+
+  if (selectedGroupId && groupIds.includes(selectedGroupId)) {
+    select.value = selectedGroupId;
+  }
+
+  if (field) {
+    field.classList.remove("hidden");
+  }
+
+  return select.value;
+}
+
+function getTypeGroupIdForType(categoryId, typeId) {
+  const type = getTypeById(categoryId, typeId);
+
+  return type ? type.group || "" : "";
+}
+
+function getGroupedTypesForDropdown(types, categoryId = "") {
+  if (categoryId !== "animals") {
+    return [{ group: null, types }];
+  }
+
+  const groupIds = types
+    .map((type) => type.group)
+    .filter((groupId, index, groupList) => {
+      return groupId && groupList.indexOf(groupId) === index;
+    });
+
+  if (groupIds.length <= 1) {
+    return [{ group: null, types }];
+  }
+
+  return groupIds.map((groupId) => ({
+    group: getTypeGroupById(groupId),
+    types: types.filter((type) => type.group === groupId),
+  }));
+}
+
+function createTypeOptGroup(group) {
+  const optGroup = document.createElement("optgroup");
+  optGroup.label = group ? group.name : "Other";
+  return optGroup;
+}
+
+function createTypeOption(type, selectedTypeId = null) {
     const option = document.createElement("option");
     option.value = type.id;
     option.textContent = type.name;
@@ -40,10 +150,7 @@ async function buildTypeDropdown(selectId, categoryId, selectedTypeId = null) {
       option.selected = true;
     }
 
-    select.appendChild(option);
-  });
-
-  return select.value;
+  return option;
 }
 
 function updateTypeIconPreview(previewId, categoryId, typeId) {
@@ -69,12 +176,31 @@ function updateTypeIconPreview(previewId, categoryId, typeId) {
   preview.title = group.name;
 }
 
+function updateTypeGroupHelper(helperId, categoryId, typeId) {
+  const helper = document.getElementById(helperId);
+
+  if (!helper) {
+    return;
+  }
+
+  const group = getTypeGroupForType(categoryId, typeId);
+
+  if (categoryId !== "animals" || !group) {
+    helper.textContent = "";
+    helper.classList.add("hidden");
+    return;
+  }
+
+  helper.textContent = `Animal Group: ${group.name}`;
+  helper.classList.remove("hidden");
+}
+
 function getSelectedTypeName(categoryId, typeId) {
   const type = getTypeById(categoryId, typeId);
   return type ? type.name : "";
 }
 
-function renderTemplateFields(containerId, categoryId, markerData = {}) {
+function renderTemplateFields(containerId, categoryId, markerData = {}, typeId = "") {
   const container = document.getElementById(containerId);
 
   if (!container) {
@@ -83,7 +209,7 @@ function renderTemplateFields(containerId, categoryId, markerData = {}) {
 
   container.innerHTML = "";
 
-  getTemplateFields(categoryId).forEach((field) => {
+  getTemplateFields(categoryId, typeId || markerData.type).forEach((field) => {
     container.appendChild(createTemplateFieldControl(field, markerData));
   });
 }
@@ -208,7 +334,7 @@ function normalizeTemplateArrayValue(value) {
   return [];
 }
 
-function collectTemplateFieldValues(containerId, categoryId) {
+function collectTemplateFieldValues(containerId, categoryId, typeId = "") {
   const container = document.getElementById(containerId);
   const values = {
     shared: {},
@@ -219,7 +345,7 @@ function collectTemplateFieldValues(containerId, categoryId) {
     return values;
   }
 
-  getTemplateFields(categoryId).forEach((field) => {
+  getTemplateFields(categoryId, typeId).forEach((field) => {
     const control = container.querySelector(
       `[data-template-field-id="${field.id}"]`
     );

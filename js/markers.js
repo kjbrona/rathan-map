@@ -20,7 +20,7 @@ function renderMarker(markerData, selected = false) {
 
   const markerLatLng = [markerData.y, markerData.x];
 
-  if (markerData.category === "dangerous-animals") {
+  if (isDangerousAnimalMarker(markerData)) {
     renderDangerZone(markerData, markerLatLng);
   }
 
@@ -62,7 +62,8 @@ function renderDangerZone(markerData, markerLatLng) {
   L.circle(markerLatLng, {
     radius: getDangerRadiusValue(
       markerData.category,
-      markerData.dangerRadius
+      markerData.dangerRadius,
+      markerData
     ),
     color: "#c4511f",
     weight: 2,

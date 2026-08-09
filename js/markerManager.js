@@ -665,9 +665,9 @@ function applySavedFilterState() {
   if (Array.isArray(migratedFilterState.categories)) {
     const validCategoryIds = new Set(CATEGORIES.map((category) => category.id));
     activeFilters.categories = new Set(
-      migratedFilterState.categories.filter((categoryId) =>
-        validCategoryIds.has(categoryId)
-      )
+      migratedFilterState.categories
+        .map(migrateSavedCategoryFilter)
+        .filter((categoryId) => validCategoryIds.has(categoryId))
     );
   }
 
@@ -710,13 +710,38 @@ function migrateSavedFilterState(savedFilterState) {
       : [],
     uses: Array.isArray(savedFilterState.uses) ? savedFilterState.uses : [],
     categories: Array.isArray(savedFilterState.categories)
-      ? savedFilterState.categories
+      ? savedFilterState.categories.map(migrateSavedCategoryFilter)
       : [],
     types:
       savedFilterState.types && typeof savedFilterState.types === "object"
-        ? savedFilterState.types
+        ? migrateSavedTypeFilterMap(savedFilterState.types)
         : {},
   };
+}
+
+function migrateSavedTypeFilterMap(savedTypes) {
+  return Object.entries(savedTypes).reduce((migratedTypes, entry) => {
+    const [categoryId, typeIds] = entry;
+    const migratedCategoryId = migrateSavedCategoryFilter(categoryId);
+
+    if (!Array.isArray(migratedTypes[migratedCategoryId])) {
+      migratedTypes[migratedCategoryId] = [];
+    }
+
+    if (Array.isArray(typeIds)) {
+      migratedTypes[migratedCategoryId].push(...typeIds);
+    }
+
+    return migratedTypes;
+  }, {});
+}
+
+function migrateSavedCategoryFilter(categoryId) {
+  if (typeof getMigratedCategoryId === "function") {
+    return getMigratedCategoryId(categoryId);
+  }
+
+  return categoryId;
 }
 
 function migrateSavedTypeFilter(categoryId, typeId) {
