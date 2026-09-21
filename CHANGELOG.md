@@ -1,6 +1,7 @@
 # RosalitaRP Explorer
 
 ## v1.3.49 Abandoned Wagons
+- Replaced corrupted Add Marker and import dialog close-button text with an encoding-safe close symbol and accessible labels.
 - Fixed Animal Group visibility in add/edit forms so it only appears for Animals.
 - Added Abandoned Wagons through the existing category, type, and marker system, including filtering, editing, persistence, and import/export.
 - Added a covered-wagon SVG with dashed amber Unknown and solid green Found markers. Found confirms a permanent spawn location, not current wagon availability.
