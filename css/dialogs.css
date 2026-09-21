@@ -135,7 +135,7 @@ Creator : Rathan
   display: none;
 }
 
-.animal-group-field.hidden {
+#marker-form .animal-group-field.hidden {
   display: none;
 }
 

@@ -8,6 +8,8 @@ Creator : Rathan
 
 const expandedCategoryFilters = new Set();
 const FILTER_STATUS_LABELS = {
+  unknown: "Unknown",
+  found: "Found",
   unverified: "Unverified",
   verified: "Verified",
   invalid: "Invalid",
@@ -619,6 +621,7 @@ async function initializeMarkerDetailsPanel() {
   document
     .getElementById("edit-marker-category")
     .addEventListener("change", async function () {
+      buildMarkerStatusDropdown("edit-marker-status", this.value, document.getElementById("edit-marker-status").value);
       const animalGroupId = await buildAnimalGroupDropdown(
         "edit-marker-animal-group",
         this.value
@@ -821,8 +824,7 @@ async function renderMarkerDetails(markerData) {
   form.classList.remove("hidden");
 
   document.getElementById("edit-marker-name").value = markerData.name;
-  document.getElementById("edit-marker-status").value =
-    markerData.status || "unverified";
+  buildMarkerStatusDropdown("edit-marker-status", markerData.category, markerData.status);
   document.getElementById("edit-marker-confidence").value =
     markerData.confidence || "guess";
   populateItemDiscoveryFields("edit-marker", markerData);

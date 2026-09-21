@@ -38,5 +38,20 @@
     "id": "animals",
     "name": "Animals",
     "enabled": true
+  },
+  {
+    "id": "abandoned-wagons",
+    "name": "Abandoned Wagons",
+    "enabled": true,
+    "statuses": [
+      {
+        "value": "unknown",
+        "label": "Unknown"
+      },
+      {
+        "value": "found",
+        "label": "Found"
+      }
+    ]
   }
 ]

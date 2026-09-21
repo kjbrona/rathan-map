@@ -72,6 +72,15 @@ Creator : Rathan
   border-color: #d65555;
 }
 
+.category-marker.status-unknown .category-marker-icon {
+  border: 2px dashed #ffd36a;
+}
+
+.category-marker.status-found .category-marker-icon {
+  border: 2px solid #55d66b;
+  background: #cee3bd;
+}
+
 .category-marker.selected.status-unverified .category-marker-icon {
   box-shadow: 0 0 0 3px rgba(255, 211, 106, 0.32),
     0 3px 10px rgba(0, 0, 0, 0.55);

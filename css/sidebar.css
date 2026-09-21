@@ -393,7 +393,7 @@ Creator : Rathan
   display: none;
 }
 
-.animal-group-field.hidden {
+#marker-details-form .animal-group-field.hidden {
   display: none;
 }
 

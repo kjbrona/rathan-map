@@ -29,6 +29,7 @@ function initializeDialogs() {
 }
 
 async function initializeMarkerDialogControls() {
+  document.getElementById("marker-status").addEventListener("change", renderPendingMarkerPreview);
   const categorySelect = document.getElementById("marker-category");
   const typeSelect = document.getElementById("marker-type");
   const nameInput = document.getElementById("marker-name");
@@ -65,6 +66,7 @@ async function initializeMarkerDialogControls() {
   }
 
   categorySelect.addEventListener("change", async function () {
+    buildMarkerStatusDropdown("marker-status", this.value, document.getElementById("marker-status").value);
     const animalGroupId = await buildAnimalGroupDropdown(
       "marker-animal-group",
       this.value
@@ -183,6 +185,7 @@ async function openMarkerDialog(latlng, prefill = null) {
 
   document.getElementById("marker-form").reset();
   setCandidatePromotionWarning("");
+  buildMarkerStatusDropdown("marker-status", CATEGORIES[0]?.id, loadAddMarkerPreferences().status);
   applyLastUsedMarkerDefaults();
   populateItemDiscoveryFields("marker");
   applyLastUsedFoundByDefault();
@@ -245,6 +248,11 @@ async function applyMarkerDialogPrefill(prefill) {
   const categoryId = prefill.category || categorySelect.value;
 
   categorySelect.value = categoryId;
+  buildMarkerStatusDropdown(
+    "marker-status",
+    categoryId,
+    prefill.status || document.getElementById("marker-status").value
+  );
   const animalGroupId = await buildAnimalGroupDropdown(
     "marker-animal-group",
     categoryId,
@@ -275,10 +283,6 @@ async function applyMarkerDialogPrefill(prefill) {
   } else {
     markerNameManuallyEdited = false;
     autoFillMarkerName();
-  }
-
-  if (isValidMarkerStatus(prefill.status)) {
-    document.getElementById("marker-status").value = prefill.status;
   }
 
   if (isValidMarkerConfidence(prefill.confidence)) {
@@ -514,11 +518,13 @@ function renderPendingMarkerPreview() {
   const group = getTypeGroupForType(categoryId, typeId);
   const iconPath = getTypeGroupIconUrl(group);
   const iconLabel = group ? group.name : "Marker";
+  const previewStatus = categoryId === "abandoned-wagons"
+    ? document.getElementById("marker-status").value : "unverified";
 
   if (!pendingMarkerPreview) {
     pendingMarkerPreview = L.marker(markerLatLng, {
       draggable: true,
-      icon: createTypeGroupMarkerIcon(iconPath, iconLabel, true, "unverified"),
+      icon: createTypeGroupMarkerIcon(iconPath, iconLabel, true, previewStatus),
     }).addTo(map);
 
     pendingMarkerPreview.on("dragend", function () {
@@ -534,7 +540,7 @@ function renderPendingMarkerPreview() {
 
   pendingMarkerPreview.setLatLng(markerLatLng);
   pendingMarkerPreview.setIcon(
-    createTypeGroupMarkerIcon(iconPath, iconLabel, true, "unverified")
+    createTypeGroupMarkerIcon(iconPath, iconLabel, true, previewStatus)
   );
 }
 

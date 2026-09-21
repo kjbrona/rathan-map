@@ -6,6 +6,24 @@ Creator : Rathan
 ==================================================
 */
 
+function buildMarkerStatusDropdown(selectId, categoryId, selectedStatus) {
+  const select = document.getElementById(selectId);
+  const options = getCategoryById(categoryId)?.statuses || [
+    { value: "unverified", label: "Unverified" },
+    { value: "verified", label: "Verified" },
+    { value: "invalid", label: "Invalid" },
+  ];
+  select.innerHTML = "";
+  options.forEach(({ value, label }) => {
+    const option = document.createElement("option");
+    option.value = value;
+    option.textContent = label;
+    select.appendChild(option);
+  });
+  select.value = options.some((option) => option.value === selectedStatus)
+    ? selectedStatus : options[0].value;
+}
+
 async function buildCategoryDropdown(selectId, selectedCategoryId = null) {
   const select = document.getElementById(selectId);
   select.innerHTML = "";

@@ -39,6 +39,9 @@ function renderMarker(markerData, selected = false) {
       markerData.type,
       "popup-type-icon"
     )} ${escapeHtml(markerData.name)}</strong>
+    ${markerData.category === "abandoned-wagons"
+      ? `<br>${markerData.status === "found" ? "Found — confirmed spawn location; wagon may be absent." : "Unknown — wagon not yet observed here."}`
+      : ""}
   `);
 
   leafletMarker.on("click", function (event) {
@@ -100,6 +103,9 @@ function createTypeGroupMarkerIcon(
 }
 
 function getStatusClass(status) {
+  if (status === "unknown" || status === "found") {
+    return `status-${status}`;
+  }
   if (status === "verified") {
     return "status-verified";
   }

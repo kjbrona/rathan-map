@@ -77,6 +77,7 @@ const SUPPORTED_IMPORT_VERSIONS = [
   "1.3.46",
   "1.3.47",
   "1.3.48",
+  "1.3.49",
 ];
 
 const MARKER_STORAGE_FIELDS = [
@@ -466,6 +467,9 @@ function normalizeStoredMarker(markerData) {
 
   storedMarker.category = getMigratedCategoryId(markerData.category);
   storedMarker.status = markerData.status || "unverified";
+  if (storedMarker.category === "abandoned-wagons") {
+    storedMarker.status = markerData.status === "found" ? "found" : "unknown";
+  }
   storedMarker.confidence = markerData.confidence || "guess";
   const calculatedState = getStateIdForCoordinates(x, y);
   const savedState = markerData.state || "";

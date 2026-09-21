@@ -1,5 +1,11 @@
 [
   {
+    "id": "abandoned-wagon",
+    "name": "Abandoned Wagon",
+    "icon": "images/icons/abandoned-wagon.svg",
+    "description": "Fixed possible spawn for a randomly appearing abandoned wagon. Use lockpicks to access its inventory for possible items or money. Unknown: wagon not yet observed. Found: confirmed spawn location, not current wagon availability; the marker remains on the map."
+  },
+  {
     "id": "berries",
     "name": "Berries",
     "icon": "images/icons/berries.svg",

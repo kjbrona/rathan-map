@@ -1,5 +1,12 @@
 # RosalitaRP Explorer
 
+## v1.3.49 Abandoned Wagons
+- Fixed Animal Group visibility in add/edit forms so it only appears for Animals.
+- Added Abandoned Wagons through the existing category, type, and marker system, including filtering, editing, persistence, and import/export.
+- Added a covered-wagon SVG with dashed amber Unknown and solid green Found markers. Found confirms a permanent spawn location, not current wagon availability.
+- Limited wagon status choices to Unknown and Found; existing category statuses and older import versions remain supported.
+- Updated application and cache-busting references to v1.3.49.
+
 ## v1.3.48 Animal Category Startup Compatibility
 - Restored a compatibility type catalog for stale `dangerous-animals` requests so cached browsers do not stall on the Filters loading state.
 - Hardened type loading so old `dangerous-animals` category requests resolve to the new `animals` catalog.
