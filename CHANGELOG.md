@@ -1,5 +1,9 @@
 # RosalitaRP Explorer
 
+## v1.3.50 Fence NPC
+- Added Fence to NPC types using the existing merchant icon, marker forms, filters, and storage.
+- Updated application and cache-busting references to v1.3.50.
+
 ## v1.3.49 Abandoned Wagons
 - Replaced corrupted Add Marker and import dialog close-button text with an encoding-safe close symbol and accessible labels.
 - Fixed Animal Group visibility in add/edit forms so it only appears for Animals.

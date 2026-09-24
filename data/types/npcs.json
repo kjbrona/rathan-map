@@ -30,6 +30,12 @@
     "group": "farming"
   },
   {
+    "id": "fence",
+    "name": "Fence",
+    "enabled": true,
+    "group": "general-store"
+  },
+  {
     "id": "general-store",
     "name": "General Store",
     "enabled": true,
