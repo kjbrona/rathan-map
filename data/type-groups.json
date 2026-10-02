@@ -60,6 +60,18 @@
     "description": "Gold mining output locations."
   },
   {
+    "id": "silver",
+    "name": "Silver",
+    "icon": "images/icons/silver.svg",
+    "description": "Silver mining output locations."
+  },
+  {
+    "id": "platinum",
+    "name": "Platinum",
+    "icon": "images/icons/platinum.svg",
+    "description": "Platinum mining output locations."
+  },
+  {
     "id": "sulfur",
     "name": "Sulfur",
     "icon": "images/icons/sulfur.svg",

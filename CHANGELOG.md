@@ -1,5 +1,10 @@
 # RosalitaRP Explorer
 
+## v1.3.51 Silver and Platinum Mining
+- Added Silver and Platinum to the existing Mining resource catalog, including marker creation/editing, filters, search, and storage/import/export.
+- Added distinct silver and platinum ingot SVG icons using the existing transparent 24-by-24 icon format.
+- Preserved existing Mining types and older import versions; updated application and cache-busting references to v1.3.51.
+
 ## v1.3.50 Fence NPC
 - Added Fence to NPC types using the existing merchant icon, marker forms, filters, and storage.
 - Updated application and cache-busting references to v1.3.50.

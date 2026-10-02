@@ -107,7 +107,7 @@
         "label": "Possible Drops",
         "type": "textarea",
         "default": "",
-        "placeholder": "Gold Flakes\nGold Nuggets\nNitrite\nSulfur\nRock Salt\nRock\nLimestone\nUncut Sapphire\nUncut Diamond\nUncut Emerald\nUncut Opal\nUncut Ruby"
+        "placeholder": "Gold Flakes\nGold Nuggets\nSilver\nPlatinum\nNitrite\nSulfur\nRock Salt\nRock\nLimestone\nUncut Sapphire\nUncut Diamond\nUncut Emerald\nUncut Opal\nUncut Ruby"
       },
       {
         "id": "notes",

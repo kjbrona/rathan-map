@@ -21,6 +21,20 @@
     "group": "iron"
   },
   {
+    "id": "platinum",
+    "name": "Platinum",
+    "enabled": true,
+    "description": "Mine whose primary output is platinum.",
+    "group": "platinum"
+  },
+  {
+    "id": "silver",
+    "name": "Silver",
+    "enabled": true,
+    "description": "Mine whose primary output is silver.",
+    "group": "silver"
+  },
+  {
     "id": "sulfur",
     "name": "Sulfur",
     "enabled": true,
