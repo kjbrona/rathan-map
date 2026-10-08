@@ -80,6 +80,7 @@ const SUPPORTED_IMPORT_VERSIONS = [
   "1.3.49",
   "1.3.50",
   "1.3.51",
+  "1.3.52",
 ];
 
 const MARKER_STORAGE_FIELDS = [
@@ -131,6 +132,13 @@ const GENERIC_TYPE_IDS_BY_CATEGORY = {
 };
 
 const TYPE_ID_ALIASES = {
+  "lady-slipper-orchid": "ladys-slipper-orchid",
+  "lady-s-slipper-orchid": "ladys-slipper-orchid",
+  "acuna-s-star-orchid": "acunas-star-orchid",
+  "spider-s-orchid": "spiders-orchid",
+  "dragon-s-mouth-orchid": "dragons-mouth-orchid",
+  "queen-s-orchid": "queens-orchid",
+  "sparrow-s-egg-orchid": "sparrows-egg-orchid",
   "gold-flakes": "gold",
   "gatherable-saplings": "tree",
   "harietum-officinalis": "harrietum-officinalis",

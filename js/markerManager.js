@@ -745,6 +745,9 @@ function migrateSavedCategoryFilter(categoryId) {
 }
 
 function migrateSavedTypeFilter(categoryId, typeId) {
+  if (categoryId === "herbs" && /orchid$/i.test(typeId)) {
+    return getMigratedTypeId(typeId);
+  }
   if (categoryId === "mining" && typeId === "gold-flakes") {
     return "gold";
   }

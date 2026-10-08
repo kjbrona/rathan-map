@@ -1,5 +1,11 @@
 [
   {
+    "id": "acunas-star-orchid",
+    "name": "Acuna's Star Orchid",
+    "enabled": true,
+    "group": "flowers"
+  },
+  {
     "id": "agarita",
     "name": "Agarita",
     "enabled": true,
@@ -80,6 +86,18 @@
     "group": "flowers"
   },
   {
+    "id": "cigar-orchid",
+    "name": "Cigar Orchid",
+    "enabled": true,
+    "group": "flowers"
+  },
+  {
+    "id": "clamshell-orchid",
+    "name": "Clamshell Orchid",
+    "enabled": true,
+    "group": "flowers"
+  },
+  {
     "id": "creek-plum",
     "name": "Creek Plum",
     "enabled": true,
@@ -99,6 +117,12 @@
     "group": "leaves"
   },
   {
+    "id": "dragons-mouth-orchid",
+    "name": "Dragon's Mouth Orchid",
+    "enabled": true,
+    "group": "flowers"
+  },
+  {
     "id": "english-mace",
     "name": "English Mace",
     "enabled": true,
@@ -115,6 +139,12 @@
     "name": "Garlic",
     "enabled": true,
     "group": "roots"
+  },
+  {
+    "id": "ghost-orchid",
+    "name": "Ghost Orchid",
+    "enabled": true,
+    "group": "flowers"
   },
   {
     "id": "golden-currant",
@@ -142,14 +172,35 @@
     "group": "leaves"
   },
   {
-    "id": "ladys-slipper-orchid",
-    "name": "Lady's Slipper Orchid",
+    "id": "lady-of-the-night-orchid",
+    "name": "Lady of the Night Orchid",
     "enabled": true,
     "group": "flowers"
   },
   {
+    "id": "ladys-slipper-orchid",
+    "name": "Lady's Slipper Orchid",
+    "enabled": true,
+    "group": "flowers",
+    "aliases": [
+      "Lady Slipper Orchid"
+    ]
+  },
+  {
     "id": "milkweed",
     "name": "Milkweed",
+    "enabled": true,
+    "group": "flowers"
+  },
+  {
+    "id": "moccasin-flower-orchid",
+    "name": "Moccasin Flower Orchid",
+    "enabled": true,
+    "group": "flowers"
+  },
+  {
+    "id": "night-scented-orchid",
+    "name": "Night Scented Orchid",
     "enabled": true,
     "group": "flowers"
   },
@@ -184,6 +235,12 @@
     "group": "flowers"
   },
   {
+    "id": "queens-orchid",
+    "name": "Queen's Orchid",
+    "enabled": true,
+    "group": "flowers"
+  },
+  {
     "id": "rams-head",
     "name": "Rams Head",
     "enabled": true,
@@ -196,10 +253,28 @@
     "group": "berries"
   },
   {
+    "id": "rat-tail-orchid",
+    "name": "Rat Tail Orchid",
+    "enabled": true,
+    "group": "flowers"
+  },
+  {
     "id": "red-sage",
     "name": "Red Sage",
     "enabled": true,
     "group": "leaves"
+  },
+  {
+    "id": "sparrows-egg-orchid",
+    "name": "Sparrow's Egg Orchid",
+    "enabled": true,
+    "group": "flowers"
+  },
+  {
+    "id": "spiders-orchid",
+    "name": "Spider's Orchid",
+    "enabled": true,
+    "group": "flowers"
   },
   {
     "id": "texas-bluebonnet",

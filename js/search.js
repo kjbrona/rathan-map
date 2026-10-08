@@ -118,6 +118,7 @@ function getSearchHaystack(markerData) {
     markerData.name,
     category ? category.name : markerData.category,
     type ? type.name : markerData.type,
+    ...(type?.aliases || []),
     group ? group.name : "",
     markerData.status,
     markerData.confidence,

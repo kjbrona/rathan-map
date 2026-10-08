@@ -1,5 +1,10 @@
 # RosalitaRP Explorer
 
+## v1.3.52 Complete Orchid Types
+- Added the 12 missing orchid varieties under Herbs using the existing Flowers icon and standard marker controls, filters, search, and storage.
+- Preserved Lady's Slipper Orchid and its saved identifier; added Lady Slipper search support and orchid naming aliases for imports and saved filters.
+- Updated application and cache-busting references to v1.3.52 while retaining older import support.
+
 ## v1.3.51 Silver and Platinum Mining
 - Added Silver and Platinum to the existing Mining resource catalog, including marker creation/editing, filters, search, and storage/import/export.
 - Added distinct silver and platinum ingot SVG icons using the existing transparent 24-by-24 icon format.
