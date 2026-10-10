@@ -1,5 +1,10 @@
 # RosalitaRP Explorer
 
+## v1.3.53 Additional Crafting Benches
+- Added Still, Morphine, Poppy Processing, and Cocaine to Crafting Benches with individual type filters and the existing marker creation/editing, search, and storage/import/export behavior.
+- Added transparent 24-by-24 SVG icons: copper still, medicine bottle, poppy flower, and laboratory flask.
+- Preserved existing bench types and older import versions; updated application and cache-busting references to v1.3.53.
+
 ## v1.3.52 Complete Orchid Types
 - Added the 12 missing orchid varieties under Herbs using the existing Flowers icon and standard marker controls, filters, search, and storage.
 - Preserved Lady's Slipper Orchid and its saved identifier; added Lady Slipper search support and orchid naming aliases for imports and saved filters.

@@ -12,6 +12,12 @@
     "group": "crafting"
   },
   {
+    "id": "cocaine",
+    "name": "Cocaine",
+    "enabled": true,
+    "group": "cocaine"
+  },
+  {
     "id": "cooking",
     "name": "Cooking",
     "enabled": true,
@@ -28,6 +34,24 @@
     "name": "General Bench",
     "enabled": true,
     "group": "crafting"
+  },
+  {
+    "id": "morphine",
+    "name": "Morphine",
+    "enabled": true,
+    "group": "morphine"
+  },
+  {
+    "id": "poppy-processing",
+    "name": "Poppy Processing",
+    "enabled": true,
+    "group": "poppy-processing"
+  },
+  {
+    "id": "still",
+    "name": "Still",
+    "enabled": true,
+    "group": "still"
   },
   {
     "id": "tailor",

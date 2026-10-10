@@ -208,5 +208,29 @@
     "name": "Seed Seller",
     "icon": "images/icons/seed-seller.svg",
     "description": "Seed seller NPCs."
+  },
+  {
+    "id": "still",
+    "name": "Still",
+    "icon": "images/icons/still.svg",
+    "description": "Still crafting bench locations."
+  },
+  {
+    "id": "morphine",
+    "name": "Morphine",
+    "icon": "images/icons/morphine.svg",
+    "description": "Morphine crafting bench locations."
+  },
+  {
+    "id": "poppy-processing",
+    "name": "Poppy Processing",
+    "icon": "images/icons/poppy-processing.svg",
+    "description": "Poppy Processing crafting bench locations."
+  },
+  {
+    "id": "cocaine",
+    "name": "Cocaine",
+    "icon": "images/icons/cocaine.svg",
+    "description": "Cocaine crafting bench locations."
   }
 ]
