@@ -6,6 +6,16 @@ Creator : Rathan
 ==================================================
 */
 
+function getKnownByFromControl(selectId) {
+  const value = document.getElementById(selectId).value;
+  return value === "both" ? ["jim", "tom"] : normalizeKnownBy([value]);
+}
+
+function getKnownByControlValue(markerData) {
+  const characters = normalizeKnownBy(markerData.knownBy);
+  return characters.length === 2 ? "both" : characters[0];
+}
+
 function buildMarkerStatusDropdown(selectId, categoryId, selectedStatus) {
   const select = document.getElementById(selectId);
   const options = getCategoryById(categoryId)?.statuses || [

@@ -82,6 +82,7 @@ const SUPPORTED_IMPORT_VERSIONS = [
   "1.3.51",
   "1.3.52",
   "1.3.53",
+  "1.3.54",
 ];
 
 const MARKER_STORAGE_FIELDS = [
@@ -91,6 +92,7 @@ const MARKER_STORAGE_FIELDS = [
   "type",
   "status",
   "confidence",
+  "knownBy",
   "state",
   "stateAuto",
   "stateOverride",
@@ -449,6 +451,13 @@ function saveFilterStateToStorage(filterState) {
   }
 }
 
+function normalizeKnownBy(value) {
+  const characters = Array.isArray(value)
+    ? ["jim", "tom"].filter((id) => value.includes(id)) : [];
+  // Markers predating character assignments belong to Tom.
+  return characters.length ? characters : ["tom"];
+}
+
 function normalizeStoredMarker(markerData) {
   if (!markerData || typeof markerData !== "object") {
     return null;
@@ -482,6 +491,7 @@ function normalizeStoredMarker(markerData) {
     storedMarker.status = markerData.status === "found" ? "found" : "unknown";
   }
   storedMarker.confidence = markerData.confidence || "guess";
+  storedMarker.knownBy = normalizeKnownBy(markerData.knownBy);
   const calculatedState = getStateIdForCoordinates(x, y);
   const savedState = markerData.state || "";
   const savedStateAuto = markerData.stateAuto || calculatedState;

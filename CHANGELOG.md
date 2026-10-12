@@ -1,5 +1,11 @@
 # RosalitaRP Explorer
 
+## v1.3.54 Character Knowledge and House Robberies
+- Added Job - House Robberies to NPC types using the existing merchant icon.
+- Added Known by (Jim, Tom, or both) to marker creation/editing and popups, with a saved Character filter that also limits search results.
+- New markers default to the selected character; existing markers without a character assignment belong to Tom. Explicit Jim/Tom/shared assignments are preserved in storage and backup import/export.
+- Updated application and cache-busting references to v1.3.54, retaining older backup support.
+
 ## v1.3.53 Additional Crafting Benches
 - Added Still, Morphine, Poppy Processing, and Cocaine to Crafting Benches with individual type filters and the existing marker creation/editing, search, and storage/import/export behavior.
 - Added transparent 24-by-24 SVG icons: copper still, medicine bottle, poppy flower, and laboratory flask.

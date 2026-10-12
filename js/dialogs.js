@@ -189,6 +189,7 @@ async function openMarkerDialog(latlng, prefill = null) {
   applyLastUsedMarkerDefaults();
   populateItemDiscoveryFields("marker");
   applyLastUsedFoundByDefault();
+  document.getElementById("marker-known-by").value = getActiveFilterState().character || "both";
   document.getElementById("marker-found-date").value = getLocalDateInputValue();
 
   await buildCategoryDropdown("marker-category");
@@ -705,6 +706,7 @@ function saveMarkerFromDialog(event) {
     type: typeId,
     status: document.getElementById("marker-status").value,
     confidence: document.getElementById("marker-confidence").value,
+    knownBy: getKnownByFromControl("marker-known-by"),
     uses: normalizeUses(templateValues.shared.uses),
     notes: templateValues.shared.notes || "",
     ...collectItemDiscoveryValues("marker"),

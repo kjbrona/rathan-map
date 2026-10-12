@@ -44,6 +44,7 @@ async function initializeMarkerManager() {
 function createEmptyFilterState() {
   return {
     state: "",
+    character: "",
     statuses: [],
     confidences: [],
     uses: [],
@@ -55,6 +56,7 @@ function createEmptyFilterState() {
 function createDefaultFilterState() {
   return {
     state: "",
+    character: "",
     statuses: [],
     confidences: [],
     uses: [],
@@ -304,6 +306,7 @@ function applyRemoteMarkers(remoteMarkers) {
 }
 
 function isMarkerVisible(markerData) {
+  if (activeFilters.character && !normalizeKnownBy(markerData.knownBy).includes(activeFilters.character)) return false;
   if (activeFilters.state && markerData.state !== activeFilters.state) {
     return false;
   }
@@ -645,6 +648,7 @@ function getFilterStateForStorage() {
 
   return {
     state: activeFilters.state,
+    character: activeFilters.character || "",
     statuses: activeFilters.statuses,
     confidences: activeFilters.confidences,
     uses: activeFilters.uses,
@@ -671,6 +675,7 @@ function applySavedFilterState() {
     );
   }
 
+  activeFilters.character = ["jim", "tom"].includes(savedFilterState.character) ? savedFilterState.character : "";
   activeFilters.state = migratedFilterState.state || "";
   activeFilters.statuses = normalizeFilterArray(migratedFilterState.statuses);
   activeFilters.confidences = normalizeFilterArray(

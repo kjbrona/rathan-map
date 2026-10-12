@@ -45,6 +45,11 @@ function initializeSidebar() {
 }
 
 function initializeFilterControls() {
+  document.getElementById("character-filter").addEventListener("change", function () {
+    activeFilters.character = this.value;
+    applyFilterChange();
+    updateFilterControls();
+  });
   const filterPanel = document.querySelector(".sidebar-filter-panel");
   const statusFilter = document.getElementById("status-filter");
   const confidenceFilter = document.getElementById("confidence-filter");
@@ -207,6 +212,7 @@ function initializeStateFilterControl() {
 
 function updateFilterControls() {
   const filterState = getActiveFilterState();
+  document.getElementById("character-filter").value = filterState.character || "";
   const stateFilter = document.getElementById("state-filter");
   const statusFilter = document.getElementById("status-filter");
   const confidenceFilter = document.getElementById("confidence-filter");
@@ -258,6 +264,7 @@ function updateActiveFiltersSummary(filterState = getActiveFilterState()) {
   }
 
   const activeItems = [];
+  if (filterState.character) activeItems.push(["Character", filterState.character === "jim" ? "Jim" : "Tom"]);
 
   if (filterState.state) {
     activeItems.push(["State", getStateName(filterState.state) || "Unknown"]);
@@ -756,6 +763,7 @@ async function initializeMarkerDetailsPanel() {
         type: typeId,
         status: document.getElementById("edit-marker-status").value,
         confidence: document.getElementById("edit-marker-confidence").value,
+        knownBy: getKnownByFromControl("edit-marker-known-by"),
         state: selectedState,
         stateAuto,
         stateOverride: selectedState !== "" && selectedState !== stateAuto,
@@ -824,6 +832,7 @@ async function renderMarkerDetails(markerData) {
   form.classList.remove("hidden");
 
   document.getElementById("edit-marker-name").value = markerData.name;
+  document.getElementById("edit-marker-known-by").value = getKnownByControlValue(markerData);
   buildMarkerStatusDropdown("edit-marker-status", markerData.category, markerData.status);
   document.getElementById("edit-marker-confidence").value =
     markerData.confidence || "guess";

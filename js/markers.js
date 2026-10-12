@@ -39,6 +39,7 @@ function renderMarker(markerData, selected = false) {
       markerData.type,
       "popup-type-icon"
     )} ${escapeHtml(markerData.name)}</strong>
+    <br>Known by: ${escapeHtml(normalizeKnownBy(markerData.knownBy).map(id => id === "jim" ? "Jim" : "Tom").join(", "))}
     ${markerData.category === "abandoned-wagons"
       ? `<br>${markerData.status === "found" ? "Found — confirmed spawn location; wagon may be absent." : "Unknown — wagon not yet observed here."}`
       : ""}

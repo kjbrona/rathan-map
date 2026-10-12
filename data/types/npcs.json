@@ -54,6 +54,12 @@
     "group": "general-store"
   },
   {
+    "id": "job-house-robberies",
+    "name": "Job - House Robberies",
+    "enabled": true,
+    "group": "general-store"
+  },
+  {
     "id": "npc",
     "name": "General NPC",
     "enabled": true,
