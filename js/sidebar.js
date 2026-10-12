@@ -46,8 +46,7 @@ function initializeSidebar() {
 
 function initializeFilterControls() {
   document.getElementById("character-filter").addEventListener("change", function () {
-    activeFilters.character = this.value;
-    applyFilterChange();
+    setCharacterFilter(this.value);
     updateFilterControls();
   });
   const filterPanel = document.querySelector(".sidebar-filter-panel");

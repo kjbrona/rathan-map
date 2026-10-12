@@ -1,5 +1,9 @@
 # RosalitaRP Explorer
 
+## v1.3.55 Character Filter Refresh
+- Routed character changes through the marker-manager filter setter and included character selection in saved-filter migration.
+- Refreshed all application asset versions to prevent cached scripts from dropping character selection during control refreshes.
+
 ## v1.3.54 Character Knowledge and House Robberies
 - Added Job - House Robberies to NPC types using the existing merchant icon.
 - Added Known by (Jim, Tom, or both) to marker creation/editing and popups, with a saved Character filter that also limits search results.

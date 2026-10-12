@@ -1,14 +1,14 @@
 /*
 ==================================================
 RosalitaRP Explorer
-Version : 1.3.54
+Version : 1.3.55
 Creator : Rathan
 ==================================================
 */
 
 const APP_NAME = "RosalitaRP Explorer";
 const APP_SUBTITLE = "Community Resource Map";
-const APP_VERSION = "1.3.54";
+const APP_VERSION = "1.3.55";
 const APP_CREATOR = "Rathan";
 const DEFAULT_DANGER_RADIUS = 50;
 

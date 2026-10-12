@@ -445,6 +445,11 @@ function setStateFilter(stateId) {
   applyFilterChange();
 }
 
+function setCharacterFilter(characterId) {
+  activeFilters.character = ["jim", "tom"].includes(characterId) ? characterId : "";
+  applyFilterChange();
+}
+
 function getStateFilter() {
   return activeFilters.state;
 }
@@ -675,7 +680,7 @@ function applySavedFilterState() {
     );
   }
 
-  activeFilters.character = ["jim", "tom"].includes(savedFilterState.character) ? savedFilterState.character : "";
+  activeFilters.character = migratedFilterState.character;
   activeFilters.state = migratedFilterState.state || "";
   activeFilters.statuses = normalizeFilterArray(migratedFilterState.statuses);
   activeFilters.confidences = normalizeFilterArray(
@@ -706,6 +711,7 @@ function applySavedFilterState() {
 
 function migrateSavedFilterState(savedFilterState) {
   return {
+    character: ["jim", "tom"].includes(savedFilterState.character) ? savedFilterState.character : "",
     state: savedFilterState.state || "",
     statuses: Array.isArray(savedFilterState.statuses)
       ? savedFilterState.statuses
