@@ -33,13 +33,13 @@
     "id": "fence",
     "name": "Fence",
     "enabled": true,
-    "group": "general-store"
+    "group": "fence"
   },
   {
     "id": "general-store",
     "name": "General Store",
     "enabled": true,
-    "group": "general-store"
+    "group": "storefront"
   },
   {
     "id": "gunsmith",
@@ -57,13 +57,13 @@
     "id": "job-house-robberies",
     "name": "Job - House Robberies",
     "enabled": true,
-    "group": "general-store"
+    "group": "house-robberies"
   },
   {
     "id": "npc",
     "name": "General NPC",
     "enabled": true,
-    "group": "general-store"
+    "group": "general-npc"
   },
   {
     "id": "ore-buyer",

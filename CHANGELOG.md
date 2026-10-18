@@ -1,5 +1,16 @@
 # RosalitaRP Explorer
 
+## v1.3.57 Distinct NPC Icons
+- Added gold-and-brown SVG icons for Fence (handshake), General Store (awning storefront), General NPC (Western-hat silhouette), and Job - House Robberies (house).
+- Assigned each existing NPC type its own icon group, preserving saved type identifiers and the Importer's original shopping-bag icon. Marker dimensions and anchors are unchanged.
+- Updated application and cache-busting references to v1.3.57 with older backup support retained.
+
+## v1.3.56 Default to Tom
+- Open the map on Tom's character view for new and returning visitors, regardless of the previous character selection. Other saved filters are retained.
+- Resetting filters returns to Tom; Jim and All Characters remain available for manual selection during the session.
+- New markers inherit Tom when using the default view. Existing character assignments are unchanged.
+- Updated application and cache-busting references to v1.3.56.
+
 ## v1.3.55 Character Filter Refresh
 - Routed character changes through the marker-manager filter setter and included character selection in saved-filter migration.
 - Refreshed all application asset versions to prevent cached scripts from dropping character selection during control refreshes.

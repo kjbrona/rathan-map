@@ -44,7 +44,7 @@ async function initializeMarkerManager() {
 function createEmptyFilterState() {
   return {
     state: "",
-    character: "",
+    character: "tom",
     statuses: [],
     confidences: [],
     uses: [],
@@ -56,7 +56,7 @@ function createEmptyFilterState() {
 function createDefaultFilterState() {
   return {
     state: "",
-    character: "",
+    character: "tom",
     statuses: [],
     confidences: [],
     uses: [],
@@ -680,7 +680,8 @@ function applySavedFilterState() {
     );
   }
 
-  activeFilters.character = migratedFilterState.character;
+  // Always open on Tom's view, regardless of the previous session's character.
+  activeFilters.character = "tom";
   activeFilters.state = migratedFilterState.state || "";
   activeFilters.statuses = normalizeFilterArray(migratedFilterState.statuses);
   activeFilters.confidences = normalizeFilterArray(

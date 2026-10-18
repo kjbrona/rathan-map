@@ -232,5 +232,29 @@
     "name": "Cocaine",
     "icon": "images/icons/cocaine.svg",
     "description": "Cocaine crafting bench locations."
+  },
+  {
+    "id": "fence",
+    "name": "Fence",
+    "icon": "images/icons/fence.svg",
+    "description": "Fence NPC locations."
+  },
+  {
+    "id": "storefront",
+    "name": "General Store",
+    "icon": "images/icons/storefront.svg",
+    "description": "General Store NPC locations."
+  },
+  {
+    "id": "general-npc",
+    "name": "General NPC",
+    "icon": "images/icons/general-npc.svg",
+    "description": "General NPC NPC locations."
+  },
+  {
+    "id": "house-robberies",
+    "name": "Job - House Robberies",
+    "icon": "images/icons/house-robberies.svg",
+    "description": "Job - House Robberies NPC locations."
   }
 ]
