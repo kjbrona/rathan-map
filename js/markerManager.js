@@ -527,7 +527,8 @@ async function replaceMarkers(importedMarkers) {
   const replacementMarkers = sanitizeMarkers(importedMarkers);
   markers = replacementMarkers;
   selectedMarkerId = null;
-  await persistMarkers();
+  const saved = await persistMarkers();
+  if (!saved.ok) throw new Error(saved.message || "Import could not be saved. Export a backup before leaving.");
   refreshMarkers();
   renderMarkerDetails(null);
   updateMarkerStats();
@@ -542,7 +543,8 @@ async function mergeMarkers(importedMarkers) {
   const originalMarkerCount = markers.length;
   markers = mergeMarkerCollections(markers, importedMarkers);
   selectedMarkerId = null;
-  await persistMarkers();
+  const saved = await persistMarkers();
+  if (!saved.ok) throw new Error(saved.message || "Import could not be saved. Export a backup before leaving.");
   refreshMarkers();
   renderMarkerDetails(null);
   updateMarkerStats();

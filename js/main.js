@@ -22,12 +22,15 @@ async function initializeApp() {
   initializeDialogs();
   initializeContextMenus();
   refreshMarkers();
+  restoreServerMapView();
 
   try {
     await initializeCandidateSurveyLayer();
   } catch (error) {
     console.warn("Possible Locations layer could not be initialized.", error);
   }
+
+  await initializeServerControls();
 
   map.on("click", function (event) {
     closeContextMenu();

@@ -1,5 +1,13 @@
 # RosalitaRP Explorer
 
+## v1.3.58 Server Profiles
+- Added server selection, creation, and renaming; remember the last server and share profile metadata through Firestore when available.
+- Kept RosalitaRP on its original collection and storage keys without destructive migration. New servers use independent Firestore/localStorage namespaces and start empty.
+- Scoped marker operations, filters, add-marker defaults, and Candidate Survey decisions to the server; the bundled survey remains RosalitaRP-only.
+- Added server-labelled backups, legacy RosalitaRP backup compatibility, and source/destination confirmation before imports.
+- Serialized saves, protected offline edits from stale snapshots, and wait for pending saves before switching while restoring map position.
+- Updated application/cache versions to v1.3.58; added isolation and delayed-write regression tests and storage documentation.
+
 ## v1.3.57 Distinct NPC Icons
 - Added gold-and-brown SVG icons for Fence (handshake), General Store (awning storefront), General NPC (Western-hat silhouette), and Job - House Robberies (house).
 - Assigned each existing NPC type its own icon group, preserving saved type identifiers and the Importer's original shopping-bag icon. Marker dimensions and anchors are unchanged.

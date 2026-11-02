@@ -63,6 +63,13 @@ function initializePossibleLocationControls() {
 
 async function loadCandidateSurveyData() {
   const status = document.getElementById("candidate-survey-status");
+  if (activeServerId !== DEFAULT_SERVER.id) {
+    candidateSurveyData = [];
+    candidateSurveySkippedCount = 0;
+    if (status) status.textContent = "No Candidate Survey dataset for this server.";
+    populateSuggestedHerbFilter();
+    return;
+  }
 
   try {
     const response = await fetch(
@@ -447,14 +454,14 @@ function getCandidateSurveyLoadSummary() {
 
 function loadPossibleLocationsVisible() {
   try {
-    const saved = localStorage.getItem(POSSIBLE_LOCATIONS_VISIBLE_STORAGE_KEY);
+    const saved = localStorage.getItem(serverStorageKey(POSSIBLE_LOCATIONS_VISIBLE_STORAGE_KEY));
 
     if (saved !== null) {
       return saved === "true";
     }
 
     return (
-      localStorage.getItem(LEGACY_CANDIDATE_LAYER_VISIBLE_STORAGE_KEY) === "true"
+      localStorage.getItem(serverStorageKey(LEGACY_CANDIDATE_LAYER_VISIBLE_STORAGE_KEY)) === "true"
     );
   } catch (error) {
     return false;
@@ -463,8 +470,7 @@ function loadPossibleLocationsVisible() {
 
 function savePossibleLocationsVisible(visible) {
   try {
-    localStorage.setItem(
-      POSSIBLE_LOCATIONS_VISIBLE_STORAGE_KEY,
+    localStorage.setItem(serverStorageKey(POSSIBLE_LOCATIONS_VISIBLE_STORAGE_KEY),
       String(visible)
     );
   } catch (error) {
@@ -475,7 +481,7 @@ function savePossibleLocationsVisible(visible) {
 function loadPossibleLocationFilter() {
   try {
     const savedFilters = JSON.parse(
-      localStorage.getItem(POSSIBLE_LOCATIONS_FILTER_STORAGE_KEY) || "{}"
+      localStorage.getItem(serverStorageKey(POSSIBLE_LOCATIONS_FILTER_STORAGE_KEY)) || "{}"
     );
 
     return {
@@ -491,8 +497,7 @@ function loadPossibleLocationFilter() {
 
 function savePossibleLocationFilter() {
   try {
-    localStorage.setItem(
-      POSSIBLE_LOCATIONS_FILTER_STORAGE_KEY,
+    localStorage.setItem(serverStorageKey(POSSIBLE_LOCATIONS_FILTER_STORAGE_KEY),
       JSON.stringify(possibleLocationFilter)
     );
   } catch (error) {
@@ -517,7 +522,7 @@ function loadRemovedPossibleLocationIds() {
 
 function loadCandidateIdSet(storageKey) {
   try {
-    const values = JSON.parse(localStorage.getItem(storageKey) || "[]");
+    const values = JSON.parse(localStorage.getItem(serverStorageKey(storageKey)) || "[]");
     return new Set(Array.isArray(values) ? values : []);
   } catch (error) {
     return new Set();
@@ -526,7 +531,7 @@ function loadCandidateIdSet(storageKey) {
 
 function saveCandidateIdSet(storageKey, idSet) {
   try {
-    localStorage.setItem(storageKey, JSON.stringify(Array.from(idSet)));
+    localStorage.setItem(serverStorageKey(storageKey), JSON.stringify(Array.from(idSet)));
   } catch (error) {
     console.warn("Possible Locations local state could not be saved.", error);
   }

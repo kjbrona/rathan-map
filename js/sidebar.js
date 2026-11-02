@@ -382,6 +382,7 @@ function exportMarkersToFile() {
 async function importMarkersFromFile(event) {
   const fileInput = event.target;
   const selectedFile = fileInput.files[0];
+  const targetServer = getActiveServer();
 
   if (!selectedFile) {
     return;
@@ -390,6 +391,8 @@ async function importMarkersFromFile(event) {
   try {
     const importResult = parseMarkerImportFile(await selectedFile.text());
 
+    if (serverSwitching || targetServer.id !== activeServerId) return;
+
     if (!importResult.ok) {
       alert(importResult.message);
       return;
@@ -397,9 +400,15 @@ async function importMarkersFromFile(event) {
 
     const importMode = await requestImportMode();
 
-    if (!importMode) {
+    if (!importMode || serverSwitching || targetServer.id !== activeServerId) {
       return;
     }
+
+    if (!confirm(
+      'Import ' + importResult.markers.length + ' markers from "' + importResult.server.name +
+      '" (' + importResult.server.id + ') into "' + targetServer.name + '" (' + targetServer.id + ')?\n' +
+      (importMode === 'replace' ? 'This replaces ALL existing markers on the destination server.' : 'This merges new marker IDs into the destination server; existing IDs are kept.')
+    )) return;
 
     const importSummary =
       importMode === "replace"

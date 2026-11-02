@@ -386,7 +386,7 @@ function saveLastUsedMarkerDefaults({ status, confidence, foundBy } = {}) {
 
   try {
     localStorage.setItem(
-      ADD_MARKER_PREFS_STORAGE_KEY,
+      serverStorageKey(ADD_MARKER_PREFS_STORAGE_KEY),
       JSON.stringify(nextPrefs)
     );
   } catch (error) {
@@ -396,7 +396,7 @@ function saveLastUsedMarkerDefaults({ status, confidence, foundBy } = {}) {
 
 function loadAddMarkerPreferences() {
   try {
-    const storedValue = localStorage.getItem(ADD_MARKER_PREFS_STORAGE_KEY);
+    const storedValue = localStorage.getItem(serverStorageKey(ADD_MARKER_PREFS_STORAGE_KEY));
     const prefs = storedValue ? JSON.parse(storedValue) : {};
 
     if (!prefs || typeof prefs !== "object") {

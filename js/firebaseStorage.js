@@ -21,7 +21,7 @@ async function initializeFirebaseStorage() {
     }
 
     firebaseDb = firebase.firestore();
-    markerCollection = firebaseDb.collection("markers");
+    markerCollection = getServerMarkerCollection(firebaseDb);
 
     setFirebaseAvailability(true);
     return true;
@@ -137,6 +137,7 @@ function subscribeToFirebaseMarkers(onMarkersChanged) {
 
     markerSnapshotUnsubscribe = markerCollection.onSnapshot(
       (snapshot) => {
+        if (serverSwitching || pendingServerWrites > 0 || hasPendingLocalMarkers()) return;
         setFirebaseAvailability(true);
         const snapshotMarkers = snapshot.docs.map((doc) => ({
           id: doc.id,

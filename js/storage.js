@@ -86,6 +86,7 @@ const SUPPORTED_IMPORT_VERSIONS = [
   "1.3.55",
   "1.3.56",
   "1.3.57",
+  "1.3.58",
 ];
 
 const MARKER_STORAGE_FIELDS = [
@@ -163,12 +164,18 @@ const CORRECTED_TYPE_NAMES = {
 };
 
 
-async function saveMarkers(markerData) {
+function saveMarkers(markerData) {
+  const snapshot = sanitizeMarkers(JSON.parse(JSON.stringify(markerData)));
+  return queueServerWrite(() => saveMarkersForSession(snapshot));
+}
+
+async function saveMarkersForSession(markerData) {
   if (isFirebaseStorageAvailable()) {
     const firebaseSaved = await saveMarkersToFirebase(markerData);
 
     if (firebaseSaved) {
       saveMarkersToLocalStorage(markerData);
+      clearPendingLocalMarkers();
       return {
         ok: true,
         markerCount: sanitizeMarkers(markerData).length,
@@ -176,15 +183,24 @@ async function saveMarkers(markerData) {
     }
   }
 
-  return saveMarkersToLocalStorage(markerData);
+  return savePendingLocalMarkers(markerData);
 }
 
-async function saveMarker(markerData, markerCollectionData) {
+function saveMarker(markerData, markerCollectionData) {
+  const marker = JSON.parse(JSON.stringify(markerData));
+  const snapshot = JSON.parse(JSON.stringify(markerCollectionData));
+  return queueServerWrite(() => saveMarkerForSession(marker, snapshot));
+}
+
+async function saveMarkerForSession(markerData, markerCollectionData) {
   if (isFirebaseStorageAvailable()) {
-    const firebaseSaved = await saveMarkerToFirebase(markerData);
+    const firebaseSaved = hasPendingLocalMarkers()
+      ? await saveMarkersToFirebase(markerCollectionData)
+      : await saveMarkerToFirebase(markerData);
 
     if (firebaseSaved) {
       saveMarkersToLocalStorage(markerCollectionData);
+      clearPendingLocalMarkers();
       return {
         ok: true,
         markerCount: sanitizeMarkers(markerCollectionData).length,
@@ -192,15 +208,23 @@ async function saveMarker(markerData, markerCollectionData) {
     }
   }
 
-  return saveMarkersToLocalStorage(markerCollectionData);
+  return savePendingLocalMarkers(markerCollectionData);
 }
 
-async function deleteStoredMarker(markerId, markerCollectionData) {
+function deleteStoredMarker(markerId, markerCollectionData) {
+  const snapshot = JSON.parse(JSON.stringify(markerCollectionData));
+  return queueServerWrite(() => deleteStoredMarkerForSession(markerId, snapshot));
+}
+
+async function deleteStoredMarkerForSession(markerId, markerCollectionData) {
   if (isFirebaseStorageAvailable()) {
-    const firebaseDeleted = await deleteMarkerFromFirebase(markerId);
+    const firebaseDeleted = hasPendingLocalMarkers()
+      ? await saveMarkersToFirebase(markerCollectionData)
+      : await deleteMarkerFromFirebase(markerId);
 
     if (firebaseDeleted) {
       saveMarkersToLocalStorage(markerCollectionData);
+      clearPendingLocalMarkers();
       return {
         ok: true,
         markerCount: sanitizeMarkers(markerCollectionData).length,
@@ -208,11 +232,37 @@ async function deleteStoredMarker(markerId, markerCollectionData) {
     }
   }
 
-  return saveMarkersToLocalStorage(markerCollectionData);
+  return savePendingLocalMarkers(markerCollectionData);
+}
+
+function hasPendingLocalMarkers() {
+  try { return localStorage.getItem(serverStorageKey("explorer-pending-local-markers")) === "true"; }
+  catch (_) { return false; }
+}
+
+function clearPendingLocalMarkers() {
+  try { localStorage.removeItem(serverStorageKey("explorer-pending-local-markers")); }
+  catch (_) { /* Retain local backup. */ }
+}
+
+function savePendingLocalMarkers(markerData) {
+  const result = saveMarkersToLocalStorage(markerData);
+  if (result.ok) {
+    try { localStorage.setItem(serverStorageKey("explorer-pending-local-markers"), "true"); }
+    catch (_) { return { ok: false, message: "Could not record offline save state. Export a backup." }; }
+  }
+  return result;
 }
 
 async function loadMarkers() {
   const firebaseReady = await initializeFirebaseStorage();
+
+  // Do not overwrite offline edits with a stale cloud snapshot on next launch.
+  // A subsequent explicit edit/import retries saving this server's full local dataset.
+  if (hasPendingLocalMarkers()) {
+    updateDataSourceStatus("Local changes awaiting cloud save");
+    return loadMarkersFromLocalStorage();
+  }
 
   if (firebaseReady) {
     const firebaseMarkers = await loadMarkersFromFirebase();
@@ -241,7 +291,7 @@ function saveMarkersToLocalStorage(markerData) {
 
   try {
     const storedMarkers = sanitizeMarkers(markerData);
-    localStorage.setItem(MARKER_STORAGE_KEY, JSON.stringify(storedMarkers));
+    localStorage.setItem(serverStorageKey(MARKER_STORAGE_KEY), JSON.stringify(storedMarkers));
 
     return {
       ok: true,
@@ -263,7 +313,7 @@ function loadMarkersFromLocalStorage() {
   }
 
   try {
-    const storedValue = localStorage.getItem(MARKER_STORAGE_KEY);
+    const storedValue = localStorage.getItem(serverStorageKey(MARKER_STORAGE_KEY));
 
     if (!storedValue) {
       return [];
@@ -299,6 +349,7 @@ function createMarkerExport(markerData) {
 
   return {
     version: STORAGE_VERSION,
+    server: getActiveServer(),
     application: STORAGE_APPLICATION,
     created: new Date().toISOString(),
     markerCount: markersForExport.length,
@@ -317,7 +368,7 @@ function getMarkerExportFilename(date = new Date()) {
   const hours = String(date.getHours()).padStart(2, "0");
   const minutes = String(date.getMinutes()).padStart(2, "0");
 
-  return `RosalitaRPExplorer_${year}-${month}-${day}_${hours}${minutes}.json`;
+  return `Explorer_${getActiveServer().name.replace(/[^a-z0-9-]/gi, "_")}_${year}-${month}-${day}_${hours}${minutes}.json`;
 }
 
 function validateMarkerImport(importData) {
@@ -349,6 +400,10 @@ function validateMarkerImport(importData) {
     };
   }
 
+  if (importData.server !== undefined && !validServerProfile(importData.server)) {
+    return { ok: false, message: "The backup has invalid server identification." };
+  }
+
   if (!Array.isArray(importData.markers)) {
     return {
       ok: false,
@@ -358,6 +413,7 @@ function validateMarkerImport(importData) {
 
   return {
     ok: true,
+    server: importData.server ? { id: importData.server.id, name: importData.server.name } : { ...DEFAULT_SERVER },
     markers: sanitizeMarkers(importData.markers),
   };
 }
@@ -423,7 +479,7 @@ function loadSavedFilterState() {
   }
 
   try {
-    const storedValue = localStorage.getItem(FILTER_STORAGE_KEY);
+    const storedValue = localStorage.getItem(serverStorageKey(FILTER_STORAGE_KEY));
 
     if (!storedValue) {
       return null;
@@ -448,7 +504,7 @@ function saveFilterStateToStorage(filterState) {
   }
 
   try {
-    localStorage.setItem(FILTER_STORAGE_KEY, JSON.stringify(filterState));
+    localStorage.setItem(serverStorageKey(FILTER_STORAGE_KEY), JSON.stringify(filterState));
   } catch (error) {
     console.warn("Filter data could not be saved.", error);
   }
