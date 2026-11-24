@@ -1,5 +1,9 @@
 # RedM Explorer
 
+## v1.3.68 Share Missing Ranch Profile
+- Repair browser-only Ranch Roleplay profile registration on owner sign-in so fresh browsers can discover the default server.
+- Use a create-if-missing transaction with the original ID; preserve existing cloud lifecycle metadata and all marker datasets. Report publication failures in account status.
+
 ## v1.3.67 Ranch Roleplay Landing Server
 - Open on the existing active Ranch Roleplay profile instead of the browser’s last selection. Discover its original ID through the shared server registry for new visitors.
 - Preserve deliberate server switches and archive restore reloads using a one-time tab-local target. No marker data is moved or copied.

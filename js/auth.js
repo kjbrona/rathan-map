@@ -33,6 +33,16 @@ function acceptAccount(user) {
   if (verifiedGoogle && email === OWNER_EMAIL) {
     accountRole = "owner";
     accountMessage = `${email} — Owner`;
+    publishMissingLandingProfile().then(published => {
+      if (!published || generation !== accountGeneration) return;
+      accountMessage = `${email} — Owner. Ranch profile shared with other browsers.`;
+      renderAccountControls();
+    }).catch(error => {
+      if (generation !== accountGeneration) return;
+      console.warn("Ranch profile could not be shared", error);
+      accountMessage = `${email} — Owner. Ranch profile sync failed; reload to retry.`;
+      renderAccountControls();
+    });
   } else if (verifiedGoogle && firebaseDb) {
     editorSubscription = firebaseDb.collection("editors").doc(email).onSnapshot({ includeMetadataChanges: true }, snapshot => {
       if (generation !== accountGeneration) return;

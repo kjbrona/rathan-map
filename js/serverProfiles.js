@@ -54,6 +54,22 @@ function getLandingServer() {
   return serverProfiles.find(p => p.status !== "archived" && p.name.trim().toLowerCase() === "ranch roleplay");
 }
 
+async function publishMissingLandingProfile() {
+  const profile = getLandingServer();
+  if (!isOwner() || !firebaseDb || !profile) return false;
+  const generation = accountGeneration;
+  const ref = firebaseDb.collection("serverProfiles").doc(profile.id);
+  // Older versions could save profiles only in one browser after a denied write.
+  // Create only the missing registry entry, never overwrite cloud lifecycle data.
+  return firebaseDb.runTransaction(async transaction => {
+    const existing = await transaction.get(ref);
+    if (!isOwner() || generation !== accountGeneration) throw new Error("Account changed during profile sync.");
+    if (existing.exists) return false;
+    transaction.set(ref, { ...profile, updatedAt: new Date().toISOString() });
+    return true;
+  });
+}
+
 function readActiveServerId() {
   if (serverProfiles.some(p => p.id === explicitServerTarget)) return explicitServerTarget;
   return getLandingServer()?.id || DEFAULT_SERVER.id;
