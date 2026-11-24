@@ -1,5 +1,9 @@
 # RedM Explorer
 
+## v1.3.66 NPC Filter Ordering and Horse/Carriage Seller
+- Moved NPCs to the top of the category filters while preserving the remaining category order.
+- Added Horse/Carriage Seller to the alphabetized NPC types using the existing stable icon and shared marker tools.
+
 ## v1.3.65 Server-specific Character Filters
 - Show the Jim/Tom quick filter only on RosalitaRP, which still defaults to Tom. Other servers ignore character filters, including older saved selections.
 - Preserve all existing marker character assignments and server datasets.

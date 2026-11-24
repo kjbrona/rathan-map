@@ -36,6 +36,12 @@
     "group": "fence"
   },
   {
+    "id": "npc",
+    "name": "General NPC",
+    "enabled": true,
+    "group": "general-npc"
+  },
+  {
     "id": "general-store",
     "name": "General Store",
     "enabled": true,
@@ -48,6 +54,12 @@
     "group": "gunsmith"
   },
   {
+    "id": "horse-carriage-seller",
+    "name": "Horse/Carriage Seller",
+    "enabled": true,
+    "group": "stable"
+  },
+  {
     "id": "importer",
     "name": "Importer",
     "enabled": true,
@@ -58,12 +70,6 @@
     "name": "Job - House Robberies",
     "enabled": true,
     "group": "house-robberies"
-  },
-  {
-    "id": "npc",
-    "name": "General NPC",
-    "enabled": true,
-    "group": "general-npc"
   },
   {
     "id": "ore-buyer",

@@ -477,7 +477,8 @@ function renderCategoryList() {
   const list = document.getElementById("category-list");
   list.innerHTML = "";
 
-  CATEGORIES.forEach((category) => {
+  const filterCategories = [...CATEGORIES].sort((a, b) => Number(b.id === "npcs") - Number(a.id === "npcs"));
+  filterCategories.forEach((category) => {
     const types = TYPE_DATA[category.id] || [];
     const isExpanded = expandedCategoryFilters.has(category.id);
 
