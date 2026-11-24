@@ -1,5 +1,9 @@
 # RedM Explorer
 
+## v1.3.64 Collapsible Sidebar Management
+- Rolled account management and server controls into compact disclosures, collapsed by default and remembering each browser’s open/closed preference.
+- Kept the account role and active server visible in the collapsed headings. Existing controls and permissions are unchanged.
+
 ## v1.3.63 Owner and Global Editors
 - Added Google sign-in, owner-only server/editor management, and approved editor access across all active servers. Visitors retain viewing and export access.
 - Added Firestore rules for legacy and server-scoped markers, global editor grants, and archived-server write protection. Rules require a separate Firebase Console deployment.

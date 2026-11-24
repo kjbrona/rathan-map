@@ -60,7 +60,7 @@ function initializeFilterControls() {
     filterPanel.addEventListener("pointerdown", handleFilterResetAction);
   }
 
-  initializeFilterDisclosures();
+
 
   if (statusFilter) {
     statusFilter.addEventListener("change", function () {
@@ -153,6 +153,8 @@ function initializeFilterDisclosures() {
   const disclosureState = loadFilterDisclosureState();
 
   [
+    ["account", "account-disclosure"],
+    ["server", "server-disclosure"],
     ["quickFilters", "quick-filters-disclosure"],
     ["mapLayers", "map-layers-disclosure"],
   ].forEach(([key, elementId]) => {

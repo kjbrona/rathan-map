@@ -1073,3 +1073,8 @@ button:disabled { cursor: not-allowed; opacity: 0.55; }
 .account-controls button { margin-top: 6px; }
 .account-controls input { width: 100%; box-sizing: border-box; }
 .account-controls [hidden] { display: none !important; }
+
+.compact-controls { padding: 8px 14px; }
+.compact-controls summary h2 { margin: 0; }
+.disclosure-controls { padding-top: 10px; }
+.compact-controls summary:focus-visible { outline: 2px solid #c49a5a; outline-offset: 3px; }

@@ -103,6 +103,11 @@ async function initializeServerControls() {
 }
 
 function renderServerControls() {
+  const summary = document.getElementById("server-summary");
+  if (summary) {
+    summary.textContent = getActiveServer().name + (isServerArchived() ? " — Archived" : "");
+    summary.title = summary.textContent;
+  }
   const select = document.getElementById("server-selector");
   select.innerHTML = "";
   if (isServerArchived()) {

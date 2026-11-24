@@ -10,6 +10,8 @@ function isOwner() { return accountRole === "owner"; }
 function hasEditorAccess() { return isOwner() || accountRole === "editor"; }
 
 function renderAccountControls() {
+  const summary = document.getElementById("account-summary");
+  if (summary) summary.textContent = accountUser ? accountRole.charAt(0).toUpperCase() + accountRole.slice(1) : "Signed out";
   document.getElementById("account-status").textContent = accountMessage;
   document.getElementById("account-signin").hidden = !!accountUser;
   document.getElementById("account-signout").hidden = !accountUser;

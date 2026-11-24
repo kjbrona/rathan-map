@@ -13,6 +13,7 @@ async function initializeApp() {
   // Bind the local UI before network reads so slow Firebase cannot leave it blank/inert.
   document.getElementById("app-title").textContent = APP_NAME;
   document.getElementById("app-version").textContent = APP_VERSION;
+  initializeFilterDisclosures();
   await initializeFirebaseStorage();
   await initializeServerControls();
   initializeAccountControls();

@@ -38,6 +38,10 @@ async function main() {
       await route.fulfill({ contentType: "application/javascript", body: source + '\naccountRole = "owner"; accountUser = {email: OWNER_EMAIL};' });
     });
     await page.goto(origin);
+    await page.waitForFunction(() => document.querySelectorAll(".category-marker").length === 1);
+    assert.equal(await page.locator("#account-disclosure").getAttribute("open"), null);
+    assert.equal(await page.locator("#server-disclosure").getAttribute("open"), null);
+    await page.locator("#server-disclosure > summary").click();
     await page.waitForFunction(() => document.getElementById("server-readonly-status").textContent.includes("Read Only"));
     assert.equal(await page.locator("#add-marker-btn").isDisabled(), true);
     assert.equal(await page.locator("#import-markers-btn").isDisabled(), true);
@@ -92,6 +96,8 @@ async function main() {
       await probe.goto(origin);
       await probe.waitForFunction(() => document.getElementById("server-selector").options.length > 0, null, { timeout: 3000 });
       assert.equal(await probe.locator("#app-title").innerText(), "RedM Explorer");
+      await probe.locator("#server-disclosure > summary").click();
+      await probe.locator("#account-disclosure > summary").click();
       await probe.locator("#server-manage").click();
       assert.equal(await probe.locator("#server-management-dialog").isVisible(), true);
       await probe.waitForFunction(() => document.querySelectorAll(".category-marker").length === 1, null, { timeout: 20000 });
