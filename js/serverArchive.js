@@ -267,6 +267,7 @@ async function restoreServerArchive(archive) {
     markers = sanitizeMarkers(rawMarkers);
     await persistServerProfile({ ...archive.server, id: target.id, updatedAt: new Date().toISOString() });
     localStorage.removeItem(staged);
+    sessionStorage.setItem(SERVER_SWITCH_TARGET_KEY, target.id);
     location.reload();
     return true;
   } finally {

@@ -2,6 +2,8 @@
 const DEFAULT_SERVER = { id: "rosalitarp", name: "RosalitaRP" };
 const SERVER_PROFILES_KEY = "explorer-server-profiles";
 const ACTIVE_SERVER_KEY = "explorer-active-server";
+const SERVER_SWITCH_TARGET_KEY = "explorer-explicit-server-switch";
+const explicitServerTarget = consumeServerSwitchTarget();
 let serverProfiles = readServerProfiles();
 const activeServerId = readActiveServerId();
 let serverSwitching = false;
@@ -40,11 +42,31 @@ function readServerProfiles() {
   } catch (_) { return [{ ...DEFAULT_SERVER }]; }
 }
 
-function readActiveServerId() {
+function consumeServerSwitchTarget() {
   try {
-    const id = localStorage.getItem(ACTIVE_SERVER_KEY);
-    return serverProfiles.some(p => p.id === id) ? id : DEFAULT_SERVER.id;
-  } catch (_) { return DEFAULT_SERVER.id; }
+    const id = sessionStorage.getItem(SERVER_SWITCH_TARGET_KEY);
+    sessionStorage.removeItem(SERVER_SWITCH_TARGET_KEY);
+    return id;
+  } catch (_) { return null; }
+}
+
+function getLandingServer() {
+  return serverProfiles.find(p => p.status !== "archived" && p.name.trim().toLowerCase() === "ranch roleplay");
+}
+
+function readActiveServerId() {
+  if (serverProfiles.some(p => p.id === explicitServerTarget)) return explicitServerTarget;
+  return getLandingServer()?.id || DEFAULT_SERVER.id;
+}
+
+async function selectLandingServer() {
+  // Resolve the existing profile ID after cloud discovery; never duplicate its dataset.
+  const landing = getLandingServer();
+  if (!explicitServerTarget && landing && landing.id !== activeServerId) {
+    await switchServer(landing.id);
+    return serverSwitching;
+  }
+  return false;
 }
 
 function getActiveServer() {
@@ -167,6 +189,7 @@ async function switchServer(id) {
     const center = map.getCenter();
     sessionStorage.setItem("explorer-switch-map-view", JSON.stringify({ lat: center.lat, lng: center.lng, zoom: map.getZoom() }));
     localStorage.setItem(ACTIVE_SERVER_KEY, id);
+    sessionStorage.setItem(SERVER_SWITCH_TARGET_KEY, id);
     // Reload instead of rebinding mutable globals: old async work cannot target the next server.
     location.reload();
   } catch (error) {

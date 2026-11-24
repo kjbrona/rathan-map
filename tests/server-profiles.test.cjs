@@ -49,8 +49,10 @@ const db = {
     };
   },
 };
-function session(id = "rosalitarp") {
+function session(id = "rosalitarp", explicit = true) {
   local.setItem("explorer-active-server", id);
+  if (explicit) local.setItem("explorer-explicit-server-switch", id);
+  else local.removeItem("explorer-explicit-server-switch");
   const elements = new Map();
   const element = id => {
     if (!elements.has(id)) elements.set(id, { value: "", innerHTML: "", children: [],

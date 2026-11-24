@@ -25,6 +25,7 @@ async function initializeApp() {
   await loadStateZoneData();
 
   await refreshServerProfiles();
+  if (await selectLandingServer()) return;
   renderServerControls();
   applyServerReadOnlyUI();
   await initializeMarkerManager();

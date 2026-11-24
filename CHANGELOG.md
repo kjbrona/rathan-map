@@ -1,5 +1,9 @@
 # RedM Explorer
 
+## v1.3.67 Ranch Roleplay Landing Server
+- Open on the existing active Ranch Roleplay profile instead of the browser’s last selection. Discover its original ID through the shared server registry for new visitors.
+- Preserve deliberate server switches and archive restore reloads using a one-time tab-local target. No marker data is moved or copied.
+
 ## v1.3.66 NPC Filter Ordering and Horse/Carriage Seller
 - Moved NPCs to the top of the category filters while preserving the remaining category order.
 - Added Horse/Carriage Seller to the alphabetized NPC types using the existing stable icon and shared marker tools.
