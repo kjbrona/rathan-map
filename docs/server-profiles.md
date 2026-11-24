@@ -1,5 +1,9 @@
 # Server profiles (v1.3.58)
 
+For the v1.3.59 archive/reactivate controls, complete server backups, and recovery
+procedure, see [Server archives](server-archives.md). Ordinary marker backups
+described below remain supported.
+
 Use **Server → New Server** to create and select a profile, or **Rename** to change
 its display name. Names can change; IDs do not. The last selected server is saved
 in this browser. Browsers with no selection open RosalitaRP. Character defaults

@@ -59,6 +59,7 @@ function session(id = "rosalitarp") {
   };
   let reloads = 0;
   const c = vm.createContext({
+    setTimeout, clearTimeout,
     console: { log() {}, warn() {}, error() {} }, localStorage: local,
     sessionStorage: local, window: { addEventListener() {} },
     location: { reload() { reloads++; } }, alert() {},
@@ -176,4 +177,5 @@ async function main() {
   assert.equal(importCalls, 1, "An old file read must not import during a switch");
   console.log("PASS: legacy mapping, independent cloud/local data, create/edit/delete, filters/survey isolation, offline fallback, backups, immutable queued writes and switching after saves.");
 }
-main().catch(error => { console.error(error); process.exitCode = 1; });
+module.exports = { session, store, cloud, local, collection, db, subscriptions, read, clone };
+if (require.main === module) main().catch(error => { console.error(error); process.exitCode = 1; });

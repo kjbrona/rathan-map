@@ -176,6 +176,7 @@ async function initializeMarkerDialogControls() {
 }
 
 async function openMarkerDialog(latlng, prefill = null) {
+  if (!canEditServer()) return;
   pendingMarkerLatLng = latlng;
   pendingMarkerOriginalLatLng = latlng;
   markerNameManuallyEdited = false;
@@ -682,6 +683,7 @@ function getWorldPositionFromField(inputId, errorId) {
 }
 
 function saveMarkerFromDialog(event) {
+  if (!canEditServer()) { event.preventDefault(); return; }
   event.preventDefault();
   const categoryId = document.getElementById("marker-category").value;
   const typeId = document.getElementById("marker-type").value;

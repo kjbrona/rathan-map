@@ -11,6 +11,16 @@ let markerCollection = null;
 let markerSnapshotUnsubscribe = null;
 let firebaseAvailable = false;
 
+function withFirebaseReadTimeout(promise, timeoutMs = 5000) {
+  let timer;
+  return Promise.race([
+    promise,
+    new Promise((_, reject) => {
+      timer = setTimeout(() => reject(new Error("Firebase read timed out; using local data.")), timeoutMs);
+    }),
+  ]).finally(() => clearTimeout(timer));
+}
+
 async function initializeFirebaseStorage() {
   try {
     const app = initializeFirebaseApp();
@@ -42,7 +52,7 @@ async function loadMarkersFromFirebase() {
   }
 
   try {
-    const snapshot = await markerCollection.get();
+    const snapshot = await withFirebaseReadTimeout(markerCollection.get());
     setFirebaseAvailability(true);
 
     return snapshot.docs.map((doc) => ({
@@ -57,6 +67,7 @@ async function loadMarkersFromFirebase() {
 }
 
 async function saveMarkerToFirebase(markerData) {
+  if (isServerArchived()) return false;
   if (!isFirebaseStorageAvailable()) {
     return false;
   }
@@ -79,6 +90,7 @@ async function saveMarkerToFirebase(markerData) {
 }
 
 async function deleteMarkerFromFirebase(markerId) {
+  if (isServerArchived()) return false;
   if (!isFirebaseStorageAvailable()) {
     return false;
   }
@@ -95,6 +107,7 @@ async function deleteMarkerFromFirebase(markerId) {
 }
 
 async function saveMarkersToFirebase(markerData) {
+  if (isServerArchived()) return false;
   if (!isFirebaseStorageAvailable()) {
     return false;
   }
@@ -115,6 +128,7 @@ async function saveMarkersToFirebase(markerData) {
       }
     });
 
+    if (isServerArchived()) return false;
     await batch.commit();
     setFirebaseAvailability(true);
     return true;
@@ -137,7 +151,7 @@ function subscribeToFirebaseMarkers(onMarkersChanged) {
 
     markerSnapshotUnsubscribe = markerCollection.onSnapshot(
       (snapshot) => {
-        if (serverSwitching || pendingServerWrites > 0 || hasPendingLocalMarkers()) return;
+        if (serverSwitching || serverLifecycleBusy || pendingServerWrites > 0 || hasPendingLocalMarkers()) return;
         setFirebaseAvailability(true);
         const snapshotMarkers = snapshot.docs.map((doc) => ({
           id: doc.id,

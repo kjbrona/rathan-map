@@ -380,6 +380,7 @@ function exportMarkersToFile() {
 }
 
 async function importMarkersFromFile(event) {
+  if (!canEditServer()) { event.target.value = ""; return; }
   const fileInput = event.target;
   const selectedFile = fileInput.files[0];
   const targetServer = getActiveServer();
@@ -400,7 +401,7 @@ async function importMarkersFromFile(event) {
 
     const importMode = await requestImportMode();
 
-    if (!importMode || serverSwitching || targetServer.id !== activeServerId) {
+    if (!canEditServer() || !importMode || serverSwitching || targetServer.id !== activeServerId) {
       return;
     }
 
@@ -894,6 +895,7 @@ async function renderMarkerDetails(markerData) {
   );
   buildStateDropdown("edit-marker-state", markerData.state);
   updateEditMarkerStateHelper();
+  applyServerReadOnlyUI();
 }
 
 function updateEditMarkerStateHelper() {
@@ -925,6 +927,7 @@ function updateEditMarkerStateHelper() {
 }
 
 function enterMoveMarkerMode() {
+  if (!canEditServer()) return;
   if (!getSelectedMarkerId()) {
     return;
   }

@@ -63,7 +63,9 @@ function initializePossibleLocationControls() {
 
 async function loadCandidateSurveyData() {
   const status = document.getElementById("candidate-survey-status");
-  if (activeServerId !== DEFAULT_SERVER.id) {
+  let storedSurvey = null;
+  try { storedSurvey = localStorage.getItem(serverStorageKey("rosalitarp-explorer-survey-data")); } catch (_) {}
+  if (activeServerId !== DEFAULT_SERVER.id && storedSurvey === null) {
     candidateSurveyData = [];
     candidateSurveySkippedCount = 0;
     if (status) status.textContent = "No Candidate Survey dataset for this server.";
@@ -72,15 +74,15 @@ async function loadCandidateSurveyData() {
   }
 
   try {
-    const response = await fetch(
+    const response = storedSurvey === null ? await fetch(
       `${CANDIDATE_SURVEY_DATA_PATH}?v=${encodeURIComponent(APP_VERSION)}`
-    );
+    ) : null;
 
-    if (!response.ok) {
+    if (response && !response.ok) {
       throw new Error(`Possible Locations dataset failed to load: ${response.status}`);
     }
 
-    const rawCandidates = await response.json();
+    const rawCandidates = storedSurvey === null ? await response.json() : JSON.parse(storedSurvey);
     const validated = rawCandidates.reduce(
       (result, candidate) => {
         const normalizedCandidate = normalizeCandidateSurveyRecord(candidate);
@@ -281,10 +283,10 @@ function createCandidateSurveyPopupHtml(candidate) {
         Approximate search location. Normal Explorer markers are authoritative.
       </p>
       <div class="candidate-popup-actions">
-        <button type="button" data-candidate-action="promote" data-candidate-id="${escapeHtml(
+        <button ${isServerArchived() ? "disabled" : ""} type="button" data-candidate-action="promote" data-candidate-id="${escapeHtml(
           candidate.candidateId
         )}">Add Marker Here</button>
-        <button type="button" data-candidate-action="remove" data-candidate-id="${escapeHtml(
+        <button ${isServerArchived() ? "disabled" : ""} type="button" data-candidate-action="remove" data-candidate-id="${escapeHtml(
           candidate.candidateId
         )}">Remove Survey Point</button>
       </div>
@@ -316,6 +318,7 @@ document.addEventListener("click", function (event) {
 });
 
 async function addMarkerFromPossibleLocation(candidateId) {
+  if (!canEditServer()) return;
   const candidate = getCandidateById(candidateId);
 
   if (!candidate) {
@@ -343,6 +346,7 @@ function handleCandidatePromotedMarkerSaved() {
 }
 
 function removePossibleLocation(candidateId) {
+  if (!canEditServer()) return;
   if (!getCandidateById(candidateId)) {
     return;
   }
@@ -363,6 +367,7 @@ function removePossibleLocation(candidateId) {
 }
 
 function restoreRemovedPossibleLocations() {
+  if (!canEditServer()) return;
   if (removedPossibleLocationIds.size === 0) {
     return;
   }
@@ -469,6 +474,7 @@ function loadPossibleLocationsVisible() {
 }
 
 function savePossibleLocationsVisible(visible) {
+  if (!canEditServer()) return;
   try {
     localStorage.setItem(serverStorageKey(POSSIBLE_LOCATIONS_VISIBLE_STORAGE_KEY),
       String(visible)
@@ -496,6 +502,7 @@ function loadPossibleLocationFilter() {
 }
 
 function savePossibleLocationFilter() {
+  if (!canEditServer()) return;
   try {
     localStorage.setItem(serverStorageKey(POSSIBLE_LOCATIONS_FILTER_STORAGE_KEY),
       JSON.stringify(possibleLocationFilter)
@@ -510,10 +517,7 @@ function loadRemovedPossibleLocationIds() {
   const legacyHiddenIds = loadCandidateIdSet(LEGACY_HIDDEN_CANDIDATES_STORAGE_KEY);
 
   if (removedIds.size === 0 && legacyHiddenIds.size > 0) {
-    saveCandidateIdSet(
-      REMOVED_POSSIBLE_LOCATIONS_STORAGE_KEY,
-      legacyHiddenIds
-    );
+    // Legacy decisions are read without mutating storage during startup.
     return legacyHiddenIds;
   }
 
@@ -530,6 +534,7 @@ function loadCandidateIdSet(storageKey) {
 }
 
 function saveCandidateIdSet(storageKey, idSet) {
+  if (!canEditServer()) return;
   try {
     localStorage.setItem(serverStorageKey(storageKey), JSON.stringify(Array.from(idSet)));
   } catch (error) {

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>RosalitaRP Explorer</title>
+  <title>RedM Explorer</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,10 +12,10 @@
   />
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
 
-  <link rel="stylesheet" href="css/main.css?v=1.3.58" />
-  <link rel="stylesheet" href="css/map.css?v=1.3.58" />
-  <link rel="stylesheet" href="css/sidebar.css?v=1.3.58" />
-  <link rel="stylesheet" href="css/dialogs.css?v=1.3.58" />
+  <link rel="stylesheet" href="css/main.css?v=1.3.62" />
+  <link rel="stylesheet" href="css/map.css?v=1.3.62" />
+  <link rel="stylesheet" href="css/sidebar.css?v=1.3.62" />
+  <link rel="stylesheet" href="css/dialogs.css?v=1.3.62" />
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
   <link rel="shortcut icon" href="images/favicons/favicon.ico">
@@ -30,10 +30,10 @@
         <img
           class="app-logo"
           src="images/favicons/favicon-96x96.png"
-          alt="RosalitaRP Explorer logo"
+          alt="RedM Explorer logo"
         />
         <div>
-          <h1 id="app-title"></h1>
+          <h1 id="app-title">RedM Explorer</h1>
           <div class="subtitle" id="app-subtitle"></div>
         </div>
       </section>
@@ -42,6 +42,8 @@
         <label for="server-selector">Server</label>
         <select id="server-selector" aria-label="Active server"></select>
         <div class="server-actions"><button id="server-create" type="button">New Server</button><button id="server-rename" type="button">Rename</button></div>
+        <div id="server-readonly-status" role="status"></div>
+        <button id="server-manage" type="button">Manage Servers / Archives</button>
       </section>
 
       <section class="sidebar-panel sidebar-tools">
@@ -537,28 +539,41 @@
   <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
 
-  <script src="js/config.js?v=1.3.58"></script>
-  <script src="js/serverProfiles.js?v=1.3.58"></script>
-  <script src="js/firebaseConfig.js?v=1.3.58"></script>
-  <script src="js/firebaseStorage.js?v=1.3.58"></script>
-  <script src="js/map.js?v=1.3.58"></script>
-  <script src="js/stateZones.js?v=1.3.58"></script>
-  <script src="js/categories.js?v=1.3.58"></script>
-  <script src="js/types.js?v=1.3.58"></script>
-  <script src="js/uses.js?v=1.3.58"></script>
-  <script src="js/templates.js?v=1.3.58"></script>
-  <script src="js/worldPosition.js?v=1.3.58"></script>
-  <script src="js/storage.js?v=1.3.58"></script>
-  <script src="js/ui.js?v=1.3.58"></script>
-  <script src="js/markers.js?v=1.3.58"></script>
-  <script src="js/markerManager.js?v=1.3.58"></script>
-  <script src="js/search.js?v=1.3.58"></script>
-  <script src="js/contextMenu.js?v=1.3.58"></script>
-  <script src="js/sidebar.js?v=1.3.58"></script>
-  <script src="js/dialogs.js?v=1.3.58"></script>
-  <script src="js/candidateSurvey.js?v=1.3.58"></script>
-  <script src="js/main.js?v=1.3.58"></script>
+  <script src="js/config.js?v=1.3.62"></script>
+  <script src="js/serverProfiles.js?v=1.3.62"></script>
+  <script src="js/firebaseConfig.js?v=1.3.62"></script>
+  <script src="js/firebaseStorage.js?v=1.3.62"></script>
+  <script src="js/map.js?v=1.3.62"></script>
+  <script src="js/stateZones.js?v=1.3.62"></script>
+  <script src="js/categories.js?v=1.3.62"></script>
+  <script src="js/types.js?v=1.3.62"></script>
+  <script src="js/uses.js?v=1.3.62"></script>
+  <script src="js/templates.js?v=1.3.62"></script>
+  <script src="js/worldPosition.js?v=1.3.62"></script>
+  <script src="js/storage.js?v=1.3.62"></script>
+  <script src="js/ui.js?v=1.3.62"></script>
+  <script src="js/markers.js?v=1.3.62"></script>
+  <script src="js/markerManager.js?v=1.3.62"></script>
+  <script src="js/search.js?v=1.3.62"></script>
+  <script src="js/contextMenu.js?v=1.3.62"></script>
+  <script src="js/sidebar.js?v=1.3.62"></script>
+  <script src="js/dialogs.js?v=1.3.62"></script>
+  <script src="js/candidateSurvey.js?v=1.3.62"></script>
+  <script src="js/serverArchive.js?v=1.3.62"></script>
 <div id="server-switch-overlay" role="status" hidden>Saving and switching servers…</div>
+<div id="server-management-dialog" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="server-management-title">
+  <div class="modal-content"><div class="modal-header"><h2 id="server-management-title">Server Management</h2><button id="server-management-close" type="button" aria-label="Close server management">&times;</button></div>
+  <p>Archiving preserves marker data. Archived servers can be viewed and exported.</p>
+  <button id="management-create" type="button">New Server</button>
+  <button id="archive-restore" type="button">Restore Archive into Current Server</button>
+  <button id="archive-recovery" type="button">Download Pre-Restore Recovery</button>
+  <button id="archive-pending" type="button">Download Pending Restore</button>
+  <input id="archive-restore-file" type="file" accept=".json,application/json" hidden />
+  <h3>Active Servers</h3><div id="active-server-list"></div>
+  <h3>Archived Servers</h3><div id="archived-server-list"></div>
+  <p id="server-management-message" role="status"></p></div>
+</div>
+  <script src="js/main.js?v=1.3.62"></script>
 </body>
 </html>
 

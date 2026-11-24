@@ -80,6 +80,7 @@ function openContextMenu(originalEvent, menuItems) {
     const button = document.createElement("button");
     button.type = "button";
     button.textContent = item.label;
+    button.disabled = !canEditServer() && ["Add Marker Here", "Move Marker", "Edit Marker", "Delete Marker"].includes(item.label);
 
     if (item.danger) {
       button.classList.add("danger");

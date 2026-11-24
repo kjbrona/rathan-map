@@ -1,4 +1,25 @@
-# RosalitaRP Explorer
+# RedM Explorer
+
+## v1.3.62 Local HTTP Preview
+- Added Start Local Explorer.cmd and a dependency-free, localhost-only HTTP server so local testing can load category JSON without file-URL browser restrictions.
+- Show specific launcher instructions when startup fails under file://.
+- Updated application/cache references to v1.3.62. Existing marker storage is unchanged.
+## v1.3.61 RedM Explorer Branding
+- Renamed the application heading, browser title, logo text, and web manifest to RedM Explorer. The selected server remains identified separately.
+- Kept existing server names, storage paths, and backup format identifiers unchanged for compatibility.
+- Updated application and cache references to v1.3.61.
+
+## v1.3.60 Startup UI Availability
+- Initialize the title, server selector, and management actions before awaiting Firebase reads, and run startup after the management dialog markup exists.
+- Bound profile and initial marker reads with timeouts so stalled Firebase falls back to browser-local data instead of leaving the header blank and management button inactive.
+- Updated application and cache references to v1.3.60; added stalled/denied/connected Firebase browser coverage.
+
+## v1.3.59 Server Archiving and Preservation
+- Added confirmed metadata-only archive/reactivation and a Server Management interface for active and archived profiles. Archived profiles are hidden from the active selector but remain viewable.
+- Added Archived / Read Only controls and mutation guards for markers, imports, survey decisions/promotion, local caches, and Firestore writes. Filters, search, navigation, and exports remain available.
+- Added versioned complete server archives with raw markers/custom fields, profile metadata, character definitions, survey data/decisions, and server settings. Validated same-server restoration requires confirmation and saves recovery/staged archives first.
+- Kept RosalitaRP on its original `/markers` collection and localStorage keys; no production data migration or Firebase security deployment.
+- Updated application/cache versions to v1.3.59 and added archive lifecycle, read-only, restoration, and validation regression tests.
 
 ## v1.3.58 Server Profiles
 - Added server selection, creation, and renaming; remember the last server and share profile metadata through Firestore when available.

@@ -8,6 +8,7 @@ Creator : Rathan
 
 const MARKER_STORAGE_KEY = "rosalitarp-explorer-markers";
 const FILTER_STORAGE_KEY = "rosalitarp-explorer-filters";
+// Stable backup format identifier: keep legacy exports compatible after UI renaming.
 const STORAGE_APPLICATION = "RosalitaRP Explorer";
 const STORAGE_VERSION = APP_VERSION;
 const SUPPORTED_IMPORT_VERSIONS = [
@@ -87,6 +88,10 @@ const SUPPORTED_IMPORT_VERSIONS = [
   "1.3.56",
   "1.3.57",
   "1.3.58",
+  "1.3.59",
+  "1.3.60",
+  "1.3.61",
+  "1.3.62",
 ];
 
 const MARKER_STORAGE_FIELDS = [
@@ -246,6 +251,7 @@ function clearPendingLocalMarkers() {
 }
 
 function savePendingLocalMarkers(markerData) {
+  if (isServerArchived()) return { ok: false, message: "Archived server is read only." };
   const result = saveMarkersToLocalStorage(markerData);
   if (result.ok) {
     try { localStorage.setItem(serverStorageKey("explorer-pending-local-markers"), "true"); }
@@ -282,6 +288,7 @@ async function loadMarkers() {
 }
 
 function saveMarkersToLocalStorage(markerData) {
+  if (isServerArchived()) return { ok: false, message: "Archived server is read only." };
   if (!canUseLocalStorage()) {
     return {
       ok: false,
@@ -389,7 +396,7 @@ function validateMarkerImport(importData) {
   if (importData.application !== STORAGE_APPLICATION) {
     return {
       ok: false,
-      message: "The selected file was not created for RosalitaRP Explorer.",
+      message: `The selected file is not a compatible ${APP_NAME} backup.`,
     };
   }
 
@@ -538,7 +545,7 @@ function normalizeStoredMarker(markerData) {
     return null;
   }
 
-  const storedMarker = {};
+  const storedMarker = { ...markerData };
 
   MARKER_STORAGE_FIELDS.forEach((fieldName) => {
     storedMarker[fieldName] = markerData[fieldName] || "";

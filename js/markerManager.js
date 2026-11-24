@@ -70,6 +70,7 @@ function createDefaultFilterState() {
 }
 
 function addMarker(markerData) {
+  if (!canEditServer()) return { ok: false, message: "Server is read only." };
   applyExistingHerbSharedFields(markerData);
   updateMarkerStateFromCoordinates(markerData);
   markers.push(markerData);
@@ -87,6 +88,7 @@ function getMarkerById(markerId) {
 }
 
 async function updateMarker(markerId, updates) {
+  if (!canEditServer()) return { ok: false, message: "Server is read only." };
   const markerData = getMarkerById(markerId);
 
   if (!markerData) {
@@ -109,6 +111,7 @@ async function updateMarker(markerId, updates) {
 }
 
 async function moveMarker(markerId, x, y) {
+  if (!canEditServer()) return { ok: false, message: "Server is read only." };
   await updateMarker(markerId, {
     x: Number(x),
     y: Number(y),
@@ -238,6 +241,7 @@ async function moveSelectedMarkerTo(latlng) {
 }
 
 async function deleteMarker(markerId) {
+  if (!canEditServer()) return { ok: false, message: "Server is read only." };
   markers = markers.filter((marker) => marker.id !== markerId);
 
   selectedMarkerId = null;
@@ -524,6 +528,7 @@ function refreshSearchResults() {
 }
 
 async function replaceMarkers(importedMarkers) {
+  if (!canEditServer()) return { ok: false, message: "Server is read only." };
   const replacementMarkers = sanitizeMarkers(importedMarkers);
   markers = replacementMarkers;
   selectedMarkerId = null;
@@ -540,6 +545,7 @@ async function replaceMarkers(importedMarkers) {
 }
 
 async function mergeMarkers(importedMarkers) {
+  if (!canEditServer()) return { ok: false, message: "Server is read only." };
   const originalMarkerCount = markers.length;
   markers = mergeMarkerCollections(markers, importedMarkers);
   selectedMarkerId = null;
