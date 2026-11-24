@@ -10,6 +10,10 @@ let serverWriteFailed = false;
 let pendingServerWrites = 0;
 let serverLifecycleBusy = false;
 
+function hasServerCharacters() {
+  return activeServerId === DEFAULT_SERVER.id;
+}
+
 function isServerArchived(id = activeServerId) {
   return serverProfiles.find(p => p.id === id)?.status === "archived";
 }

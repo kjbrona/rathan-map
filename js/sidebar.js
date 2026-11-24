@@ -213,7 +213,9 @@ function initializeStateFilterControl() {
 
 function updateFilterControls() {
   const filterState = getActiveFilterState();
-  document.getElementById("character-filter").value = filterState.character || "";
+  document.getElementById("character-filter-control").hidden = !hasServerCharacters();
+  document.getElementById("character-filter").disabled = !hasServerCharacters();
+  document.getElementById("character-filter").value = hasServerCharacters() ? filterState.character || "" : "";
   const stateFilter = document.getElementById("state-filter");
   const statusFilter = document.getElementById("status-filter");
   const confidenceFilter = document.getElementById("confidence-filter");
@@ -265,7 +267,7 @@ function updateActiveFiltersSummary(filterState = getActiveFilterState()) {
   }
 
   const activeItems = [];
-  if (filterState.character) activeItems.push(["Character", filterState.character === "jim" ? "Jim" : "Tom"]);
+  if (hasServerCharacters() && filterState.character) activeItems.push(["Character", filterState.character === "jim" ? "Jim" : "Tom"]);
 
   if (filterState.state) {
     activeItems.push(["State", getStateName(filterState.state) || "Unknown"]);

@@ -44,7 +44,7 @@ async function initializeMarkerManager() {
 function createEmptyFilterState() {
   return {
     state: "",
-    character: "tom",
+    character: hasServerCharacters() ? "tom" : "",
     statuses: [],
     confidences: [],
     uses: [],
@@ -56,7 +56,7 @@ function createEmptyFilterState() {
 function createDefaultFilterState() {
   return {
     state: "",
-    character: "tom",
+    character: hasServerCharacters() ? "tom" : "",
     statuses: [],
     confidences: [],
     uses: [],
@@ -310,7 +310,7 @@ function applyRemoteMarkers(remoteMarkers) {
 }
 
 function isMarkerVisible(markerData) {
-  if (activeFilters.character && !normalizeKnownBy(markerData.knownBy).includes(activeFilters.character)) return false;
+  if (hasServerCharacters() && activeFilters.character && !normalizeKnownBy(markerData.knownBy).includes(activeFilters.character)) return false;
   if (activeFilters.state && markerData.state !== activeFilters.state) {
     return false;
   }
@@ -450,7 +450,7 @@ function setStateFilter(stateId) {
 }
 
 function setCharacterFilter(characterId) {
-  activeFilters.character = ["jim", "tom"].includes(characterId) ? characterId : "";
+  activeFilters.character = hasServerCharacters() && ["jim", "tom"].includes(characterId) ? characterId : "";
   applyFilterChange();
 }
 
@@ -688,8 +688,8 @@ function applySavedFilterState() {
     );
   }
 
-  // Always open on Tom's view, regardless of the previous session's character.
-  activeFilters.character = "tom";
+  // RosalitaRP opens on Tom; other servers have no character filter.
+  activeFilters.character = hasServerCharacters() ? "tom" : "";
   activeFilters.state = migratedFilterState.state || "";
   activeFilters.statuses = normalizeFilterArray(migratedFilterState.statuses);
   activeFilters.confidences = normalizeFilterArray(
@@ -720,7 +720,7 @@ function applySavedFilterState() {
 
 function migrateSavedFilterState(savedFilterState) {
   return {
-    character: ["jim", "tom"].includes(savedFilterState.character) ? savedFilterState.character : "",
+    character: hasServerCharacters() && ["jim", "tom"].includes(savedFilterState.character) ? savedFilterState.character : "",
     state: savedFilterState.state || "",
     statuses: Array.isArray(savedFilterState.statuses)
       ? savedFilterState.statuses

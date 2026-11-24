@@ -1,5 +1,9 @@
 # RedM Explorer
 
+## v1.3.65 Server-specific Character Filters
+- Show the Jim/Tom quick filter only on RosalitaRP, which still defaults to Tom. Other servers ignore character filters, including older saved selections.
+- Preserve all existing marker character assignments and server datasets.
+
 ## v1.3.64 Collapsible Sidebar Management
 - Rolled account management and server controls into compact disclosures, collapsed by default and remembering each browser’s open/closed preference.
 - Kept the account role and active server visible in the collapsed headings. Existing controls and permissions are unchanged.
