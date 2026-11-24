@@ -15,6 +15,7 @@ async function initializeApp() {
   document.getElementById("app-version").textContent = APP_VERSION;
   await initializeFirebaseStorage();
   await initializeServerControls();
+  initializeAccountControls();
 
   await loadCategoryData();
   await loadTypeGroupData();

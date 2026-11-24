@@ -92,6 +92,7 @@ const SUPPORTED_IMPORT_VERSIONS = [
   "1.3.60",
   "1.3.61",
   "1.3.62",
+  "1.3.63",
 ];
 
 const MARKER_STORAGE_FIELDS = [
@@ -175,6 +176,8 @@ function saveMarkers(markerData) {
 }
 
 async function saveMarkersForSession(markerData) {
+  const generation = accountGeneration;
+  if (!hasEditorAccess()) return { ok: false };
   if (isFirebaseStorageAvailable()) {
     const firebaseSaved = await saveMarkersToFirebase(markerData);
 
@@ -188,6 +191,7 @@ async function saveMarkersForSession(markerData) {
     }
   }
 
+  if (!hasEditorAccess() || generation !== accountGeneration) return { ok: false, message: "Account changed during save." };
   return savePendingLocalMarkers(markerData);
 }
 
@@ -198,6 +202,8 @@ function saveMarker(markerData, markerCollectionData) {
 }
 
 async function saveMarkerForSession(markerData, markerCollectionData) {
+  const generation = accountGeneration;
+  if (!hasEditorAccess()) return { ok: false };
   if (isFirebaseStorageAvailable()) {
     const firebaseSaved = hasPendingLocalMarkers()
       ? await saveMarkersToFirebase(markerCollectionData)
@@ -213,6 +219,7 @@ async function saveMarkerForSession(markerData, markerCollectionData) {
     }
   }
 
+  if (!hasEditorAccess() || generation !== accountGeneration) return { ok: false, message: "Account changed during save." };
   return savePendingLocalMarkers(markerCollectionData);
 }
 
@@ -222,6 +229,8 @@ function deleteStoredMarker(markerId, markerCollectionData) {
 }
 
 async function deleteStoredMarkerForSession(markerId, markerCollectionData) {
+  const generation = accountGeneration;
+  if (!hasEditorAccess()) return { ok: false };
   if (isFirebaseStorageAvailable()) {
     const firebaseDeleted = hasPendingLocalMarkers()
       ? await saveMarkersToFirebase(markerCollectionData)
@@ -237,6 +246,7 @@ async function deleteStoredMarkerForSession(markerId, markerCollectionData) {
     }
   }
 
+  if (!hasEditorAccess() || generation !== accountGeneration) return { ok: false, message: "Account changed during save." };
   return savePendingLocalMarkers(markerCollectionData);
 }
 
@@ -251,7 +261,7 @@ function clearPendingLocalMarkers() {
 }
 
 function savePendingLocalMarkers(markerData) {
-  if (isServerArchived()) return { ok: false, message: "Archived server is read only." };
+  if (!hasEditorAccess() || isServerArchived()) return { ok: false, message: "Server is read only." };
   const result = saveMarkersToLocalStorage(markerData);
   if (result.ok) {
     try { localStorage.setItem(serverStorageKey("explorer-pending-local-markers"), "true"); }

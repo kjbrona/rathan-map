@@ -33,6 +33,10 @@ async function main() {
         { id: "test-location", name: "Preserved location", category: "npcs", type: "fence", x: 4000, y: 3000, knownBy: ["tom"], notes: "Original notes" },
       ]));
     });
+    await page.route("**/js/auth.js*", async route => {
+      const source = fs.readFileSync(path.join(root, "js/auth.js"), "utf8");
+      await route.fulfill({ contentType: "application/javascript", body: source + '\naccountRole = "owner"; accountUser = {email: OWNER_EMAIL};' });
+    });
     await page.goto(origin);
     await page.waitForFunction(() => document.getElementById("server-readonly-status").textContent.includes("Read Only"));
     assert.equal(await page.locator("#add-marker-btn").isDisabled(), true);
@@ -91,6 +95,15 @@ async function main() {
       await probe.locator("#server-manage").click();
       assert.equal(await probe.locator("#server-management-dialog").isVisible(), true);
       await probe.waitForFunction(() => document.querySelectorAll(".category-marker").length === 1, null, { timeout: 20000 });
+      assert.equal(await probe.locator("#add-marker-btn").isDisabled(), true);
+      assert.equal(await probe.locator("#server-create").isDisabled(), true);
+      assert.equal(await probe.locator("#editor-controls").isVisible(), false);
+      await probe.evaluate(() => acceptAccount({email: OWNER_EMAIL, emailVerified: true, providerData: [{providerId:"google.com"}]}));
+      assert.equal(await probe.locator("#add-marker-btn").isDisabled(), false);
+      assert.equal(await probe.locator("#server-create").isDisabled(), false);
+      assert.equal(await probe.locator("#editor-controls").isVisible(), true);
+      await probe.evaluate(() => acceptAccount(null));
+      assert.equal(await probe.locator("#add-marker-btn").isDisabled(), true);
       assert.deepEqual(probeErrors, []);
       await probe.close();
     }

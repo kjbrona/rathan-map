@@ -12,13 +12,17 @@ function applyServerReadOnlyUI() {
   const archived = isServerArchived();
   const status = document.getElementById("server-readonly-status");
   if (status) status.textContent = archived ? `${getActiveServer().name} — Archived / Read Only` : "";
-  for (const id of ["add-marker-btn", "import-markers-btn", "import-markers-file", "archive-restore", "restore-hidden-candidates"]) {
+  for (const id of ["sync-local-markers", "add-marker-btn", "import-markers-btn", "import-markers-file", "archive-restore", "restore-hidden-candidates"]) {
     const control = document.getElementById(id);
-    if (control) control.disabled = archived || serverLifecycleBusy;
+    if (control) control.disabled = !canEditServer();
   }
   document.querySelectorAll("#marker-details-form input, #marker-details-form select, #marker-details-form textarea, #marker-details-form button, [data-candidate-action]")
-    .forEach(control => { control.disabled = archived || serverLifecycleBusy; });
-  if (archived || serverLifecycleBusy) {
+    .forEach(control => { control.disabled = !canEditServer(); });
+  for (const id of ["server-create", "server-rename", "management-create", "archive-restore"]) {
+    const control = document.getElementById(id);
+    if (control) control.disabled = !isOwner() || serverLifecycleBusy || serverSwitching || (id === "archive-restore" && archived);
+  }
+  if (!canEditServer()) {
     currentMode = MODES.BROWSE;
     document.getElementById("marker-dialog")?.classList.add("hidden");
     document.getElementById("import-mode-cancel")?.click();
@@ -90,7 +94,7 @@ function renderServerManagement() {
       ]) {
         const button = document.createElement("button");
         button.type = "button"; button.textContent = label;
-        button.disabled = serverLifecycleBusy;
+        button.disabled = serverLifecycleBusy || (["Archive", "Reactivate"].includes(label) && !isOwner());
         button.addEventListener("click", () => Promise.resolve(action()).catch(error => alert(error.message)));
         row.appendChild(button);
       }
@@ -100,6 +104,7 @@ function renderServerManagement() {
 }
 
 async function persistServerProfile(profile) {
+  if (!isOwner()) throw new Error("Only the owner can manage servers or restore archives.");
   const next = serverProfiles.map(p => p.id === profile.id ? profile : p);
   localStorage.setItem(SERVER_PROFILES_KEY, JSON.stringify(next));
   serverProfiles = next;
@@ -111,6 +116,7 @@ async function persistServerProfile(profile) {
 }
 
 async function setServerArchived(id, archived) {
+  if (!isOwner()) throw new Error("Only the owner can manage servers or restore archives.");
   if (serverLifecycleBusy || serverSwitching) return;
   const profile = serverProfiles.find(p => p.id === id);
   if (!profile || isServerArchived(id) === archived) return;
@@ -218,6 +224,7 @@ function validateServerArchive(archive) {
 }
 
 async function restoreServerArchive(archive) {
+  if (!isOwner()) throw new Error("Only the owner can manage servers or restore archives.");
   validateServerArchive(archive);
   if (!canEditServer()) throw new Error("Reactivate the destination server before restoring an archive.");
   const target = getActiveServer();
@@ -242,13 +249,13 @@ async function restoreServerArchive(archive) {
       const operations = rawMarkers.map(marker => ["set", collection.doc(marker.id), marker]);
       previous.docs.filter(doc => !incoming.has(doc.id)).forEach(doc => operations.push(["delete", doc.ref]));
       for (let offset = 0; offset < operations.length; offset += 400) {
-        if (isServerArchived()) throw new Error("Server was archived elsewhere; restore stopped. Recovery and staged archives are retained.");
+        if (!isOwner() || isServerArchived()) throw new Error("Server was archived elsewhere; restore stopped. Recovery and staged archives are retained.");
         const batch = firebaseDb.batch();
         operations.slice(offset, offset + 400).forEach(([op, ref, data]) => op === "set" ? batch.set(ref, data) : batch.delete(ref));
         await batch.commit();
       }
     }
-    if (isServerArchived()) throw new Error("Server was archived elsewhere; restore stopped. Recovery and staged archives are retained.");
+    if (!isOwner() || isServerArchived()) throw new Error("Server was archived elsewhere; restore stopped. Recovery and staged archives are retained.");
     localStorage.setItem(serverStorageKey(MARKER_STORAGE_KEY), JSON.stringify(rawMarkers));
     for (const key of ARCHIVE_SETTING_KEYS) {
       if (archive.settings[key] === null) localStorage.removeItem(serverStorageKey(key));

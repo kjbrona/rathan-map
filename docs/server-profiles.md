@@ -1,3 +1,5 @@
+> **v1.3.63 update:** Google sign-in, global editor access, and a Firestore rules file are now included. See [editor access setup](editor-access.md) for required Firebase Console steps. Earlier security limitations below describe the original release; production enforcement requires publishing the new rules.
+
 # Server profiles (v1.3.58)
 
 For the v1.3.59 archive/reactivate controls, complete server backups, and recovery

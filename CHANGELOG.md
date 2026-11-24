@@ -1,5 +1,11 @@
 # RedM Explorer
 
+## v1.3.63 Owner and Global Editors
+- Added Google sign-in, owner-only server/editor management, and approved editor access across all active servers. Visitors retain viewing and export access.
+- Added Firestore rules for legacy and server-scoped markers, global editor grants, and archived-server write protection. Rules require a separate Firebase Console deployment.
+- Added an explicit local-marker cloud sync retry that retains cloud-only markers and pending local backups on failure.
+- Preserved marker collections, IDs, saved data, and older exports.
+
 ## v1.3.62 Local HTTP Preview
 - Added Start Local Explorer.cmd and a dependency-free, localhost-only HTTP server so local testing can load category JSON without file-URL browser restrictions.
 - Show specific launcher instructions when startup fails under file://.

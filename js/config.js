@@ -1,14 +1,14 @@
 /*
 ==================================================
 RedM Explorer
-Version : 1.3.62
+Version : 1.3.63
 Creator : Rathan
 ==================================================
 */
 
 const APP_NAME = "RedM Explorer";
 const APP_SUBTITLE = "Community Resource Map";
-const APP_VERSION = "1.3.62";
+const APP_VERSION = "1.3.63";
 const APP_CREATOR = "Rathan";
 const DEFAULT_DANGER_RADIUS = 50;
 

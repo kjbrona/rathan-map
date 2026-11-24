@@ -1,0 +1,50 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function verifiedGoogle() {
+      return request.auth != null
+        && request.auth.token.email_verified == true
+        && request.auth.token.firebase.sign_in_provider == 'google.com';
+    }
+    function owner() {
+      return verifiedGoogle() && request.auth.token.email.lower() == 'kjbrona@gmail.com';
+    }
+    function editor() {
+      return owner() || (verifiedGoogle()
+        && exists(/databases/$(database)/documents/editors/$(request.auth.token.email.lower()))
+        && get(/databases/$(database)/documents/editors/$(request.auth.token.email.lower())).data.enabled == true);
+    }
+    function active(serverId) {
+      return !exists(/databases/$(database)/documents/serverProfiles/$(serverId))
+        || get(/databases/$(database)/documents/serverProfiles/$(serverId)).data.get('status', 'active') == 'active';
+    }
+    // Legacy RosalitaRP collection remains in place, without a migration.
+    match /markers/{markerId} {
+      allow read: if true;
+      allow write: if editor() && active('rosalitarp');
+    }
+    match /servers/{serverId}/markers/{markerId} {
+      allow read: if true;
+      allow write: if editor() && active(serverId);
+    }
+    match /serverProfiles/{serverId} {
+      allow read: if true;
+      allow create, update: if owner()
+        && request.resource.data.id == serverId
+        && request.resource.data.name is string
+        && request.resource.data.name.size() > 0
+        && request.resource.data.name.size() <= 80
+        && request.resource.data.get('status', 'active') in ['active', 'archived'];
+      // Preserve lifecycle records so deletion cannot bypass an archive lock.
+      allow delete: if false;
+    }
+    match /editors/{email} {
+      allow get: if owner() || (verifiedGoogle() && request.auth.token.email.lower() == email);
+      allow list: if owner();
+      allow create, update: if owner()
+        && request.resource.data.keys().hasOnly(['enabled'])
+        && request.resource.data.enabled == true;
+      allow delete: if owner();
+    }
+  }
+}

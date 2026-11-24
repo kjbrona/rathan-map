@@ -60,6 +60,7 @@ function session(id = "rosalitarp") {
   let reloads = 0;
   const c = vm.createContext({
     setTimeout, clearTimeout,
+    hasEditorAccess: () => true, isOwner: () => true, accountGeneration: 0,
     console: { log() {}, warn() {}, error() {} }, localStorage: local,
     sessionStorage: local, window: { addEventListener() {} },
     location: { reload() { reloads++; } }, alert() {},

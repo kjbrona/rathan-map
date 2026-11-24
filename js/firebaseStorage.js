@@ -67,7 +67,7 @@ async function loadMarkersFromFirebase() {
 }
 
 async function saveMarkerToFirebase(markerData) {
-  if (isServerArchived()) return false;
+  if (!hasEditorAccess() || isServerArchived()) return false;
   if (!isFirebaseStorageAvailable()) {
     return false;
   }
@@ -90,7 +90,7 @@ async function saveMarkerToFirebase(markerData) {
 }
 
 async function deleteMarkerFromFirebase(markerId) {
-  if (isServerArchived()) return false;
+  if (!hasEditorAccess() || isServerArchived()) return false;
   if (!isFirebaseStorageAvailable()) {
     return false;
   }
@@ -106,14 +106,15 @@ async function deleteMarkerFromFirebase(markerId) {
   }
 }
 
-async function saveMarkersToFirebase(markerData) {
-  if (isServerArchived()) return false;
+async function saveMarkersToFirebase(markerData, deleteMissing = true) {
+  if (!hasEditorAccess() || isServerArchived()) return false;
   if (!isFirebaseStorageAvailable()) {
     return false;
   }
 
   try {
     const markersToSave = sanitizeMarkers(markerData);
+    const generation = accountGeneration;
     const snapshot = await markerCollection.get();
     const incomingIds = new Set(markersToSave.map((marker) => marker.id));
     const batch = firebaseDb.batch();
@@ -123,12 +124,12 @@ async function saveMarkersToFirebase(markerData) {
     });
 
     snapshot.docs.forEach((doc) => {
-      if (!incomingIds.has(doc.id)) {
+      if (deleteMissing && !incomingIds.has(doc.id)) {
         batch.delete(doc.ref);
       }
     });
 
-    if (isServerArchived()) return false;
+    if (!hasEditorAccess() || generation !== accountGeneration || isServerArchived()) return false;
     await batch.commit();
     setFirebaseAvailability(true);
     return true;

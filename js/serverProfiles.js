@@ -15,7 +15,7 @@ function isServerArchived(id = activeServerId) {
 }
 
 function canEditServer() {
-  return !isServerArchived() && !serverLifecycleBusy && !serverSwitching;
+  return hasEditorAccess() && !isServerArchived() && !serverLifecycleBusy && !serverSwitching;
 }
 
 function validServerProfile(profile) {
@@ -59,10 +59,11 @@ function getServerMarkerCollection(db, id = activeServerId) {
 
 // Snapshot arguments at the caller; serialize full-collection writes in this session.
 function queueServerWrite(operation) {
-  if (isServerArchived() || serverLifecycleBusy) return Promise.resolve({ ok: false, message: "Server is read only." });
+  if (!hasEditorAccess() || isServerArchived() || serverLifecycleBusy) return Promise.resolve({ ok: false, message: "Server is read only." });
   if (serverSwitching) return Promise.resolve({ ok: false, message: "Server switch in progress." });
+  const generation = accountGeneration;
   pendingServerWrites += 1;
-  const result = serverWriteQueue.then(() => isServerArchived()
+  const result = serverWriteQueue.then(() => !hasEditorAccess() || generation !== accountGeneration || isServerArchived()
     ? { ok: false, message: "Server is archived." } : operation()).catch(error => {
     console.error("Server save failed", error);
     return { ok: false, message: "Server save failed." };
@@ -123,6 +124,7 @@ function renderServerControls() {
 }
 
 async function editServerProfile(create) {
+  if (!isOwner()) return;
   if (serverSwitching || serverLifecycleBusy) return;
   const name = prompt(create ? "New server name:" : "Rename this server:", create ? "" : getActiveServer().name);
   if (name === null) return;

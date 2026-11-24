@@ -283,10 +283,10 @@ function createCandidateSurveyPopupHtml(candidate) {
         Approximate search location. Normal Explorer markers are authoritative.
       </p>
       <div class="candidate-popup-actions">
-        <button ${isServerArchived() ? "disabled" : ""} type="button" data-candidate-action="promote" data-candidate-id="${escapeHtml(
+        <button ${!canEditServer() ? "disabled" : ""} type="button" data-candidate-action="promote" data-candidate-id="${escapeHtml(
           candidate.candidateId
         )}">Add Marker Here</button>
-        <button ${isServerArchived() ? "disabled" : ""} type="button" data-candidate-action="remove" data-candidate-id="${escapeHtml(
+        <button ${!canEditServer() ? "disabled" : ""} type="button" data-candidate-action="remove" data-candidate-id="${escapeHtml(
           candidate.candidateId
         )}">Remove Survey Point</button>
       </div>
