@@ -1,5 +1,8 @@
 # RedM Explorer
 
+## v1.3.71 Marker Popup Cleanup
+- Removed the Known by note from marker popups. Saved character assignments, editing controls, and character filters remain unchanged.
+
 ## v1.3.70 Weekly Fence Tracking
 - Added Ranch Roleplay Fence states, colored handshake icons with shape indicators, online found/search/clear/correction actions, and historical Known/Unconfirmed creation. Existing Fence markers remain Known without fabricated dates or counts.
 - Derive weekly state at fixed Friday 08:00 UTC; retain observations across rotations and update open pages automatically.
