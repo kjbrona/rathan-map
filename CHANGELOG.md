@@ -1,5 +1,10 @@
 # RedM Explorer
 
+## v1.3.69 Hidden Locations and Shady Dealer
+- Added Hidden with individually selectable/filterable Stable and Wardrobe types, plus alphabetized Shady Dealer under NPCs.
+- Added hitching-post, wardrobe, and shady-dealer SVG icons in the existing 24×24 brown/gold style. Existing stable, Fence, and General NPC icons are unchanged.
+- Reused shared marker forms, filters, search, persistence, exports, multi-server storage, and archives. No authentication, rules, or production-data changes.
+
 ## v1.3.68 Share Missing Ranch Profile
 - Repair browser-only Ranch Roleplay profile registration on owner sign-in so fresh browsers can discover the default server.
 - Use a create-if-missing transaction with the original ID; preserve existing cloud lifecycle metadata and all marker datasets. Report publication failures in account status.

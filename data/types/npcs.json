@@ -90,6 +90,12 @@
     "group": "seed-seller"
   },
   {
+    "id": "shady-dealer",
+    "name": "Shady Dealer",
+    "enabled": true,
+    "group": "shady-dealer"
+  },
+  {
     "id": "stable-master",
     "name": "Stable Master",
     "enabled": true,

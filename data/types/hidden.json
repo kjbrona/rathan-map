@@ -1,0 +1,14 @@
+[
+  {
+    "id": "stable",
+    "name": "Stable",
+    "enabled": true,
+    "group": "hitching-post"
+  },
+  {
+    "id": "wardrobe",
+    "name": "Wardrobe",
+    "enabled": true,
+    "group": "wardrobe"
+  }
+]

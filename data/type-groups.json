@@ -256,5 +256,23 @@
     "name": "Job - House Robberies",
     "icon": "images/icons/house-robberies.svg",
     "description": "Job - House Robberies NPC locations."
+  },
+  {
+    "id": "hitching-post",
+    "name": "Hidden Stable",
+    "icon": "images/icons/hitching-post.svg",
+    "description": "Hidden stable locations."
+  },
+  {
+    "id": "wardrobe",
+    "name": "Wardrobe",
+    "icon": "images/icons/wardrobe.svg",
+    "description": "Hidden wardrobe locations."
+  },
+  {
+    "id": "shady-dealer",
+    "name": "Shady Dealer",
+    "icon": "images/icons/shady-dealer.svg",
+    "description": "NPCs that purchase stolen horses and carriages."
   }
 ]

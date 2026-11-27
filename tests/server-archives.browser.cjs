@@ -73,6 +73,7 @@ async function main() {
     await page.locator("#server-selector").selectOption("new-server");
     await page.waitForFunction(() => document.getElementById("app-subtitle").textContent.includes("New Server"));
     assert.equal(await page.locator(".category-marker").count(), 0);
+    await require("./hidden-markers.browser.cjs")(page, browser, origin);
     assert.deepEqual(errors, []);
     // Real SDK-present paths: a hanging Firestore read must not prevent local UI binding.
     for (const mode of ["stalled", "denied", "connected"]) {
