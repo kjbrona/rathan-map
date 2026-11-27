@@ -367,8 +367,13 @@ function initializeMarkerBackupControls() {
     .addEventListener("change", importMarkersFromFile);
 }
 
-function exportMarkersToFile() {
-  const exportText = stringifyMarkerExport(getMarkersForExport());
+async function exportMarkersToFile() {
+  let exportText;
+  try {
+    const backup = createMarkerExport(getMarkersForExport());
+    backup.fenceTracking = await exportFenceTracking();
+    exportText = JSON.stringify(backup, null, 2);
+  } catch (error) { alert(error.message); return; }
   const fileBlob = new Blob([exportText], { type: "application/json" });
   const downloadUrl = URL.createObjectURL(fileBlob);
   const downloadLink = document.createElement("a");
@@ -403,6 +408,9 @@ async function importMarkersFromFile(event) {
       return;
     }
 
+    if (importResult.fenceTracking && importResult.server.id !== activeServerId) {
+      alert("Fence history belongs to another server. Select its original server before importing."); return;
+    }
     const importMode = await requestImportMode();
 
     if (!canEditServer() || !importMode || serverSwitching || targetServer.id !== activeServerId) {
@@ -415,6 +423,7 @@ async function importMarkersFromFile(event) {
       (importMode === 'replace' ? 'This replaces ALL existing markers on the destination server.' : 'This merges new marker IDs into the destination server; existing IDs are kept.')
     )) return;
 
+    if (importResult.fenceTracking) await importFenceTracking(importResult.fenceTracking);
     const importSummary =
       importMode === "replace"
         ? await replaceMarkers(importResult.markers)
@@ -430,7 +439,7 @@ async function importMarkersFromFile(event) {
     updateMarkerStats();
   } catch (error) {
     console.warn("Marker import failed.", error);
-    alert("The selected marker file could not be imported.");
+    alert("Import did not finish: " + error.message + " Review the current markers and Fence history before retrying.");
   } finally {
     fileInput.value = "";
   }
@@ -829,6 +838,8 @@ async function initializeMarkerDetailsPanel() {
 }
 
 async function renderMarkerDetails(markerData) {
+  const fenceDetails = document.getElementById("fence-marker-details");
+  if (fenceDetails && typeof fenceMarkerHtml === "function") fenceDetails.innerHTML = fenceMarkerHtml(markerData);
   const detailsSection = document.getElementById("marker-details-section");
   const empty = document.getElementById("marker-details-empty");
   const form = document.getElementById("marker-details-form");

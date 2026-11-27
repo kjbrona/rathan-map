@@ -15,7 +15,7 @@ function clearRenderedMarkers() {
 function renderMarker(markerData, selected = false) {
   const type = getTypeById(markerData.category, markerData.type);
   const group = getTypeGroupForType(markerData.category, markerData.type);
-  const iconPath = getTypeGroupIconUrl(group);
+  const iconPath = (typeof fenceIconPath === "function" && fenceIconPath(markerData)) || getTypeGroupIconUrl(group);
   const iconLabel = group ? group.name : type ? type.name : "Marker";
 
   const markerLatLng = [markerData.y, markerData.x];
@@ -39,11 +39,16 @@ function renderMarker(markerData, selected = false) {
       markerData.type,
       "popup-type-icon"
     )} ${escapeHtml(markerData.name)}</strong>
+    ${typeof fenceMarkerHtml === "function" ? fenceMarkerHtml(markerData) : ""}
     <br>Known by: ${escapeHtml(normalizeKnownBy(markerData.knownBy).map(id => id === "jim" ? "Jim" : "Tom").join(", "))}
     ${markerData.category === "abandoned-wagons"
       ? `<br>${markerData.status === "found" ? "Found — confirmed spawn location; wagon may be absent." : "Unknown — wagon not yet observed here."}`
       : ""}
-  `);
+  `, typeof isTrackedFence === "function" && isTrackedFence(markerData) ? { maxHeight: 320 } : {});
+
+  // Selection redraws marker layers; reopen only the selected tracked Fence popup
+  // so its dedicated actions remain reachable after that redraw.
+  if (selected && typeof isTrackedFence === "function" && isTrackedFence(markerData)) leafletMarker.openPopup();
 
   leafletMarker.on("click", function (event) {
     if (event.originalEvent) {

@@ -99,6 +99,7 @@ const SUPPORTED_IMPORT_VERSIONS = [
   "1.3.67",
   "1.3.68",
   "1.3.69",
+  "1.3.70",
 ];
 
 const MARKER_STORAGE_FIELDS = [
@@ -375,6 +376,7 @@ function createMarkerExport(markerData) {
     server: getActiveServer(),
     application: STORAGE_APPLICATION,
     created: new Date().toISOString(),
+    ...(typeof fenceTracking !== "undefined" && fenceTracking ? { fenceTracking: fenceClone(fenceTracking) } : {}),
     markerCount: markersForExport.length,
     markers: markersForExport,
   };
@@ -434,8 +436,12 @@ function validateMarkerImport(importData) {
     };
   }
 
+  try {
+    if (importData.fenceTracking) validateFenceTracking(importData.fenceTracking, importData.server?.id || DEFAULT_SERVER.id);
+  } catch (error) { return { ok: false, message: error.message }; }
   return {
     ok: true,
+    fenceTracking: importData.fenceTracking || null,
     server: importData.server ? { id: importData.server.id, name: importData.server.name } : { ...DEFAULT_SERVER },
     markers: sanitizeMarkers(importData.markers),
   };

@@ -34,6 +34,7 @@ async function initializeApp() {
   initializeStateZoneOverlay();
   initializeDialogs();
   initializeContextMenus();
+  await initializeFenceTracking();
   refreshMarkers();
   restoreServerMapView();
 

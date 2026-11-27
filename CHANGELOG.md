@@ -1,5 +1,13 @@
 # RedM Explorer
 
+## v1.3.70 Weekly Fence Tracking
+- Added Ranch Roleplay Fence states, colored handshake icons with shape indicators, online found/search/clear/correction actions, and historical Known/Unconfirmed creation. Existing Fence markers remain Known without fabricated dates or counts.
+- Derive weekly state at fixed Friday 08:00 UTC; retain observations across rotations and update open pages automatically.
+- Added a compact weekly search panel, distinct-location progress, state/unchecked filters, countdown, current-location centering, and rotation history.
+- Use one atomic per-server tracking document for observations, permanent knowledge, and the single Current Location pointer, with online-only writes and local history caches.
+- Include tracking/configuration in marker backups and complete archives, validate server/rotation IDs, and preserve old-backup compatibility.
+- Added unit/transaction-contention and isolated browser coverage. Proposed additional Firestore permissions are documented separately; no authentication, production rules, or live data changes.
+
 ## v1.3.69 Hidden Locations and Shady Dealer
 - Added Hidden with individually selectable/filterable Stable and Wardrobe types, plus alphabetized Shady Dealer under NPCs.
 - Added hitching-post, wardrobe, and shady-dealer SVG icons in the existing 24×24 brown/gold style. Existing stable, Fence, and General NPC icons are unchanged.

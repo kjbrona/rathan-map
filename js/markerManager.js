@@ -288,6 +288,7 @@ function refreshMarkers() {
 
   updateMarkerStats();
   refreshSearchResults();
+  if (typeof renderFencePanel === "function") renderFencePanel();
 }
 
 function applyRemoteMarkers(remoteMarkers) {
@@ -310,6 +311,7 @@ function applyRemoteMarkers(remoteMarkers) {
 }
 
 function isMarkerVisible(markerData) {
+  if (typeof fencePassesFilter === "function" && !fencePassesFilter(markerData)) return false;
   if (hasServerCharacters() && activeFilters.character && !normalizeKnownBy(markerData.knownBy).includes(activeFilters.character)) return false;
   if (activeFilters.state && markerData.state !== activeFilters.state) {
     return false;
@@ -478,6 +480,11 @@ function setUsesFilter(uses) {
 }
 
 function resetAllFilters() {
+  if (typeof fenceStateFilter !== "undefined") {
+    fenceStateFilter = ""; fenceUncheckedOnly = false;
+    document.getElementById("fence-state-filter").value = "";
+    document.getElementById("fence-unchecked").checked = false;
+  }
   const resetState = createDefaultFilterState();
   resetState.types = activeFilters.types;
 
@@ -662,6 +669,7 @@ function getFilterStateForStorage() {
   return {
     state: activeFilters.state,
     character: activeFilters.character || "",
+    ...(typeof fenceStateFilter !== "undefined" ? { fenceState: fenceStateFilter, fenceUnchecked: fenceUncheckedOnly } : {}),
     statuses: activeFilters.statuses,
     confidences: activeFilters.confidences,
     uses: activeFilters.uses,

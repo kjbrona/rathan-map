@@ -510,6 +510,7 @@ function formatMapCoordinate(coordinate) {
 }
 
 function renderPendingMarkerPreview() {
+  if (typeof updateFenceCreationControl === "function") updateFenceCreationControl();
   if (!pendingMarkerLatLng) {
     return;
   }
@@ -518,7 +519,9 @@ function renderPendingMarkerPreview() {
   const categoryId = document.getElementById("marker-category").value;
   const typeId = document.getElementById("marker-type").value;
   const group = getTypeGroupForType(categoryId, typeId);
-  const iconPath = getTypeGroupIconUrl(group);
+  const fenceCreation = typeof isTrackedFence === "function" && isTrackedFence({category:categoryId,type:typeId});
+  const fenceState = {found:"current","not-found":"searched",known:"known",unconfirmed:"unconfirmed"}[document.getElementById("fence-create-state")?.value];
+  const iconPath = fenceCreation ? `images/icons/fence-${fenceState}.svg?v=${APP_VERSION}` : getTypeGroupIconUrl(group);
   const iconLabel = group ? group.name : "Marker";
   const previewStatus = categoryId === "abandoned-wagons"
     ? document.getElementById("marker-status").value : "unverified";
@@ -682,7 +685,7 @@ function getWorldPositionFromField(inputId, errorId) {
   };
 }
 
-function saveMarkerFromDialog(event) {
+async function saveMarkerFromDialog(event) {
   if (!canEditServer()) { event.preventDefault(); return; }
   event.preventDefault();
   const categoryId = document.getElementById("marker-category").value;
@@ -739,7 +742,14 @@ function saveMarkerFromDialog(event) {
     confidence: markerData.confidence,
     foundBy: markerData.foundBy,
   });
-  addMarker(markerData);
+  if (typeof isTrackedFence === "function" && isTrackedFence(markerData)) {
+    const result = document.getElementById("fence-create-state").value;
+    markerData.fenceConfirmed = result === "known" || result === "found";
+    try {
+      await commitFenceObservation(markerData, result, { create: true, contributor: markerData.foundBy });
+      selectMarker(markerData.id);
+    } catch (error) { alert(error.message + "\nFence marker was not reported as saved. Your form remains open."); return; }
+  } else addMarker(markerData);
   if (typeof handleCandidatePromotedMarkerSaved === "function") {
     handleCandidatePromotedMarkerSaved(markerData);
   }

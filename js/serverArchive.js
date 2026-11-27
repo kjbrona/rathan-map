@@ -9,6 +9,7 @@ const ARCHIVE_SETTING_KEYS = [
 ];
 
 function applyServerReadOnlyUI() {
+  if (typeof renderFencePanel === "function") renderFencePanel();
   const archived = isServerArchived();
   const status = document.getElementById("server-readonly-status");
   if (status) status.textContent = archived ? `${getActiveServer().name} — Archived / Read Only` : "";
@@ -170,6 +171,7 @@ async function createServerArchive(id = activeServerId) {
     format: SERVER_ARCHIVE_FORMAT, archiveVersion: SERVER_ARCHIVE_VERSION,
     application: STORAGE_APPLICATION, applicationVersion: APP_VERSION, exportedAt: new Date().toISOString(),
     server: { ...profile, status: profile.status || "active", archivedAt: profile.archivedAt || null },
+    ...(typeof exportFenceTracking === "function" ? { fenceTracking: await exportFenceTracking(id) } : {}),
     markerCount: markers.length, markers,
     characters: [{ id: "jim", name: "Jim" }, { id: "tom", name: "Tom" }],
     candidateSurvey: { data: survey }, settings,
@@ -219,6 +221,7 @@ function validateServerArchive(archive) {
       if ((key.endsWith("filters") || key.endsWith("filter") || key.endsWith("prefs")) && (!parsed || typeof parsed !== "object" || Array.isArray(parsed))) fail("settings object.");
     }
   }
+  if (archive.fenceTracking) validateFenceTracking(archive.fenceTracking, archive.server.id);
   if (archive.definitions?.mode !== "shared-reference") fail("custom category overrides are not supported by this application.");
   return archive;
 }
@@ -240,6 +243,7 @@ async function restoreServerArchive(archive) {
     // Keep both complete snapshots before any overwrite. Cross-store restores are not atomic.
     const staged = `explorer-archive-restore-pending:${target.id}`;
     localStorage.setItem(staged, JSON.stringify(archive));
+    if (archive.fenceTracking) await importFenceTracking(archive.fenceTracking, true, true);
     const rawMarkers = JSON.parse(JSON.stringify(archive.markers));
     // Deliberate restore uses raw validated documents so extension fields and timestamps survive exactly.
     if (isFirebaseStorageAvailable()) {

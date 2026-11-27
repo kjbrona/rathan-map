@@ -1,0 +1,16 @@
+// PROPOSAL ONLY — not deployed. Insert inside the existing
+// match /databases/{database}/documents block in firestore.rules.
+// Uses the repository's existing editor() and active(serverId) helpers;
+// it does not add/change authentication, an allowlist, or App Check.
+match /servers/{serverId}/rotatingNpcs/{npcType} {
+  allow read: if npcType == 'fence';
+  allow create, update: if npcType == 'fence'
+    && editor() && active(serverId)
+    && request.resource.data.schemaVersion == 1
+    && request.resource.data.serverId == serverId
+    && request.resource.data.npcType == 'fence'
+    && request.resource.data.revision is int
+    && request.resource.data.locations is map
+    && request.resource.data.observations is list;
+  allow delete: if false;
+}

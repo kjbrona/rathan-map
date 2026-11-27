@@ -12,10 +12,10 @@
   />
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
 
-  <link rel="stylesheet" href="css/main.css?v=1.3.69" />
-  <link rel="stylesheet" href="css/map.css?v=1.3.69" />
-  <link rel="stylesheet" href="css/sidebar.css?v=1.3.69" />
-  <link rel="stylesheet" href="css/dialogs.css?v=1.3.69" />
+  <link rel="stylesheet" href="css/main.css?v=1.3.70" />
+  <link rel="stylesheet" href="css/map.css?v=1.3.70" />
+  <link rel="stylesheet" href="css/sidebar.css?v=1.3.70" />
+  <link rel="stylesheet" href="css/dialogs.css?v=1.3.70" />
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
   <link rel="shortcut icon" href="images/favicons/favicon.ico">
@@ -177,6 +177,18 @@
             </div>
           </details>
 
+          <details id="fence-panel" class="filter-header-section filter-disclosure" hidden>
+            <summary class="filter-disclosure-summary"><h2>Weekly Fence</h2><span id="fence-summary" class="filter-summary-pill"></span></summary>
+            <div class="fence-panel-body">
+              <div id="fence-sync-status" role="status"></div>
+              <div id="fence-current"></div><button id="fence-center" type="button">Center Current Location</button>
+              <div id="fence-counts"></div><progress id="fence-progress" max="100" value="0" aria-label="Known Fence locations searched"></progress>
+              <div id="fence-schedule"></div><div id="fence-rotation"></div><div id="fence-countdown"></div>
+              <label>Fence state<select id="fence-state-filter"><option value="">All Fence states</option><option value="current">Current Location</option><option value="known">Known Locations</option><option value="searched">Searched — Not Found</option><option value="unconfirmed">Unconfirmed Locations</option></select></label>
+              <label><input type="checkbox" id="fence-unchecked"> Show Only Unchecked Locations</label>
+              <details><summary>Fence Rotation History</summary><label>Rotation<select id="fence-history-rotation"></select></label><div id="fence-history-list"></div></details>
+            </div>
+          </details>
           <div class="filter-header-section category-filter-section">
             <h2>Categories</h2>
             <div class="filter-actions">
@@ -199,6 +211,7 @@
           No marker selected
         </div>
 
+        <div id="fence-marker-details"></div>
         <form id="marker-details-form" class="hidden">
           <div class="form-section">
             <h3>Basic Information</h3>
@@ -367,6 +380,10 @@
       </div>
 
       <form id="marker-form">
+        <label id="fence-create-field" hidden>Fence location state
+          <select id="fence-create-state"><option value="unconfirmed">Unconfirmed Location</option><option value="known">Known Location (historical)</option><option value="not-found">Searched — Not Found</option><option value="found">Current Location</option></select>
+          <small>Weekly tracking is saved online. Historical Known locations do not invent dates or counts.</small>
+        </label>
         <input type="hidden" id="marker-x" />
         <input type="hidden" id="marker-y" />
         <div
@@ -563,28 +580,28 @@
   <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
 
   <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-auth-compat.js"></script>
-  <script src="js/auth.js?v=1.3.69"></script>
-  <script src="js/config.js?v=1.3.69"></script>
-  <script src="js/serverProfiles.js?v=1.3.69"></script>
-  <script src="js/firebaseConfig.js?v=1.3.69"></script>
-  <script src="js/firebaseStorage.js?v=1.3.69"></script>
-  <script src="js/map.js?v=1.3.69"></script>
-  <script src="js/stateZones.js?v=1.3.69"></script>
-  <script src="js/categories.js?v=1.3.69"></script>
-  <script src="js/types.js?v=1.3.69"></script>
-  <script src="js/uses.js?v=1.3.69"></script>
-  <script src="js/templates.js?v=1.3.69"></script>
-  <script src="js/worldPosition.js?v=1.3.69"></script>
-  <script src="js/storage.js?v=1.3.69"></script>
-  <script src="js/ui.js?v=1.3.69"></script>
-  <script src="js/markers.js?v=1.3.69"></script>
-  <script src="js/markerManager.js?v=1.3.69"></script>
-  <script src="js/search.js?v=1.3.69"></script>
-  <script src="js/contextMenu.js?v=1.3.69"></script>
-  <script src="js/sidebar.js?v=1.3.69"></script>
-  <script src="js/dialogs.js?v=1.3.69"></script>
-  <script src="js/candidateSurvey.js?v=1.3.69"></script>
-  <script src="js/serverArchive.js?v=1.3.69"></script>
+  <script src="js/auth.js?v=1.3.70"></script>
+  <script src="js/config.js?v=1.3.70"></script>
+  <script src="js/serverProfiles.js?v=1.3.70"></script>
+  <script src="js/firebaseConfig.js?v=1.3.70"></script>
+  <script src="js/firebaseStorage.js?v=1.3.70"></script>
+  <script src="js/map.js?v=1.3.70"></script>
+  <script src="js/stateZones.js?v=1.3.70"></script>
+  <script src="js/categories.js?v=1.3.70"></script>
+  <script src="js/types.js?v=1.3.70"></script>
+  <script src="js/uses.js?v=1.3.70"></script>
+  <script src="js/templates.js?v=1.3.70"></script>
+  <script src="js/worldPosition.js?v=1.3.70"></script>
+  <script src="js/storage.js?v=1.3.70"></script>
+  <script src="js/ui.js?v=1.3.70"></script>
+  <script src="js/markers.js?v=1.3.70"></script>
+  <script src="js/markerManager.js?v=1.3.70"></script>
+  <script src="js/search.js?v=1.3.70"></script>
+  <script src="js/contextMenu.js?v=1.3.70"></script>
+  <script src="js/sidebar.js?v=1.3.70"></script>
+  <script src="js/dialogs.js?v=1.3.70"></script>
+  <script src="js/candidateSurvey.js?v=1.3.70"></script>
+  <script src="js/serverArchive.js?v=1.3.70"></script>
 <div id="server-switch-overlay" role="status" hidden>Saving and switching servers…</div>
 <div id="server-management-dialog" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="server-management-title">
   <div class="modal-content"><div class="modal-header"><h2 id="server-management-title">Server Management</h2><button id="server-management-close" type="button" aria-label="Close server management">&times;</button></div>
@@ -598,7 +615,8 @@
   <h3>Archived Servers</h3><div id="archived-server-list"></div>
   <p id="server-management-message" role="status"></p></div>
 </div>
-  <script src="js/main.js?v=1.3.69"></script>
+  <script src="js/fenceTracking.js?v=1.3.70"></script>
+  <script src="js/main.js?v=1.3.70"></script>
 </body>
 </html>
 

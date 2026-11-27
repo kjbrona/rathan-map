@@ -1080,3 +1080,11 @@ button:disabled { cursor: not-allowed; opacity: 0.55; }
 .compact-controls summary:focus-visible { outline: 2px solid #c49a5a; outline-offset: 3px; }
 
 #character-filter-control[hidden] { display: none; }
+
+#fence-panel[hidden], #fence-create-field[hidden] { display: none; }
+.fence-panel-body { display:grid; gap:8px; max-height:360px; overflow:auto; font-size:13px; padding:8px 0; }
+.fence-panel-body select { width:100%; }
+.fence-panel-body progress { width:100%; accent-color:#c49a5a; }
+.fence-marker-info { display:grid; gap:4px; padding:8px 0; font-size:12px; }
+.fence-marker-info p { white-space:pre-wrap; }
+.fence-history-row { border-top:1px solid #8c652f; padding:8px 0; overflow-wrap:anywhere; }
